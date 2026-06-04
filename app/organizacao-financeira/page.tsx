@@ -17,6 +17,13 @@ export const metadata: Metadata = {
     siteName: 'Bolso do Trabalhador',
     locale: 'pt_BR',
     type: 'website',
+    images: [{ url: `${SITE_URL}/og-image.png`, width: 1200, height: 630, alt: 'Organização Financeira — Bolso do Trabalhador' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Organização Financeira - Controle Suas Contas',
+    description: 'Aprenda a organizar suas finanças com métodos práticos e calculadoras gratuitas.',
+    images: [`${SITE_URL}/og-image.png`],
   },
   alternates: { canonical: `${SITE_URL}/organizacao-financeira` },
 }

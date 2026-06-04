@@ -17,6 +17,13 @@ export const metadata: Metadata = {
     siteName: 'Bolso do Trabalhador',
     locale: 'pt_BR',
     type: 'website',
+    images: [{ url: `${SITE_URL}/og-image.png`, width: 1200, height: 630, alt: 'Empréstimos — Bolso do Trabalhador' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Empréstimos - Comparar e Escolher o Melhor',
+    description: 'Compare modalidades de empréstimo, calcule juros, entenda o CET e escolha a melhor opção.',
+    images: [`${SITE_URL}/og-image.png`],
   },
   alternates: { canonical: `${SITE_URL}/emprestimos` },
 }

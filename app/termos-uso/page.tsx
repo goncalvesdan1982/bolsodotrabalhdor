@@ -3,10 +3,25 @@ import { AdPlaceholder } from '@/components/ad-placeholder'
 import { SITE_URL, SITE_EMAIL } from '@/lib/config'
 
 export const metadata: Metadata = {
-  title: 'Termos de Uso',
+  title: 'Termos de Uso | Bolso do Trabalhador',
   description: 'Termos de Uso do Bolso do Trabalhador. Conheça as regras e condições para utilização do nosso site.',
   alternates: {
     canonical: `${SITE_URL}/termos-uso`,
+  },
+  openGraph: {
+    title: 'Termos de Uso | Bolso do Trabalhador',
+    description: 'Conheça as regras e condições para utilização do site Bolso do Trabalhador.',
+    url: `${SITE_URL}/termos-uso`,
+    siteName: 'Bolso do Trabalhador',
+    locale: 'pt_BR',
+    type: 'website',
+    images: [{ url: `${SITE_URL}/og-image.png`, width: 1200, height: 630, alt: 'Termos de Uso — Bolso do Trabalhador' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Termos de Uso | Bolso do Trabalhador',
+    description: 'Conheça as regras e condições para utilização do nosso site.',
+    images: [`${SITE_URL}/og-image.png`],
   },
 }
 
@@ -33,7 +48,7 @@ export default function TermosUsoPage() {
             <section className="mb-8">
               <h2 className="text-2xl font-semibold text-foreground mb-4">1. Aceitação dos Termos</h2>
               <p className="text-muted-foreground mb-4">
-                Ao acessar e utilizar o site Bolso do Trabalhador (bolsodotrabalhador.com.br), 
+                Ao acessar e utilizar o site Bolso do Trabalhador (bolsodotrabalhador.online), 
                 você concorda em cumprir e estar vinculado a estes Termos de Uso. Se você não 
                 concordar com qualquer parte destes termos, não deverá utilizar nosso site.
               </p>

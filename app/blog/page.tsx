@@ -28,6 +28,21 @@ export async function generateMetadata({
     title,
     description: 'Artigos sobre finanças pessoais para trabalhadores brasileiros: dívidas, cartões de crédito, score, empréstimos, orçamento familiar e educação financeira.',
     alternates: { canonical },
+    openGraph: {
+      title: query ? `Busca: ${query} | Bolso do Trabalhador` : currentPage > 1 ? `Blog - Página ${currentPage} | Bolso do Trabalhador` : 'Blog — Educação Financeira | Bolso do Trabalhador',
+      description: 'Artigos sobre finanças pessoais para trabalhadores brasileiros: dívidas, cartões de crédito, score, empréstimos e organização financeira.',
+      url: canonical,
+      siteName: 'Bolso do Trabalhador',
+      locale: 'pt_BR',
+      type: 'website',
+      images: [{ url: `${SITE_URL}/og-image.png`, width: 1200, height: 630, alt: 'Blog — Bolso do Trabalhador' }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: query ? `Busca: ${query} | Bolso do Trabalhador` : currentPage > 1 ? `Blog - Página ${currentPage} | Bolso do Trabalhador` : 'Blog — Educação Financeira | Bolso do Trabalhador',
+      description: 'Artigos sobre finanças pessoais para trabalhadores brasileiros.',
+      images: [`${SITE_URL}/og-image.png`],
+    },
   }
 }
 

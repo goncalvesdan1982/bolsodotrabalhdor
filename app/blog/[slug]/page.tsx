@@ -224,19 +224,18 @@ export default async function PostPage({ params }: PostPageProps) {
 
           <div className="mb-12 p-5 bg-muted/30 rounded-xl border border-border/60">
             <div className="flex items-center gap-3 mb-3">
-              <div className="w-10 h-10 bg-secondary rounded-full flex items-center justify-center text-secondary-foreground font-bold text-sm">
-                BT
+              <div className="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center text-white font-bold text-sm">
+                DG
               </div>
               <div>
-                <p className="font-semibold text-foreground">Equipe Bolso do Trabalhador</p>
-                <p className="text-xs text-muted-foreground">Educação Financeira</p>
+                <p className="font-semibold text-foreground">Daniel Gonçalves</p>
+                <p className="text-xs text-muted-foreground">Criador do Bolso do Trabalhador</p>
               </div>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              O Bolso do Trabalhador é um portal de educação financeira focado na realidade do trabalhador brasileiro. 
-              Nossa equipe produz conteúdo prático e baseado em fontes oficiais (BCB, IBGE, Serasa, Febraban) para ajudar 
-              você a organizar suas finanças, sair das dívidas e fazer escolhas financeiras mais inteligentes. 
-              <Link href="/sobre" className="text-secondary hover:underline"> Saiba mais sobre nosso trabalho</Link>.
+              Este artigo foi produzido por Daniel Gonçalves, criador do Bolso do Trabalhador. 
+              Todo conteúdo é baseado em fontes oficiais (BCB, IBGE, Serasa, Febraban) e cálculos transparentes. 
+              <Link href="/autor" className="text-secondary hover:underline"> Conheça o autor</Link>.
             </p>
           </div>
         </article>

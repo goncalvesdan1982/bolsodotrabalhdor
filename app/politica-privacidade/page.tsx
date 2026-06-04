@@ -3,10 +3,25 @@ import { AdPlaceholder } from '@/components/ad-placeholder'
 import { SITE_URL, SITE_EMAIL } from '@/lib/config'
 
 export const metadata: Metadata = {
-  title: 'Política de Privacidade',
+  title: 'Política de Privacidade | Bolso do Trabalhador',
   description: 'Política de Privacidade do Bolso do Trabalhador. Saiba como tratamos seus dados e garantimos sua privacidade.',
   alternates: {
     canonical: `${SITE_URL}/politica-privacidade`,
+  },
+  openGraph: {
+    title: 'Política de Privacidade | Bolso do Trabalhador',
+    description: 'Saiba como tratamos seus dados e garantimos sua privacidade no Bolso do Trabalhador.',
+    url: `${SITE_URL}/politica-privacidade`,
+    siteName: 'Bolso do Trabalhador',
+    locale: 'pt_BR',
+    type: 'website',
+    images: [{ url: `${SITE_URL}/og-image.png`, width: 1200, height: 630, alt: 'Política de Privacidade — Bolso do Trabalhador' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Política de Privacidade | Bolso do Trabalhador',
+    description: 'Saiba como tratamos seus dados e garantimos sua privacidade.',
+    images: [`${SITE_URL}/og-image.png`],
   },
 }
 
@@ -35,7 +50,7 @@ export default function PoliticaPrivacidadePage() {
               <p className="text-muted-foreground mb-4">
                 O Bolso do Trabalhador (&quot;nós&quot;, &quot;nosso&quot; ou &quot;site&quot;) está comprometido em proteger 
                 sua privacidade. Esta Política de Privacidade explica como coletamos, usamos e 
-                protegemos as informações quando você utiliza nosso site bolsodotrabalhador.com.br.
+                protegemos as informações quando você utiliza nosso site bolsodotrabalhador.online.
               </p>
               <p className="text-muted-foreground">
                 Ao utilizar nosso site, você concorda com a coleta e uso de informações de acordo 

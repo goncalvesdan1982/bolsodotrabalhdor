@@ -17,6 +17,13 @@ export const metadata: Metadata = {
     siteName: 'Bolso do Trabalhador',
     locale: 'pt_BR',
     type: 'website',
+    images: [{ url: `${SITE_URL}/og-image.png`, width: 1200, height: 630, alt: 'Custo de Vida — Bolso do Trabalhador' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Custo de Vida - Quanto Custa Morar no Brasil',
+    description: 'Descubra quanto custa morar sozinho, ter um carro, criar um filho e viver nas principais cidades brasileiras.',
+    images: [`${SITE_URL}/og-image.png`],
   },
   alternates: { canonical: `${SITE_URL}/custo-de-vida` },
 }

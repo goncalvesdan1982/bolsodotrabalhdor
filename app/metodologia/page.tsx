@@ -9,6 +9,21 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${SITE_URL}/metodologia`,
   },
+  openGraph: {
+    title: 'Metodologia — Calculadoras Financeiras | Bolso do Trabalhador',
+    description: 'Conheça a metodologia por trás de cada calculadora financeira do Bolso do Trabalhador, com fórmulas, exemplos e fontes oficiais.',
+    url: `${SITE_URL}/metodologia`,
+    siteName: 'Bolso do Trabalhador',
+    locale: 'pt_BR',
+    type: 'website',
+    images: [{ url: `${SITE_URL}/og-image.png`, width: 1200, height: 630, alt: 'Metodologia — Bolso do Trabalhador' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Metodologia — Calculadoras Financeiras | Bolso do Trabalhador',
+    description: 'Saiba como cada cálculo financeiro é realizado, com fórmulas e fontes oficiais.',
+    images: [`${SITE_URL}/og-image.png`],
+  },
 }
 
 export default function MetodologiaPage() {

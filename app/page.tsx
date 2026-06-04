@@ -14,10 +14,22 @@ import { SITE_URL } from '@/lib/config'
 export const metadata: Metadata = {
   title: 'Bolso do Trabalhador - Finanças Simples para Quem Trabalha e Paga Boletos',
   description: 'Calculadoras financeiras gratuitas, dicas para sair das dívidas, cartão de crédito, score, empréstimos e organização financeira. Educação financeira sem enrolação.',
+  keywords: ['finanças pessoais', 'educação financeira', 'sair das dívidas', 'calcular juros', 'score de crédito', 'cartão de crédito', 'empréstimo', 'organização financeira', 'orçamento familiar', 'reserva de emergência'],
   alternates: { canonical: SITE_URL },
   openGraph: {
-    title: 'Bolso do Trabalhador - Finanças Simples',
+    title: 'Bolso do Trabalhador - Finanças Simples para Quem Trabalha e Paga Boletos',
     description: 'Calculadoras financeiras gratuitas, dicas para sair das dívidas e organização financeira para trabalhadores brasileiros.',
+    url: SITE_URL,
+    siteName: 'Bolso do Trabalhador',
+    locale: 'pt_BR',
+    type: 'website',
+    images: [{ url: `${SITE_URL}/og-image.png`, width: 1200, height: 630, alt: 'Bolso do Trabalhador' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Bolso do Trabalhador - Finanças Simples',
+    description: 'Calculadoras financeiras gratuitas e educação financeira para trabalhadores brasileiros.',
+    images: [`${SITE_URL}/og-image.png`],
   },
 }
 
@@ -84,7 +96,7 @@ export default function HomePage() {
       </section>
 
       {/* Calculadoras em Destaque */}
-      <section className="py-16">
+      <section id="calculadoras" className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-foreground mb-4">Calculadoras em Destaque</h2>

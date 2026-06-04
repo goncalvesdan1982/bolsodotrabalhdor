@@ -9,6 +9,21 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${SITE_URL}/politica-editorial`,
   },
+  openGraph: {
+    title: 'Política Editorial | Bolso do Trabalhador',
+    description: 'Transparência sobre como produzimos nosso conteúdo: fontes, processo editorial, correções e links afiliados.',
+    url: `${SITE_URL}/politica-editorial`,
+    siteName: 'Bolso do Trabalhador',
+    locale: 'pt_BR',
+    type: 'website',
+    images: [{ url: `${SITE_URL}/og-image.png`, width: 1200, height: 630, alt: 'Política Editorial — Bolso do Trabalhador' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Política Editorial | Bolso do Trabalhador',
+    description: 'Transparência sobre como produzimos nosso conteúdo.',
+    images: [`${SITE_URL}/og-image.png`],
+  },
 }
 
 export default function PoliticaEditorialPage() {
@@ -127,8 +142,8 @@ export default function PoliticaEditorialPage() {
               <p>
                 Se você identificar algum erro ou informação desatualizada em nossos 
                 conteúdos, por favor, entre em contato pelo e-mail{' '}
-                <a href="mailto:contato@bolsodotrabalhador.com.br" className="text-secondary">
-                  contato@bolsodotrabalhador.com.br
+                <a href="mailto:contato@bolsodotrabalhador.online" className="text-secondary">
+                  contato@bolsodotrabalhador.online
                 </a>
                 .
               </p>

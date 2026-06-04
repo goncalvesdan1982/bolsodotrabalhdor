@@ -6,9 +6,24 @@ import { Calculator, Users, Target, Heart } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Sobre o Bolso do Trabalhador',
-  description: 'Conheça o Bolso do Trabalhador — um portal de educação financeira focado na realidade de quem ganha entre R$ 3.500 e R$ 9.000 e quer organizar as contas, sair das dívidas e fazer escolhas mais inteligentes.',
+  description: 'Conheça o Bolso do Trabalhador — um portal de educação financeira criado por Daniel Gonçalves, focado na realidade de quem ganha entre R$ 3.500 e R$ 9.000 e quer organizar as contas, sair das dívidas e fazer escolhas mais inteligentes.',
   alternates: {
     canonical: `${SITE_URL}/sobre`,
+  },
+  openGraph: {
+    title: 'Sobre o Bolso do Trabalhador',
+    description: 'Portal de educação financeira para trabalhadores brasileiros. Calculadoras gratuitas, artigos práticos e ferramentas para organizar a vida financeira.',
+    url: `${SITE_URL}/sobre`,
+    siteName: 'Bolso do Trabalhador',
+    locale: 'pt_BR',
+    type: 'website',
+    images: [{ url: `${SITE_URL}/og-image.png`, width: 1200, height: 630, alt: 'Sobre o Bolso do Trabalhador' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Sobre o Bolso do Trabalhador',
+    description: 'Portal de educação financeira para trabalhadores brasileiros.',
+    images: [`${SITE_URL}/og-image.png`],
   },
 }
 
@@ -54,15 +69,16 @@ export default function SobrePage() {
           <div className="prose prose-gray max-w-none mb-12">
             <h2>Nossa História</h2>
             <p>
-              O Bolso do Trabalhador nasceu de uma constatação simples: a maior parte do conteúdo 
-              de finanças pessoais no Brasil é pensada para quem já tem dinheiro. Quem ganha entre 
-              R$ 3.500 e R$ 9.000 por mês — a maioria dos trabalhadores brasileiros — vive uma 
-              realidade financeira completamente diferente.
+              O Bolso do Trabalhador foi criado por <strong>Daniel Gonçalves</strong> a partir de 
+              uma constatação simples: a maior parte do conteúdo de finanças pessoais no Brasil é 
+              pensada para quem já tem dinheiro. Quem ganha entre R$ 3.500 e R$ 9.000 por mês — 
+              a maioria dos trabalhadores brasileiros — vive uma realidade financeira completamente 
+              diferente.
             </p>
             <p>
               São pessoas que precisam de respostas práticas: como sair das dívidas, qual cartão 
               pedir, como negociar com o banco, quanto gastar com aluguel, como fazer um 
-              orçamento que realmente funciona. Não adianta falar em "investir na bolsa" para 
+              orçamento que realmente funciona. Não adianta falar em &quot;investir na bolsa&quot; para 
               quem está tentando pagar o cartão de crédito todo mês.
             </p>
             <p>
@@ -91,7 +107,7 @@ export default function SobrePage() {
               <li>Brasileiros que querem tomar decisões financeiras com mais informação e menos ansiedade</li>
             </ul>
 
-            <h2>Foco em "Finanças da Vida Real"</h2>
+            <h2>Foco em &quot;Finanças da Vida Real&quot;</h2>
             <p>
               Aqui você não vai encontrar dicas de como ficar milionário rápido ou promessas 
               de enriquecimento fácil. Nosso foco são as finanças da vida real: pagar contas, 

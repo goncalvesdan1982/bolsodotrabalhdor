@@ -21,6 +21,11 @@ import {
   calcularComprometimentoRenda,
   calcularQuitacaoDividas,
   calcularMetaFinanceira,
+  calcularJurosCompostos,
+  calcularJurosSimples,
+  calcularEmprestimo,
+  calcularFinanciamento,
+  calcularParcelas,
   formatarMoeda,
   formatarPercentual,
 } from '@/lib/calculadoras-financeiras'
@@ -185,6 +190,54 @@ export function CalculadoraTemplate({ calculadoraKey }: CalculadoraTemplateProps
           if (res.erro) { setError(res.erro); return }
           break
         }
+        case 'juros-compostos': {
+          const valorInicial = parseFloat(inputs.valorInicial || '0')
+          const aporteMensal = parseFloat(inputs.aporteMensal || '0')
+          const taxaMensal = parseFloat(inputs.taxaMensal || '0')
+          const meses = parseInt(inputs.meses || '0')
+          if (taxaMensal <= 0) { setError('Informe a taxa de juros.'); return }
+          if (meses <= 0) { setError('Informe o período em meses.'); return }
+          res = calcularJurosCompostos(valorInicial, taxaMensal, meses, aporteMensal)
+          break
+        }
+        case 'juros-simples': {
+          const valorInicial = parseFloat(inputs.valorInicial || '0')
+          const taxaMensal = parseFloat(inputs.taxaMensal || '0')
+          const meses = parseInt(inputs.meses || '0')
+          if (taxaMensal <= 0) { setError('Informe a taxa de juros.'); return }
+          if (meses <= 0) { setError('Informe o período em meses.'); return }
+          res = calcularJurosSimples(valorInicial, taxaMensal, meses)
+          break
+        }
+        case 'emprestimo': {
+          const valorEmprestimo = parseFloat(inputs.valorEmprestimo || '0')
+          const taxaMensal = parseFloat(inputs.taxaMensal || '0')
+          const meses = parseInt(inputs.meses || '0')
+          if (valorEmprestimo <= 0) { setError('Informe o valor do empréstimo.'); return }
+          if (taxaMensal <= 0) { setError('Informe a taxa de juros.'); return }
+          if (meses <= 0) { setError('Informe o prazo em meses.'); return }
+          res = calcularEmprestimo(valorEmprestimo, taxaMensal, meses)
+          break
+        }
+        case 'financiamento': {
+          const valorFinanciamento = parseFloat(inputs.valorFinanciamento || '0')
+          const taxaMensal = parseFloat(inputs.taxaMensal || '0')
+          const meses = parseInt(inputs.meses || '0')
+          if (valorFinanciamento <= 0) { setError('Informe o valor do financiamento.'); return }
+          if (taxaMensal <= 0) { setError('Informe a taxa de juros.'); return }
+          if (meses <= 0) { setError('Informe o prazo em meses.'); return }
+          res = calcularFinanciamento(valorFinanciamento, taxaMensal, meses)
+          break
+        }
+        case 'parcelas': {
+          const valorTotal = parseFloat(inputs.valorTotal || '0')
+          const numeroParcelas = parseInt(inputs.numeroParcelas || '0')
+          const taxaJuros = parseFloat(inputs.taxaJuros || '0')
+          if (valorTotal <= 0) { setError('Informe o valor total.'); return }
+          if (numeroParcelas <= 0) { setError('Informe o número de parcelas.'); return }
+          res = calcularParcelas(valorTotal, numeroParcelas, taxaJuros)
+          break
+        }
       }
 
       setResult(res)
@@ -282,6 +335,47 @@ export function CalculadoraTemplate({ calculadoraKey }: CalculadoraTemplateProps
             <InputField id="valorObjetivo" label="Valor do Objetivo" value={inputs.valorObjetivo || ''} onChange={(v) => handleMoeda('valorObjetivo', v)} placeholder="R$ 0,00" />
             <InputField id="valorMensal" label="Valor Mensal para Guardar" value={inputs.valorMensal || ''} onChange={(v) => handleMoeda('valorMensal', v)} placeholder="R$ 0,00" />
             <InputField id="taxaMensal" label="Rendimento Mensal (%)" value={inputs.taxaMensal || ''} onChange={(v) => setInput('taxaMensal', v)} type="number" step="0.01" placeholder="0,00" hint="Opcional. Deixe 0 se não houver rendimento." />
+          </>
+        )
+      case 'juros-compostos':
+        return (
+          <>
+            <InputField id="valorInicial" label="Valor Inicial" value={inputs.valorInicial || ''} onChange={(v) => handleMoeda('valorInicial', v)} placeholder="R$ 0,00" />
+            <InputField id="aporteMensal" label="Aporte Mensal (opcional)" value={inputs.aporteMensal || ''} onChange={(v) => handleMoeda('aporteMensal', v)} placeholder="R$ 0,00" hint="Quanto será adicionado todo mês" />
+            <InputField id="taxaMensal" label="Taxa de Juros (% ao mês)" value={inputs.taxaMensal || ''} onChange={(v) => setInput('taxaMensal', v)} type="number" step="0.01" placeholder="0,00" />
+            <InputField id="meses" label="Período (meses)" value={inputs.meses || ''} onChange={(v) => setInput('meses', v)} type="number" placeholder="12" />
+          </>
+        )
+      case 'juros-simples':
+        return (
+          <>
+            <InputField id="valorInicial" label="Valor Inicial" value={inputs.valorInicial || ''} onChange={(v) => handleMoeda('valorInicial', v)} placeholder="R$ 0,00" />
+            <InputField id="taxaMensal" label="Taxa de Juros (% ao mês)" value={inputs.taxaMensal || ''} onChange={(v) => setInput('taxaMensal', v)} type="number" step="0.01" placeholder="0,00" />
+            <InputField id="meses" label="Período (meses)" value={inputs.meses || ''} onChange={(v) => setInput('meses', v)} type="number" placeholder="12" />
+          </>
+        )
+      case 'emprestimo':
+        return (
+          <>
+            <InputField id="valorEmprestimo" label="Valor do Empréstimo" value={inputs.valorEmprestimo || ''} onChange={(v) => handleMoeda('valorEmprestimo', v)} placeholder="R$ 0,00" />
+            <InputField id="taxaMensal" label="Taxa de Juros (% ao mês)" value={inputs.taxaMensal || ''} onChange={(v) => setInput('taxaMensal', v)} type="number" step="0.01" placeholder="0,00" />
+            <InputField id="meses" label="Prazo (meses)" value={inputs.meses || ''} onChange={(v) => setInput('meses', v)} type="number" placeholder="12" />
+          </>
+        )
+      case 'financiamento':
+        return (
+          <>
+            <InputField id="valorFinanciamento" label="Valor do Financiamento" value={inputs.valorFinanciamento || ''} onChange={(v) => handleMoeda('valorFinanciamento', v)} placeholder="R$ 0,00" />
+            <InputField id="taxaMensal" label="Taxa de Juros (% ao mês)" value={inputs.taxaMensal || ''} onChange={(v) => setInput('taxaMensal', v)} type="number" step="0.01" placeholder="0,00" />
+            <InputField id="meses" label="Prazo (meses)" value={inputs.meses || ''} onChange={(v) => setInput('meses', v)} type="number" placeholder="360" hint="Ex: 360 meses = 30 anos" />
+          </>
+        )
+      case 'parcelas':
+        return (
+          <>
+            <InputField id="valorTotal" label="Valor Total" value={inputs.valorTotal || ''} onChange={(v) => handleMoeda('valorTotal', v)} placeholder="R$ 0,00" />
+            <InputField id="numeroParcelas" label="Número de Parcelas" value={inputs.numeroParcelas || ''} onChange={(v) => setInput('numeroParcelas', v)} type="number" placeholder="12" />
+            <InputField id="taxaJuros" label="Taxa de Juros (% ao mês)" value={inputs.taxaJuros || ''} onChange={(v) => setInput('taxaJuros', v)} type="number" step="0.01" placeholder="0,00" hint="Deixe 0 para parcelas sem juros" />
           </>
         )
       default:
@@ -427,6 +521,68 @@ export function CalculadoraTemplate({ calculadoraKey }: CalculadoraTemplateProps
               ...(result.totalJuros > 0 ? [{ label: 'Total em Juros', valor: result.totalJuros }] : []),
               ...(result.valorFinal ? [{ label: 'Valor Final', valor: result.valorFinal, destaque: true }] : []),
               { label: 'Meses Necessários', valor: `${result.meses} meses` as string | number, destaque: true },
+            ]}
+          />
+        )
+      case 'juros-compostos':
+        return (
+          <ResultadoCard
+            titulo="Juros Compostos"
+            descricao={`Após ${inputs.meses || '0'} meses`}
+            itens={[
+              { label: 'Montante Final', valor: result.montanteFinal, destaque: true },
+              { label: 'Total Investido', valor: result.totalInvestido },
+              { label: 'Total em Juros', valor: result.totalJuros },
+            ]}
+          />
+        )
+      case 'juros-simples':
+        return (
+          <ResultadoCard
+            titulo="Juros Simples"
+            descricao={`Após ${inputs.meses || '0'} meses`}
+            itens={[
+              { label: 'Montante Final', valor: result.montante, destaque: true },
+              { label: 'Total de Juros', valor: result.juros },
+              { label: 'Taxa Total', valor: result.taxaTotal },
+            ]}
+          />
+        )
+      case 'emprestimo':
+        return (
+          <ResultadoCard
+            titulo="Simulação de Empréstimo"
+            descricao={`Tabela Price — ${inputs.meses || '0'} parcelas`}
+            itens={[
+              { label: 'Valor da Parcela', valor: result.valorParcela, destaque: true },
+              { label: 'Total a Pagar', valor: result.totalPago },
+              { label: 'Total de Juros', valor: result.totalJuros, negativo: true },
+              { label: 'CET', valor: result.cet },
+            ]}
+          />
+        )
+      case 'financiamento':
+        return (
+          <ResultadoCard
+            titulo="Simulação de Financiamento"
+            descricao={`Sistema SAC — ${inputs.meses || '0'} parcelas`}
+            itens={[
+              { label: 'Primeira Parcela', valor: result.primeiraParcela, destaque: true },
+              { label: 'Última Parcela', valor: result.ultimaParcela },
+              { label: 'Total a Pagar', valor: result.totalPago },
+              { label: 'Total de Juros', valor: result.totalJuros, negativo: true },
+            ]}
+          />
+        )
+      case 'parcelas':
+        return (
+          <ResultadoCard
+            titulo="Calculadora de Parcelas"
+            descricao={result.totalJuros > 0 ? `Com juros de ${inputs.taxaJuros || '0'}% ao mês` : 'Sem juros'}
+            itens={[
+              { label: 'Valor da Parcela', valor: result.valorParcela, destaque: true },
+              { label: 'Total a Pagar', valor: result.totalPago },
+              ...(result.totalJuros > 0 ? [{ label: 'Total de Juros', valor: result.totalJuros, negativo: true as const }] : []),
             ]}
           />
         )

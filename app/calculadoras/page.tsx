@@ -8,10 +8,22 @@ import { SITE_URL } from '@/lib/config'
 export const metadata: Metadata = {
   title: 'Calculadoras Financeiras | Bolso do Trabalhador',
   description: 'Ferramentas gratuitas para calcular juros, simular empréstimos, organizar o orçamento e planejar seu futuro financeiro.',
+  keywords: ['calculadora financeira', 'calcular juros', 'simular empréstimo', 'calculadora online', 'ferramenta financeira'],
   alternates: { canonical: `${SITE_URL}/calculadoras` },
   openGraph: {
     title: 'Calculadoras Financeiras | Bolso do Trabalhador',
     description: 'Ferramentas gratuitas para calcular juros, simular empréstimos, organizar o orçamento e planejar seu futuro financeiro.',
+    url: `${SITE_URL}/calculadoras`,
+    siteName: 'Bolso do Trabalhador',
+    locale: 'pt_BR',
+    type: 'website',
+    images: [{ url: `${SITE_URL}/og-image.png`, width: 1200, height: 630, alt: 'Calculadoras Financeiras — Bolso do Trabalhador' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Calculadoras Financeiras | Bolso do Trabalhador',
+    description: 'Ferramentas gratuitas para calcular juros, simular empréstimos e organizar o orçamento.',
+    images: [`${SITE_URL}/og-image.png`],
   },
 }
 

@@ -82,7 +82,7 @@ export const posts: Post[] = [
   },
   {
     slug: 'como-aumentar-score-de-credito',
-    title: 'Como aumentar o score de crédito rápido',
+    title: 'Como aumentar o score de crédito de forma consistente',
     description: 'Aprenda estratégias práticas para aumentar seu score de crédito em 2026. Dicas sobre cadastro positivo, pagamento de contas e uso do cartão.',
     date: '2026-06-01',
     category: 'Score',
@@ -126,7 +126,7 @@ export const posts: Post[] = [
   },
   {
     slug: 'melhores-cartoes-score-baixo',
-    title: 'Melhores cartões de crédito para score baixo em 2026',
+    title: 'Cartões de crédito que podem ser opções para quem tem score baixo',
     description: 'Descubra quais cartões aprovam mesmo com score baixo. Cartões sem anuidade, com limite justo e que ajudam a aumentar seu score.',
     date: '2026-06-01',
     category: 'Cartões',
@@ -293,7 +293,1332 @@ export const posts: Post[] = [
       { question: 'Vale mais a pena alugar ou comprar?', answer: 'Depende do seu planejamento. Se você pretende ficar na mesma cidade por mais de 5 anos, comprar pode valer a pena. Para períodos menores, alugar é mais vantajoso.' },
     ],
   },
-]
+  // === DÍVIDAS — ARTIGO 1/5 ===
+  {
+    slug: 'vale-a-pena-trocar-divida-cartao-por-emprestimo',
+    title: 'Vale a pena trocar dívida do cartão por empréstimo?',
+    description: 'Descubra se compensa pegar um empréstimo pessoal para pagar o cartão de crédito. Compare juros, prazos e custos antes de decidir.',
+    date: '2026-06-04',
+    category: 'Dívidas',
+    keywords: ['trocar dívida cartão por empréstimo', 'refinanciar cartão crédito', 'juros rotativo cartão', 'emprestimo para pagar cartão', 'consolidar dívidas'],
+    relatedCalculators: [
+      { name: 'Troca de Dívidas', href: '/calculadoras/troca-dividas' },
+      { name: 'Quitação de Dívidas', href: '/calculadoras/quitacao-dividas' },
+      { name: 'Empréstimo', href: '/calculadoras/emprestimo' },
+    ],
+    content: `
+<section><h2>O problema do rotativo do cartão</h2>
+<p>Se você já deixou de pagar a fatura integral do cartão de crédito, sabe que os juros do rotativo são os mais altos do mercado financeiro brasileiro. Em 2026, a taxa média do rotativo gira em torno de 12% ao mês — isso dá mais de 280% ao ano.</p>
+<p>Para ter uma ideia, uma dívida de R$ 2.000 no rotativo pode se transformar em R$ 6.200 em 12 meses se você pagar só o mínimo. É assustador, mas é a realidade de milhões de brasileiros.</p>
+<p>Por isso, muita gente considera pegar um empréstimo pessoal com juros mais baixos para quitar a fatura do cartão. A pergunta é: isso realmente compensa?</p>
+</section>
+<section><h2>Quando a troca vale a pena</h2>
+<p>A troca vale a pena quando o empréstimo tem taxa de juros significativamente menor que o rotativo. Vamos a um exemplo prático:</p>
+<p>Digamos que você deve R$ 5.000 no cartão com juros de 12% ao mês. Pagando R$ 500 por mês, você leva 14 meses para quitar e paga cerca de R$ 1.800 de juros.</p>
+<p>Se você pegar um empréstimo pessoal de R$ 5.000 a 4% ao mês em 12 parcelas, cada parcela fica em torno de R$ 530 e o total de juros é de aproximadamente R$ 1.360. A economia é de R$ 440.</p>
+<p>Agora, se você consegue um empréstimo consignado a 2% ao mês, a parcela para 12 meses fica em torno de R$ 470 e o total de juros cai para R$ 640. A economia sobe para R$ 1.160.</p>
+<p>Use nossa <a href="/calculadoras/troca-dividas">calculadora de troca de dívidas</a> para simular seu caso específico.</p>
+</section>
+<section><h2>Quando a troca NÃO vale a pena</h2>
+<p>A troca não compensa em três situações:</p>
+<p><strong>1. Você usa o cartão novamente sem controle.</strong> Se você pega o empréstimo, quita o cartão e continua usando o cartão sem pagar integralmente, vai acabar com duas dívidas em vez de uma.</p>
+<p><strong>2. O prazo do empréstimo é muito longo.</strong> Um empréstimo de 60 meses pode ter parcela baixa, mas o total de juros pode superar o rotativo. Sempre compare o custo total, não só a parcela.</p>
+<p><strong>3. A taxa de juros não é tão menor.</strong> Se a diferença entre a taxa do cartão e do empréstimo é pequena (menos de 5 pontos percentuais), a economia pode não valer o risco.</p>
+</section>
+<section><h2>Passo a passo para decidir</h2>
+<ol>
+<li>Calcule quanto você deve no cartão e a taxa de juros</li>
+<li>Pesquise empréstimos em pelo menos 3 instituições</li>
+<li>Compare o CET (Custo Efetivo Total), não só a taxa de juros</li>
+<li>Simule as parcelas nas duas opções</li>
+<li>Veja se a economia realmente compensa</li>
+</ol>
+</section>
+<section><h2>Conclusão</h2>
+<p>Trocar dívida do cartão por empréstimo pode ser uma boa estratégia, mas não é a única solução. Antes de contratar qualquer empréstimo, tenha certeza de que vai conseguir pagar as parcelas e que não vai voltar a usar o cartão sem controle. O problema muitas vezes não é a dívida, mas o hábito.</p>
+</section>`,
+    faq: [
+      { question: 'Qual a taxa de juros do rotativo do cartão em 2026?', answer: 'A taxa média do rotativo está em torno de 12% ao mês, segundo dados do Banco Central. Isso equivale a mais de 280% ao ano.' },
+      { question: 'Empréstimo negativado tem juros mais baixos que o cartão?', answer: 'Depende. Empréstimos para negativados costumam ter taxas entre 4% e 10% ao mês. Ainda assim, podem ser mais baratos que o rotativo de 12% ao mês.' },
+      { question: 'O que é CET e por que ele importa?', answer: 'O CET (Custo Efetivo Total) inclui juros, taxas, seguros e todos os encargos do empréstimo. Ele é mais importante que a taxa de juros isolada, pois mostra o custo real.' },
+      { question: 'Vale a pena parcelar a fatura do cartão?', answer: 'O parcelamento da fatura tem juros menores que o rotativo, mas ainda são altos. Compare com um empréstimo pessoal antes de decidir.' },
+      { question: 'Como evitar voltar a ter dívida depois de quitar?', answer: 'Crie um orçamento mensal, reduza o limite do cartão se necessário e mantenha uma reserva de emergência para imprevistos.' },
+    ],
+  },
+  // === DÍVIDAS — ARTIGO 2/5 ===
+  {
+    slug: 'como-negociar-dividas-diretamente-com-banco',
+    title: 'Como negociar dívidas diretamente com o banco',
+    description: 'Guia prático para negociar dívidas com bancos e credores. Dicas de abordagem, descontos reais e como evitar golpes.',
+    date: '2026-06-04',
+    category: 'Dívidas',
+    keywords: ['negociar dívidas banco', 'renegociar dívida', 'acordo banco', 'como negociar divida', 'desconto dívida'],
+    relatedCalculators: [
+      { name: 'Quitação de Dívidas', href: '/calculadoras/quitacao-dividas' },
+      { name: 'Comprometimento de Renda', href: '/calculadoras/comprometimento-renda' },
+    ],
+    content: `
+<section><h2>Por que os bancos negociam?</h2>
+<p>Banco não quer seu nome sujo. Banco quer receber o dinheiro dele, mesmo que seja menos do que você deve. É por isso que a negociação de dívidas existe e funciona.</p>
+<p>Quando uma dívida fica muito tempo sem pagamento, o banco começa a provisionar essa perda e fica mais disposto a aceitar descontos. Quanto mais tempo de atraso, maior tende a ser o desconto.</p>
+</section>
+<section><h2>Antes de ligar para o banco</h2>
+<p>Não ligue sem preparo. Antes de qualquer contato:</p>
+<ul>
+<li>Saiba exatamente quanto você deve (valor original + juros)</li>
+<li>Defina quanto você pode pagar por mês</li>
+<li>Pesquise plataformas como Serasa Limpa Nome para ver ofertas</li>
+<li>Tenha em mãos seu CPF e dados do contrato</li>
+</ul>
+</section>
+<section><h2>Como abordar a negociação</h2>
+<p>A abordagem certa faz diferença. Veja um roteiro prático:</p>
+<p><strong>1. Ligue para a central de negociação.</strong> Grandes bancos têm centrais específicas para renegociação. Peça para falar com o setor de recuperação de crédito.</p>
+<p><strong>2. Apresente sua situação real.</strong> Seja honesto sobre sua capacidade de pagamento. Dizer que pode pagar R$ 200 por mês e realmente pagar é melhor que prometer R$ 500 e não conseguir.</p>
+<p><strong>3. Peça desconto.</strong> Pergunte qual o menor valor para quitação à vista para sua dívida. Muitas vezes o desconto chega a 70% ou 80% do valor total.</p>
+<p><strong>4. Peça parcelamento sem juros.</strong> Se não puder pagar à vista, negocie parcelas fixas sem acréscimo de juros.</p>
+<p><strong>5. Registre tudo.</strong> Anote o protocolo, o nome do atendente, o valor acordado e as condições. Peça o contrato por escrito ou por e-mail.</p>
+</section>
+<section><h2>Exemplo prático</h2>
+<p>João deve R$ 5.000 no cartão de crédito do Banco X, mas já está há 8 meses sem pagar. O banco oferece:</p>
+<ul>
+<li>Quitação à vista: R$ 1.500 (70% de desconto)</li>
+<li>Parcelamento em 12x de R$ 200 (sem juros)</li>
+</ul>
+<p>João tem R$ 1.500 guardados e opta pela quitação à vista. Economizou R$ 3.500.</p>
+<p>Se João não tivesse o valor, o parcelamento de R$ 200 por 12 meses também é um bom negócio contra os R$ 500 mensais que ele pagaria no rotativo.</p>
+</section>
+<section><h2>Plataformas de negociação</h2>
+<p>Além de negociar diretamente com o banco, você pode usar:</p>
+<ul>
+<li><strong>Serasa Limpa Nome:</strong> ofertas de descontos de várias empresas</li>
+<li><strong>Acordo OK:</strong> plataforma da Boa Vista para negociação</li>
+<li><strong>SPC Brasil:</strong> plataforma de negociação do SPC</li>
+<li><strong>Consumidor.gov.br:</strong> para registrar reclamações se a negociação não avançar</li>
+</ul>
+</section>
+<section><h2>Cuidados ao negociar</h2>
+<ul>
+<li>Desconfie de propostas milagrosas — se parece bom demais, pode ser golpe</li>
+<li>Só pague após receber o contrato por escrito</li>
+<li>Verifique se o contrato inclui a baixa da negativação dos órgãos de crédito</li>
+<li>Guarde todos os comprovantes de pagamento</li>
+</ul>
+</section>
+<section><h2>Conclusão</h2>
+<p>Negociar dívida com banco é possível e pode trazer descontos significativos. O segredo é se preparar, ser honesto sobre sua capacidade de pagamento e não aceitar a primeira oferta sem comparar. Lembre-se: o banco prefere receber menos do que não receber nada.</p>
+</section>`,
+    faq: [
+      { question: 'Qual o maior desconto que posso conseguir?', answer: 'Descontos de 50% a 80% são comuns em dívidas antigas (mais de 6 meses). Quanto mais tempo de atraso, maior tende a ser o desconto.' },
+      { question: 'Negociar a dívida limpa meu nome na hora?', answer: 'Após o pagamento ou acordo, o banco tem até 5 dias úteis para baixar a negativação nos órgãos de crédito.' },
+      { question: 'Posso negociar dívida sem pagar entrada?', answer: 'Depende da política do banco. Alguns aceitam parcelamento sem entrada, mas o desconto costuma ser menor.' },
+      { question: 'O que fazer se o banco não aceitar minha oferta?', answer: 'Tente novamente em alguns dias, fale com outro atendente ou use plataformas como Serasa Limpa Nome. Você também pode registrar reclamação no Consumidor.gov.br.' },
+      { question: 'Negociar pelo Serasa é seguro?', answer: 'Sim, o Serasa Limpa Nome é uma plataforma segura. Verifique se o pagamento é direto à empresa credora e guarde os comprovantes.' },
+    ],
+  },
+  // === DÍVIDAS — ARTIGO 3/5 ===
+  {
+    slug: 'qual-divida-devo-pagar-primeiro',
+    title: 'Qual dívida devo pagar primeiro?',
+    description: 'Aprenda a priorizar suas dívidas corretamente. Entenda qual dívida pagar primeiro com base nos juros, valor e impacto no score.',
+    date: '2026-06-04',
+    category: 'Dívidas',
+    keywords: ['qual divida pagar primeiro', 'priorizar dívidas', 'divida mais cara', 'juros mais altos', 'ordem pagamento dívidas'],
+    relatedCalculators: [
+      { name: 'Quitação de Dívidas', href: '/calculadoras/quitacao-dividas' },
+      { name: 'Comprometimento de Renda', href: '/calculadoras/comprometimento-renda' },
+    ],
+    content: `
+<section><h2>Nem toda dívida é igual</h2>
+<p>Se você tem mais de uma dívida, saber qual pagar primeiro pode fazer uma diferença enorme no bolso. Pagar a dívida errada primeiro pode significar milhares de reais a mais em juros.</p>
+<p>Vamos usar um exemplo prático. Maria tem três dívidas:</p>
+<ul>
+<li>R$ 2.000 no cartão de crédito (12% ao mês)</li>
+<li>R$ 5.000 em empréstimo pessoal (4% ao mês)</li>
+<li>R$ 40.000 em financiamento imobiliário (0,7% ao mês)</li>
+</ul>
+<p>Com R$ 800 por mês para pagar dívidas, onde ela deve colocar o dinheiro?</p>
+</section>
+<section><h2>Método 1: Priorize os juros mais altos (avalanche)</h2>
+<p>Este método é o mais recomendado financeiramente. Você paga primeiro a dívida com a maior taxa de juros, independentemente do valor.</p>
+<p>No exemplo da Maria:</p>
+<ul>
+<li><strong>1º:</strong> Cartão de crédito (12% a.m.)</li>
+<li><strong>2º:</strong> Empréstimo pessoal (4% a.m.)</li>
+<li><strong>3º:</strong> Financiamento imobiliário (0,7% a.m.)</li>
+</ul>
+<p>Se ela colocar todo o dinheiro extra no cartão, pode quitar essa dívida em 3 meses. Depois, direciona para o empréstimo. O financiamento, por ter juros baixos, pode manter o pagamento mínimo.</p>
+<p>A vantagem do método avalanche é que você paga menos juros no total. A desvantagem é que pode demorar mais para ver resultados se a dívida de juros altos for grande.</p>
+</section>
+<section><h2>Método 2: Priorize o menor valor (bola de neve)</h2>
+<p>Este método é melhor para quem precisa de motivação. Você paga primeiro a menor dívida, independentemente dos juros.</p>
+<p>A ideia é que, ao quitar uma dívida pequena rápido, você ganha confiança e se motiva a continuar. O risco é que você pode pagar mais juros no total se a dívida pequena tiver juros baixos e a grande tiver juros altos.</p>
+</section>
+<section><h2>E as dívidas negativadas?</h2>
+<p>Dívidas negativadas têm impacto no score de crédito. Se você tem dívidas negativadas, uma boa estratégia é:</p>
+<ol>
+<li>Negocie descontos para quitação (geralmente acima de 50%)</li>
+<li>Priorize dívidas que estão negativadas se puder pagar com desconto</li>
+<li>Após quitar, acompanhe a baixa da negativação nos órgãos de crédito</li>
+</ol>
+</section>
+<section><h2>Estratégia recomendada</h2>
+<p>Na prática, uma combinação dos dois métodos funciona melhor:</p>
+<ol>
+<li><strong>Primeiro:</strong> negocie descontos nas dívidas mais antigas</li>
+<li><strong>Segundo:</strong> quite a dívida com juros mais altos (cartão, cheque especial)</li>
+<li><strong>Terceiro:</strong> quite as dívidas menores para liberar fluxo de caixa</li>
+<li><strong>Quarto:</strong> mantenha pagamento mínimo em dívidas de juros baixos (financiamentos)</li>
+</ol>
+<p>Use nossa <a href="/calculadoras/quitacao-dividas">calculadora de quitação de dívidas</a> para simular diferentes estratégias e ver qual funciona melhor para seu caso.</p>
+</section>
+<section><h2>Conclusão</h2>
+<p>A melhor dívida para pagar primeiro é a que tem o maior juro, mas isso não significa que você deve ignorar as outras. Negocie descontos, priorize o que aperta mais o bolso e, acima de tudo, não crie dívidas novas enquanto paga as antigas.</p>
+</section>`,
+    faq: [
+      { question: 'Devo pagar o financiamento imobiliário primeiro?', answer: 'Geralmente não. O financiamento imobiliário tem juros baixos (0,5% a 0,9% ao mês) e o imóvel é um bem que se valoriza. Priorize dívidas de juros altos como cartão e cheque especial.' },
+      { question: 'O que acontece se eu parar de pagar todas as dívidas?', answer: 'Seu nome será negativado, o score cai drasticamente e você pode ser cobrado judicialmente. Negociar é sempre melhor que ignorar.' },
+      { question: 'Vale a pena vender algo para pagar dívida?', answer: 'Sim, se for algo que você não usa ou que pode substituir. Vender um carro para quitar dívidas de cartão pode ser uma decisão financeira inteligente.' },
+      { question: 'Como saber a taxa de juros de cada dívida?', answer: 'Consulte o contrato, o aplicativo do banco ou ligue para a central de atendimento. A taxa de juros mensal sempre deve estar visível no extrato.' },
+      { question: 'Devo pagar dívidas antigas prescritas?', answer: 'Dívidas prescritas (mais de 5 anos) não podem ser cobradas judicialmente, mas continuam negativadas. Negocie com desconto para limpar o nome se precisar de crédito.' },
+    ],
+  },
+  // === DÍVIDAS — ARTIGO 4/5 ===
+  {
+    slug: 'o-que-acontece-se-parar-de-pagar-cartao',
+    title: 'O que acontece se eu parar de pagar o cartão?',
+    description: 'Entenda as consequências reais de parar de pagar a fatura do cartão de crédito: juros, negativação, protesto, ações judiciais e como resolver.',
+    date: '2026-06-04',
+    category: 'Dívidas',
+    keywords: ['parar de pagar cartão', 'não pagar fatura cartão', 'consequências cartão', 'nome sujo cartão', 'rotativo cartão'],
+    relatedCalculators: [
+      { name: 'Quitação de Dívidas', href: '/calculadoras/quitacao-dividas' },
+      { name: 'Juros Compostos', href: '/calculadoras/juros-compostos' },
+    ],
+    content: `
+<section><h2>O que acontece mês a mês</h2>
+<p>Parar de pagar o cartão de crédito não é uma decisão simples. As consequências vão muito além de &quot;ficar com nome sujo&quot;. Veja o que acontece em cada etapa:</p>
+</section>
+<section><h2>Primeiro mês sem pagar</h2>
+<p>Você não pagou a fatura integral nem o mínimo. A dívida entra no crédito rotativo, com juros de aproximadamente 12% ao mês. Uma fatura de R$ 2.000 vira R$ 2.240 no mês seguinte, R$ 2.509 no segundo mês e assim por diante.</p>
+<p>O banco começa a ligar e enviar mensagens cobrando o pagamento. Nesta fase, ainda é fácil resolver: pague a fatura atualizada ou negocie o parcelamento.</p>
+</section>
+<section><h2>Segundo ao terceiro mês</h2>
+<p>Os juros continuam correndo. A dívida de R$ 2.000 já pode estar em R$ 2.800. O banco intensifica as cobranças. Seu nome ainda não está negativado, mas seu score de crédito já começa a cair.</p>
+<p>Importante: o banco ainda não pode negativar seu nome nos primeiros 30 dias de atraso. A negativação costuma ocorrer entre 30 e 60 dias.</p>
+</section>
+<section><h2>Negativação do nome</h2>
+<p>Entre 30 e 60 dias de atraso, o banco negativa seu nome nos órgãos de proteção ao crédito (Serasa, Boa Vista, SPC). Isso significa que:</p>
+<ul>
+<li>Você não consegue abrir contas em bancos</li>
+<li>Não consegue cartão de crédito novo</li>
+<li>Não consegue financiamento ou empréstimo</li>
+<li>Pode perder o emprego (algumas empresas consultam Serasa)</li>
+<li>Dificuldade para alugar imóvel (imobiliárias consultam)</li>
+</ul>
+</section>
+<section><h2>Após 6 meses</h2>
+<p>A dívida já cresceu significativamente. R$ 2.000 viram mais de R$ 4.000 com juros compostos. O banco pode ter terceirizado a cobrança para empresas especializadas, que ligam insistentemente.</p>
+<p>Seu score de crédito está no nível mais baixo. O nome continua negativado até que a dívida seja paga ou prescrita.</p>
+</section>
+<section><h2>Após 5 anos (prescrição)</h2>
+<p>Após 5 anos, a dívida prescreve — o banco não pode mais cobrar judicialmente. No entanto:</p>
+<ul>
+<li>O nome continua negativado até que alguém pague</li>
+<li>A dívida continua existindo e crescendo com juros</li>
+<li>O banco pode vender a dívida para outra empresa</li>
+<li>Você ainda pode ser cobrado, só não pode ser processado</li>
+</ul>
+<p>Importante: mesmo prescrita, a dívida não desaparece. Para limpar o nome, você precisa negociar e pagar.</p>
+</section>
+<section><h2>Ação judicial</h2>
+<p>Se a dívida for de valor alto (acima de R$ 10.000 a R$ 15.000), o banco pode entrar com ação judicial de cobrança. Neste caso:</p>
+<ul>
+<li>Você será citado para pagar ou apresentar defesa</li>
+<li>Se não pagar, podem penhorar bens (carro, imóvel)</li>
+<li>Podem bloquear valores da sua conta bancária</li>
+<li>Podem descontar parte do salário (limitado a 30%)</li>
+</ul>
+<p>Mas atenção: a maioria das dívidas de cartão de valores menores não chega a ação judicial, pois o custo do processo não compensa para o banco.</p>
+</section>
+<section><h2>O que fazer se você já parou de pagar</h2>
+<ol>
+<li><strong>Não ignore.</strong> Quanto mais tempo passa, pior fica</li>
+<li><strong>Negocie.</strong> Ligue para o banco e peça desconto para quitação</li>
+<li><strong>Priorize.</strong> Se tiver várias dívidas, negocie a de cartão primeiro (maiores juros)</li>
+<li><strong>Use plataformas.</strong> Serasa Limpa Nome e Acordo OK podem ter ofertas melhores</li>
+<li><strong>Pague e espere a baixa.</strong> Após pagar, o banco tem 5 dias úteis para baixar a negativação</li>
+</ol>
+</section>
+<section><h2>Conclusão</h2>
+<p>Parar de pagar o cartão tem consequências sérias, mas não é o fim do mundo. Milhares de brasileiros negociam dívidas de cartão todos os dias e conseguem limpar o nome. O pior que você pode fazer é ignorar o problema. Quanto antes negociar, menos juros vai pagar e mais rápido recupera seu crédito.</p>
+</section>`,
+    faq: [
+      { question: 'Depois de quantos dias o nome vai para o Serasa?', answer: 'Geralmente entre 30 e 60 dias de atraso. O banco pode negativar a partir do primeiro dia de atraso, mas a maioria espera 30 dias.' },
+      { question: 'Parar de pagar o cartão pode levar à prisão?', answer: 'Não. Dívida de cartão de crédito não é crime. Você não pode ser preso por não pagar fatura. A cobrança é civil, não criminal.' },
+      { question: 'O desconto na negociação é maior depois de quanto tempo?', answer: 'O desconto aumenta com o tempo de atraso. Dívidas com mais de 6 meses costumam ter descontos de 50% a 80% para quitação à vista.' },
+      { question: 'Posso perder meu emprego por causa de nome sujo?', answer: 'Algumas empresas consultam o Serasa na contratação, principalmente para cargos financeiros. Não é regra, mas pode acontecer.' },
+      { question: 'Vale a pena pagar a dívida depois de 5 anos?', answer: 'Vale se você precisa limpar o nome para conseguir crédito. Com 5 anos ou mais, os descontos costumam ser ainda maiores — às vezes acima de 80%.' },
+    ],
+  },
+  // === DÍVIDAS — ARTIGO 5/5 ===
+  {
+    slug: 'como-montar-plano-sair-das-dividas',
+    title: 'Como montar um plano para sair das dívidas',
+    description: 'Monte um plano realista para sair das dívidas em 2026. Passos práticos, exemplos com valores reais e ferramentas gratuitas para te ajudar.',
+    date: '2026-06-04',
+    category: 'Dívidas',
+    keywords: ['plano sair das dívidas', 'como sair das dívidas passo a passo', 'planejamento financeiro dívidas', 'sair do vermelho', 'organizar finanças'],
+    relatedCalculators: [
+      { name: 'Orçamento Familiar', href: '/calculadoras/orcamento-familiar' },
+      { name: 'Quitação de Dívidas', href: '/calculadoras/quitacao-dividas' },
+      { name: 'Economia Mensal', href: '/calculadoras/economia-mensal' },
+    ],
+    content: `
+<section><h2>Por que você precisa de um plano</h2>
+<p>Sair das dívidas sem um plano é como tentar atravessar São Paulo sem GPS. Você pode até chegar, mas vai gastar muito mais tempo e combustível no caminho.</p>
+<p>Um plano de saída das dívidas é simples: ele organiza suas contas, define quanto você pode pagar por mês e mostra exatamente quando você estará livre. Vamos montar o seu.</p>
+</section>
+<section><h2>Passo 1: Diagnóstico financeiro</h2>
+<p>Pegue papel e caneta (ou uma planilha) e anote:</p>
+<ul>
+<li><strong>Renda total:</strong> quanto entra na sua conta por mês (salário, freela, renda extra)</li>
+<li><strong>Gastos essenciais:</strong> aluguel, comida, transporte, plano de saúde, contas</li>
+<li><strong>Dívidas:</strong> liste cada dívida com valor, taxa de juros e credor</li>
+</ul>
+<p>Use nossa <a href="/calculadoras/orcamento-familiar">calculadora de orçamento familiar</a> para fazer esse diagnóstico de forma organizada.</p>
+</section>
+<section><h2>Passo 2: Calcule sua capacidade de pagamento</h2>
+<p>Subtraia seus gastos essenciais da sua renda. O que sobra é o que você pode usar para pagar dívidas. Vamos ao exemplo do Pedro:</p>
+<ul>
+<li>Renda líquida: R$ 4.500</li>
+<li>Gastos essenciais: R$ 3.000</li>
+<li><strong>Disponível para dívidas: R$ 1.500</strong></li>
+</ul>
+<p>Se o Pedro não tem R$ 1.500 sobrando, ele precisa reduzir gastos ou aumentar a renda antes de começar.</p>
+</section>
+<section><h2>Passo 3: Priorize as dívidas</h2>
+<p>Com a lista de dívidas em mãos, organize por taxa de juros (do maior para o menor):</p>
+<ol>
+<li>Cartão de crédito: R$ 3.000 a 12% a.m.</li>
+<li>Cheque especial: R$ 1.000 a 8% a.m.</li>
+<li>Empréstimo pessoal: R$ 5.000 a 4% a.m.</li>
+</ol>
+<p>Use nossa <a href="/calculadoras/quitacao-dividas">calculadora de quitação de dívidas</a> para simular o tempo e os juros de cada uma.</p>
+</section>
+<section><h2>Passo 4: Defina o cronograma</h2>
+<p>Com os R$ 1.500 disponíveis por mês, o plano do Pedro fica assim:</p>
+<ul>
+<li><strong>Mês 1 a 2:</strong> pagar R$ 3.000 do cartão (R$ 1.500/mês)</li>
+<li><strong>Mês 3:</strong> pagar R$ 1.000 do cheque especial (R$ 1.000) + R$ 500 no empréstimo</li>
+<li><strong>Mês 4 a 7:</strong> pagar o restante do empréstimo (R$ 4.500 / R$ 1.500 = 3 meses)</li>
+</ul>
+<p>Resultado: em 7 meses, Pedro está livre de todas as dívidas.</p>
+</section>
+<section><h2>Passo 5: Negocie para acelerar</h2>
+<p>Antes de começar a pagar, negocie descontos. Se o Pedro conseguir 50% de desconto no cartão (pagar R$ 1.500 em vez de R$ 3.000), ele sai das dívidas em 4 meses em vez de 7.</p>
+</section>
+<section><h2>Passo 6: Depois das dívidas</h2>
+<p>Quando as dívidas acabarem, não pare. Direcione o mesmo valor para:</p>
+<ol>
+<li><strong>Reserva de emergência:</strong> 6 meses de gastos essenciais</li>
+<li><strong>Objetivos financeiros:</strong> viagem, entrada de imóvel, curso</li>
+<li><strong>Investimentos:</strong> mesmo que sejam valores pequenos</li>
+</ol>
+</section>
+<section><h2>Exemplo de plano completo</h2>
+<p>Vamos usar o exemplo da Ana, que ganha R$ 3.800 líquidos:</p>
+<table>
+<tr><th>Dívida</th><th>Valor</th><th>Juros</th><th>Prioridade</th></tr>
+<tr><td>Cartão</td><td>R$ 2.500</td><td>12%</td><td>1ª</td></tr>
+<tr><td>Empréstimo pessoal</td><td>R$ 3.000</td><td>5%</td><td>2ª</td></tr>
+</table>
+<p>Gastos essenciais: R$ 2.500 | Disponível: R$ 1.300/mês</p>
+<p>Plano: negocia cartão com desconto de 60% → paga R$ 1.000 à vista. Depois, quita empréstimo em 3 meses (R$ 1.000/mês). Total: 4 meses para quitar tudo.</p>
+</section>
+<section><h2>Conclusão</h2>
+<p>Montar um plano para sair das dívidas não é complicado, mas exige honestidade sobre sua situação financeira. Pegue papel e caneta agora mesmo e faça seu diagnóstico. Quanto antes começar, mais cedo estará livre.</p>
+</section>`,
+    faq: [
+      { question: 'Qual o melhor aplicativo para controlar dívidas?', answer: 'Aplicativos como Organizze, Mobills e GuiaBolso ajudam a controlar gastos e acompanhar o pagamento de dívidas. O importante é escolher um e usar todos os dias.' },
+      { question: 'Devo usar minhas economias para pagar dívidas?', answer: 'Mantenha uma reserva mínima de emergência (1 mês de gastos) e use o resto para pagar dívidas de juros altos. Vale mais a pena que deixar o dinheiro parado.' },
+      { question: 'Como evitar novas dívidas enquanto pago as atuais?', answer: 'Corte o cartão de crédito temporariamente (deixe em casa), cancele o cheque especial e use apenas dinheiro ou débito.' },
+      { question: 'E se minha renda não for suficiente para pagar as dívidas?', answer: 'Você precisa aumentar a renda (horas extras, bicos, freelas) ou reduzir drasticamente os gastos. Não há saída mágica — é matemática.' },
+      { question: 'Posso incluir contas de casa no plano de dívidas?', answer: 'Não. Contas essenciais (aluguel, comida, luz) vêm primeiro. O plano de dívidas é sobre o que sobra depois de pagar o essencial.' },
+    ],
+  },
+  // === SCORE — ARTIGO 1/5 ===
+  {
+    slug: 'quanto-tempo-leva-para-score-aumentar',
+    title: 'Quanto tempo leva para o score aumentar?',
+    description: 'Descubra quanto tempo leva para aumentar o score de crédito e o que fazer para acelerar o processo. Exemplos reais e prazos realistas.',
+    date: '2026-06-04',
+    category: 'Score',
+    keywords: ['quanto tempo score aumenta', 'score demora para subir', 'aumentar score rápido', 'tempo score crédito', 'score serasa'],
+    relatedCalculators: [
+      { name: 'Capacidade de Endividamento', href: '/calculadoras/capacidade-endividamento' },
+      { name: 'Comprometimento de Renda', href: '/calculadoras/comprometimento-renda' },
+    ],
+    content: `
+<section><h2>Não existe milagre para score</h2>
+<p>Se você pesquisar na internet, vai encontrar dezenas de sites prometendo aumentar seu score em 7 dias. Isso não existe. Score de crédito é construído com base no seu comportamento financeiro real, e comportamento não muda da noite para o dia.</p>
+<p>Mas a boa notícia é que, com as ações certas, você pode ver resultados em poucos meses. Vamos entender o cronograma realista.</p>
+</section>
+<section><h2>Fatores que determinam a velocidade</h2>
+<p>O tempo para o score aumentar depende de vários fatores:</p>
+<ul>
+<li><strong>Situação atual:</strong> se você tem nome negativado, leva mais tempo</li>
+<li><strong>Cadastro Positivo:</strong> ativado? Acelera o processo</li>
+<li><strong>Histórico de pagamentos:</strong> quanto tempo de bom histórico</li>
+<li><strong>Renda e dívidas:</strong> relação entre o que você ganha e o que deve</li>
+</ul>
+</section>
+<section><h2>Cronograma realista</h2>
+<p><strong>De score 200 para 400:</strong> 3 a 6 meses. Basta ativar o Cadastro Positivo e pagar contas em dia.</p>
+<p><strong>De score 400 para 600:</strong> 6 a 12 meses. Precisa de histórico consistente de pagamentos, uso moderado do cartão e dívidas controladas.</p>
+<p><strong>De score 600 para 800:</strong> 12 a 24 meses. Exige histórico longo de pagamentos em dia, baixa utilização de crédito e diversidade de produtos financeiros.</p>
+<p><strong>Acima de 800:</strong> 2 a 5 anos. É o nível dos melhores pagadores. Exige anos de histórico impecável.</p>
+</section>
+<section><h2>Exemplo prático</h2>
+<p>Carlos tem score 350, nome negativado por uma dívida de R$ 800 que ele não pagou há 2 anos.</p>
+<p><strong>Mês 1:</strong> Carlos negocia a dívida, paga R$ 300 (desconto de 60%) e ativa o Cadastro Positivo. Score sobe para 400.</p>
+<p><strong>Mês 2 a 4:</strong> Carlos paga todas as contas em dia, usa o cartão com moderação. Score chega a 500.</p>
+<p><strong>Mês 5 a 8:</strong> Carlos continua com bons hábitos e pede aumento de limite. Score chega a 600.</p>
+<p><strong>Após 12 meses:</strong> Com um ano de histórico positivo, Carlos atinge 700.</p>
+</section>
+<section><h2>O que NÃO acelera o score</h2>
+<ul>
+<li>Pagar taxas para &quot;limpadores de nome&quot; (são golpes)</li>
+<li>Comprar produtos &quot;milagrosos&quot; para score</li>
+<li>Abrir várias contas ao mesmo tempo</li>
+<li>Solicitar vários cartões de uma vez</li>
+<li>Fazer simulações de crédito em muitos bancos</li>
+</ul>
+<p>O único jeito de aumentar o score é construindo um histórico financeiro positivo, mês após mês.</p>
+</section>
+<section><h2>Conclusão</h2>
+<p>Score não sobe da noite para o dia, mas sobe. Com Cadastro Positivo ativo, pagamentos em dia e uso consciente do crédito, você pode sair de 300 para 600 em 12 meses. O segredo é consistência, não velocidade.</p>
+</section>`,
+    faq: [
+      { question: 'Score 300 para 700 em 6 meses é possível?', answer: 'É muito difícil. Para subir de 300 para 700, você precisa de um histórico consistente de pagamentos, o que leva tempo. 6 meses é otimista demais. Espere de 12 a 18 meses.' },
+      { question: 'Ativar o Cadastro Positivo aumenta o score em quanto?', answer: 'O aumento varia de 50 a 150 pontos, dependendo do seu histórico de pagamentos. Se você sempre pagou contas em dia mas não tinha Cadastro Positivo, o aumento pode ser significativo.' },
+      { question: 'O score cai se eu não usar cartão de crédito?', answer: 'Pode cair levemente, porque o sistema não tem dados do seu comportamento com crédito. Usar o cartão e pagar integralmente ajuda a construir histórico.' },
+      { question: 'Consultar meu próprio score reduz a pontuação?', answer: 'Não. Consultar seu próprio score gratuitamente não afeta sua pontuação. Apenas consultas de instituições financeiras para análise de crédito podem impactar.' },
+      { question: 'Depois de limpar o nome, o score volta ao normal em quanto tempo?', answer: 'Após a baixa da negativação, o score começa a se recuperar imediatamente. Em 3 a 6 meses já é possível ver uma melhora significativa, desde que você mantenha bons hábitos.' },
+    ],
+  },
+  // === SCORE — ARTIGO 2/5 ===
+  {
+    slug: 'o-que-realmente-influencia-score-credito',
+    title: 'O que realmente influencia o score de crédito?',
+    description: 'Entenda todos os fatores que influenciam seu score de crédito. Da Serasa ao Boa Vista, saiba o que pesa mais na sua pontuação.',
+    date: '2026-06-04',
+    category: 'Score',
+    keywords: ['fatores score crédito', 'o que influencia score', 'score serasa fatores', 'como calcular score', 'pontuação crédito'],
+    relatedCalculators: [
+      { name: 'Comprometimento de Renda', href: '/calculadoras/comprometimento-renda' },
+      { name: 'Capacidade de Endividamento', href: '/calculadoras/capacidade-endividamento' },
+    ],
+    content: `
+<section><h2>Como o score é calculado?</h2>
+<p>Cada empresa de crédito tem sua fórmula, mas todas consideram fatores semelhantes. A Serasa, por exemplo, usa inteligência artificial para analisar milhões de dados e calcular a probabilidade de você pagar suas contas.</p>
+<p>O score vai de 0 a 1000. Quanto maior, menor o risco de inadimplência. E o mais importante: o score não é um número fixo — ele muda conforme seu comportamento.</p>
+</section>
+<section><h2>Fator 1: Histórico de pagamentos (peso: muito alto)</h2>
+<p>Este é o fator mais importante. A pergunta que o sistema faz é: você paga suas contas em dia? Ele analisa:</p>
+<ul>
+<li>Contas de luz, água, telefone, internet</li>
+<li>Faturas de cartão de crédito</li>
+<li>Parcelas de empréstimos e financiamentos</li>
+<li>Boletos em geral</li>
+</ul>
+<p>Um único atraso pode impactar negativamente, mas o efeito diminui com o tempo se você voltar a pagar em dia.</p>
+</section>
+<section><h2>Fator 2: Cadastro Positivo (peso: alto)</h2>
+<p>O Cadastro Positivo é um banco de dados que registra seus pagamentos em dia. Antes dele, o sistema só via seus atrasos. Agora, vê também seus acertos.</p>
+<p>Se você não ativou o Cadastro Positivo, está perdendo pontos importantes. A ativação é gratuita e pode ser feita pelo site da Serasa ou do Banco Central.</p>
+</section>
+<section><h2>Fator 3: Utilização do crédito (peso: médio-alto)</h2>
+<p>Quanto do seu limite de cartão você usa todo mês? O ideal é usar até 30% do limite. Se você tem um cartão com limite de R$ 5.000 e gasta R$ 4.500 todo mês, o sistema entende que você depende muito do crédito.</p>
+<p>Exemplo: se seu limite é R$ 5.000, tente não passar de R$ 1.500 de fatura.</p>
+</section>
+<section><h2>Fator 4: Dívidas abertas (peso: alto)</h2>
+<p>Dívidas em aberto, especialmente as negativadas, derrubam o score. Cada dívida negativada pode reduzir sua pontuação em 100 a 200 pontos.</p>
+<p>O impacto é maior nos primeiros meses após a negativação e vai diminuindo com o tempo. Mas a única forma de eliminar o impacto é pagando ou negociando a dívida.</p>
+</section>
+<section><h2>Fator 5: Consultas ao CPF (peso: médio)</h2>
+<p>Cada vez que uma empresa consulta seu CPF para análise de crédito, isso pode reduzir seu score temporariamente. O impacto é pequeno (5 a 15 pontos) mas muitas consultas em curto período podem acumular.</p>
+<p>Dica: só solicite crédito quando realmente precisar. Evite fazer dez simulações de empréstimo no mesmo mês.</p>
+</section>
+<section><h2>Fator 6: Tempo de histórico (peso: médio)</h2>
+<p>Quanto mais tempo você tem de relacionamento com instituições financeiras, melhor. Uma conta de banco que você mantém há 5 anos vale mais que uma conta nova.</p>
+<p>Por isso não é recomendado ficar trocando de banco toda hora. Mantenha contas antigas ativas.</p>
+</section>
+<section><h2>O que NÃO influencia o score</h2>
+<ul>
+<li>Sua renda (score não é renda)</li>
+<li>Seu endereço ou bairro</li>
+<li>Quantos dependentes você tem</li>
+<li>Suas economias ou investimentos</li>
+<li>Seu estado civil</li>
+</ul>
+</section>
+<section><h2>Conclusão</h2>
+<p>O score de crédito é influenciado principalmente pelo seu comportamento com contas e dívidas. Pagar em dia, usar o cartão com moderação e ativar o Cadastro Positivo são as três ações que mais ajudam a aumentar sua pontuação.</p>
+</section>`,
+    faq: [
+      { question: 'Ter muitos cartões de crédito prejudica o score?', answer: 'Depende. Ter vários cartões com limites altos e usar pouco de cada um pode ser positivo. Mas ter muitos cartões com limites estourados é negativo.' },
+      { question: 'Será que meu salário influencia o score?', answer: 'Não diretamente. A Serasa e outras empresas não têm acesso ao seu salário. O que importa é seu comportamento com pagamentos, independentemente do valor.' },
+      { question: 'Cancelar cartão antigo reduz o score?', answer: 'Pode reduzir, porque você perde o histórico de crédito daquele cartão. Se o cartão não tem anuidade, mantenha ele ativo e use de vez em quando.' },
+      { question: 'Pagar contas no débito automático ajuda o score?', answer: 'Indiretamente sim, porque reduz a chance de atrasos. Mas o débito automático em si não é um fator que o sistema analisa.' },
+      { question: 'O score do Serasa e da Boa Vista são diferentes?', answer: 'Sim, cada empresa tem sua própria metodologia. Seu score Serasa pode ser 600 e seu Boa Vista 650. O importante é manter bons hábitos em ambos.' },
+    ],
+  },
+  // === SCORE — ARTIGO 3/5 ===
+  {
+    slug: 'cadastro-positivo-vale-a-pena',
+    title: 'Cadastro Positivo vale a pena?',
+    description: 'Entenda o que é o Cadastro Positivo, como funciona, se realmente vale a pena ativar e como isso pode aumentar seu score de crédito.',
+    date: '2026-06-04',
+    category: 'Score',
+    keywords: ['cadastro positivo', 'vale a pena cadastro positivo', 'ativar cadastro positivo', 'score cadastro positivo', 'banco central cadastro positivo'],
+    relatedCalculators: [
+      { name: 'Comprometimento de Renda', href: '/calculadoras/comprometimento-renda' },
+      { name: 'Capacidade de Endividamento', href: '/calculadoras/capacidade-endividamento' },
+    ],
+    content: `
+<section><h2>O que é o Cadastro Positivo?</h2>
+<p>O Cadastro Positivo é um banco de dados que reúne seu histórico de pagamentos. Criado em 2019 e atualizado em 2025, ele funciona como um &quot;currículo financeiro&quot; — mostra que você paga suas contas em dia.</p>
+<p>Antes do Cadastro Positivo, as empresas de crédito só viam seus atrasos e dívidas. Agora, elas também veem seus acertos. Isso é especialmente bom para quem nunca atrasou conta, mas tinha score baixo por falta de dados.</p>
+</section>
+<section><h2>Como funciona na prática?</h2>
+<p>Quando você ativa o Cadastro Positivo, seus pagamentos de contas passam a ser registrados:</p>
+<ul>
+<li>Conta de luz paga em dia → registrado como positivo</li>
+<li>Fatura do cartão paga integralmente → registrado como positivo</li>
+<li>Parcela do financiamento em dia → registrado como positivo</li>
+</ul>
+<p>Esses dados são usados pela Serasa, Boa Vista e SPC para calcular seu score de forma mais precisa.</p>
+</section>
+<section><h2>Quanto o score aumenta?</h2>
+<p>O aumento varia de pessoa para pessoa. Quem já pagava tudo em dia mas tinha score baixo por falta de dados pode ver um aumento de 100 a 200 pontos.</p>
+<p>Exemplo real: antes do Cadastro Positivo, o score de quem pagava tudo em dia mas tinha poucas contas no nome ficava na faixa de 400 a 500. Com o CP ativado, essas mesmas pessoas passaram para 600 a 700.</p>
+</section>
+<section><h2>Como ativar?</h2>
+<p>A ativação é gratuita e pode ser feita de duas formas:</p>
+<ol>
+<li><strong>Pelo site da Serasa:</strong> www.serasa.com.br/cadastro-positivo</li>
+<li><strong>Pelo Banco Central:</strong> https://www.bcb.gov.br/cidadaniafinanceira/cadastropositivo</li>
+</ol>
+<p>O processo leva menos de 5 minutos. Você só precisa do CPF e de alguns dados pessoais. Após a ativação, o banco de dados começa a receber informações dos seus pagamentos.</p>
+</section>
+<section><h2>Desvantagens do Cadastro Positivo</h2>
+<p>O Cadastro Positivo é positivo para quem paga contas em dia. Mas para quem atrasa com frequência, a ativação pode ter o efeito contrário — porque seus atrasos também ficarão visíveis.</p>
+<p>Outro ponto: seus dados de consumo (quanto você gasta, com o quê) ficam registrados. A lei garante que esses dados só podem ser usados para análise de crédito, mas é bom saber.</p>
+</section>
+<section><h2>Conclusão</h2>
+<p>O Cadastro Positivo vale a pena para a maioria das pessoas. Se você paga contas em dia, ative hoje mesmo. O aumento no score pode ser imediato e significativo. Se você tem muitas contas atrasadas, resolva primeiro os atrasos e depois ative.</p>
+</section>`,
+    faq: [
+      { question: 'Ativar o Cadastro Positivo é gratuito?', answer: 'Sim, a ativação e o acompanhamento são totalmente gratuitos. Desconfie de sites que cobram para ativar o Cadastro Positivo.' },
+      { question: 'Cadastro Positivo é obrigatório?', answer: 'Não, é opcional. Mas desde 2025 a adesão automática foi implementada para novos clientes de bancos. Se você já era cliente antes, precisa ativar manualmente.' },
+      { question: 'Posso desativar o Cadastro Positivo depois?', answer: 'Sim, você pode solicitar a exclusão dos seus dados a qualquer momento pelo site do Banco Central ou da Serasa.' },
+      { question: 'O Cadastro Positivo compartilha meus dados com outras empresas?', answer: 'Apenas com empresas de crédito autorizadas (Serasa, Boa Vista, SPC) e somente para análise de crédito. Seus dados não são vendidos para publicidade.' },
+      { question: 'O que acontece se eu ativar e depois parar de pagar contas?', answer: 'Seus atrasos também serão registrados, e seu score pode cair. O Cadastro Positivo mostra tanto o positivo quanto o negativo — é um retrato fiel do seu comportamento.' },
+    ],
+  },
+  // === SCORE — ARTIGO 4/5 ===
+  {
+    slug: 'score-400-aprova-cartao',
+    title: 'Score 400 aprova cartão?',
+    description: 'Descubra se é possível conseguir cartão de crédito com score 400. Opções reais, dicas para aumentar as chances e alternativas para quem tem score baixo.',
+    date: '2026-06-04',
+    category: 'Score',
+    keywords: ['score 400 aprova cartão', 'cartão score 400', 'score baixo cartão', 'cartão crédito score baixo', 'conseguir cartão score baixo'],
+    relatedCalculators: [
+      { name: 'Comprometimento de Renda', href: '/calculadoras/comprometimento-renda' },
+      { name: 'Parcelas', href: '/calculadoras/parcelas' },
+    ],
+    content: `
+<section><h2>Score 400: o que significa</h2>
+<p>Score 400 é considerado baixo (a escala vai de 0 a 1000). Nessa faixa, as instituições financeiras entendem que há risco maior de inadimplência. Mas isso não significa que você não consegue nenhum cartão.</p>
+<p>A resposta curta: sim, é possível conseguir cartão com score 400, mas as opções são limitadas. Você não vai conseguir um cartão Black ou premium, mas cartões de entrada e de lojas são viáveis.</p>
+</section>
+<section><h2>Opções de cartão para score 400</h2>
+<p><strong>Cartão Mercado Pago:</strong> Um dos mais fáceis de aprovar. Não exige análise de crédito tradicional e pode ser solicitado pelo app. O limite começa baixo, mas aumenta com o uso.</p>
+<p><strong>Cartão PagBank:</strong> Também costuma aprovar com score baixo. A conta digital é gratuita e o cartão é sem anuidade. O limite inicial costuma ser de R$ 200 a R$ 500.</p>
+<p><strong>Cartão de lojas:</strong> Magazine Luiza, Casas Bahia, Marisa e outras lojas oferecem cartões com aprovação facilitada. O limite é baixo e só pode ser usado na loja, mas ajuda a construir crédito.</p>
+<p><strong>Cartão consignado:</strong> Se você é servidor público, aposentado ou pensionista do INSS, o cartão consignado tem aprovação quase garantida porque as parcelas são descontadas direto da folha.</p>
+</section>
+<section><h2>Como aumentar suas chances</h2>
+<ul>
+<li><strong>Ative o Cadastro Positivo:</strong> mesmo com score 400, ter o CP ativado mostra que você paga contas em dia</li>
+<li><strong>Declare sua renda real:</strong> coloque sua renda completa, incluindo freelas e renda extra</li>
+<li><strong>Mantenha dados atualizados:</strong> endereço, telefone e e-mail corretos no banco</li>
+<li><strong>Comece com cartão de loja:</strong> é mais fácil aprovar e ajuda a construir histórico</li>
+<li><strong>Use o cartão e pague integralmente:</strong> após 6 meses de bom uso, peça aumento de limite</li>
+</ul>
+</section>
+<section><h2>O que NÃO fazer</h2>
+<ul>
+<li>Não solicite 10 cartões ao mesmo tempo (cada consulta reduz o score)</li>
+<li>Não pague por &quot;consultorias de score&quot; que prometem aprovação</li>
+<li>Não minta na renda (pode dar problema legal)</li>
+<li>Não desista se for negado em um banco — tente em outro</li>
+</ul>
+</section>
+<section><h2>Exemplo prático</h2>
+<p>Joana tem score 420, ganha R$ 2.800 como recepcionista e quer um cartão de crédito. Ela solicita em três lugares:</p>
+<ul>
+<li><strong>Nubank:</strong> negado (análise mais rigorosa)</li>
+<li><strong>Mercado Pago:</strong> aprovado com limite de R$ 300</li>
+<li><strong>Magazine Luiza:</strong> aprovado com limite de R$ 500</li>
+</ul>
+<p>Joana usa os dois cartões por 6 meses, pagando tudo em dia. Após 6 meses, o score dela sobe para 520. Ela pede aumento de limite no Mercado Pago e sobe para R$ 800. Depois de 12 meses, com score 620, ela consegue o Nubank.</p>
+</section>
+<section><h2>Alternativas ao cartão de crédito</h2>
+<p>Se você não consegue aprovação em nenhum cartão, existem alternativas:</p>
+<ul>
+<li><strong>Cartão pré-pago:</strong> você carrega e usa como crédito</li>
+<li><strong>Débito online:</strong> para compras na internet</li>
+<li><strong>Boleto parcelado:</strong> algumas lojas parcelam no boleto sem cartão</li>
+<li><strong>Cartão de loja com crédito próprio:</strong> como cartão da Renner, Riachuelo</li>
+</ul>
+</section>
+<section><h2>Conclusão</h2>
+<p>Score 400 não é o fim do mundo. Com as opções certas e paciência, você consegue um cartão e começa a construir crédito. O segredo é começar pequeno, pagar tudo em dia e deixar o score subir naturalmente.</p>
+</section>`,
+    faq: [
+      { question: 'Score 400 aprova cartão Nubank?', answer: 'Dificilmente. O Nubank costuma aprovar a partir de score 500-600. Mas você pode tentar, e se for negado, tente novamente após 6 meses melhorando o score.' },
+      { question: 'Quantos pontos o score sobe com o Cadastro Positivo?', answer: 'Para quem tem score 400 e paga contas em dia, a ativação pode gerar um aumento de 50 a 100 pontos em poucos meses.' },
+      { question: 'Cartão de loja ajuda a aumentar o score?', answer: 'Sim, porque o pagamento das parcelas é registrado e mostra que você honra seus compromissos. Use com moderação e sempre pague em dia.' },
+      { question: 'Qual o score mínimo para cartão de crédito?', answer: 'Não existe um mínimo oficial, pois cada banco define seus critérios. Alguns aprovam a partir de 400, outros só acima de 600.' },
+      { question: 'Ser negado em um cartão impede de tentar em outro?', answer: 'Não, mas cada tentativa gera uma consulta ao CPF que pode reduzir o score. Espere pelo menos 30 dias entre as tentativas.' },
+    ],
+  },
+  // === SCORE — ARTIGO 5/5 ===
+  {
+    slug: 'como-consultar-score-gratuitamente',
+    title: 'Como consultar score gratuitamente',
+    description: 'Aprenda a consultar seu score de crédito de graça nos principais órgãos. Serasa, Boa Vista e SPC Brasil, sem pagar nada.',
+    date: '2026-06-04',
+    category: 'Score',
+    keywords: ['consultar score gratuito', 'score grátis', 'ver score serasa', 'consulta score online', 'score crédito gratuito'],
+    relatedCalculators: [
+      { name: 'Comprometimento de Renda', href: '/calculadoras/comprometimento-renda' },
+      { name: 'Capacidade de Endividamento', href: '/calculadoras/capacidade-endividamento' },
+    ],
+    content: `
+<section><h2>Score grátis existe?</h2>
+<p>Sim, você pode consultar seu score gratuitamente nos três principais órgãos de crédito do Brasil. Não precisa pagar nada para isso. Aliás, se alguém está cobrando para te mostrar o score, desconfie.</p>
+<p>Por lei, você tem direito a uma consulta gratuita por mês em cada órgão de proteção ao crédito. Aproveite esse direito e acompanhe sua pontuação regularmente.</p>
+</section>
+<section><h2>Serasa Score</h2>
+<p>A Serasa é a mais popular. Para consultar:</p>
+<ol>
+<li>Acesse www.serasa.com.br/score</li>
+<li>Crie uma conta gratuita (ou faça login se já tiver)</li>
+<li>Pronto: seu score aparece na tela</li>
+</ol>
+<p>O app da Serasa (disponível para Android e iOS) também mostra o score e envia notificações quando ele muda.</p>
+<p>Além do score, o app Serasa mostra:</p>
+<ul>
+<li>CPF negativado? Quais dívidas estão abertas</li>
+<li>Ofertas de desconto para negociar dívidas</li>
+<li>Dicas personalizadas para aumentar o score</li>
+</ul>
+</section>
+<section><h2>Boa Vista Score</h2>
+<p>A Boa Vista é a segunda maior empresa de análise de crédito. Para consultar:</p>
+<ol>
+<li>Acesse www.consumidorpositivo.com.br</li>
+<li>Clique em &quot;Consultar Score&quot;</li>
+<li>Informe seu CPF e dados pessoais</li>
+<li>Veja sua pontuação</li>
+</ol>
+<p>A Boa Vista também tem o serviço de Consulta ao CPF gratuito que mostra se há restrições no seu nome.</p>
+</section>
+<section><h2>SPC Brasil</h2>
+<p>O SPC Brasil também oferece consulta gratuita:</p>
+<ol>
+<li>Acesse www.spcbrasil.org.br</li>
+<li>Clique em &quot;Consulte seu CPF grátis&quot;</li>
+<li>Informe os dados solicitados</li>
+<li>Veja se há restrições e sua pontuação</li>
+</ol>
+</section>
+<section><h2>Banco Central (Registrato)</h2>
+<p>O Banco Central oferece um sistema chamado Registrato, que reúne informações de todas as suas contas bancárias e dívidas:</p>
+<ol>
+<li>Acesse https://www.bcb.gov.br/cidadaniafinanceira/registrato</li>
+<li>Faça login com sua conta Gov.br</li>
+<li>Consulte relatórios de cheque sem fundo, dívidas e contas</li>
+</ol>
+<p>O Registrato é mais completo que o score tradicional e é 100% gratuito.</p>
+</section>
+<section><h2>Com que frequência consultar?</h2>
+<p>O ideal é consultar seu score uma vez por mês. Acompanhe as mudanças e veja se suas ações estão funcionando. Se o score caiu, tente identificar o motivo: foi um atraso? Uma nova dívida? Muitas consultas?</p>
+<p>Consultar o próprio score não reduz a pontuação. Isso é mito.</p>
+</section>
+<section><h2>Conclusão</h2>
+<p>Consultar o score é grátis, rápido e importante. Crie o hábito de verificar sua pontuação todo mês, ative o Cadastro Positivo e acompanhe sua evolução. O score é um termômetro da sua saúde financeira — ignore ele por sua conta e risco.</p>
+</section>`,
+    faq: [
+      { question: 'Consultar o score muitas vezes por mês reduz a pontuação?', answer: 'Não. Consultar seu próprio score gratuitamente não afeta a pontuação. Isso é um mito que circula na internet.' },
+      { question: 'Qual o melhor site para consultar score?', answer: 'Todos são confiáveis: Serasa, Boa Vista e SPC Brasil. Recomendo consultar pelo menos um deles por mês. O app da Serasa é o mais prático.' },
+      { question: 'Preciso pagar para ver meu score completo?', answer: 'Não. A consulta básica do score é gratuita em todos os órgãos. Pagamentos são para serviços extras, como alertas de CPF ou monitoramento.' },
+      { question: 'Posso consultar o score de outra pessoa?', answer: 'Não sem autorização. A consulta ao score de terceiros é restrita a empresas autorizadas, que precisam do seu consentimento.' },
+      { question: 'O score aparece no Registrato do Banco Central?', answer: 'O Registrato não mostra o score numérico, mas mostra relatórios detalhados de cheques, dívidas e contas que ajudam a entender sua situação.' },
+    ],
+  },
+  // === CARTÕES — ARTIGO 1/5 ===
+  {
+    slug: 'como-aumentar-limite-cartao-credito',
+    title: 'Como aumentar o limite do cartão de crédito',
+    description: 'Estratégias práticas para aumentar o limite do seu cartão de crédito. Dicas que realmente funcionam, sem promessas milagrosas.',
+    date: '2026-06-04',
+    category: 'Cartões',
+    keywords: ['aumentar limite cartão', 'como aumentar limite', 'limite cartão crédito', 'aumentar limite nubank', 'cartão mais limite'],
+    relatedCalculators: [
+      { name: 'Comprometimento de Renda', href: '/calculadoras/comprometimento-renda' },
+      { name: 'Parcelas', href: '/calculadoras/parcelas' },
+    ],
+    content: `
+<section><h2>Por que o limite é baixo?</h2>
+<p>O limite do cartão é definido com base na sua capacidade de pagamento. Se o banco não conhece seu histórico, começa com um limite baixo para testar. É uma relação de confiança que se constrói com o tempo.</p>
+<p>Os principais fatores que influenciam o limite são: renda declarada, score de crédito, histórico com o banco, comportamento de uso e dívidas existentes.</p>
+</section>
+<section><h2>Estratégia 1: Use e pague integralmente</h2>
+<p>Esta é a estratégia mais eficaz. Use o cartão para compras do dia a dia e pague a fatura integralmente todo mês. O banco vê que você usa o crédito e que paga em dia — e isso gera confiança.</p>
+<p>Importante: não precisa gastar muito. Gastar R$ 500 e pagar integralmente é melhor que gastar R$ 5.000 e pagar o mínimo.</p>
+</section>
+<section><h2>Estratégia 2: Aumente sua renda declarada</h2>
+<p>Se você tem renda extra (freelas, vendas, bicos) que não está declarada no banco, atualize seu perfil financeiro. Entre no app do banco e atualize sua renda. Um aumento de R$ 3.000 para R$ 4.500 pode gerar um aumento de limite.</p>
+</section>
+<section><h2>Estratégia 3: Concentre seus gastos</h2>
+<p>Se você tem três cartões, use principalmente um. O banco vê que você está usando o cartão dele e não dos concorrentes. Quanto mais você usa, mais o banco quer aumentar seu limite.</p>
+</section>
+<section><h2>Estratégia 4: Peça aumento pelo app</h2>
+<p>A maioria dos bancos permite solicitar aumento de limite pelo aplicativo. Vá em &quot;Limite&quot; ou &quot;Aumentar limite&quot; e veja se há uma oferta disponível. Se não houver, aguarde alguns meses de bom uso e tente novamente.</p>
+<p>Dica: após 6 meses de uso consistente, as chances de aumento são maiores.</p>
+</section>
+<section><h2>O que NÃO funciona</h2>
+<ul>
+<li>Pagar o mínimo da fatura (mostra que você não consegue pagar)</li>
+<li>Atrasar pagamentos (o efeito é contrário)</li>
+<li>Solicitar aumento toda semana (o banco pode bloquear)</li>
+<li>Fechar o cartão antigo (perde histórico)</li>
+</ul>
+</section>
+<section><h2>Exemplo prático</h2>
+<p>Marcos tem cartão Inter com limite de R$ 600. Ele passa a usar o cartão para tudo (supermercado, gasolina, farmácia) e paga a fatura integralmente.</p>
+<p>Após 4 meses, ele pede aumento direto no app. O banco aumenta para R$ 1.200. Após 10 meses, com score mais alto, o limite vai para R$ 2.500.</p>
+<p>Depois de 18 meses de uso consistente, o limite está em R$ 5.000.</p>
+</section>
+<section><h2>Conclusão</h2>
+<p>Aumentar o limite do cartão é questão de tempo e consistência. Use o cartão, pague integralmente, atualize sua renda e tenha paciência. Os aumentos vêm naturalmente quando o banco confia em você.</p>
+</section>`,
+    faq: [
+      { question: 'Quanto tempo demora para aumentar o limite?', answer: 'Com bom uso, o primeiro aumento pode vir entre 3 e 6 meses. Aumentos maiores podem levar de 12 a 18 meses.' },
+      { question: 'Pagar a fatura antes do vencimento ajuda?', answer: 'Ajuda sim. Pagar antecipadamente mostra que você tem capacidade financeira. Alguns bancos consideram isso na análise de aumento.' },
+      { question: 'Posso aumentar o limite depositando dinheiro?', answer: 'Alguns bancos digitais permitem aumentar o limite com depósito caução. O Nubank, por exemplo, tem opção de limite com garantia.' },
+      { question: 'Ter muitos cartões atrapalha o aumento?', answer: 'Pode atrapalhar se você não usa nenhum com consistência. Melhor ter 2 cartões bem usados do que 5 cartões parados.' },
+      { question: 'O que é limite com garantia?', answer: 'É um cartão onde você deposita um valor como garantia. Seu limite é igual ao valor depositado. Útil para construir crédito.' },
+    ],
+  },
+  // === CARTÕES — ARTIGO 2/5 ===
+  {
+    slug: 'cartao-sem-anuidade-vale-a-pena',
+    title: 'Cartão sem anuidade vale a pena?',
+    description: 'Análise completa dos cartões sem anuidade no Brasil. Vantagens, desvantagens, cuidados e os melhores cartões gratuitos disponíveis.',
+    date: '2026-06-04',
+    category: 'Cartões',
+    keywords: ['cartão sem anuidade', 'cartão gratuito', 'melhor cartão sem anuidade', 'cartão crédito gratuito', 'cartão sem taxa'],
+    relatedCalculators: [
+      { name: 'Parcelas', href: '/calculadoras/parcelas' },
+      { name: 'Juros Compostos', href: '/calculadoras/juros-compostos' },
+    ],
+    content: `
+<section><h2>Cartão sem anuidade realmente existe?</h2>
+<p>Sim, existem dezenas de cartões sem anuidade no Brasil atualmente. Bancos digitais como Nubank, Inter, C6 Bank e PagBank popularizaram o modelo de cartão gratuito.</p>
+<p>Mas é preciso ler as letras miúdas. Alguns cartões são gratuitos se você cumprir requisitos mínimos, como gastar um valor por mês ou ter investimentos no banco.</p>
+</section>
+<section><h2>Cartões realmente sem anuidade</h2>
+<p>Estes cartões não cobram anuidade independentemente do uso:</p>
+<ul>
+<li><strong>Nubank:</strong> sem anuidade, sem condições. O mais popular do Brasil.</li>
+<li><strong>Inter:</strong> sem anuidade, sem condições. Conta digital gratuita completa.</li>
+<li><strong>C6 Bank:</strong> sem anuidade na conta gratuita. Tem opções com anuidade para programas de pontos.</li>
+<li><strong>PagBank:</strong> sem anuidade. Aceita até negativados.</li>
+<li><strong>Mercado Pago:</strong> sem anuidade. Vinculado à conta do Mercado Livre.</li>
+</ul>
+</section>
+<section><h2>Cartões com anuidade que valem a pena</h3>
+<p>Alguns cartões cobram anuidade mas oferecem benefícios que podem compensar:</p>
+<ul>
+<li><strong>Cartões com programa de pontos:</strong> se você gasta muito, os pontos podem valer mais que a anuidade</li>
+<li><strong>Cartões com seguro viagem:</strong> úteis para quem viaja com frequência</li>
+<li><strong>Cartões com acesso a salas VIP:</strong> para quem voa muito</li>
+</ul>
+<p>Dica: calcule se os benefícios que você usa superam o valor da anuidade. Se não, fique com o gratuito.</p>
+</section>
+<section><h2>Cuidados com cartões "sem anuidade"</h2>
+<ul>
+<li>Alguns bancos cobram tarifas escondidas (emissão de fatura impressa, por exemplo)</li>
+<li>Cartões de lojas podem não ter anuidade mas têm taxas de juros mais altas</li>
+<li>Verifique se o cartão envia fatura por e-mail (gratuito) ou só por correio (pago)</li>
+<li>Leia o contrato antes de assinar</li>
+</ul>
+</section>
+<section><h2>Exemplo prático</h2>
+<p>Ana usa o cartão Nubank sem anuidade para todas as compras. Gasta em média R$ 2.000 por mês. Em 10 anos, ela economizou R$ 3.600 em anuidades (considerando R$ 30/mês de um cartão comum).</p>
+<p>Se ela usasse um cartão Black com anuidade de R$ 800/ano, teria gasto R$ 8.000 em 10 anos. A menos que os benefícios superem esse valor, o cartão gratuito é melhor.</p>
+</section>
+<section><h2>Conclusão</h2>
+<p>Cartão sem anuidade vale a pena para a maioria das pessoas. Os bancos digitais oferecem cartões gratuitos com apps completos e bons benefícios. A menos que você use intensamente os programas de pontos ou benefícios premium, não há motivo para pagar anuidade.</p>
+</section>`,
+    faq: [
+      { question: 'Cartão sem anuidade tem menos benefícios?', answer: 'Geralmente sim, mas os benefícios básicos (pagamento por aproximação, app completo, compras internacionais) estão presentes.' },
+      { question: 'Qual o melhor cartão sem anuidade?', answer: 'Nubank e Inter são os mais recomendados. Ambos têm app excelente, cartão internacional e sem tarifas escondidas.' },
+      { question: 'Cartão de loja sem anuidade vale a pena?', answer: 'Vale se você compra naquela loja com frequência. Mas prefira um cartão de banco digital para uso geral.' },
+      { question: 'Como saber se meu cartão tem anuidade escondida?', answer: 'Leia o contrato e verifique a fatura. Qualquer tarifa deve estar explícita na fatura. Se desconfiar, ligue para o banco.' },
+      { question: 'Posso negociar a anuidade do meu cartão atual?', answer: 'Sim, ligue para o banco e peça isenção da anuidade. Se você é um bom cliente, eles costumam conceder, especialmente se ameaçar cancelar.' },
+    ],
+  },
+  // === CARTÕES — ARTIGO 3/5 ===
+  {
+    slug: 'como-evitar-juros-rotativo',
+    title: 'Como evitar os juros do rotativo',
+    description: 'Aprenda a evitar os juros do rotativo do cartão de crédito. Estratégias para nunca pagar os juros mais altos do mercado brasileiro.',
+    date: '2026-06-04',
+    category: 'Cartões',
+    keywords: ['evitar juros rotativo', 'juros rotativo cartão', 'como evitar rotativo', 'cartão crédito juros', 'não pagar juros cartão'],
+    relatedCalculators: [
+      { name: 'Juros Compostos', href: '/calculadoras/juros-compostos' },
+      { name: 'Parcelas', href: '/calculadoras/parcelas' },
+      { name: 'Quitação de Dívidas', href: '/calculadoras/quitacao-dividas' },
+    ],
+    content: `
+<section><h2>O que é o rotativo?</h2>
+<p>O crédito rotativo é o que acontece quando você não paga o valor integral da fatura do cartão. Você pode pagar um valor mínimo (geralmente 15% da fatura) e o restante entra no rotativo.</p>
+<p>O problema é que os juros do rotativo são os mais altos do Brasil. Em 2026, a taxa média está em 12% ao mês — mais de 280% ao ano. Uma fatura de R$ 1.000 não paga vira R$ 28.000 em 3 anos.</p>
+</section>
+<section><h2>Estratégia 1: Sempre pague o valor integral</h2>
+<p>A regra número 1 do cartão de crédito: pague a fatura integralmente todo mês. Não existe outra forma garantida de evitar juros.</p>
+<p>Se você não tem dinheiro para pagar a fatura integral, significa que gastou mais do que podia. O problema não é o cartão, é o orçamento.</p>
+</section>
+<section><h2>Estratégia 2: Monitore seus gastos em tempo real</h2>
+<p>Acompanhe os gastos do cartão pelo aplicativo do banco. Quando a fatura estiver chegando perto do que você pode pagar, pare de usar o cartão.</p>
+<p>Defina um limite pessoal de uso, independentemente do limite do cartão. Exemplo: se seu orçamento permite pagar R$ 2.000 de fatura, não passe disso mesmo que o limite seja de R$ 10.000.</p>
+</section>
+<section><h2>Estratégia 3: Use o parcelamento programado</h2>
+<p>Se você sabe que não vai conseguir pagar a fatura integral, entre em contato com o banco ANTES do vencimento. Muitos bancos oferecem parcelamento da fatura com juros menores que o rotativo.</p>
+<p>O parcelamento programado tem juros de 4% a 8% ao mês, enquanto o rotativo tem 12%. É uma diferença significativa.</p>
+</section>
+<section><h2>Estratégia 4: Crie uma reserva para o cartão</h2>
+<p>Todo mês, separe o dinheiro da fatura do cartão assim que receber o salário. Deixe em uma conta separada. Assim, quando a fatura vencer, o dinheiro já está reservado.</p>
+<p>Use nossa <a href="/calculadoras/quitacao-dividas">calculadora de quitação de dívidas</a> para simular o impacto dos juros do rotativo no longo prazo.</p>
+</section>
+<section><h2>Exemplo do perigo do rotativo</h2>
+<p>R$ 2.000 no rotativo do cartão a 12% ao mês:</p>
+<ul>
+<li>Mês 1: R$ 2.240 (pagando mínimo de R$ 300)</li>
+<li>Mês 3: R$ 2.780</li>
+<li>Mês 6: R$ 3.940</li>
+<li>Mês 12: R$ 7.790</li>
+</ul>
+<p>Em 12 meses, uma dívida de R$ 2.000 virou R$ 7.790. É por isso que o rotativo é considerado o pior tipo de dívida.</p>
+</section>
+<section><h2>O que fazer se já está no rotativo</h2>
+<ol>
+<li>Pare de usar o cartão até quitar a dívida</li>
+<li>Negocie o parcelamento da fatura com o banco</li>
+<li>Considere um empréstimo pessoal para quitar o rotativo (se tiver taxa menor)</li>
+<li>Priorize o pagamento dessa dívida sobre todas as outras</li>
+</ol>
+</section>
+<section><h2>Conclusão</h2>
+<p>Evitar o rotativo é simples: não gaste mais do que pode pagar. Monitore seus gastos, pague a fatura integralmente e, se precisar, parcele a fatura antes de cair no rotativo. Os juros do rotativo são um castigo financeiro que ninguém merece.</p>
+</section>`,
+    faq: [
+      { question: 'Qual a diferença entre rotativo e parcelamento?', answer: 'O rotativo é automático quando você não paga o valor integral. O parcelamento é uma opção que você escolhe antes do vencimento. O parcelamento tem juros menores.' },
+      { question: 'O que é melhor: rotativo ou cheque especial?', answer: 'Os dois têm juros altíssimos. O rotativo gira em torno de 12% ao mês, o cheque especial em torno de 8% ao mês. Ambos devem ser evitados.' },
+      { question: 'Posso pagar a fatura depois do vencimento sem juros?', answer: 'Não, a partir do primeiro dia de atraso os juros de mora e multa são aplicados. Pague sempre até a data do vencimento.' },
+      { question: 'Como funciona o pagamento mínimo do cartão?', answer: 'O pagamento mínimo é um percentual da fatura (geralmente 15%). O restante entra no rotativo com juros altos. Não é recomendado.' },
+      { question: 'O banco é obrigado a oferecer parcelamento da fatura?', answer: 'Desde 2024, por regulamentação do Banco Central, os bancos são obrigados a oferecer parcelamento da fatura como alternativa ao rotativo.' },
+    ],
+  },
+  // === CARTÕES — ARTIGO 4/5 ===
+  {
+    slug: 'o-que-fazer-quando-limite-cartao-acaba',
+    title: 'O que fazer quando o limite do cartão acaba',
+    description: 'Guia prático para quando seu cartão de crédito atinge o limite. Opções reais, alternativas e como se planejar para não passar sufoco.',
+    date: '2026-06-04',
+    category: 'Cartões',
+    keywords: ['limite cartão acabou', 'cartão estourou limite', 'o que fazer quando limite acaba', 'aumentar limite urgente', 'cartão sem limite'],
+    relatedCalculators: [
+      { name: 'Orçamento Familiar', href: '/calculadoras/orcamento-familiar' },
+      { name: 'Parcelas', href: '/calculadoras/parcelas' },
+    ],
+    content: `
+<section><h2>Seu cartão estourou. E agora?</h2>
+<p>Atingir o limite do cartão de crédito é mais comum do que parece. Acontece quando você tem uma emergência, faz uma compra grande ou simplesmente perdeu o controle dos gastos do mês.</p>
+<p>O primeiro passo é não entrar em pânico. O segundo é não fazer besteira, como pegar empréstimo com juros altos para pagar o cartão. Vamos ver as opções reais.</p>
+</section>
+<section><h2>Opção 1: Espere o próximo fechamento da fatura</h2>
+<p>O limite do cartão é renovado a cada fechamento de fatura. Se você estourou o limite mas consegue pagar a fatura integral, espere o fechamento. Quando a fatura for paga, o limite volta ao normal.</p>
+<p>Enquanto isso, use o cartão de débito ou dinheiro para seus gastos.</p>
+</section>
+<section><h2>Opção 2: Peça aumento emergencial</h2>
+<p>Alguns bancos permitem solicitar aumento de limite emergencial pelo app. Se você tem bom histórico, pode ser aprovado na hora. O aumento pode ser temporário ou permanente.</p>
+<p>Ligue para o banco ou entre no app e veja se há oferta de aumento disponível.</p>
+</section>
+<section><h2>Opção 3: Use outro cartão</h2>
+<p>Se você tem mais de um cartão, use o outro enquanto o principal está no limite. Se não tem, considere pedir um segundo cartão (de outro banco, sem anuidade) para ter uma reserva.</p>
+<p>Ter dois cartões é útil em emergências. O segredo é não usar os dois ao mesmo tempo sem controle.</p>
+</section>
+<section><h2>Opção 4: Parcele a compra que estourou</h2>
+<p>Se uma compra específica estourou o limite, veja se o parcelamento no boleto é possível. Algumas lojas oferecem parcelamento sem cartão, com pagamento em boletos.</p>
+</section>
+<section><h2>O que NÃO fazer</h2>
+<ul>
+<li>Não contrate empréstimo com juros altos para pagar o cartão sem antes comparar taxas</li>
+<li>Não use o cheque especial para complementar o limite (juros de 8% ao mês)</li>
+<li>Não faça saque com o cartão de crédito (taxas altíssimas)</li>
+<li>Não entre no rotativo se não tiver como pagar</li>
+</ul>
+</section>
+<section><h2>Exemplo prático</h2>
+<p>Roberto tem cartão com limite de R$ 3.000 e gastou R$ 3.200 no mês (comprou um celular). As opções dele:</p>
+<ol>
+<li><strong>Pagar o excesso:</strong> depositar R$ 200 na conta para cobrir o estouro (alguns bancos permitem)</li>
+<li><strong>Usar outro cartão:</strong> tem um cartão Inter com limite de R$ 1.000 para emergências</li>
+<li><strong>Parcelar no boleto:</strong> a loja ofereceu parcelamento em 6x sem juros no boleto</li>
+</ol>
+<p>Roberto optou por depositar R$ 200 e quitar a fatura integral. Com o próximo fechamento, o limite volta ao normal.</p>
+</section>
+<section><h2>Como evitar que aconteça de novo</h2>
+<ul>
+<li>Acompanhe seus gastos em tempo real pelo app</li>
+<li>Defina um limite pessoal (ex: 70% do limite do cartão)</li>
+<li>Tenha um cartão reserva para emergências</li>
+<li>Monte uma reserva de emergência para não depender do cartão</li>
+</ul>
+</section>
+<section><h2>Conclusão</h2>
+<p>Estourar o limite do cartão não é o fim do mundo, mas é um sinal de alerta. Use as opções acima para resolver o momento e, depois, reveja seus hábitos financeiros para não passar por isso de novo.</p>
+</section>`,
+    faq: [
+      { question: 'O que acontece se eu gastar mais que o limite do cartão?', answer: 'A compra pode ser negada na hora. Alguns bancos permitem ultrapassar o limite, mas cobram uma taxa extra por isso.' },
+      { question: 'Posso depositar dinheiro para aumentar o limite temporariamente?', answer: 'Sim, em alguns bancos. Verifique com sua instituição se há essa opção. É comum em bancos digitais.' },
+      { question: 'Estourar o limite reduz o score?', answer: 'Indiretamente sim, porque mostra alta utilização do crédito. O ideal é usar até 30% do limite.' },
+      { question: 'Devo pedir cancelamento se o limite for insuficiente?', answer: 'Não antes de tentar aumentar. Se o banco não aumentar após meses de bom uso, considere pedir um segundo cartão em outro banco.' },
+      { question: 'Ter dois cartões ajuda a não estourar o limite?', answer: 'Ajuda a ter uma reserva, mas cuidado para não gastar o dobro. O controle continua sendo seu.' },
+    ],
+  },
+  // === CARTÕES — ARTIGO 5/5 ===
+  {
+    slug: 'fatura-parcelada-compensa',
+    title: 'Fatura parcelada compensa?',
+    description: 'Análise real do parcelamento de fatura do cartão. Quando compensa, quando não compensa e alternativas melhores.',
+    date: '2026-06-04',
+    category: 'Cartões',
+    keywords: ['fatura parcelada', 'parcelar fatura cartão', 'parcelamento fatura', 'compensa parcelar fatura', 'cartão parcelado'],
+    relatedCalculators: [
+      { name: 'Juros Compostos', href: '/calculadoras/juros-compostos' },
+      { name: 'Parcelas', href: '/calculadoras/parcelas' },
+      { name: 'Quitação de Dívidas', href: '/calculadoras/quitacao-dividas' },
+    ],
+    content: `
+<section><h2>O que é o parcelamento de fatura?</h2>
+<p>O parcelamento de fatura é uma modalidade de crédito onde você divide o valor da fatura do cartão em parcelas fixas. Desde 2024, por regulamentação do Banco Central, os bancos são obrigados a oferecer essa opção como alternativa ao rotativo.</p>
+<p>Quando você não consegue pagar a fatura integral, em vez de cair automaticamente no rotativo (juros de 12% ao mês), você pode optar pelo parcelamento, que tem juros entre 4% e 8% ao mês, dependendo do banco.</p>
+</section>
+<section><h2>Comparação: parcelamento vs rotativo</h2>
+<p>Imagine uma fatura de R$ 3.000 que você não consegue pagar integralmente, mas pode pagar R$ 600 por mês:</p>
+<p><strong>Rotativo:</strong> R$ 3.000 a 12% ao mês, pagando R$ 600/mês → leva 7 meses para quitar, total de R$ 4.200, juros de R$ 1.200.</p>
+<p><strong>Parcelamento:</strong> R$ 3.000 a 6% ao mês em 6 parcelas → parcelas de R$ 610, total de R$ 3.660, juros de R$ 660.</p>
+<p>Economia: R$ 540. O parcelamento é claramente melhor que o rotativo, mas ainda são juros altos.</p>
+</section>
+<section><h2>Quando compensa</h2>
+<ul>
+<li>Você não tem alternativa para pagar a fatura integral</li>
+<li>O valor das parcelas cabe no seu orçamento</li>
+<li>Você sabe que vai conseguir pagar as parcelas nos próximos meses</li>
+<li>É melhor que o rotativo (sempre é)</li>
+</ul>
+</section>
+<section><h2>Quando NÃO compensa</h2>
+<ul>
+<li>Você pode pegar um empréstimo consignado com juros menores (2% a.m.)</li>
+<li>Você pode usar o dinheiro da reserva para pagar (não pagar juros é melhor)</li>
+<li>Você não tem certeza se vai conseguir pagar as parcelas</li>
+<li>O parcelamento é muito longo (12 meses ou mais) aumentando o custo total</li>
+</ul>
+</section>
+<section><h2>Alternativas ao parcelamento</h2>
+<ol>
+<li><strong>Usar a reserva de emergência:</strong> se você tem dinheiro guardado, use para pagar a fatura. Depois, reponha a reserva.</li>
+<li><strong>Empréstimo consignado:</strong> taxas de 2% ao mês são melhores que o parcelamento de 6%.</li>
+<li><strong>Empréstimo pessoal com garantia:</strong> taxas entre 2% e 4% ao mês.</li>
+<li><strong>Negociar diretamente com o banco:</strong> às vezes o banco oferece condições melhores que o parcelamento padrão.</li>
+</ol>
+</section>
+<section><h2>Exemplo prático</h2>
+<p>Carlos tem uma fatura de R$ 4.000 que não pode pagar integralmente. Ele analisa as opções:</p>
+<ul>
+<li><strong>Rotativo:</strong> juros de 12% a.m. → em 12 meses vira R$ 15.578</li>
+<li><strong>Parcelamento em 6x:</strong> juros de 6% a.m. → parcelas de R$ 814, total R$ 4.884</li>
+<li><strong>Empréstimo consignado em 6x:</strong> juros de 2% a.m. → parcelas de R$ 713, total R$ 4.278</li>
+</ul>
+<p>Carlos opta pelo consignado e economiza R$ 606 comparado ao parcelamento da fatura.</p>
+</section>
+<section><h2>Conclusão</h2>
+<p>Fatura parcelada compensa? Compensa mais que o rotativo, mas menos que um empréstimo com juros baixos. Use o parcelamento como última opção, não como primeira. O ideal é sempre pagar a fatura integral.</p>
+</section>`,
+    faq: [
+      { question: 'Qual a taxa de juros do parcelamento da fatura?', answer: 'As taxas variam de 4% a 8% ao mês dependendo do banco e do seu perfil de crédito.' },
+      { question: 'Parcelar a fatura atrapalha o score?', answer: 'O parcelamento em si não atrapalha, desde que você pague as parcelas em dia. Mas mostra que você está usando crédito de emergência.' },
+      { question: 'Posso parcelar a fatura todo mês?', answer: 'Pode, mas não é saudável financeiramente. Se você precisa parcelar a fatura todo mês, seus gastos estão maiores que sua renda.' },
+      { question: 'Qual a diferença entre parcelamento de fatura e rotativo?', answer: 'O parcelamento é uma opção que você escolhe antes do vencimento, com juros pré-fixados. O rotativo acontece automaticamente se você não paga o valor integral e tem juros mais altos.' },
+      { question: 'Parcelar a fatura cancela os benefícios do cartão?', answer: 'Não, você continua com os mesmos benefícios (programa de pontos, seguros). O parcelamento é apenas uma forma de pagamento.' },
+    ],
+  },
+  // === EMPRÉSTIMOS — ARTIGO 1/5 ===
+  {
+    slug: 'como-comparar-emprestimos-corretamente',
+    title: 'Como comparar empréstimos corretamente',
+    description: 'Aprenda a comparar empréstimos como um profissional. Entenda CET, taxa de juros, parcelas e custo total para não cair em armadilhas.',
+    date: '2026-06-04',
+    category: 'Empréstimos',
+    keywords: ['comparar empréstimos', 'como escolher empréstimo', 'melhor empréstimo', 'comparar taxas empréstimo', 'escolher empréstimo certo'],
+    relatedCalculators: [
+      { name: 'Empréstimo', href: '/calculadoras/emprestimo' },
+      { name: 'Troca de Dívidas', href: '/calculadoras/troca-dividas' },
+    ],
+    content: `
+<section><h2>O erro mais comum ao comparar empréstimos</h2>
+<p>A maioria das pessoas olha apenas o valor da parcela. &quot;Este empréstimo tem parcela de R$ 200, o outro tem parcela de R$ 250. Vou de R$ 200.&quot;</p>
+<p>Esse é o erro mais comum e mais caro. A parcela menor pode significar um prazo muito maior e, no final, você paga muito mais juros.</p>
+<p>Comparar empréstimos vai muito além do valor da parcela. Vamos ver o que realmente importa.</p>
+</section>
+<section><h2>O que comparar em cada empréstimo</h2>
+<p><strong>1. CET (Custo Efetivo Total):</strong> este é o número mais importante. O CET inclui juros, taxas, seguros e todos os encargos. Um empréstimo com taxa de 3% ao mês pode ter CET de 5% se tiver seguros embutidos.</p>
+<p><strong>2. Taxa de juros mensal:</strong> a taxa pura do empréstimo. Importante, mas não é o único fator.</p>
+<p><strong>3. Prazo total:</strong> em quantos meses você vai pagar. Quanto maior o prazo, menor a parcela, mas maior o total de juros.</p>
+<p><strong>4. Valor total a pagar:</strong> parcela x número de parcelas. É o valor que realmente sai do seu bolso.</p>
+<p><strong>5. Multa e juros de atraso:</strong> o que acontece se você atrasar uma parcela?</p>
+</section>
+<section><h2>Exemplo de comparação real</h2>
+<p>Você precisa de R$ 5.000. Recebe três propostas:</p>
+<table>
+<tr><th>Proposta</th><th>Taxa</th><th>Prazo</th><th>Parcela</th><th>Total a pagar</th></tr>
+<tr><td>Banco A</td><td>3% a.m.</td><td>12 meses</td><td>R$ 502</td><td>R$ 6.024</td></tr>
+<tr><td>Banco B</td><td>5% a.m.</td><td>24 meses</td><td>R$ 359</td><td>R$ 8.616</td></tr>
+<tr><td>Banco C</td><td>4% a.m.</td><td>18 meses</td><td>R$ 391</td><td>R$ 7.038</td></tr>
+</table>
+<p>Olhando só a parcela, o Banco B parece mais barato (R$ 359). Mas no total, você paga R$ 8.616 — R$ 2.592 a mais que o Banco A.</p>
+<p>A melhor opção é o Banco A: maior parcela (R$ 502) mas menor custo total (R$ 6.024).</p>
+</section>
+<section><h2>Ferramentas para comparar</h2>
+<p>Use nossa <a href="/calculadoras/emprestimo">calculadora de empréstimo</a> para simular diferentes taxas e prazos. Você pode comparar até 5 cenários lado a lado.</p>
+<p>Além disso, existem plataformas online que comparam ofertas de vários bancos:</p>
+<ul>
+<li>Simulação de crédito do Banco Central</li>
+<li>plataformas como Creditas, Simplic, Geru</li>
+<li>Seu banco atual (às vezes oferece melhores condições para clientes)</li>
+</ul>
+</section>
+<section><h2>Cuidados ao comparar</h2>
+<ul>
+<li>Desconfie de taxas muito abaixo do mercado (podem ser iscas)</li>
+<li>Leia o contrato antes de assinar</li>
+<li>Verifique se há seguros ou tarifas embutidas</li>
+<li>Pergunte sobre a possibilidade de quitação antecipada com desconto</li>
+<li>Não contrate no impulso — durma com a proposta</li>
+</ul>
+</section>
+<section><h2>Conclusão</h2>
+<p>Comparar empréstimos corretamente pode economizar milhares de reais. Não olhe só a parcela — olhe o CET, o prazo e o custo total. E nunca contrate sem antes simular em pelo menos 3 instituições diferentes.</p>
+</section>`,
+    faq: [
+      { question: 'Qual a diferença entre taxa de juros e CET?', answer: 'A taxa de juros é o custo do dinheiro emprestado. O CET inclui a taxa de juros mais todas as despesas (tarifas, seguros, IOF). O CET sempre é maior que a taxa de juros.' },
+      { question: 'Quantas instituições devo consultar antes de contratar?', answer: 'No mínimo 3. Cada banco tem políticas de crédito diferentes, e as taxas podem variar muito de uma instituição para outra.' },
+      { question: 'Parcelas mais longas são sempre piores?', answer: 'Nem sempre. Se a taxa de juros é muito baixa (como financiamento imobiliário), prazos longos podem ser interessantes. Para juros altos, prefira prazos curtos.' },
+      { question: 'Vale a pena contratar empréstimo pelo banco onde tenho conta?', answer: 'Às vezes sim, porque o banco conhece seu histórico. Mas não deixe de comparar com outras instituições. Fidelidade nem sempre compensa.' },
+      { question: 'O que é IOF e como afeta o empréstimo?', answer: 'IOF é o Imposto sobre Operações Financeiras, cobrado pelo governo. Para empréstimos, a alíquota é de 0,38% sobre o valor + 0,0082% ao dia. Isso aumenta o custo efetivo.' },
+    ],
+  },
+  // === EMPRÉSTIMOS — ARTIGO 2/5 ===
+  {
+    slug: 'o-que-e-cet-e-por-que-importa',
+    title: 'O que é CET e por que ele importa?',
+    description: 'Entenda de vez o que é CET (Custo Efetivo Total) e por que ele é mais importante que a taxa de juros ao contratar um empréstimo.',
+    date: '2026-06-04',
+    category: 'Empréstimos',
+    keywords: ['o que é CET', 'Custo Efetivo Total', 'CET empréstimo', 'diferença CET taxa juros', 'como calcular CET'],
+    relatedCalculators: [
+      { name: 'Empréstimo', href: '/calculadoras/emprestimo' },
+      { name: 'Financiamento', href: '/calculadoras/financiamento' },
+    ],
+    content: `
+<section><h2>CET: a verdadeira taxa do seu empréstimo</h2>
+<p>Você já viu um anúncio de empréstimo com taxa de 1,5% ao mês, mas quando foi contratar, as parcelas estavam muito mais altas que o esperado? O culpado é o CET.</p>
+<p>CET significa Custo Efetivo Total. É o valor real que você paga pelo empréstimo, incluindo não só os juros, mas também todas as tarifas, seguros, IOF e qualquer outro encargo.</p>
+<p>Enquanto a taxa de juros é o preço do dinheiro, o CET é o preço total do empréstimo. E é nele que você deve prestar atenção.</p>
+</section>
+<section><h2>O que entra no CET?</h2>
+<ul>
+<li><strong>Taxa de juros:</strong> o custo básico do empréstimo</li>
+<li><strong>Tarifa de abertura de crédito (TAC):</strong> alguns bancos cobram para liberar o crédito</li>
+<li><strong>Seguros:</strong> seguro prestamista (protege em caso de morte ou invalidez)</li>
+<li><strong>IOF:</strong> imposto do governo sobre operações financeiras</li>
+<li><strong>Tarifa de cadastro:</strong> taxa para análise de crédito</li>
+<li><strong>Outros encargos:</strong> taxas administrativas, registro de contrato</li>
+</ul>
+</section>
+<section><h2>Exemplo prático da diferença</h2>
+<p>Empréstimo de R$ 10.000 em 12 meses:</p>
+<table>
+<tr><th>Banco</th><th>Taxa de juros</th><th>CET</th><th>Parcela</th><th>Total</th></tr>
+<tr><td>Banco A</td><td>2,5% a.m.</td><td>2,8% a.m.</td><td>R$ 975</td><td>R$ 11.700</td></tr>
+<tr><td>Banco B</td><td>2,0% a.m.</td><td>4,5% a.m.</td><td>R$ 1.050</td><td>R$ 12.600</td></tr>
+</table>
+<p>O Banco B anuncia taxa de 2% (mais baixa que o Banco A), mas o CET é de 4,5% por causa de seguros e tarifas. No final, o Banco B é mais caro.</p>
+<p>Se você olhasse só a taxa de juros, escolheria o Banco B e pagaria R$ 900 a mais.</p>
+</section>
+<section><h2>Por que os bancos usam taxa de juros nos anúncios?</h2>
+<p>Porque a taxa de juros é sempre menor que o CET. Um anúncio com &quot;taxa a partir de 1,5% ao mês&quot; atrai mais clientes do que &quot;CET de 4,2% ao mês&quot;. É uma estratégia de marketing, não enganação — desde que o CET seja informado no contrato.</p>
+<p>Por lei, o banco é obrigado a informar o CET antes da contratação. Se o vendedor não falou no CET, pergunte. Se ele desconversar, desconfie.</p>
+</section>
+<section><h2>Como usar o CET a seu favor</h2>
+<ol>
+<li>Sempre peça o CET antes de contratar qualquer empréstimo</li>
+<li>Compare o CET de diferentes instituições, não a taxa de juros</li>
+<li>Desconfie de CET muito alto mesmo com taxa baixa (tem tarifa escondida)</li>
+<li>Use o CET para calcular o custo real no seu orçamento</li>
+</ol>
+</section>
+<section><h2>Conclusão</h2>
+<p>O CET é o número mais importante na hora de contratar um empréstimo. Ignorar o CET pode custar caro. Sempre compare o CET entre as instituições, e não se deixe enganar por taxas de juros baixas que escondem tarifas altas.</p>
+</section>`,
+    faq: [
+      { question: 'Onde encontro o CET do empréstimo?', answer: 'O CET deve estar visível no contrato e na proposta do empréstimo. Por lei, o banco é obrigado a informar o CET antes da contratação.' },
+      { question: 'CET alto significa que o empréstimo é ruim?', answer: 'Nem sempre. O CET pode ser alto por causa de seguros que você considera importantes. O que importa é comparar o CET entre propostas semelhantes.' },
+      { question: 'O CET muda durante o contrato?', answer: 'Não, o CET é calculado no momento da contratação e é fixo para empréstimos de taxa fixa. Para empréstimos com taxa variável, o CET pode mudar.' },
+      { question: 'Posso negociar o CET com o banco?', answer: 'Sim, você pode pedir para reduzir ou remover tarifas e seguros que estão elevando o CET. Se o banco não aceitar, procure outra instituição.' },
+      { question: 'Qual a diferença entre CET mensal e CET anual?', answer: 'O CET mensal é o custo por mês. O CET anual é a projeção para 12 meses. O Banco Central exige que ambos sejam informados.' },
+    ],
+  },
+  // === EMPRÉSTIMOS — ARTIGO 3/5 ===
+  {
+    slug: 'emprestimo-consignado-vale-a-pena',
+    title: 'Empréstimo consignado vale a pena?',
+    description: 'Análise completa do empréstimo consignado. Vantagens, desvantagens, taxas atuais e para quem ele realmente é indicado.',
+    date: '2026-06-04',
+    category: 'Empréstimos',
+    keywords: ['emprestimo consignado', 'consignado vale a pena', 'taxa consignado', 'emprestimo INSS', 'consignado servidor público'],
+    relatedCalculators: [
+      { name: 'Empréstimo', href: '/calculadoras/emprestimo' },
+      { name: 'Comprometimento de Renda', href: '/calculadoras/comprometimento-renda' },
+    ],
+    content: `
+<section><h2>O que é o empréstimo consignado?</h2>
+<p>O empréstimo consignado é uma modalidade onde as parcelas são descontadas diretamente da folha de pagamento ou benefício. Como o risco para o banco é menor (o desconto é automático), as taxas de juros são as mais baixas do mercado.</p>
+<p>Podem contratar: aposentados e pensionistas do INSS, servidores públicos, militares e trabalhadores CLT de empresas conveniadas.</p>
+</section>
+<section><h2>Taxas de juros atuais (2026)</h2>
+<ul>
+<li><strong>Consignado INSS:</strong> aproximadamente 1,72% ao mês</li>
+<li><strong>Consignado servidor público:</strong> aproximadamente 1,5% ao mês</li>
+<li><strong>Consignado CLT:</strong> aproximadamente 2,5% ao mês</li>
+</ul>
+<p>Para comparação, um empréstimo pessoal comum tem taxas de 3% a 10% ao mês. A diferença é enorme.</p>
+</section>
+<section><h2>Vantagens do consignado</h2>
+<ul>
+<li><strong>Taxas mais baixas:</strong> as menores do mercado de crédito pessoal</li>
+<li><strong>Prazos longos:</strong> até 96 meses (8 anos) para servidores</li>
+<li><strong>Sem consulta ao Serasa:</strong> aprovação independente do score</li>
+<li><strong>Desconto automático:</strong> não tem risco de esquecer de pagar</li>
+<li><strong>Menos burocracia:</strong> aprovação mais rápida que empréstimo pessoal</li>
+</ul>
+</section>
+<section><h2>Desvantagens do consignado</h2>
+<ul>
+<li><strong>Compromete a renda:</strong> até 35% do salário/benefício fica comprometido</li>
+<li><strong>Disponibilidade limitada:</strong> nem todo trabalhador tem acesso</li>
+<li><strong>Dificuldade de quitação antecipada:</strong> alguns bancos dificultam</li>
+<li><strong>Pode gerar superendividamento:</strong> como é fácil contratar, algumas pessoas contratam mais do que podem pagar</li>
+<li><strong>Portabilidade pode ser burocrática:</strong> transferir para outro banco exige processo</li>
+</ul>
+</section>
+<section><h2>Exemplo prático</h2>
+<p>Maria, aposentada do INSS, precisa de R$ 8.000 para reformar a casa:</p>
+<ul>
+<li><strong>Consignado INSS:</strong> taxa 1,72% a.m., 36 meses → parcela de R$ 305, total R$ 10.980</li>
+<li><strong>Pessoal banco:</strong> taxa 4% a.m., 36 meses → parcela de R$ 423, total R$ 15.228</li>
+</ul>
+<p>Diferença: Maria economiza R$ 4.248 contratando o consignado.</p>
+</section>
+<section><h2>Quando o consignado NÃO vale a pena</h2>
+<ul>
+<li>Para valores muito pequenos (R$ 500 a R$ 1.000), as tarifas podem pesar mais</li>
+<li>Se você pretende quitar o empréstimo rapidamente (empréstimo pessoal pode ser mais flexível)</li>
+<li>Se você já comprometeu os 35% da renda e precisa de mais crédito</li>
+<li>Para investir (pegar consignado para aplicar na bolsa é furada)</li>
+</ul>
+</section>
+<section><h2>Conclusão</h2>
+<p>O empréstimo consignado vale muito a pena para quem tem acesso a ele. As taxas são as menores do mercado e o desconto automático elimina o risco de atraso. Mas cuidado: a facilidade de contratar não significa que você deve contratar sem planejamento. Use o consignado com responsabilidade.</p>
+</section>`,
+    faq: [
+      { question: 'Aposentado do INSS pode pegar consignado?', answer: 'Sim. Aposentados e pensionistas do INSS podem contratar empréstimo consignado com desconto direto no benefício. O limite é de 35% do valor do benefício.' },
+      { question: 'Qual a taxa máxima do consignado INSS em 2026?', answer: 'O governo federal define o teto das taxas. Em 2026, o limite está em torno de 1,72% ao mês para o consignado INSS.' },
+      { question: 'Consignado para CLT funciona igual?', answer: 'Funciona, mas depende de convênio entre a empresa e o banco. Se sua empresa tem convênio, o desconto sai direto na folha de pagamento.' },
+      { question: 'Posso transferir meu consignado para outro banco?', answer: 'Sim, a portabilidade de crédito é um direito seu. Você pode transferir o saldo devedor para outro banco que ofereça taxas melhores.' },
+      { question: 'O que acontece se eu perder o emprego com consignado ativo?', answer: 'O banco tem mecanismos de proteção. Em caso de demissão, as parcelas deixam de ser descontadas e você pode negociar o pagamento diretamente com o banco.' },
+    ],
+  },
+  // === EMPRÉSTIMOS — ARTIGO 4/5 ===
+  {
+    slug: 'como-calcular-custo-real-emprestimo',
+    title: 'Como calcular o custo real de um empréstimo',
+    description: 'Aprenda a calcular o custo real de qualquer empréstimo antes de contratar. Incluindo juros, IOF, tarifas e seguros.',
+    date: '2026-06-04',
+    category: 'Empréstimos',
+    keywords: ['calcular custo real empréstimo', 'custo efetivo empréstimo', 'quanto vou pagar empréstimo', 'calcular juros empréstimo', 'simular empréstimo'],
+    relatedCalculators: [
+      { name: 'Empréstimo', href: '/calculadoras/emprestimo' },
+      { name: 'Financiamento', href: '/calculadoras/financiamento' },
+    ],
+    content: `
+<section><h2>O custo real não é só a taxa de juros</h2>
+<p>Quando você contrata um empréstimo de R$ 10.000 com taxa de 3% ao mês, você não paga só R$ 300 de juros por mês. O custo real inclui IOF, tarifas, seguros e o efeito dos juros compostos.</p>
+<p>Vamos aprender a calcular o custo real passo a passo, para você nunca mais ser pego de surpresa.</p>
+</section>
+<section><h2>Passo 1: Identifique todos os encargos</h2>
+<p>Antes de calcular, você precisa saber o valor de cada encargo:</p>
+<ul>
+<li><strong>Valor do empréstimo:</strong> R$ 10.000</li>
+<li><strong>Taxa de juros:</strong> 3% ao mês</li>
+<li><strong>Prazo:</strong> 12 meses</li>
+<li><strong>IOF:</strong> 0,38% sobre o valor + 0,0082% ao dia</li>
+<li><strong>Tarifa de cadastro:</strong> R$ 50 (se houver)</li>
+<li><strong>Seguro prestamista:</strong> R$ 30/mês (se houver)</li>
+</ul>
+</section>
+<section><h2>Passo 2: Calcule o valor da parcela</h2>
+<p>Usando a fórmula da tabela Price (sistema francês de amortização), que é a mais comum no Brasil:</p>
+<p>P = VF × [i × (1 + i)^n] / [(1 + i)^n - 1]</p>
+<p>Onde:</p>
+<ul>
+<li>P = valor da parcela</li>
+<li>VF = valor financiado (R$ 10.000)</li>
+<li>i = taxa de juros mensal (3% = 0,03)</li>
+<li>n = número de parcelas (12)</li>
+</ul>
+<p>Com esses valores, a parcela fica em R$ 1.005, sem incluir IOF e tarifas.</p>
+</section>
+<section><h2>Passo 3: Adicione IOF e tarifas</h2>
+<p>O IOF é calculado assim:</p>
+<ul>
+<li>IOF fixo: 0,38% de R$ 10.000 = R$ 38</li>
+<li>IOF diário: 0,0082% × 365 dias × R$ 10.000 = aproximados R$ 299</li>
+<li>Total IOF: R$ 337 (pago à vista no momento da contratação)</li>
+</ul>
+<p>Com IOF, o valor líquido que você recebe é R$ 9.663 (R$ 10.000 - R$ 337).</p>
+<p>Se houver tarifa de cadastro de R$ 50, o valor líquido cai para R$ 9.613.</p>
+</section>
+<section><h2>Passo 4: Calcule o custo total</h2>
+<ul>
+<li>12 parcelas de R$ 1.005 = R$ 12.060</li>
+<li>+ IOF (já incluso no valor financiado, mas reduz o valor recebido)</li>
+<li>+ tarifa de cadastro (reduz o valor recebido)</li>
+</ul>
+<p>Custo total aproximado: R$ 12.060 para receber R$ 9.613 → você paga R$ 2.447 de juros e encargos.</p>
+<p>Use nossa <a href="/calculadoras/emprestimo">calculadora de empréstimo</a> para fazer essa conta automaticamente.</p>
+</section>
+<section><h2>Ferramenta prática: simulador do Banco Central</h2>
+<p>O Banco Central oferece um simulador de crédito gratuito que calcula o custo real de qualquer empréstimo. Acesse www.bcb.gov.br e procure por &quot;Simulador de Crédito&quot;. Você coloca o valor, taxa e prazo, e ele mostra o CET.</p>
+</section>
+<section><h2>Conclusão</h2>
+<p>Calcular o custo real de um empréstimo não é complicado quando você sabe o que incluir. O valor da parcela é só o começo, não o fim da conta. Considere IOF, tarifas, seguros e o prazo total. E nunca contrate sem usar um simulador primeiro.</p>
+</section>`,
+    faq: [
+      { question: 'Quanto de IOF é cobrado em um empréstimo?', answer: 'O IOF é de 0,38% sobre o valor total + 0,0082% ao dia de prazo. Para um empréstimo de 12 meses, o IOF total gira em torno de 3,4% do valor.' },
+      { question: 'O IOF é cobrado à vista ou parcelado?', answer: 'O IOF é descontado à vista no momento da liberação do crédito. Você recebe o valor do empréstimo já com o IOF descontado.' },
+      { question: 'Vale a pena pagar o empréstimo antes do prazo?', answer: 'Sim, você tem direito ao desconto proporcional dos juros futuros. É chamado de quitação antecipada e é um direito seu por lei.' },
+      { question: 'O que é seguro prestamista?', answer: 'É um seguro que paga o saldo devedor em caso de morte ou invalidez do contratante. Não é obrigatório, mas muitos bancos incluem no CET.' },
+      { question: 'Como saber se o banco está cobrando juros abusivos?', answer: 'Compare a taxa com a média do mercado (divulgada pelo BCB). Se estiver muito acima, reclame no banco e, se necessário, no Banco Central.' },
+    ],
+  },
+  // === EMPRÉSTIMOS — ARTIGO 5/5 ===
+  {
+    slug: 'quando-nao-vale-a-pena-fazer-emprestimo',
+    title: 'Quando NÃO vale a pena fazer um empréstimo',
+    description: 'Saiba em quais situações o empréstimo é uma armadilha financeira. Evite erros comuns que custam caro no bolso.',
+    date: '2026-06-04',
+    category: 'Empréstimos',
+    keywords: ['quando não fazer empréstimo', 'empréstimo não compensa', 'evitar empréstimo', 'armadilha empréstimo', 'emprestimo perigoso'],
+    relatedCalculators: [
+      { name: 'Empréstimo', href: '/calculadoras/emprestimo' },
+      { name: 'Troca de Dívidas', href: '/calculadoras/troca-dividas' },
+      { name: 'Economia Mensal', href: '/calculadoras/economia-mensal' },
+    ],
+    content: `
+<section><h2>Empréstimo não é solução para tudo</h2>
+<p>No Brasil, o crédito é fácil de conseguir e difícil de pagar. Antes de contratar qualquer empréstimo, pare e pense: eu realmente preciso disso? Existe outra forma?</p>
+<p>Nem todas as situações justificam um empréstimo. Algumas são armadilhas que vão te custar caro. Vamos ver quando você deve fugir do crédito.</p>
+</section>
+<section><h2>1. Para pagar contas do dia a dia</h2>
+<p>Pegar empréstimo para pagar supermercado, luz, água ou aluguel é o primeiro sinal de que seu orçamento está comprometido. O empréstimo não resolve o problema, só empurra para frente com juros.</p>
+<p>Se isso está acontecendo, você precisa reduzir gastos ou aumentar a renda, não contratar mais dívidas.</p>
+</section>
+<section><h2>2. Para viajar ou fazer festa</h2>
+<p>Pegar empréstimo para viajar, fazer casamento ou festa de aniversário é financeiramente irresponsável. Esses eventos são importantes, mas não justificam pagar juros por meses ou anos depois.</p>
+<p>Regra de ouro: se não tem dinheiro à vista, não gaste. Junte primeiro, gaste depois.</p>
+</section>
+<section><h2>3. Para investir (consignado na bolsa)</h2>
+<p>&quot;Vou pegar um empréstimo consignado a 2% ao mês e investir em ações que rendem 3% ao mês.&quot; Essa conta não fecha. Investimento não tem retorno garantido, e empréstimo tem juro garantido.</p>
+<p>Nunca invista dinheiro emprestado. Se o investimento der errado, você fica com a dívida.</p>
+</section>
+<section><h2>4. Para pagar outro empréstimo (sem melhora de taxa)</h2>
+<p>Fazer um empréstimo novo para pagar um empréstimo velho, com taxas iguais ou piores, não resolve nada. Você só está rolando a dívida e pagando mais juros.</p>
+<p>Se for fazer isso, use nossa <a href="/calculadoras/troca-dividas">calculadora de troca de dívidas</a> para ver se realmente compensa.</p>
+</section>
+<section><h2>5. Para comprar carro zero (se você já tem carro funcionando)</h2>
+<p>Trocar de carro todo ano financiando a diferença é um dos maiores destruidores de patrimônio. Um carro zero de R$ 80.000 financiado em 60 meses pode custar R$ 120.000 no final.</p>
+<p>Se seu carro atual funciona, mantenha ele por mais alguns anos.</p>
+</section>
+<section><h2>6. Quando a parcela compromete mais de 30% da renda</h2>
+<p>Especialistas recomendam que o total de dívidas não ultrapasse 30% da sua renda líquida. Se a parcela do novo empréstimo vai te levar além disso, é melhor esperar.</p>
+<p>Use nossa <a href="/calculadoras/comprometimento-renda">calculadora de comprometimento de renda</a> para verificar.</p>
+</section>
+<section><h2>7. Para &quot;aproveitar uma promoção&quot;</h2>
+<p>&quot;Está com desconto, mas só até amanhã! Vou fazer um empréstimo rápido para pagar.&quot; Promoções voltam. Juros pagos não voltam. Se você não tem o dinheiro, a promoção não é para você.</p>
+</section>
+<section><h2>Alternativas ao empréstimo</h2>
+<ul>
+<li>Vender algo que você não usa</li>
+<li>Fazer renda extra (freela, hora extra, bico)</li>
+<li>Negociar desconto à vista</li>
+<li>Usar a reserva de emergência (se for emergência mesmo)</li>
+<li>Esperar e juntar dinheiro</li>
+</ul>
+</section>
+<section><h2>Conclusão</h2>
+<p>Empréstimo não é vilão, mas também não é solução para tudo. Use crédito com responsabilidade: para emergências reais, para compras que se valorizam ou para situações onde o custo do empréstimo é menor que o prejuízo de não tê-lo. Fora isso, junte dinheiro primeiro.</p>
+</section>`,
+    faq: [
+      { question: 'Qual o único motivo que justifica um empréstimo?', answer: 'Emergências reais (saúde, reparos urgentes na casa) e situações onde o empréstimo gera retorno financeiro (reforma que valoriza o imóvel, curso que aumenta o salário).' },
+      { question: 'Empréstimo para quitar cartão compensa?', answer: 'Compensa se a taxa do empréstimo for significativamente menor que a do rotativo. Use a calculadora de troca de dívidas para comparar.' },
+      { question: 'Qual o percentual ideal de comprometimento da renda?', answer: 'O ideal é que o total de dívidas não ultrapasse 30% da renda líquida. Acima de 50% é considerado situação de risco.' },
+      { question: 'Empréstimo para abrir negócio vale a pena?', answer: 'Vale se você tem um plano de negócios realista e já pesquisou o mercado. Mas prefira começar pequeno com recursos próprios.' },
+      { question: 'Como dizer não para um empréstimo &quot;imperdível&quot;?', answer: 'Lembre-se: o banco não está te fazendo um favor. Ele está vendendo um produto. Se a oferta for realmente boa, ela vai estar disponível amanhã também. Durma com a proposta.' },
+    ],
+  },
+];
 
 export function getAllPosts(): Post[] {
   return posts

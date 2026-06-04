@@ -3,13 +3,27 @@ import { SITE_URL } from '@/lib/config'
 import { calculatorsConfig } from '@/lib/schemas-financeiro'
 import { CalculadoraTemplate } from '@/components/calculadora-template'
 
+const cfg = calculatorsConfig['quitacao-dividas']
+
 export const metadata: Metadata = {
-  title: `${calculatorsConfig['quitacao-dividas'].title} | Bolso do Trabalhador`,
-  description: calculatorsConfig['quitacao-dividas'].description,
-  alternates: { canonical: `${SITE_URL}${calculatorsConfig['quitacao-dividas'].path}` },
+  title: `${cfg.title} | Bolso do Trabalhador`,
+  description: cfg.description,
+  keywords: cfg.keywords,
+  alternates: { canonical: `${SITE_URL}${cfg.path}` },
   openGraph: {
-    title: calculatorsConfig['quitacao-dividas'].title,
-    description: calculatorsConfig['quitacao-dividas'].description,
+    title: cfg.title,
+    description: cfg.description,
+    url: `${SITE_URL}${cfg.path}`,
+    siteName: 'Bolso do Trabalhador',
+    locale: 'pt_BR',
+    type: 'website',
+    images: [{ url: `${SITE_URL}/og-image.png`, width: 1200, height: 630, alt: cfg.title }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: cfg.title,
+    description: cfg.description,
+    images: [`${SITE_URL}/og-image.png`],
   },
 }
 

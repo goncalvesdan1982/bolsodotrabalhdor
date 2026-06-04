@@ -56,7 +56,7 @@ export function BlogCardCover({ slug, title, category, className = '', priority 
 
       <div className="absolute bottom-2 right-3">
         <span className="text-white/30 text-[10px] font-medium">
-          bolsodotrabalhador.com.br
+          bolsodotrabalhador.online
         </span>
       </div>
     </div>

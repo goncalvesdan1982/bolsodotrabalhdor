@@ -17,6 +17,13 @@ export const metadata: Metadata = {
     siteName: 'Bolso do Trabalhador',
     locale: 'pt_BR',
     type: 'website',
+    images: [{ url: `${SITE_URL}/og-image.png`, width: 1200, height: 630, alt: 'Dívidas — Bolso do Trabalhador' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Dívidas - Como Sair das Dívidas e Limpar o Nome',
+    description: 'Guia completo para sair das dívidas, negociar credores e recuperar o controle financeiro.',
+    images: [`${SITE_URL}/og-image.png`],
   },
   alternates: { canonical: `${SITE_URL}/dividas` },
 }
