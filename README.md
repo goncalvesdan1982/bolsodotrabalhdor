@@ -1,6 +1,6 @@
 # Calculadora Trabalhista 
 
-Site de calculadoras trabalhistas gratuitas para trabalhadores CLT no Brasil. Oferece 18 ferramentas de cálculo para rescisão, férias, 13º salário, FGTS, horas extras, salário líquido, seguro-desemprego, adicional noturno, aviso prévio, insalubridade, periculosidade, banco de horas, custo CLT, INSS, IRRF, reajuste salarial e acerto trabalhista, além de blog informativo sobre direitos trabalhistas e declaração de Imposto de Renda.
+Site de calculadoras trabalhistas gratuitas para trabalhadores CLT no Brasil. Oferece 18 ferramentas de cálculo para rescisão, férias, 13º salário, FGTS, horas extras, salário líquido, seguro-desemprego, adicional noturno, aviso prévio, insalubridade, periculosidade, banco de horas, custo CLT, INSS, IRRF, reajuste salarial e acerto trabalhista, além de blog informativo sobre direitos trabalhistas e declaração de Imposto de Renda. 
 
 **Público-alvo:** Trabalhadores brasileiros com carteira assinada (CLT), profissionais de RH, contadores e estudantes de direito trabalhista.
 
