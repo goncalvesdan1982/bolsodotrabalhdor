@@ -200,6 +200,29 @@ export default function MetodologiaPage() {
               e o prazo não é estendido excessivamente a ponto de aumentar o custo total.
             </p>
 
+            <h2>Como utilizamos as informações</h2>
+            <p>
+              Todo o conteúdo do Bolso do Trabalhador é produzido com base em <strong>fontes oficiais</strong> — 
+              Banco Central, IBGE, Serasa, Febraban e legislação brasileira — garantindo que as informações 
+              apresentadas sejam precisas e atualizadas.
+            </p>
+            <p>
+              Nossos artigos e calculadoras passam por <strong>revisão periódica</strong> para refletir mudanças 
+              em taxas, regras e regulamentações. A data da última revisão é informada no início de cada conteúdo.
+            </p>
+            <p>
+              <strong>Todo o material tem caráter exclusivamente educativo e informativo.</strong> 
+              As calculadoras fornecem estimativas baseadas em fórmulas matemáticas padrão de mercado, 
+              mas os resultados podem variar conforme seu perfil de crédito, a instituição financeira 
+              e as condições específicas de cada contratação.
+            </p>
+            <p>
+              O Bolso do Trabalhador <strong>não oferece aconselhamento financeiro individual</strong>. 
+              Recomendamos que o leitor consulte um profissional qualificado (consultor financeiro, 
+              contador ou advogado) antes de tomar decisões financeiras importantes, como contratar 
+              um empréstimo, financiar um imóvel ou renegociar dívidas.
+            </p>
+
             <h2>Fontes e Precisão</h2>
             <p>
               Todas as nossas calculadoras utilizam dados e taxas de referência das seguintes fontes oficiais:

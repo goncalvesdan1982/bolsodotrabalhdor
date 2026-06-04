@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Calculator, PiggyBank, Target, TrendingUp, Home, Briefcase, Heart, BookOpen, ShoppingBag, CreditCard, AlertTriangle, DollarSign, RefreshCw, BarChart3 } from 'lucide-react'
+import { Calculator, PiggyBank, Target, TrendingUp, Home, Briefcase, Heart, BookOpen, ShoppingBag, CreditCard, AlertTriangle, DollarSign, RefreshCw, BarChart3, Info } from 'lucide-react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
@@ -621,6 +621,16 @@ export function CalculadoraTemplate({ calculadoraKey }: CalculadoraTemplateProps
             <h1 className="text-3xl font-bold text-foreground mb-2">{config.title}</h1>
             <p className="text-muted-foreground">{config.description}</p>
           </div>
+
+          {['emprestimo', 'financiamento', 'parcelas', 'troca-dividas', 'quitacao-dividas', 'capacidade-endividamento'].includes(calculadoraKey) && (
+            <div className="mb-6 p-4 bg-amber-50 border border-amber-200 rounded-lg text-sm text-amber-800 flex items-start gap-3">
+              <Info className="w-5 h-5 shrink-0 mt-0.5 text-amber-500" />
+              <p>
+                Esta calculadora tem finalidade exclusivamente educativa e informativa. Os resultados são estimativas 
+                e não substituem a análise de instituições financeiras ou orientação profissional.
+              </p>
+            </div>
+          )}
 
           <div className="flex justify-center mb-6">
             <CalculadoraSchema calculadoraKey={calculadoraKey} />

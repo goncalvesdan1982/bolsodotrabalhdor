@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button'
 import { BlogAnalytics } from '@/components/blog-analytics'
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Calendar, Clock, ChevronLeft, ArrowRight, Calculator, HelpCircle, CheckCircle, ExternalLink } from 'lucide-react'
+import { Calendar, Clock, ChevronLeft, ArrowRight, Calculator, HelpCircle, CheckCircle, ExternalLink, Info } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
 import { Breadcrumbs } from '@/components/breadcrumbs'
 import { TableOfContents } from '@/components/table-of-contents'
@@ -229,6 +229,16 @@ export default async function PostPage({ params }: PostPageProps) {
           <div className="mb-8 p-4 bg-muted/40 border-l-4 border-secondary rounded-r-lg text-sm text-muted-foreground leading-relaxed">
             <p>{post.description}</p>
           </div>
+
+          {['Dívidas', 'Cartões', 'Empréstimos', 'Score'].includes(post.category) && (
+            <div className="mb-8 p-4 bg-blue-50 border border-blue-200 rounded-lg text-sm text-blue-800 flex items-start gap-3">
+              <Info className="w-5 h-5 shrink-0 mt-0.5 text-blue-500" />
+              <p>
+                As informações apresentadas têm caráter educativo e não constituem recomendação financeira individual. 
+                Antes de contratar produtos financeiros, avalie sua situação e consulte fontes oficiais.
+              </p>
+            </div>
+          )}
 
           <TableOfContents />
 
