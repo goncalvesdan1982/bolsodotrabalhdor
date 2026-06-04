@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
-import { PiggyBank, Home, BarChart3, RefreshCw, TrendingUp, AlertTriangle, CreditCard, Target, Calculator } from 'lucide-react'
+import { PiggyBank, Home, BarChart3, RefreshCw, TrendingUp, AlertTriangle, CreditCard, Target, Calculator, ArrowRight } from 'lucide-react'
 import { Card, CardContent, CardDescription, CardTitle } from '@/components/ui/card'
 import { Breadcrumbs } from '@/components/breadcrumbs'
 import { SITE_URL } from '@/lib/config'
@@ -43,6 +43,22 @@ const calculadoras = [
   { nome: 'Parcelas', descricao: 'Calcule o valor de parcelas com ou sem juros.', href: '/calculadoras/parcelas', icon: Calculator, cor: 'bg-pink-100 text-pink-600' },
 ]
 
+const ctaTexts: Record<string, string> = {
+  'Reserva de Emergência': 'Quanto devo guardar?',
+  'Orçamento Familiar': 'Organizar meu orçamento',
+  'Capacidade de Endividamento': 'Calcular meu limite',
+  'Troca de Dívidas': 'Comparar cenários',
+  'Economia Mensal': 'Quanto posso poupar?',
+  'Comprometimento de Renda': 'Ver meu percentual',
+  'Quitação de Dívidas': 'Montar plano de quitação',
+  'Meta Financeira': 'Simular minha meta',
+  'Juros Compostos': 'Simular crescimento',
+  'Juros Simples': 'Calcular juros',
+  'Empréstimo': 'Calcular parcelas',
+  'Financiamento': 'Simular financiamento',
+  'Parcelas': 'Calcular parcelamento',
+}
+
 export default function CalculadorasPage() {
   return (
     <div className="min-h-screen py-12">
@@ -65,14 +81,17 @@ export default function CalculadorasPage() {
               const Icon = calc.icon
               return (
                 <Link key={calc.href} href={calc.href} className="group">
-                  <Card className="h-full transition-colors hover:border-primary/50">
+                  <Card className="h-full transition-all hover:shadow-md hover:border-primary/50 group-hover:-translate-y-0.5">
                     <CardContent className="flex items-start gap-4 pt-6">
                       <div className={`w-12 h-12 rounded-lg ${calc.cor} flex items-center justify-center shrink-0`}>
                         <Icon className="h-6 w-6" />
                       </div>
-                      <div className="min-w-0">
+                      <div className="min-w-0 flex-1">
                         <CardTitle className="text-sm mb-1 group-hover:text-primary transition-colors">{calc.nome}</CardTitle>
                         <CardDescription className="text-xs">{calc.descricao}</CardDescription>
+                        <div className="mt-2 flex items-center text-primary text-xs font-medium gap-1 group-hover:gap-2 transition-all">
+                          {ctaTexts[calc.nome] || 'Calcular'} <ArrowRight className="w-3 h-3" />
+                        </div>
                       </div>
                     </CardContent>
                   </Card>

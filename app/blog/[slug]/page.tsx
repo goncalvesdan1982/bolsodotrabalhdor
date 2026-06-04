@@ -209,6 +209,21 @@ export default async function PostPage({ params }: PostPageProps) {
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4 leading-tight">
               {post.title}
             </h1>
+            <div className="flex items-center gap-3 mb-6 pb-6 border-b border-border/40">
+              <Link href="/autor" className="shrink-0">
+                <div className="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center text-white font-bold text-sm hover:opacity-90 transition-opacity">
+                  DG
+                </div>
+              </Link>
+              <div className="text-sm">
+                <p className="font-medium text-foreground">
+                  Por <Link href="/autor" className="text-secondary hover:underline">Daniel Gonçalves</Link>
+                </p>
+                <p className="text-muted-foreground text-xs">
+                  {formattedDate} · {readingTime} min de leitura
+                </p>
+              </div>
+            </div>
           </header>
 
           <div className="mb-8 p-4 bg-muted/40 border-l-4 border-secondary rounded-r-lg text-sm text-muted-foreground leading-relaxed">

@@ -4,12 +4,13 @@ import {
   Calculator, Wallet, TrendingDown, CreditCard, 
   Landmark, Shield, PiggyBank, ArrowRight,
   CheckCircle2, BarChart3, ScrollText, Percent,
-  AlertTriangle, DollarSign
+  AlertTriangle, DollarSign, Calendar
 } from 'lucide-react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { SITE_URL } from '@/lib/config'
+import { getAllPosts } from '@/lib/posts'
 
 export const metadata: Metadata = {
   title: 'Bolso do Trabalhador - Finanças Simples para Quem Trabalha e Paga Boletos',
@@ -50,6 +51,24 @@ const categorias = [
   { nome: 'Organização Financeira', descricao: 'Métodos práticos para controlar gastos e organizar as contas.', href: '/organizacao-financeira', icon: ScrollText, cor: 'bg-teal-100 text-teal-600' },
   { nome: 'Custo de Vida', descricao: 'Descubra quanto custa morar, ter carro, criar um filho e mais.', href: '/custo-de-vida', icon: Wallet, cor: 'bg-violet-100 text-violet-600' },
 ]
+
+const categoryBadgeColors: Record<string, string> = {
+  'Dívidas': 'bg-red-100 text-red-700',
+  'Score': 'bg-blue-100 text-blue-700',
+  'Cartões': 'bg-indigo-100 text-indigo-700',
+  'Empréstimos': 'bg-amber-100 text-amber-700',
+  'Organização Financeira': 'bg-teal-100 text-teal-700',
+  'Custo de Vida': 'bg-violet-100 text-violet-700',
+}
+
+const ctaTexts: Record<string, string> = {
+  'Juros Compostos': 'Simular crescimento →',
+  'Juros Simples': 'Calcular juros →',
+  'Empréstimo': 'Calcular parcelas →',
+  'Financiamento': 'Simular financiamento →',
+  'Reserva de Emergência': 'Quanto devo guardar? →',
+  'Orçamento Familiar': 'Organizar meu orçamento →',
+}
 
 export default function HomePage() {
   return (
@@ -119,7 +138,7 @@ export default function HomePage() {
                     <CardContent>
                       <CardDescription className="text-sm">{calc.descricao}</CardDescription>
                       <div className="mt-4 flex items-center text-primary text-sm font-medium">
-                        Calcular agora <ArrowRight className="ml-1 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                        {ctaTexts[calc.nome] || 'Calcular agora'} <ArrowRight className="ml-1 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                       </div>
                     </CardContent>
                   </Card>
@@ -168,6 +187,60 @@ export default function HomePage() {
                 </Link>
               )
             })}
+          </div>
+        </div>
+      </section>
+
+      {/* Artigos Recentes */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-foreground mb-4">Últimos Artigos</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Dicas práticas e conteúdo educativo para ajudar você a organizar suas finanças e tomar decisões melhores.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {getAllPosts()
+              .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+              .slice(0, 3)
+              .map((post) => (
+                <Link key={post.slug} href={`/blog/${post.slug}`} className="group">
+                  <Card className="h-full transition-all hover:shadow-lg hover:border-primary/50 group-hover:-translate-y-1">
+                    <CardHeader>
+                      <div className="flex items-center gap-2 mb-3">
+                        <span className={`inline-block text-xs font-semibold px-2.5 py-1 rounded-full ${categoryBadgeColors[post.category] || 'bg-gray-100 text-gray-700'}`}>
+                          {post.category}
+                        </span>
+                      </div>
+                      <CardTitle className="text-lg group-hover:text-primary transition-colors leading-snug">
+                        {post.title}
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <CardDescription className="text-sm line-clamp-2">
+                        {post.description}
+                      </CardDescription>
+                      <div className="mt-4 flex items-center justify-between">
+                        <span className="text-xs text-muted-foreground flex items-center gap-1">
+                          <Calendar className="w-3 h-3" />
+                          {new Date(post.date).toLocaleDateString('pt-BR')}
+                        </span>
+                        <span className="text-sm text-primary font-medium flex items-center gap-1 group-hover:gap-2 transition-all">
+                          Ler artigo <ArrowRight className="w-3.5 h-3.5" />
+                        </span>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </Link>
+              ))}
+          </div>
+          <div className="text-center mt-8">
+            <Button variant="outline" asChild>
+              <Link href="/blog">
+                Ver todos os artigos <ArrowRight className="ml-2 w-4 h-4" />
+              </Link>
+            </Button>
           </div>
         </div>
       </section>
