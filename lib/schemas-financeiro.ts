@@ -121,9 +121,9 @@ export const calculatorsConfig: Record<string, CalculatorConfig> = {
       { name: 'Meta Financeira', href: '/calculadoras/meta-financeira' },
     ],
     relatedArticles: [
-      { name: 'Como sair das dívidas: guia passo a passo', href: '/dividas/como-sair-das-dividas' },
-      { name: 'Reserva de emergência: quanto guardar?', href: '/organizacao-financeira/reserva-emergencia' },
-      { name: 'Como controlar gastos do dia a dia', href: '/organizacao-financeira/como-controlar-gastos' },
+      { name: 'Como sair das dívidas: guia passo a passo', href: '/blog/como-sair-das-dividas-guia-completo' },
+      { name: 'Reserva de emergência: quanto guardar?', href: '/organizacao-financeira' },
+      { name: 'Como controlar gastos do dia a dia', href: '/organizacao-financeira' },
     ],
   },
   'juros-simples': {
@@ -152,9 +152,9 @@ export const calculatorsConfig: Record<string, CalculatorConfig> = {
       { name: 'Quitação de Dívidas', href: '/calculadoras/quitacao-dividas' },
     ],
     relatedArticles: [
-      { name: 'Como calcular juros de empréstimo', href: '/emprestimos/como-calcular-juros-emprestimo' },
-      { name: 'Dívida no cartão: o que fazer?', href: '/dividas/divida-cartao-o-que-fazer' },
-      { name: 'Empréstimo pessoal ou consignado?', href: '/emprestimos/emprestimo-pessoal-consignado' },
+      { name: 'Como calcular juros de empréstimo', href: '/blog/como-calcular-custo-real-emprestimo' },
+      { name: 'Dívida no cartão: o que fazer?', href: '/blog/o-que-acontece-se-parar-de-pagar-cartao' },
+      { name: 'Empréstimo pessoal ou consignado?', href: '/blog/emprestimo-pessoal-ou-consignado' },
     ],
   },
   emprestimo: {
@@ -183,9 +183,9 @@ export const calculatorsConfig: Record<string, CalculatorConfig> = {
       { name: 'Capacidade de Endividamento', href: '/calculadoras/capacidade-endividamento' },
     ],
     relatedArticles: [
-      { name: 'Empréstimo pessoal ou consignado?', href: '/emprestimos/emprestimo-pessoal-consignado' },
-      { name: 'Como comparar empréstimos', href: '/emprestimos/como-comparar-emprestimos' },
-      { name: 'Refinanciamento compensa?', href: '/emprestimos/refinanciamento-compensa' },
+      { name: 'Empréstimo pessoal ou consignado?', href: '/blog/emprestimo-pessoal-ou-consignado' },
+      { name: 'Como comparar empréstimos', href: '/blog/como-comparar-emprestimos-corretamente' },
+      { name: 'Refinanciamento compensa?', href: '/blog/emprestimo-consignado-vale-a-pena' },
     ],
   },
   financiamento: {
@@ -214,9 +214,9 @@ export const calculatorsConfig: Record<string, CalculatorConfig> = {
       { name: 'Capacidade de Endividamento', href: '/calculadoras/capacidade-endividamento' },
     ],
     relatedArticles: [
-      { name: 'Refinanciamento compensa?', href: '/emprestimos/refinanciamento-compensa' },
-      { name: 'Como calcular juros de empréstimo', href: '/emprestimos/como-calcular-juros-emprestimo' },
-      { name: 'Quanto comprometer da renda', href: '/organizacao-financeira/quanto-comprometer-renda' },
+      { name: 'Refinanciamento compensa?', href: '/blog/emprestimo-consignado-vale-a-pena' },
+      { name: 'Como calcular juros de empréstimo', href: '/blog/como-calcular-custo-real-emprestimo' },
+      { name: 'Quanto comprometer da renda', href: '/blog/metodo-50-30-20-como-aplicar' },
     ],
   },
   parcelas: {
@@ -245,9 +245,9 @@ export const calculatorsConfig: Record<string, CalculatorConfig> = {
       { name: 'Economia Mensal', href: '/calculadoras/economia-mensal' },
     ],
     relatedArticles: [
-      { name: 'Dívida no cartão: o que fazer?', href: '/dividas/divida-cartao-o-que-fazer' },
-      { name: 'Como usar o cartão com inteligência', href: '/cartoes/como-usar-cartao-inteligencia' },
-      { name: 'Juros do cartão de crédito', href: '/cartoes/juros-cartao-credito' },
+      { name: 'Dívida no cartão: o que fazer?', href: '/blog/o-que-acontece-se-parar-de-pagar-cartao' },
+      { name: 'Como usar o cartão com inteligência', href: '/blog/cartao-sem-anuidade-vale-a-pena' },
+      { name: 'Juros do cartão de crédito', href: '/blog/como-evitar-juros-rotativo' },
     ],
   },
   'reserva-emergencia': {
@@ -275,9 +275,9 @@ export const calculatorsConfig: Record<string, CalculatorConfig> = {
       { name: 'Meta Financeira', href: '/calculadoras/meta-financeira' },
     ],
     relatedArticles: [
-      { name: 'Reserva de emergência: quanto guardar?', href: '/organizacao-financeira/reserva-emergencia' },
-      { name: 'Como controlar gastos do dia a dia', href: '/organizacao-financeira/como-controlar-gastos' },
-      { name: 'Como sair das dívidas: guia passo a passo', href: '/dividas/como-sair-das-dividas' },
+      { name: 'Reserva de emergência: quanto guardar?', href: '/organizacao-financeira' },
+      { name: 'Como controlar gastos do dia a dia', href: '/organizacao-financeira' },
+      { name: 'Como sair das dívidas: guia passo a passo', href: '/blog/como-sair-das-dividas-guia-completo' },
     ],
   },
   'orcamento-familiar': {
@@ -306,9 +306,9 @@ export const calculatorsConfig: Record<string, CalculatorConfig> = {
       { name: 'Comprometimento de Renda', href: '/calculadoras/comprometimento-renda' },
     ],
     relatedArticles: [
-      { name: 'Como controlar gastos do dia a dia', href: '/organizacao-financeira/como-controlar-gastos' },
-      { name: 'Reserva de emergência: quanto guardar?', href: '/organizacao-financeira/reserva-emergencia' },
-      { name: 'Quanto comprometer da renda', href: '/organizacao-financeira/quanto-comprometer-renda' },
+      { name: 'Como controlar gastos do dia a dia', href: '/organizacao-financeira' },
+      { name: 'Reserva de emergência: quanto guardar?', href: '/organizacao-financeira' },
+      { name: 'Quanto comprometer da renda', href: '/blog/metodo-50-30-20-como-aplicar' },
     ],
   },
   'capacidade-endividamento': {
@@ -337,9 +337,9 @@ export const calculatorsConfig: Record<string, CalculatorConfig> = {
       { name: 'Troca de Dívidas', href: '/calculadoras/troca-dividas' },
     ],
     relatedArticles: [
-      { name: 'Quanto comprometer da renda', href: '/organizacao-financeira/quanto-comprometer-renda' },
-      { name: 'Como sair das dívidas: guia passo a passo', href: '/dividas/como-sair-das-dividas' },
-      { name: 'Dívida no cartão: o que fazer?', href: '/dividas/divida-cartao-o-que-fazer' },
+      { name: 'Quanto comprometer da renda', href: '/blog/metodo-50-30-20-como-aplicar' },
+      { name: 'Como sair das dívidas: guia passo a passo', href: '/blog/como-sair-das-dividas-guia-completo' },
+      { name: 'Dívida no cartão: o que fazer?', href: '/blog/o-que-acontece-se-parar-de-pagar-cartao' },
     ],
   },
   'troca-dividas': {
@@ -370,9 +370,9 @@ export const calculatorsConfig: Record<string, CalculatorConfig> = {
       { name: 'Empréstimo', href: '/calculadoras/emprestimo' },
     ],
     relatedArticles: [
-      { name: 'Refinanciamento compensa?', href: '/emprestimos/refinanciamento-compensa' },
-      { name: 'Como comparar empréstimos', href: '/emprestimos/como-comparar-emprestimos' },
-      { name: 'Empréstimo pessoal ou consignado?', href: '/emprestimos/emprestimo-pessoal-consignado' },
+      { name: 'Refinanciamento compensa?', href: '/blog/emprestimo-consignado-vale-a-pena' },
+      { name: 'Como comparar empréstimos', href: '/blog/como-comparar-emprestimos-corretamente' },
+      { name: 'Empréstimo pessoal ou consignado?', href: '/blog/emprestimo-pessoal-ou-consignado' },
     ],
   },
   'economia-mensal': {
@@ -401,9 +401,9 @@ export const calculatorsConfig: Record<string, CalculatorConfig> = {
       { name: 'Orçamento Familiar', href: '/calculadoras/orcamento-familiar' },
     ],
     relatedArticles: [
-      { name: 'Como controlar gastos do dia a dia', href: '/organizacao-financeira/como-controlar-gastos' },
-      { name: 'Reserva de emergência: quanto guardar?', href: '/organizacao-financeira/reserva-emergencia' },
-      { name: 'Quanto comprometer da renda', href: '/organizacao-financeira/quanto-comprometer-renda' },
+      { name: 'Como controlar gastos do dia a dia', href: '/organizacao-financeira' },
+      { name: 'Reserva de emergência: quanto guardar?', href: '/organizacao-financeira' },
+      { name: 'Quanto comprometer da renda', href: '/blog/metodo-50-30-20-como-aplicar' },
     ],
   },
   'comprometimento-renda': {
@@ -434,9 +434,9 @@ export const calculatorsConfig: Record<string, CalculatorConfig> = {
       { name: 'Troca de Dívidas', href: '/calculadoras/troca-dividas' },
     ],
     relatedArticles: [
-      { name: 'Quanto comprometer da renda', href: '/organizacao-financeira/quanto-comprometer-renda' },
-      { name: 'Como sair das dívidas: guia passo a passo', href: '/dividas/como-sair-das-dividas' },
-      { name: 'Dívida no cartão: o que fazer?', href: '/dividas/divida-cartao-o-que-fazer' },
+      { name: 'Quanto comprometer da renda', href: '/blog/metodo-50-30-20-como-aplicar' },
+      { name: 'Como sair das dívidas: guia passo a passo', href: '/blog/como-sair-das-dividas-guia-completo' },
+      { name: 'Dívida no cartão: o que fazer?', href: '/blog/o-que-acontece-se-parar-de-pagar-cartao' },
     ],
   },
   'quitacao-dividas': {
@@ -465,9 +465,9 @@ export const calculatorsConfig: Record<string, CalculatorConfig> = {
       { name: 'Capacidade de Endividamento', href: '/calculadoras/capacidade-endividamento' },
     ],
     relatedArticles: [
-      { name: 'Como sair das dívidas: guia passo a passo', href: '/dividas/como-sair-das-dividas' },
-      { name: 'Dívida no cartão: o que fazer?', href: '/dividas/divida-cartao-o-que-fazer' },
-      { name: 'Refinanciamento compensa?', href: '/emprestimos/refinanciamento-compensa' },
+      { name: 'Como sair das dívidas: guia passo a passo', href: '/blog/como-sair-das-dividas-guia-completo' },
+      { name: 'Dívida no cartão: o que fazer?', href: '/blog/o-que-acontece-se-parar-de-pagar-cartao' },
+      { name: 'Refinanciamento compensa?', href: '/blog/emprestimo-consignado-vale-a-pena' },
     ],
   },
   'meta-financeira': {
@@ -496,9 +496,9 @@ export const calculatorsConfig: Record<string, CalculatorConfig> = {
       { name: 'Reserva de Emergência', href: '/calculadoras/reserva-emergencia' },
     ],
     relatedArticles: [
-      { name: 'Reserva de emergência: quanto guardar?', href: '/organizacao-financeira/reserva-emergencia' },
-      { name: 'Como controlar gastos do dia a dia', href: '/organizacao-financeira/como-controlar-gastos' },
-      { name: 'Quanto comprometer da renda', href: '/organizacao-financeira/quanto-comprometer-renda' },
+      { name: 'Reserva de emergência: quanto guardar?', href: '/organizacao-financeira' },
+      { name: 'Como controlar gastos do dia a dia', href: '/organizacao-financeira' },
+      { name: 'Quanto comprometer da renda', href: '/blog/metodo-50-30-20-como-aplicar' },
     ],
   },
 }
