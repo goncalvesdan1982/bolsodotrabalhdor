@@ -16,68 +16,626 @@ export interface Post {
 export const posts: Post[] = [
   {
     slug: 'como-sair-das-dividas-guia-completo',
-    title: 'Como sair das dívidas: guia passo a passo completo',
-    description: 'Aprenda como sair das dívidas com um plano prático de 5 passos. Estratégias para negociar, renegociar e recuperar o controle financeiro.',
+    title: 'Como Sair das Dívidas: Guia Passo a Passo para Organizar o Orçamento e Negociar',
+    description: 'Veja como sair das dívidas com um plano prático: organize débitos, priorize juros, negocie com bancos, evite rotativo e recupere seu crédito com segurança.',
     date: '2026-06-01',
+    lastModified: '2026-06-13',
     category: 'Dívidas',
-    keywords: ['sair das dívidas', 'como sair das dívidas', 'negociar dívidas', 'limpar nome'],
+    keywords: ['sair das dívidas', 'como sair das dívidas', 'negociar dívidas', 'qual dívida pagar primeiro', 'organizar finanças', 'dívida do cartão', 'como negociar com banco', 'aumentar score de crédito'],
     relatedCalculators: [
       { name: 'Quitação de Dívidas', href: '/calculadoras/quitacao-dividas' },
+      { name: 'Troca de Dívidas', href: '/calculadoras/troca-dividas' },
       { name: 'Comprometimento de Renda', href: '/calculadoras/comprometimento-renda' },
       { name: 'Orçamento Familiar', href: '/calculadoras/orcamento-familiar' },
+      { name: 'Reserva de Emergência', href: '/calculadoras/reserva-emergencia' },
     ],
     content: `
+<div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-6 text-sm text-blue-800 rounded-r-lg">
+<p><strong>Aviso importante:</strong> Este conteúdo é informativo e educativo. Ele não substitui orientação financeira individual. Antes de contratar empréstimo, parcelar fatura ou renegociar dívidas, compare o custo total, leia as condições e avalie sua renda.</p>
+</div>
+
 <section><h2>Introdução</h2>
-<p>Sair das dívidas não é fácil, mas é possível. Milhares de brasileiros conseguem se reorganizar financeiramente todos os dias com um plano bem estruturado. Este guia foi feito para quem está endividado e quer um caminho prático para resolver essa situação.</p>
-<p>O primeiro passo é entender que dívida tem solução. O segundo é agir. Vamos direto ao ponto.</p>
+
+<p>Se você está lendo este guia, provavelmente já sentiu no bolso o peso das contas vencendo, dos juros acumulando e da sensação de não ver saída. Saiba de uma coisa: você não está sozinho, e sair das dívidas é possível.</p>
+
+<p>Milhões de brasileiros enfrentam o endividamento todos os anos. A diferença entre quem consegue se reorganizar e quem continua afundando está em um fator: ter um plano.</p>
+
+<p>Este guia foi criado para mostrar o caminho, passo a passo, sem promessas milagrosas. Aqui você vai aprender a organizar sua situação real, priorizar o que é urgente, negociar de forma inteligente e evitar armadilhas que podem piorar tudo.</p>
+
+<p>O primeiro passo não é pedir novo empréstimo. É entender exatamente onde você está e para onde precisa ir.</p>
+
 </section>
-<section><h2>Passo 1: Liste todas as suas dívidas</h2>
-<p>Antes de qualquer coisa, você precisa saber exatamente quanto deve e para quem. Pegue um papel, uma planilha ou um aplicativo e anote:</p>
+
+<section><h2>Resumo rápido: plano em 7 passos</h2>
+
+<p>Antes de mergulharmos em cada etapa, veja um panorama do caminho completo:</p>
+
+<table>
+<thead>
+<tr>
+<th>Passo</th>
+<th>O que fazer</th>
+<th>Por que importa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Listar todas as dívidas com valores e juros</td>
+<td>Você não pode resolver o que não conhece</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Separar dívidas por juros e urgência</td>
+<td>Cada tipo de dívida exige uma estratégia diferente</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Proteger contas essenciais</td>
+<td>Água, luz, aluguel e comida vêm primeiro</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Cortar ou pausar gastos não essenciais</td>
+<td>Libera recursos para pagar dívidas sem fazer novas</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Negociar dívidas caras com prioridade</td>
+<td>Juros altos consomem sua renda mais rápido</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Avaliar troca de dívida apenas com CET menor</td>
+<td>Trocar dívida só faz sentido se o custo total for menor</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Reconstruir crédito aos poucos</td>
+<td>Score melhora com pagamentos consistentes ao longo do tempo</td>
+</tr>
+</tbody>
+</table>
+
+</section>
+
+<section><h2>1. Descubra o tamanho real da dívida</h2>
+
+<p>Antes de qualquer negociação, você precisa de um diagnóstico completo. Pegue papel, planilha ou aplicativo e anote cada dívida com o máximo de detalhes possível.</p>
+
+<p>Para cada dívida, registre:</p>
+
 <ul>
-<li>Nome da instituição (banco, loja, etc.)</li>
-<li>Valor total da dívida</li>
-<li>Taxa de juros mensal</li>
+<li>Banco, financeira ou credor</li>
+<li>Valor original contratado</li>
+<li>Valor atual (com juros e multas)</li>
+<li>Taxa de juros mensal e anual</li>
+<li>Há quantos meses está em atraso</li>
+<li>Valor da parcela (se houver)</li>
 <li>Data de vencimento</li>
-<li>Tipo de dívida (cartão, empréstimo, financiamento)</li>
+<li>Se já está negativado (nome sujo)</li>
+<li>Se tem garantia (bem, veículo, imóvel)</li>
+<li>Se afeta serviço essencial (água, luz, aluguel)</li>
 </ul>
-<p>Use nossa <a href="/calculadoras/quitacao-dividas">calculadora de quitação de dívidas</a> para simular quanto tempo leva para pagar cada uma.</p>
+
+<p>Use esta tabela como modelo para organizar:</p>
+
+<table>
+<thead>
+<tr>
+<th>Credor</th>
+<th>Valor atual</th>
+<th>Parcela</th>
+<th>Juros ao mês</th>
+<th>Atraso</th>
+<th>Prioridade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Banco XYZ (cartão)</td>
+<td>R$ 4.500</td>
+<td>R$ 280</td>
+<td>12%</td>
+<td>90 dias</td>
+<td>Alta</td>
+</tr>
+<tr>
+<td>Financeira ABC</td>
+<td>R$ 2.000</td>
+<td>R$ 150</td>
+<td>3%</td>
+<td>30 dias</td>
+<td>Média</td>
+</tr>
+<tr>
+<td>Conta de luz</td>
+<td>R$ 350</td>
+<td>-</td>
+<td>2%</td>
+<td>15 dias</td>
+<td>Urgente</td>
+</tr>
+<tr>
+<td>Cheque especial</td>
+<td>R$ 900</td>
+<td>-</td>
+<td>8%</td>
+<td>correndo</td>
+<td>Alta</td>
+</tr>
+</tbody>
+</table>
+
+<p>Use nossa <a href="/calculadoras/quitacao-dividas">calculadora de quitação de dívidas</a> para simular quanto tempo leva para pagar cada uma com diferentes valores de parcela.</p>
+
 </section>
-<section><h2>Passo 2: Priorize as dívidas mais caras</h2>
-<p>Nem todas as dívidas são iguais. Priorize as que têm juros mais altos primeiro. A ordem geral recomendada é:</p>
+
+<section><h2>2. Separe dívidas caras, urgentes e negociáveis</h2>
+
+<p>Nem toda dívida é igual. Algumas consomem seu dinheiro muito mais rápido que outras, e algumas colocam em risco itens essenciais da sua vida. Veja como classificar cada tipo:</p>
+
+<table>
+<thead>
+<tr>
+<th>Tipo de dívida</th>
+<th>Risco principal</th>
+<th>Atenção</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cartão rotativo</td>
+<td>Juros mais altos do mercado (acima de 300% ao ano)</td>
+<td>Evite ao máximo. Prioridade absoluta.</td>
+</tr>
+<tr>
+<td>Fatura parcelada</td>
+<td>Juros altos, embora menores que o rotativo</td>
+<td>Avalie se o CET é vantajoso antes de parcelar.</td>
+</tr>
+<tr>
+<td>Cheque especial</td>
+<td>Juros de 150% a 300% ao ano</td>
+<td>Use apenas em emergência. Saia assim que possível.</td>
+</tr>
+<tr>
+<td>Empréstimo pessoal</td>
+<td>Juros de 30% a 100% ao ano</td>
+<td>Depende do banco e do perfil. Compare sempre.</td>
+</tr>
+<tr>
+<td>Empréstimo consignado</td>
+<td>Menores juros, mas desconta direto da folha</td>
+<td>Pode ser alternativa para trocar dívida cara.</td>
+</tr>
+<tr>
+<td>Conta de consumo (água, luz)</td>
+<td>Corte de serviço essencial</td>
+<td>Prioridade máxima. Negocie parcelamento.</td>
+</tr>
+<tr>
+<td>Aluguel</td>
+<td>Risco de despejo</td>
+<td>Prioridade máxima. Não atrase.</td>
+</tr>
+<tr>
+<td>Financiamento</td>
+<td>Perda do bem (casa, carro)</td>
+<td>Juros menores, mas risco de perder o bem.</td>
+</tr>
+<tr>
+<td>Dívida já negativada</td>
+<td>Nome sujo, restrições de crédito</td>
+<td>Negocie com desconto, mas sem comprometer renda.</td>
+</tr>
+</tbody>
+</table>
+
+<p>Depois de classificar, você saberá qual dívida exige ação imediata (contas essenciais) e qual dívida precisa ser priorizada pelos juros (cartão, cheque especial).</p>
+
+</section>
+
+<section><h2>3. Qual dívida pagar primeiro?</h2>
+
+<p>Existem dois métodos principais para decidir por onde começar. Nenhum é universalmente melhor — a escolha depende da sua situação e do seu perfil.</p>
+
+<h3>Método avalanche (prioriza juros)</h3>
+<p>Você lista as dívidas da maior para a menor taxa de juros e direciona todo recurso extra para a mais cara, pagando o mínimo nas demais. É o método que economiza mais dinheiro no longo prazo.</p>
+
+<h3>Método bola de neve (prioriza valor menor)</h3>
+<p>Você lista as dívidas da menor para a maior e paga a menor primeiro, independentemente dos juros. O objetivo é ganhar sensação de progresso rápido, o que ajuda a manter a motivação.</p>
+
+<p>Para saber qual método se encaixa melhor no seu caso, veja o artigo <a href="/blog/qual-divida-devo-pagar-primeiro">Qual dívida devo pagar primeiro?</a> com uma análise detalhada de cada estratégia.</p>
+
+</section>
+
+<section><h2>4. Organize o orçamento antes de negociar</h2>
+
+<p>Negociar sem saber quanto você pode pagar é uma das principais causas de novo endividamento. Se você aceitar uma parcela que não cabe no seu bolso, o atraso vai acontecer de novo, com mais juros e mais restrições.</p>
+
+<p>Antes de ligar para o credor, organize seu orçamento mensal:</p>
+
+<ul>
+<li>Some toda a renda líquida (salário, freelas, benefícios)</li>
+<li>Liste todos os gastos essenciais (moradia, alimentação, transporte, saúde)</li>
+<li>Subtraia os essenciais da renda</li>
+<li>O valor restante é o que sobra para dívidas e poupança</li>
+</ul>
+
+<p><strong>Exemplo:</strong></p>
+<ul>
+<li>Renda líquida: R$ 2.800</li>
+<li>Gastos essenciais: R$ 2.100</li>
+<li>Sobra possível: R$ 300 a R$ 500</li>
+<li>Parcela segura para dívidas: até R$ 300, dependendo do caso</li>
+</ul>
+
+<p>Esse valor é o seu limite real de negociação. Não aceite propostas acima dele, por mais tentadoras que pareçam.</p>
+
+<p>Para organizar suas contas com mais detalhes, use nossa <a href="/calculadoras/orcamento-familiar">calculadora de orçamento familiar</a> e veja o artigo sobre o <a href="/blog/metodo-50-30-20-como-aplicar">método 50-30-20</a> para entender como distribuir sua renda de forma equilibrada.</p>
+
+</section>
+
+<section><h2>5. Como negociar dívidas com banco ou credor</h2>
+
+<p>A negociação é o momento mais importante de todo o processo. A maioria dos credores prefere receber um valor com desconto a não receber nada. Mas é preciso negociar com estratégia.</p>
+
+<h3>Passo a passo da negociação:</h3>
+
 <ol>
-<li><strong>Cartão de crédito rotativo:</strong> juros de até 400% ao ano</li>
-<li><strong>Cheque especial:</strong> juros de até 300% ao ano</li>
-<li><strong>Empréstimo pessoal:</strong> juros de 30% a 100% ao ano</li>
-<li><strong>Financiamento:</strong> juros mais baixos, mas prazo longo</li>
+<li><strong>Peça o valor total atualizado</strong> — incluindo juros, multas e encargos</li>
+<li><strong>Pergunte pelo desconto à vista</strong> — muitos credores oferecem até 90% de desconto em juros e multas</li>
+<li><strong>Solicite uma proposta parcelada</strong> — veja o valor das parcelas e o CET (Custo Efetivo Total)</li>
+<li><strong>Compare antes de aceitar</strong> — veja se a parcela cabe no seu orçamento e se o CET é justo</li>
+<li><strong>Não aceite na primeira ligação</strong> — às vezes uma segunda proposta é melhor</li>
+<li><strong>Guarde todos os comprovantes</strong> — protocolo, contrato, comprovante de pagamento</li>
+<li><strong>Confirme os canais oficiais</strong> — negocie apenas pelos canais do banco ou credora</li>
 </ol>
+
+<p>Veja o artigo completo <a href="/blog/como-negociar-dividas-diretamente-com-banco">Como negociar dívidas diretamente com o banco</a> com dicas detalhadas para cada tipo de credor.</p>
+
 </section>
-<section><h2>Passo 3: Negocie com os credores</h2>
-<p>A maioria dos bancos e empresas prefere receber um valor menor do que não receber nada. Por isso, a negociação é sua principal aliada. Dicas para negociar:</p>
+
+<section><h2>6. Vale a pena trocar dívida do cartão por empréstimo?</h2>
+
+<p>Essa é uma das perguntas mais comuns de quem está endividado. A resposta é: depende. Não existe regra única.</p>
+
+<table>
+<thead>
+<tr>
+<th>Situação</th>
+<th>Pode fazer sentido?</th>
+<th>Cuidado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dívida do cartão com juros altíssimos</td>
+<td>Sim, se o novo empréstimo tiver CET menor</td>
+<td>Compare o custo total, não só a parcela</td>
+</tr>
+<tr>
+<td>A parcela do empréstimo cabe no orçamento</td>
+<td>Sim, se não comprometer contas essenciais</td>
+<td>Não aceite parcela que aperte demais</td>
+</tr>
+<tr>
+<td>Você continua usando o cartão depois</td>
+<td>Não — você troca uma dívida por duas</td>
+<td>Suspenda o cartão temporariamente</td>
+</tr>
+<tr>
+<td>O empréstimo só aumenta o prazo</td>
+<td>Não — você paga mais juros no total</td>
+<td>Veja o CET antes de aceitar</td>
+</tr>
+<tr>
+<td>O CET do empréstimo é maior que o do cartão</td>
+<td>Não — você estaria trocando por algo pior</td>
+<td>Pesquise outras opções primeiro</td>
+</tr>
+</tbody>
+</table>
+
+<p>Leia os artigos <a href="/blog/vale-a-pena-trocar-divida-cartao-por-emprestimo">Vale a pena trocar dívida do cartão por empréstimo?</a> e <a href="/blog/como-comparar-emprestimos-corretamente">Como comparar empréstimos corretamente</a> para entender todos os detalhes antes de decidir.</p>
+
+<p>Antes de comparar propostas, entenda o <a href="/blog/o-que-e-cet-e-por-que-importa">CET e por que ele importa</a> — é o indicador mais importante para comparar custos de crédito.</p>
+
+</section>
+
+<section><h2>7. Cartão de crédito: o que fazer para parar de piorar</h2>
+
+<p>O cartão de crédito é a principal porta de entrada do endividamento no Brasil. Os juros do rotativo estão entre os mais altos do mundo, e pagar apenas o mínimo é uma armadilha que prolonga a dívida por anos.</p>
+
+<h3>Ações imediatas para o cartão:</h3>
+
 <ul>
-<li>Ligue para a instituição e peça desconto para pagamento à vista</li>
-<li>Ofereça um valor realista que caiba no seu bolso</li>
-<li>Peça parcelamento sem juros</li>
-<li>Use plataformas como Serasa Limpa Nome e Acordo OK</li>
-<li>Registre tudo por escrito ou em gravação</li>
+<li><strong>Pare de usar o cartão</strong> — use débito, dinheiro ou transferência temporariamente</li>
+<li><strong>Evite pagar apenas o mínimo</strong> — isso faz a dívida crescer mais rápido</li>
+<li><strong>Não faça novas compras parceladas</strong> — cada parcela é um compromisso futuro</li>
+<li><strong>Avalie o parcelamento da fatura</strong> — pode ser melhor que o rotativo, mas veja o CET</li>
+<li><strong>Negocie com o banco</strong> — muitas administradoras oferecem renegociação com desconto</li>
+<li><strong>Crie um limite pessoal</strong> — defina um valor mensal menor que o limite do banco</li>
 </ul>
-</section>
-<section><h2>Passo 4: Crie um orçamento realista</h2>
-<p>None dos passos anteriores funciona se você não controlar seus gastos. Use nossa <a href="/calculadoras/orcamento-familiar">calculadora de orçamento familiar</a> para organizar suas contas.</p>
-<p>O método 50-30-20 é um bom começo: 50% da renda para gastos essenciais, 30% para estilo de vida e 20% para pagar dívidas e poupar.</p>
-</section>
-<section><h2>Passo 5: Mantenha-se no caminho</h2>
-<p>Sair das dívidas é uma jornada, não um evento. Crie hábitos financeiros saudáveis:</p>
+
+<p>Artigos relacionados:</p>
 <ul>
-<li>Eduque-se financeiramente (continue lendo nossos artigos)</li>
-<li>Evite novas dívidas parceladas</li>
-<li>Monte uma reserva de emergência</li>
-<li>Acompanhe seu score de crédito</li>
+<li><a href="/blog/como-evitar-juros-rotativo">Como evitar os juros do rotativo</a></li>
+<li><a href="/blog/fatura-parcelada-compensa">Fatura parcelada compensa?</a></li>
+<li><a href="/blog/o-que-acontece-se-parar-de-pagar-cartao">O que acontece se eu parar de pagar o cartão?</a></li>
 </ul>
+
+</section>
+
+<section><h2>8. Empréstimo: quando ajuda e quando vira armadilha</h2>
+
+<p>Empréstimo não é bom nem ruim por si só. Tudo depende do contexto: dos juros, do prazo, do motivo e do seu orçamento.</p>
+
+<h3>Quando um empréstimo pode ajudar:</h3>
+<ul>
+<li>Quando substitui uma dívida com juros muito mais altos (ex.: trocar rotativo por consignado)</li>
+<li>Quando a parcela cabe folgadamente no orçamento</li>
+<li>Quando você já cortou gastos e organizou as finanças</li>
+</ul>
+
+<h3>Quando um empréstimo vira armadilha:</h3>
+<ul>
+<li>Quando é usado para manter o mesmo padrão de consumo</li>
+<li>Quando a parcela compromete mais de 30% da renda</li>
+<li>Quando você não mudou os hábitos financeiros que geraram a dívida</li>
+<li>Quando o CET é maior que a dívida atual</li>
+</ul>
+
+<p>Artigos para aprofundar:</p>
+<ul>
+<li><a href="/blog/emprestimo-pessoal-ou-consignado">Empréstimo pessoal ou consignado: qual escolher?</a></li>
+<li><a href="/blog/emprestimo-consignado-vale-a-pena">Empréstimo consignado vale a pena?</a></li>
+<li><a href="/blog/quando-nao-vale-a-pena-fazer-emprestimo">Quando NÃO vale a pena fazer um empréstimo</a></li>
+<li><a href="/blog/como-calcular-custo-real-emprestimo">Como calcular o custo real de um empréstimo</a></li>
+</ul>
+
+</section>
+
+<section><h2>9. Plano de 30, 60 e 90 dias</h2>
+
+<p>Um plano concreto ajuda a manter o foco e medir o progresso. Veja um cronograma sugerido:</p>
+
+<table>
+<thead>
+<tr>
+<th>Período</th>
+<th>O que fazer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Primeiros 30 dias</strong></td>
+<td>Listar todas as dívidas. Cortar gastos não essenciais. Parar de usar o rotativo. Definir valor máximo de parcela. Consultar credores para saber valores atualizados.</td>
+</tr>
+<tr>
+<td><strong>Dias 31 a 60</strong></td>
+<td>Negociar dívidas prioritárias (cartão, cheque especial, contas essenciais). Avaliar troca de dívida apenas se o CET for menor. Organizar pagamentos automáticos. Evitar novas compras parceladas.</td>
+</tr>
+<tr>
+<td><strong>Dias 61 a 90</strong></td>
+<td>Acompanhar a evolução das negociações. Renegociar se necessário. Começar uma reserva mínima de emergência. Acompanhar o score de crédito sem pagar por isso.</td>
+</tr>
+</tbody>
+</table>
+
+</section>
+
+<section><h2>10. Exemplo completo com números</h2>
+
+<p>Vamos simular um cenário para mostrar como aplicar os conceitos na prática. <strong>Este é um exemplo educativo, não uma recomendação individual.</strong></p>
+
+<p><strong>Cenário:</strong></p>
+<ul>
+<li>Renda líquida: R$ 3.000</li>
+<li>Gastos essenciais: R$ 2.200 (aluguel, alimentação, transporte, saúde)</li>
+<li>Sobra máxima: R$ 800</li>
+</ul>
+
+<p><strong>Dívidas:</strong></p>
+
+<table>
+<thead>
+<tr>
+<th>Dívida</th>
+<th>Valor</th>
+<th>Ação sugerida</th>
+<th>Motivo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cartão de crédito</td>
+<td>R$ 4.500</td>
+<td>Negociar com o banco; pedir desconto para pagamento à vista ou parcelamento com CET menor</td>
+<td>Juros mais altos (acima de 300% ao ano)</td>
+</tr>
+<tr>
+<td>Cheque especial</td>
+<td>R$ 900</td>
+<td>Quitar integralmente com a sobra do orçamento assim que possível</td>
+<td>Juros altos e consumo contínuo</td>
+</tr>
+<tr>
+<td>Empréstimo pessoal</td>
+<td>R$ 2.000</td>
+<td>Manter pagamento em dia; avaliar se vale a pena pagar antes com desconto</td>
+<td>Juros menores, mas ainda relevantes</td>
+</tr>
+<tr>
+<td>Conta de luz atrasada</td>
+<td>R$ 350</td>
+<td>Pagar ou parcelar com a concessionária</td>
+<td>Risco de corte de serviço essencial</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Estratégia possível:</strong></p>
+<ol>
+<li>Proteger contas essenciais: pagar a conta de luz primeiro</li>
+<li>Usar R$ 500 da sobra para quitar o cheque especial</li>
+<li>Negociar o cartão com o banco, propondo parcelamento de até R$ 300 por mês</li>
+<li>Manter o empréstimo pessoal em dia</li>
+<li>Destinar os R$ 300 restantes da sobra para a negociação do cartão</li>
+<li>Evitar qualquer novo parcelamento ou compra no cartão até a dívida ser controlada</li>
+</ol>
+
+<p>Use nossa <a href="/calculadoras/troca-dividas">calculadora de troca de dívidas</a> para simular diferentes cenários antes de decidir.</p>
+
+</section>
+
+<section><h2>11. Score de crédito depois das dívidas</h2>
+
+<p>O score de crédito é uma das principais preocupações de quem está endividado. Muita gente acredita que pagar a dívida vai fazer o score subir magicamente no dia seguinte. Não funciona assim.</p>
+
+<p>Veja o que realmente ajuda a reconstruir o score ao longo do tempo:</p>
+
+<ul>
+<li><strong>Pagar as contas em dia</strong> — o histórico de pagamentos é o fator mais importante</li>
+<li><strong>Manter o Cadastro Positivo ativo</strong> — ele permite que bons pagamentos sejam considerados no cálculo</li>
+<li><strong>Usar crédito com responsabilidade</strong> — ter um cartão com pagamento em dia ajuda mais que não ter crédito nenhum</li>
+<li><strong>Não fazer múltiplas solicitações de crédito</strong> — cada consulta ao CPF pode reduzir o score temporariamente</li>
+</ul>
+
+<p>Artigos sobre score:</p>
+<ul>
+<li><a href="/blog/como-aumentar-score-de-credito">Como aumentar o score de crédito de forma consistente</a></li>
+<li><a href="/blog/quanto-tempo-leva-para-score-aumentar">Quanto tempo leva para o score aumentar?</a></li>
+<li><a href="/blog/o-que-realmente-influencia-score-credito">O que realmente influencia o score de crédito?</a></li>
+<li><a href="/blog/cadastro-positivo-vale-a-pena">Cadastro Positivo vale a pena?</a></li>
+<li><a href="/blog/como-consultar-score-gratuitamente">Como consultar score gratuitamente</a></li>
+</ul>
+
+</section>
+
+<section><h2>12. Como evitar golpes em renegociação</h2>
+
+<p>Infelizmente, o momento de endividamento é um dos preferidos dos golpistas. Muitas pessoas desesperadas acabam caindo em promessas falsas de "limpar o nome" ou "conseguir desconto especial".</p>
+
+<h3>Regras de segurança:</h3>
+
+<ul>
+<li><strong>Negocie apenas pelos canais oficiais</strong> — aplicativo do banco, site oficial, SAC</li>
+<li><strong>Desconfie de descontos absurdos</strong> — promessas de 90% de desconto sem comprovação são suspeitas</li>
+<li><strong>Não pague boleto gerado por terceiros</strong> — confira o beneficiário antes de pagar</li>
+<li><strong>Nunca informe sua senha bancária</strong> — nem para supostos funcionários do banco</li>
+<li><strong>Cuidado com links recebidos por WhatsApp ou SMS</strong> — prefira acessar o site do banco digitando o endereço</li>
+<li><strong>Guarde o protocolo de cada negociação</strong> — número, data, nome do atendente</li>
+<li><strong>Não contrate intermediários</strong> — você pode negociar diretamente com o credor sem custo adicional</li>
+</ul>
+
+</section>
+
+<section><h2>13. Erros comuns de quem tenta sair das dívidas</h2>
+
+<table>
+<thead>
+<tr>
+<th>Erro</th>
+<th>Por que atrapalha</th>
+<th>O que fazer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pegar empréstimo sem comparar CET</td>
+<td>Você pode trocar uma dívida cara por outra igual ou pior</td>
+<td>Compare sempre o CET antes de aceitar</td>
+</tr>
+<tr>
+<td>Pagar só o mínimo do cartão</td>
+<td>A dívida não diminui; os juros continuam correndo</td>
+<td>Pague mais que o mínimo ou negocie um parcelamento</td>
+</tr>
+<tr>
+<td>Aceitar parcela alta demais</td>
+<td>O orçamento não fecha e você atrasa de novo</td>
+<td>Só aceite parcelas que cabem na sua sobra real</td>
+</tr>
+<tr>
+<td>Ignorar contas essenciais</td>
+<td>Água, luz e aluguel podem ser cortados</td>
+<td>Priorize serviços essenciais antes de dívidas de consumo</td>
+</tr>
+<tr>
+<td>Fazer novo cartão para pagar outro</td>
+<td>Você acumula dívidas em vez de resolver</td>
+<td>Pare de usar crédito até organizar as contas</td>
+</tr>
+<tr>
+<td>Parcelar tudo novamente</td>
+<td>Cada parcela é um compromisso futuro que aperta o orçamento</td>
+<td>Pague à vista sempre que possível</td>
+</tr>
+<tr>
+<td>Não anotar os gastos</td>
+<td>Você perde o controle do orçamento</td>
+<td>Use uma planilha ou aplicativo para registrar</td>
+</tr>
+<tr>
+<td>Cair em golpe de renegociação</td>
+<td>Perde dinheiro e não resolve a dívida</td>
+<td>Negocie apenas por canais oficiais</td>
+</tr>
+<tr>
+<td>Achar que score sobe de um dia para outro</td>
+<td>Frustração e desistência do plano</td>
+<td>Score melhora com consistência, não com pressa</td>
+</tr>
+</tbody>
+</table>
+
+</section>
+
+<section><h2>14. Checklist para sair das dívidas</h2>
+
+<p>Use esta lista para acompanhar seu progresso:</p>
+
+<ul>
+<li><input type="checkbox" disabled /> Listi todas as dívidas com valores, juros e credores</li>
+<li><input type="checkbox" disabled /> Sei quais dívidas têm mais juros e quais são urgentes</li>
+<li><input type="checkbox" disabled /> Organizei meu orçamento e sei quanto posso pagar por mês</li>
+<li><input type="checkbox" disabled /> Parei de fazer novas compras parceladas</li>
+<li><input type="checkbox" disabled /> Comparei o CET antes de aceitar qualquer proposta</li>
+<li><input type="checkbox" disabled /> Negociei pelos canais oficiais do credor</li>
+<li><input type="checkbox" disabled /> Guardei todos os comprovantes e protocolos</li>
+<li><input type="checkbox" disabled /> Montei um plano de 90 dias com metas claras</li>
+<li><input type="checkbox" disabled /> Acompanhei meu score sem pagar serviço desnecessário</li>
+<li><input type="checkbox" disabled /> Comecei uma reserva mínima de emergência</li>
+</ul>
+
+</section>
+
+<section><h2>Conclusão</h2>
+
+<p>Sair das dívidas não é um evento, é um processo. Não existe fórmula mágica, atalho ou solução milagrosa. O que existe é um caminho estruturado, com planejamento, negociação e disciplina.</p>
+
+<p>O primeiro passo é sempre o mesmo: organizar a situação real. Depois, priorizar, negociar com inteligência e evitar novas armadilhas. Cada pequena vitória ao longo do caminho conta — uma dívida quitada, uma negociação bem-feita, um mês sem usar o cartão.</p>
+
+<p>Lembre-se: o objetivo não é apenas limpar o nome. É recuperar o controle sobre seu dinheiro e sua vida. E isso, ao contrário do que muitos pensam, está ao alcance de quem segue um plano com paciência e consistência.</p>
+
+<p>Veja também o artigo <a href="/blog/como-montar-plano-sair-das-dividas">Como montar um plano para sair das dívidas</a> com um passo a passo ainda mais detalhado para criar seu planejamento financeiro pessoal.</p>
+
 </section>`,
     faq: [
-      { question: 'Quanto tempo leva para sair das dívidas?', answer: 'Depende do valor total, da sua renda e do seu planejamento. Com um plano bem estruturado, é possível ver resultados significativos em 6 a 12 meses.' },
-      { question: 'Vale a pena fazer acordo no Serasa?', answer: 'Sim, desde que o valor caiba no seu orçamento. Verifique o desconto oferecido e se o parcelamento é viável antes de aceitar.' },
-      { question: 'Nome sujo impede financiamento?', answer: 'Sim, instituições financeiras consultam órgãos de proteção ao crédito antes de aprovar financiamentos. Por isso é importante limpar o nome primeiro.' },
+      { question: 'Qual é o primeiro passo para sair das dívidas?', answer: 'O primeiro passo é listar todas as suas dívidas com valores, juros, credores e prazos. Sem essa visão completa, fica impossível criar um plano eficaz. Use a tabela modelo deste guia para organizar.' },
+      { question: 'Qual dívida devo pagar primeiro?', answer: 'Depende da sua estratégia. Pelo método avalanche, priorize a dívida com maior juros (geralmente cartão rotativo ou cheque especial). Pelo método bola de neve, priorize a menor dívida para ganhar motivação. Veja mais em <a href="/blog/qual-divida-devo-pagar-primeiro">Qual dívida devo pagar primeiro?</a>' },
+      { question: 'Vale a pena pegar empréstimo para pagar cartão?', answer: 'Pode valer se o novo empréstimo tiver CET menor que os juros do cartão e a parcela couber no seu orçamento. Não vale se você continuar usando o cartão ou se o CET for alto. Veja a tabela comparativa neste guia e leia <a href="/blog/vale-a-pena-trocar-divida-cartao-por-emprestimo">Vale a pena trocar dívida do cartão por empréstimo?</a>' },
+      { question: 'É melhor pagar dívida pequena ou dívida com juros maior?', answer: 'Depende do seu perfil. Pagar a de maior juros economiza mais dinheiro (método avalanche). Pagar a menor primeiro dá motivação rápida (método bola de neve). Escolha o método que você consegue manter por mais tempo.' },
+      { question: 'O que acontece se eu parar de pagar o cartão?', answer: 'Os juros continuam correndo, seu nome pode ser negativado após 90 dias, e a dívida pode ser cobrada judicialmente. Antes de parar de pagar, tente negociar com o banco. Leia <a href="/blog/o-que-acontece-se-parar-de-pagar-cartao">O que acontece se eu parar de pagar o cartão?</a>' },
+      { question: 'Parcelar fatura compensa?', answer: 'Parcelar a fatura pode ser melhor que pagar o mínimo e entrar no rotativo, mas ainda assim os juros são altos. Antes de parcelar, compare o CET e veja se consegue negociar um desconto à vista. Veja <a href="/blog/fatura-parcelada-compensa">Fatura parcelada compensa?</a>' },
+      { question: 'Como negociar dívida com banco?', answer: 'Ligue para o SAC ou acesse o aplicativo do banco. Peça o valor atualizado, pergunte por desconto à vista e solicite propostas parceladas. Compare o custo total antes de aceitar. Guarde todos os protocolos. Veja o guia completo: <a href="/blog/como-negociar-dividas-diretamente-com-banco">Como negociar dívidas diretamente com o banco</a>' },
+      { question: 'Como saber se uma proposta de acordo é boa?', answer: 'Compare o CET da proposta com os juros atuais da dívida. Veja se o valor total a pagar é menor que continuar sem acordo. Confira se a parcela cabe no seu orçamento. Desconfie de propostas muito agressivas feitas por canais não oficiais.' },
+      { question: 'O score sobe depois de pagar dívida?', answer: 'Pode subir, mas não imediatamente em todos os casos. O score considera histórico de pagamentos, não apenas o pagamento de uma dívida. Com o tempo e pagamentos consistentes, o score tende a melhorar. Veja <a href="/blog/quanto-tempo-leva-para-score-aumentar">Quanto tempo leva para o score aumentar?</a>' },
+      { question: 'Quanto tempo leva para limpar o nome?', answer: 'Após pagar ou negociar a dívida, o banco tem até 5 dias úteis para atualizar os bureaus de crédito (Serasa, Boa Vista, SPC). Mas o score pode levar meses para refletir a mudança, dependendo do seu histórico geral.' },
+      { question: 'Como evitar cair em golpe de renegociação?', answer: 'Negocie apenas por canais oficiais (SAC, aplicativo, site do banco). Não pague boletos gerados por terceiros. Não informe senhas. Desconfie de descontos milagrosos recebidos por WhatsApp ou SMS. Guarde sempre o protocolo de cada negociação.' },
+      { question: 'Posso sair das dívidas ganhando pouco?', answer: 'Sim, mas o processo pode ser mais lento e exige mais disciplina. O segredo é adequar o plano à sua realidade: negocie parcelas que cabem no seu orçamento, corte gastos não essenciais e busque fontes extras de renda se possível. O mais importante é não fazer novas dívidas enquanto paga as antigas.' },
     ],
   },
   {

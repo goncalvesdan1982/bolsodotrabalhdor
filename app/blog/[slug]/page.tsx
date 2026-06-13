@@ -275,7 +275,7 @@ export default async function PostPage({ params }: PostPageProps) {
               {post.faq.map((item, index) => (
                 <div key={index} className="p-5 bg-background rounded-xl border border-border/60">
                   <h3 className="font-bold text-primary mb-2">{item.question}</h3>
-                  <p className="text-muted-foreground">{item.answer}</p>
+                  <div className="text-muted-foreground prose prose-sm max-w-none" dangerouslySetInnerHTML={{ __html: item.answer }} />
                 </div>
               ))}
             </div>
