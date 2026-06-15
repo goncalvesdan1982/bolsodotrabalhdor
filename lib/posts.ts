@@ -783,7 +783,7 @@ export const posts: Post[] = [
 </section>
 <section><h2>Cadastro Positivo: ajuda mesmo?</h2>
 <p>Sim, o Cadastro Positivo ajuda — mas não é uma solução mágica. Ele funciona como um histórico financeiro que registra seus pagamentos em dia (contas, boletos, faturas, parcelas). Antes dele, os birôs só viam seus atrasos. Agora, veem também seus acertos.</p>
-<p>O Cadastro Positivo foi instituído por lei e é administrado por gestores de bancos de dados autorizados pelo Banco Central, como Serasa, SPC Brasil, Boa Vista/Equifax e Quod. O consumidor pode consultar, acompanhar ou solicitar ajustes diretamente nos canais desses gestores. O Banco Central regula o funcionamento do sistema e fornece informações institucionais, mas não calcula o score individual nem gerencia o cadastro do consumidor.</p>
+<p>O Cadastro Positivo foi instituído por lei e é administrado por gestores de bancos de dados registrados no BC, como Serasa, SPC Brasil, Boa Vista/Equifax e Quod. O consumidor pode consultar, acompanhar ou solicitar ajustes diretamente nos canais desses gestores. O Banco Central regula o funcionamento do sistema e fornece informações institucionais, mas não calcula o score individual nem gerencia o cadastro do consumidor.</p>
 <p>Importante: quem calcula o score são os birôs (Serasa, Boa Vista, SPC), não o Banco Central. O BCB oferece o sistema Registrato para consulta de relatórios financeiros, mas não calcula pontuação de crédito.</p>
 <p>Se você paga contas em dia, manter o Cadastro Positivo ativo é positivo. Se você atrasa com frequência, seus atrasos também ficarão registrados — o CP mostra tanto o positivo quanto o negativo. Saiba mais em <a href="/blog/cadastro-positivo-vale-a-pena">Cadastro Positivo vale a pena?</a></p>
 </section>
@@ -1517,10 +1517,10 @@ export const posts: Post[] = [
 <section>
 <h2>Cadastro Positivo: quanto tempo para fazer diferença?</h2>
 <p>O Cadastro Positivo é um banco de dados que registra seus pagamentos em dia. Antes dele, os birôs só viam seus atrasos. Agora, eles veem também seus acertos.</p>
-<p>O Banco Central do Brasil regula e fornece informações institucionais sobre o Cadastro Positivo, mas quem administra os dados são gestores de bancos de dados autorizados, como Serasa, SPC Brasil, Boa Vista/Equifax e Quod.</p>
+<p>O Banco Central do Brasil regula e fornece informações institucionais sobre o Cadastro Positivo, mas os dados são administrados por gestores de bancos de dados registrados no BC, como Serasa, SPC Brasil, Boa Vista/Equifax e Quod.</p>
 <h3>Prazos estimados:</h3>
 <ul>
-<li><strong>Ativação:</strong> imediata. Você ativa hoje e os birôs passam a receber seus dados de pagamento.</li>
+<li><strong>Situação do cadastro:</strong> a consulta, manutenção ou reativação pode ser feita pelos canais dos gestores. Em muitos casos, o consumidor já está incluído automaticamente no Cadastro Positivo. O efeito no score depende dos dados recebidos e do histórico de pagamentos registrado.</li>
 <li><strong>Primeiros reflexos:</strong> de 30 a 90 dias. Precisa de um volume mínimo de pagamentos registrados para o sistema identificar um padrão.</li>
 <li><strong>Impacto consistente:</strong> a partir de 6 meses. Com meio ano de dados positivos, o Cadastro Positivo começa a pesar de forma significativa no cálculo do score.</li>
 </ul>
@@ -1688,7 +1688,7 @@ export const posts: Post[] = [
     faq: [
       { question: 'Quanto tempo leva para o score aumentar?', answer: 'Não existe prazo único. Depende da sua situação: se há dívidas negativadas, se o Cadastro Positivo está ativo, se você paga contas em dia e há quanto tempo. Em cenário favorável, os primeiros reflexos podem aparecer em 3 a 6 meses. Saltos maiores (de 300 para 700) podem levar de 12 a 24 meses.' },
       { question: 'Depois de pagar dívida, o score sobe em quantos dias?', answer: 'Após o pagamento, a empresa credora tem até 5 dias úteis para solicitar a retirada da negativação. Mas isso não significa que o score subirá automaticamente no mesmo prazo. A recuperação da pontuação depende do histórico geral de pagamentos, não apenas da baixa da negativação.' },
-      { question: 'O score sobe na hora se pagar pelo Pix?', answer: 'Em canais oficiais como o Serasa Limpa Nome, o pagamento via Pix pode processar a baixa da negativação em tempo real ou no mesmo dia. Mas isso atualiza a negativação, não o score. A pontuação leva em conta o histórico completo, não só o pagamento isolado.' },
+      { question: 'O score sobe na hora se pagar pelo Pix?', answer: 'Em canais oficiais como o Serasa Limpa Nome, o pagamento via Pix pode acelerar a baixa da negativação e, em situações específicas, refletir rapidamente no Serasa Score. Mesmo assim, isso não deve ser tratado como regra geral para todos os birôs ou para todos os tipos de dívida. Cada birô tem sua própria metodologia de atualização.' },
       { question: 'Cadastro Positivo aumenta o score em quanto tempo?', answer: 'Após a ativação, os primeiros reflexos podem surgir em 30 a 90 dias, desde que você tenha pagamentos em dia sendo registrados. O impacto mais consistente costuma aparecer a partir de 6 meses de dados positivos.' },
       { question: 'Pagar contas em dia aumenta score?', answer: 'Sim, mas não instantaneamente. O sistema precisa de alguns meses de histórico para identificar um padrão de pontualidade. Com 3 a 6 meses de pagamentos em dia, os primeiros reflexos positivos começam a aparecer.' },
       { question: 'Consultar meu score todo dia prejudica?', answer: 'Não. Consultar seu próprio score gratuitamente nos canais oficiais (Serasa, Boa Vista, SPC Brasil) não afeta sua pontuação. Apenas consultas de instituições financeiras para análise de crédito podem impactar.' },
