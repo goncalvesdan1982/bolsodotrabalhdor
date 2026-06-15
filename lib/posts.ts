@@ -683,7 +683,7 @@ export const posts: Post[] = [
 <p>Score de crédito é uma pontuação usada por bancos, financeiras, lojas, imobiliárias e operadoras de telefonia para avaliar o risco de emprestar dinheiro ou oferecer crédito a você. Quanto maior a pontuação, menor o risco percebido.</p>
 <p>No Brasil, as principais empresas que calculam o score são Serasa (Serasa Score 3.0), Boa Vista/Equifax, SPC Brasil e Quod. Cada uma tem sua própria metodologia de cálculo. Por isso, é normal que seu score na Serasa seja diferente do score no SPC ou na Boa Vista.</p>
 <p>Importante: o score não é uma nota de aprovação. Um score alto não garante que você será aprovado em um cartão ou empréstimo — ele é apenas um dos fatores analisados. Cada instituição define seus próprios critérios de aprovação.</p>
-<p>O Banco Central do Brasil regula o sistema financeiro e mantém o Cadastro Positivo, o SCR (Sistema de Informações de Crédito, acessível pelo Registrato) e programas de educação financeira. Mas quem calcula o score de crédito são os birôs de crédito privados, cada um com metodologia própria. O BCB não calcula nem divulga scores individuais.</p>
+<p>O Banco Central do Brasil regula o sistema financeiro, fornece informações institucionais sobre o Cadastro Positivo, e mantém o SCR (Sistema de Informações de Crédito, acessível pelo Registrato) e programas de educação financeira. Mas quem calcula o score de crédito são os birôs de crédito privados, cada um com metodologia própria. O BCB não calcula nem divulga scores individuais.</p>
 </section>
 <section><h2>Quais são as faixas de score?</h2>
 <p>As faixas variam conforme o birô, mas a escala mais conhecida é da Serasa, que vai de 0 a 1000:</p>
@@ -798,12 +798,12 @@ export const posts: Post[] = [
 <tr><td>Pix aumenta score</td><td><strong>Mito</strong></td><td>Pix é um meio de pagamento instantâneo. Não gera histórico de crédito nos birôs.</td></tr>
 <tr><td>Consultar meu próprio CPF derruba o score</td><td><strong>Mito</strong></td><td>Consultas gratuitas que você faz nos birôs não afetam sua pontuação. Só consultas de instituições financeiras para análise de crédito podem impactar.</td></tr>
 <tr><td>Pagar dívida aumenta o score na hora</td><td><strong>Depende</strong></td><td>Após o pagamento da dívida, a empresa credora tem até 5 dias úteis para solicitar a retirada da negativação. Isso não significa que o score subirá automaticamente no mesmo prazo. A recuperação completa depende do histórico geral.</td></tr>
-<tr><td>Renda maior aumenta score</td><td><strong>Mito</strong></td><td>Os birôs não têm acesso direto à sua renda. O que importa é seu comportamento com pagamentos, independentemente do valor que você ganha.</td></tr>
+<tr><td>Renda maior aumenta score</td><td><strong>Mito</strong></td><td>Renda isolada não aumenta o score automaticamente. Os birôs tradicionalmente não têm acesso direto à sua renda — o que importa é seu comportamento com pagamentos. Porém, com o Open Finance, o consumidor pode autorizar o compartilhamento de dados bancários com os birôs, o que pode gerar análises mais completas (Serasa Score 3.0 e outros).</td></tr>
 <tr><td>Score alto garante cartão de crédito</td><td><strong>Mito</strong></td><td>Score é um dos fatores. Cada banco analisa também renda declarada, tipo de emprego, relacionamento e política interna de crédito.</td></tr>
 <tr><td>Pagar alguém para aumentar score funciona</td><td><strong>Mito (golpe)</strong></td><td>Não funciona. É golpe. Nenhuma empresa ou pessoa pode alterar seu score mediante pagamento.</td></tr>
 <tr><td>Conta de luz no nome aumenta score</td><td><strong>Depende</strong></td><td>Ter contas no seu nome gera dados para o Cadastro Positivo, mas o que importa é pagar em dia. Só ter a conta não ajuda.</td></tr>
 <tr><td>Open Finance pode ajudar</td><td><strong>Verdade (potencial)</strong></td><td>O Open Finance permite compartilhar dados financeiros com instituições autorizadas, o que pode gerar análises mais precisas. Ainda está em evolução no Brasil.</td></tr>
-<tr><td>Dívida antiga ainda prejudica o score</td><td><strong>Depende</strong></td><td>Após 5 anos, a dívida prescreve e sai dos birôs. Mas enquanto está negativada, impacta o score. Mesmo após a retirada, o histórico anterior ainda pode ser considerado.</td></tr>
+<tr><td>Dívida antiga ainda prejudica o score</td><td><strong>Depende</strong></td><td>Após 5 anos, a dívida caduca: ela sai dos birôs de crédito e deixa de afetar o score. A dívida em si pode continuar existindo, mas não deve permanecer como negativação no CPF.</td></tr>
 </tbody>
 </table>
 </section>
@@ -906,7 +906,7 @@ export const posts: Post[] = [
 </section>`,
     faq: [
       { question: 'Como aumentar o score rápido?', answer: 'Não existe aumento rápido garantido. O que pode ajudar é ativar o Cadastro Positivo, pagar contas em dia e negociar dívidas negativadas. Mas qualquer resultado consistente leva meses de comportamento financeiro saudável.' },
-      { question: 'Score baixo aprova cartão?', answer: 'Depende da instituição. Alguns cartões de lojas e fintechs (Mercado Pago, PagBank) costumam aprovar com score a partir de 400. Cartões premium geralmente exigem acima de 700. Veja opções em <a href="/blog/melhores-cartoes-score-baixo">cartões para score baixo</a>.' },
+      { question: 'Score baixo aprova cartão?', answer: 'Depende da instituição. Algumas fintechs e bancos digitais analisam perfis com score mais baixo, mas não há pontuação mínima universal — cada instituição define seus próprios critérios. Cartões premium geralmente exigem score mais alto. Veja opções em <a href="/blog/melhores-cartoes-score-baixo">cartões para score baixo</a>.' },
       { question: 'Score 300 é ruim?', answer: 'Score 300 é considerado baixo na escala Serasa (0 a 300: risco alto). Mas isso não significa que você não pode melhorar. Com organização e consistência, é possível sair dessa faixa em alguns meses.' },
       { question: 'Score 500 é bom?', answer: 'Score 500 está na faixa regular da Serasa. É um ponto de partida para melhorar, mas ainda há risco para a maioria das instituições. Com 6 a 12 meses de pagamentos em dia, é possível chegar à faixa boa (acima de 600).' },
       { question: 'Score 700 garante financiamento?', answer: 'Não garante. Score 700 é considerado excelente e aumenta muito suas chances, mas cada banco analisa também renda, tipo de emprego, relacionamento e política interna. Use a <a href="/calculadoras/comprometimento-renda">calculadora de comprometimento de renda</a> antes de solicitar.' },

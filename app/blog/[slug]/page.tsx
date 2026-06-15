@@ -301,17 +301,6 @@ export default async function PostPage({ params }: PostPageProps) {
                   </a>
                 </li>
               ))}
-              <li>
-                <a
-                  href="https://www.bcb.gov.br"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-secondary hover:underline inline-flex items-center gap-1 text-xs"
-                >
-                  <ExternalLink className="w-3 h-3" />
-                  Banco Central do Brasil
-                </a>
-              </li>
             </ul>
           </div>
           <p className="mt-2">
