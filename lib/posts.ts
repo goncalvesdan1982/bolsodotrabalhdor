@@ -1446,61 +1446,259 @@ export const posts: Post[] = [
   // === SCORE — ARTIGO 1/5 ===
   {
     slug: 'quanto-tempo-leva-para-score-aumentar',
-    title: 'Quanto tempo leva para o score aumentar?',
-    description: 'Descubra quanto tempo leva para aumentar o score de crédito e o que fazer para acelerar o processo. Exemplos reais e prazos realistas.',
+    title: 'Quanto Tempo Leva para o Score Aumentar? Entenda Prazos, Fatores e Mitos',
+    description: 'Entenda quanto tempo o score pode levar para subir após pagar dívidas, ativar o Cadastro Positivo, evitar atrasos e manter bom histórico financeiro.',
     date: '2026-06-04',
+    lastModified: '2026-06-15',
     category: 'Score',
-    keywords: ['quanto tempo score aumenta', 'score demora para subir', 'aumentar score rápido', 'tempo score crédito', 'score serasa'],
+    keywords: ['quanto tempo leva para o score aumentar', 'score demora para subir', 'aumentar score prazo', 'tempo score crédito', 'score serasa', 'score depois de pagar dívida', 'cadastro positivo quanto tempo', 'score 300 para 500', 'score 500 para 700', 'recuperar score após negativação'],
     relatedCalculators: [
       { name: 'Capacidade de Endividamento', href: '/calculadoras/capacidade-endividamento' },
       { name: 'Comprometimento de Renda', href: '/calculadoras/comprometimento-renda' },
+      { name: 'Quitação de Dívidas', href: '/calculadoras/quitacao-dividas' },
+      { name: 'Empréstimo', href: '/calculadoras/emprestimo' },
+      { name: 'Orçamento Familiar', href: '/calculadoras/orcamento-familiar' },
     ],
     content: `
-<section><h2>Não existe milagre para score</h2>
-<p>Se você pesquisar na internet, vai encontrar dezenas de sites prometendo aumentar seu score em 7 dias. Isso não existe. Score de crédito é construído com base no seu comportamento financeiro real, e comportamento não muda da noite para o dia.</p>
-<p>Mas a boa notícia é que, com as ações certas, você pode ver resultados em poucos meses. Vamos entender o cronograma realista.</p>
+<section>
+<h2>Introdução: não existe prazo único para o score aumentar</h2>
+<p>Se você está se perguntando quanto tempo leva para o score de crédito aumentar, a resposta mais honesta é: depende. Não existe um prazo único. Em alguns casos, mudanças podem aparecer em poucos dias; em outros, a melhora leva meses ou até mais de um ano.</p>
+<p>Isso porque o score não é um botão que você aperta para mudar. Ele é uma consequência do seu histórico financeiro — uma fotografia do seu comportamento com pagamentos, dívidas e uso de crédito ao longo do tempo.</p>
+<p>Este artigo vai mostrar, de forma realista e sem promessas, quanto tempo cada ação pode levar para refletir na sua pontuação. Para ver o passo a passo completo de melhoria, leia também: <a href="/blog/como-aumentar-score-de-credito">Como aumentar o score de crédito de forma consistente</a>.</p>
 </section>
-<section><h2>Fatores que determinam a velocidade</h2>
-<p>O tempo para o score aumentar depende de vários fatores:</p>
+
+<section>
+<h2>Resposta rápida: tabela de situações e prazos</h2>
+<div class="overflow-x-auto"><table class="w-full text-sm"><thead><tr><th>Situação</th><th>Quando pode refletir no score</th><th>O que esperar</th><th>Cuidado</th></tr></thead><tbody>
+<tr><td>Pagar uma dívida negativada</td><td>Após a credora solicitar a retirada da negativação (até 5 dias úteis)</td><td>A negativação sai, mas o score não sobe automaticamente no mesmo prazo</td><td>Não confundir retirada do nome com recuperação total do score</td></tr>
+<tr><td>Pagar dívida via Pix em canal específico da Serasa</td><td>Pode ser atualizado em tempo real ou no mesmo dia</td><td>Atualização mais rápida da negativação em casos específicos</td><td>Não é regra geral. Verifique se o canal oficial oferece essa opção</td></tr>
+<tr><td>Ativar o Cadastro Positivo</td><td>De 30 a 90 dias para acumular dados suficientes</td><td>Se você paga contas em dia, o histórico positivo começa a ser registrado</td><td>Se você tem muitos atrasos, o Cadastro Positivo também os registra</td></tr>
+<tr><td>Pagar contas em dia por vários meses</td><td>3 a 6 meses para primeiros reflexos consistentes</td><td>O sistema percebe o padrão de pontualidade</td><td>Um único atraso pode interromper o progresso</td></tr>
+<tr><td>Parar de pedir crédito em vários lugares</td><td>1 a 3 meses</td><td>Redução de consultas ao CPF diminui o impacto negativo</td><td>Consultas esporádicas têm impacto pequeno; o problema são muitas em curto período</td></tr>
+<tr><td>Atualizar dados cadastrais</td><td>Imediato nos birôs, mas sem impacto direto no score</td><td>Dados corretos evitam inconsistências no sistema</td><td>Sozinho não aumenta a pontuação</td></tr>
+<tr><td>Usar cartão com menos limite comprometido</td><td>2 a 4 meses</td><td>Menor utilização do limite melhora a percepção de risco</td><td>Não basta reduzir o gasto; é preciso manter o padrão</td></tr>
+<tr><td>Manter nome limpo por longo período</td><td>6 a 12 meses</td><td>Consolidação de histórico positivo</td><td>Mesmo sem dívidas, é preciso ter dados positivos (Cadastro Positivo ativo)</td></tr>
+<tr><td>Consultar o próprio score</td><td>Não afeta a pontuação</td><td>Não há alteração. Consultar o próprio score é seguro e gratuito</td><td>Não caia em golpes que cobram para mostrar seu score</td></tr>
+<tr><td>CPF na nota</td><td>Não afeta o score</td><td>Não há qualquer influência na pontuação</td><td>Programas de nota fiscal são fiscais, não financeiros</td></tr>
+<tr><td>Pedir crédito logo após limpar o nome</td><td>Pode gerar novas consultas e negativações se não houver planejamento</td><td>O score pode cair novamente se você não estiver organizado</td><td>Espere alguns meses de organização antes de pedir novo crédito</td></tr>
+</tbody></table></div>
+</section>
+
+<section>
+<h2>Por que o score não sobe na hora?</h2>
+<p>Muita gente acredita que, ao pagar uma dívida, o score sobe imediatamente. Mas não é assim que funciona. Entenda os motivos:</p>
 <ul>
-<li><strong>Situação atual:</strong> se você tem nome negativado, leva mais tempo</li>
-<li><strong>Cadastro Positivo:</strong> ativado? Acelera o processo</li>
-<li><strong>Histórico de pagamentos:</strong> quanto tempo de bom histórico</li>
-<li><strong>Renda e dívidas:</strong> relação entre o que você ganha e o que deve</li>
+<li><strong>O score é calculado por birôs de crédito privados</strong> — Serasa, Boa Vista/Equifax, SPC Brasil e Quod. Cada um tem metodologia própria, então a mesma ação pode ter efeitos diferentes em cada birô.</li>
+<li><strong>Os dados precisam ser atualizados</strong> — bancos, credoras e empresas têm prazos para enviar as informações aos birôs. A negativação pode sair em até 5 dias úteis, mas o score considera histórico, não apenas um evento isolado.</li>
+<li><strong>A pontuação considera padrões, não atos isolados</strong> — pagar uma dívida é importante, mas o comportamento depois do pagamento (pagar em dia, não se endividar de novo) pesa tanto quanto o pagamento em si.</li>
+<li><strong>Cadastro Positivo precisa de dados</strong> — se você acabou de ativar, ainda não há histórico suficiente para o sistema calcular sua pontualidade.</li>
+</ul>
+<p>Quer entender todos os fatores que influenciam o cálculo? Leia <a href="/blog/o-que-realmente-influencia-score-credito">o que realmente influencia o score de crédito</a>.</p>
+</section>
+
+<section>
+<h2>Depois de pagar uma dívida, quanto tempo demora?</h2>
+<p>Essa é a pergunta mais comum. Vamos dividir em partes:</p>
+<h3>Retirada da negativação</h3>
+<p>Após o pagamento da dívida, a empresa credora tem até 5 dias úteis para solicitar a retirada da negativação aos birôs. Esse é o prazo legal, mas algumas empresas fazem em menos tempo.</p>
+<p><strong>Atenção:</strong> a retirada da negativação não significa que o score subirá automaticamente no mesmo prazo. A recuperação da pontuação depende do seu histórico geral de pagamentos.</p>
+<h3>Atualização em tempo real (casos específicos)</h3>
+<p>Em alguns canais oficiais, como o Serasa Limpa Nome com pagamento via Pix, a baixa da negativação pode ser processada em tempo real ou no mesmo dia. Isso significa que o nome sai do cadastro de negativados mais rápido. Mas, novamente: a negativação sair é uma coisa; o score subir é outra.</p>
+<h3>O que acontece com o score depois do pagamento?</h3>
+<p>O score pode reagir de formas diferentes dependendo do histórico do consumidor:</p>
+<ul>
+<li>Se você tinha uma dívida antiga e pagou, o score pode subir gradualmente à medida que novos pagamentos em dia forem registrados.</li>
+<li>Se você pagou mas continua com outras dívidas ou atrasos, o impacto positivo será menor.</li>
+<li>Se você pagou e manteve um bom comportamento nos meses seguintes, o score tende a se recuperar ao longo do tempo.</li>
+</ul>
+<p><strong>Não existe subida garantida.</strong> Cada caso é único.</p>
+</section>
+
+<section>
+<h2>Cadastro Positivo: quanto tempo para fazer diferença?</h2>
+<p>O Cadastro Positivo é um banco de dados que registra seus pagamentos em dia. Antes dele, os birôs só viam seus atrasos. Agora, eles veem também seus acertos.</p>
+<p>O Banco Central do Brasil regula e fornece informações institucionais sobre o Cadastro Positivo, mas quem administra os dados são gestores de bancos de dados autorizados, como Serasa, SPC Brasil, Boa Vista/Equifax e Quod.</p>
+<h3>Prazos estimados:</h3>
+<ul>
+<li><strong>Ativação:</strong> imediata. Você ativa hoje e os birôs passam a receber seus dados de pagamento.</li>
+<li><strong>Primeiros reflexos:</strong> de 30 a 90 dias. Precisa de um volume mínimo de pagamentos registrados para o sistema identificar um padrão.</li>
+<li><strong>Impacto consistente:</strong> a partir de 6 meses. Com meio ano de dados positivos, o Cadastro Positivo começa a pesar de forma significativa no cálculo do score.</li>
+</ul>
+<p>Importante: se você atrasa contas com frequência, o Cadastro Positivo também registra esses atrasos. Ele não é uma solução mágica — ele apenas mostra seu comportamento real.</p>
+<p>Veja a análise completa em <a href="/blog/cadastro-positivo-vale-a-pena">Cadastro Positivo vale a pena?</a></p>
+</section>
+
+<section>
+<h2>Pagar contas em dia: quando começa a pesar?</h2>
+<p>Pagar contas em dia é a base de tudo. Mas o peso disso no score não é instantâneo. Veja como o histórico se constrói ao longo do tempo:</p>
+<h3>30 dias: início da organização</h3>
+<p>Um mês de pagamentos em dia é um bom começo, mas ainda é pouco para o sistema identificar um padrão. A mudança no score costuma ser pequena ou inexistente nesse estágio.</p>
+<h3>90 dias: primeiros sinais de consistência</h3>
+<p>Com três meses de pontualidade, o sistema começa a perceber que há um esforço de mudança. É possível ver os primeiros reflexos positivos, principalmente se o Cadastro Positivo estiver ativo.</p>
+<h3>6 meses: histórico mais confiável</h3>
+<p>Seis meses de pagamentos em dia já representam um período relevante. O score tende a apresentar melhora mais clara, especialmente se você também reduziu dívidas e consultas ao CPF.</p>
+<h3>12 meses ou mais: reputação financeira mais sólida</h3>
+<p>Com um ano ou mais de histórico positivo, sua pontuação reflete um comportamento financeiro consistente. É nesse momento que as melhores condições de crédito costumam ficar acessíveis.</p>
+<p><strong>Importante:</strong> esses prazos são referências educativas, não garantias. Cada birô tem sua própria metodologia, e o resultado depende do histórico completo de cada pessoa.</p>
+</section>
+
+<section>
+<h2>Score baixo: quanto tempo para sair de cada faixa?</h2>
+<p>As faixas de score variam conforme o birô, mas tomando como referência a escala Serasa (0 a 1000), veja prazos realistas aproximados:</p>
+<div class="overflow-x-auto"><table class="w-full text-sm"><thead><tr><th>Faixa atual</th><th>O que geralmente segura a pontuação</th><th>O que pode ajudar</th><th>Prazo realista aproximado</th><th>Cuidado</th></tr></thead><tbody>
+<tr><td>0 a 300</td><td>Dívidas negativadas, histórico curto ou ausente, consultas frequentes ao CPF</td><td>Negociar e pagar dívidas, ativar Cadastro Positivo, começar a pagar contas em dia</td><td>3 a 6 meses para primeiros sinais de melhora; 12 meses para mudança mais significativa</td><td>Não espere sair de 200 para 600 em poucos meses</td></tr>
+<tr><td>301 a 500</td><td>Pode haver dívidas recentes ou negativadas, uso alto do limite do cartão, consultas em excesso</td><td>Manter pagamentos em dia, reduzir uso do cartão, aguardar retirada de negativações</td><td>6 a 12 meses para chegar à faixa dos 600</td><td>Não confie em promessas de salto rápido</td></tr>
+<tr><td>501 a 700</td><td>Histórico inconsistente, dívidas recentes já negociadas, cadastro positivo ainda incompleto</td><td>Manter consistência por mais tempo, evitar novas dívidas, diversificar produtos de crédito com moderação</td><td>12 a 18 meses para consolidar na faixa dos 700</td><td>A melhora tende a ser mais lenta quanto mais alto o score</td></tr>
+<tr><td>701 a 1000</td><td>Nível alto, mas qualquer atraso ou consulta em excesso pode gerar queda pontual</td><td>Manter histórico impecável, usar crédito com moderação, ter diversidade de produtos</td><td>Manutenção contínua. O score elevado exige anos de consistência</td><td>Não relaxar: um atraso pode custar dezenas de pontos</td></tr>
+</tbody></table></div>
+<p>Lembre-se: não há prazo garantido. Esses números são referências educativas, baseadas em padrões observados, e cada caso é único.</p>
+</section>
+
+<section>
+<h2>O que pode atrasar a subida do score?</h2>
+<p>Mesmo fazendo tudo certo, alguns hábitos podem segurar sua pontuação. Veja os mais comuns:</p>
+<ul>
+<li><strong>Renegociar dívida e atrasar novamente:</strong> negociação não é perdão. Se você renegocia e depois atrasa de novo, o impacto no score pode ser ainda pior.</li>
+<li><strong>Continuar usando o limite total do cartão:</strong> usar mais de 50% do limite regularmente sinaliza dependência do crédito.</li>
+<li><strong>Pedir cartão ou empréstimo em vários lugares ao mesmo tempo:</strong> cada consulta ao CPF gera um pequeno impacto. Muitas em curto período acumulam.</li>
+<li><strong>Ter novos atrasos, mesmo pequenos:</strong> qualquer atraso registrado pesa, independentemente do valor.</li>
+<li><strong>Não atualizar dados cadastrais:</strong> dados desatualizados podem gerar inconsistências nos birôs.</li>
+<li><strong>Não ter nenhum histórico de crédito:</strong> se você nunca usou cartão, financiamento ou empréstimo, os birôs têm poucos dados para calcular seu score.</li>
+<li><strong>Achar que só pagar uma dívida resolve tudo:</strong> o pagamento é um passo, mas o comportamento depois do pagamento é igualmente importante.</li>
+<li><strong>Cair em golpe de &quot;score rápido&quot;:</strong> empresas que prometem aumentar score mediante pagamento são golpe. Ninguém pode alterar sua pontuação por dinheiro.</li>
 </ul>
 </section>
-<section><h2>Cronograma realista</h2>
-<p><strong>De score 200 para 400:</strong> 3 a 6 meses. Basta ativar o Cadastro Positivo e pagar contas em dia.</p>
-<p><strong>De score 400 para 600:</strong> 6 a 12 meses. Precisa de histórico consistente de pagamentos, uso moderado do cartão e dívidas controladas.</p>
-<p><strong>De score 600 para 800:</strong> 12 a 24 meses. Exige histórico longo de pagamentos em dia, baixa utilização de crédito e diversidade de produtos financeiros.</p>
-<p><strong>Acima de 800:</strong> 2 a 5 anos. É o nível dos melhores pagadores. Exige anos de histórico impecável.</p>
-</section>
-<section><h2>Exemplo prático</h2>
-<p>Carlos tem score 350, nome negativado por uma dívida de R$ 800 que ele não pagou há 2 anos.</p>
-<p><strong>Mês 1:</strong> Carlos negocia a dívida, paga R$ 300 (desconto de 60%) e ativa o Cadastro Positivo. Score sobe para 400.</p>
-<p><strong>Mês 2 a 4:</strong> Carlos paga todas as contas em dia, usa o cartão com moderação. Score chega a 500.</p>
-<p><strong>Mês 5 a 8:</strong> Carlos continua com bons hábitos e pede aumento de limite. Score chega a 600.</p>
-<p><strong>Após 12 meses:</strong> Com um ano de histórico positivo, Carlos atinge 700.</p>
-</section>
-<section><h2>O que NÃO acelera o score</h2>
+
+<section>
+<h2>O que NÃO faz o score subir mais rápido</h2>
+<p>Existem muitos mitos sobre o que aumenta o score. Alguns são inofensivos, outros podem custar dinheiro e tempo. Veja o que definitivamente não acelera sua pontuação:</p>
 <ul>
-<li>Pagar taxas para &quot;limpadores de nome&quot; (são golpes)</li>
-<li>Comprar produtos &quot;milagrosos&quot; para score</li>
-<li>Abrir várias contas ao mesmo tempo</li>
-<li>Solicitar vários cartões de uma vez</li>
-<li>Fazer simulações de crédito em muitos bancos</li>
+<li><strong>CPF na nota fiscal:</strong> programas de nota fiscal são fiscais (devolução de imposto), não financeiros. Não influenciam o score em nenhum birô.</li>
+<li><strong>Pix comum:</strong> Pix é meio de pagamento, não gera histórico de crédito. A menos que seja via canal oficial de negativação (como Serasa Limpa Nome), não afeta o score.</li>
+<li><strong>Colocar dinheiro na conta corrente ou poupança:</strong> os birôs não acessam seu saldo bancário (a menos que você autorize via Open Finance).</li>
+<li><strong>Receber salário maior:</strong> renda isolada não aumenta score. O que importa é o comportamento com pagamentos.</li>
+<li><strong>Consultar o próprio score várias vezes:</strong> consultas gratuitas que você faz nos birôs não afetam sua pontuação.</li>
+<li><strong>Pagar consultor ou empresa para aumentar score:</strong> é golpe. Nenhuma empresa pode alterar seu score mediante pagamento.</li>
+<li><strong>Comprar curso ou robô de score:</strong> não há atalho tecnológico. O score reflete seu comportamento financeiro real.</li>
+<li><strong>Excluir consultas do CPF:</strong> o histórico de consultas é um dado do cadastro. Tentar removê-las não altera o cálculo.</li>
+<li><strong>Mudar de banco toda hora:</strong> manter contas antigas ativas ajuda a construir histórico. Trocar de banco constantemente pode ter efeito neutro ou negativo.</li>
 </ul>
-<p>O único jeito de aumentar o score é construindo um histórico financeiro positivo, mês após mês.</p>
 </section>
-<section><h2>Conclusão</h2>
-<p>Score não sobe da noite para o dia, mas sobe. Com Cadastro Positivo ativo, pagamentos em dia e uso consciente do crédito, você pode sair de 300 para 600 em 12 meses. O segredo é consistência, não velocidade.</p>
+
+<section>
+<h2>Plano prático de acompanhamento</h2>
+<p>Acompanhar a evolução do score é importante, mas sem ansiedade. O foco deve estar nas ações, não no número. Veja um plano por período:</p>
+<h3>Hoje (primeiro dia)</h3>
+<ul>
+<li>Consultar seu score nos canais oficiais: Serasa, Boa Vista, SPC Brasil</li>
+<li>Verificar se há dívidas negativadas e quais são</li>
+<li>Conferir se seus dados cadastrais estão atualizados</li>
+<li>Ativar o Cadastro Positivo se ainda não tiver ativado</li>
+<li>Organizar um calendário de vencimentos para não esquecer contas</li>
+</ul>
+<h3>Próximos 30 dias</h3>
+<ul>
+<li>Pagar todas as contas em dia, sem exceção</li>
+<li>Negociar dívidas que estiverem ao seu alcance - use a <a href="/calculadoras/quitacao-dividas">calculadora de quitação de dívidas</a> para simular descontos</li>
+<li>Evitar novas solicitações de crédito (cartão, empréstimo, financiamento)</li>
+<li>Reduzir o uso do cartão de crédito para no máximo 30% do limite</li>
+</ul>
+<h3>Próximos 90 dias</h3>
+<ul>
+<li>Manter a consistência de pagamentos</li>
+<li>Acompanhar a evolução do score uma vez por mês (sem ansiedade)</li>
+<li>Evitar consultas desnecessárias ao CPF por parte de empresas</li>
+<li>Usar a <a href="/calculadoras/comprometimento-renda">calculadora de comprometimento de renda</a> para controlar gastos fixos</li>
+<li>Usar a <a href="/calculadoras/capacidade-endividamento">calculadora de capacidade de endividamento</a> para saber quanto do orçamento pode ir para dívidas</li>
+</ul>
+<h3>6 a 12 meses</h3>
+<ul>
+<li>Construir um histórico financeiro sólido e consistente</li>
+<li>Manter o nome limpo, sem novas negativações</li>
+<li>Evitar crédito caro (rotativo, cheque especial, parcelamento de fatura)</li>
+<li>Criar uma reserva de emergência - use a <a href="/calculadoras/orcamento-familiar">calculadora de orçamento familiar</a> para planejar</li>
+<li>Simular condições de crédito com a <a href="/calculadoras/emprestimo">calculadora de empréstimo</a> antes de contratar</li>
+</ul>
+</section>
+
+<section>
+<h2>Exemplos práticos</h2>
+<p>Veja três situações hipotéticas para entender como os prazos podem variar. Os valores são ilustrativos e o resultado depende da metodologia de cada birô e do histórico real do consumidor:</p>
+
+<h3>Exemplo 1: score 250 com dívida negativada recém-paga</h3>
+<p><strong>Situação:</strong> Mariana tem score 250, nome negativado por uma dívida de R$ 1.200 que ela pagou com desconto. Ela ativou o Cadastro Positivo no mesmo dia.</p>
+<p><strong>Mês 1:</strong> a credora retira a negativação em 3 dias úteis. O nome de Mariana sai do cadastro de negativados, mas o score ainda está baixo porque birôs consideram também o histórico recente.</p>
+<p><strong>Meses 2 a 4:</strong> Mariana paga todas as contas em dia. O Cadastro Positivo começa a registrar dados positivos. O score pode apresentar oscilações para cima.</p>
+<p><strong>Resultado possível, mas não garantido:</strong> em cenário favorável, a pontuação poderia sair de 250 para a faixa de 350-450 ao longo de 4 a 6 meses, dependendo da metodologia do birô e da consistência dos pagamentos.</p>
+
+<h3>Exemplo 2: score 480 sem dívida, mas com muitos pedidos de cartão</h3>
+<p><strong>Situação:</strong> Roberto tem score 480, não tem dívidas negativadas, mas nos últimos 3 meses pediu cartão em 5 instituições diferentes e foi negado em 3. Cada consulta ao CPF gerou pequeno impacto.</p>
+<p><strong>Mês 1:</strong> Roberto para de solicitar crédito. As consultas mais antigas começam a perder peso no cálculo.</p>
+<p><strong>Meses 2 a 4:</strong> Com Cadastro Positivo já ativo e pagamentos em dia, o score começa a se recuperar gradualmente.</p>
+<p><strong>Resultado possível, mas não garantido:</strong> com a redução das consultas ao CPF e um histórico positivo de pagamentos, a pontuação poderia evoluir gradualmente, podendo chegar perto dos 600 pontos em médio prazo, em cenário favorável.</p>
+
+<h3>Exemplo 3: score 650 pagando tudo em dia, buscando financiamento</h3>
+<p><strong>Situação:</strong> Carla tem score 650, paga todas as contas em dia, usa o cartão com moderação, mas quer financiar um carro e ouviu que precisa de score acima de 700 para boas condições.</p>
+<p><strong>Ações:</strong> Carla mantém os bons hábitos, evita novas dívidas, continua com o Cadastro Positivo ativo e acompanha o score mensalmente.</p>
+<p><strong>Resultado possível, mas não garantido:</strong> em cenário favorável, a pontuação poderia se consolidar em uma faixa mais alta após meses de preparação, o que poderia contribuir para melhores condições de taxa e aprovação — mas cada banco avalia seus próprios critérios além do score.</p>
+</section>
+
+<section>
+<h2>Quando pedir crédito depois que o score sobe?</h2>
+<p>Se o score subiu, é tentador sair pedindo cartão e empréstimo. Mas vale a pena segurar um pouco:</p>
+<ul>
+<li><strong>Não peça crédito logo após limpar o nome</strong> se você ainda não se organizou financeiramente. O risco de se endividar de novo é alto.</li>
+<li><strong>Espere alguns meses de histórico positivo</strong> antes de solicitar novos produtos. Isso fortalece sua análise de crédito.</li>
+<li><strong>Simule antes de pedir:</strong> use a <a href="/calculadoras/emprestimo">calculadora de empréstimo</a> para comparar parcelas e CET.</li>
+<li><strong>Verifique seu comprometimento de renda:</strong> não comprometa mais de 30% da sua renda com dívidas. Use a <a href="/calculadoras/comprometimento-renda">calculadora de comprometimento de renda</a>.</li>
+<li><strong>Compare o CET</strong> (Custo Efetivo Total) entre instituições. Taxas baixas podem esconder tarifas.</li>
+<li><strong>Evite crédito rotativo e cheque especial</strong> — são as modalidades mais caras do mercado.</li>
+</ul>
+</section>
+
+<section>
+<h2>Box de alerta: cuidado com promessa de score rápido</h2>
+<div style="background:#fef3c7;border:1px solid #f59e0b;border-radius:8px;padding:16px;margin:24px 0;">
+<p style="font-weight:700;margin:0 0 8px 0;">Cuidado: golpes de &quot;score rápido&quot;</p>
+<p style="margin:0 0 8px 0;">Ninguém pode garantir aumento de score mediante pagamento. Empresas que prometem &quot;limpar seu nome em 24 horas&quot; ou &quot;aumentar seu score em 7 dias&quot; mediante pagamento de taxa estão mentindo.</p>
+<ul style="margin:0;padding-left:20px;">
+<li>Não informe senha, código SMS ou dados bancários para terceiros</li>
+<li>Não pague taxa para &quot;subir score&quot; ou &quot;excluir consultas do CPF&quot;</li>
+<li>Desconfie de &quot;consultores de score&quot; que cobram adiantado</li>
+<li>Use apenas canais oficiais: Serasa, Boa Vista, SPC Brasil e Registrato (Banco Central)</li>
+<li>Score melhora com histórico financeiro real, não com atalho</li>
+</ul>
+</div>
+</section>
+
+<section>
+<h2>Conclusão: consistência supera velocidade</h2>
+<p>O score de crédito não sobe da noite para o dia, mas sobe. A chave não é encontrar um atalho, mas construir um histórico financeiro saudável e consistente ao longo do tempo.</p>
+<p>Recapitulando os pontos principais:</p>
+<ul>
+<li>Não existe prazo único — cada caso é único e cada birô tem sua metodologia</li>
+<li>Pagar dívida é o primeiro passo, mas o comportamento depois do pagamento é igualmente importante</li>
+<li>Cadastro Positivo acelera o processo, desde que você tenha pagamentos em dia para registrar</li>
+<li>Consultar o próprio score não derruba a pontuação</li>
+<li>Mitos como CPF na nota, Pix comum e renda alta não aumentam score</li>
+<li>Golpes de &quot;score rápido&quot; devem ser denunciados</li>
+</ul>
+<p>Depois de entender os prazos, veja o <a href="/blog/como-aumentar-score-de-credito">guia completo para aumentar o score de crédito com segurança</a>.</p>
 </section>`,
     faq: [
-      { question: 'Score 300 para 700 em 6 meses é possível?', answer: 'É muito difícil. Para subir de 300 para 700, você precisa de um histórico consistente de pagamentos, o que leva tempo. 6 meses é otimista demais. Espere de 12 a 18 meses.' },
-      { question: 'Ativar o Cadastro Positivo aumenta o score em quanto?', answer: 'O aumento varia de 50 a 150 pontos, dependendo do seu histórico de pagamentos. Se você sempre pagou contas em dia mas não tinha Cadastro Positivo, o aumento pode ser significativo.' },
-      { question: 'O score cai se eu não usar cartão de crédito?', answer: 'Pode cair levemente, porque o sistema não tem dados do seu comportamento com crédito. Usar o cartão e pagar integralmente ajuda a construir histórico.' },
-      { question: 'Consultar meu próprio score reduz a pontuação?', answer: 'Não. Consultar seu próprio score gratuitamente não afeta sua pontuação. Apenas consultas de instituições financeiras para análise de crédito podem impactar.' },
-      { question: 'Depois de limpar o nome, o score volta ao normal em quanto tempo?', answer: 'Após a baixa da negativação, o score começa a se recuperar imediatamente. Em 3 a 6 meses já é possível ver uma melhora significativa, desde que você mantenha bons hábitos.' },
+      { question: 'Quanto tempo leva para o score aumentar?', answer: 'Não existe prazo único. Depende da sua situação: se há dívidas negativadas, se o Cadastro Positivo está ativo, se você paga contas em dia e há quanto tempo. Em cenário favorável, os primeiros reflexos podem aparecer em 3 a 6 meses. Saltos maiores (de 300 para 700) podem levar de 12 a 24 meses.' },
+      { question: 'Depois de pagar dívida, o score sobe em quantos dias?', answer: 'Após o pagamento, a empresa credora tem até 5 dias úteis para solicitar a retirada da negativação. Mas isso não significa que o score subirá automaticamente no mesmo prazo. A recuperação da pontuação depende do histórico geral de pagamentos, não apenas da baixa da negativação.' },
+      { question: 'O score sobe na hora se pagar pelo Pix?', answer: 'Em canais oficiais como o Serasa Limpa Nome, o pagamento via Pix pode processar a baixa da negativação em tempo real ou no mesmo dia. Mas isso atualiza a negativação, não o score. A pontuação leva em conta o histórico completo, não só o pagamento isolado.' },
+      { question: 'Cadastro Positivo aumenta o score em quanto tempo?', answer: 'Após a ativação, os primeiros reflexos podem surgir em 30 a 90 dias, desde que você tenha pagamentos em dia sendo registrados. O impacto mais consistente costuma aparecer a partir de 6 meses de dados positivos.' },
+      { question: 'Pagar contas em dia aumenta score?', answer: 'Sim, mas não instantaneamente. O sistema precisa de alguns meses de histórico para identificar um padrão de pontualidade. Com 3 a 6 meses de pagamentos em dia, os primeiros reflexos positivos começam a aparecer.' },
+      { question: 'Consultar meu score todo dia prejudica?', answer: 'Não. Consultar seu próprio score gratuitamente nos canais oficiais (Serasa, Boa Vista, SPC Brasil) não afeta sua pontuação. Apenas consultas de instituições financeiras para análise de crédito podem impactar.' },
+      { question: 'CPF na nota ajuda o score subir?', answer: 'Não. Programas de nota fiscal são fiscais (devolução de imposto), não financeiros. Não influenciam o score de crédito em nenhum birô.' },
+      { question: 'Score 300 demora quanto para subir?', answer: 'Em cenário favorável, com negociação de dívidas, Cadastro Positivo ativo e pagamentos em dia, é possível ver os primeiros sinais de melhora em 3 a 6 meses. Para chegar a uma faixa mais confortável (acima de 500), pode levar de 12 a 18 meses. Não há prazo garantido.' },
+      { question: 'Score 500 pode virar 700 em quanto tempo?', answer: 'Em cenário favorável, com histórico consistente de pagamentos em dia, Cadastro Positivo ativo e baixa utilização do crédito, pode levar de 12 a 24 meses. A evolução tende a ser mais lenta quanto mais alto o score.' },
+      { question: 'Por que meu score não subiu depois de limpar o nome?', answer: 'Limpar o nome remove a negativação, mas o score também considera outros fatores: seu histórico de pagamentos, uso do cartão, consultas ao CPF e tempo de relacionamento. Se você limpou o nome mas ainda tem comportamento financeiro instável, o score pode demorar para refletir a mudança.' },
+      { question: 'Meu score caiu depois de pagar dívida, é normal?', answer: 'Pode acontecer em alguns casos. Isso ocorre porque o score é recalculado com base em novas informações. Além disso, o pagamento de uma dívida pode gerar atualizações que revelam outros dados. A tendência é que o score se estabilize e melhore nos meses seguintes com bons hábitos.' },
+      { question: 'Posso pagar alguém para aumentar meu score?', answer: 'Não. É golpe. Nenhuma empresa ou pessoa pode alterar seu score mediante pagamento. O score reflete seu comportamento financeiro real e não pode ser comprado. Desconfie de qualquer serviço que cobre para "subir score" ou "excluir consultas do CPF".' },
+      { question: 'Quanto tempo devo esperar para pedir cartão depois de limpar o nome?', answer: 'O ideal é esperar de 3 a 6 meses após limpar o nome, mantendo pagamentos em dia e construindo histórico positivo com o Cadastro Positivo. Isso aumenta suas chances de aprovação e evita o ciclo de endividamento.' },
     ],
   },
   // === SCORE — ARTIGO 2/5 ===
