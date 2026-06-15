@@ -48,6 +48,12 @@ const sourceDescriptions: Record<string, string> = {
 
 const defaultSourceDescription = 'Conteúdo revisado pela equipe do Bolso do Trabalhador com base em fontes oficiais: Banco Central do Brasil, IBGE, Serasa, Febraban e legislação vigente. Este conteúdo tem caráter informativo e educacional, não substituindo a consulta a um profissional qualificado. As taxas e regras podem sofrer alterações. Consulte sempre as fontes oficiais.'
 
+const authorDescriptions: Record<string, string> = {
+  'Score': 'Este artigo foi produzido por Daniel Gonçalves, criador do Bolso do Trabalhador. O conteúdo é baseado em fontes oficiais e institucionais sobre crédito, Cadastro Positivo, score e educação financeira, como Banco Central do Brasil, Serasa e legislação vigente.',
+}
+
+const defaultAuthorDescription = 'Este artigo foi produzido por Daniel Gonçalves, criador do Bolso do Trabalhador. Todo conteúdo é baseado em fontes oficiais (BCB, IBGE, Serasa, Febraban) e cálculos transparentes.'
+
 function estimateReadingTime(html: string): number {
   const text = html.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim()
   const words = text.split(/\s+/).length
@@ -264,9 +270,8 @@ export default async function PostPage({ params }: PostPageProps) {
               </div>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Este artigo foi produzido por Daniel Gonçalves, criador do Bolso do Trabalhador. 
-              Todo conteúdo é baseado em fontes oficiais (BCB, IBGE, Serasa, Febraban) e cálculos transparentes. 
-              <Link href="/autor" className="text-secondary hover:underline"> Conheça o autor</Link>.
+              {authorDescriptions[post.category] || defaultAuthorDescription}
+              {' '}<Link href="/autor" className="text-secondary hover:underline">Conheça o autor</Link>.
             </p>
           </div>
         </article>

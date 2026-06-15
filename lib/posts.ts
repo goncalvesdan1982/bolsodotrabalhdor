@@ -1503,7 +1503,7 @@ export const posts: Post[] = [
 <p>Após o pagamento da dívida, a empresa credora tem até 5 dias úteis para solicitar a retirada da negativação aos birôs. Esse é o prazo legal, mas algumas empresas fazem em menos tempo.</p>
 <p><strong>Atenção:</strong> a retirada da negativação não significa que o score subirá automaticamente no mesmo prazo. A recuperação da pontuação depende do seu histórico geral de pagamentos.</p>
 <h3>Atualização em tempo real (casos específicos)</h3>
-<p>Em alguns canais oficiais, como o Serasa Limpa Nome com pagamento via Pix, a baixa da negativação pode ser processada em tempo real ou no mesmo dia. Isso significa que o nome sai do cadastro de negativados mais rápido. Mas, novamente: a negativação sair é uma coisa; o score subir é outra.</p>
+<p>Em alguns canais oficiais, como o Serasa Limpa Nome com pagamento via Pix, a baixa da negativação pode ser processada em tempo real ou no mesmo dia. Em situações específicas, isso também pode refletir rapidamente no Serasa Score. Mesmo assim, não deve ser tratado como regra geral para todos os birôs, todos os tipos de dívida ou todos os consumidores.</p>
 <h3>O que acontece com o score depois do pagamento?</h3>
 <p>O score pode reagir de formas diferentes dependendo do histórico do consumidor:</p>
 <ul>
