@@ -42,6 +42,12 @@ const officialSources: Record<string, { name: string; url: string }[]> = {
   ],
 }
 
+const sourceDescriptions: Record<string, string> = {
+  'Score': 'Conteúdo revisado pela equipe do Bolso do Trabalhador com base em fontes oficiais e institucionais sobre crédito, Cadastro Positivo, score e educação financeira, como Banco Central do Brasil, Serasa e legislação vigente. Este conteúdo tem caráter informativo e educacional, não substituindo a consulta a um profissional qualificado. As regras, critérios de análise e metodologias de score podem sofrer alterações. Consulte sempre os canais oficiais.',
+}
+
+const defaultSourceDescription = 'Conteúdo revisado pela equipe do Bolso do Trabalhador com base em fontes oficiais: Banco Central do Brasil, IBGE, Serasa, Febraban e legislação vigente. Este conteúdo tem caráter informativo e educacional, não substituindo a consulta a um profissional qualificado. As taxas e regras podem sofrer alterações. Consulte sempre as fontes oficiais.'
+
 function estimateReadingTime(html: string): number {
   const text = html.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim()
   const words = text.split(/\s+/).length
@@ -284,7 +290,7 @@ export default async function PostPage({ params }: PostPageProps) {
 
         <div className="mb-12 p-6 bg-muted/30 border-l-4 border-secondary rounded-r-lg text-sm text-muted-foreground leading-relaxed">
           <p className="font-semibold text-foreground mb-1">Sobre esta informação</p>
-          <p>Conteúdo revisado pela equipe do Bolso do Trabalhador com base em fontes oficiais: Banco Central do Brasil, IBGE, Serasa, Febraban e legislação vigente. Este conteúdo tem caráter informativo e educacional, não substituindo a consulta a um profissional qualificado. As taxas e regras podem sofrer alterações. Consulte sempre as fontes oficiais.</p>
+          <p>{sourceDescriptions[post.category] || defaultSourceDescription}</p>
           <div className="mt-4 pt-4 border-t border-border/40">
             <p className="font-medium text-foreground mb-2">Fontes oficiais consultadas:</p>
             <ul className="space-y-1">
