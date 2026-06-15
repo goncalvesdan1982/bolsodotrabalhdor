@@ -1593,7 +1593,7 @@ export const posts: Post[] = [
 <li>Consultar seu score nos canais oficiais: Serasa, Boa Vista, SPC Brasil</li>
 <li>Verificar se há dívidas negativadas e quais são</li>
 <li>Conferir se seus dados cadastrais estão atualizados</li>
-<li>Ativar o Cadastro Positivo se ainda não tiver ativado</li>
+<li>Consultar a situação do Cadastro Positivo e manter os dados atualizados nos canais dos gestores</li>
 <li>Organizar um calendário de vencimentos para não esquecer contas</li>
 </ul>
 <h3>Próximos 30 dias</h3>
@@ -1689,7 +1689,7 @@ export const posts: Post[] = [
       { question: 'Quanto tempo leva para o score aumentar?', answer: 'Não existe prazo único. Depende da sua situação: se há dívidas negativadas, se o Cadastro Positivo está ativo, se você paga contas em dia e há quanto tempo. Em cenário favorável, os primeiros reflexos podem aparecer em 3 a 6 meses. Saltos maiores (de 300 para 700) podem levar de 12 a 24 meses.' },
       { question: 'Depois de pagar dívida, o score sobe em quantos dias?', answer: 'Após o pagamento, a empresa credora tem até 5 dias úteis para solicitar a retirada da negativação. Mas isso não significa que o score subirá automaticamente no mesmo prazo. A recuperação da pontuação depende do histórico geral de pagamentos, não apenas da baixa da negativação.' },
       { question: 'O score sobe na hora se pagar pelo Pix?', answer: 'Em canais oficiais como o Serasa Limpa Nome, o pagamento via Pix pode acelerar a baixa da negativação e, em situações específicas, refletir rapidamente no Serasa Score. Mesmo assim, isso não deve ser tratado como regra geral para todos os birôs ou para todos os tipos de dívida. Cada birô tem sua própria metodologia de atualização.' },
-      { question: 'Cadastro Positivo aumenta o score em quanto tempo?', answer: 'Após a ativação, os primeiros reflexos podem surgir em 30 a 90 dias, desde que você tenha pagamentos em dia sendo registrados. O impacto mais consistente costuma aparecer a partir de 6 meses de dados positivos.' },
+      { question: 'Cadastro Positivo aumenta o score em quanto tempo?', answer: 'Após a consulta, manutenção ou reativação do Cadastro Positivo, os primeiros reflexos podem surgir em 30 a 90 dias, desde que existam pagamentos em dia sendo registrados. O impacto mais consistente costuma aparecer a partir de 6 meses de dados positivos.' },
       { question: 'Pagar contas em dia aumenta score?', answer: 'Sim, mas não instantaneamente. O sistema precisa de alguns meses de histórico para identificar um padrão de pontualidade. Com 3 a 6 meses de pagamentos em dia, os primeiros reflexos positivos começam a aparecer.' },
       { question: 'Consultar meu score todo dia prejudica?', answer: 'Não. Consultar seu próprio score gratuitamente nos canais oficiais (Serasa, Boa Vista, SPC Brasil) não afeta sua pontuação. Apenas consultas de instituições financeiras para análise de crédito podem impactar.' },
       { question: 'CPF na nota ajuda o score subir?', answer: 'Não. Programas de nota fiscal são fiscais (devolução de imposto), não financeiros. Não influenciam o score de crédito em nenhum birô.' },
