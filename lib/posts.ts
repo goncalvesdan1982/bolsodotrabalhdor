@@ -2725,64 +2725,201 @@ export const posts: Post[] = [
   // === CARTÕES — ARTIGO 3/5 ===
   {
     slug: 'como-evitar-juros-rotativo',
-    title: 'Como evitar os juros do rotativo',
-    description: 'Aprenda a evitar os juros do rotativo do cartão de crédito. Estratégias para nunca pagar os juros mais altos do mercado brasileiro.',
+    title: 'Como Evitar Juros do Rotativo do Cartão: Guia Prático',
+    description: 'Entenda como evitar juros do rotativo, o que acontece ao pagar o mínimo da fatura, alternativas para sair da dívida e checklist de controle.',
     date: '2026-06-04',
+    lastModified: '2026-06-19',
     category: 'Cartões',
-    keywords: ['evitar juros rotativo', 'juros rotativo cartão', 'como evitar rotativo', 'cartão crédito juros', 'não pagar juros cartão'],
+    keywords: ['evitar juros rotativo', 'juros rotativo cartão', 'como evitar rotativo', 'cartão crédito juros', 'não pagar juros cartão', 'rotativo cartão crédito', 'sair do rotativo'],
     relatedCalculators: [
-      { name: 'Juros Compostos', href: '/calculadoras/juros-compostos' },
-      { name: 'Parcelas', href: '/calculadoras/parcelas' },
+      { name: 'Orçamento Familiar', href: '/calculadoras/orcamento-familiar' },
+      { name: 'Comprometimento de Renda', href: '/calculadoras/comprometimento-renda' },
+      { name: 'Troca de Dívidas', href: '/calculadoras/troca-dividas' },
       { name: 'Quitação de Dívidas', href: '/calculadoras/quitacao-dividas' },
+      { name: 'Economia Mensal', href: '/calculadoras/economia-mensal' },
+      { name: 'Juros Compostos', href: '/calculadoras/juros-compostos' },
     ],
     content: `
-<section><h2>O que é o rotativo?</h2>
-<p>O crédito rotativo é o que acontece quando você não paga o valor integral da fatura do cartão. Você pode pagar um valor mínimo (geralmente 15% da fatura) e o restante entra no rotativo.</p>
-<p>O problema é que os juros do rotativo são os mais altos do Brasil. Em 2026, a taxa média está em 12% ao mês — mais de 280% ao ano. Uma fatura de R$ 1.000 não paga vira R$ 28.000 em 3 anos.</p>
-</section>
-<section><h2>Estratégia 1: Sempre pague o valor integral</h2>
-<p>A regra número 1 do cartão de crédito: pague a fatura integralmente todo mês. Não existe outra forma garantida de evitar juros.</p>
-<p>Se você não tem dinheiro para pagar a fatura integral, significa que gastou mais do que podia. O problema não é o cartão, é o orçamento.</p>
-</section>
-<section><h2>Estratégia 2: Monitore seus gastos em tempo real</h2>
-<p>Acompanhe os gastos do cartão pelo aplicativo do banco. Quando a fatura estiver chegando perto do que você pode pagar, pare de usar o cartão.</p>
-<p>Defina um limite pessoal de uso, independentemente do limite do cartão. Exemplo: se seu orçamento permite pagar R$ 2.000 de fatura, não passe disso mesmo que o limite seja de R$ 10.000.</p>
-</section>
-<section><h2>Estratégia 3: Use o parcelamento programado</h2>
-<p>Se você sabe que não vai conseguir pagar a fatura integral, entre em contato com o banco ANTES do vencimento. Muitos bancos oferecem parcelamento da fatura com juros menores que o rotativo.</p>
-<p>O parcelamento programado tem juros de 4% a 8% ao mês, enquanto o rotativo tem 12%. É uma diferença significativa.</p>
-</section>
-<section><h2>Estratégia 4: Crie uma reserva para o cartão</h2>
-<p>Todo mês, separe o dinheiro da fatura do cartão assim que receber o salário. Deixe em uma conta separada. Assim, quando a fatura vencer, o dinheiro já está reservado.</p>
-<p>Use nossa <a href="/calculadoras/quitacao-dividas">calculadora de quitação de dívidas</a> para simular o impacto dos juros do rotativo no longo prazo.</p>
-</section>
-<section><h2>Exemplo do perigo do rotativo</h2>
-<p>R$ 2.000 no rotativo do cartão a 12% ao mês:</p>
+<section><h2>Resumo rápido</h2>
 <ul>
-<li>Mês 1: R$ 2.240 (pagando mínimo de R$ 300)</li>
-<li>Mês 3: R$ 2.780</li>
-<li>Mês 6: R$ 3.940</li>
-<li>Mês 12: R$ 7.790</li>
+<li>O rotativo acontece quando a fatura do cartão não é paga integralmente</li>
+<li>Pagar só o mínimo da fatura pode gerar juros e encargos que aumentam a dívida</li>
+<li>O ideal é planejar o orçamento para pagar a fatura completa sempre que possível</li>
+<li>Se não conseguir pagar o valor integral, comparar alternativas como parcelamento da fatura ou renegociação pode reduzir o custo</li>
+<li>Agir cedo costuma ser melhor do que adiar a decisão</li>
+<li>Use as calculadoras do site para simular o impacto no orçamento</li>
 </ul>
-<p>Em 12 meses, uma dívida de R$ 2.000 virou R$ 7.790. É por isso que o rotativo é considerado o pior tipo de dívida.</p>
 </section>
-<section><h2>O que fazer se já está no rotativo</h2>
+<section><h2>O que é o rotativo do cartão?</h2>
+<p>O crédito rotativo é a modalidade que entra em ação quando você não paga o valor integral da fatura do cartão de crédito. O saldo restante — aquilo que ficou pendente — vira uma dívida para o próximo ciclo, com a incidência de juros e encargos.</p>
+<p>Diferentemente de um empréstimo contratado com condições pré-definidas, o rotativo é acionado automaticamente. A dívida pode crescer rápido se não houver um plano para quitá-la, já que os juros são aplicados sobre o saldo devedor a cada mês.</p>
+<p>O rotativo é uma das formas de crédito com custo mais elevado no mercado brasileiro. Por isso, entender como ele funciona e como evitá-lo é um passo importante para manter o orçamento sob controle.</p>
+</section>
+<section><h2>Quando você entra no rotativo?</h2>
+<p>O rotativo pode ser acionado em situações como:</p>
+<ul>
+<li>Pagamento apenas do valor mínimo da fatura</li>
+<li>Pagamento de valor parcial, abaixo do total</li>
+<li>Atraso no pagamento após o vencimento</li>
+<li>Deixar parte da fatura para o mês seguinte sem acordo prévio</li>
+<li>Usar o limite do cartão sem planejamento e não conseguir cobrir o total</li>
+</ul>
+<p>Nessas situações, o saldo devedor remanescente entra automaticamente no rotativo, salvo se o banco oferecer e você optar por um parcelamento da fatura antes do vencimento.</p>
+</section>
+<section><h2>Pagamento mínimo, rotativo e parcelamento da fatura: diferença</h2>
+<table>
+<tr><th>Situação</th><th>O que acontece</th><th>Principal cuidado</th></tr>
+<tr><td>Pagamento integral</td><td>Quita a fatura completa</td><td>Evita juros e encargos do rotativo</td></tr>
+<tr><td>Pagamento mínimo</td><td>Parte da fatura fica para o próximo ciclo</td><td>Pode gerar juros e encargos sobre o saldo restante</td></tr>
+<tr><td>Rotativo</td><td>Saldo não pago vira dívida automaticamente</td><td>Custo pode crescer rápido se não houver plano de quitação</td></tr>
+<tr><td>Parcelamento da fatura</td><td>Dívida é dividida em parcelas fixas com juros</td><td>Comparar juros e custo total antes de optar</td></tr>
+</table>
+<p>Cada situação tem custos e consequências diferentes. A escolha depende do valor devido, do prazo e da capacidade de pagamento. Não existe uma opção que seja a melhor para todos os casos.</p>
+</section>
+<section><h2>Por que o rotativo é perigoso?</h2>
+<p>O rotativo apresenta alguns riscos que merecem atenção:</p>
+<ul>
+<li><strong>Juros e encargos elevados:</strong> os juros do rotativo estão entre os mais altos do mercado de crédito, o que pode aumentar rapidamente o saldo devedor</li>
+<li><strong>Novas compras se misturam com a dívida antiga:</strong> se você continuar usando o cartão enquanto há saldo no rotativo, as compras novas entram junto com a dívida anterior, dificultando o controle</li>
+<li><strong>Perda de clareza do orçamento:</strong> a fatura deixa de refletir apenas o consumo do mês e passa a incluir encargos e saldos anteriores</li>
+<li><strong>Efeito bola de neve:</strong> se não houver pagamento suficiente para cobrir os juros, a dívida pode crescer mês a mês</li>
+<li><strong>Impacto no score de crédito:</strong> atrasos e inadimplência podem ser registrados nos bancos de dados de proteção ao crédito, dificultando o acesso a crédito no futuro</li>
+</ul>
+<p>Identificar o problema cedo aumenta as chances de encontrar uma saída com menor custo.</p>
+</section>
+<section><h2>Como evitar entrar no rotativo</h2>
+<p>Algumas práticas podem ajudar a reduzir o risco de cair no rotativo:</p>
+<ul>
+<li><strong>Use o cartão como meio de pagamento, não como complemento de renda:</strong> cartão de crédito não é dinheiro extra — é uma ferramenta de pagamento que precisa caber no orçamento</li>
+<li><strong>Defina um limite pessoal menor que o limite do banco:</strong> se seu orçamento permite pagar R$ 2.000 de fatura, não use mais que isso mesmo que o banco libere R$ 10.000</li>
+<li><strong>Acompanhe a fatura semanalmente:</strong> olhar os gastos ao longo do mês evita surpresas no fechamento</li>
+<li><strong>Ative alertas no app do banco:</strong> notificações de compras e de aproximação do limite ajudam a manter o controle</li>
+<li><strong>Evite parcelamentos muito longos:</strong> cada parcela é um compromisso futuro que reduz sua margem nos meses seguintes</li>
+<li><strong>Separe o dinheiro da fatura assim que receber:</strong> transferir o valor para uma conta separada logo no recebimento do salário evita que o dinheiro seja gasto em outras coisas</li>
+<li><strong>Não use o cartão para cobrir despesas básicas recorrentes:</strong> alimentação, transporte e contas fixas devem ser pagos com recursos do orçamento, não com crédito rotativo</li>
+<li><strong>Corte gastos flexíveis antes do fechamento:</strong> se a fatura está alta, reduza despesas não essenciais nos dias que antecedem o vencimento</li>
+<li><strong>Evite ter vários cartões sem controle:</strong> múltiplas faturas podem desorganizar o orçamento e aumentar o risco de gastar além da renda</li>
+</ul>
+</section>
+<section><h2>O que fazer se não consigo pagar a fatura inteira?</h2>
+<p>Se você perceber que não vai conseguir pagar o valor integral da fatura, algumas medidas podem ser consideradas:</p>
 <ol>
-<li>Pare de usar o cartão até quitar a dívida</li>
-<li>Negocie o parcelamento da fatura com o banco</li>
-<li>Considere um empréstimo pessoal para quitar o rotativo (se tiver taxa menor)</li>
-<li>Priorize o pagamento dessa dívida sobre todas as outras</li>
+<li><strong>Não ignorar a fatura:</strong> deixar de pagar ou pagar apenas o mínimo sem plano pode agravar a situação</li>
+<li><strong>Simular quanto consegue pagar:</strong> defina um valor realista dentro do seu orçamento</li>
+<li><strong>Procurar o banco antes do vencimento:</strong> muitos bancos oferecem alternativas como parcelamento da fatura ou renegociação quando o cliente entra em contato antes do prazo</li>
+<li><strong>Comparar as alternativas:</strong> analise o custo total do parcelamento da fatura, da renegociação e de outras linhas de crédito disponíveis</li>
+<li><strong>Verificar o CET de cada opção:</strong> o Custo Efetivo Total inclui juros, tarifas e encargos, permitindo uma comparação mais justa</li>
+<li><strong>Priorizar despesas essenciais:</strong> aluguel, alimentação e contas básicas vêm antes do parcelamento de dívidas não essenciais</li>
+</ol>
+<p>Agir antes do vencimento costuma oferecer mais opções do que esperar o atraso acontecer.</p>
+</section>
+<section><h2>Parcelar a fatura vale a pena?</h2>
+<p>O parcelamento da fatura pode reduzir a pressão imediata ao dividir o valor devido em parcelas fixas. No entanto, algumas considerações são importantes:</p>
+<ul>
+<li>O parcelamento tem juros e encargos que aumentam o custo total da dívida</li>
+<li>Comparar juros, prazo, valor da parcela e total a pagar ajuda a decidir com mais informação</li>
+<li>Não parcelar automaticamente sem antes entender as condições oferecidas pelo banco</li>
+<li>Se optar pelo parcelamento, evitar novas compras no cartão até que a situação esteja estabilizada</li>
+<li>O parcelamento pode ser uma alternativa menos onerosa que o rotativo, mas ainda assim representa um custo</li>
+</ul>
+<p>Use a <a href="/calculadoras/parcelas">calculadora de parcelas</a> para simular diferentes cenários antes de decidir.</p>
+</section>
+<section><h2>Trocar rotativo por empréstimo pode fazer sentido?</h2>
+<p>Em algumas situações, contratar um empréstimo com juros menores para quitar o rotativo pode reduzir o custo total da dívida. Alguns pontos para considerar:</p>
+<ul>
+<li>Comparar o CET do empréstimo com o custo estimado do rotativo ou parcelamento</li>
+<li>O empréstimo exige disciplina para não continuar usando o cartão enquanto a dívida não é paga</li>
+<li>Comparar o valor total a pagar em cada cenário, não apenas o valor da parcela</li>
+<li>Evitar empréstimos com taxa antecipada ou ofertas suspeitas — desconfie de promessas de liberação rápida sem análise</li>
+<li>Usar a <a href="/calculadoras/troca-dividas">calculadora de troca de dívidas</a> pode ajudar a visualizar a diferença entre as opções</li>
+</ul>
+<p>A troca pode fazer sentido em alguns casos, mas não é necessariamente a melhor solução para todos. Cada situação merece uma análise individual.</p>
+<p>Veja também: <a href="/blog/vale-a-pena-trocar-divida-cartao-por-emprestimo">Vale a pena trocar a dívida do cartão por um empréstimo?</a></p>
+</section>
+<section><h2>Como renegociar dívida do cartão</h2>
+<p>Se a dívida já está no rotativo ou em atraso, a renegociação pode ser um caminho. Veja um passo a passo:</p>
+<ol>
+<li><strong>Levantar o valor total da dívida:</strong> inclua saldo devedor, juros, encargos e multas</li>
+<li><strong>Verificar as condições atuais:</strong> juros, prazo e CET aplicados</li>
+<li><strong>Calcular quanto cabe no orçamento:</strong> defina um valor de parcela que não comprometa as despesas essenciais</li>
+<li><strong>Procurar os canais oficiais do banco:</strong> app, site, central de atendimento ou agência</li>
+<li><strong>Comparar proposta à vista e parcelada:</strong> às vezes o desconto à vista é maior, mas a parcela pode não caber</li>
+<li><strong>Evitar parcela que não cabe no orçamento:</strong> parcelar em muitos meses pode tornar a dívida mais longa e aumentar o custo total</li>
+<li><strong>Guardar comprovantes:</strong> registre o acordo, o código de negociação e os recibos de pagamento</li>
+<li><strong>Acompanhar a baixa da dívida:</strong> confira se o registro de inadimplência foi removido após o pagamento</li>
 </ol>
 </section>
+<section><h2>Erros comuns ao lidar com o rotativo</h2>
+<ul>
+<li><strong>Pagar o mínimo achando que o problema foi resolvido:</strong> o valor mínimo apenas adia parte da dívida, que continua com juros</li>
+<li><strong>Continuar comprando enquanto parcela a fatura:</strong> novas compras aumentam o saldo devedor e dificultam a quitação</li>
+<li><strong>Aceitar a primeira proposta sem comparar:</strong> vale a pena verificar condições em mais de um canal ou instituição</li>
+<li><strong>Parcelar em prazo muito longo:</strong> parcelas mais baixas podem parecer atraentes, mas o custo total pode ser maior</li>
+<li><strong>Usar outro cartão para pagar contas básicas:</strong> transferir a dívida de lugar sem resolver a causa não elimina o problema</li>
+<li><strong>Pegar empréstimo sem comparar o CET:</strong> um empréstimo mal contratado pode ter custo tão alto quanto o rotativo</li>
+<li><strong>Ignorar mensagens e avisos do banco:</strong> a instituição pode oferecer condições especiais antes do vencimento</li>
+<li><strong>Cair em promessas de desconto ou liberação mediante taxa antecipada:</strong> golpistas se aproveitam de quem está com dívidas para pedir pagamento adiantado</li>
+</ul>
+</section>
+<section><h2>Cuidados contra golpes</h2>
+<ul>
+<li><strong>Não pague taxa antecipada</strong> para renegociar dívida ou liberar crédito — instituições sérias não cobram para negociar</li>
+<li><strong>Acesse apenas os canais oficiais do banco:</strong> app, site ou telefone registrado no Banco Central</li>
+<li><strong>Cuidado com links recebidos por WhatsApp, SMS ou e-mail:</strong> podem ser tentativas de phishing</li>
+<li><strong>Confirme o canal de atendimento</strong> no site oficial da instituição antes de fornecer qualquer dado</li>
+<li><strong>Nunca informe senhas, códigos de autenticação ou dados bancários</strong> por telefone ou mensagem não solicitada</li>
+<li><strong>Desconfie de promessas como &quot;limpa nome garantido&quot; ou &quot;desconto garantido&quot;</strong> — ofertas reais de renegociação são formalizadas em contrato</li>
+<li><strong>Guarde todos os comprovantes</strong> de negociação e pagamento</li>
+</ul>
+</section>
+<section><h2>Como usar as calculadoras do site</h2>
+<p>As calculadoras do Bolso do Trabalhador podem ajudar a simular cenários e tomar decisões com mais informação:</p>
+<ul>
+<li><a href="/calculadoras/orcamento-familiar">Calculadora de orçamento familiar</a> — organize receitas e despesas para ver quanto pode destinar à fatura</li>
+<li><a href="/calculadoras/comprometimento-renda">Calculadora de comprometimento de renda</a> — veja se o valor da fatura está dentro do recomendado para sua renda</li>
+<li><a href="/calculadoras/troca-dividas">Calculadora de troca de dívidas</a> — compare o custo de manter o rotativo versus contratar um empréstimo</li>
+<li><a href="/calculadoras/quitacao-dividas">Calculadora de quitação de dívidas</a> — simule quanto tempo leva para quitar uma dívida com diferentes valores de pagamento</li>
+<li><a href="/calculadoras/economia-mensal">Calculadora de economia mensal</a> — projete quanto você pode economizar ao reduzir juros e encargos</li>
+<li><a href="/calculadoras/juros-compostos">Calculadora de juros compostos</a> — entenda o impacto dos juros ao longo do tempo</li>
+</ul>
+</section>
+<section><h2>Checklist para evitar o rotativo</h2>
+<ul>
+<li>Sei o valor atual da minha fatura?</li>
+<li>Consigo pagar o valor integral?</li>
+<li>Se não consigo, já comparei as alternativas (parcelamento, renegociação, outra linha de crédito)?</li>
+<li>Sei o custo total (CET) de cada alternativa?</li>
+<li>Tenho um plano para não fazer novas compras enquanto a dívida não for quitada?</li>
+<li>Meu orçamento comporta a parcela do acordo?</li>
+<li>A negociação está sendo feita por um canal oficial do banco?</li>
+<li>Tenho reserva para imprevistos ou estou usando o cartão como reserva?</li>
+<li>Acompanho minha fatura ao longo do mês, não apenas na data de vencimento?</li>
+</ul>
+</section>
 <section><h2>Conclusão</h2>
-<p>Evitar o rotativo é simples: não gaste mais do que pode pagar. Monitore seus gastos, pague a fatura integralmente e, se precisar, parcele a fatura antes de cair no rotativo. Os juros do rotativo são um castigo financeiro que ninguém merece.</p>
+<p>Evitar o rotativo do cartão de crédito exige planejamento e controle do orçamento. Pagar a fatura integralmente é o caminho mais seguro para não incorrer em juros e encargos, quando isso é possível.</p>
+<p>Se a fatura não cabe no orçamento, agir cedo — antes do vencimento — costuma oferecer mais opções e custos potencialmente menores do que esperar o atraso.</p>
+<p>Comparar o custo total das alternativas disponíveis (parcelamento da fatura, renegociação, empréstimo com CET menor) ajuda a evitar trocar uma dívida cara por outra com condições similares ou piores.</p>
+<p>Use este guia como referência educativa. Consulte os canais oficiais do seu banco para obter condições específicas para o seu caso. As regras e taxas podem mudar ao longo do tempo.</p>
+<p>Para continuar sua organização financeira:</p>
+<ul>
+<li><a href="/cartoes">Cartões de crédito</a> — guia sobre cartões</li>
+<li><a href="/organizacao-financeira">Organização financeira</a> — planeje seu orçamento</li>
+<li><a href="/blog/cartao-sem-anuidade-vale-a-pena">Cartão sem anuidade vale a pena?</a></li>
+<li><a href="/blog/como-sair-das-dividas-guia-completo">Como sair das dívidas</a></li>
+<li><a href="/blog/fatura-parcelada-compensa">Fatura parcelada compensa?</a></li>
+<li><a href="/blog/como-montar-plano-sair-das-dividas">Como montar um plano para sair das dívidas</a></li>
+</ul>
 </section>`,
     faq: [
-      { question: 'Qual a diferença entre rotativo e parcelamento?', answer: 'O rotativo é automático quando você não paga o valor integral. O parcelamento é uma opção que você escolhe antes do vencimento. O parcelamento tem juros menores.' },
-      { question: 'O que é melhor: rotativo ou cheque especial?', answer: 'Os dois têm juros altíssimos. O rotativo gira em torno de 12% ao mês, o cheque especial em torno de 8% ao mês. Ambos devem ser evitados.' },
-      { question: 'Posso pagar a fatura depois do vencimento sem juros?', answer: 'Não, a partir do primeiro dia de atraso os juros de mora e multa são aplicados. Pague sempre até a data do vencimento.' },
-      { question: 'Como funciona o pagamento mínimo do cartão?', answer: 'O pagamento mínimo é um percentual da fatura (geralmente 15%). O restante entra no rotativo com juros altos. Não é recomendado.' },
-      { question: 'O banco é obrigado a oferecer parcelamento da fatura?', answer: 'Desde 2024, por regulamentação do Banco Central, os bancos são obrigados a oferecer parcelamento da fatura como alternativa ao rotativo.' },
+      { question: 'O que é o juros do rotativo do cartão?', answer: 'O juros do rotativo é a taxa aplicada sobre o saldo da fatura que não foi pago integralmente. Quando você deixa um valor pendente, esse saldo vira uma dívida com incidência de juros e encargos até ser quitado. O custo do rotativo está entre os mais elevados do mercado de crédito.' },
+      { question: 'Quando eu entro no rotativo do cartão?', answer: 'O rotativo é acionado automaticamente quando você não paga o valor integral da fatura até o vencimento. Isso inclui pagar apenas o mínimo, pagar um valor parcial ou atrasar o pagamento. O saldo restante vira dívida para o próximo ciclo.' },
+      { question: 'Pagar o mínimo da fatura evita juros?', answer: 'Não. Pagar apenas o mínimo evita a cobrança de multa por atraso e a negativação do nome a curto prazo, mas o saldo restante entra no rotativo com incidência de juros e encargos. O ideal é pagar o valor integral sempre que possível.' },
+      { question: 'Parcelar a fatura é melhor que cair no rotativo?', answer: 'Em muitos casos, o parcelamento da fatura pode ter juros menores que o rotativo, mas ainda assim representa um custo. É importante comparar as taxas e o CET de cada opção antes de decidir. O parcelamento pode ser uma alternativa, mas não é necessariamente a melhor opção para todas as situações.' },
+      { question: 'Vale a pena pegar empréstimo para sair do rotativo?', answer: 'Pode fazer sentido se o CET do empréstimo for menor que o custo estimado do rotativo e se houver disciplina para não continuar usando o cartão enquanto a dívida não for quitada. A decisão depende dos valores, prazos e condições de cada caso.' },
+      { question: 'Como evitar entrar no rotativo?', answer: 'Algumas práticas podem ajudar: pagar a fatura integralmente, definir um limite pessoal de gastos, acompanhar a fatura ao longo do mês, separar o dinheiro da fatura assim que receber o salário e evitar parcelamentos longos que comprometam o orçamento dos meses seguintes.' },
+      { question: 'O rotativo prejudica o score de crédito?', answer: 'Indiretamente, sim. O atraso no pagamento da fatura pode ser registrado nos bancos de dados de proteção ao crédito, o que afeta negativamente o score. Além disso, o alto uso do limite disponível também pode ser interpretado como um sinal de risco pelos modelos de pontuação.' },
+      { question: 'Como renegociar dívida de cartão com segurança?', answer: 'Procure os canais oficiais do banco (app, site ou central de atendimento). Levante o valor total da dívida, as taxas aplicadas e o CET. Compare as propostas de parcelamento e pagamento à vista. Guarde os comprovantes da negociação e dos pagamentos. Não pague taxa antecipada para renegociar.' },
     ],
   },
   // === CARTÕES — ARTIGO 4/5 ===
