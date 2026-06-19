@@ -52,8 +52,8 @@ const defaultSourceDescription = 'Conteúdo revisado pela equipe do Bolso do Tra
 const authorDescriptions: Record<string, string> = {
   'Custo de Vida': 'Este artigo foi produzido por Daniel Gonçalves, criador do Bolso do Trabalhador. O conteúdo tem caráter educativo e usa critérios de planejamento financeiro pessoal, estimativas ilustrativas e organização de orçamento para ajudar o leitor a simular a própria realidade.',
   'Score': 'Este artigo foi produzido por Daniel Gonçalves, criador do Bolso do Trabalhador. O conteúdo é baseado em fontes oficiais e institucionais sobre crédito, Cadastro Positivo, score e educação financeira, como Banco Central do Brasil, Serasa e legislação vigente.',
-  'Organização Financeira': 'Este artigo foi produzido por Daniel Gonçalves, criador do Bolso do Trabalhador. O conteúdo tem caráter educativo e usa critérios de organização financeira pessoal, exemplos didáticos e simulações simples para ajudar o leitor a adaptar o método à própria realidade. Conheça o autor.',
-  'Cartões': 'Este artigo foi produzido por Daniel Gonçalves, criador do Bolso do Trabalhador. O conteúdo tem caráter educativo e usa critérios de organização financeira, análise de custos, juros, tarifas e uso consciente do crédito. Conheça o autor.',
+  'Organização Financeira': 'Este artigo foi produzido por Daniel Gonçalves, criador do Bolso do Trabalhador. O conteúdo tem caráter educativo e usa critérios de organização financeira pessoal, exemplos didáticos e simulações simples para ajudar o leitor a adaptar o método à própria realidade.',
+  'Cartões': 'Este artigo foi produzido por Daniel Gonçalves, criador do Bolso do Trabalhador. O conteúdo tem caráter educativo e usa critérios de organização financeira, análise de custos, juros, tarifas e uso consciente do crédito.',
 }
 
 const defaultAuthorDescription = 'Este artigo foi produzido por Daniel Gonçalves, criador do Bolso do Trabalhador. Todo conteúdo é baseado em fontes oficiais (BCB, IBGE, Serasa, Febraban) e cálculos transparentes.'

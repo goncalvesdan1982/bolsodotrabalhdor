@@ -2744,7 +2744,7 @@ export const posts: Post[] = [
 <ul>
 <li>O rotativo acontece quando a fatura do cartão não é paga integralmente</li>
 <li>Pagar só o mínimo da fatura pode gerar juros e encargos que aumentam a dívida</li>
-<li>O ideal é planejar o orçamento para pagar a fatura completa sempre que possível</li>
+<li>O ideal é planejar o orçamento para pagar a fatura completa quando for possível</li>
 <li>Se não conseguir pagar o valor integral, comparar alternativas como parcelamento da fatura ou renegociação pode reduzir o custo</li>
 <li>Agir cedo costuma ser melhor do que adiar a decisão</li>
 <li>Use as calculadoras do site para simular o impacto no orçamento</li>
@@ -2863,7 +2863,7 @@ export const posts: Post[] = [
 </section>
 <section><h2>Cuidados contra golpes</h2>
 <ul>
-<li><strong>Não pague taxa antecipada</strong> para renegociar dívida ou liberar crédito — instituições sérias não cobram para negociar</li>
+<li><strong>Não pague taxa antecipada</strong> para renegociar dívida ou liberar crédito — em ofertas legítimas, custos e condições devem aparecer no contrato ou nos canais oficiais. Desconfie de cobranças antecipadas</li>
 <li><strong>Acesse apenas os canais oficiais do banco:</strong> app, site ou telefone registrado no Banco Central</li>
 <li><strong>Cuidado com links recebidos por WhatsApp, SMS ou e-mail:</strong> podem ser tentativas de phishing</li>
 <li><strong>Confirme o canal de atendimento</strong> no site oficial da instituição antes de fornecer qualquer dado</li>
@@ -2897,7 +2897,7 @@ export const posts: Post[] = [
 </ul>
 </section>
 <section><h2>Conclusão</h2>
-<p>Evitar o rotativo do cartão de crédito exige planejamento e controle do orçamento. Pagar a fatura integralmente é o caminho mais seguro para não incorrer em juros e encargos, quando isso é possível.</p>
+<p>Evitar o rotativo do cartão de crédito exige planejamento e controle do orçamento. Pagar a fatura integralmente costuma ser o caminho mais seguro para evitar juros e encargos, quando isso é possível.</p>
 <p>Se a fatura não cabe no orçamento, agir cedo — antes do vencimento — costuma oferecer mais opções e custos potencialmente menores do que esperar o atraso.</p>
 <p>Comparar o custo total das alternativas disponíveis (parcelamento da fatura, renegociação, empréstimo com CET menor) ajuda a evitar trocar uma dívida cara por outra com condições similares ou piores.</p>
 <p>Use este guia como referência educativa. Consulte os canais oficiais do seu banco para obter condições específicas para o seu caso. As regras e taxas podem mudar ao longo do tempo.</p>
@@ -2912,9 +2912,9 @@ export const posts: Post[] = [
 </ul>
 </section>`,
     faq: [
-      { question: 'O que é o juros do rotativo do cartão?', answer: 'O juros do rotativo é a taxa aplicada sobre o saldo da fatura que não foi pago integralmente. Quando você deixa um valor pendente, esse saldo vira uma dívida com incidência de juros e encargos até ser quitado. O custo do rotativo está entre os mais elevados do mercado de crédito.' },
+      { question: 'O que são os juros do rotativo do cartão?', answer: 'Os juros do rotativo são a taxa aplicada sobre o saldo da fatura que não foi pago integralmente. Quando você deixa um valor pendente, esse saldo vira uma dívida com incidência de juros e encargos até ser quitado. O custo do rotativo está entre os mais elevados do mercado de crédito.' },
       { question: 'Quando eu entro no rotativo do cartão?', answer: 'O rotativo é acionado automaticamente quando você não paga o valor integral da fatura até o vencimento. Isso inclui pagar apenas o mínimo, pagar um valor parcial ou atrasar o pagamento. O saldo restante vira dívida para o próximo ciclo.' },
-      { question: 'Pagar o mínimo da fatura evita juros?', answer: 'Não. Pagar apenas o mínimo evita a cobrança de multa por atraso e a negativação do nome a curto prazo, mas o saldo restante entra no rotativo com incidência de juros e encargos. O ideal é pagar o valor integral sempre que possível.' },
+      { question: 'Pagar o mínimo da fatura evita juros?', answer: 'Não. Pagar apenas o mínimo evita a cobrança de multa por atraso e a negativação do nome a curto prazo, mas o saldo restante entra no rotativo com incidência de juros e encargos. O ideal é pagar o valor integral quando for possível.' },
       { question: 'Parcelar a fatura é melhor que cair no rotativo?', answer: 'Em muitos casos, o parcelamento da fatura pode ter juros menores que o rotativo, mas ainda assim representa um custo. É importante comparar as taxas e o CET de cada opção antes de decidir. O parcelamento pode ser uma alternativa, mas não é necessariamente a melhor opção para todas as situações.' },
       { question: 'Vale a pena pegar empréstimo para sair do rotativo?', answer: 'Pode fazer sentido se o CET do empréstimo for menor que o custo estimado do rotativo e se houver disciplina para não continuar usando o cartão enquanto a dívida não for quitada. A decisão depende dos valores, prazos e condições de cada caso.' },
       { question: 'Como evitar entrar no rotativo?', answer: 'Algumas práticas podem ajudar: pagar a fatura integralmente, definir um limite pessoal de gastos, acompanhar a fatura ao longo do mês, separar o dinheiro da fatura assim que receber o salário e evitar parcelamentos longos que comprometam o orçamento dos meses seguintes.' },
