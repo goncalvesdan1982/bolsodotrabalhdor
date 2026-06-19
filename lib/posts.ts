@@ -965,39 +965,130 @@ export const posts: Post[] = [
   },
   {
     slug: 'emprestimo-pessoal-ou-consignado',
-    title: 'Empréstimo pessoal ou consignado: qual escolher?',
-    description: 'Compare empréstimo pessoal e consignado. Vantagens, desvantagens, taxas e qual modalidade é melhor para cada situação.',
+    title: 'Empréstimo Pessoal ou Consignado: Diferenças, Riscos e Como Escolher',
+    description: 'Entenda as diferenças entre empréstimo pessoal e consignado, veja como comparar CET, parcelas, riscos e quando cada opção pode fazer sentido.',
     date: '2026-06-01',
+    lastModified: '2026-06-19',
     category: 'Empréstimos',
-    keywords: ['emprestimo pessoal', 'emprestimo consignado', 'qual melhor emprestimo', 'taxas emprestimo'],
+    keywords: ['emprestimo pessoal', 'emprestimo consignado', 'diferenca emprestimo pessoal consignado', 'CET', 'como escolher emprestimo', 'taxas emprestimo'],
     relatedCalculators: [
       { name: 'Empréstimo', href: '/calculadoras/emprestimo' },
-      { name: 'Financiamento', href: '/calculadoras/financiamento' },
+      { name: 'Comprometimento de Renda', href: '/calculadoras/comprometimento-renda' },
       { name: 'Troca de Dívidas', href: '/calculadoras/troca-dividas' },
+      { name: 'Quitação de Dívidas', href: '/calculadoras/quitacao-dividas' },
     ],
     content: `
-<section><h2>Empréstimo pessoal vs consignado</h2>
-<p>Na hora de contratar um empréstimo, a escolha entre pessoal e consignado pode fazer grande diferença no valor das parcelas e no total pago. Vamos comparar os dois.</p>
+<section><h2>Empréstimo pessoal ou consignado: qual escolher?</h2>
+<p>Na hora de contratar um empréstimo, escolher entre a modalidade pessoal e a consignada pode fazer grande diferença no valor das parcelas, no total pago ao final do contrato e no impacto no orçamento mensal. Não existe uma opção universalmente melhor — a escolha depende do perfil de renda, do vínculo empregatício, das taxas disponíveis, do prazo desejado e, principalmente, do planejamento financeiro de cada pessoa.</p>
+<p>Este artigo ajuda a entender as diferenças, os riscos e os critérios para decidir com mais consciência. Antes de contratar qualquer crédito, lembre-se de que as informações aqui são educativas e não substituem a análise do contrato com a instituição financeira. Consulte os canais oficiais do seu banco ou do Banco Central para confirmar condições vigentes.</p>
 </section>
-<section><h2>Empréstimo consignado</h2>
-<p>O empréstimo consignado tem as parcelas descontadas diretamente da folha de pagamento ou benefício do INSS. Por isso, o risco para o banco é menor e as taxas de juros são as mais baixas do mercado.</p>
-<p><strong>Vantagens:</strong> Taxas de 1,5% a 3% ao mês, prazos longos (até 96 meses), desconto automático.</p>
-<p><strong>Desvantagens:</strong> Disponível apenas para servidores, aposentados, pensionistas e CLT de grandes empresas. O comprometimento máximo é de 35% da renda.</p>
+<section><h2>Diferença entre empréstimo pessoal e consignado</h2>
+<p>O <strong>empréstimo consignado</strong> é aquele em que as parcelas são descontadas diretamente da folha de pagamento ou do benefício (INSS). Por ser um desconto automático, o risco de inadimplência para o banco é menor, o que pode resultar em taxas de juros mais baixas. No entanto, ele está disponível apenas para quem tem vínculo empregatício formal (CLT em empresas conveniadas), é servidor público, aposentado ou pensionista do INSS. A margem consignável — o percentual máximo da renda que pode ser comprometido — é limitada por lei, atualmente em até 35% para empréstimos, mais 5% para cartão consignado.</p>
+<p>O <strong>empréstimo pessoal</strong> não exige vínculo empregatício específico. Pode ser contratado por qualquer pessoa com renda comprovada, inclusive autônomos e MEI. O pagamento é feito por boleto bancário, débito em conta ou Pix, sem desconto automático em folha. Por ter mais risco para a instituição, as taxas de juros costumam ser mais altas que as do consignado. A vantagem é a flexibilidade: o dinheiro cai na conta e pode ser usado para qualquer finalidade, sem necessidade de comprovação de vínculo.</p>
+<p>Entender essa diferença básica é o primeiro passo para escolher a modalidade que pode fazer mais sentido para o seu momento financeiro.</p>
 </section>
-<section><h2>Empréstimo pessoal</h2>
-<p>O empréstimo pessoal não exige vínculo empregatício específico e pode ser contratado por qualquer pessoa com renda comprovada.</p>
-<p><strong>Vantagens:</strong> Disponível para todos, sem necessidade de vínculo específico, pode ser usado para qualquer finalidade.</p>
-<p><strong>Desvantagens:</strong> Taxas mais altas (3% a 10% ao mês), prazo menor, análise de crédito mais rigorosa.</p>
+<section><h2>Comparativo rápido</h2>
+<p>A tabela abaixo resume as principais diferenças entre as duas modalidades. Os valores e percentuais são ilustrativos e podem variar conforme a instituição, o perfil de crédito e a data da contratação.</p>
+<table>
+<thead>
+<tr><th>Critério</th><th>Empréstimo pessoal</th><th>Empréstimo consignado</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Forma de pagamento</strong></td><td>Boleto, débito em conta ou Pix</td><td>Desconto automático em folha ou benefício</td></tr>
+<tr><td><strong>Taxas de juros</strong></td><td>Podem ser mais altas; dependem do perfil de crédito</td><td>Costumam ser mais baixas, mas variam conforme o convênio</td></tr>
+<tr><td><strong>Aprovação</strong></td><td>Depende de análise de crédito e score</td><td>Depende da margem consignável e do vínculo</td></tr>
+<tr><td><strong>Prazo máximo</strong></td><td>Varia conforme a instituição (geralmente até 24 ou 36 meses)</td><td>Pode chegar a 96 meses, dependendo do vínculo</td></tr>
+<tr><td><strong>Risco para o orçamento</strong></td><td>Maior, porque o pagamento depende da disciplina financeira</td><td>Menor risco de atraso, mas compromete parte fixa da renda</td></tr>
+<tr><td><strong>Indicado para</strong></td><td>Quem não tem acesso ao consignado ou busca flexibilidade</td><td>Quem tem vínculo e busca a menor taxa disponível</td></tr>
+<tr><td><strong>Cuidado principal</strong></td><td>Comparar o CET, não apenas a taxa de juros</td><td>Não comprometer despesas essenciais com a parcela</td></tr>
+</tbody>
+</table>
 </section>
-<section><h2>Quando escolher cada um</h2>
-<p><strong>Escolha consignado quando:</strong> você tem direito a ele (servidor, aposentado, CLT), precisa de taxas baixas e pode comprometer a renda mensal.</p>
-<p><strong>Escolha pessoal quando:</strong> não tem acesso ao consignado, precisa do dinheiro rápido e tem bom score de crédito.</p>
-<p>Use nossa <a href="/calculadoras/emprestimo">calculadora de empréstimo</a> para simular as parcelas de cada modalidade.</p>
+<section><h2>O que é CET e por que ele importa</h2>
+<p>CET significa <strong>Custo Efetivo Total</strong>. É o indicador que reúne todos os custos do empréstimo em um único percentual: juros, tarifas (como TAC — Tarifa de Abertura de Crédito), seguros (como seguro prestamista), IOF (Imposto sobre Operações Financeiras) e qualquer outro encargo incluído no contrato.</p>
+<p>Comparar apenas a taxa de juros mensal entre duas propostas pode enganar. Uma instituição pode anunciar juros de 2% ao mês, mas incluir seguros e tarifas que elevam o CET para 4,5% ao mês. Outra pode ter juros de 3% ao mês com CET de 3,2%. A segunda opção pode ser mais barata no custo total, mesmo com uma taxa de juros maior.</p>
+<p>Por lei, o banco ou financeira é obrigado a informar o CET antes da contratação. Sempre peça o CET por escrito e compare o custo total entre as propostas. Para se aprofundar no tema, veja o artigo <a href="/blog/o-que-e-cet-e-por-que-importa">o que é CET e por que ele importa</a>.</p>
+</section>
+<section><h2>Exemplo ilustrativo</h2>
+<p>Os números abaixo são hipotéticos e servem apenas para ilustrar como a comparação entre propostas deve ser feita. Não representam taxas reais de mercado.</p>
+<p>Imagine que uma pessoa precisa de R$ 3.000 e recebe três propostas:</p>
+<table>
+<thead>
+<tr><th>Proposta</th><th>Valor liberado</th><th>Prazo</th><th>Parcela</th><th>Total pago</th></tr>
+</thead>
+<tbody>
+<tr><td>Banco A (pessoal)</td><td>R$ 3.000</td><td>12 meses</td><td>R$ 310</td><td>R$ 3.720</td></tr>
+<tr><td>Banco B (pessoal)</td><td>R$ 3.000</td><td>24 meses</td><td>R$ 195</td><td>R$ 4.680</td></tr>
+<tr><td>Banco C (consignado)</td><td>R$ 3.000</td><td>12 meses</td><td>R$ 285</td><td>R$ 3.420</td></tr>
+</tbody>
+</table>
+<p>Olhando apenas o valor da parcela, a proposta do Banco B parece mais acessível (R$ 195). No entanto, o prazo maior faz com que o total pago seja R$ 4.680 — R$ 960 a mais que o Banco A e R$ 1.260 a mais que o Banco C.</p>
+<p>Este exemplo mostra por que é essencial comparar o custo total, e não apenas a parcela mensal. Use a <a href="/calculadoras/emprestimo">calculadora de empréstimo</a> para simular diferentes cenários com seus próprios números.</p>
+</section>
+<section><h2>Quando o empréstimo pessoal pode fazer sentido</h2>
+<p>O empréstimo pessoal pode ser uma alternativa em situações como:</p>
+<ul>
+<li><strong>Sem acesso ao consignado:</strong> autônomos, MEI, profissionais sem carteira assinada ou que trabalham em empresas sem convênio não têm acesso ao consignado. Nesses casos, o empréstimo pessoal é a opção disponível.</li>
+<li><strong>Flexibilidade de pagamento:</strong> o empréstimo pessoal permite pagar por boleto ou débito sem desconto automático. Para quem prefere manter o controle manual do orçamento, essa pode ser uma vantagem.</li>
+<li><strong>Quando o CET é competitivo:</strong> em algumas situações, instituições digitais (fintechs) oferecem taxas menores que bancos tradicionais. Vale a pena comparar o CET com outras modalidades antes de decidir.</li>
+<li><strong>Quando existe um plano de pagamento claro:</strong> se a pessoa já tem um planejamento financeiro com previsão de receitas para quitar o empréstimo dentro do prazo, o pessoal pode ser uma opção viável.</li>
+<li><strong>Evitar comprometimento automático da renda:</strong> algumas pessoas preferem não ter o desconto em folha para manter a liberdade de renegociar ou quitar antecipadamente sem burocracia extra.</li>
+</ul>
+</section>
+<section><h2>Quando o consignado pode fazer sentido</h2>
+<p>O empréstimo consignado costuma ser recomendado com cautela em situações como:</p>
+<ul>
+<li><strong>Taxa efetiva menor:</strong> por ter menor risco, o consignado geralmente apresenta CET mais baixo que o pessoal. Para quem tem acesso, pode representar uma economia significativa no custo total.</li>
+<li><strong>Renda estável e previsível:</strong> servidores públicos, aposentados e CLT de empresas consolidadas têm renda recorrente, o que reduz o risco de atraso nas parcelas descontadas em folha.</li>
+<li><strong>Quando a parcela cabe com folga no orçamento:</strong> mesmo com o desconto automático, é essencial que a parcela não comprometa gastos essenciais como alimentação, moradia e saúde.</li>
+<li><strong>Contratação em canal confiável:</strong> o consignado deve ser contratado diretamente no banco ou instituição autorizada. Desconfie de intermediários que cobram taxas para &quot;facilitar&quot; a liberação.</li>
+<li><strong>Troca de dívida cara por mais barata:</strong> se a pessoa tem dívidas com juros altos (cartão de crédito, cheque especial), o consignado pode ajudar a reduzir o custo mensal — desde que a parcela caiba no orçamento e não haja nova contratação depois.</li>
+</ul>
+</section>
+<section><h2>Quando evitar qualquer empréstimo</h2>
+<p>Nem sempre contratar crédito é a melhor saída. Algumas situações exigem cautela redobrada:</p>
+<ul>
+<li><strong>Para consumo por impulso:</strong> pegar um empréstimo para comprar algo supérfluo sem planejamento pode gerar um endividamento desnecessário.</li>
+<li><strong>Para cobrir gastos recorrentes:</strong> se as despesas mensais já superam a renda, o empréstimo pode adiar o problema, mas não resolvê-lo. O ideal é ajustar o orçamento antes de contratar crédito.</li>
+<li><strong>Quando a parcela compromete despesas básicas:</strong> se a parcela do empréstimo somada às contas essenciais ultrapassa a renda disponível, o risco de inadimplência é alto.</li>
+<li><strong>Quando o CET não está claro:</strong> se a instituição não informa o CET de forma transparente, isso pode ser um sinal de alerta.</li>
+<li><strong>Quando há suspeita de golpe:</strong> ofertas de crédito com aprovação garantida, sem consulta a órgãos de proteção ao crédito ou com exigência de pagamento antecipado devem ser tratadas com muita desconfiança.</li>
+<li><strong>Para pagar outra dívida sem renegociar as condições:</strong> trocar uma dívida por outra pode fazer sentido se o custo total for menor. Mas se a nova dívida tiver CET igual ou maior, o problema só se agrava. Veja o artigo <a href="/blog/vale-a-pena-trocar-divida-cartao-por-emprestimo">vale a pena trocar dívida de cartão por empréstimo</a> para entender melhor.</li>
+</ul>
+</section>
+<section><h2>Cuidados contra golpes</h2>
+<p>Infelizmente, golpes financeiros são comuns no Brasil. Alguns cuidados essenciais:</p>
+<ul>
+<li><strong>Nunca pague taxa antecipada</strong> para liberar empréstimo. Instituições sérias descontam as taxas do valor liberado ou cobram no contrato, nunca antes da aprovação.</li>
+<li><strong>Não compartilhe senhas, códigos de autenticação ou dados bancários</strong> com supostos &quot;consultores&quot; ou &quot;correspondentes&quot;.</li>
+<li><strong>Desconfie de aprovação garantida</strong> ou &quot;sem consulta ao SPC/Serasa&quot;. Nenhuma instituição séria aprova crédito sem análise.</li>
+<li><strong>Confira se a instituição é autorizada pelo Banco Central</strong> antes de contratar. O site do BCB mantém uma lista de instituições autorizadas.</li>
+<li><strong>Guarde todos os comprovantes:</strong> contrato, comprovantes de pagamento, extratos e comunicações com a instituição.</li>
+<li><strong>Desconfie de contatos não solicitados:</strong> se receber uma oferta de empréstimo por WhatsApp, SMS ou ligação, pesquise a instituição antes de fornecer qualquer dado.</li>
+</ul>
+</section>
+<section><h2>Como decidir na prática</h2>
+<p>Antes de contratar, siga este passo a passo:</p>
+<ol>
+<li><strong>Compare o CET</strong> de pelo menos três instituições diferentes, tanto de empréstimo pessoal quanto consignado (se tiver acesso).</li>
+<li><strong>Compare o total a pagar</strong> em cada proposta (parcela x número de parcelas).</li>
+<li><strong>Verifique se a parcela cabe no orçamento</strong> sem comprometer gastos essenciais. Use a <a href="/calculadoras/comprometimento-renda">calculadora de comprometimento de renda</a> para ajudar.</li>
+<li><strong>Simule cenários diferentes</strong> de prazo e valor antes de decidir.</li>
+<li><strong>Se tiver acesso ao consignado, confira sua margem consignável</strong> no site do INSS, no aplicativo Meu INSS ou no RH da empresa.</li>
+<li><strong>Avalie se a troca faz sentido financeiramente:</strong> se o objetivo é trocar uma dívida cara por outra mais barata, confira se o CET da nova é realmente menor. A <a href="/calculadoras/troca-dividas">calculadora de troca de dívidas</a> pode ajudar nessa comparação.</li>
+<li><strong>Considere a quitação antecipada:</strong> alguns contratos permitem quitar antes com desconto nos juros. Pergunte antes de assinar.</li>
+<li><strong>Leia o contrato completo</strong> antes de assinar, especialmente as cláusulas sobre juros de mora, multa por atraso e possibilidade de renegociação.</li>
+</ol>
+<p>Se após essa análise o crédito ainda fizer sentido, contrate com segurança. Caso contrário, avalie outras estratégias como renegociação direta com credores, aumento de renda ou ajuste de despesas. Veja também <a href="/blog/quando-nao-vale-a-pena-fazer-emprestimo">quando não vale a pena fazer um empréstimo</a> e o guia completo <a href="/blog/como-sair-das-dividas-guia-completo">como sair das dívidas</a>.</p>
 </section>`,
     faq: [
-      { question: 'Qual a taxa de juros do consignado 2026?', answer: 'As taxas do consignado para INSS giram em torno de 1,72% ao mês. Para servidores públicos, podem ser ainda menores, em torno de 1,5% ao mês.' },
-      { question: 'Empréstimo pessoal para negativado existe?', answer: 'Sim, mas com taxas mais altas. Algumas fintechs oferecem empréstimo para negativados com taxas entre 4% e 10% ao mês. Compare antes de contratar.' },
-      { question: 'Vale a pena refinanciar um empréstimo?', answer: 'Vale a pena se a nova taxa for significativamente menor que a atual. Use nossa calculadora de troca de dívidas para comparar cenários.' },
+      { question: 'Qual a diferença entre empréstimo pessoal e consignado?', answer: 'O empréstimo pessoal não exige vínculo empregatício específico e o pagamento é feito por boleto ou débito. O consignado tem parcelas descontadas diretamente da folha de pagamento ou benefício, o que costuma resultar em taxas menores, mas exige vínculo formal (CLT, servidor público, aposentado ou pensionista do INSS).' },
+      { question: 'O consignado sempre tem juros menores?', answer: 'O consignado costuma ter juros menores que o pessoal na maioria dos casos, porque o risco de inadimplência é menor para o banco. No entanto, o CET (Custo Efetivo Total) pode variar conforme a instituição e o contrato. É importante comparar o CET de ambas as modalidades antes de decidir.' },
+      { question: 'O que é CET no empréstimo?', answer: 'CET significa Custo Efetivo Total. É o percentual que reúne todos os custos do empréstimo: juros, tarifas, seguros, IOF e outros encargos. Comparar apenas a taxa de juros pode enganar, porque o CET pode ser muito maior. Sempre peça o CET antes de contratar.' },
+      { question: 'O que olhar antes de contratar um empréstimo?', answer: 'Compare o CET entre instituições, verifique o valor total a pagar (parcela x prazo), confira se a parcela cabe no orçamento sem comprometer despesas essenciais, leia o contrato completo, e desconfie de ofertas com aprovação garantida ou que cobrem taxa antecipada.' },
+      { question: 'Vale a pena pegar empréstimo para pagar cartão de crédito?', answer: 'Pode valer a pena se o CET do empréstimo for menor que os juros do rotativo do cartão (que podem ultrapassar 300% ao ano). Mas é essencial comparar o custo total e ter um plano para não voltar a usar o cartão sem controle. Veja o artigo sobre troca de dívida de cartão por empréstimo para mais detalhes.' },
+      { question: 'Posso contratar empréstimo mesmo negativado?', answer: 'Sim, algumas instituições oferecem empréstimo para negativados, mas as taxas costumam ser mais altas. Antes de contratar, compare o CET e avalie se a parcela cabe no orçamento. Em alguns casos, renegociar a dívida diretamente com o credor pode ser uma alternativa melhor.' },
+      { question: 'Como evitar golpes de empréstimo?', answer: 'Nunca pague taxa antecipada para liberar crédito, não compartilhe senhas ou códigos de autenticação, desconfie de aprovação garantida sem análise, confira se a instituição é autorizada pelo Banco Central, e guarde todos os comprovantes da contratação.' },
     ],
   },
   {
