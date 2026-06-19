@@ -218,8 +218,8 @@ export default function MetodologiaPage() {
             </p>
             <p>
               O Bolso do Trabalhador <strong>não oferece aconselhamento financeiro individual</strong>. 
-              Recomendamos que o leitor consulte um profissional qualificado (consultor financeiro, 
-              contador ou advogado) antes de tomar decisões financeiras importantes, como contratar 
+              Recomendamos que o leitor consulte um profissional qualificado (consultor financeiro 
+              ou contador) antes de tomar decisões financeiras importantes, como contratar 
               um empréstimo, financiar um imóvel ou renegociar dívidas.
             </p>
 

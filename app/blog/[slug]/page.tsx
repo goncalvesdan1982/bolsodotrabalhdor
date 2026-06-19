@@ -123,12 +123,14 @@ export default async function PostPage({ params }: PostPageProps) {
 
   const articleSchema = {
     '@context': 'https://schema.org',
-    '@type': 'Article',
+    '@type': 'BlogPosting',
     'headline': post.title,
     'description': post.description,
     'datePublished': post.date,
     'dateModified': post.lastModified || post.date,
     'image': ogImageUrl,
+    'url': `${SITE_URL}/blog/${post.slug}`,
+    'inLanguage': 'pt-BR',
     'author': {
       '@type': 'Person',
       'name': 'Equipe Bolso do Trabalhador'
