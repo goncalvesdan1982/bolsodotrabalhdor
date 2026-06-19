@@ -38,17 +38,18 @@ const officialSources: Record<string, { name: string; url: string }[]> = {
   ],
   'Custo de Vida': [
     { name: 'IBGE', url: 'https://www.ibge.gov.br' },
-    { name: 'FGV', url: 'https://portal.fgv.br' },
   ],
 }
 
 const sourceDescriptions: Record<string, string> = {
+  'Custo de Vida': 'Conteúdo revisado editorialmente pelo Bolso do Trabalhador com base em referências públicas, dados de mercado, critérios de planejamento financeiro pessoal e estimativas ilustrativas. As informações têm caráter educativo e não substituem uma análise individual. Valores de aluguel, contas e alimentação variam conforme cidade, bairro, imóvel e padrão de consumo.',
   'Score': 'Conteúdo revisado pela equipe do Bolso do Trabalhador com base em fontes oficiais e institucionais sobre crédito, Cadastro Positivo, score e educação financeira, como Banco Central do Brasil, Serasa e legislação vigente. Este conteúdo tem caráter informativo e educacional, não substituindo a consulta a um profissional qualificado. As regras, critérios de análise e metodologias de score podem sofrer alterações. Consulte sempre os canais oficiais.',
 }
 
 const defaultSourceDescription = 'Conteúdo revisado pela equipe do Bolso do Trabalhador com base em fontes oficiais: Banco Central do Brasil, IBGE, Serasa, Febraban e legislação vigente. Este conteúdo tem caráter informativo e educacional, não substituindo a consulta a um profissional qualificado. As taxas e regras podem sofrer alterações. Consulte sempre as fontes oficiais.'
 
 const authorDescriptions: Record<string, string> = {
+  'Custo de Vida': 'Este artigo foi produzido por Daniel Gonçalves, criador do Bolso do Trabalhador. O conteúdo tem caráter educativo e usa critérios de planejamento financeiro pessoal, estimativas ilustrativas e organização de orçamento para ajudar o leitor a simular a própria realidade.',
   'Score': 'Este artigo foi produzido por Daniel Gonçalves, criador do Bolso do Trabalhador. O conteúdo é baseado em fontes oficiais e institucionais sobre crédito, Cadastro Positivo, score e educação financeira, como Banco Central do Brasil, Serasa e legislação vigente.',
 }
 

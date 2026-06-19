@@ -1302,7 +1302,7 @@ export const posts: Post[] = [
 <h3>1. Aluguel ou financiamento</h3>
 <p>O maior gasto da maioria das pessoas que moram sozinhas. Varia muito conforme a cidade, o bairro, o tamanho do imóvel e se está mobiliado ou não. Em regiões centrais de grandes capitais, o valor pode ser bem mais alto que em bairros afastados ou cidades médias. Pesquise em sites de anúncio e converse com moradores da região antes de definir um orçamento.</p>
 <h3>2. Condomínio e IPTU</h3>
-<p>Em apartamentos, o condomínio pode representar de 20% a 50% do valor do aluguel, dependendo dos serviços incluídos (portaria, limpeza, segurança, lazer). O IPTU é outra despesa anual que deve ser considerada no planejamento. Em casas, o condomínio pode não existir, mas o IPTU continua.</p>
+<p>Em apartamentos, o condomínio pode representar uma parte relevante do custo mensal, dependendo dos serviços incluídos, como portaria, limpeza, segurança, elevador, garagem e áreas de lazer. O IPTU é outra despesa anual que deve ser considerada no planejamento. Em casas, o condomínio pode não existir, mas o IPTU continua.</p>
 <h3>3. Luz, água, gás e internet</h3>
 <p>As contas de consumo variam por região, estação do ano e hábitos de uso. Luz e água dependem do número de aparelhos, do clima e do consumo consciente. Gás pode ser de botijão ou encanado — cada um com custo e frequência diferentes. Internet e telefone completam o pacote de contas essenciais.</p>
 <h3>4. Alimentação</h3>
@@ -1358,7 +1358,7 @@ export const posts: Post[] = [
 <tr><td><strong>Limpeza inicial e pequenos reparos</strong></td><td>R$ 100 a R$ 400</td><td>Produtos de limpeza, lâmpadas, cortinas</td></tr>
 </tbody>
 </table>
-<p>O total desses custos iniciais pode ficar entre R$ 5.000 e R$ 15.000, dependendo do que você já possui e do nível de acabamento desejado. Por isso, é recomendável guardar esse valor antes de se mudar, para não comprometer o orçamento dos primeiros meses com dívidas de móveis ou eletrodomésticos parcelados.</p>
+<p>Em uma simulação didática, esses custos iniciais podem chegar a alguns milhares de reais e variar bastante conforme cidade, imóvel, itens que a pessoa já possui e padrão de compra. Em alguns cenários, o total pode ficar dentro de faixas como R$ 5.000 a R$ 15.000, mas o valor real pode ser menor ou maior conforme o caso. Por isso, é recomendável montar uma estimativa personalizada antes de se mudar, para não comprometer o orçamento dos primeiros meses com dívidas de móveis ou eletrodomésticos parcelados.</p>
 </section>
 <section><h2>Quanto preciso ganhar para morar sozinho?</h2>
 <p>Não existe uma renda mínima universal. O valor necessário depende do custo de vida da região, do tipo de imóvel e do padrão de consumo de cada pessoa.</p>
@@ -1432,9 +1432,9 @@ export const posts: Post[] = [
 </ul>
 </section>`,
     faq: [
-      { question: 'Quanto custa morar sozinho em 2026?', answer: 'Não existe um valor único. O custo total pode variar de R$ 1.500 a R$ 5.000 ou mais por mês, dependendo da cidade, do tipo de imóvel, do padrão de consumo e dos gastos fixos de cada pessoa. O ideal é montar uma simulação com suas próprias despesas.' },
+      { question: 'Quanto custa morar sozinho em 2026?', answer: 'Não existe um valor único. Em uma simulação ilustrativa, o custo pode ir de valores mais baixos em cidades menores ou moradia compartilhada até valores bem mais altos em grandes centros. O ideal é montar uma simulação com aluguel, contas, alimentação, transporte e reserva para imprevistos.' },
       { question: 'Qual é o maior gasto de quem mora sozinho?', answer: 'O aluguel costuma ser o maior gasto, seguido por alimentação e transporte. Em alguns casos, o condomínio pode representar um valor próximo ao do aluguel. Por isso, é importante considerar todas as despesas fixas antes de escolher o imóvel.' },
-      { question: 'Quanto devo guardar antes de sair de casa?', answer: 'O recomendável é ter uma reserva que cubra os custos iniciais (caução, mudança, móveis, eletrodomésticos) mais pelo menos 3 meses de gastos essenciais. O valor total pode variar de R$ 5.000 a R$ 15.000 ou mais, dependendo do que você já tem e do padrão do imóvel.' },
+      { question: 'Quanto devo guardar antes de sair de casa?', answer: 'O recomendável é estimar os custos iniciais da mudança, como caução, mudança, móveis, eletrodomésticos e utensílios, e somar uma reserva para os primeiros meses. O valor depende do que a pessoa já possui, do tipo de imóvel, da cidade e do padrão de compra.' },
       { question: 'Quanto da renda pode ir para aluguel?', answer: 'Não existe um percentual fixo que funcione para todos. Uma referência comum é evitar que moradia comprometa uma parcela muito grande da renda, mas o ideal depende do custo de vida local, dos demais gastos fixos e da presença de reserva para imprevistos. Simule com seus próprios números antes de decidir.' },
       { question: 'Vale a pena dividir aluguel?', answer: 'Dividir aluguel pode reduzir o custo individual, especialmente em imóveis com dois ou mais quartos. Por outro lado, exige combinados sobre contas, convivência e responsabilidades. Avalie seu perfil e sua necessidade de privacidade antes de optar pela divisão.' },
       { question: 'O que muita gente esquece no orçamento?', answer: 'Os custos mais esquecidos são: condomínio, IPTU, taxa de mudança, instalação de internet, produtos de limpeza, pequenos reparos, transporte para o trabalho e reserva para imprevistos. A alimentação também costuma ser subestimada por quem nunca morou sozinho.' },
