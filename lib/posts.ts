@@ -1240,7 +1240,7 @@ export const posts: Post[] = [
     ],
     content: `
 <section><h2>O que é o método 50-30-20?</h2>
-<p>O método 50-30-20 é uma forma de organizar o orçamento pessoal dividindo a renda líquida em três grandes grupos. Ele foi proposto pela senadora americana Elizabeth Warren e se tornou popular como referência inicial para quem quer entender para onde o dinheiro está indo e começar a planejar as finanças com mais clareza.</p>
+<p>O método 50-30-20 é uma forma de organizar o orçamento pessoal dividindo a renda líquida em três grandes grupos. O método se tornou popular como uma referência simples de organização financeira para dividir a renda em grandes grupos de gasto.</p>
 <p>É importante reforçar que o método não é uma regra universal. Ele funciona como um ponto de partida — uma forma de enxergar o orçamento e identificar desequilíbrios. Cada pessoa tem uma realidade de renda, custo de vida, dívidas e objetivos, e os percentuais podem precisar de adaptação.</p>
 <p>Este artigo explica como o método funciona, mostra exemplos práticos e ajuda você a adaptá-lo à sua realidade. As informações têm caráter educativo e não substituem um planejamento financeiro individual.</p>
 </section>
@@ -1284,7 +1284,7 @@ export const posts: Post[] = [
 <p>Este grupo é dedicado a melhorar a saúde financeira no curto, médio e longo prazo. Inclui:</p>
 <ul>
 <li>Quitação ou renegociação de dívidas com juros altos (cartão de crédito, cheque especial, empréstimo pessoal)</li>
-<li>Formação de reserva de emergência (recomenda-se o equivalente a 3 a 6 meses de gastos essenciais)</li>
+<li>Formação de reserva de emergência, usando como referência comum a construção gradual de uma reserva equivalente a alguns meses de gastos essenciais.</li>
 <li>Investimentos para objetivos de médio e longo prazo</li>
 <li>Entrada para imóvel, carro ou outros projetos</li>
 <li>Cursos e desenvolvimento profissional</li>
@@ -1405,7 +1405,7 @@ export const posts: Post[] = [
 </ul>
 </section>
 <section><h2>Conclusão</h2>
-<p>O método 50-30-20 é uma ferramenta simples que pode ajudar qualquer pessoa a organizar o orçamento e ter mais clareza sobre as próprias finanças. Ele não precisa ser seguido de forma rígida — adaptar os percentuais à sua realidade é melhor do que abandonar o método porque ele não se encaixou de primeira.</p>
+<p>O método 50-30-20 é uma ferramenta simples que pode ajudar muitas pessoas a organizar o orçamento e ter mais clareza sobre as próprias finanças. Ele não precisa ser seguido de forma rígida — adaptar os percentuais à sua realidade é melhor do que abandonar o método porque ele não se encaixou de primeira.</p>
 <p>O mais importante é saber para onde o dinheiro está indo, identificar o que pode ser ajustado e criar uma rotina de acompanhamento. A educação financeira é um processo contínuo, e cada pequeno passo pode fazer diferença ao longo do tempo.</p>
 <p>Para continuar seu planejamento, veja também:</p>
 <ul>
@@ -1419,7 +1419,7 @@ export const posts: Post[] = [
     faq: [
       { question: 'O que é o método 50-30-20?', answer: 'É uma forma de organizar o orçamento pessoal dividindo a renda líquida em três grupos: 50% para necessidades, 30% para desejos e 20% para prioridades financeiras. Os percentuais são uma referência inicial e podem ser adaptados conforme a realidade de cada pessoa.' },
       { question: 'O método 50-30-20 funciona para qualquer renda?', answer: 'Pode ser adaptado para diferentes rendas, mas os percentuais nem sempre se encaixam perfeitamente. Em rendas mais baixas, as necessidades podem consumir mais de 50%. Nesse caso, o ideal é ajustar os percentuais em vez de abandonar o método.' },
-      { question: 'Devo calcular os percentuais sobre salário bruto ou líquido?', answer: 'Sempre sobre a renda líquida, ou seja, o valor que realmente cai na sua conta após descontos de INSS, IRRF e outros. Calcular sobre o bruto pode dar uma falsa impressão do orçamento disponível.' },
+      { question: 'Devo calcular os percentuais sobre salário bruto ou líquido?', answer: 'O cálculo deve ser feito sobre a renda líquida, ou seja, o valor que realmente cai na sua conta após descontos de INSS, IRRF e outros. Calcular sobre o bruto pode dar uma falsa impressão do orçamento disponível.' },
       { question: 'O que entra nos 50% de necessidades?', answer: 'Gastos essenciais como aluguel, condomínio, água, luz, gás, internet, alimentação básica, transporte, plano de saúde, medicamentos e educação. São despesas que dificilmente podem ser cortadas por completo.' },
       { question: 'O que fazer se meus gastos essenciais passam de 50%?', answer: 'Não force o encaixe. Primeiro, veja se há espaço para reduzir ou renegociar contas fixas. Se não for possível, adapte os percentuais temporariamente, como 60-20-20 ou 70-20-10, e foque em organizar as finanças antes de buscar os percentuais ideais.' },
       { question: 'Quem tem dívidas deve seguir o 50-30-20?', answer: 'Quem tem dívidas com juros altos (cartão de crédito, cheque especial) pode direcionar os 20% para quitá-las antes de poupar ou investir. Se as dívidas consomem mais de 20% da renda, o percentual pode ser ajustado temporariamente até a regularização.' },
