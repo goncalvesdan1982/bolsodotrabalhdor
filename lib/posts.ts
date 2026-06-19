@@ -967,6 +967,7 @@ export const posts: Post[] = [
 <p><strong>Cuidados:</strong> verifique anuidade e tarifas antes de aceitar. Um limite baixo não deve ser compensado com uso excessivo — isso pode gerar juros altos no rotativo. Se houver atraso, os encargos podem crescer rapidamente.</p>
 <h3>2. Cartão com limite garantido</h3>
 <p>Também chamado de cartão caucionado, funciona com a aplicação de um valor em investimento ou depósito que serve como garantia. O limite costuma ser proporcional ao valor reservado. É uma alternativa para quem não passa na análise de crédito tradicional, porque o risco é reduzido para a instituição.</p>
+<p>O nome "limite garantido" não significa aprovação garantida para qualquer pessoa; as regras dependem da instituição, do produto e das condições apresentadas ao cliente.</p>
 <p><strong>Cuidados:</strong> o valor reservado não deve ser dinheiro destinado a despesas essenciais. Verifique as regras de resgate, tarifas de manutenção e prazos. Nem todos os cartões com limite garantido ajudam a construir histórico de crédito — confirme essa informação antes de contratar.</p>
 <h3>3. Cartão pré-pago</h3>
 <p>Funciona com recarga de saldo antes do uso. Não é um cartão de crédito propriamente dito — não há parcelamento, fatura ou análise de crédito. Pode ser útil para controle de gastos, compras online ou emergências, mas não substitui o crédito tradicional para quem precisa parcelar compras.</p>
@@ -1014,14 +1015,14 @@ export const posts: Post[] = [
 <li><strong>Confundir pré-pago com crédito:</strong> cartão pré-pago não funciona como crédito tradicional — não gera fatura, não permite parcelamento e geralmente não ajuda a construir histórico de crédito.</li>
 <li><strong>Contratar por promessa de limite alto:</strong> ofertas que prometem limite alto sem análise devem ser tratadas com desconfiança.</li>
 <li><strong>Ignorar os juros do rotativo:</strong> mesmo com limite baixo, o rotativo do cartão tem juros elevados. Atrasar uma fatura pode gerar uma dívida cara.</li>
-<li><strong>Pagar taxa para liberar cartão:</strong> instituições sérias não cobram taxa antecipada para aprovar um cartão. Desconfie desse tipo de oferta.</li>
+<li><strong>Pagar taxa para liberar cartão:</strong> em ofertas legítimas, custos, tarifas e encargos devem aparecer no contrato ou nas condições do produto. Desconfie de qualquer cobrança antecipada para liberar cartão.</li>
 <li><strong>Usar cartão para complementar renda todo mês:</strong> se o cartão é usado para cobrir gastos recorrentes sem planejamento, o endividamento pode aumentar em vez de diminuir.</li>
 </ol>
 </section>
 <section><h2>Cuidados contra golpes</h2>
 <p>Golpes financeiros são comuns. Ao buscar um cartão, alguns cuidados são essenciais:</p>
 <ul>
-<li><strong>Desconfie de aprovação garantida:</strong> nenhuma instituição séria aprova crédito sem análise. Ofertas com aprovação garantida para negativados devem ser verificadas com cuidado.</li>
+<li><strong>Desconfie de aprovação garantida:</strong> ofertas que prometem aprovação sem análise, sem verificação mínima de renda ou sem apresentação clara das condições devem ser tratadas com desconfiança. Ofertas com aprovação garantida para negativados merecem atenção redobrada.</li>
 <li><strong>Não pague taxa antecipada:</strong> cobrança para liberar cartão, analisar crédito ou enviar o plástico é sinal de golpe. Em ofertas legítimas, custos devem aparecer no contrato.</li>
 <li><strong>Não compartilhe senhas ou dados bancários:</strong> códigos de autenticação, senhas de acesso e dados de conta não devem ser fornecidos a terceiros.</li>
 <li><strong>Confirme se a instituição é autorizada:</strong> consulte a lista de instituições autorizadas no site do Banco Central antes de contratar qualquer produto.</li>
@@ -1049,7 +1050,7 @@ export const posts: Post[] = [
 <li><strong>Se há dívidas urgentes:</strong> priorize negociar dívidas com juros altos antes de contratar novos produtos. Use a <a href="/calculadoras/quitacao-dividas">calculadora de quitação de dívidas</a> como referência.</li>
 <li><strong>Se o cartão seria usado para cobrir despesas básicas recorrentes:</strong> isso pode indicar que o orçamento precisa de ajuste, não de crédito. A <a href="/calculadoras/orcamento-familiar">calculadora de orçamento familiar</a> pode ajudar a organizar os gastos.</li>
 <li><strong>Se você não sabe quanto pagará de juros:</strong> antes de contratar, entenda o CET e as condições do contrato.</li>
-<li><strong>Se a oferta exige taxa antecipada:</strong> é sinal de alerta. Instituições sérias não cobram para aprovar cartão.</li>
+<li><strong>Se a oferta exige taxa antecipada:</strong> é sinal de alerta. Em ofertas legítimas, custos, tarifas e encargos aparecem no contrato ou nas condições do produto. Desconfie de qualquer cobrança antecipada para liberar cartão.</li>
 </ul>
 </section>
 <section><h2>Conclusão</h2>
@@ -1066,7 +1067,7 @@ export const posts: Post[] = [
 </section>`,
     faq: [
       { question: 'Score baixo impede ter cartão de crédito?', answer: 'Não impede automaticamente. O score é um dos critérios analisados, mas instituições também avaliam renda, histórico de relacionamento, Cadastro Positivo e política interna. Algumas fintechs e cartões com limite garantido podem ser opções para perfis com score baixo.' },
-      { question: 'Existe cartão com aprovação garantida?', answer: 'Não. Nenhuma instituição séria aprova cartão sem análise de crédito. Ofertas com aprovação garantida devem ser tratadas com desconfiança, pois podem ser golpes. A aprovação sempre depende da avaliação de cada banco ou emissor.' },
+      { question: 'Existe cartão com aprovação garantida?', answer: 'Promessas de aprovação garantida devem ser tratadas com desconfiança. A aprovação depende da análise de cada banco, fintech ou emissor, considerando renda, histórico, política interna e outros critérios. Antes de solicitar, confira as condições no canal oficial da instituição.' },
       { question: 'Cartão com limite garantido vale a pena?', answer: 'Pode valer a pena em alguns casos, especialmente para quem não passa na análise tradicional. O limite é proporcional ao valor reservado, e a aprovação costuma ser menos dependente do score. Antes de contratar, verifique tarifas, regras de resgate e se o cartão ajuda a construir histórico de crédito.' },
       { question: 'Cartão pré-pago ajuda no score?', answer: 'Geralmente não. O cartão pré-pago não envolve análise de crédito, parcelamento ou fatura, por isso não costuma gerar dados para os birôs. Pode ser útil para controle de gastos, mas não substitui o crédito tradicional para quem precisa construir histórico.' },
       { question: 'Pedir muitos cartões pode atrapalhar?', answer: 'Sim, cada solicitação gera uma consulta ao CPF nos birôs de crédito. Muitas consultas em curto período podem reduzir temporariamente o score. O ideal é pesquisar antes e solicitar apenas uma ou duas opções com maior chance de aprovação.' },
