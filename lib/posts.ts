@@ -992,7 +992,7 @@ export const posts: Post[] = [
 </ul>
 </section>
 <section><h2>Diferença entre empréstimo pessoal e consignado</h2>
-<p>O <strong>empréstimo consignado</strong> tem as parcelas descontadas diretamente da folha de pagamento ou do benefício (INSS, por exemplo). Como o risco de inadimplência para a instituição é menor, as taxas de juros podem ser mais baixas. Está disponível para servidores públicos, aposentados e pensionistas do INSS, trabalhadores CLT de empresas conveniadas. A margem consignável — percentual máximo da renda que pode ser comprometido — é definida por lei, atualmente em até 35% para empréstimo, mais 5% para cartão consignado.</p>
+<p>O <strong>empréstimo consignado</strong> tem as parcelas descontadas diretamente da folha de pagamento ou do benefício (INSS, por exemplo). Como o risco de inadimplência para a instituição é menor, as taxas de juros podem ser mais baixas. Está disponível para servidores públicos, aposentados e pensionistas do INSS, trabalhadores CLT de empresas conveniadas. A margem consignável é o limite da renda que pode ser comprometido com parcelas descontadas em folha ou benefício. Esse percentual depende do tipo de vínculo, da regra vigente e da modalidade contratada, por isso deve ser confirmado no INSS, no RH da empresa ou no canal oficial responsável.</p>
 <p>O <strong>empréstimo pessoal</strong> não exige vínculo empregatício específico. Pode ser contratado por qualquer pessoa com renda comprovada, inclusive autônomos e MEI. O pagamento é feito por boleto bancário, débito em conta ou Pix. Como o risco para a instituição é maior, as taxas de juros costumam ser mais altas que as do consignado. A vantagem está na flexibilidade: o dinheiro pode ser usado para qualquer finalidade, e não há desconto automático em folha.</p>
 </section>
 <section><h2>Comparativo entre as modalidades</h2>
@@ -1005,7 +1005,7 @@ export const posts: Post[] = [
 <tr><td><strong>Forma de pagamento</strong></td><td>Boleto, débito em conta ou Pix</td><td>Desconto automático em folha ou benefício</td></tr>
 <tr><td><strong>Taxas de juros</strong></td><td>Podem ser mais altas; dependem do perfil de crédito</td><td>Costumam ser mais baixas, mas variam conforme o convênio</td></tr>
 <tr><td><strong>Análise de crédito</strong></td><td>Consulta a órgãos de proteção, score, renda</td><td>Verifica margem consignável e vínculo empregatício</td></tr>
-<tr><td><strong>Prazo</strong></td><td>Varia conforme a instituição (geralmente até 24 a 36 meses)</td><td>Pode chegar a 96 meses, dependendo do vínculo</td></tr>
+<tr><td><strong>Prazo</strong></td><td>Varia conforme a instituição (geralmente até 24 a 36 meses)</td><td>Pode ter prazos mais longos, conforme o vínculo, a instituição e as regras vigentes.</td></tr>
 <tr><td><strong>Risco para o orçamento</strong></td><td>Maior: o pagamento depende da disciplina financeira</td><td>Menor risco de atraso, mas compromete parte fixa da renda</td></tr>
 <tr><td><strong>Indicado para</strong></td><td>Quem não tem acesso ao consignado ou prefere flexibilidade</td><td>Quem tem vínculo formal e busca taxa reduzida</td></tr>
 <tr><td><strong>Cuidado principal</strong></td><td>Comparar o CET, não apenas a taxa de juros</td><td>Não comprometer despesas essenciais com a parcela</td></tr>
@@ -1013,7 +1013,7 @@ export const posts: Post[] = [
 </table>
 </section>
 <section><h2>O que é CET e por que ele importa</h2>
-<p>CET significa <strong>Custo Efetivo Total</strong>. É o indicador que reúne todos os custos do empréstimo em um único percentual: juros, tarifas (como TAC — Tarifa de Abertura de Crédito), seguros (como seguro prestamista), IOF (Imposto sobre Operações Financeiras) e qualquer outro encargo previsto no contrato.</p>
+<p>CET significa <strong>Custo Efetivo Total</strong>. É o indicador que reúne juros, tarifas, seguros, tributos e outros encargos previstos no contrato.</p>
 <p>Comparar apenas a taxa de juros mensal entre duas propostas pode levar a uma escolha errada. Uma instituição pode anunciar juros de 2% ao mês, mas incluir seguros e tarifas que elevam o CET para 4,5% ao mês. Outra pode ter juros de 3% ao mês com CET de 3,2%. A segunda opção pode ser mais vantajosa no custo total, mesmo com uma taxa de juros maior.</p>
 <p>Por lei, o banco ou financeira é obrigado a informar o CET antes da contratação. Peça o CET por escrito e compare o custo total entre as propostas. Para se aprofundar, veja o artigo <a href="/blog/o-que-e-cet-e-por-que-importa">o que é CET e por que ele importa</a>.</p>
 </section>
@@ -1077,9 +1077,9 @@ export const posts: Post[] = [
 <section><h2>Cuidados contra golpes</h2>
 <p>Golpes financeiros são comuns. Alguns cuidados essenciais:</p>
 <ul>
-<li><strong>Evite pagar taxa antecipada</strong> para liberar empréstimo. Instituições sérias descontam as taxas do valor liberado ou cobram no contrato, nunca antes da aprovação.</li>
+<li><strong>Evite pagar taxa antecipada</strong> para liberar empréstimo. Em ofertas legítimas, custos e encargos devem aparecer no contrato ou no CET. Desconfie de qualquer cobrança antecipada para liberar crédito.</li>
 <li><strong>Não compartilhe senhas, códigos de autenticação ou dados bancários</strong> com supostos consultores ou correspondentes.</li>
-<li><strong>Desconfie de aprovação garantida</strong> ou &quot;sem consulta ao SPC/Serasa&quot;. Nenhuma instituição séria aprova crédito sem análise.</li>
+<li><strong>Desconfie de aprovação garantida</strong> ou &quot;sem consulta ao SPC/Serasa&quot;. Desconfie de ofertas que prometem aprovação sem análise, sem verificação de renda ou sem apresentação clara do contrato.</li>
 <li><strong>Confira se a instituição é autorizada pelo Banco Central</strong> antes de contratar. O site do BCB mantém uma lista de instituições autorizadas.</li>
 <li><strong>Guarde todos os comprovantes:</strong> contrato, comprovantes de pagamento, extratos e comunicações com a instituição.</li>
 <li><strong>Desconfie de contatos não solicitados:</strong> ofertas por WhatsApp, SMS ou ligação devem ser verificadas antes de qualquer ação.</li>
@@ -1104,7 +1104,7 @@ export const posts: Post[] = [
       { question: 'O consignado sempre tem juros menores?', answer: 'O consignado costuma ter juros menores que o pessoal na maioria dos casos, porque o risco de inadimplência é menor para o banco. No entanto, o CET (Custo Efetivo Total) pode variar conforme a instituição e o contrato. É importante comparar o CET de ambas as modalidades antes de decidir.' },
       { question: 'O que é CET no empréstimo?', answer: 'CET significa Custo Efetivo Total. É o percentual que reúne todos os custos do empréstimo: juros, tarifas, seguros, IOF e outros encargos. Comparar apenas a taxa de juros pode enganar, porque o CET pode ser maior do que a taxa anunciada. Peça o CET antes de contratar.' },
       { question: 'O que olhar antes de contratar um empréstimo?', answer: 'Compare o CET entre instituições, verifique o valor total a pagar (parcela x prazo), confira se a parcela cabe no orçamento sem comprometer despesas essenciais, leia o contrato completo, e desconfie de ofertas com aprovação garantida ou que cobrem taxa antecipada.' },
-      { question: 'Vale a pena pegar empréstimo para pagar cartão de crédito?', answer: 'Pode valer a pena se o CET do empréstimo for menor que os juros do rotativo do cartão (que podem ultrapassar 300% ao ano). Mas é importante comparar o custo total e ter um plano para não voltar a usar o cartão sem controle. Veja o artigo sobre troca de dívida de cartão por empréstimo para mais detalhes.' },
+      { question: 'Vale a pena pegar empréstimo para pagar cartão de crédito?', answer: 'Pode valer a pena se o CET do empréstimo for menor que o custo da dívida do cartão. Mesmo com regras de limitação de encargos, o rotativo e o parcelamento da fatura continuam entre as modalidades mais caras, por isso a comparação deve ser feita pelo custo total. Veja o artigo sobre troca de dívida de cartão por empréstimo para mais detalhes.' },
       { question: 'Posso contratar empréstimo mesmo negativado?', answer: 'Sim, algumas instituições oferecem empréstimo para negativados, mas as taxas costumam ser mais altas. Antes de contratar, compare o CET e avalie se a parcela cabe no orçamento. Em alguns casos, renegociar a dívida diretamente com o credor pode ser uma alternativa melhor.' },
       { question: 'Como evitar golpes de empréstimo?', answer: 'Evite pagar taxa antecipada para liberar crédito, não compartilhe senhas ou códigos de autenticação, desconfie de aprovação garantida sem análise, confira se a instituição é autorizada pelo Banco Central, e guarde todos os comprovantes da contratação.' },
     ],
