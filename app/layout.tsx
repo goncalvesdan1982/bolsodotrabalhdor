@@ -92,6 +92,38 @@ export default function RootLayout({
     <html lang="pt-BR" className={`${inter.variable} ${geistMono.variable} bg-background`}>
       <head>
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1190641604220445" crossOrigin="anonymous"></script>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@graph': [
+                {
+                  '@type': 'Organization',
+                  '@id': `${SITE_URL}/#organization`,
+                  'name': SITE_NAME,
+                  'url': SITE_URL,
+                  'description': SITE_DESCRIPTION,
+                  'logo': {
+                    '@type': 'ImageObject',
+                    'url': `${SITE_URL}/og-image.png`
+                  }
+                },
+                {
+                  '@type': 'WebSite',
+                  '@id': `${SITE_URL}/#website`,
+                  'name': SITE_NAME,
+                  'url': SITE_URL,
+                  'description': SITE_DESCRIPTION,
+                  'inLanguage': 'pt-BR',
+                  'publisher': {
+                    '@id': `${SITE_URL}/#organization`
+                  }
+                }
+              ]
+            })
+          }}
+        />
       </head>
       <body className="font-sans antialiased min-h-screen flex flex-col">
         <Header />
