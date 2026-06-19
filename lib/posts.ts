@@ -2552,7 +2552,7 @@ export const posts: Post[] = [
     ],
     content: `
 <section><h2>O que significa cartão sem anuidade?</h2>
-<p>Um cartão sem anuidade é aquele em que a instituição financeira não cobra taxa anual ou mensal pela manutenção do produto. Isso pode reduzir o custo fixo de quem usa o cartão com frequência, especialmente em comparação com cartões que cobram anuidades que podem chegar a centenas de reais por ano.</p>
+<p>Um cartão sem anuidade é aquele em que a instituição financeira não cobra taxa anual ou mensal pela manutenção do produto. Isso pode reduzir o custo fixo de quem usa o cartão com frequência, especialmente em comparação com cartões que cobram anuidade mensal ou anual.</p>
 <p>No entanto, "sem anuidade" não significa "sem custo". Outros encargos podem existir, como juros, tarifas específicas e despesas operacionais. Entender o que está incluído e o que não está é essencial antes de solicitar qualquer cartão.</p>
 <p>Este artigo tem caráter educativo e ajuda você a comparar opções com mais clareza. As informações não substituem a leitura do contrato nem a consulta aos canais oficiais da instituição escolhida.</p>
 </section>
@@ -2580,7 +2580,7 @@ export const posts: Post[] = [
 <li>Serviços adicionais ativados sem solicitação (seguros, assistências)</li>
 <li>Taxa de emissão de fatura impressa, quando disponível</li>
 </ul>
-<p>Não existe cartão que elimine todos os custos possíveis. O que muda é quais tarifas se aplicam ao seu perfil de uso.</p>
+<p>Mesmo sem anuidade, ainda podem existir custos em situações específicas, conforme contrato e perfil de uso.</p>
 </section>
 <section><h2>Anuidade zero, isenta ou promocional: qual a diferença?</h2>
 <p>Nem todo cartão sem anuidade funciona da mesma forma. Existem pelo menos três situações:</p>
@@ -2665,7 +2665,7 @@ export const posts: Post[] = [
 <p>Golpes envolvendo cartões de crédito são comuns. Alguns cuidados ajudam a se proteger:</p>
 <ul>
 <li>Desconfie de ofertas com "aprovação garantida" ou "limite alto garantido".</li>
-<li>Não pague taxa antecipada para liberar cartão — instituições sérias não cobram para aprovar crédito.</li>
+<li>Não pague taxa antecipada para liberar cartão — em ofertas legítimas, custos e tarifas devem aparecer no contrato ou nas condições do produto. Desconfie de cobranças antecipadas para liberar cartão.</li>
 <li>Não envie senhas, códigos de acesso ou dados bancários por WhatsApp, SMS ou e-mail.</li>
 <li>Acesse o site ou aplicativo oficial da instituição, não links recebidos por terceiros.</li>
 <li>Confirme se a instituição é autorizada a funcionar pelo Banco Central.</li>
@@ -2713,7 +2713,7 @@ export const posts: Post[] = [
 </section>`,
     faq: [
       { question: 'Cartão sem anuidade vale a pena?', answer: 'Pode valer a pena para muitos perfis, especialmente para quem paga a fatura integral e busca reduzir custo fixo. Mas é importante considerar que outros custos (juros, tarifas) podem existir. A decisão depende do perfil de uso, da disciplina financeira e da comparação com outras opções.' },
-      { question: 'Cartão sem anuidade é totalmente gratuito?', answer: 'Não necessariamente. Embora a anuidade não seja cobrada, podem existir juros no rotativo, tarifas de saque no crédito, IOF em compras internacionais, segunda via e serviços adicionais. O contrato define exatamente quais custos se aplicam.' },
+      { question: 'Cartão sem anuidade é totalmente gratuito?', answer: 'Não necessariamente. Embora a anuidade não seja cobrada, podem existir juros no rotativo, tarifas de saque no crédito, IOF em compras internacionais, segunda via e serviços adicionais. O contrato informa quais custos podem se aplicar.' },
       { question: 'Qual a diferença entre anuidade zero e anuidade isenta?', answer: 'Anuidade zero significa que o cartão não cobra anuidade independentemente do uso. Anuidade isenta é uma dispensa condicionada a requisitos como gasto mínimo mensal, investimentos ou relacionamento. É importante verificar no contrato qual tipo se aplica.' },
       { question: 'Cartão sem anuidade ajuda no score?', answer: 'O uso responsável de qualquer cartão, com ou sem anuidade, pode contribuir para o histórico financeiro. Pagar faturas em dia é um dos fatores considerados. Não há garantia de aumento de score, e pedir muitos cartões pode gerar consultas que impactam a pontuação.' },
       { question: 'Vale a pena trocar um cartão com anuidade por um sem anuidade?', answer: 'Depende do perfil de uso. Se você não aproveita os benefícios do cartão com anuidade (programa de pontos, seguros, salas VIP), a troca pode reduzir custo. Se você usa esses benefícios com frequência, o cartão com anuidade pode compensar. Calcule o custo total de cada opção antes de decidir.' },
