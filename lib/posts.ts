@@ -922,45 +922,157 @@ export const posts: Post[] = [
   },
   {
     slug: 'melhores-cartoes-score-baixo',
-    title: 'Cartões de crédito que podem ser opções para quem tem score baixo',
-    description: 'Descubra quais cartões aprovam mesmo com score baixo. Cartões sem anuidade, com limite justo e que ajudam a aumentar seu score.',
+    title: 'Cartões para Score Baixo: Opções, Riscos e Como Escolher',
+    description: 'Veja opções de cartão para quem tem score baixo, entenda riscos, limite garantido, pré-pago, consignado e cuidados antes de solicitar.',
     date: '2026-06-01',
+    lastModified: '2026-06-19',
     category: 'Cartões',
-    keywords: ['cartão score baixo', 'cartão negativado', 'cartão sem anuidade', 'cartão crédito', 'como ser aprovado cartão'],
+    keywords: ['cartão score baixo', 'cartão negativado', 'cartão limite garantido', 'cartão pré-pago', 'cartão consignado', 'score baixo', 'cartão crédito', 'como conseguir cartão score baixo', 'cartão sem anuidade'],
     relatedCalculators: [
       { name: 'Parcelas', href: '/calculadoras/parcelas' },
-      { name: 'Juros Compostos', href: '/calculadoras/juros-compostos' },
       { name: 'Comprometimento de Renda', href: '/calculadoras/comprometimento-renda' },
+      { name: 'Orçamento Familiar', href: '/calculadoras/orcamento-familiar' },
+      { name: 'Juros Compostos', href: '/calculadoras/juros-compostos' },
     ],
     content: `
-<section><h2>Cartão para score baixo existe?</h2>
-<p>Sim, existem cartões de crédito que aprovam mesmo com score baixo ou nome negativado. Alguns são cartões com garantia, outros são cartões de lojas, e há também opções de fintechs que usam critérios diferenciados de análise.</p>
+<section><h2>Cartão para score baixo: é possível?</h2>
+<p>Ter score baixo ou nome negativado pode dificultar a aprovação de um cartão de crédito tradicional, mas não impede automaticamente. Algumas instituições utilizam critérios de análise que vão além da pontuação, como renda, relacionamento bancário e histórico recente de pagamentos.</p>
+<p>Este artigo apresenta os tipos de cartão que podem ser mais acessíveis, os riscos envolvidos e os cuidados essenciais antes de solicitar. As informações são educativas e não substituem a análise individual de cada instituição. A aprovação depende da política de crédito de cada banco ou emissor.</p>
 </section>
-<section><h2>Melhores opções para score baixo</h2>
-<h3>Cartão Nubank</h3>
-<p>O Nubank é conhecido por aprovar clientes com score baixo. O cartão é sem anuidade e o limite começa baixo, mas aumenta com o uso consciente.</p>
-<h3>Cartão Inter</h3>
-<p>O Banco Inter oferece cartão sem anuidade e costuma ser mais flexível na aprovação. Além disso, a conta digital é gratuita.</p>
-<h3>Cartão Mercado Pago</h3>
-<p>O Mercado Pago oferece cartão de crédito sem anuidade com análise menos rígida. Ideal para quem está começando a reconstruir o crédito.</p>
-<h3>Cartão PagBank</h3>
-<p>O PagBank (antigo PagSeguro) também oferece cartão sem anuidade e costuma aprovar com score moderado.</p>
-<h3>Cartão consignado</h3>
-<p>Se você é servidor público, aposentado ou pensionista do INSS, pode solicitar um cartão consignado, que tem desconto direto em folha e aprovação facilitada.</p>
-</section>
-<section><h2>Dicas para ser aprovado</h2>
+<section><h2>Resumo rápido</h2>
 <ul>
-<li>Mantenha seus dados atualizados no Cadastro Positivo</li>
-<li>Comece com cartões de lojas ou fintechs</li>
-<li>Use o cartão e pague a fatura integralmente</li>
-<li>Aumente sua renda declarada se possível</li>
-<li>Evite muitas solicitações ao mesmo tempo</li>
+<li>Score baixo pode reduzir as chances, mas não é o único critério de aprovação.</li>
+<li>Cartões com limite garantido ou pré-pagos podem ser alternativas em alguns perfis.</li>
+<li>Cartões consignados têm regras próprias e exigem cuidado com o comprometimento da renda.</li>
+<li>Evite solicitar muitos cartões ao mesmo tempo — cada consulta ao CPF pode impactar o score.</li>
+<li>Compare anuidade, tarifas, juros e condições antes de contratar.</li>
+<li>Desconfie de ofertas com aprovação garantida ou cobrança de taxa antecipada.</li>
+</ul>
+</section>
+<section><h2>Score baixo impede ter cartão?</h2>
+<p>Não necessariamente. O score é um dos fatores considerados na análise de crédito, mas não é o único. As instituições financeiras também avaliam:</p>
+<ul>
+<li><strong>Renda comprovada:</strong> ter uma fonte de renda regular e comprovável é um dos fatores mais relevantes.</li>
+<li><strong>Histórico de relacionamento:</strong> clientes com conta corrente, investimentos ou outros produtos no mesmo banco podem ter mais chances.</li>
+<li><strong>Cadastro Positivo:</strong> se ativo, permite que pagamentos em dia (contas de luz, água, telefone) sejam registrados, o que pode beneficiar a análise.</li>
+<li><strong>Política interna da instituição:</strong> cada banco ou fintech define seus próprios critérios de aprovação, limite e taxas.</li>
+<li><strong>Tipo de cartão:</strong> cartões com limite garantido, consignados ou de lojas costumam ter critérios diferentes dos cartões tradicionais.</li>
+</ul>
+<p>Ter score baixo não significa que nenhuma opção está disponível, mas exige mais pesquisa, comparação e cautela na escolha.</p>
+</section>
+<section><h2>Tipos de cartão para quem tem score baixo</h2>
+<p>Existem diferentes tipos de cartão que podem ser considerados. Cada um tem características, vantagens e riscos específicos. Conhecer as diferenças ajuda a escolher com mais segurança.</p>
+<h3>1. Cartão tradicional com análise de crédito</h3>
+<p>É o cartão convencional, em que a instituição analisa score, renda, histórico e outros fatores. Algumas fintechs e bancos digitais podem aprovar perfis com score moderado, especialmente se houver relacionamento bancário ou uso de outros serviços. O limite inicial pode ser baixo, e a anuidade pode ser negociada ou isenta em alguns casos.</p>
+<p><strong>Cuidados:</strong> verifique anuidade e tarifas antes de aceitar. Um limite baixo não deve ser compensado com uso excessivo — isso pode gerar juros altos no rotativo. Se houver atraso, os encargos podem crescer rapidamente.</p>
+<h3>2. Cartão com limite garantido</h3>
+<p>Também chamado de cartão caucionado, funciona com a aplicação de um valor em investimento ou depósito que serve como garantia. O limite costuma ser proporcional ao valor reservado. É uma alternativa para quem não passa na análise de crédito tradicional, porque o risco é reduzido para a instituição.</p>
+<p><strong>Cuidados:</strong> o valor reservado não deve ser dinheiro destinado a despesas essenciais. Verifique as regras de resgate, tarifas de manutenção e prazos. Nem todos os cartões com limite garantido ajudam a construir histórico de crédito — confirme essa informação antes de contratar.</p>
+<h3>3. Cartão pré-pago</h3>
+<p>Funciona com recarga de saldo antes do uso. Não é um cartão de crédito propriamente dito — não há parcelamento, fatura ou análise de crédito. Pode ser útil para controle de gastos, compras online ou emergências, mas não substitui o crédito tradicional para quem precisa parcelar compras.</p>
+<p><strong>Cuidados:</strong> verifique tarifas de emissão, recarga e manutenção. Alguns cartões pré-pagos cobram taxas que podem inviabilizar o uso frequente. Além disso, por não envolver análise de crédito, o uso do pré-pago geralmente não gera dados para os birôs.</p>
+<h3>4. Cartão consignado</h3>
+<p>Disponível para aposentados e pensionistas do INSS, servidores públicos e trabalhadores CLT de empresas conveniadas. O pagamento é descontado diretamente do benefício ou salário, o que reduz o risco para a instituição e pode facilitar a aprovação.</p>
+<p><strong>Cuidados:</strong> o desconto em folha compromete parte da renda mensal. Antes de contratar, verifique o CET, as taxas de juros e o impacto no orçamento. Não contrate por impulso — o comprometimento da renda pode ser duradouro e difícil de reverter.</p>
+<h3>5. Cartão de loja</h3>
+<p>Lojas como Magazine Luiza, Casas Bahia, Marisa, Renner e outras oferecem cartões próprios que podem ter análise menos rigorosa. O uso é restrito à loja ou grupo, mas alguns também funcionam como cartão de crédito convencional (com bandeira como Mastercard ou Visa).</p>
+<p><strong>Cuidados:</strong> juros podem ser altos em caso de atraso. Compare o CET com outras opções antes de contratar. Não solicite apenas pelo desconto na primeira compra — avalie o custo total do cartão ao longo do tempo.</p>
+</section>
+<section><h2>Comparativo entre os tipos de cartão</h2>
+<p>A tabela abaixo é uma referência inicial. As condições reais dependem da instituição, do perfil e da data da contratação.</p>
+<table>
+<thead>
+<tr><th>Tipo de cartão</th><th>Pode ajudar quem tem score baixo?</th><th>Principal vantagem</th><th>Principal cuidado</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Tradicional</strong></td><td>Depende da instituição</td><td>Flexibilidade de uso e bandeira ampla</td><td>Anuidade e juros do rotativo</td></tr>
+<tr><td><strong>Limite garantido</strong></td><td>Sim, em muitos casos</td><td>Aprovação menos dependente do score</td><td>Valor reservado não fica disponível</td></tr>
+<tr><td><strong>Pré-pago</strong></td><td>Sim, mas não é crédito</td><td>Controle de gastos</td><td>Não permite parcelamento tradicional</td></tr>
+<tr><td><strong>Consignado</strong></td><td>Sim, para quem tem vínculo</td><td>Taxas costumam ser mais baixas</td><td>Desconto automático no salário ou benefício</td></tr>
+<tr><td><strong>Loja</strong></td><td>Pode ser mais acessível</td><td>Análise menos rigorosa</td><td>Juros altos em atraso e uso limitado</td></tr>
+</tbody>
+</table>
+</section>
+<section><h2>Como escolher um cartão com score baixo</h2>
+<p>Antes de solicitar um cartão, siga este passo a passo:</p>
+<ol>
+<li><strong>Verifique a anuidade:</strong> cartões sem anuidade ou com anuidade reduzida são mais indicados para evitar custos fixos desnecessários.</li>
+<li><strong>Compare tarifas:</strong> emissão de segunda via, saques, pagamento de fatura em boleto — cada tarifa pode fazer diferença no custo total.</li>
+<li><strong>Analise os juros:</strong> confira a taxa de juros do rotativo e do parcelamento. Mesmo que você pretenda pagar a fatura integral, imprevistos acontecem.</li>
+<li><strong>Entenda o limite inicial:</strong> limite baixo pode ser suficiente para começar, mas não deve ser usado como desculpa para estourar o orçamento.</li>
+<li><strong>Verifique se há exigência de depósito:</strong> cartões com limite garantido exigem reserva. Verifique as regras de resgate e rentabilidade.</li>
+<li><strong>Avalie se o cartão atende seu objetivo real:</strong> parcelamento, compras online, emergências, acúmulo de pontos — cada cartão tem um foco diferente.</li>
+<li><strong>Evite muitos pedidos em sequência:</strong> cada solicitação gera uma consulta ao CPF, que pode impactar o score. Pesquise antes e escolha uma ou duas opções.</li>
+<li><strong>Leia o contrato:</strong> confira cláusulas sobre juros, multa, anuidade e possibilidade de aumento de limite.</li>
+<li><strong>Consulte canais oficiais:</strong> confirme se a instituição é autorizada pelo Banco Central e se há reclamações no Consumidor.gov.br.</li>
+</ol>
+</section>
+<section><h2>Erros comuns ao buscar cartão com score baixo</h2>
+<ol>
+<li><strong>Pedir vários cartões no mesmo dia:</strong> cada consulta ao CPF pode reduzir temporariamente o score. Pesquise antes e solicite com critério.</li>
+<li><strong>Aceitar cartão com taxa abusiva:</strong> anuidade alta, tarifas escondidas e juros elevados podem tornar o cartão um problema financeiro, não uma solução.</li>
+<li><strong>Confundir pré-pago com crédito:</strong> cartão pré-pago não funciona como crédito tradicional — não gera fatura, não permite parcelamento e geralmente não ajuda a construir histórico de crédito.</li>
+<li><strong>Contratar por promessa de limite alto:</strong> ofertas que prometem limite alto sem análise devem ser tratadas com desconfiança.</li>
+<li><strong>Ignorar os juros do rotativo:</strong> mesmo com limite baixo, o rotativo do cartão tem juros elevados. Atrasar uma fatura pode gerar uma dívida cara.</li>
+<li><strong>Pagar taxa para liberar cartão:</strong> instituições sérias não cobram taxa antecipada para aprovar um cartão. Desconfie desse tipo de oferta.</li>
+<li><strong>Usar cartão para complementar renda todo mês:</strong> se o cartão é usado para cobrir gastos recorrentes sem planejamento, o endividamento pode aumentar em vez de diminuir.</li>
+</ol>
+</section>
+<section><h2>Cuidados contra golpes</h2>
+<p>Golpes financeiros são comuns. Ao buscar um cartão, alguns cuidados são essenciais:</p>
+<ul>
+<li><strong>Desconfie de aprovação garantida:</strong> nenhuma instituição séria aprova crédito sem análise. Ofertas com aprovação garantida para negativados devem ser verificadas com cuidado.</li>
+<li><strong>Não pague taxa antecipada:</strong> cobrança para liberar cartão, analisar crédito ou enviar o plástico é sinal de golpe. Em ofertas legítimas, custos devem aparecer no contrato.</li>
+<li><strong>Não compartilhe senhas ou dados bancários:</strong> códigos de autenticação, senhas de acesso e dados de conta não devem ser fornecidos a terceiros.</li>
+<li><strong>Confirme se a instituição é autorizada:</strong> consulte a lista de instituições autorizadas no site do Banco Central antes de contratar qualquer produto.</li>
+<li><strong>Evite links recebidos por SMS ou WhatsApp:</strong> ofertas não solicitadas podem ser tentativas de golpe. Acesse o site oficial da instituição digitando o endereço no navegador.</li>
+<li><strong>Guarde comprovantes:</strong> contrato, comprovantes de pagamento e comunicações com a instituição são importantes em caso de problema.</li>
+</ul>
+</section>
+<section><h2>O que pode melhorar sua chance no futuro</h2>
+<p>Melhorar o perfil de crédito é um processo gradual. Algumas ações que podem contribuir:</p>
+<ul>
+<li><strong>Pagar contas em dia:</strong> histórico de pagamentos é o fator mais relevante para a maioria dos birôs de crédito.</li>
+<li><strong>Reduzir dívidas em atraso:</strong> negociar dívidas negativadas pode remover restrições e melhorar a análise de crédito. Veja o guia <a href="/blog/como-sair-das-dividas-guia-completo">como sair das dívidas</a>.</li>
+<li><strong>Manter dados atualizados:</strong> endereço, telefone e e-mail corretos nos birôs e instituições financeiras evitam problemas de identificação.</li>
+<li><strong>Usar o Cadastro Positivo com cuidado:</strong> se ativo, permite que pagamentos em dia sejam registrados. Mas atrasos também ficam visíveis. Saiba mais em <a href="/blog/cadastro-positivo-vale-a-pena">Cadastro Positivo vale a pena?</a>.</li>
+<li><strong>Evitar excesso de consultas:</strong> cada pedido de crédito gera consulta ao CPF. Espaçar as solicitações pode evitar impacto negativo.</li>
+<li><strong>Manter relacionamento bancário organizado:</strong> ter uma conta ativa e usar produtos financeiros com responsabilidade gera histórico positivo.</li>
+<li><strong>Começar com limite baixo e usar com responsabilidade:</strong> pagar a fatura integral antes do vencimento é o hábito mais importante para construir crédito.</li>
+</ul>
+<p>Essas ações não têm prazo garantido para efeito. Cada birô tem metodologia própria, e cada instituição avalia o perfil de forma diferente. Para entender melhor o funcionamento do score, veja <a href="/blog/como-aumentar-score-de-credito">como aumentar o score de crédito</a> e <a href="/blog/o-que-realmente-influencia-score-credito">o que realmente influencia o score</a>.</p>
+</section>
+<section><h2>Quando talvez seja melhor esperar</h2>
+<p>Em algumas situações, contratar um cartão pode trazer mais riscos do que benefícios:</p>
+<ul>
+<li><strong>Se a renda já está comprometida:</strong> se as despesas mensais consomem a maior parte da renda, um cartão pode aumentar o endividamento.</li>
+<li><strong>Se há dívidas urgentes:</strong> priorize negociar dívidas com juros altos antes de contratar novos produtos. Use a <a href="/calculadoras/quitacao-dividas">calculadora de quitação de dívidas</a> como referência.</li>
+<li><strong>Se o cartão seria usado para cobrir despesas básicas recorrentes:</strong> isso pode indicar que o orçamento precisa de ajuste, não de crédito. A <a href="/calculadoras/orcamento-familiar">calculadora de orçamento familiar</a> pode ajudar a organizar os gastos.</li>
+<li><strong>Se você não sabe quanto pagará de juros:</strong> antes de contratar, entenda o CET e as condições do contrato.</li>
+<li><strong>Se a oferta exige taxa antecipada:</strong> é sinal de alerta. Instituições sérias não cobram para aprovar cartão.</li>
+</ul>
+</section>
+<section><h2>Conclusão</h2>
+<p>Não existe um cartão ideal para todos os perfis. A escolha depende do tipo de vínculo, da renda, do objetivo de uso e da política de cada instituição. Score baixo exige mais pesquisa, comparação e cautela, mas não significa que nenhuma opção está disponível.</p>
+<p>O melhor cartão é aquele que cabe no orçamento, não compromete despesas essenciais e não gera endividamento. Antes de solicitar, compare condições, leia o contrato e desconfie de ofertas que prometem aprovação sem análise.</p>
+<p>Para continuar sua pesquisa, veja também:</p>
+<ul>
+<li><a href="/blog/como-consultar-score-gratuitamente">Como consultar seu score gratuitamente</a></li>
+<li><a href="/blog/cartao-sem-anuidade-vale-a-pena">Cartão sem anuidade vale a pena?</a></li>
+<li><a href="/blog/como-aumentar-score-de-credito">Guia completo para aumentar o score</a></li>
+<li><a href="/blog/quanto-tempo-leva-para-score-aumentar">Quanto tempo leva para o score aumentar</a></li>
+<li><a href="/blog/como-sair-das-dividas-guia-completo">Como sair das dívidas</a></li>
 </ul>
 </section>`,
     faq: [
-      { question: 'Qual o melhor cartão para negativado?', answer: 'Para negativados, as melhores opções são cartões de lojas (Magazine Luiza, Casas Bahia), cartão Mercado Pago e cartão PagBank. Cartões consignados também são uma excelente alternativa.' },
-      { question: 'Cartão sem anuidade vale a pena?', answer: 'Sim, especialmente se você usa o cartão com responsabilidade. Cartões sem anuidade são ideais para quem está começando a construir crédito.' },
-      { question: 'Como aumentar o limite do cartão?', answer: 'Use o cartão regularmente, pague a fatura integralmente antes do vencimento e mantenha um bom relacionamento com a instituição. O aumento costuma vir após 6 meses de uso consciente.' },
+      { question: 'Score baixo impede ter cartão de crédito?', answer: 'Não impede automaticamente. O score é um dos critérios analisados, mas instituições também avaliam renda, histórico de relacionamento, Cadastro Positivo e política interna. Algumas fintechs e cartões com limite garantido podem ser opções para perfis com score baixo.' },
+      { question: 'Existe cartão com aprovação garantida?', answer: 'Não. Nenhuma instituição séria aprova cartão sem análise de crédito. Ofertas com aprovação garantida devem ser tratadas com desconfiança, pois podem ser golpes. A aprovação sempre depende da avaliação de cada banco ou emissor.' },
+      { question: 'Cartão com limite garantido vale a pena?', answer: 'Pode valer a pena em alguns casos, especialmente para quem não passa na análise tradicional. O limite é proporcional ao valor reservado, e a aprovação costuma ser menos dependente do score. Antes de contratar, verifique tarifas, regras de resgate e se o cartão ajuda a construir histórico de crédito.' },
+      { question: 'Cartão pré-pago ajuda no score?', answer: 'Geralmente não. O cartão pré-pago não envolve análise de crédito, parcelamento ou fatura, por isso não costuma gerar dados para os birôs. Pode ser útil para controle de gastos, mas não substitui o crédito tradicional para quem precisa construir histórico.' },
+      { question: 'Pedir muitos cartões pode atrapalhar?', answer: 'Sim, cada solicitação gera uma consulta ao CPF nos birôs de crédito. Muitas consultas em curto período podem reduzir temporariamente o score. O ideal é pesquisar antes e solicitar apenas uma ou duas opções com maior chance de aprovação.' },
+      { question: 'Qual cuidado tomar com cartão consignado?', answer: 'O cartão consignado tem desconto automático no salário ou benefício. Antes de contratar, verifique o CET, as taxas de juros e se a parcela cabe no orçamento sem comprometer despesas essenciais. O comprometimento da renda pode ser duradouro.' },
+      { question: 'Como evitar golpes de cartão para negativado?', answer: 'Desconfie de ofertas com aprovação garantida, não pague taxa antecipada para liberar cartão, não compartilhe senhas ou dados bancários, confirme se a instituição é autorizada pelo Banco Central e acesse o site oficial diretamente, sem clicar em links recebidos por SMS ou WhatsApp.' },
+      { question: 'O que fazer antes de pedir um novo cartão?', answer: 'Compare anuidade, tarifas e juros entre instituições, verifique se o cartão atende seu objetivo, confira se a parcela da fatura cabe no orçamento, leia o contrato e evite solicitar muitos cartões ao mesmo tempo. Use calculadoras como a de comprometimento de renda para simular o impacto.' },
     ],
   },
   {
