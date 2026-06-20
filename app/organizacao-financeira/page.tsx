@@ -4,7 +4,10 @@ import { SITE_URL } from '@/lib/config'
 import { Breadcrumbs } from '@/components/breadcrumbs'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { ArrowRight, PieChart, PiggyBank, TrendingDown, Calculator } from 'lucide-react'
+import { Badge } from '@/components/ui/badge'
+import { ArrowRight, PieChart, PiggyBank, TrendingDown, Target, Calculator } from 'lucide-react'
+import { getPostBySlug } from '@/lib/posts'
+import type { Post } from '@/lib/posts'
 
 export const metadata: Metadata = {
   title: 'Organização Financeira - Controle Suas Contas',
@@ -28,105 +31,126 @@ export const metadata: Metadata = {
   alternates: { canonical: `${SITE_URL}/organizacao-financeira` },
 }
 
+const calculators = [
+  { slug: 'orcamento-familiar', icon: PieChart, title: 'Orçamento Familiar', desc: 'Organize receitas e despesas com o método 50-30-20 ou crie seu próprio plano.' },
+  { slug: 'reserva-emergencia', icon: PiggyBank, title: 'Reserva de Emergência', desc: 'Calcule quanto você precisa poupar para construir uma reserva financeira segura.' },
+  { slug: 'economia-mensal', icon: TrendingDown, title: 'Economia Mensal', desc: 'Descubra quanto você pode economizar por mês e em quanto tempo atinge suas metas.' },
+  { slug: 'meta-financeira', icon: Target, title: 'Meta Financeira', desc: 'Planeje seus objetivos financeiros com prazos e valores realistas.' },
+]
+
+const steps = [
+  { href: '/blog/metodo-50-30-20-como-aplicar', title: 'Método 50-30-20', desc: 'Aprenda a dividir sua renda de forma simples e equilibrada.' },
+  { href: '/calculadoras/orcamento-familiar', title: 'Monte seu orçamento', desc: 'Use a calculadora de orçamento familiar para organizar receitas e despesas.' },
+  { href: '/calculadoras/reserva-emergencia', title: 'Reserva de emergência', desc: 'Descubra quanto guardar para imprevistos.' },
+  { href: '/calculadoras/economia-mensal', title: 'Metas de economia', desc: 'Veja quanto economizar por mês para atingir seus objetivos.' },
+  { href: '/calculadoras/meta-financeira', title: 'Planeje seus objetivos', desc: 'Simule prazos e valores para realizar seus planos financeiros.' },
+]
+
+const articleSlugs = [
+  'metodo-50-30-20-como-aplicar',
+]
+
 export default function OrganizacaoFinanceiraPage() {
+  const artigos = articleSlugs.map(slug => getPostBySlug(slug)).filter(Boolean) as Post[]
+
   return (
     <div className="container mx-auto px-4 py-12">
       <div className="max-w-4xl mx-auto">
         <Breadcrumbs items={[{ label: 'Organização Financeira' }]} />
 
-        <div className="text-center mb-12">
-          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-teal-100 text-teal-600 mb-4">
-            <PieChart className="w-8 h-8" />
+        <section className="relative overflow-hidden rounded-3xl border bg-gradient-to-br from-teal-50 via-background to-cyan-50/50 p-6 shadow-sm md:p-8 mb-12">
+          <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+            <div>
+              <Badge variant="outline" className="border-teal-200 text-teal-700 bg-teal-100/50">Organização</Badge>
+              <h1 className="mt-3 text-3xl font-bold tracking-tight text-primary md:text-4xl">Organização Financeira</h1>
+              <p className="mt-3 max-w-2xl text-muted-foreground">
+                Aprenda a organizar suas finanças com métodos práticos. Calculadora de orçamento familiar, reserva de emergência e economia mensal.
+              </p>
+            </div>
+            <div className="rounded-2xl bg-teal-100 p-4 text-teal-600 shrink-0">
+              <PieChart className="h-8 w-8" />
+            </div>
           </div>
-          <h1 className="text-4xl font-bold tracking-tight text-primary sm:text-5xl mb-4">
-            Organização Financeira
-          </h1>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Aprenda a organizar suas finanças com métodos práticos. Calculadora de orçamento familiar, reserva de emergência e economia mensal.
-          </p>
+        </section>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-12">
+          {calculators.map((calc) => {
+            const Icon = calc.icon
+            return (
+              <Link key={calc.slug} href={`/calculadoras/${calc.slug}`} className="group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring rounded-xl">
+                <Card className="h-full border-border/60 transition-all group-hover:shadow-md group-hover:border-teal-300 group-hover:-translate-y-0.5">
+                  <CardHeader className="pb-3">
+                    <div className="w-10 h-10 rounded-lg bg-teal-100 text-teal-600 flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
+                      <Icon className="w-5 h-5" />
+                    </div>
+                    <CardTitle className="text-base group-hover:text-teal-700 transition-colors">{calc.title}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <CardDescription className="text-sm">{calc.desc}</CardDescription>
+                    <div className="mt-3 flex items-center text-primary text-sm font-medium">
+                      Calcular <ArrowRight className="ml-1.5 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
+            )
+          })}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-          <Card className="border-teal-200 bg-teal-50/30 group hover:shadow-md transition-all">
-            <CardHeader>
-              <PieChart className="w-8 h-8 text-teal-600 mb-2 group-hover:scale-110 transition-transform" />
-              <CardTitle>Orçamento Familiar</CardTitle>
-              <CardDescription>Organize suas receitas e despesas com o método 50-30-20 ou crie seu próprio plano.</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <Button variant="outline" className="w-full" asChild>
-                <Link href="/calculadoras/orcamento-familiar">
-                  Calcular <ArrowRight className="w-4 h-4" />
-                </Link>
-              </Button>
-            </CardContent>
-          </Card>
-          <Card className="border-teal-200 bg-teal-50/30 group hover:shadow-md transition-all">
-            <CardHeader>
-              <PiggyBank className="w-8 h-8 text-teal-600 mb-2 group-hover:scale-110 transition-transform" />
-              <CardTitle>Reserva de Emergência</CardTitle>
-              <CardDescription>Calcule quanto você precisa poupar para construir uma reserva financeira segura.</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <Button variant="outline" className="w-full" asChild>
-                <Link href="/calculadoras/reserva-emergencia">
-                  Calcular <ArrowRight className="w-4 h-4" />
-                </Link>
-              </Button>
-            </CardContent>
-          </Card>
-          <Card className="border-teal-200 bg-teal-50/30 group hover:shadow-md transition-all">
-            <CardHeader>
-              <TrendingDown className="w-8 h-8 text-teal-600 mb-2 group-hover:scale-110 transition-transform" />
-              <CardTitle>Economia Mensal</CardTitle>
-              <CardDescription>Descubra quanto você pode economizar por mês e em quanto tempo atinge suas metas.</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <Button variant="outline" className="w-full" asChild>
-                <Link href="/calculadoras/economia-mensal">
-                  Calcular <ArrowRight className="w-4 h-4" />
-                </Link>
-              </Button>
-            </CardContent>
-          </Card>
-        </div>
+        <section className="mb-12">
+          <div className="mb-6">
+            <h2 className="text-2xl font-bold text-foreground">Por onde começar</h2>
+            <p className="text-muted-foreground">Uma trilha simples para organizar suas finanças e criar uma base sólida.</p>
+          </div>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {steps.map((step, i) => (
+              <Link key={`${step.href}-${i}`} href={step.href} className="group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring rounded-xl">
+                <Card className="h-full border-border/60 transition-all group-hover:shadow-md group-hover:border-primary/30 group-hover:-translate-y-0.5">
+                  <CardHeader className="pb-2">
+                    <div className="flex items-center gap-3">
+                      <span className="w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center text-sm font-bold shrink-0">{i + 1}</span>
+                      <CardTitle className="text-sm leading-snug group-hover:text-primary transition-colors">{step.title}</CardTitle>
+                    </div>
+                  </CardHeader>
+                  <CardContent>
+                    <CardDescription className="text-xs">{step.desc}</CardDescription>
+                  </CardContent>
+                </Card>
+              </Link>
+            ))}
+          </div>
+        </section>
 
-        <div className="mb-8 p-6 md:p-8 bg-card border border-border rounded-2xl shadow-sm">
-          <h2 className="text-xl font-bold text-foreground mb-3">Por onde começar</h2>
-          <p className="text-muted-foreground mb-4">
-            Quer organizar suas finanças? Siga esta trilha de leitura:
-          </p>
-          <ol className="space-y-2 list-decimal list-inside text-sm text-muted-foreground">
-            <li><Link href="/blog/metodo-50-30-20-como-aplicar" className="text-secondary hover:underline font-medium">Método 50-30-20</Link> — aprenda a dividir sua renda de forma simples</li>
-            <li><Link href="/calculadoras/orcamento-familiar" className="text-secondary hover:underline font-medium">Calculadora de Orçamento Familiar</Link> — organize receitas e despesas</li>
-            <li><Link href="/calculadoras/reserva-emergencia" className="text-secondary hover:underline font-medium">Calculadora de Reserva de Emergência</Link> — descubra quanto guardar</li>
-            <li><Link href="/calculadoras/economia-mensal" className="text-secondary hover:underline font-medium">Calculadora de Economia Mensal</Link> — veja quanto economizar por mês</li>
-            <li><Link href="/calculadoras/meta-financeira" className="text-secondary hover:underline font-medium">Calculadora de Meta Financeira</Link> — planeje seus objetivos</li>
-          </ol>
-        </div>
-
-        <div className="mb-12 p-6 md:p-8 bg-gradient-to-br from-teal-700 to-teal-600 rounded-2xl text-primary-foreground shadow-lg">
-          <h2 className="text-2xl font-bold mb-4">Artigos sobre Organização Financeira</h2>
-          <p className="text-white/80 mb-6">
-            Aprenda métodos práticos para organizar suas finanças e alcançar seus objetivos.
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            <Link
-              href="/blog/metodo-50-30-20-como-aplicar"
-              className="flex items-center justify-between p-3.5 bg-white/10 hover:bg-white/20 rounded-xl border border-white/15 transition-all group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/50"
-            >
-              <span className="font-medium text-sm">Método 50-30-20: como aplicar no Brasil</span>
-              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform shrink-0" />
-            </Link>
-            <Link
-              href="/blog/como-sair-das-dividas-guia-completo"
-              className="flex items-center justify-between p-3.5 bg-white/10 hover:bg-white/20 rounded-xl border border-white/15 transition-all group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/50"
-            >
-              <span className="font-medium text-sm">Como sair das dívidas: guia completo</span>
-              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform shrink-0" />
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-foreground mb-6">Artigos sobre Organização Financeira</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            {artigos.map((artigo) => (
+              <article key={artigo.slug} className="group flex flex-col h-full border border-border/60 hover:border-teal-300 hover:shadow-md transition-all duration-200 overflow-hidden bg-card rounded-xl focus-within:ring-2 focus-within:ring-ring focus-within:ring-offset-2">
+                <div className="h-1 bg-gradient-to-r from-teal-700 to-teal-500" />
+                <div className="flex flex-col flex-1 p-5 gap-3">
+                  <div className="flex items-center justify-between gap-2">
+                    <span className="inline-block text-xs font-semibold px-2.5 py-0.5 rounded-full bg-teal-100 text-teal-700">Organização</span>
+                  </div>
+                  <h3 className="text-base font-bold text-foreground leading-snug group-hover:text-teal-700 transition-colors line-clamp-2">{artigo.title}</h3>
+                  {artigo.description && (
+                    <p className="text-sm text-muted-foreground line-clamp-2 flex-1">{artigo.description}</p>
+                  )}
+                  <Link
+                    href={`/blog/${artigo.slug}`}
+                    className="mt-auto text-sm font-semibold text-teal-700 hover:underline inline-flex items-center gap-1 pt-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring rounded"
+                    aria-label={`Ler artigo: ${artigo.title}`}
+                  >
+                    Ler artigo <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                  </Link>
+                </div>
+              </article>
+            ))}
+            <Link href="/blog/categoria/organizacao-financeira" className="group flex flex-col items-center justify-center h-full border border-dashed border-border/60 hover:border-teal-300 hover:shadow-sm transition-all rounded-xl p-6 text-center focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring">
+              <span className="text-3xl mb-2 text-teal-600">+</span>
+              <span className="text-sm font-semibold text-teal-700 group-hover:underline">Ver todos os artigos de organização financeira</span>
             </Link>
           </div>
-        </div>
+        </section>
 
         <div className="prose prose-slate max-w-none prose-headings:text-primary prose-a:text-secondary mb-12">
           <h2>Por que Organizar as Finanças?</h2>
@@ -147,25 +171,21 @@ export default function OrganizacaoFinanceiraPage() {
           </p>
         </div>
 
-        <div className="bg-gradient-to-r from-teal-50 to-cyan-50 rounded-2xl p-8 md:p-12 text-center border border-teal-200">
-          <Calculator className="w-12 h-12 text-teal-600 mx-auto mb-4" />
-          <h2 className="text-2xl font-bold text-foreground mb-2">Organize suas finanças agora</h2>
-          <p className="text-muted-foreground mb-6 max-w-xl mx-auto">
+        <section className="rounded-3xl border bg-gradient-to-br from-primary to-primary/90 p-8 md:p-12 text-center text-primary-foreground shadow-lg">
+          <Calculator className="w-10 h-10 mx-auto mb-4 text-secondary" />
+          <h2 className="text-2xl font-bold mb-3">Organize suas finanças agora</h2>
+          <p className="text-primary-foreground/80 mb-6 max-w-lg mx-auto">
             Use nossas calculadoras gratuitas para criar um orçamento e planejar sua reserva de emergência.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Button size="lg" asChild>
-              <Link href="/calculadoras/orcamento-familiar">
-                Orçamento Familiar <ArrowRight className="w-4 h-4" />
-              </Link>
+            <Button size="lg" variant="secondary" className="shadow-md" asChild>
+              <Link href="/calculadoras/orcamento-familiar">Orçamento Familiar <ArrowRight className="w-4 h-4 ml-1" /></Link>
             </Button>
-            <Button size="lg" variant="outline" asChild>
-              <Link href="/calculadoras/reserva-emergencia">
-                Reserva de Emergência <ArrowRight className="w-4 h-4" />
-              </Link>
+            <Button size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10" asChild>
+              <Link href="/calculadoras/reserva-emergencia">Reserva de Emergência <ArrowRight className="w-4 h-4 ml-1" /></Link>
             </Button>
           </div>
-        </div>
+        </section>
       </div>
     </div>
   )

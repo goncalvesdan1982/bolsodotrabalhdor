@@ -4,7 +4,10 @@ import { SITE_URL } from '@/lib/config'
 import { Breadcrumbs } from '@/components/breadcrumbs'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
 import { ArrowRight, TrendingUp, ShieldCheck, Calculator } from 'lucide-react'
+import { getPostBySlug } from '@/lib/posts'
+import type { Post } from '@/lib/posts'
 
 export const metadata: Metadata = {
   title: 'Score de Crédito - Como Aumentar e Manter',
@@ -28,119 +31,125 @@ export const metadata: Metadata = {
   alternates: { canonical: `${SITE_URL}/score` },
 }
 
+const calculators = [
+  { slug: 'comprometimento-renda', icon: Calculator, title: 'Comprometimento de Renda', desc: 'Descubra como seu nível de endividamento afeta seu score de crédito.' },
+  { slug: 'capacidade-endividamento', icon: ShieldCheck, title: 'Capacidade de Endividamento', desc: 'Veja qual o limite ideal de crédito para seu perfil financeiro.' },
+]
+
+const steps = [
+  { href: '/blog/o-que-realmente-influencia-score-credito', title: 'O que influencia o score', desc: 'Entenda os fatores que afetam sua pontuação de crédito.' },
+  { href: '/blog/como-consultar-score-gratuitamente', title: 'Consultar score gratuitamente', desc: 'Veja sua pontuação sem pagar nada nos canais oficiais.' },
+  { href: '/blog/como-aumentar-score-de-credito', title: 'Como aumentar o score', desc: 'Estratégias práticas para subir a pontuação de crédito.' },
+  { href: '/blog/cadastro-positivo-vale-a-pena', title: 'Cadastro Positivo', desc: 'Entenda como o cadastro positivo pode ajudar seu score.' },
+  { href: '/blog/quanto-tempo-leva-para-score-aumentar', title: 'Tempo para aumentar', desc: 'Saiba o prazo real para ver resultados na sua pontuação.' },
+]
+
+const articleSlugs = [
+  'como-aumentar-score-de-credito',
+  'o-que-realmente-influencia-score-credito',
+  'como-consultar-score-gratuitamente',
+  'cadastro-positivo-vale-a-pena',
+  'quanto-tempo-leva-para-score-aumentar',
+  'score-400-aprova-cartao',
+]
+
 export default function ScorePage() {
+  const artigos = articleSlugs.map(slug => getPostBySlug(slug)).filter(Boolean) as Post[]
+
   return (
     <div className="container mx-auto px-4 py-12">
       <div className="max-w-4xl mx-auto">
         <Breadcrumbs items={[{ label: 'Score de Crédito' }]} />
 
-        <div className="text-center mb-12">
-          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-purple-100 text-purple-600 mb-4">
-            <TrendingUp className="w-8 h-8" />
+        <section className="relative overflow-hidden rounded-3xl border bg-gradient-to-br from-purple-50 via-background to-violet-50/50 p-6 shadow-sm md:p-8 mb-12">
+          <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+            <div>
+              <Badge variant="outline" className="border-purple-200 text-purple-700 bg-purple-100/50">Score</Badge>
+              <h1 className="mt-3 text-3xl font-bold tracking-tight text-primary md:text-4xl">Score de Crédito</h1>
+              <p className="mt-3 max-w-2xl text-muted-foreground">
+                Entenda como funciona o score de crédito, aprenda estratégias para aumentar sua pontuação e conquistar melhores condições financeiras.
+              </p>
+            </div>
+            <div className="rounded-2xl bg-purple-100 p-4 text-purple-600 shrink-0">
+              <TrendingUp className="h-8 w-8" />
+            </div>
           </div>
-          <h1 className="text-4xl font-bold tracking-tight text-primary sm:text-5xl mb-4">
-            Score de Crédito
-          </h1>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Entenda como funciona o score de crédito, aprenda estratégias para aumentar sua pontuação e conquistar melhores condições financeiras.
-          </p>
+        </section>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-12">
+          {calculators.map((calc) => {
+            const Icon = calc.icon
+            return (
+              <Link key={calc.slug} href={`/calculadoras/${calc.slug}`} className="group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring rounded-xl">
+                <Card className="h-full border-border/60 transition-all group-hover:shadow-md group-hover:border-purple-300 group-hover:-translate-y-0.5">
+                  <CardHeader className="pb-3">
+                    <div className="w-10 h-10 rounded-lg bg-purple-100 text-purple-600 flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
+                      <Icon className="w-5 h-5" />
+                    </div>
+                    <CardTitle className="text-base group-hover:text-purple-700 transition-colors">{calc.title}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <CardDescription className="text-sm">{calc.desc}</CardDescription>
+                    <div className="mt-3 flex items-center text-primary text-sm font-medium">
+                      Calcular <ArrowRight className="ml-1.5 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
+            )
+          })}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-          <Card className="border-purple-200 bg-purple-50/30 group hover:shadow-md transition-all">
-            <CardHeader>
-              <Calculator className="w-8 h-8 text-purple-600 mb-2 group-hover:scale-110 transition-transform" />
-              <CardTitle>Comprometimento de Renda</CardTitle>
-              <CardDescription>Descubra como seu nível de endividamento afeta seu score de crédito.</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <Button variant="outline" className="w-full" asChild>
-                <Link href="/calculadoras/comprometimento-renda">
-                  Calcular <ArrowRight className="w-4 h-4" />
-                </Link>
-              </Button>
-            </CardContent>
-          </Card>
-          <Card className="border-purple-200 bg-purple-50/30 group hover:shadow-md transition-all">
-            <CardHeader>
-              <ShieldCheck className="w-8 h-8 text-purple-600 mb-2 group-hover:scale-110 transition-transform" />
-              <CardTitle>Capacidade de Endividamento</CardTitle>
-              <CardDescription>Veja qual o limite ideal de crédito para seu perfil financeiro.</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <Button variant="outline" className="w-full" asChild>
-                <Link href="/calculadoras/capacidade-endividamento">
-                  Calcular <ArrowRight className="w-4 h-4" />
-                </Link>
-              </Button>
-            </CardContent>
-          </Card>
-        </div>
-
-        <div className="mb-8 p-6 md:p-8 bg-card border border-border rounded-2xl shadow-sm">
-          <h2 className="text-xl font-bold text-foreground mb-3">Por onde começar</h2>
-          <p className="text-muted-foreground mb-4">
-            Se você quer entender e melhorar seu score, siga esta trilha de leitura:
-          </p>
-          <ol className="space-y-2 list-decimal list-inside text-sm text-muted-foreground">
-            <li><Link href="/blog/o-que-realmente-influencia-score-credito" className="text-secondary hover:underline font-medium">O que realmente influencia o score</Link> — entenda os fatores que afetam sua pontuação</li>
-            <li><Link href="/blog/como-consultar-score-gratuitamente" className="text-secondary hover:underline font-medium">Como consultar o score gratuitamente</Link> — veja sua pontuação sem pagar nada</li>
-            <li><Link href="/blog/como-aumentar-score-de-credito" className="text-secondary hover:underline font-medium">Como aumentar o score de crédito</Link> — estratégias práticas para subir a pontuação</li>
-            <li><Link href="/blog/cadastro-positivo-vale-a-pena" className="text-secondary hover:underline font-medium">Cadastro Positivo vale a pena?</Link> — entenda como ele pode ajudar seu score</li>
-            <li><Link href="/blog/quanto-tempo-leva-para-score-aumentar" className="text-secondary hover:underline font-medium">Quanto tempo leva para o score aumentar</Link> — saiba o prazo real para ver resultados</li>
-          </ol>
-        </div>
-
-        <div className="mb-12 p-6 md:p-8 bg-gradient-to-br from-blue-700 to-blue-600 rounded-2xl text-primary-foreground shadow-lg">
-          <h2 className="text-2xl font-bold mb-4">Artigos sobre Score</h2>
-          <p className="text-white/80 mb-6">
-            Leia nossos artigos para entender como o score funciona e como aumentar sua pontuação.
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            <Link
-              href="/blog/como-aumentar-score-de-credito"
-              className="flex items-center justify-between p-3.5 bg-white/10 hover:bg-white/20 rounded-xl border border-white/15 transition-all group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/50"
-            >
-              <span className="font-medium text-sm">Como aumentar o score rápido</span>
-              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform shrink-0" />
-            </Link>
-            <Link
-              href="/blog/o-que-realmente-influencia-score-credito"
-              className="flex items-center justify-between p-3.5 bg-white/10 hover:bg-white/20 rounded-xl border border-white/15 transition-all group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/50"
-            >
-              <span className="font-medium text-sm">O que influencia o score</span>
-              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform shrink-0" />
-            </Link>
-            <Link
-              href="/blog/como-consultar-score-gratuitamente"
-              className="flex items-center justify-between p-3.5 bg-white/10 hover:bg-white/20 rounded-xl border border-white/15 transition-all group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/50"
-            >
-              <span className="font-medium text-sm">Consultar score gratuitamente</span>
-              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform shrink-0" />
-            </Link>
-            <Link
-              href="/blog/cadastro-positivo-vale-a-pena"
-              className="flex items-center justify-between p-3.5 bg-white/10 hover:bg-white/20 rounded-xl border border-white/15 transition-all group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/50"
-            >
-              <span className="font-medium text-sm">Cadastro Positivo vale a pena?</span>
-              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform shrink-0" />
-            </Link>
-            <Link
-              href="/blog/quanto-tempo-leva-para-score-aumentar"
-              className="flex items-center justify-between p-3.5 bg-white/10 hover:bg-white/20 rounded-xl border border-white/15 transition-all group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/50"
-            >
-              <span className="font-medium text-sm">Quanto tempo leva para o score aumentar</span>
-              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform shrink-0" />
-            </Link>
-            <Link
-              href="/blog/score-400-aprova-cartao"
-              className="flex items-center justify-between p-3.5 bg-white/10 hover:bg-white/20 rounded-xl border border-white/15 transition-all group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/50"
-            >
-              <span className="font-medium text-sm">Score 400 aprova cartão?</span>
-              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform shrink-0" />
-            </Link>
+        <section className="mb-12">
+          <div className="mb-6">
+            <h2 className="text-2xl font-bold text-foreground">Por onde começar</h2>
+            <p className="text-muted-foreground">Uma trilha simples para entender e melhorar seu score de crédito.</p>
           </div>
-        </div>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {steps.map((step, i) => (
+              <Link key={step.href} href={step.href} className="group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring rounded-xl">
+                <Card className="h-full border-border/60 transition-all group-hover:shadow-md group-hover:border-primary/30 group-hover:-translate-y-0.5">
+                  <CardHeader className="pb-2">
+                    <div className="flex items-center gap-3">
+                      <span className="w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center text-sm font-bold shrink-0">{i + 1}</span>
+                      <CardTitle className="text-sm leading-snug group-hover:text-primary transition-colors">{step.title}</CardTitle>
+                    </div>
+                  </CardHeader>
+                  <CardContent>
+                    <CardDescription className="text-xs">{step.desc}</CardDescription>
+                  </CardContent>
+                </Card>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-foreground mb-6">Artigos sobre Score</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            {artigos.map((artigo) => (
+              <article key={artigo.slug} className="group flex flex-col h-full border border-border/60 hover:border-blue-300 hover:shadow-md transition-all duration-200 overflow-hidden bg-card rounded-xl focus-within:ring-2 focus-within:ring-ring focus-within:ring-offset-2">
+                <div className="h-1 bg-gradient-to-r from-blue-700 to-blue-500" />
+                <div className="flex flex-col flex-1 p-5 gap-3">
+                  <div className="flex items-center justify-between gap-2">
+                    <span className="inline-block text-xs font-semibold px-2.5 py-0.5 rounded-full bg-blue-100 text-blue-700">Score</span>
+                  </div>
+                  <h3 className="text-base font-bold text-foreground leading-snug group-hover:text-blue-700 transition-colors line-clamp-2">{artigo.title}</h3>
+                  {artigo.description && (
+                    <p className="text-sm text-muted-foreground line-clamp-2 flex-1">{artigo.description}</p>
+                  )}
+                  <Link
+                    href={`/blog/${artigo.slug}`}
+                    className="mt-auto text-sm font-semibold text-blue-700 hover:underline inline-flex items-center gap-1 pt-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring rounded"
+                    aria-label={`Ler artigo: ${artigo.title}`}
+                  >
+                    Ler artigo <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                  </Link>
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
 
         <div className="prose prose-slate max-w-none prose-headings:text-primary prose-a:text-secondary mb-12">
           <h2>O que é Score de Crédito?</h2>
@@ -164,25 +173,21 @@ export default function ScorePage() {
           </p>
         </div>
 
-        <div className="bg-gradient-to-r from-purple-50 to-violet-50 rounded-2xl p-8 md:p-12 text-center border border-purple-200">
-          <Calculator className="w-12 h-12 text-purple-600 mx-auto mb-4" />
-          <h2 className="text-2xl font-bold text-foreground mb-2">Monitore sua saúde financeira</h2>
-          <p className="text-muted-foreground mb-6 max-w-xl mx-auto">
-            Use nossas calculadoras para entender como suas finanças impactam seu score de crédito.
+        <section className="rounded-3xl border bg-gradient-to-br from-primary to-primary/90 p-8 md:p-12 text-center text-primary-foreground shadow-lg">
+          <TrendingUp className="w-10 h-10 mx-auto mb-4 text-secondary" />
+          <h2 className="text-2xl font-bold mb-3">Monitore sua saúde financeira</h2>
+          <p className="text-primary-foreground/80 mb-6 max-w-lg mx-auto">
+            Use nossas calculadoras gratuitas para entender como suas finanças impactam seu score de crédito.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Button size="lg" asChild>
-              <Link href="/calculadoras/comprometimento-renda">
-                Comprometimento de Renda <ArrowRight className="w-4 h-4" />
-              </Link>
+            <Button size="lg" variant="secondary" className="shadow-md" asChild>
+              <Link href="/calculadoras/comprometimento-renda">Comprometimento de Renda <ArrowRight className="w-4 h-4 ml-1" /></Link>
             </Button>
-            <Button size="lg" variant="outline" asChild>
-              <Link href="/calculadoras/capacidade-endividamento">
-                Capacidade de Endividamento <ArrowRight className="w-4 h-4" />
-              </Link>
+            <Button size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10" asChild>
+              <Link href="/calculadoras/capacidade-endividamento">Capacidade de Endividamento <ArrowRight className="w-4 h-4 ml-1" /></Link>
             </Button>
           </div>
-        </div>
+        </section>
       </div>
     </div>
   )
