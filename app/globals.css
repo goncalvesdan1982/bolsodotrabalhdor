@@ -155,41 +155,50 @@
 /* Premium table styles */
 .article-content .premium-table-wrapper {
   margin: 2rem 0;
+  width: 100%;
   overflow-x: auto;
   border: 1px solid hsl(var(--border));
   border-radius: 1rem;
-  background: linear-gradient(180deg, hsl(var(--card)), hsl(var(--muted) / 0.28));
-  box-shadow: 0 14px 36px rgba(15, 23, 42, 0.10);
+  background: linear-gradient(180deg, hsl(var(--muted) / 0.35), hsl(var(--card)));
+  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.08);
 }
 
 .article-content .premium-table-wrapper table {
   width: 100%;
-  min-width: 680px;
+  min-width: 100%;
   margin: 0;
   border-collapse: separate;
   border-spacing: 0;
+  table-layout: fixed;
   background: transparent;
 }
 
 .article-content .premium-table-wrapper thead {
-  background: linear-gradient(180deg, hsl(var(--primary) / 0.12), hsl(var(--primary) / 0.07));
+  background: linear-gradient(180deg, hsl(var(--primary) / 0.14), hsl(var(--primary) / 0.08));
 }
 
 .article-content .premium-table-wrapper th {
-  padding: 1rem 1.1rem;
+  padding: 0.95rem 1rem;
   text-align: left;
   font-weight: 800;
   color: hsl(var(--primary));
-  border-bottom: 1px solid hsl(var(--primary) / 0.18);
-  white-space: nowrap;
+  border-bottom: 1px solid hsl(var(--primary) / 0.20);
+  line-height: 1.35;
+  vertical-align: top;
 }
 
 .article-content .premium-table-wrapper td {
-  padding: 1rem 1.1rem;
+  padding: 0.95rem 1rem;
   vertical-align: top;
   border-bottom: 1px solid hsl(var(--border));
   color: hsl(var(--foreground));
-  line-height: 1.65;
+  line-height: 1.55;
+}
+
+.article-content .premium-table-wrapper th,
+.article-content .premium-table-wrapper td {
+  overflow-wrap: anywhere;
+  word-break: normal;
 }
 
 .article-content .premium-table-wrapper tbody tr {
@@ -197,15 +206,15 @@
 }
 
 .article-content .premium-table-wrapper tbody tr:nth-child(even) {
-  background: hsl(var(--muted) / 0.34);
+  background: hsl(var(--muted) / 0.32);
 }
 
 .article-content .premium-table-wrapper tbody tr:hover {
-  background: hsl(var(--primary) / 0.08);
+  background: hsl(var(--primary) / 0.07);
 }
 
 .article-content .premium-table-wrapper tbody td:first-child {
-  font-weight: 650;
+  font-weight: 700;
   color: hsl(var(--primary));
 }
 
@@ -223,6 +232,17 @@
 
 .article-content .premium-table-wrapper a:hover {
   opacity: 0.85;
+}
+
+@media (max-width: 640px) {
+  .article-content .premium-table-wrapper table {
+    min-width: 620px;
+    table-layout: auto;
+  }
+
+  .article-content .premium-table-wrapper {
+    scrollbar-width: thin;
+  }
 }
 
 /* Premium checklist styles */
