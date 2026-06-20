@@ -205,7 +205,7 @@ export default function EmprestimosPage() {
             <Button size="lg" variant="secondary" className="shadow-md" asChild>
               <Link href="/calculadoras/emprestimo">Calculadora de Empréstimo <ArrowRight className="w-4 h-4 ml-1" /></Link>
             </Button>
-            <Button size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10" asChild>
+            <Button size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90 shadow-md" asChild>
               <Link href="/calculadoras/financiamento">Calculadora de Financiamento <ArrowRight className="w-4 h-4 ml-1" /></Link>
             </Button>
           </div>
