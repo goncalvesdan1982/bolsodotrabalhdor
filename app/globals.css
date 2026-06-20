@@ -159,8 +159,8 @@
   overflow-x: auto;
   border: 1px solid hsl(var(--border));
   border-radius: 1rem;
-  background: linear-gradient(180deg, hsl(var(--muted) / 0.35), hsl(var(--card)));
-  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.08);
+  background: hsl(var(--card));
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.12);
 }
 
 .article-content .premium-table-wrapper table {
@@ -170,29 +170,43 @@
   border-collapse: separate;
   border-spacing: 0;
   table-layout: fixed;
-  background: transparent;
+  background: hsl(var(--card));
 }
 
 .article-content .premium-table-wrapper thead {
-  background: linear-gradient(180deg, hsl(var(--primary) / 0.14), hsl(var(--primary) / 0.08));
+  background: hsl(var(--primary));
+}
+
+.article-content .premium-table-wrapper thead tr {
+  background: transparent;
 }
 
 .article-content .premium-table-wrapper th {
-  padding: 0.95rem 1rem;
+  padding: 1rem 1.1rem;
   text-align: left;
   font-weight: 800;
-  color: hsl(var(--primary));
-  border-bottom: 1px solid hsl(var(--primary) / 0.20);
+  color: hsl(var(--primary-foreground));
+  border-bottom: 1px solid hsl(var(--primary) / 0.25);
+  border-right: 1px solid hsl(var(--primary) / 0.15);
   line-height: 1.35;
   vertical-align: top;
 }
 
+.article-content .premium-table-wrapper th:last-child {
+  border-right: 0;
+}
+
 .article-content .premium-table-wrapper td {
-  padding: 0.95rem 1rem;
+  padding: 1rem 1.1rem;
   vertical-align: top;
   border-bottom: 1px solid hsl(var(--border));
+  border-right: 1px solid hsl(var(--border) / 0.6);
   color: hsl(var(--foreground));
-  line-height: 1.55;
+  line-height: 1.6;
+}
+
+.article-content .premium-table-wrapper td:last-child {
+  border-right: 0;
 }
 
 .article-content .premium-table-wrapper th,
@@ -202,20 +216,25 @@
 }
 
 .article-content .premium-table-wrapper tbody tr {
-  transition: background-color 150ms ease, box-shadow 150ms ease;
+  transition: background-color 150ms ease;
 }
 
 .article-content .premium-table-wrapper tbody tr:nth-child(even) {
-  background: hsl(var(--muted) / 0.32);
+  background: hsl(var(--primary) / 0.06);
+}
+
+.article-content .premium-table-wrapper tbody tr:nth-child(odd) {
+  background: hsl(var(--card));
 }
 
 .article-content .premium-table-wrapper tbody tr:hover {
-  background: hsl(var(--primary) / 0.07);
+  background: hsl(var(--secondary) / 0.12);
 }
 
 .article-content .premium-table-wrapper tbody td:first-child {
-  font-weight: 700;
+  font-weight: 800;
   color: hsl(var(--primary));
+  background: hsl(var(--primary) / 0.04);
 }
 
 .article-content .premium-table-wrapper tbody tr:last-child td {
