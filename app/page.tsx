@@ -11,11 +11,11 @@ import {
 } from 'lucide-react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Badge } from '@/components/ui/badge'
 import { SITE_URL } from '@/lib/config'
 import { getAllPosts } from '@/lib/posts'
 import { FAQSection } from '@/components/faq-section'
 import { getCategoryConfig } from '@/lib/blog-categories'
+import { CalculatorCard } from '@/components/calculator-card'
 
 export const metadata: Metadata = {
   title: 'Bolso do Trabalhador - Finanças Simples para Quem Trabalha e Paga Boletos',
@@ -99,12 +99,12 @@ const calculadoras = [
 ]
 
 const categorias = [
-  { nome: 'Dívidas', descricao: 'Aprenda a negociar, renegociar e sair das dívidas de vez.', href: '/dividas', icon: AlertTriangle, cor: 'bg-red-100 text-red-600' },
-  { nome: 'Cartões', descricao: 'Cartão sem anuidade, como aumentar limite e dicas.', href: '/cartoes', icon: CreditCard, cor: 'bg-indigo-100 text-indigo-600' },
-  { nome: 'Empréstimos', descricao: 'Compare modalidades, calcule juros e escolha o melhor.', href: '/emprestimos', icon: DollarSign, cor: 'bg-amber-100 text-amber-600' },
-  { nome: 'Score', descricao: 'Entenda como funciona e aprenda a aumentar seu score.', href: '/score', icon: BarChart3, cor: 'bg-blue-100 text-blue-600' },
-  { nome: 'Organização Financeira', descricao: 'Métodos práticos para controlar gastos.', href: '/organizacao-financeira', icon: ScrollText, cor: 'bg-teal-100 text-teal-600' },
-  { nome: 'Custo de Vida', descricao: 'Descubra quanto custa morar, ter carro, criar um filho.', href: '/custo-de-vida', icon: Wallet, cor: 'bg-violet-100 text-violet-600' },
+  { nome: 'Dívidas', descricao: 'Aprenda a negociar, renegociar e sair das dívidas de vez.', href: '/dividas', icon: AlertTriangle, cor: 'bg-red-100 text-red-600', hoverCor: 'hover:border-red-300 group-hover:border-red-300' },
+  { nome: 'Cartões', descricao: 'Cartão sem anuidade, como aumentar limite e dicas.', href: '/cartoes', icon: CreditCard, cor: 'bg-indigo-100 text-indigo-600', hoverCor: 'hover:border-indigo-300 group-hover:border-indigo-300' },
+  { nome: 'Empréstimos', descricao: 'Compare modalidades, calcule juros e escolha o melhor.', href: '/emprestimos', icon: DollarSign, cor: 'bg-amber-100 text-amber-600', hoverCor: 'hover:border-amber-300 group-hover:border-amber-300' },
+  { nome: 'Score', descricao: 'Entenda como funciona e aprenda a aumentar seu score.', href: '/score', icon: BarChart3, cor: 'bg-blue-100 text-blue-600', hoverCor: 'hover:border-blue-300 group-hover:border-blue-300' },
+  { nome: 'Organização Financeira', descricao: 'Métodos práticos para controlar gastos.', href: '/organizacao-financeira', icon: ScrollText, cor: 'bg-teal-100 text-teal-600', hoverCor: 'hover:border-teal-300 group-hover:border-teal-300' },
+  { nome: 'Custo de Vida', descricao: 'Descubra quanto custa morar, ter carro, criar um filho.', href: '/custo-de-vida', icon: Wallet, cor: 'bg-violet-100 text-violet-600', hoverCor: 'hover:border-violet-300 group-hover:border-violet-300' },
 ]
 
 const categoryBadgeColors: Record<string, string> = {
@@ -167,24 +167,23 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section — duas colunas */}
-      <section className="bg-gradient-to-br from-primary/5 via-background to-secondary/5 py-12 md:py-20">
+      {/* Hero Section */}
+      <section className="bg-gradient-to-br from-primary/[0.04] via-background to-secondary/[0.04] py-10 md:py-16">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-            {/* Coluna esquerda — texto */}
             <div className="lg:col-span-7">
-              <div className="inline-flex items-center gap-2 bg-secondary/10 text-secondary px-4 py-2 rounded-full text-sm font-medium mb-6 border border-secondary/20">
-                <Sparkles className="w-4 h-4" />
+              <div className="inline-flex items-center gap-2 bg-muted px-4 py-1.5 rounded-full text-sm font-medium mb-5 border">
+                <Sparkles className="w-3.5 h-3.5 text-primary" />
                 Educação financeira prática e gratuita
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold text-foreground mb-5 text-balance leading-tight">
-                <span className="text-primary">Bolso do Trabalhador:</span> finanças simples para quem trabalha e paga boletos
+                Finanças simples para quem <span className="text-primary">trabalha e paga boletos</span>
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground mb-6 text-pretty max-w-2xl">
-                Calculadoras gratuitas, guias sobre dívidas, cartões, score, empréstimos e organização financeira. 
+                Calculadoras gratuitas, guias sobre dívidas, cartões, score, empréstimos e organização financeira.
                 Conteúdo educativo em linguagem simples, sem enrolação e sem promessas milagrosas.
               </p>
-              <div className="flex flex-wrap items-center gap-3 mb-8">
+              <div className="flex flex-wrap items-center gap-3 mb-6">
                 <Button asChild size="lg" className="bg-primary hover:bg-primary/90 shadow-md shadow-primary/20">
                   <Link href="/calculadoras">
                     Ver calculadoras
@@ -195,12 +194,6 @@ export default function HomePage() {
                   <Link href="/blog">
                     Ler guias
                     <BookOpen className="ml-2 w-4 h-4" />
-                  </Link>
-                </Button>
-                <Button asChild size="lg" variant="ghost" className="text-muted-foreground hover:text-primary">
-                  <Link href="/dividas">
-                    Sair das dívidas
-                    <ArrowRight className="ml-2 w-4 h-4" />
                   </Link>
                 </Button>
               </div>
@@ -214,7 +207,6 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Coluna direita — painel do trabalhador */}
             <div className="lg:col-span-5">
               <div className="bg-white dark:bg-card/50 rounded-2xl border border-border/60 shadow-lg shadow-primary/5 p-5 md:p-6">
                 <div className="flex items-center gap-2 mb-4">
@@ -253,11 +245,11 @@ export default function HomePage() {
       </section>
 
       {/* Aviso de portal informativo independente */}
-      <div className="container mx-auto px-4 -mt-2 mb-8">
-        <div className="bg-blue-50 dark:bg-blue-950/30 border border-blue-200/60 dark:border-blue-800/40 rounded-xl px-4 py-3 flex items-start gap-3">
-          <Info className="w-5 h-5 text-blue-600 dark:text-blue-400 shrink-0 mt-0.5" />
-          <p className="text-sm text-blue-800 dark:text-blue-300">
-            <strong className="font-semibold">Portal informativo independente.</strong> O Bolso do Trabalhador oferece conteúdo educativo sobre finanças pessoais e direitos do trabalhador. 
+      <div className="container mx-auto px-4 mb-8">
+        <div className="bg-muted/40 border rounded-xl px-4 py-3 flex items-start gap-3">
+          <Info className="w-5 h-5 text-muted-foreground shrink-0 mt-0.5" />
+          <p className="text-sm text-muted-foreground">
+            <strong className="font-semibold text-foreground">Portal informativo independente.</strong> O Bolso do Trabalhador oferece conteúdo educativo sobre finanças pessoais e direitos do trabalhador.
             Para solicitar benefícios, consultar valores oficiais ou atualizar cadastros, acesse os canais oficiais do governo ou órgão responsável.
           </p>
         </div>
@@ -269,7 +261,7 @@ export default function HomePage() {
           <div className="text-center mb-10">
             <h2 className="text-3xl font-bold text-foreground mb-3">Comece pelo que você precisa</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Escolha o caminho mais rápido para organizar suas finanças, entender seu score, 
+              Escolha o caminho mais rápido para organizar suas finanças, entender seu score,
               comparar empréstimos ou sair das dívidas.
             </p>
           </div>
@@ -301,7 +293,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Separador com anúncio */}
+      {/* Separador */}
       <div className="container mx-auto px-4">
         <div className="border-t border-border/40 my-6" />
       </div>
@@ -323,27 +315,17 @@ export default function HomePage() {
             </Button>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {calculadoras.map((calc) => {
-              const Icon = calc.icon
-              return (
-                <Link key={calc.href} href={calc.href} className="group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring rounded-xl">
-                  <Card className="h-full transition-all hover:shadow-lg hover:border-primary/40 group-hover:-translate-y-0.5 border-border/60">
-                    <CardHeader className="pb-3">
-                      <div className={`w-11 h-11 rounded-lg ${calc.cor} flex items-center justify-center mb-2 group-hover:scale-110 transition-transform`}>
-                        <Icon className="w-5 h-5" />
-                      </div>
-                      <CardTitle className="text-base group-hover:text-primary transition-colors">{calc.nome}</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <CardDescription className="text-sm">{calc.descricao}</CardDescription>
-                      <div className="mt-3 flex items-center text-primary text-sm font-medium">
-                        {ctaTexts[calc.nome] || 'Calcular agora'} <ArrowRight className="ml-1.5 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                      </div>
-                    </CardContent>
-                  </Card>
-                </Link>
-              )
-            })}
+            {calculadoras.map((calc) => (
+              <CalculatorCard
+                key={calc.href}
+                nome={calc.nome}
+                descricao={calc.descricao}
+                href={calc.href}
+                icon={calc.icon}
+                cor={calc.cor}
+                cta={ctaTexts[calc.nome]}
+              />
+            ))}
           </div>
         </div>
       </section>
@@ -362,7 +344,7 @@ export default function HomePage() {
               const Icon = cat.icon
               return (
                 <Link key={cat.href} href={cat.href} className="group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring rounded-xl">
-                  <Card className="h-full transition-all hover:shadow-lg hover:border-primary/30 group-hover:-translate-y-0.5 border-border/60">
+                  <Card className={`h-full transition-all hover:shadow-lg ${cat.hoverCor} group-hover:-translate-y-0.5 border-border/60`}>
                     <CardHeader className="pb-3">
                       <div className={`w-11 h-11 rounded-lg ${cat.cor} flex items-center justify-center mb-2 group-hover:scale-110 transition-transform`}>
                         <Icon className="w-5 h-5" />
@@ -434,7 +416,7 @@ export default function HomePage() {
       </section>
 
       {/* Seção: Por que usar o Bolso do Trabalhador */}
-      <section className="py-10 md:py-16 bg-gradient-to-b from-primary/5 to-background">
+      <section className="py-10 md:py-16 bg-gradient-to-b from-primary/[0.03] to-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-10">
             <h2 className="text-3xl font-bold text-foreground mb-3">Por que usar o Bolso do Trabalhador?</h2>
@@ -484,36 +466,35 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Seção: Consulta, cadastro e canais oficiais */}
+      {/* Seção: Dicas de segurança */}
       <section className="py-10 md:py-16 bg-muted/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-8">
-              <h2 className="text-2xl font-bold text-foreground mb-3">Onde buscar informações oficiais</h2>
+              <h2 className="text-2xl font-bold text-foreground mb-3">Use os canais oficiais com segurança</h2>
               <p className="text-muted-foreground">
-                O Bolso do Trabalhador é um portal informativo. Para solicitações oficiais, consulte os canais do governo.
+                O Bolso do Trabalhador é um portal informativo. Para solicitações e consultas oficiais, prefira sempre os canais do governo.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {[
-                { icon: Shield, title: 'Consulte sempre nos canais oficiais', desc: 'Use sites como gov.br, Caixa, INSS e Receita Federal para informações oficiais.' },
-                { icon: AlertTriangle, title: 'Nunca informe dados bancários', desc: 'O governo não pede senhas, códigos ou dados bancários para liberar benefícios.' },
-                { icon: Calendar, title: 'Confira calendários atualizados', desc: 'As datas de pagamento são publicadas nos canais oficiais de cada programa.' },
-                { icon: FileText, title: 'Verifique documentos exigidos', desc: 'Cada benefício tem requisitos específicos. Consulte antes de solicitar.' },
-              ].map((item) => {
-                const Icon = item.icon
-                return (
-                  <div key={item.title} className="flex gap-3 p-4 rounded-xl bg-white dark:bg-card/30 border border-border/60">
-                    <div className="w-9 h-9 rounded-lg bg-amber-100 dark:bg-amber-900/30 flex items-center justify-center shrink-0 mt-0.5">
-                      <Icon className="w-4 h-4 text-amber-700 dark:text-amber-400" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-sm text-foreground mb-1">{item.title}</h3>
-                      <p className="text-sm text-muted-foreground">{item.desc}</p>
-                    </div>
-                  </div>
-                )
-              })}
+              <div className="flex gap-3 p-4 rounded-xl bg-white dark:bg-card/30 border border-border/60">
+                <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
+                  <Shield className="w-4 h-4 text-primary" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-sm text-foreground mb-1">Canais oficiais</h3>
+                  <p className="text-sm text-muted-foreground">Use gov.br, Caixa, INSS e Receita Federal para consultar benefícios, valores e calendários oficiais.</p>
+                </div>
+              </div>
+              <div className="flex gap-3 p-4 rounded-xl bg-white dark:bg-card/30 border border-border/60">
+                <div className="w-9 h-9 rounded-lg bg-destructive/10 flex items-center justify-center shrink-0 mt-0.5">
+                  <AlertTriangle className="w-4 h-4 text-destructive" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-sm text-foreground mb-1">Proteja seus dados</h3>
+                  <p className="text-sm text-muted-foreground">O governo não pede senhas, códigos ou dados bancários para liberar benefícios. Desconfie de cobranças.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -535,7 +516,7 @@ export default function HomePage() {
             Pronto para organizar suas finanças?
           </h2>
           <p className="text-lg text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
-            Comece com nossas calculadoras gratuitas ou explore os guias educativos. 
+            Comece com nossas calculadoras gratuitas ou explore os guias educativos.
             Tudo sem cadastro, sem enrolação.
           </p>
           <div className="flex flex-wrap justify-center gap-4">

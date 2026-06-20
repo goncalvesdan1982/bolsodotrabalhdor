@@ -171,45 +171,31 @@ export default function ScorePage() {
         <section className="mb-12">
           <h2 className="text-2xl font-bold text-foreground mb-6">Calculadoras relacionadas</h2>
           <div className="grid gap-5 md:grid-cols-2">
-            <Link href="/calculadoras/comprometimento-renda" className="group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring rounded-xl">
-              <Card className="border-border/60 transition-all group-hover:shadow-md group-hover:border-purple-300 group-hover:-translate-y-0.5">
-                <CardHeader>
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-lg bg-purple-100 text-purple-600 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                      <Calculator className="w-5 h-5" />
-                    </div>
-                    <div>
-                      <CardTitle className="text-base group-hover:text-purple-700 transition-colors">Comprometimento de Renda</CardTitle>
-                      <CardDescription className="text-sm">Descubra como seu nível de endividamento afeta seu score</CardDescription>
-                    </div>
-                  </div>
-                </CardHeader>
-                <CardContent className="pt-0">
-                  <div className="flex items-center text-primary text-sm font-medium">
-                    Calcular <ArrowRight className="ml-1.5 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </div>
-                </CardContent>
-              </Card>
+            <Link href="/calculadoras/comprometimento-renda" className="group block rounded-xl border bg-card p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:border-purple-400 hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring">
+              <div className="mb-4 flex items-center justify-between gap-3">
+                <div className="rounded-xl bg-purple-100 text-purple-600 p-3 transition-transform group-hover:scale-105">
+                  <Calculator className="h-5 w-5" />
+                </div>
+                <span className="rounded-full bg-muted px-2.5 py-1 text-xs font-medium text-muted-foreground">Gratuita</span>
+              </div>
+              <h3 className="text-base font-bold text-foreground group-hover:text-purple-700 transition-colors">Comprometimento de Renda</h3>
+              <p className="mt-2 line-clamp-2 text-sm text-muted-foreground">Descubra como seu nível de endividamento afeta seu score</p>
+              <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-purple-600">
+                Calcular <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+              </span>
             </Link>
-            <Link href="/calculadoras/capacidade-endividamento" className="group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring rounded-xl">
-              <Card className="border-border/60 transition-all group-hover:shadow-md group-hover:border-purple-300 group-hover:-translate-y-0.5">
-                <CardHeader>
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-lg bg-purple-100 text-purple-600 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                      <Calculator className="w-5 h-5" />
-                    </div>
-                    <div>
-                      <CardTitle className="text-base group-hover:text-purple-700 transition-colors">Capacidade de Endividamento</CardTitle>
-                      <CardDescription className="text-sm">Veja o limite ideal de crédito para seu perfil</CardDescription>
-                    </div>
-                  </div>
-                </CardHeader>
-                <CardContent className="pt-0">
-                  <div className="flex items-center text-primary text-sm font-medium">
-                    Calcular <ArrowRight className="ml-1.5 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </div>
-                </CardContent>
-              </Card>
+            <Link href="/calculadoras/capacidade-endividamento" className="group block rounded-xl border bg-card p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:border-purple-400 hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring">
+              <div className="mb-4 flex items-center justify-between gap-3">
+                <div className="rounded-xl bg-purple-100 text-purple-600 p-3 transition-transform group-hover:scale-105">
+                  <Calculator className="h-5 w-5" />
+                </div>
+                <span className="rounded-full bg-muted px-2.5 py-1 text-xs font-medium text-muted-foreground">Gratuita</span>
+              </div>
+              <h3 className="text-base font-bold text-foreground group-hover:text-purple-700 transition-colors">Capacidade de Endividamento</h3>
+              <p className="mt-2 line-clamp-2 text-sm text-muted-foreground">Veja o limite ideal de crédito para seu perfil</p>
+              <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-purple-600">
+                Calcular <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+              </span>
             </Link>
           </div>
         </section>

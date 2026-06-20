@@ -153,53 +153,44 @@ export default function EmprestimosPage() {
         <section className="mb-12">
           <h2 className="text-2xl font-bold text-foreground mb-6">Calculadoras relacionadas</h2>
           <div className="grid gap-5 md:grid-cols-3">
-            <Link href="/calculadoras/emprestimo" className="group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring rounded-xl">
-              <Card className="border-border/60 h-full transition-all group-hover:shadow-md group-hover:border-green-300 group-hover:-translate-y-0.5">
-                <CardHeader className="pb-3">
-                  <div className="w-10 h-10 rounded-lg bg-green-100 text-green-600 flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
-                    <Calculator className="w-5 h-5" />
-                  </div>
-                  <CardTitle className="text-base group-hover:text-green-700 transition-colors">Simulação de Empréstimo</CardTitle>
-                  <CardDescription className="text-sm">Calcule parcelas, juros totais e CET</CardDescription>
-                </CardHeader>
-                <CardContent className="pt-0">
-                  <div className="flex items-center text-primary text-sm font-medium">
-                    Simular <ArrowRight className="ml-1.5 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </div>
-                </CardContent>
-              </Card>
+            <Link href="/calculadoras/emprestimo" className="group block rounded-xl border bg-card p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:border-green-400 hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring">
+              <div className="mb-4 flex items-center justify-between gap-3">
+                <div className="rounded-xl bg-green-100 text-green-600 p-3 transition-transform group-hover:scale-105">
+                  <Calculator className="h-5 w-5" />
+                </div>
+                <span className="rounded-full bg-muted px-2.5 py-1 text-xs font-medium text-muted-foreground">Gratuita</span>
+              </div>
+              <h3 className="text-base font-bold text-foreground group-hover:text-green-700 transition-colors">Simulação de Empréstimo</h3>
+              <p className="mt-2 line-clamp-2 text-sm text-muted-foreground">Calcule parcelas, juros totais e CET</p>
+              <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-green-600">
+                Simular <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+              </span>
             </Link>
-            <Link href="/calculadoras/financiamento" className="group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring rounded-xl">
-              <Card className="border-border/60 h-full transition-all group-hover:shadow-md group-hover:border-green-300 group-hover:-translate-y-0.5">
-                <CardHeader className="pb-3">
-                  <div className="w-10 h-10 rounded-lg bg-green-100 text-green-600 flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
-                    <Calculator className="w-5 h-5" />
-                  </div>
-                  <CardTitle className="text-base group-hover:text-green-700 transition-colors">Simulação de Financiamento</CardTitle>
-                  <CardDescription className="text-sm">Simule financiamentos imobiliários e de veículos</CardDescription>
-                </CardHeader>
-                <CardContent className="pt-0">
-                  <div className="flex items-center text-primary text-sm font-medium">
-                    Simular <ArrowRight className="ml-1.5 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </div>
-                </CardContent>
-              </Card>
+            <Link href="/calculadoras/financiamento" className="group block rounded-xl border bg-card p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:border-green-400 hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring">
+              <div className="mb-4 flex items-center justify-between gap-3">
+                <div className="rounded-xl bg-green-100 text-green-600 p-3 transition-transform group-hover:scale-105">
+                  <Calculator className="h-5 w-5" />
+                </div>
+                <span className="rounded-full bg-muted px-2.5 py-1 text-xs font-medium text-muted-foreground">Gratuita</span>
+              </div>
+              <h3 className="text-base font-bold text-foreground group-hover:text-green-700 transition-colors">Simulação de Financiamento</h3>
+              <p className="mt-2 line-clamp-2 text-sm text-muted-foreground">Simule financiamentos imobiliários e de veículos</p>
+              <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-green-600">
+                Simular <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+              </span>
             </Link>
-            <Link href="/calculadoras/troca-dividas" className="group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring rounded-xl">
-              <Card className="border-border/60 h-full transition-all group-hover:shadow-md group-hover:border-green-300 group-hover:-translate-y-0.5">
-                <CardHeader className="pb-3">
-                  <div className="w-10 h-10 rounded-lg bg-green-100 text-green-600 flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
-                    <Calculator className="w-5 h-5" />
-                  </div>
-                  <CardTitle className="text-base group-hover:text-green-700 transition-colors">Troca de Dívidas</CardTitle>
-                  <CardDescription className="text-sm">Veja se vale trocar uma dívida cara por outra</CardDescription>
-                </CardHeader>
-                <CardContent className="pt-0">
-                  <div className="flex items-center text-primary text-sm font-medium">
-                    Calcular <ArrowRight className="ml-1.5 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </div>
-                </CardContent>
-              </Card>
+            <Link href="/calculadoras/troca-dividas" className="group block rounded-xl border bg-card p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:border-green-400 hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring">
+              <div className="mb-4 flex items-center justify-between gap-3">
+                <div className="rounded-xl bg-green-100 text-green-600 p-3 transition-transform group-hover:scale-105">
+                  <Calculator className="h-5 w-5" />
+                </div>
+                <span className="rounded-full bg-muted px-2.5 py-1 text-xs font-medium text-muted-foreground">Gratuita</span>
+              </div>
+              <h3 className="text-base font-bold text-foreground group-hover:text-green-700 transition-colors">Troca de Dívidas</h3>
+              <p className="mt-2 line-clamp-2 text-sm text-muted-foreground">Veja se vale trocar uma dívida cara por outra</p>
+              <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-green-600">
+                Calcular <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+              </span>
             </Link>
           </div>
         </section>

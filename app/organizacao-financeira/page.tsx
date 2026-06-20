@@ -123,21 +123,18 @@ export default function OrganizacaoFinanceiraPage() {
           <h2 className="text-2xl font-bold text-foreground mb-6">Calculadoras relacionadas</h2>
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {useTogether.map((item) => (
-              <Link key={item.href} href={item.href} className="group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring rounded-xl">
-                <Card className="h-full border-border/60 transition-all group-hover:shadow-md group-hover:border-teal-300 group-hover:-translate-y-0.5">
-                  <CardHeader className="pb-3">
-                    <div className="w-10 h-10 rounded-lg bg-teal-100 text-teal-600 flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
-                      <Calculator className="w-5 h-5" />
-                    </div>
-                    <CardTitle className="text-sm group-hover:text-teal-700 transition-colors">{item.title}</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <CardDescription className="text-xs">{item.desc}</CardDescription>
-                    <div className="mt-3 flex items-center text-primary text-xs font-medium">
-                      Usar <ArrowRight className="ml-1 w-3 h-3 group-hover:translate-x-1 transition-transform" />
-                    </div>
-                  </CardContent>
-                </Card>
+              <Link key={item.href} href={item.href} className="group block rounded-xl border bg-card p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:border-teal-400 hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring">
+                <div className="mb-4 flex items-center justify-between gap-3">
+                  <div className="rounded-xl bg-teal-100 text-teal-600 p-3 transition-transform group-hover:scale-105">
+                    <Calculator className="h-5 w-5" />
+                  </div>
+                  <span className="rounded-full bg-muted px-2.5 py-1 text-xs font-medium text-muted-foreground">Gratuita</span>
+                </div>
+                <h3 className="text-base font-bold text-foreground group-hover:text-teal-700 transition-colors">{item.title}</h3>
+                <p className="mt-2 line-clamp-2 text-sm text-muted-foreground">{item.desc}</p>
+                <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-teal-600">
+                  Usar <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </span>
               </Link>
             ))}
           </div>

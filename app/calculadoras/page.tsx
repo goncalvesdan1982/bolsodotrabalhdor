@@ -1,9 +1,8 @@
 import { Metadata } from 'next'
-import Link from 'next/link'
-import { PiggyBank, Home, BarChart3, RefreshCw, TrendingUp, AlertTriangle, CreditCard, Target, Calculator, ArrowRight } from 'lucide-react'
-import { Card, CardContent, CardDescription, CardTitle } from '@/components/ui/card'
+import { PiggyBank, Home, BarChart3, RefreshCw, TrendingUp, AlertTriangle, CreditCard, Target, Calculator } from 'lucide-react'
 import { Breadcrumbs } from '@/components/breadcrumbs'
 import { SITE_URL } from '@/lib/config'
+import { CalculatorCard } from '@/components/calculator-card'
 
 export const metadata: Metadata = {
   title: 'Calculadoras Financeiras | Bolso do Trabalhador',
@@ -76,28 +75,18 @@ export default function CalculadorasPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {calculadoras.map((calc) => {
-              const Icon = calc.icon
-              return (
-                <Link key={calc.href} href={calc.href} className="group">
-                  <Card className="h-full transition-all hover:shadow-md hover:border-primary/50 group-hover:-translate-y-0.5">
-                    <CardContent className="flex items-start gap-4 pt-6">
-                      <div className={`w-12 h-12 rounded-lg ${calc.cor} flex items-center justify-center shrink-0`}>
-                        <Icon className="h-6 w-6" />
-                      </div>
-                      <div className="min-w-0 flex-1">
-                        <CardTitle className="text-sm mb-1 group-hover:text-primary transition-colors">{calc.nome}</CardTitle>
-                        <CardDescription className="text-xs">{calc.descricao}</CardDescription>
-                        <div className="mt-2 flex items-center text-primary text-xs font-medium gap-1 group-hover:gap-2 transition-all">
-                          {ctaTexts[calc.nome] || 'Calcular'} <ArrowRight className="w-3 h-3" />
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
-                </Link>
-              )
-            })}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {calculadoras.map((calc) => (
+              <CalculatorCard
+                key={calc.href}
+                nome={calc.nome}
+                descricao={calc.descricao}
+                href={calc.href}
+                icon={calc.icon}
+                cor={calc.cor}
+                cta={ctaTexts[calc.nome]}
+              />
+            ))}
           </div>
         </div>
       </div>
