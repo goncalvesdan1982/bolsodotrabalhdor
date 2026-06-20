@@ -51,19 +51,27 @@ export function TableOfContents() {
       </button>
 
       {isOpen && (
-        <nav id="article-toc-content" className="border-t border-border px-4 py-3">
-          <ul className="space-y-2">
+        <nav id="article-toc-content" className="border-t border-border px-3 py-3">
+          <ul className="space-y-1">
             {headings.map((heading) => (
-              <li
-                key={heading.id}
-                style={{ paddingLeft: `${(heading.level - 2) * 1}rem` }}
-              >
+              <li key={heading.id}>
                 <a
                   href={`#${heading.id}`}
                   onClick={() => setIsOpen(false)}
-                  className="text-sm text-muted-foreground hover:text-secondary transition-colors"
+                  className={`group flex items-center gap-2 rounded-lg px-3 py-2 transition-colors hover:bg-primary/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/40 ${
+                    heading.level === 3
+                      ? 'ml-5 text-sm text-muted-foreground hover:text-primary'
+                      : 'text-sm font-medium text-primary'
+                  }`}
                 >
-                  {heading.text}
+                  <span
+                    className={`shrink-0 rounded-full transition-colors group-hover:bg-primary ${
+                      heading.level === 3
+                        ? 'h-1 w-1 bg-primary/40'
+                        : 'h-1.5 w-1.5 bg-primary/50'
+                    }`}
+                  />
+                  <span>{heading.text}</span>
                 </a>
               </li>
             ))}

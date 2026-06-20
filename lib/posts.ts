@@ -30,10 +30,6 @@ export const posts: Post[] = [
       { name: 'Reserva de Emergência', href: '/calculadoras/reserva-emergencia' },
     ],
     content: `
-<div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-6 text-sm text-blue-800 rounded-r-lg">
-<p><strong>Aviso importante:</strong> Este conteúdo é informativo e educativo. Ele não substitui orientação financeira individual. Antes de contratar empréstimo, parcelar fatura ou renegociar dívidas, compare o custo total, leia as condições e avalie sua renda.</p>
-</div>
-
 <section><h2>Introdução</h2>
 
 <p>Se você está lendo este guia, provavelmente já sentiu no bolso o peso das contas vencendo, dos juros acumulando e da sensação de não ver saída. Saiba de uma coisa: você não está sozinho, e sair das dívidas é possível.</p>
