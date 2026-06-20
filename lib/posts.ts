@@ -2606,10 +2606,10 @@ export const posts: Post[] = [
 <ul>
 <li>Desconfie de promessas de "aumento garantido" ou "limite garantido".</li>
 <li>Não pague taxa antecipada para liberar aumento de limite.</li>
-<li>Nunca informe senhas, códigos de autenticação, tokens ou dados bancários por WhatsApp, SMS, e-mail ou telefonema.</li>
-<li>Acesse sempre o aplicativo ou site oficial da instituição.</li>
+<li>Não informe senhas, códigos de autenticação, tokens ou dados bancários por WhatsApp, SMS, e-mail ou telefonema não solicitado.</li>
+<li>Acesse o aplicativo ou site oficial da instituição.</li>
 <li>Cuidado com links enviados por terceiros que prometem aumento rápido.</li>
-<li>Confirme se a instituição é autorizada a funcionar pelo Banco Central.</li>
+<li>Verifique a instituição em canais oficiais, como o site do Banco Central, antes de confiar em ofertas recebidas por mensagem.</li>
 <li>Não aceite "consultoria" que cobre para solicitar aumento — você mesmo pode fazer isso pelo app.</li>
 </ul>
 </section>
@@ -2650,7 +2650,7 @@ export const posts: Post[] = [
       { question: 'Atualizar renda no app ajuda?', answer: 'Sim, atualizar a renda no aplicativo ou site do banco pode ser considerado na análise. Se a renda aumentou, isso pode contribuir para uma nova avaliação. A informação precisa ser verdadeira e compatível com o perfil do cliente.' },
       { question: 'Pedir aumento muitas vezes atrapalha?', answer: 'Solicitar aumento muitas vezes em curto período pode não ajudar. Algumas instituições interpretam esse comportamento como necessidade financeira, o que pode ter efeito contrário. O recomendado é aguardar alguns meses entre as solicitações.' },
       { question: 'Limite maior pode prejudicar o orçamento?', answer: 'Pode, se não houver planejamento. Um limite maior aumenta o poder de compra, mas também o potencial de endividamento se os gastos não forem controlados. Antes de pedir aumento, avalie se o novo limite cabe no orçamento e se você tem controle dos gastos.' },
-      { question: 'Como evitar golpe de aumento de limite?', answer: 'Desconfie de promessas de aumento garantido ou limite garantido. Não pague taxa antecipada para liberar aumento. Nunca informe senhas, códigos ou dados bancários por WhatsApp, SMS ou e-mail. Faça qualquer solicitação apenas pelo aplicativo ou site oficial da instituição.' },
+      { question: 'Como evitar golpe de aumento de limite?', answer: 'Desconfie de promessas de aumento garantido ou limite garantido. Não pague taxa antecipada para liberar aumento. Não informe senhas, códigos ou dados bancários por WhatsApp, SMS ou e-mail. Faça qualquer solicitação apenas pelo aplicativo ou site oficial da instituição.' },
     ],
   },
   // === CARTÕES — ARTIGO 2/5 ===
