@@ -346,7 +346,7 @@ export const posts: Post[] = [
 
 <section><h2>7. Cartão de crédito: o que fazer para parar de piorar</h2>
 
-<p>O cartão de crédito é a principal porta de entrada do endividamento no Brasil. Os juros do rotativo estão entre os mais altos do mundo, e pagar apenas o mínimo é uma armadilha que prolonga a dívida por anos.</p>
+<p>O cartão de crédito é a principal porta de entrada do endividamento no Brasil. Os juros do rotativo estão entre os mais altos do mundo, e pagar apenas o mínimo pode prolongar a dívida por anos.</p>
 
 <h3>Ações imediatas para o cartão:</h3>
 
@@ -368,7 +368,7 @@ export const posts: Post[] = [
 
 </section>
 
-<section><h2>8. Empréstimo: quando ajuda e quando vira armadilha</h2>
+<section><h2>8. Empréstimo: quando ajuda e quando exige atenção</h2>
 
 <p>Empréstimo não é bom nem ruim por si só. Tudo depende do contexto: dos juros, do prazo, do motivo e do seu orçamento.</p>
 
@@ -379,7 +379,7 @@ export const posts: Post[] = [
 <li>Quando você já cortou gastos e organizou as finanças</li>
 </ul>
 
-<h3>Quando um empréstimo vira armadilha:</h3>
+<h3>Quando um empréstimo pode se tornar um problema:</h3>
 <ul>
 <li>Quando é usado para manter o mesmo padrão de consumo</li>
 <li>Quando a parcela compromete mais de 30% da renda</li>
@@ -4004,7 +4004,7 @@ export const posts: Post[] = [
 <p>Se o carro atual atende às necessidades e está funcionando, talvez valha a pena mantê-lo por mais alguns anos. Use a <a href='/calculadoras/emprestimo'>calculadora de empréstimo</a> para simular o custo total antes de decidir.</p>
 </section>
 <section><h2>6. Quando a parcela compromete mais de 30% da renda</h2>
-<p>Muitos especialistas mencionam o percentual de 30% da renda líquida como uma referência para o total de compromissos financeiros. Se a parcela do novo empréstimo vai ultrapassar esse patamar, é recomendável reavaliar antes de contratar.</p>
+<p>Uma referência comum é o percentual de 30% da renda líquida como um parâmetro para o total de compromissos financeiros. Se a parcela do novo empréstimo vai ultrapassar esse patamar, é recomendável reavaliar antes de contratar.</p>
 <p>Use nossa <a href='/calculadoras/comprometimento-renda'>calculadora de comprometimento de renda</a> para verificar como o novo crédito impacta seu orçamento.</p>
 </section>
 <section><h2>7. Para &quot;aproveitar uma promoção&quot;</h2>
@@ -4042,7 +4042,7 @@ export const posts: Post[] = [
     faq: [
       { question: 'Qual o único motivo que justifica um empréstimo?', answer: 'Emergências reais (saúde, reparos urgentes na casa) e situações onde o empréstimo gera retorno financeiro (reforma que valoriza o imóvel, curso que aumenta o salário) são exemplos comuns. Ainda assim, é importante avaliar o custo total antes de contratar.' },
       { question: 'Empréstimo para quitar cartão compensa?', answer: 'Pode compensar se a taxa do empréstimo for significativamente menor que a do rotativo do cartão. Use a calculadora de troca de dívidas para comparar as condições antes de decidir.' },
-      { question: 'Qual o percentual ideal de comprometimento da renda?', answer: 'Muitos especialistas mencionam que o total de dívidas não ultrapasse 30% da renda líquida como referência. Acima de 50% é geralmente considerado uma situação de maior risco financeiro.' },
+      { question: 'Qual o percentual ideal de comprometimento da renda?', answer: 'Uma referência comum é que o total de dívidas não ultrapasse 30% da renda líquida. Acima de 50% é geralmente considerado uma situação de maior risco financeiro.' },
       { question: 'Empréstimo para abrir negócio vale a pena?', answer: 'Pode valer se você tem um plano de negócios realista, pesquisa de mercado e projeção de fluxo de caixa. Mas muitos empreendedores preferem começar com recursos próprios para evitar pressão financeira inicial.' },
       { question: 'Como saber se a oferta de empréstimo é boa?', answer: 'Compare o CET (Custo Efetivo Total) entre diferentes instituições. Consulte as taxas médias divulgadas pelo Banco Central para a modalidade desejada. Se a taxa ofertada estiver muito acima da média do mercado, pode ser um sinal de alerta.' },
       { question: 'É seguro contratar empréstimo por canais digitais?', answer: 'Contratar pelos canais oficiais do banco (aplicativo ou site) é seguro desde que você verifique se está no ambiente correto. Desconfie de ofertas recebidas por WhatsApp, SMS ou ligações não solicitadas. Nunca compartilhe senhas, códigos de acesso ou dados bancários com terceiros.' },
