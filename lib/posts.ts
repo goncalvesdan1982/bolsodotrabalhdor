@@ -1862,7 +1862,7 @@ export const posts: Post[] = [
 </section>`,
     faq: [
       { question: 'Devo pagar o financiamento imobiliário primeiro?', answer: 'Geralmente não. O financiamento imobiliário costuma ter juros mais baixos e o imóvel é um bem que tende a se valorizar. Priorize dívidas de juros altos como cartão e cheque especial.' },
-      { question: 'O que acontece se eu parar de pagar todas as dívidas?', answer: 'O nome será negativado, o score cai drasticamente e pode haver cobrança judicial. Negociar é sempre melhor que ignorar.' },
+      { question: 'O que acontece se eu parar de pagar todas as dívidas?', answer: 'O nome será negativado, o score cai drasticamente e pode haver cobrança judicial. Negociar é melhor que ignorar.' },
       { question: 'Vale a pena vender algo para pagar dívida?', answer: 'Pode valer, se for algo que você não usa ou pode substituir. Vender um bem para quitar dívidas de juros altos pode ser uma decisão financeira vantajosa.' },
       { question: 'Como saber a taxa de juros de cada dívida?', answer: 'Consulte o contrato, o aplicativo do banco ou ligue para a central de atendimento. A taxa de juros mensal deve estar visível no extrato ou no contrato.' },
       { question: 'Devo pagar dívidas antigas prescritas?', answer: 'Dívidas com mais de 5 anos não podem mais ser cobradas judicialmente, mas continuam negativadas. Negocie com desconto se precisar limpar o nome para conseguir crédito.' },
@@ -1897,7 +1897,7 @@ export const posts: Post[] = [
 <li>Com o nome negativado, fica difícil obter crédito, alugar imóvel ou contratar serviços.</li>
 <li>Após 5 anos, a dívida prescreve para cobrança judicial, mas o nome continua negativado.</li>
 <li>Dívidas de valor alto podem levar a ação judicial com penhora de bens.</li>
-<li>Negociar é sempre melhor que ignorar — descontos aumentam com o tempo de atraso.</li>
+<li>Negociar é melhor que ignorar — descontos aumentam com o tempo de atraso.</li>
 </ul>
 </section>
 <section><h2>Cronologia do não pagamento</h2>
