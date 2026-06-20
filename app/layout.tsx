@@ -107,7 +107,7 @@ export default function RootLayout({
                   'description': SITE_DESCRIPTION,
                   'logo': {
                     '@type': 'ImageObject',
-                    'url': `${SITE_URL}/logo-bolso-do-trabalhador.png`
+                    'url': `${SITE_URL}/logo-bolso-trabalhador.png`
                   }
                 },
                 {
