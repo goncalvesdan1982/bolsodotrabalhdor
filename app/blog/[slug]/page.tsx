@@ -65,6 +65,17 @@ function estimateReadingTime(html: string): number {
   return Math.max(1, Math.round(words / 200))
 }
 
+function enhanceArticleHtml(html: string): string {
+  let enhanced = html
+
+  enhanced = enhanced.replace(/<table(?!\s*[^>]*class=['"]premium-table-wrapper)/g, '<div class="premium-table-wrapper"><table')
+  enhanced = enhanced.replace(/<\/table>(?!\s*<\/div>)/g, '</table></div>')
+
+  enhanced = enhanced.replace(/<li><input[^>]*type="checkbox"[^>]*disabled[^>]*>\s*([\s\S]*?)<\/li>/g, '<li class="premium-checklist-item"><span class="premium-checkbox" aria-hidden="true"></span><span>$1</span></li>')
+
+  return enhanced
+}
+
 interface PostPageProps {
   params: Promise<{
     slug: string
@@ -262,8 +273,8 @@ export default async function PostPage({ params }: PostPageProps) {
           <TableOfContents />
 
           <div 
-            className="prose prose-slate max-w-none prose-headings:text-primary prose-a:text-secondary prose-strong:text-primary prose-table:w-full prose-table:border-collapse prose-th:border prose-th:border-border prose-th:bg-muted prose-th:px-4 prose-th:py-2 prose-th:text-left prose-th:font-semibold prose-td:border prose-td:border-border prose-td:px-4 prose-td:py-2 prose-tr:even:bg-muted/30 text-foreground/90 leading-relaxed mb-12"
-            dangerouslySetInnerHTML={{ __html: post.content }}
+            className="article-content prose prose-slate max-w-none prose-headings:text-primary prose-a:text-secondary prose-strong:text-primary text-foreground/90 leading-relaxed mb-12"
+            dangerouslySetInnerHTML={{ __html: enhanceArticleHtml(post.content) }}
           />
 
           <div className="mb-12 p-5 bg-muted/30 rounded-xl border border-border/60">

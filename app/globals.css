@@ -131,47 +131,91 @@
   background: transparent;
 }
 
-/* Table styles for blog posts */
-.prose {
-  overflow-x: auto;
-  scrollbar-width: thin;
+/* Premium checklist container styles */
+.article-content ul:has(> .premium-checklist-item) {
+  list-style: none;
+  padding: 0.75rem;
+  margin: 1.5rem 0;
+  border: 1px solid hsl(var(--border));
+  border-radius: 1rem;
+  background: linear-gradient(180deg, hsl(var(--card)), hsl(var(--muted) / 0.25));
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
 }
 
-.prose table {
+.article-content ul:has(> .premium-checklist-item) .premium-checklist-item + .premium-checklist-item {
+  border-top: 1px solid hsl(var(--border) / 0.7);
+}
+
+/* Premium table styles */
+.article-content .premium-table-wrapper {
+  margin: 1.75rem 0;
+  overflow-x: auto;
+  border: 1px solid hsl(var(--border));
+  border-radius: 1rem;
+  background: hsl(var(--card));
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.07);
+}
+
+.article-content .premium-table-wrapper table {
   width: 100%;
+  min-width: 680px;
+  margin: 0;
   border-collapse: separate;
   border-spacing: 0;
-  margin: 1.5rem 0;
-  font-size: 0.875rem;
-  border: 1px solid hsl(var(--border));
-  border-radius: 0.75rem;
-  overflow: hidden;
 }
 
-.prose table thead {
-  background-color: hsl(var(--muted) / 0.8);
+.article-content .premium-table-wrapper thead {
+  background: hsl(var(--muted));
 }
 
-.prose table th {
-  padding: 0.75rem 1rem;
+.article-content .premium-table-wrapper th {
+  padding: 1rem 1.1rem;
   text-align: left;
-  font-weight: 600;
-  font-size: 0.875rem;
+  font-weight: 700;
   border-bottom: 1px solid hsl(var(--border));
 }
 
-.prose table td {
-  padding: 0.75rem 1rem;
-  border-top: 1px solid hsl(var(--border));
-  font-size: 0.875rem;
+.article-content .premium-table-wrapper td {
+  padding: 1rem 1.1rem;
+  vertical-align: top;
+  border-bottom: 1px solid hsl(var(--border));
+  line-height: 1.6;
 }
 
-.prose table tbody tr:nth-child(even) {
-  background-color: hsl(var(--muted) / 0.2);
+.article-content .premium-table-wrapper tbody tr:nth-child(even) {
+  background: hsl(var(--muted) / 0.28);
 }
 
-.prose table tbody tr:hover {
-  background-color: hsl(var(--muted) / 0.4);
+.article-content .premium-table-wrapper tbody tr:hover {
+  background: hsl(var(--muted) / 0.45);
+}
+
+.article-content .premium-table-wrapper tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+/* Premium checklist styles */
+.article-content .premium-checklist-item {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  padding: 0.6rem 0.9rem;
+  border-radius: 0.75rem;
+  line-height: 1.55;
+}
+
+.article-content .premium-checklist-item:hover {
+  background: hsl(var(--muted) / 0.35);
+}
+
+.article-content .premium-checkbox {
+  width: 1.1rem;
+  height: 1.1rem;
+  margin-top: 0.2rem;
+  flex: 0 0 auto;
+  border: 2px solid hsl(var(--primary));
+  border-radius: 0.35rem;
+  background: hsl(var(--background));
 }
 
 /* Hide scrollbar for breadcrumbs */

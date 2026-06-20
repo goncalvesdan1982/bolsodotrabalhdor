@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { List, ChevronDown } from 'lucide-react'
+import { List } from 'lucide-react'
 
 interface TOCItem {
   id: string
@@ -11,7 +11,7 @@ interface TOCItem {
 
 export function TableOfContents() {
   const [headings, setHeadings] = useState<TOCItem[]>([])
-  const [isOpen, setIsOpen] = useState(true)
+  const [isOpen, setIsOpen] = useState(false)
 
   useEffect(() => {
     const article = document.querySelector('article')
@@ -33,38 +33,34 @@ export function TableOfContents() {
   if (headings.length < 2) return null
 
   return (
-    <div className="bg-muted/50 rounded-xl mb-8 border border-border/50">
+    <section className="rounded-xl border border-border bg-card shadow-sm mb-8">
       <button
+        type="button"
         onClick={() => setIsOpen(!isOpen)}
-        className="flex w-full items-center justify-between gap-2 p-4 text-primary font-bold hover:bg-muted/80 transition-colors rounded-xl"
+        className="flex w-full items-center justify-between px-4 py-3 hover:bg-muted/50 transition-colors rounded-xl"
         aria-expanded={isOpen}
-        aria-controls="toc-content"
+        aria-controls="article-toc-content"
       >
-        <span className="flex items-center gap-2">
-          <List className="w-5 h-5" />
-          <span>Índice do Artigo</span>
+        <span className="flex items-center gap-2 font-semibold text-foreground">
+          <List className="w-4 h-4" />
+          <span>Índice do artigo</span>
         </span>
-        <ChevronDown
-          className={`w-5 h-5 transition-transform duration-200 ${
-            isOpen ? '' : '-rotate-90'
-          }`}
-        />
+        <span className="text-sm text-muted-foreground font-medium">
+          {isOpen ? 'Ocultar' : 'Mostrar'}
+        </span>
       </button>
-      <div
-        id="toc-content"
-        className={`overflow-hidden transition-all duration-200 ${
-          isOpen ? 'max-h-[2000px] opacity-100' : 'max-h-0 opacity-0'
-        }`}
-      >
-        <nav className="px-4 pb-4">
+
+      {isOpen && (
+        <nav id="article-toc-content" className="border-t border-border px-4 py-3">
           <ul className="space-y-2">
             {headings.map((heading) => (
-              <li 
-                key={heading.id} 
+              <li
+                key={heading.id}
                 style={{ paddingLeft: `${(heading.level - 2) * 1}rem` }}
               >
-                <a 
+                <a
                   href={`#${heading.id}`}
+                  onClick={() => setIsOpen(false)}
                   className="text-sm text-muted-foreground hover:text-secondary transition-colors"
                 >
                   {heading.text}
@@ -73,7 +69,7 @@ export function TableOfContents() {
             ))}
           </ul>
         </nav>
-      </div>
-    </div>
+      )}
+    </section>
   )
 }
