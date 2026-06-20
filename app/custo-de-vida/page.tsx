@@ -5,7 +5,7 @@ import { Breadcrumbs } from '@/components/breadcrumbs'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
-import { ArrowRight, Home, PiggyBank, TrendingDown, Target, Calculator } from 'lucide-react'
+import { ArrowRight, Home, PiggyBank, TrendingDown, Target, Calculator, HelpCircle } from 'lucide-react'
 import { getPostBySlug } from '@/lib/posts'
 import type { Post } from '@/lib/posts'
 
@@ -31,23 +31,18 @@ export const metadata: Metadata = {
   alternates: { canonical: `${SITE_URL}/custo-de-vida` },
 }
 
-const calculators = [
-  { slug: 'orcamento-familiar', icon: Home, title: 'Orçamento Familiar', desc: 'Simule todos os gastos mensais e veja se sua renda é suficiente para o custo de vida desejado.' },
-  { slug: 'reserva-emergencia', icon: PiggyBank, title: 'Reserva de Emergência', desc: 'Calcule quanto guardar para emergências com base no seu custo de vida mensal.' },
-  { slug: 'economia-mensal', icon: TrendingDown, title: 'Economia Mensal', desc: 'Descubra quanto economizar para atingir metas como comprar um imóvel ou carro.' },
-  { slug: 'meta-financeira', icon: Target, title: 'Meta Financeira', desc: 'Planeje seus objetivos financeiros com base no seu custo de vida real.' },
+const planCards = [
+  { icon: Home, title: 'Aluguel e contas fixas', desc: 'Aluguel, condomínio, água, luz, internet e IPTU são as despesas que mais pesam no orçamento mensal.' },
+  { icon: TrendingDown, title: 'Alimentação e transporte', desc: 'Cozinhar em casa reduz custos. Transporte público é mais econômico que carro na maioria dos casos.' },
+  { icon: PiggyBank, title: 'Reserva para imprevistos', desc: 'Antes de mudar, tenha uma reserva para custos iniciais como caução, mudança e móveis.' },
 ]
 
-const steps = [
-  { href: '/blog/quanto-custa-morar-sozinho', title: 'Quanto custa morar sozinho', desc: 'Guia completo com todos os gastos que você terá ao morar só.' },
-  { href: '/calculadoras/orcamento-familiar', title: 'Simule seu orçamento', desc: 'Use a calculadora para ver se sua renda cobre o custo de vida desejado.' },
-  { href: '/calculadoras/reserva-emergencia', title: 'Reserva de emergência', desc: 'Baseie sua reserva no seu custo de vida real.' },
-  { href: '/calculadoras/economia-mensal', title: 'Metas de economia', desc: 'Planeje quanto economizar para seus objetivos.' },
-  { href: '/blog/metodo-50-30-20-como-aplicar', title: 'Método 50-30-20', desc: 'Aprenda a organizar seu orçamento com base no seu custo de vida.' },
-]
+const articleSlugs = ['quanto-custa-morar-sozinho']
 
-const articleSlugs = [
-  'quanto-custa-morar-sozinho',
+const perguntas = [
+  'Minha renda cobre os gastos fixos com folga?',
+  'Tenho reserva para os custos iniciais da mudança?',
+  'Consigo manter os gastos variáveis sem depender do cartão?',
 ]
 
 export default function CustoDeVidaPage() {
@@ -73,67 +68,38 @@ export default function CustoDeVidaPage() {
           </div>
         </section>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-12">
-          {calculators.map((calc) => {
-            const Icon = calc.icon
-            return (
-              <Link key={calc.slug} href={`/calculadoras/${calc.slug}`} className="group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring rounded-xl">
-                <Card className="h-full border-border/60 transition-all group-hover:shadow-md group-hover:border-amber-300 group-hover:-translate-y-0.5">
-                  <CardHeader className="pb-3">
-                    <div className="w-10 h-10 rounded-lg bg-amber-100 text-amber-600 flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
-                      <Icon className="w-5 h-5" />
-                    </div>
-                    <CardTitle className="text-base group-hover:text-amber-700 transition-colors">{calc.title}</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <CardDescription className="text-sm">{calc.desc}</CardDescription>
-                    <div className="mt-3 flex items-center text-primary text-sm font-medium">
-                      Calcular <ArrowRight className="ml-1.5 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                    </div>
-                  </CardContent>
-                </Card>
-              </Link>
-            )
-          })}
-        </div>
-
         <section className="mb-12">
           <div className="mb-6">
-            <h2 className="text-2xl font-bold text-foreground">Por onde começar</h2>
-            <p className="text-muted-foreground">Entenda seu custo de vida com esta trilha de leitura e ferramentas.</p>
+            <h2 className="text-2xl font-bold text-foreground">Planeje antes de mudar</h2>
+            <p className="text-muted-foreground">Três categorias de gasto para considerar antes de sair da casa dos pais ou mudar de imóvel.</p>
           </div>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {steps.map((step, i) => (
-              <Link key={`${step.href}-${i}`} href={step.href} className="group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring rounded-xl">
-                <Card className="h-full border-border/60 transition-all group-hover:shadow-md group-hover:border-primary/30 group-hover:-translate-y-0.5">
-                  <CardHeader className="pb-2">
-                    <div className="flex items-center gap-3">
-                      <span className="w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center text-sm font-bold shrink-0">{i + 1}</span>
-                      <CardTitle className="text-sm leading-snug group-hover:text-primary transition-colors">{step.title}</CardTitle>
-                    </div>
-                  </CardHeader>
-                  <CardContent>
-                    <CardDescription className="text-xs">{step.desc}</CardDescription>
-                  </CardContent>
-                </Card>
-              </Link>
-            ))}
+          <div className="grid gap-5 md:grid-cols-3">
+            {planCards.map((card) => {
+              const Icon = card.icon
+              return (
+                <div key={card.title} className="border border-border/60 rounded-xl p-5 bg-card">
+                  <div className="w-10 h-10 rounded-lg bg-amber-100 text-amber-600 flex items-center justify-center mb-3">
+                    <Icon className="w-5 h-5" />
+                  </div>
+                  <h3 className="text-sm font-bold text-foreground mb-1">{card.title}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{card.desc}</p>
+                </div>
+              )
+            })}
           </div>
         </section>
 
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-foreground mb-6">Artigos sobre Custo de Vida</h2>
+          <h2 className="text-2xl font-bold text-foreground mb-6">Artigo principal</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {artigos.map((artigo) => (
-              <article key={artigo.slug} className="group flex flex-col h-full border border-border/60 hover:border-amber-300 hover:shadow-md transition-all duration-200 overflow-hidden bg-card rounded-xl focus-within:ring-2 focus-within:ring-ring focus-within:ring-offset-2">
-                <div className="h-1 bg-gradient-to-r from-amber-700 to-amber-500" />
-                <div className="flex flex-col flex-1 p-5 gap-3">
-                  <div className="flex items-center justify-between gap-2">
-                    <span className="inline-block text-xs font-semibold px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-700">Custo de Vida</span>
-                  </div>
-                  <h3 className="text-base font-bold text-foreground leading-snug group-hover:text-amber-700 transition-colors line-clamp-2">{artigo.title}</h3>
+              <article key={artigo.slug} className="group md:col-span-2 flex flex-col h-full border-2 border-amber-200 hover:border-amber-400 hover:shadow-lg transition-all duration-200 overflow-hidden bg-card rounded-xl focus-within:ring-2 focus-within:ring-ring focus-within:ring-offset-2">
+                <div className="h-1.5 bg-gradient-to-r from-amber-700 to-amber-500" />
+                <div className="flex flex-col flex-1 p-6 gap-3">
+                  <span className="inline-block text-xs font-semibold px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-700 w-fit">Custo de Vida</span>
+                  <h3 className="text-lg font-bold text-foreground leading-snug group-hover:text-amber-700 transition-colors line-clamp-2">{artigo.title}</h3>
                   {artigo.description && (
-                    <p className="text-sm text-muted-foreground line-clamp-2 flex-1">{artigo.description}</p>
+                    <p className="text-sm text-muted-foreground line-clamp-2">{artigo.description}</p>
                   )}
                   <Link
                     href={`/blog/${artigo.slug}`}
@@ -147,29 +113,95 @@ export default function CustoDeVidaPage() {
             ))}
             <Link href="/blog/categoria/custo-de-vida" className="group flex flex-col items-center justify-center h-full border border-dashed border-border/60 hover:border-amber-300 hover:shadow-sm transition-all rounded-xl p-6 text-center focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring">
               <span className="text-3xl mb-2 text-amber-600">+</span>
-              <span className="text-sm font-semibold text-amber-700 group-hover:underline">Ver todos os artigos de custo de vida</span>
+              <span className="text-sm font-semibold text-amber-700 group-hover:underline">Ver mais artigos</span>
             </Link>
           </div>
         </section>
 
-        <div className="prose prose-slate max-w-none prose-headings:text-primary prose-a:text-secondary mb-12">
-          <h2>Entendendo o Custo de Vida no Brasil</h2>
-          <p>
-            O custo de vida no Brasil varia significativamente entre regiões e cidades. Morar em São Paulo ou Rio de Janeiro é consideravelmente mais caro que em cidades de médio porte do interior. Além disso, o estilo de vida escolhido impacta diretamente no orçamento mensal.
-          </p>
-          <h2>Principais Gastos Mensais</h2>
-          <p>
-            Os principais gastos de uma pessoa que mora sozinha incluem: aluguel (R$ 800 a R$ 2.500), condomínio (R$ 200 a R$ 600), contas de água, luz e internet (R$ 250 a R$ 500), supermercado (R$ 400 a R$ 800) e plano de saúde (R$ 200 a R$ 500).
-          </p>
-          <h2>Planejamento para Morar Sozinho</h2>
-          <p>
-            Antes de morar sozinho, é importante ter uma reserva para custos iniciais como caução do aluguel (geralmente 3 aluguéis), mobília básica e eletrodomésticos. Uma regra segura é que o aluguel não ultrapasse 30% da sua renda líquida.
-          </p>
-          <h2>Diferenças por Cidade</h2>
-          <p>
-            O custo de vida em capitais como São Paulo e Rio de Janeiro pode ser até 50% maior que em cidades de médio porte. Cidades como Curitiba, Belo Horizonte e Florianópolis oferecem um bom equilíbrio entre qualidade de vida e custo.
-          </p>
-        </div>
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-foreground mb-6">Calculadoras relacionadas</h2>
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            <Link href="/calculadoras/orcamento-familiar" className="group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring rounded-xl">
+              <Card className="h-full border-border/60 transition-all group-hover:shadow-md group-hover:border-amber-300 group-hover:-translate-y-0.5">
+                <CardHeader className="pb-3">
+                  <div className="w-10 h-10 rounded-lg bg-amber-100 text-amber-600 flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
+                    <Home className="w-5 h-5" />
+                  </div>
+                  <CardTitle className="text-sm group-hover:text-amber-700 transition-colors">Orçamento Familiar</CardTitle>
+                  <CardDescription className="text-xs">Simule seus gastos mensais</CardDescription>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <div className="flex items-center text-primary text-xs font-medium">
+                    Simular <ArrowRight className="ml-1 w-3 h-3 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
+            <Link href="/calculadoras/reserva-emergencia" className="group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring rounded-xl">
+              <Card className="h-full border-border/60 transition-all group-hover:shadow-md group-hover:border-amber-300 group-hover:-translate-y-0.5">
+                <CardHeader className="pb-3">
+                  <div className="w-10 h-10 rounded-lg bg-amber-100 text-amber-600 flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
+                    <PiggyBank className="w-5 h-5" />
+                  </div>
+                  <CardTitle className="text-sm group-hover:text-amber-700 transition-colors">Reserva de Emergência</CardTitle>
+                  <CardDescription className="text-xs">Baseie no seu custo de vida</CardDescription>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <div className="flex items-center text-primary text-xs font-medium">
+                    Calcular <ArrowRight className="ml-1 w-3 h-3 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
+            <Link href="/calculadoras/economia-mensal" className="group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring rounded-xl">
+              <Card className="h-full border-border/60 transition-all group-hover:shadow-md group-hover:border-amber-300 group-hover:-translate-y-0.5">
+                <CardHeader className="pb-3">
+                  <div className="w-10 h-10 rounded-lg bg-amber-100 text-amber-600 flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
+                    <TrendingDown className="w-5 h-5" />
+                  </div>
+                  <CardTitle className="text-sm group-hover:text-amber-700 transition-colors">Economia Mensal</CardTitle>
+                  <CardDescription className="text-xs">Planeje metas de economia</CardDescription>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <div className="flex items-center text-primary text-xs font-medium">
+                    Calcular <ArrowRight className="ml-1 w-3 h-3 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
+            <Link href="/calculadoras/meta-financeira" className="group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring rounded-xl">
+              <Card className="h-full border-border/60 transition-all group-hover:shadow-md group-hover:border-amber-300 group-hover:-translate-y-0.5">
+                <CardHeader className="pb-3">
+                  <div className="w-10 h-10 rounded-lg bg-amber-100 text-amber-600 flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
+                    <Target className="w-5 h-5" />
+                  </div>
+                  <CardTitle className="text-sm group-hover:text-amber-700 transition-colors">Meta Financeira</CardTitle>
+                  <CardDescription className="text-xs">Planeje objetivos financeiros</CardDescription>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <div className="flex items-center text-primary text-xs font-medium">
+                    Planejar <ArrowRight className="ml-1 w-3 h-3 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
+          </div>
+        </section>
+
+        <section className="mb-12 border border-amber-200 bg-amber-50/40 rounded-2xl p-6 md:p-8">
+          <div className="flex items-center gap-3 mb-5">
+            <HelpCircle className="w-6 h-6 text-amber-600 shrink-0" />
+            <h2 className="text-xl font-bold text-foreground">Perguntas para responder antes de morar sozinho</h2>
+          </div>
+          <div className="grid gap-4">
+            {perguntas.map((pergunta, i) => (
+              <div key={i} className="flex items-start gap-4 p-4 bg-white rounded-xl border border-amber-200/60 shadow-sm">
+                <span className="w-7 h-7 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center text-sm font-bold shrink-0">{i + 1}</span>
+                <p className="text-sm text-foreground leading-relaxed">{pergunta}</p>
+              </div>
+            ))}
+          </div>
+        </section>
 
         <section className="rounded-3xl border bg-gradient-to-br from-primary to-primary/90 p-8 md:p-12 text-center text-primary-foreground shadow-lg">
           <Calculator className="w-10 h-10 mx-auto mb-4 text-secondary" />

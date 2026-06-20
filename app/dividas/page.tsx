@@ -5,7 +5,7 @@ import { Breadcrumbs } from '@/components/breadcrumbs'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
-import { ArrowRight, AlertTriangle, TrendingDown, FileText, Calculator } from 'lucide-react'
+import { ArrowRight, AlertTriangle, ClipboardList, TrendingDown, CreditCard, Calculator } from 'lucide-react'
 import { getPostBySlug } from '@/lib/posts'
 import type { Post } from '@/lib/posts'
 
@@ -31,18 +31,11 @@ export const metadata: Metadata = {
   alternates: { canonical: `${SITE_URL}/dividas` },
 }
 
-const calculators = [
-  { slug: 'quitacao-dividas', icon: TrendingDown, title: 'Quitação de Dívidas', desc: 'Simule quanto tempo leva para quitar dívidas com diferentes estratégias de pagamento.' },
-  { slug: 'comprometimento-renda', icon: Calculator, title: 'Comprometimento de Renda', desc: 'Descubra quanto da sua renda está comprometido com dívidas e se você precisa renegociar.' },
-  { slug: 'troca-dividas', icon: FileText, title: 'Troca de Dívidas', desc: 'Compare cenários e veja se vale a pena trocar uma dívida cara por outra com juros menores.' },
-]
-
-const steps = [
-  { href: '/blog/como-sair-das-dividas-guia-completo', title: 'Guia completo para sair das dívidas', desc: 'O passo a passo essencial para recuperar o controle financeiro.' },
-  { href: '/blog/qual-divida-devo-pagar-primeiro', title: 'Qual dívida pagar primeiro?', desc: 'Entenda os métodos avalanche e bola de neve para priorizar suas dívidas.' },
-  { href: '/blog/como-negociar-dividas-diretamente-com-banco', title: 'Negociar dívidas com o banco', desc: 'Estratégias práticas para conseguir descontos e condições melhores.' },
-  { href: '/blog/vale-a-pena-trocar-divida-cartao-por-emprestimo', title: 'Trocar dívida por empréstimo?', desc: 'Saiba quando vale a pena e quando é melhor evitar essa troca.' },
-  { href: '/blog/o-que-acontece-se-parar-de-pagar-cartao', title: 'E se eu parar de pagar o cartão?', desc: 'Entenda as consequências e o que fazer antes de tomar essa decisão.' },
+const planSteps = [
+  { step: '1', title: 'Listar todas as dívidas', desc: 'Anote credor, valor, taxa de juros e tempo de atraso. Sem essa visão completa, não dá para planejar.', href: '/blog/como-sair-das-dividas-guia-completo' },
+  { step: '2', title: 'Separar urgentes e caras', desc: 'Dívidas com juros altos (rotativo, cheque especial) e contas essenciais (água, luz, aluguel) vêm primeiro.', href: '/blog/qual-divida-devo-pagar-primeiro' },
+  { step: '3', title: 'Negociar com credores', desc: 'Peça desconto à vista ou parcelamento que caiba no orçamento. A maioria dos bancos prefere receber menos do que não receber.', href: '/blog/como-negociar-dividas-diretamente-com-banco' },
+  { step: '4', title: 'Acompanhar o orçamento', desc: 'Depois de negociar, monitore os gastos para não criar novas dívidas. Um orçamento simples já ajuda.', href: '/calculadoras/orcamento-familiar' },
 ]
 
 const articleSlugs = [
@@ -52,6 +45,12 @@ const articleSlugs = [
   'vale-a-pena-trocar-divida-cartao-por-emprestimo',
   'o-que-acontece-se-parar-de-pagar-cartao',
   'como-montar-plano-sair-das-dividas',
+]
+
+const cartaoLinks = [
+  { href: '/blog/como-evitar-juros-rotativo', label: 'Como evitar os juros do rotativo' },
+  { href: '/blog/fatura-parcelada-compensa', label: 'Fatura parcelada compensa?' },
+  { href: '/blog/o-que-fazer-quando-limite-cartao-acaba', label: 'O que fazer quando o limite acaba' },
 ]
 
 export default function DividasPage() {
@@ -77,51 +76,81 @@ export default function DividasPage() {
           </div>
         </section>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-12">
-          {calculators.map((calc) => {
-            const Icon = calc.icon
-            return (
-              <Link key={calc.slug} href={`/calculadoras/${calc.slug}`} className="group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring rounded-xl">
-                <Card className="h-full border-border/60 transition-all group-hover:shadow-md group-hover:border-red-300 group-hover:-translate-y-0.5">
-                  <CardHeader className="pb-3">
-                    <div className="w-10 h-10 rounded-lg bg-red-100 text-red-600 flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
-                      <Icon className="w-5 h-5" />
-                    </div>
-                    <CardTitle className="text-base group-hover:text-red-700 transition-colors">{calc.title}</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <CardDescription className="text-sm">{calc.desc}</CardDescription>
-                    <div className="mt-3 flex items-center text-primary text-sm font-medium">
-                      Calcular <ArrowRight className="ml-1.5 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                    </div>
-                  </CardContent>
-                </Card>
-              </Link>
-            )
-          })}
-        </div>
-
         <section className="mb-12">
           <div className="mb-6">
-            <h2 className="text-2xl font-bold text-foreground">Por onde começar</h2>
-            <p className="text-muted-foreground">Uma trilha simples para organizar suas finanças e sair das dívidas.</p>
+            <h2 className="text-2xl font-bold text-foreground">Plano de ação em 4 etapas</h2>
+            <p className="text-muted-foreground">Um passo a passo direto para organizar suas dívidas e começar a resolver.</p>
           </div>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {steps.map((step, i) => (
-              <Link key={step.href} href={step.href} className="group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring rounded-xl">
-                <Card className="h-full border-border/60 transition-all group-hover:shadow-md group-hover:border-primary/30 group-hover:-translate-y-0.5">
+          <div className="grid gap-5 md:grid-cols-2">
+            {planSteps.map((item) => (
+              <Link key={item.step} href={item.href} className="group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring rounded-xl">
+                <Card className="h-full border-border/60 transition-all group-hover:shadow-md group-hover:border-red-300 group-hover:-translate-y-0.5">
                   <CardHeader className="pb-2">
                     <div className="flex items-center gap-3">
-                      <span className="w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center text-sm font-bold shrink-0">{i + 1}</span>
-                      <CardTitle className="text-sm leading-snug group-hover:text-primary transition-colors">{step.title}</CardTitle>
+                      <span className="w-9 h-9 rounded-full bg-red-100 text-red-700 flex items-center justify-center text-base font-bold shrink-0">{item.step}</span>
+                      <CardTitle className="text-base leading-snug group-hover:text-red-700 transition-colors">{item.title}</CardTitle>
                     </div>
                   </CardHeader>
                   <CardContent>
-                    <CardDescription className="text-xs">{step.desc}</CardDescription>
+                    <CardDescription className="text-xs">{item.desc}</CardDescription>
                   </CardContent>
                 </Card>
               </Link>
             ))}
+          </div>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-foreground mb-6">Calculadoras para ajudar no plano</h2>
+          <div className="grid gap-5 md:grid-cols-3">
+            <Link href="/calculadoras/quitacao-dividas" className="group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring rounded-xl">
+              <Card className="border-border/60 h-full transition-all group-hover:shadow-md group-hover:border-red-300 group-hover:-translate-y-0.5">
+                <CardHeader className="pb-3">
+                  <div className="w-10 h-10 rounded-lg bg-red-100 text-red-600 flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
+                    <TrendingDown className="w-5 h-5" />
+                  </div>
+                  <CardTitle className="text-base group-hover:text-red-700 transition-colors">Quitação de Dívidas</CardTitle>
+                  <CardDescription className="text-sm">Simule quanto tempo leva para quitar</CardDescription>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <div className="flex items-center text-primary text-sm font-medium">
+                    Calcular <ArrowRight className="ml-1.5 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
+            <Link href="/calculadoras/comprometimento-renda" className="group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring rounded-xl">
+              <Card className="border-border/60 h-full transition-all group-hover:shadow-md group-hover:border-red-300 group-hover:-translate-y-0.5">
+                <CardHeader className="pb-3">
+                  <div className="w-10 h-10 rounded-lg bg-red-100 text-red-600 flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
+                    <Calculator className="w-5 h-5" />
+                  </div>
+                  <CardTitle className="text-base group-hover:text-red-700 transition-colors">Comprometimento de Renda</CardTitle>
+                  <CardDescription className="text-sm">Veja quanto da sua renda está comprometido</CardDescription>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <div className="flex items-center text-primary text-sm font-medium">
+                    Calcular <ArrowRight className="ml-1.5 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
+            <Link href="/calculadoras/troca-dividas" className="group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring rounded-xl">
+              <Card className="border-border/60 h-full transition-all group-hover:shadow-md group-hover:border-red-300 group-hover:-translate-y-0.5">
+                <CardHeader className="pb-3">
+                  <div className="w-10 h-10 rounded-lg bg-red-100 text-red-600 flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
+                    <ClipboardList className="w-5 h-5" />
+                  </div>
+                  <CardTitle className="text-base group-hover:text-red-700 transition-colors">Troca de Dívidas</CardTitle>
+                  <CardDescription className="text-sm">Veja se vale trocar uma dívida cara por outra</CardDescription>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <div className="flex items-center text-primary text-sm font-medium">
+                    Comparar <ArrowRight className="ml-1.5 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
           </div>
         </section>
 
@@ -132,9 +161,7 @@ export default function DividasPage() {
               <article key={artigo.slug} className="group flex flex-col h-full border border-border/60 hover:border-red-300 hover:shadow-md transition-all duration-200 overflow-hidden bg-card rounded-xl focus-within:ring-2 focus-within:ring-ring focus-within:ring-offset-2">
                 <div className="h-1 bg-gradient-to-r from-red-700 to-red-500" />
                 <div className="flex flex-col flex-1 p-5 gap-3">
-                  <div className="flex items-center justify-between gap-2">
-                    <span className="inline-block text-xs font-semibold px-2.5 py-0.5 rounded-full bg-red-100 text-red-700">Dívidas</span>
-                  </div>
+                  <span className="inline-block text-xs font-semibold px-2.5 py-0.5 rounded-full bg-red-100 text-red-700 w-fit">Dívidas</span>
                   <h3 className="text-base font-bold text-foreground leading-snug group-hover:text-red-700 transition-colors line-clamp-2">{artigo.title}</h3>
                   {artigo.description && (
                     <p className="text-sm text-muted-foreground line-clamp-2 flex-1">{artigo.description}</p>
@@ -152,23 +179,25 @@ export default function DividasPage() {
           </div>
         </section>
 
-        <div className="prose prose-slate max-w-none prose-headings:text-primary prose-a:text-secondary mb-12">
-          <h2>Entendendo as Dívidas</h2>
-          <p>
-            As dívidas são uma realidade para milhões de brasileiros. Seja por emergências médicas, desemprego, falta de planejamento ou simplesmente imprevistos da vida, estar endividado não é o fim do mundo. O importante é ter um plano para resolver a situação.
-          </p>
-          <p>
-            O primeiro passo é entender que tipo de dívida você tem. Dívidas de cartão de crédito rotativo e cheque especial são as mais caras, com juros que podem ultrapassar 400% ao ano. Já dívidas de financiamento imobiliário ou consignado têm juros muito mais baixos e podem ser administradas com mais tranquilidade.
-          </p>
-          <h2>Estratégias para Sair das Dívidas</h2>
-          <p>
-            Existem diferentes estratégias para sair das dívidas. A mais recomendada é listar todas as dívidas, priorizar as mais caras, negociar com os credores e criar um orçamento realista. Nossas calculadoras foram feitas para ajudar em cada etapa desse processo.
-          </p>
-          <h2>Negociação com Credores</h2>
-          <p>
-            A maioria dos bancos e empresas prefere receber um valor menor do que não receber nada. Por isso, negociar é sempre uma opção válida. Plataformas como Serasa Limpa Nome e Acordo OK oferecem descontos significativos para pagamento à vista ou parcelado.
-          </p>
-        </div>
+        <section className="mb-12 border border-border/60 rounded-2xl p-6 md:p-8 bg-card">
+          <div className="flex items-center gap-3 mb-5">
+            <CreditCard className="w-6 h-6 text-red-600 shrink-0" />
+            <h2 className="text-xl font-bold text-foreground">Se você está com dívida no cartão</h2>
+          </div>
+          <p className="text-sm text-muted-foreground mb-5">O cartão de crédito é a principal porta de entrada do endividamento. Veja artigos específicos para lidar com essa situação.</p>
+          <div className="grid gap-3">
+            {cartaoLinks.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="flex items-center justify-between p-4 bg-red-50/50 hover:bg-red-100/50 rounded-xl border border-red-100 transition-all group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
+              >
+                <span className="text-sm font-medium text-foreground group-hover:text-red-700 transition-colors">{item.label}</span>
+                <ArrowRight className="w-4 h-4 text-red-600 group-hover:translate-x-1 transition-transform shrink-0" />
+              </Link>
+            ))}
+          </div>
+        </section>
 
         <section className="rounded-3xl border bg-gradient-to-br from-primary to-primary/90 p-8 md:p-12 text-center text-primary-foreground shadow-lg">
           <Calculator className="w-10 h-10 mx-auto mb-4 text-secondary" />

@@ -5,7 +5,7 @@ import { Breadcrumbs } from '@/components/breadcrumbs'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
-import { ArrowRight, CreditCard, Percent, TrendingUp, Calculator } from 'lucide-react'
+import { ArrowRight, CreditCard, FileText, AlertTriangle, TrendingUp, Percent, Calculator } from 'lucide-react'
 import { getPostBySlug } from '@/lib/posts'
 import type { Post } from '@/lib/posts'
 
@@ -31,18 +31,10 @@ export const metadata: Metadata = {
   alternates: { canonical: `${SITE_URL}/cartoes` },
 }
 
-const calculators = [
-  { slug: 'parcelas', icon: Percent, title: 'Calculadora de Parcelas', desc: 'Veja o valor real das parcelas com juros e entenda quanto você pagará no final.' },
-  { slug: 'juros-compostos', icon: TrendingUp, title: 'Juros Compostos', desc: 'Entenda o efeito dos juros compostos no rotativo do cartão e veja como evitar dívidas.' },
-  { slug: 'comprometimento-renda', icon: Calculator, title: 'Comprometimento de Renda', desc: 'Descubra se o limite do seu cartão está compatível com sua renda mensal.' },
-]
-
-const steps = [
-  { href: '/blog/cartao-sem-anuidade-vale-a-pena', title: 'Cartão sem anuidade vale a pena?', desc: 'Entenda se vale pagar taxa de anuidade ou se os cartões gratuitos atendem melhor.' },
-  { href: '/blog/melhores-cartoes-score-baixo', title: 'Melhores cartões para score baixo', desc: 'Opções reais de cartão para quem está negativado ou com score baixo.' },
-  { href: '/blog/como-evitar-juros-rotativo', title: 'Como evitar juros rotativo', desc: 'A armadilha mais cara do cartão e como escapar dela.' },
-  { href: '/blog/fatura-parcelada-compensa', title: 'Fatura parcelada compensa?', desc: 'Quando vale a pena parcelar a fatura e quando é melhor evitar.' },
-  { href: '/blog/como-aumentar-limite-cartao-credito', title: 'Como aumentar o limite', desc: 'Estratégias práticas para conquistar mais limite no cartão.' },
+const beforeCards = [
+  { icon: FileText, title: 'Entenda a fatura', desc: 'Saiba ler cada item da fatura, identificar cobranças indevidas e evitar juros por atraso.' },
+  { icon: Percent, title: 'Compare custos', desc: 'Anuidade, taxas de saque, juros do rotativo e do parcelamento — compare antes de escolher.' },
+  { icon: AlertTriangle, title: 'Evite o rotativo', desc: 'Os juros do crédito rotativo estão entre os mais altos do mercado. Saiba como não cair nessa armadilha.' },
 ]
 
 const articleSlugs = [
@@ -52,6 +44,14 @@ const articleSlugs = [
   'como-aumentar-limite-cartao-credito',
   'fatura-parcelada-compensa',
   'o-que-fazer-quando-limite-cartao-acaba',
+]
+
+const situacoes = [
+  { href: '/blog/melhores-cartoes-score-baixo', label: 'Score baixo: qual cartão escolher?' },
+  { href: '/blog/o-que-fazer-quando-limite-cartao-acaba', label: 'Limite do cartão acabou, e agora?' },
+  { href: '/blog/fatura-parcelada-compensa', label: 'Compensa parcelar a fatura?' },
+  { href: '/blog/como-aumentar-limite-cartao-credito', label: 'Como aumentar o limite do cartão' },
+  { href: '/blog/cartao-sem-anuidade-vale-a-pena', label: 'Cartão sem anuidade vale a pena?' },
 ]
 
 export default function CartoesPage() {
@@ -77,51 +77,24 @@ export default function CartoesPage() {
           </div>
         </section>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-12">
-          {calculators.map((calc) => {
-            const Icon = calc.icon
-            return (
-              <Link key={calc.slug} href={`/calculadoras/${calc.slug}`} className="group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring rounded-xl">
-                <Card className="h-full border-border/60 transition-all group-hover:shadow-md group-hover:border-blue-300 group-hover:-translate-y-0.5">
-                  <CardHeader className="pb-3">
-                    <div className="w-10 h-10 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
-                      <Icon className="w-5 h-5" />
-                    </div>
-                    <CardTitle className="text-base group-hover:text-blue-700 transition-colors">{calc.title}</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <CardDescription className="text-sm">{calc.desc}</CardDescription>
-                    <div className="mt-3 flex items-center text-primary text-sm font-medium">
-                      Calcular <ArrowRight className="ml-1.5 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                    </div>
-                  </CardContent>
-                </Card>
-              </Link>
-            )
-          })}
-        </div>
-
         <section className="mb-12">
           <div className="mb-6">
-            <h2 className="text-2xl font-bold text-foreground">Por onde começar</h2>
-            <p className="text-muted-foreground">Uma trilha simples para ler os guias na ordem certa.</p>
+            <h2 className="text-2xl font-bold text-foreground">Antes de pedir ou usar um cartão</h2>
+            <p className="text-muted-foreground">Três pontos essenciais para usar o cartão com segurança e evitar dívidas.</p>
           </div>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {steps.map((step, i) => (
-              <Link key={step.href} href={step.href} className="group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring rounded-xl">
-                <Card className="h-full border-border/60 transition-all group-hover:shadow-md group-hover:border-primary/30 group-hover:-translate-y-0.5">
-                  <CardHeader className="pb-2">
-                    <div className="flex items-center gap-3">
-                      <span className="w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center text-sm font-bold shrink-0">{i + 1}</span>
-                      <CardTitle className="text-sm leading-snug group-hover:text-primary transition-colors">{step.title}</CardTitle>
-                    </div>
-                  </CardHeader>
-                  <CardContent>
-                    <CardDescription className="text-xs">{step.desc}</CardDescription>
-                  </CardContent>
-                </Card>
-              </Link>
-            ))}
+          <div className="grid gap-5 md:grid-cols-3">
+            {beforeCards.map((card) => {
+              const Icon = card.icon
+              return (
+                <div key={card.title} className="border border-border/60 rounded-xl p-5 bg-card">
+                  <div className="w-10 h-10 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center mb-3">
+                    <Icon className="w-5 h-5" />
+                  </div>
+                  <h3 className="text-sm font-bold text-foreground mb-1">{card.title}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{card.desc}</p>
+                </div>
+              )
+            })}
           </div>
         </section>
 
@@ -132,9 +105,7 @@ export default function CartoesPage() {
               <article key={artigo.slug} className="group flex flex-col h-full border border-border/60 hover:border-blue-300 hover:shadow-md transition-all duration-200 overflow-hidden bg-card rounded-xl focus-within:ring-2 focus-within:ring-ring focus-within:ring-offset-2">
                 <div className="h-1 bg-gradient-to-r from-blue-700 to-blue-500" />
                 <div className="flex flex-col flex-1 p-5 gap-3">
-                  <div className="flex items-center justify-between gap-2">
-                    <span className="inline-block text-xs font-semibold px-2.5 py-0.5 rounded-full bg-blue-100 text-blue-700">Cartões</span>
-                  </div>
+                  <span className="inline-block text-xs font-semibold px-2.5 py-0.5 rounded-full bg-blue-100 text-blue-700 w-fit">Cartões</span>
                   <h3 className="text-base font-bold text-foreground leading-snug group-hover:text-blue-700 transition-colors line-clamp-2">{artigo.title}</h3>
                   {artigo.description && (
                     <p className="text-sm text-muted-foreground line-clamp-2 flex-1">{artigo.description}</p>
@@ -152,23 +123,75 @@ export default function CartoesPage() {
           </div>
         </section>
 
-        <div className="prose prose-slate max-w-none prose-headings:text-primary prose-a:text-secondary mb-12">
-          <h2>Como Escolher o Melhor Cartão de Crédito</h2>
-          <p>
-            Escolher o cartão de crédito ideal depende do seu perfil de consumo, renda e objetivos financeiros. Para quem tem score baixo, existem opções como cartões de fintechs (Nubank, Inter, Mercado Pago) que costumam ser mais flexíveis na aprovação.
-          </p>
-          <p>
-            Cartões sem anuidade são a melhor opção para a maioria das pessoas. Bancos digitais como Nubank, Inter, C6 Bank e PagBank oferecem cartões sem taxa de anuidade e com aplicativos completos para controle financeiro.
-          </p>
-          <h2>Como Aumentar o Limite do Cartão</h2>
-          <p>
-            Para aumentar o limite do seu cartão de crédito, use o cartão regularmente, pague a fatura integralmente antes do vencimento e mantenha um bom relacionamento com a instituição. O aumento costuma vir após 6 meses de uso consciente.
-          </p>
-          <h2>Dicas para Usar o Cartão com Inteligência</h2>
-          <p>
-            Use o cartão para compras do dia a dia e sempre pague a fatura integralmente. Evite o crédito rotativo, que tem os juros mais altos do mercado. Mantenha a utilização do limite em até 30% para não prejudicar seu score de crédito.
-          </p>
-        </div>
+        <section className="mb-12 border border-border/60 rounded-2xl p-6 md:p-8 bg-card">
+          <h2 className="text-xl font-bold text-foreground mb-5">Situações comuns com cartão</h2>
+          <div className="grid gap-3 sm:grid-cols-2">
+            {situacoes.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="flex items-center justify-between p-4 bg-blue-50/50 hover:bg-blue-100/50 rounded-xl border border-blue-100 transition-all group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
+              >
+                <span className="text-sm font-medium text-foreground group-hover:text-blue-700 transition-colors">{item.label}</span>
+                <ArrowRight className="w-4 h-4 text-blue-600 group-hover:translate-x-1 transition-transform shrink-0" />
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-foreground mb-6">Calculadoras relacionadas</h2>
+          <div className="grid gap-5 md:grid-cols-3">
+            <Link href="/calculadoras/parcelas" className="group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring rounded-xl">
+              <Card className="border-border/60 h-full transition-all group-hover:shadow-md group-hover:border-blue-300 group-hover:-translate-y-0.5">
+                <CardHeader className="pb-3">
+                  <div className="w-10 h-10 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
+                    <Percent className="w-5 h-5" />
+                  </div>
+                  <CardTitle className="text-base group-hover:text-blue-700 transition-colors">Calculadora de Parcelas</CardTitle>
+                  <CardDescription className="text-sm">Veja o valor real das parcelas com juros</CardDescription>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <div className="flex items-center text-primary text-sm font-medium">
+                    Calcular <ArrowRight className="ml-1.5 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
+            <Link href="/calculadoras/juros-compostos" className="group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring rounded-xl">
+              <Card className="border-border/60 h-full transition-all group-hover:shadow-md group-hover:border-blue-300 group-hover:-translate-y-0.5">
+                <CardHeader className="pb-3">
+                  <div className="w-10 h-10 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
+                    <TrendingUp className="w-5 h-5" />
+                  </div>
+                  <CardTitle className="text-base group-hover:text-blue-700 transition-colors">Juros Compostos</CardTitle>
+                  <CardDescription className="text-sm">Entenda o efeito dos juros no rotativo</CardDescription>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <div className="flex items-center text-primary text-sm font-medium">
+                    Calcular <ArrowRight className="ml-1.5 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
+            <Link href="/calculadoras/comprometimento-renda" className="group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring rounded-xl">
+              <Card className="border-border/60 h-full transition-all group-hover:shadow-md group-hover:border-blue-300 group-hover:-translate-y-0.5">
+                <CardHeader className="pb-3">
+                  <div className="w-10 h-10 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
+                    <Calculator className="w-5 h-5" />
+                  </div>
+                  <CardTitle className="text-base group-hover:text-blue-700 transition-colors">Comprometimento de Renda</CardTitle>
+                  <CardDescription className="text-sm">Descubra o limite ideal para seu cartão</CardDescription>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <div className="flex items-center text-primary text-sm font-medium">
+                    Calcular <ArrowRight className="ml-1.5 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
+          </div>
+        </section>
 
         <section className="rounded-3xl border bg-gradient-to-br from-primary to-primary/90 p-8 md:p-12 text-center text-primary-foreground shadow-lg">
           <Calculator className="w-10 h-10 mx-auto mb-4 text-secondary" />

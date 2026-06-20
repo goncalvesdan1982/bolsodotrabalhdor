@@ -5,7 +5,7 @@ import { Breadcrumbs } from '@/components/breadcrumbs'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
-import { ArrowRight, Banknote, Building, Repeat, Calculator } from 'lucide-react'
+import { ArrowRight, Banknote, AlertTriangle, Search, Calculator } from 'lucide-react'
 import { getPostBySlug } from '@/lib/posts'
 import type { Post } from '@/lib/posts'
 
@@ -31,18 +31,18 @@ export const metadata: Metadata = {
   alternates: { canonical: `${SITE_URL}/emprestimos` },
 }
 
-const calculators = [
-  { slug: 'emprestimo', icon: Banknote, title: 'Simulação de Empréstimo', desc: 'Calcule parcelas, juros totais e CET para qualquer modalidade de empréstimo.' },
-  { slug: 'financiamento', icon: Building, title: 'Simulação de Financiamento', desc: 'Simule financiamentos imobiliários e de veículos com taxa e prazo flexíveis.' },
-  { slug: 'troca-dividas', icon: Repeat, title: 'Troca de Dívidas', desc: 'Veja se vale a pena trocar um empréstimo caro por outro com juros mais baixos.' },
+const warningSigns = [
+  { icon: AlertTriangle, title: 'Parcela cabe, mas custo total é alto', desc: 'Uma parcela baixa pode esconder um prazo longo que dobra o valor total pago no final.' },
+  { icon: Search, title: 'Taxa menor não significa menor custo', desc: 'Sempre compare o CET (Custo Efetivo Total), que inclui juros, taxas, seguros e impostos.' },
+  { icon: AlertTriangle, title: 'Cuidado com taxa antecipada', desc: 'Instituições sérias não cobram taxa para liberar crédito. Desconfie de qualquer cobrança antecipada.' },
 ]
 
 const steps = [
-  { href: '/blog/emprestimo-pessoal-ou-consignado', title: 'Pessoal ou consignado?', desc: 'Entenda as diferenças entre as duas modalidades e qual se encaixa no seu perfil.' },
-  { href: '/blog/como-comparar-emprestimos-corretamente', title: 'Como comparar empréstimos', desc: 'Aprenda a analisar taxas, CET e prazos antes de contratar.' },
-  { href: '/blog/o-que-e-cet-e-por-que-importa', title: 'O que é CET?', desc: 'O indicador mais importante na hora de contratar um empréstimo.' },
-  { href: '/blog/como-calcular-custo-real-emprestimo', title: 'Custo real do empréstimo', desc: 'Veja quanto você vai pagar de fato ao final do contrato.' },
-  { href: '/blog/quando-nao-vale-a-pena-fazer-emprestimo', title: 'Quando NÃO fazer empréstimo', desc: 'Situações em que o crédito pode trazer mais riscos que benefícios.' },
+  { href: '/blog/o-que-e-cet-e-por-que-importa', title: 'Entender o CET', desc: 'O indicador mais importante na hora de contratar um empréstimo.' },
+  { href: '/blog/como-comparar-emprestimos-corretamente', title: 'Comparar empréstimos', desc: 'Aprenda a analisar taxas, CET e prazos antes de contratar.' },
+  { href: '/blog/como-calcular-custo-real-emprestimo', title: 'Calcular custo real', desc: 'Veja quanto você vai pagar de fato ao final do contrato.' },
+  { href: '/blog/emprestimo-pessoal-ou-consignado', title: 'Escolher modalidade', desc: 'Pessoal ou consignado? Entenda as diferenças e qual se encaixa no seu perfil.' },
+  { href: '/blog/quando-nao-vale-a-pena-fazer-emprestimo', title: 'Avaliar se vale a pena', desc: 'Situações em que o crédito pode trazer mais riscos que benefícios.' },
 ]
 
 const articleSlugs = [
@@ -77,43 +77,22 @@ export default function EmprestimosPage() {
           </div>
         </section>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-12">
-          {calculators.map((calc) => {
-            const Icon = calc.icon
-            return (
-              <Link key={calc.slug} href={`/calculadoras/${calc.slug}`} className="group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring rounded-xl">
-                <Card className="h-full border-border/60 transition-all group-hover:shadow-md group-hover:border-green-300 group-hover:-translate-y-0.5">
-                  <CardHeader className="pb-3">
-                    <div className="w-10 h-10 rounded-lg bg-green-100 text-green-600 flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
-                      <Icon className="w-5 h-5" />
-                    </div>
-                    <CardTitle className="text-base group-hover:text-green-700 transition-colors">{calc.title}</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <CardDescription className="text-sm">{calc.desc}</CardDescription>
-                    <div className="mt-3 flex items-center text-primary text-sm font-medium">
-                      Calcular <ArrowRight className="ml-1.5 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                    </div>
-                  </CardContent>
-                </Card>
-              </Link>
-            )
-          })}
-        </div>
-
-        <section className="mb-12">
-          <div className="mb-6">
-            <h2 className="text-2xl font-bold text-foreground">Por onde começar</h2>
-            <p className="text-muted-foreground">Uma trilha simples para tomar a melhor decisão sobre empréstimos.</p>
+        <section className="mb-12 border border-green-200 bg-green-50/40 rounded-2xl p-6 md:p-8">
+          <div className="flex items-center gap-3 mb-5">
+            <Search className="w-6 h-6 text-green-700 shrink-0" />
+            <h2 className="text-xl font-bold text-foreground">Compare antes de contratar</h2>
           </div>
+          <p className="text-sm text-muted-foreground mb-6 max-w-2xl">
+            Antes de contratar qualquer empréstimo, siga esta ordem de leitura para tomar uma decisão informada. Pular etapas pode custar caro.
+          </p>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {steps.map((step, i) => (
               <Link key={step.href} href={step.href} className="group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring rounded-xl">
-                <Card className="h-full border-border/60 transition-all group-hover:shadow-md group-hover:border-primary/30 group-hover:-translate-y-0.5">
+                <Card className="h-full border-green-200/60 bg-white transition-all group-hover:shadow-md group-hover:border-green-400 group-hover:-translate-y-0.5">
                   <CardHeader className="pb-2">
                     <div className="flex items-center gap-3">
-                      <span className="w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center text-sm font-bold shrink-0">{i + 1}</span>
-                      <CardTitle className="text-sm leading-snug group-hover:text-primary transition-colors">{step.title}</CardTitle>
+                      <span className="w-8 h-8 rounded-full bg-green-100 text-green-700 flex items-center justify-center text-sm font-bold shrink-0">{i + 1}</span>
+                      <CardTitle className="text-sm leading-snug group-hover:text-green-700 transition-colors">{step.title}</CardTitle>
                     </div>
                   </CardHeader>
                   <CardContent>
@@ -125,6 +104,27 @@ export default function EmprestimosPage() {
           </div>
         </section>
 
+        <section className="mb-12 border border-red-200 bg-red-50/40 rounded-2xl p-6 md:p-8">
+          <div className="flex items-center gap-3 mb-5">
+            <AlertTriangle className="w-6 h-6 text-red-600 shrink-0" />
+            <h2 className="text-xl font-bold text-foreground">Sinais de atenção</h2>
+          </div>
+          <div className="grid gap-4 md:grid-cols-3">
+            {warningSigns.map((sign) => {
+              const Icon = sign.icon
+              return (
+                <div key={sign.title} className="bg-white rounded-xl p-5 border border-red-200/60 shadow-sm">
+                  <div className="w-8 h-8 rounded-lg bg-red-100 text-red-600 flex items-center justify-center mb-3">
+                    <Icon className="w-4 h-4" />
+                  </div>
+                  <h3 className="text-sm font-bold text-foreground mb-1">{sign.title}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{sign.desc}</p>
+                </div>
+              )
+            })}
+          </div>
+        </section>
+
         <section className="mb-12">
           <h2 className="text-2xl font-bold text-foreground mb-6">Artigos sobre Empréstimos</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -132,9 +132,7 @@ export default function EmprestimosPage() {
               <article key={artigo.slug} className="group flex flex-col h-full border border-border/60 hover:border-green-300 hover:shadow-md transition-all duration-200 overflow-hidden bg-card rounded-xl focus-within:ring-2 focus-within:ring-ring focus-within:ring-offset-2">
                 <div className="h-1 bg-gradient-to-r from-green-700 to-green-500" />
                 <div className="flex flex-col flex-1 p-5 gap-3">
-                  <div className="flex items-center justify-between gap-2">
-                    <span className="inline-block text-xs font-semibold px-2.5 py-0.5 rounded-full bg-green-100 text-green-700">Empréstimos</span>
-                  </div>
+                  <span className="inline-block text-xs font-semibold px-2.5 py-0.5 rounded-full bg-green-100 text-green-700 w-fit">Empréstimos</span>
                   <h3 className="text-base font-bold text-foreground leading-snug group-hover:text-green-700 transition-colors line-clamp-2">{artigo.title}</h3>
                   {artigo.description && (
                     <p className="text-sm text-muted-foreground line-clamp-2 flex-1">{artigo.description}</p>
@@ -152,23 +150,59 @@ export default function EmprestimosPage() {
           </div>
         </section>
 
-        <div className="prose prose-slate max-w-none prose-headings:text-primary prose-a:text-secondary mb-12">
-          <h2>Modalidades de Empréstimo</h2>
-          <p>
-            Existem diversas modalidades de empréstimo no mercado brasileiro. O <strong>empréstimo consignado</strong> tem as menores taxas (1,5% a 3% ao mês) e é descontado diretamente da folha de pagamento. O <strong>empréstimo pessoal</strong> não exige vínculo empregatício específico, mas tem taxas mais altas (3% a 10% ao mês).
-          </p>
-          <p>
-            Outras opções incluem o <strong>financiamento</strong> (para imóveis e veículos), o <strong>crédito rotativo</strong> (o mais caro, evite) e a <strong>portabilidade de crédito</strong> (transferir o saldo devedor para outro banco com juros menores).
-          </p>
-          <h2>Entendendo o CET</h2>
-          <p>
-            O Custo Efetivo Total (CET) é o indicador mais importante na hora de contratar um empréstimo. Ele inclui não apenas os juros, mas também taxas, seguros e outros encargos. Use a calculadora para comparar o CET de diferentes propostas.
-          </p>
-          <h2>Dicas para Contratar um Empréstimo</h2>
-          <p>
-            Antes de contratar, compare pelo menos 3 propostas de instituições diferentes. Verifique o CET, o valor total a pagar e se as parcelas cabem no seu orçamento. Nunca comprometa mais de 30% da sua renda com parcelas de empréstimos.
-          </p>
-        </div>
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-foreground mb-6">Calculadoras relacionadas</h2>
+          <div className="grid gap-5 md:grid-cols-3">
+            <Link href="/calculadoras/emprestimo" className="group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring rounded-xl">
+              <Card className="border-border/60 h-full transition-all group-hover:shadow-md group-hover:border-green-300 group-hover:-translate-y-0.5">
+                <CardHeader className="pb-3">
+                  <div className="w-10 h-10 rounded-lg bg-green-100 text-green-600 flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
+                    <Calculator className="w-5 h-5" />
+                  </div>
+                  <CardTitle className="text-base group-hover:text-green-700 transition-colors">Simulação de Empréstimo</CardTitle>
+                  <CardDescription className="text-sm">Calcule parcelas, juros totais e CET</CardDescription>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <div className="flex items-center text-primary text-sm font-medium">
+                    Simular <ArrowRight className="ml-1.5 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
+            <Link href="/calculadoras/financiamento" className="group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring rounded-xl">
+              <Card className="border-border/60 h-full transition-all group-hover:shadow-md group-hover:border-green-300 group-hover:-translate-y-0.5">
+                <CardHeader className="pb-3">
+                  <div className="w-10 h-10 rounded-lg bg-green-100 text-green-600 flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
+                    <Calculator className="w-5 h-5" />
+                  </div>
+                  <CardTitle className="text-base group-hover:text-green-700 transition-colors">Simulação de Financiamento</CardTitle>
+                  <CardDescription className="text-sm">Simule financiamentos imobiliários e de veículos</CardDescription>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <div className="flex items-center text-primary text-sm font-medium">
+                    Simular <ArrowRight className="ml-1.5 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
+            <Link href="/calculadoras/troca-dividas" className="group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring rounded-xl">
+              <Card className="border-border/60 h-full transition-all group-hover:shadow-md group-hover:border-green-300 group-hover:-translate-y-0.5">
+                <CardHeader className="pb-3">
+                  <div className="w-10 h-10 rounded-lg bg-green-100 text-green-600 flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
+                    <Calculator className="w-5 h-5" />
+                  </div>
+                  <CardTitle className="text-base group-hover:text-green-700 transition-colors">Troca de Dívidas</CardTitle>
+                  <CardDescription className="text-sm">Veja se vale trocar uma dívida cara por outra</CardDescription>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <div className="flex items-center text-primary text-sm font-medium">
+                    Calcular <ArrowRight className="ml-1.5 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
+          </div>
+        </section>
 
         <section className="rounded-3xl border bg-gradient-to-br from-primary to-primary/90 p-8 md:p-12 text-center text-primary-foreground shadow-lg">
           <Calculator className="w-10 h-10 mx-auto mb-4 text-secondary" />
