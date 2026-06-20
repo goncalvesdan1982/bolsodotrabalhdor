@@ -2538,9 +2538,9 @@ export const posts: Post[] = [
 </section>
 <section><h2>Como ativar o Cadastro Positivo?</h2>
 <ol>
-<li><strong>Pelo site da Serasa:</strong> acesse www.serasa.com.br/cadastro-positivo e siga as instruções</li>
-<li><strong>Pelo Banco Central:</strong> acesse www.bcb.gov.br/cidadaniafinanceira/cadastropositivo</li>
-<li><strong>Pelo SPC Brasil:</strong> acesse www.spcbrasil.org.br e consulte a opção de cadastro positivo</li>
+<li><strong>Pelo site da Serasa:</strong> acesse <a href="https://www.serasa.com.br/cadastro-positivo" target="_blank" rel="noopener noreferrer">www.serasa.com.br/cadastro-positivo</a> e siga as instruções</li>
+<li><strong>Pelo Banco Central:</strong> acesse <a href="https://www.bcb.gov.br/cidadaniafinanceira/cadastropositivo" target="_blank" rel="noopener noreferrer">www.bcb.gov.br/cidadaniafinanceira/cadastropositivo</a></li>
+<li><strong>Pelo SPC Brasil:</strong> acesse <a href="https://www.spcbrasil.org.br" target="_blank" rel="noopener noreferrer">www.spcbrasil.org.br</a> e consulte a opção de cadastro positivo</li>
 </ol>
 <p>O processo leva poucos minutos e exige apenas CPF e dados pessoais básicos. Após a ativação, os gestores autorizados começam a receber informações dos seus pagamentos.</p>
 </section>
@@ -2705,7 +2705,7 @@ export const posts: Post[] = [
 <section><h2>Serasa Score</h2>
 <p>Para consultar seu score na Serasa:</p>
 <ol>
-<li>Acesse www.serasa.com.br/score</li>
+<li>Acesse <a href="https://www.serasa.com.br/score" target="_blank" rel="noopener noreferrer">www.serasa.com.br/score</a></li>
 <li>Crie uma conta gratuita ou faça login</li>
 <li>O score aparece na tela principal</li>
 </ol>
@@ -2713,7 +2713,7 @@ export const posts: Post[] = [
 </section>
 <section><h2>Boa Vista (Consumidor Positivo)</h2>
 <ol>
-<li>Acesse www.consumidorpositivo.com.br</li>
+<li>Acesse <a href="https://www.consumidorpositivo.com.br" target="_blank" rel="noopener noreferrer">www.consumidorpositivo.com.br</a></li>
 <li>Clique em &quot;Consultar Score&quot;</li>
 <li>Informe CPF e dados pessoais</li>
 <li>Veja sua pontuação e eventuais restrições</li>
@@ -2721,7 +2721,7 @@ export const posts: Post[] = [
 </section>
 <section><h2>SPC Brasil</h2>
 <ol>
-<li>Acesse www.spcbrasil.org.br</li>
+<li>Acesse <a href="https://www.spcbrasil.org.br" target="_blank" rel="noopener noreferrer">www.spcbrasil.org.br</a></li>
 <li>Clique em &quot;Consulte seu CPF grátis&quot;</li>
 <li>Informe os dados solicitados</li>
 <li>Veja restrições e pontuação</li>
@@ -2730,7 +2730,7 @@ export const posts: Post[] = [
 <section><h2>Banco Central (Registrato)</h2>
 <p>O Registrato é um sistema do Banco Central que reúne informações financeiras consolidadas:</p>
 <ol>
-<li>Acesse www.bcb.gov.br/cidadaniafinanceira/registrato</li>
+<li>Acesse <a href="https://www.bcb.gov.br/cidadaniafinanceira/registrato" target="_blank" rel="noopener noreferrer">www.bcb.gov.br/cidadaniafinanceira/registrato</a></li>
 <li>Faça login com sua conta Gov.br</li>
 <li>Consulte relatórios de cheques sem fundo, dívidas e contas bancárias</li>
 </ol>
@@ -3920,7 +3920,7 @@ export const posts: Post[] = [
 <p>Para uma visão mais ampla sobre crédito, confira nossa análise sobre <a href="/blog/emprestimo-consignado-vale-a-pena">empréstimo consignado</a> e se essa modalidade pode ser adequada para o seu perfil.</p>
 </section>
 <section><h2>Ferramenta prática: simulador do Banco Central</h2>
-<p>O Banco Central do Brasil disponibiliza um simulador de crédito gratuito em seu site oficial (www.bcb.gov.br). A ferramenta permite inserir valor, taxa e prazo para calcular o CET e comparar diferentes ofertas de forma padronizada. É uma referência útil antes de contratar qualquer operação de crédito.</p>
+<p>O Banco Central do Brasil disponibiliza um simulador de crédito gratuito em seu site oficial (<a href="https://www.bcb.gov.br" target="_blank" rel="noopener noreferrer">www.bcb.gov.br</a>). A ferramenta permite inserir valor, taxa e prazo para calcular o CET e comparar diferentes ofertas de forma padronizada. É uma referência útil antes de contratar qualquer operação de crédito.</p>
 </section>
 <section><h2>Conclusão</h2>
 <p>Calcular o custo real de um empréstimo envolve mais do que verificar a taxa de juros. É necessário considerar IOF, tarifas, seguros e o prazo total da operação. O CET (Custo Efetivo Total) é o indicador mais completo para comparar ofertas entre instituições financeiras.</p>

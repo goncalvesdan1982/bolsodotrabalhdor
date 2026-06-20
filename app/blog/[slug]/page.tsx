@@ -7,10 +7,11 @@ import { Button } from '@/components/ui/button'
 import { BlogAnalytics } from '@/components/blog-analytics'
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Calendar, Clock, ChevronLeft, ArrowRight, Calculator, HelpCircle, CheckCircle, ExternalLink, Info } from 'lucide-react'
+import { Calendar, Clock, ChevronLeft, ArrowRight, Calculator, CheckCircle, ExternalLink, Info } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
 import { Breadcrumbs } from '@/components/breadcrumbs'
 import { TableOfContents } from '@/components/table-of-contents'
+import { FAQSection } from '@/components/faq-section'
 
 const officialSources: Record<string, { name: string; url: string }[]> = {
   'Dívidas': [
@@ -283,20 +284,7 @@ export default async function PostPage({ params }: PostPageProps) {
         </article>
 
         {post.faq && (
-          <div className="mb-12">
-            <div className="flex items-center gap-2 mb-6 text-primary">
-              <HelpCircle className="w-6 h-6" />
-              <h2 className="text-2xl font-bold">Perguntas Frequentes (FAQ)</h2>
-            </div>
-            <div className="space-y-4">
-              {post.faq.map((item, index) => (
-                <div key={index} className="p-5 bg-background rounded-xl border border-border/60">
-                  <h3 className="font-bold text-primary mb-2">{item.question}</h3>
-                  <div className="text-muted-foreground prose prose-sm max-w-none" dangerouslySetInnerHTML={{ __html: item.answer }} />
-                </div>
-              ))}
-            </div>
-          </div>
+          <FAQSection items={post.faq} pageUrl={`${SITE_URL}/blog/${post.slug}`} />
         )}
 
         <div className="mb-12 p-6 bg-muted/30 border-l-4 border-secondary rounded-r-lg text-sm text-muted-foreground leading-relaxed">
