@@ -91,6 +91,20 @@ export default function CartoesPage() {
           </Card>
         </div>
 
+        <div className="mb-8 p-6 md:p-8 bg-card border border-border rounded-2xl shadow-sm">
+          <h2 className="text-xl font-bold text-foreground mb-3">Por onde começar</h2>
+          <p className="text-muted-foreground mb-4">
+            Se você está começando a usar cartão de crédito ou quer usar melhor, siga esta trilha de leitura:
+          </p>
+          <ol className="space-y-2 list-decimal list-inside text-sm text-muted-foreground">
+            <li><Link href="/blog/cartao-sem-anuidade-vale-a-pena" className="text-secondary hover:underline font-medium">Cartão sem anuidade vale a pena?</Link> — entenda se vale pagar taxa</li>
+            <li><Link href="/blog/melhores-cartoes-score-baixo" className="text-secondary hover:underline font-medium">Melhores cartões para score baixo</Link> — opções reais para quem está negativado</li>
+            <li><Link href="/blog/como-evitar-juros-rotativo" className="text-secondary hover:underline font-medium">Como evitar juros rotativo</Link> — a armadilha mais cara do cartão</li>
+            <li><Link href="/blog/fatura-parcelada-compensa" className="text-secondary hover:underline font-medium">Fatura parcelada compensa?</Link> — quando vale a pena parcelar a fatura</li>
+            <li><Link href="/blog/como-aumentar-limite-cartao-credito" className="text-secondary hover:underline font-medium">Como aumentar o limite</Link> — estratégias práticas para conquistar mais limite</li>
+          </ol>
+        </div>
+
         <div className="mb-12 p-6 md:p-8 bg-primary rounded-2xl text-primary-foreground shadow-lg">
           <h2 className="text-2xl font-bold mb-4">Artigos sobre Cartões de Crédito</h2>
           <p className="text-primary-foreground/80 mb-6">
@@ -102,6 +116,41 @@ export default function CartoesPage() {
               className="flex items-center justify-between p-4 bg-white/10 hover:bg-white/20 rounded-lg border border-white/20 transition-all group"
             >
               <span className="font-medium">Melhores cartões de crédito para score baixo em 2026</span>
+              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform flex-shrink-0" />
+            </Link>
+            <Link
+              href="/blog/cartao-sem-anuidade-vale-a-pena"
+              className="flex items-center justify-between p-4 bg-white/10 hover:bg-white/20 rounded-lg border border-white/20 transition-all group"
+            >
+              <span className="font-medium">Cartão sem anuidade vale a pena?</span>
+              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform flex-shrink-0" />
+            </Link>
+            <Link
+              href="/blog/como-evitar-juros-rotativo"
+              className="flex items-center justify-between p-4 bg-white/10 hover:bg-white/20 rounded-lg border border-white/20 transition-all group"
+            >
+              <span className="font-medium">Como evitar os juros do rotativo do cartão</span>
+              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform flex-shrink-0" />
+            </Link>
+            <Link
+              href="/blog/como-aumentar-limite-cartao-credito"
+              className="flex items-center justify-between p-4 bg-white/10 hover:bg-white/20 rounded-lg border border-white/20 transition-all group"
+            >
+              <span className="font-medium">Como aumentar o limite do cartão de crédito</span>
+              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform flex-shrink-0" />
+            </Link>
+            <Link
+              href="/blog/fatura-parcelada-compensa"
+              className="flex items-center justify-between p-4 bg-white/10 hover:bg-white/20 rounded-lg border border-white/20 transition-all group"
+            >
+              <span className="font-medium">Fatura parcelada compensa?</span>
+              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform flex-shrink-0" />
+            </Link>
+            <Link
+              href="/blog/o-que-fazer-quando-limite-cartao-acaba"
+              className="flex items-center justify-between p-4 bg-white/10 hover:bg-white/20 rounded-lg border border-white/20 transition-all group"
+            >
+              <span className="font-medium">O que fazer quando o limite do cartão acaba</span>
               <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform flex-shrink-0" />
             </Link>
           </div>

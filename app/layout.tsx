@@ -118,6 +118,14 @@ export default function RootLayout({
                   'inLanguage': 'pt-BR',
                   'publisher': {
                     '@id': `${SITE_URL}/#organization`
+                  },
+                  'potentialAction': {
+                    '@type': 'SearchAction',
+                    'target': {
+                      '@type': 'EntryPoint',
+                      'urlTemplate': `${SITE_URL}/blog?search={search_term_string}`
+                    },
+                    'query-input': 'required name=search_term_string'
                   }
                 }
               ]
@@ -126,11 +134,17 @@ export default function RootLayout({
         />
       </head>
       <body className="font-sans antialiased min-h-screen flex flex-col">
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-md focus:bg-primary focus:px-4 focus:py-2 focus:text-primary-foreground focus:shadow-lg focus:outline-2 focus:outline-offset-2 focus:outline-ring"
+        >
+          Pular para o conteúdo
+        </a>
         <Header />
         <Suspense fallback={null}>
           <GoogleAnalytics />
         </Suspense>
-        <main className="flex-1">
+        <main id="main-content" className="flex-1">
           {children}
         </main>
         <Footer />

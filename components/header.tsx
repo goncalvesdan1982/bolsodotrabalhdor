@@ -142,8 +142,13 @@ export function Header() {
               </div>
               <div className="border-t pt-4 space-y-2">
                 <p className="text-sm font-semibold text-muted-foreground mb-2">Institucional</p>
+                <Link href="/autor" className="block py-2 px-3 text-sm rounded-md hover:bg-muted transition-colors" onClick={() => setIsOpen(false)}>Autor</Link>
                 <Link href="/sobre" className="block py-2 px-3 text-sm rounded-md hover:bg-muted transition-colors" onClick={() => setIsOpen(false)}>Sobre</Link>
+                <Link href="/metodologia" className="block py-2 px-3 text-sm rounded-md hover:bg-muted transition-colors" onClick={() => setIsOpen(false)}>Metodologia</Link>
+                <Link href="/politica-editorial" className="block py-2 px-3 text-sm rounded-md hover:bg-muted transition-colors" onClick={() => setIsOpen(false)}>Política Editorial</Link>
                 <Link href="/contato" className="block py-2 px-3 text-sm rounded-md hover:bg-muted transition-colors" onClick={() => setIsOpen(false)}>Contato</Link>
+                <Link href="/politica-privacidade" className="block py-2 px-3 text-sm rounded-md hover:bg-muted transition-colors" onClick={() => setIsOpen(false)}>Privacidade</Link>
+                <Link href="/termos-uso" className="block py-2 px-3 text-sm rounded-md hover:bg-muted transition-colors" onClick={() => setIsOpen(false)}>Termos de Uso</Link>
               </div>
             </nav>
           </SheetContent>

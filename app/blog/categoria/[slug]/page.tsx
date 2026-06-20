@@ -117,8 +117,7 @@ export default async function CategoryPage({ params, searchParams }: CategoryPag
         {posts.map((post, index) => (
           <article
             key={post.slug}
-            className={`group flex flex-col h-full border border-border/60 hover:border-primary hover:shadow-md transition-all duration-200 overflow-hidden bg-card rounded-xl${index >= 6 ? ' [content-visibility:auto]' : ''}`}
-            style={index >= 6 ? { contentVisibility: 'auto' } : undefined}
+            className="group flex flex-col h-full border border-border/60 hover:border-primary hover:shadow-md transition-all duration-200 overflow-hidden bg-card rounded-xl"
           >
             <Link href={`/blog/${post.slug}`} tabIndex={-1} aria-hidden="true">
               <BlogCardCover

@@ -132,8 +132,7 @@ export function BlogFilters({ posts, categories, initialQuery }: BlogFiltersProp
           {paginatedPosts.map((post, index) => (
             <article
               key={post.slug}
-              className={`group flex flex-col h-full border border-border/60 hover:border-primary hover:shadow-md transition-all duration-200 overflow-hidden bg-card rounded-xl${index >= 6 ? ' [content-visibility:auto]' : ''}`}
-              style={index >= 6 ? { contentVisibility: 'auto' } : undefined}
+              className="group flex flex-col h-full border border-border/60 hover:border-primary hover:shadow-md transition-all duration-200 overflow-hidden bg-card rounded-xl"
             >
               <div className="flex flex-col flex-1 p-5 gap-3">
                 <div className="flex items-center justify-between gap-2">

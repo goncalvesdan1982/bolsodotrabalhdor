@@ -51,9 +51,27 @@ const credenciais = [
   },
 ]
 
+const personSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Daniel Gonçalves',
+  url: `${SITE_URL}/autor`,
+  description: 'Criador e editor do Bolso do Trabalhador, portal independente de educação financeira. Desenvolvedor web focado em ferramentas práticas e conteúdo educativo sobre finanças pessoais, crédito, dívidas, organização financeira e direitos do trabalhador.',
+  sameAs: [
+    `${SITE_URL}/autor`,
+  ],
+}
+
 export default function AutorPage() {
   return (
-    <div className="min-h-screen py-12">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(personSchema)
+        }}
+      />
+      <div className="min-h-screen py-12">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <Breadcrumbs items={[{ label: 'Autor' }]} />
@@ -145,5 +163,6 @@ export default function AutorPage() {
         </div>
       </div>
     </div>
+    </>
   )
 }
