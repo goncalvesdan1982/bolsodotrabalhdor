@@ -19,7 +19,7 @@ export const posts: Post[] = [
     title: 'Como Sair das Dívidas: Guia Passo a Passo para Organizar o Orçamento e Negociar',
     description: 'Veja como sair das dívidas com um plano prático: organize débitos, priorize juros, negocie com bancos, evite rotativo e recupere seu crédito com segurança.',
     date: '2026-06-01',
-    lastModified: '2026-06-13',
+    lastModified: '2026-06-19',
     category: 'Dívidas',
     keywords: ['sair das dívidas', 'como sair das dívidas', 'negociar dívidas', 'qual dívida pagar primeiro', 'organizar finanças', 'dívida do cartão', 'como negociar com banco', 'aumentar score de crédito'],
     relatedCalculators: [
@@ -643,7 +643,7 @@ export const posts: Post[] = [
     title: 'Como Aumentar o Score de Crédito em 2026: Guia Prático, Seguro e Sem Promessas Milagrosas',
     description: 'Veja o que realmente ajuda a aumentar o score de crédito, quais erros evitar, quanto tempo pode levar e quais mitos não funcionam, como CPF na nota e promessas pagas.',
     date: '2026-06-01',
-    lastModified: '2026-06-15',
+    lastModified: '2026-06-19',
     category: 'Score',
     keywords: ['aumentar score', 'score de credito', 'como aumentar score', 'score serasa', 'cadastro positivo', 'score 500 aprova cartao', 'score baixo', 'mitos score', 'golpe do score', 'consultar score gratis'],
     relatedCalculators: [
@@ -1707,71 +1707,130 @@ export const posts: Post[] = [
   {
     slug: 'como-negociar-dividas-diretamente-com-banco',
     title: 'Como negociar dívidas diretamente com o banco',
-    description: 'Guia prático para negociar dívidas com bancos e credores. Dicas de abordagem, descontos reais e como evitar golpes.',
+    description: 'Guia prático para negociar dívidas com bancos e credores: abordagem correta, descontos possíveis, plataformas confiáveis e cuidados para evitar golpes em renegociação.',
     date: '2026-06-04',
+    lastModified: '2026-06-19',
     category: 'Dívidas',
-    keywords: ['negociar dívidas banco', 'renegociar dívida', 'acordo banco', 'como negociar divida', 'desconto dívida'],
+    keywords: ['negociar dívidas banco', 'renegociar dívida', 'acordo banco', 'como negociar divida', 'desconto dívida', 'negociação banco', 'renegociação dívida'],
     relatedCalculators: [
       { name: 'Quitação de Dívidas', href: '/calculadoras/quitacao-dividas' },
       { name: 'Comprometimento de Renda', href: '/calculadoras/comprometimento-renda' },
+      { name: 'Orçamento Familiar', href: '/calculadoras/orcamento-familiar' },
     ],
     content: `
 <section><h2>Por que os bancos negociam?</h2>
 <p>Banco não quer seu nome sujo. Banco quer receber o dinheiro dele, mesmo que seja menos do que você deve. É por isso que a negociação de dívidas existe e funciona.</p>
 <p>Quando uma dívida fica muito tempo sem pagamento, o banco começa a provisionar essa perda e fica mais disposto a aceitar descontos. Quanto mais tempo de atraso, maior tende a ser o desconto.</p>
 </section>
+
+<section><h2>Resumo rápido</h2>
+<ul>
+<li>Prepare-se antes de ligar: saiba o valor exato da dívida e quanto pode pagar por mês.</li>
+<li>Peça desconto para quitação à vista — descontos de 50% a 80% são comuns em dívidas com mais de 6 meses.</li>
+<li>Compare ofertas em plataformas como Serasa Limpa Nome e Acordo OK antes de fechar.</li>
+<li>Registre o protocolo, o nome do atendente e as condições acordadas em cada contato.</li>
+<li>Só efetue o pagamento após receber o contrato por escrito ou por e-mail.</li>
+<li>Desconfie de propostas recebidas por WhatsApp, SMS ou e-mail não solicitado.</li>
+</ul>
+</section>
+
 <section><h2>Antes de ligar para o banco</h2>
 <p>Não ligue sem preparo. Antes de qualquer contato:</p>
 <ul>
-<li>Saiba exatamente quanto você deve (valor original + juros)</li>
-<li>Defina quanto você pode pagar por mês</li>
-<li>Pesquise plataformas como Serasa Limpa Nome para ver ofertas</li>
-<li>Tenha em mãos seu CPF e dados do contrato</li>
+<li>Saiba exatamente quanto você deve (valor original + juros + encargos)</li>
+<li>Defina quanto você pode pagar por mês sem comprometer contas essenciais</li>
+<li>Pesquise plataformas como Serasa Limpa Nome para ver ofertas disponíveis para seu CPF</li>
+<li>Tenha em mãos seu CPF, dados do contrato e extrato atualizado da dívida</li>
+<li>Use a calculadora de comprometimento de renda para saber o limite seguro de parcela</li>
 </ul>
 </section>
+
 <section><h2>Como abordar a negociação</h2>
 <p>A abordagem certa faz diferença. Veja um roteiro prático:</p>
 <p><strong>1. Ligue para a central de negociação.</strong> Grandes bancos têm centrais específicas para renegociação. Peça para falar com o setor de recuperação de crédito.</p>
-<p><strong>2. Apresente sua situação real.</strong> Seja honesto sobre sua capacidade de pagamento. Dizer que pode pagar R$ 200 por mês e realmente pagar é melhor que prometer R$ 500 e não conseguir.</p>
-<p><strong>3. Peça desconto.</strong> Pergunte qual o menor valor para quitação à vista para sua dívida. Muitas vezes o desconto chega a 70% ou 80% do valor total.</p>
-<p><strong>4. Peça parcelamento sem juros.</strong> Se não puder pagar à vista, negocie parcelas fixas sem acréscimo de juros.</p>
+<p><strong>2. Apresente sua situação real.</strong> Seja honesto sobre sua capacidade de pagamento. Dizer que pode pagar R$ 200 por mês e realmente pagar é melhor que prometer R$ 500 e não conseguir manter.</p>
+<p><strong>3. Peça desconto.</strong> Pergunte qual o menor valor para quitação à vista. Em dívidas com mais de 6 meses, descontos de 50% a 80% são comuns.</p>
+<p><strong>4. Peça parcelamento sem juros.</strong> Se não puder pagar à vista, negocie parcelas fixas sem acréscimo de juros ou com juros reduzidos.</p>
 <p><strong>5. Registre tudo.</strong> Anote o protocolo, o nome do atendente, o valor acordado e as condições. Peça o contrato por escrito ou por e-mail.</p>
 </section>
+
 <section><h2>Exemplo prático</h2>
-<p>João deve R$ 5.000 no cartão de crédito do Banco X, mas já está há 8 meses sem pagar. O banco oferece:</p>
+<p>João deve R$ 5.000 no cartão de crédito do Banco X e está há 8 meses sem pagar. Após negociação, o banco oferece:</p>
 <ul>
 <li>Quitação à vista: R$ 1.500 (70% de desconto)</li>
-<li>Parcelamento em 12x de R$ 200 (sem juros)</li>
+<li>Parcelamento em 12x de R$ 200 sem juros</li>
 </ul>
-<p>João tem R$ 1.500 guardados e opta pela quitação à vista. Economizou R$ 3.500.</p>
-<p>Se João não tivesse o valor, o parcelamento de R$ 200 por 12 meses também é um bom negócio contra os R$ 500 mensais que ele pagaria no rotativo.</p>
+<p>João tem R$ 1.500 guardados e opta pela quitação à vista. Economizou R$ 3.500 em relação ao valor original.</p>
+<p>Se João não tivesse o valor à vista, o parcelamento de R$ 200 por 12 meses (R$ 2.400 no total) ainda pode representar economia, desde que o valor caiba no orçamento dele.</p>
 </section>
+
+<section><h2>Descontos típicos por tempo de atraso</h2>
+<p>O percentual de desconto que o banco pode oferecer varia conforme o tempo de inadimplência, o tipo de dívida e as políticas internas da instituição. A tabela abaixo mostra cenários comuns:</p>
+<table>
+<thead>
+<tr><th>Tempo de atraso</th><th>Desconto típico (à vista)</th><th>Condições comuns</th></tr>
+</thead>
+<tbody>
+<tr><td>Até 30 dias</td><td>Pequeno ou nenhum</td><td>Geralmente apenas parcelamento com juros</td></tr>
+<tr><td>1 a 3 meses</td><td>10% a 30%</td><td>Parcelamento com juros reduzidos ou isenção de multa</td></tr>
+<tr><td>3 a 6 meses</td><td>30% a 50%</td><td>Parcelamento sem juros ou desconto à vista</td></tr>
+<tr><td>6 a 12 meses</td><td>50% a 70%</td><td>Desconto significativo à vista ou parcelamento alongado</td></tr>
+<tr><td>Mais de 12 meses</td><td>60% a 80%</td><td>Maior potencial de desconto, mas dívida já pode estar negativada</td></tr>
+</tbody>
+</table>
+<p><strong>Atenção:</strong> esses percentuais são referências gerais. Cada negociação é única e depende da análise do credor.</p>
+</section>
+
 <section><h2>Plataformas de negociação</h2>
 <p>Além de negociar diretamente com o banco, você pode usar:</p>
 <ul>
-<li><strong>Serasa Limpa Nome:</strong> ofertas de descontos de várias empresas</li>
-<li><strong>Acordo OK:</strong> plataforma da Boa Vista para negociação</li>
-<li><strong>SPC Brasil:</strong> plataforma de negociação do SPC</li>
-<li><strong>Consumidor.gov.br:</strong> para registrar reclamações se a negociação não avançar</li>
+<li><strong>Serasa Limpa Nome:</strong> reúne ofertas de descontos de várias empresas. Acesso gratuito.</li>
+<li><strong>Acordo OK:</strong> plataforma da Boa Vista para negociação de dívidas.</li>
+<li><strong>SPC Brasil:</strong> plataforma de negociação do SPC Brasil.</li>
+<li><strong>Consumidor.gov.br:</strong> canal oficial do governo para registrar reclamações.</li>
 </ul>
 </section>
+
 <section><h2>Cuidados ao negociar</h2>
 <ul>
 <li>Desconfie de propostas milagrosas — se parece bom demais, pode ser golpe</li>
-<li>Só pague após receber o contrato por escrito</li>
-<li>Verifique se o contrato inclui a baixa da negativação dos órgãos de crédito</li>
-<li>Guarde todos os comprovantes de pagamento</li>
+<li>Só pague após receber o contrato por escrito ou por e-mail</li>
+<li>Verifique se o contrato inclui a baixa da negativação nos órgãos de crédito</li>
+<li>Confira os dados do beneficiário antes de pagar qualquer boleto</li>
+<li>Guarde todos os comprovantes de pagamento e protocolos de atendimento</li>
+<li>Não informe senhas bancárias, tokens de segurança ou códigos de autenticação</li>
+<li>Prefira canais oficiais do banco: SAC, aplicativo, agência ou site</li>
 </ul>
 </section>
+
+<section><h2>Erros comuns ao negociar dívidas</h2>
+<table>
+<thead>
+<tr><th>Erro</th><th>Consequência</th><th>O que fazer</th></tr>
+</thead>
+<tbody>
+<tr><td>Aceitar a primeira oferta sem comparar</td><td>Perde a chance de conseguir melhores condições</td><td>Pergunte se há desconto maior ou peça um prazo para pensar</td></tr>
+<tr><td>Prometer um valor que não cabe no orçamento</td><td>A parcela fica alta e você pode atrasar de novo</td><td>Calcule antes o valor máximo que pode pagar por mês</td></tr>
+<tr><td>Não registrar o protocolo</td><td>Fica sem prova do acordo em caso de divergência</td><td>Anote número do protocolo, data e nome do atendente</td></tr>
+<tr><td>Negociar por canais não oficiais</td><td>Risco de golpe e perda do dinheiro</td><td>Use apenas canais oficiais (SAC, app, site do banco)</td></tr>
+<tr><td>Pagar sem contrato por escrito</td><td>Pode não ter comprovação do acordo</td><td>Só pague após receber o contrato por escrito ou e-mail</td></tr>
+<tr><td>Contratar intermediário para negociar</td><td>Gasta dinheiro à toa — você pode negociar de graça</td><td>Negocie você mesmo diretamente com o credor</td></tr>
+</tbody>
+</table>
+</section>
+
 <section><h2>Conclusão</h2>
-<p>Negociar dívida com banco é possível e pode trazer descontos significativos. O segredo é se preparar, ser honesto sobre sua capacidade de pagamento e não aceitar a primeira oferta sem comparar. Lembre-se: o banco prefere receber menos do que não receber nada.</p>
+<p>Negociar dívida com banco é possível e pode trazer descontos significativos. O segredo é se preparar, ser honesto sobre sua capacidade de pagamento e não aceitar a primeira oferta sem comparar. O banco prefere receber menos do que não receber nada.</p>
+<p>Antes de negociar, organize seu orçamento com a <a href="/calculadoras/orcamento-familiar">calculadora de orçamento familiar</a>. Veja também o guia <a href="/blog/como-sair-das-dividas-guia-completo">Como sair das dívidas: guia completo</a> e o artigo sobre <a href="/blog/qual-divida-devo-pagar-primeiro">qual dívida pagar primeiro</a> para definir sua estratégia.</p>
 </section>`,
     faq: [
-      { question: 'Qual o maior desconto que posso conseguir?', answer: 'Descontos de 50% a 80% são comuns em dívidas antigas (mais de 6 meses). Quanto mais tempo de atraso, maior tende a ser o desconto.' },
-      { question: 'Negociar a dívida limpa meu nome na hora?', answer: 'Após o pagamento ou acordo, o banco tem até 5 dias úteis para baixar a negativação nos órgãos de crédito.' },
-      { question: 'Posso negociar dívida sem pagar entrada?', answer: 'Depende da política do banco. Alguns aceitam parcelamento sem entrada, mas o desconto costuma ser menor.' },
+      { question: 'Qual o maior desconto que posso conseguir?', answer: 'Descontos de 50% a 80% são comuns em dívidas antigas (mais de 6 meses), mas cada caso é avaliado individualmente pelo credor. O desconto depende do tempo de atraso, do tipo de dívida e da política interna do banco.' },
+      { question: 'Negociar a dívida limpa meu nome na hora?', answer: 'Após o pagamento ou acordo, o banco tem até 5 dias úteis para atualizar os birôs de crédito (Serasa, Boa Vista, SPC). O prazo pode variar conforme a instituição. Confirme com o banco qual o prazo previsto no contrato.' },
+      { question: 'Posso negociar dívida sem pagar entrada?', answer: 'Depende da política do banco. Alguns aceitam parcelamento sem entrada, mas o desconto costuma ser menor. Vale a pena comparar diferentes propostas antes de decidir.' },
       { question: 'O que fazer se o banco não aceitar minha oferta?', answer: 'Tente novamente em alguns dias, fale com outro atendente ou use plataformas como Serasa Limpa Nome. Você também pode registrar reclamação no Consumidor.gov.br.' },
-      { question: 'Negociar pelo Serasa é seguro?', answer: 'Sim, o Serasa Limpa Nome é uma plataforma segura. Verifique se o pagamento é direto à empresa credora e guarde os comprovantes.' },
+      { question: 'Negociar pelo Serasa é seguro?', answer: 'A plataforma Serasa Limpa Nome é um canal reconhecido de negociação. Verifique se o pagamento é direto à empresa credora, confira os dados do boleto antes de pagar e guarde todos os comprovantes. Não compartilhe senhas ou códigos de autenticação.' },
+      { question: 'Como saber se uma proposta de acordo é boa?', answer: 'Compare o valor total a pagar com o saldo devedor atual. Se o desconto for significativo e a parcela couber no seu orçamento, pode ser uma boa oportunidade. Use a <a href="/calculadoras/quitacao-dividas">calculadora de quitação de dívidas</a> para simular diferentes cenários.' },
+      { question: 'O que fazer se o desconto oferecido for pequeno?', answer: 'Você pode recusar a proposta e tentar novamente em alguns dias ou meses. Quanto maior o tempo de atraso, maior tende a ser o desconto futuro. Enquanto isso, organize seu orçamento com a <a href="/calculadoras/orcamento-familiar">calculadora de orçamento familiar</a>.' },
     ],
   },
   // === DÍVIDAS — ARTIGO 3/5 ===
@@ -2077,7 +2136,7 @@ export const posts: Post[] = [
     title: 'Quanto Tempo Leva para o Score Aumentar? Entenda Prazos, Fatores e Mitos',
     description: 'Entenda quanto tempo o score pode levar para subir após pagar dívidas, ativar o Cadastro Positivo, evitar atrasos e manter bom histórico financeiro.',
     date: '2026-06-04',
-    lastModified: '2026-06-15',
+    lastModified: '2026-06-19',
     category: 'Score',
     keywords: ['quanto tempo leva para o score aumentar', 'score demora para subir', 'aumentar score prazo', 'tempo score crédito', 'score serasa', 'score depois de pagar dívida', 'cadastro positivo quanto tempo', 'score 300 para 500', 'score 500 para 700', 'recuperar score após negativação'],
     relatedCalculators: [
@@ -3451,10 +3510,11 @@ export const posts: Post[] = [
   {
     slug: 'como-comparar-emprestimos-corretamente',
     title: 'Como comparar empréstimos corretamente',
-    description: 'Aprenda a comparar empréstimos como um profissional. Entenda CET, taxa de juros, parcelas e custo total para não cair em armadilhas.',
+    description: 'Aprenda a comparar empréstimos de forma consciente: entenda CET, taxa de juros, prazo e custo total para escolher com mais segurança e evitar armadilhas.',
     date: '2026-06-04',
+    lastModified: '2026-06-19',
     category: 'Empréstimos',
-    keywords: ['comparar empréstimos', 'como escolher empréstimo', 'melhor empréstimo', 'comparar taxas empréstimo', 'escolher empréstimo certo'],
+    keywords: ['comparar empréstimos', 'como escolher empréstimo', 'comparar taxas empréstimo', 'CET', 'custo total empréstimo', 'erros ao comparar empréstimos', 'simular empréstimo'],
     relatedCalculators: [
       { name: 'Empréstimo', href: '/calculadoras/emprestimo' },
       { name: 'Troca de Dívidas', href: '/calculadoras/troca-dividas' },
@@ -3462,73 +3522,110 @@ export const posts: Post[] = [
     content: `
 <section><h2>O erro mais comum ao comparar empréstimos</h2>
 <p>A maioria das pessoas olha apenas o valor da parcela. &quot;Este empréstimo tem parcela de R$ 200, o outro tem parcela de R$ 250. Vou de R$ 200.&quot;</p>
-<p>Esse é o erro mais comum e mais caro. A parcela menor pode significar um prazo muito maior e, no final, você paga muito mais juros.</p>
-<p>Comparar empréstimos vai muito além do valor da parcela. Vamos ver o que realmente importa.</p>
+<p>Esse é o erro mais comum e mais caro. A parcela menor pode significar um prazo muito maior e, no final, o custo total pode ser bem maior.</p>
+<p>Comparar empréstimos vai muito além do valor da parcela. Veja a seguir o que realmente importa.</p>
+</section>
+<section><h2>Resumo rápido</h2>
+<ul>
+<li>O CET é o indicador mais completo para comparar ofertas de crédito.</li>
+<li>Parcela baixa nem sempre significa economia — o prazo e o custo total precisam ser avaliados.</li>
+<li>Compare o valor total a pagar, não apenas o valor da prestação mensal.</li>
+<li>Consulte ao menos 3 instituições antes de tomar uma decisão.</li>
+<li>Desconfie de taxas muito abaixo da média do mercado.</li>
+<li>Use simuladores para comparar diferentes cenários lado a lado.</li>
+</ul>
 </section>
 <section><h2>O que comparar em cada empréstimo</h2>
-<p><strong>1. CET (Custo Efetivo Total):</strong> este é o número mais importante. O CET inclui juros, taxas, seguros e todos os encargos. Um empréstimo com taxa de 3% ao mês pode ter CET de 5% se tiver seguros embutidos.</p>
+<p><strong>1. CET (Custo Efetivo Total):</strong> este é o número mais importante. O CET inclui juros, taxas, seguros e todos os encargos. Um empréstimo com taxa de 3% ao mês pode ter CET de 5% se houver seguros embutidos. <a href="/blog/o-que-e-cet-e-por-que-importa">Entenda melhor o CET</a>.</p>
 <p><strong>2. Taxa de juros mensal:</strong> a taxa pura do empréstimo. Importante, mas não é o único fator.</p>
-<p><strong>3. Prazo total:</strong> em quantos meses você vai pagar. Quanto maior o prazo, menor a parcela, mas maior o total de juros.</p>
-<p><strong>4. Valor total a pagar:</strong> parcela x número de parcelas. É o valor que realmente sai do seu bolso.</p>
-<p><strong>5. Multa e juros de atraso:</strong> o que acontece se você atrasar uma parcela?</p>
+<p><strong>3. Prazo total:</strong> em quantos meses você vai pagar. Quanto maior o prazo, menor a parcela, mas maior o total de juros. <a href="/blog/como-calcular-custo-real-emprestimo">Veja como calcular o custo real</a>.</p>
+<p><strong>4. Valor total a pagar:</strong> parcela multiplicada pelo número de parcelas. É o valor que realmente sai do seu bolso.</p>
+<p><strong>5. Multa e juros de atraso:</strong> o que acontece se você atrasar uma parcela? Verifique essa cláusula no contrato.</p>
 </section>
 <section><h2>Exemplo de comparação real</h2>
-<p>Você precisa de R$ 5.000. Recebe três propostas:</p>
+<p>Imagine que você precisa de R$ 5.000 e recebe três propostas:</p>
 <table>
+<thead>
 <tr><th>Proposta</th><th>Taxa</th><th>Prazo</th><th>Parcela</th><th>Total a pagar</th></tr>
+</thead>
+<tbody>
 <tr><td>Banco A</td><td>3% a.m.</td><td>12 meses</td><td>R$ 502</td><td>R$ 6.024</td></tr>
 <tr><td>Banco B</td><td>5% a.m.</td><td>24 meses</td><td>R$ 359</td><td>R$ 8.616</td></tr>
 <tr><td>Banco C</td><td>4% a.m.</td><td>18 meses</td><td>R$ 391</td><td>R$ 7.038</td></tr>
+</tbody>
 </table>
-<p>Olhando só a parcela, o Banco B parece mais barato (R$ 359). Mas no total, você paga R$ 8.616 — R$ 2.592 a mais que o Banco A.</p>
-<p>A melhor opção é o Banco A: maior parcela (R$ 502) mas menor custo total (R$ 6.024).</p>
+<p>Olhando apenas a parcela, o Banco B parece mais barato (R$ 359). No entanto, no total você pagaria R$ 8.616 — R$ 2.592 a mais que o Banco A.</p>
+<p>Neste exemplo, o Banco A apresentou o menor custo total (R$ 6.024), apesar de ter a maior parcela mensal.</p>
+</section>
+<section><h2>Erros comuns ao comparar empréstimos</h2>
+<ul>
+<li><strong>Ignorar o CET:</strong> focar apenas na taxa de juros pode esconder tarifas e seguros embutidos.</li>
+<li><strong>Não considerar o prazo:</strong> prazos muito longos aumentam o custo total, mesmo com parcelas baixas.</li>
+<li><strong>Comparar propostas em datas diferentes:</strong> as taxas mudam com frequência. Compare tudo no mesmo dia.</li>
+<li><strong>Esquecer o IOF:</strong> o imposto incide sobre o valor e o prazo, influenciando o custo final.</li>
+<li><strong>Não simular a quitação antecipada:</strong> alguns contratos têm regras que podem encarecer o pagamento adiantado.</li>
+<li><strong>Contratar sem ler o contrato:</strong> cláusulas de seguros, tarifas e renegociação podem passar despercebidas.</li>
+</ul>
 </section>
 <section><h2>Ferramentas para comparar</h2>
-<p>Use nossa <a href="/calculadoras/emprestimo">calculadora de empréstimo</a> para simular diferentes taxas e prazos. Você pode comparar até 5 cenários lado a lado.</p>
-<p>Além disso, existem plataformas online que comparam ofertas de vários bancos:</p>
+<p>Use nossa <a href="/calculadoras/emprestimo">calculadora de empréstimo</a> para simular diferentes taxas e prazos. Você pode comparar cenários lado a lado.</p>
+<p>A <a href="/calculadoras/troca-dividas">calculadora de troca de dívidas</a> também pode ajudar se você está pensando em migrar uma dívida para outra linha de crédito.</p>
+<p>Além disso, existem canais que podem ajudar na pesquisa:</p>
 <ul>
 <li>Simulação de crédito do Banco Central</li>
-<li>plataformas como Creditas, Simplic, Geru</li>
-<li>Seu banco atual (às vezes oferece melhores condições para clientes)</li>
+<li>Plataformas como Creditas, Simplic, Geru</li>
+<li>Seu banco atual — às vezes oferece condições diferenciadas para correntistas</li>
 </ul>
 </section>
 <section><h2>Cuidados ao comparar</h2>
 <ul>
-<li>Desconfie de taxas muito abaixo do mercado (podem ser iscas)</li>
+<li>Desconfie de taxas muito abaixo do mercado — podem ser iscas para contratação</li>
 <li>Leia o contrato antes de assinar</li>
-<li>Verifique se há seguros ou tarifas embutidas</li>
+<li>Verifique se há seguros ou tarifas embutidas na proposta</li>
 <li>Pergunte sobre a possibilidade de quitação antecipada com desconto</li>
-<li>Não contrate no impulso — durma com a proposta</li>
+<li>Evite contratar no impulso — reserve um tempo para avaliar a proposta com calma</li>
 </ul>
 </section>
 <section><h2>Conclusão</h2>
-<p>Comparar empréstimos corretamente pode economizar milhares de reais. Não olhe só a parcela — olhe o CET, o prazo e o custo total. E nunca contrate sem antes simular em pelo menos 3 instituições diferentes.</p>
+<p>Comparar empréstimos corretamente pode fazer diferença no bolso. Avalie o CET, o prazo e o custo total antes de decidir, e evite contratar sem antes simular em pelo menos 3 instituições diferentes. As condições podem variar conforme o perfil de cada pessoa, por isso é importante avaliar com calma e confirmar as informações nos canais oficiais.</p>
 </section>`,
     faq: [
-      { question: 'Qual a diferença entre taxa de juros e CET?', answer: 'A taxa de juros é o custo do dinheiro emprestado. O CET inclui a taxa de juros mais todas as despesas (tarifas, seguros, IOF). O CET sempre é maior que a taxa de juros.' },
-      { question: 'Quantas instituições devo consultar antes de contratar?', answer: 'No mínimo 3. Cada banco tem políticas de crédito diferentes, e as taxas podem variar muito de uma instituição para outra.' },
-      { question: 'Parcelas mais longas são sempre piores?', answer: 'Nem sempre. Se a taxa de juros é muito baixa (como financiamento imobiliário), prazos longos podem ser interessantes. Para juros altos, prefira prazos curtos.' },
-      { question: 'Vale a pena contratar empréstimo pelo banco onde tenho conta?', answer: 'Às vezes sim, porque o banco conhece seu histórico. Mas não deixe de comparar com outras instituições. Fidelidade nem sempre compensa.' },
-      { question: 'O que é IOF e como afeta o empréstimo?', answer: 'IOF é o Imposto sobre Operações Financeiras, cobrado pelo governo. Para empréstimos, a alíquota é de 0,38% sobre o valor + 0,0082% ao dia. Isso aumenta o custo efetivo.' },
+      { question: 'Qual a diferença entre taxa de juros e CET?', answer: 'A taxa de juros é o custo do dinheiro emprestado. O CET inclui a taxa de juros mais todas as despesas (tarifas, seguros, IOF). O CET sempre é maior que a taxa de juros, por isso é o indicador mais completo para comparar ofertas.' },
+      { question: 'Quantas instituições devo consultar antes de contratar?', answer: 'O recomendado é consultar ao menos 3 instituições. Cada banco tem políticas de crédito diferentes, e as taxas podem variar bastante de uma para outra.' },
+      { question: 'Parcelas mais longas são sempre piores?', answer: 'Nem sempre. Se a taxa de juros é baixa (como em financiamento imobiliário), prazos longos podem ser interessantes. Para juros altos, prazos mais curtos costumam ser mais adequados. Avalie o custo total em cada cenário.' },
+      { question: 'Vale a pena contratar empréstimo pelo banco onde tenho conta?', answer: 'Pode valer, porque o banco conhece seu histórico financeiro. No entanto, não deixe de comparar com outras instituições — fidelidade nem sempre significa melhores condições.' },
+      { question: 'O que é IOF e como afeta o empréstimo?', answer: 'IOF é o Imposto sobre Operações Financeiras, cobrado pelo governo. Para empréstimos, a alíquota é de 0,38% sobre o valor acrescida de 0,0082% ao dia. Isso aumenta o custo efetivo do crédito.' },
+      { question: 'Como identificar taxas abusivas em um empréstimo?', answer: 'Compare o CET da proposta com a média do mercado para o mesmo tipo de crédito. Taxas muito acima da média podem indicar condições desfavoráveis.' },
+      { question: 'É seguro contratar empréstimo online?', answer: 'Sim, desde que seja em instituições autorizadas pelo Banco Central. Verifique se o site é seguro (cadeado na barra de endereços), leia o contrato com atenção e não forneça senhas ou códigos de autenticação fora dos canais oficiais.' },
     ],
   },
   // === EMPRÉSTIMOS — ARTIGO 2/5 ===
   {
     slug: 'o-que-e-cet-e-por-que-importa',
     title: 'O que é CET e por que ele importa?',
-    description: 'Entenda de vez o que é CET (Custo Efetivo Total) e por que ele é mais importante que a taxa de juros ao contratar um empréstimo.',
+    description: 'Entenda o que é CET (Custo Efetivo Total), como ele se diferencia da taxa de juros e por que ele é o principal indicador para comparar ofertas de crédito.',
     date: '2026-06-04',
+    lastModified: '2026-06-19',
     category: 'Empréstimos',
-    keywords: ['o que é CET', 'Custo Efetivo Total', 'CET empréstimo', 'diferença CET taxa juros', 'como calcular CET'],
+    keywords: ['o que é CET', 'Custo Efetivo Total', 'CET empréstimo', 'diferença CET taxa juros', 'como calcular CET', 'indicador crédito', 'custo total crédito'],
     relatedCalculators: [
       { name: 'Empréstimo', href: '/calculadoras/emprestimo' },
       { name: 'Financiamento', href: '/calculadoras/financiamento' },
     ],
     content: `
 <section><h2>CET: a verdadeira taxa do seu empréstimo</h2>
-<p>Você já viu um anúncio de empréstimo com taxa de 1,5% ao mês, mas quando foi contratar, as parcelas estavam muito mais altas que o esperado? O culpado é o CET.</p>
+<p>Você já viu um anúncio de empréstimo com taxa de 1,5% ao mês, mas quando foi contratar, as parcelas estavam muito mais altas que o esperado? O culpado pode ser o CET.</p>
 <p>CET significa Custo Efetivo Total. É o valor real que você paga pelo empréstimo, incluindo não só os juros, mas também todas as tarifas, seguros, IOF e qualquer outro encargo.</p>
 <p>Enquanto a taxa de juros é o preço do dinheiro, o CET é o preço total do empréstimo. E é nele que você deve prestar atenção.</p>
+</section>
+<section><h2>Resumo rápido</h2>
+<ul>
+<li>O CET é o custo completo do crédito: inclui juros, tarifas, seguros e impostos.</li>
+<li>A taxa de juros é apenas um dos componentes do CET — comparar apenas a taxa pode levar a escolhas equivocadas.</li>
+<li>Por lei, toda instituição financeira deve informar o CET antes da contratação.</li>
+<li>Quanto maior a diferença entre a taxa de juros e o CET, mais encargos estão embutidos.</li>
+<li>Sempre compare ofertas pelo CET, não apenas pelo valor da parcela ou pela taxa.</li>
+</ul>
 </section>
 <section><h2>O que entra no CET?</h2>
 <ul>
@@ -3543,242 +3640,413 @@ export const posts: Post[] = [
 <section><h2>Exemplo prático da diferença</h2>
 <p>Empréstimo de R$ 10.000 em 12 meses:</p>
 <table>
+<thead>
 <tr><th>Banco</th><th>Taxa de juros</th><th>CET</th><th>Parcela</th><th>Total</th></tr>
+</thead>
+<tbody>
 <tr><td>Banco A</td><td>2,5% a.m.</td><td>2,8% a.m.</td><td>R$ 975</td><td>R$ 11.700</td></tr>
 <tr><td>Banco B</td><td>2,0% a.m.</td><td>4,5% a.m.</td><td>R$ 1.050</td><td>R$ 12.600</td></tr>
+</tbody>
 </table>
 <p>O Banco B anuncia taxa de 2% (mais baixa que o Banco A), mas o CET é de 4,5% por causa de seguros e tarifas. No final, o Banco B é mais caro.</p>
-<p>Se você olhasse só a taxa de juros, escolheria o Banco B e pagaria R$ 900 a mais.</p>
+<p>Se você olhasse apenas a taxa de juros, escolheria o Banco B e pagaria R$ 900 a mais.</p>
+</section>
+<section><h2>Componentes que afetam o CET</h2>
+<table>
+<thead>
+<tr><th>Componente</th><th>Impacto no CET</th><th>Observação</th></tr>
+</thead>
+<tbody>
+<tr><td>Taxa de juros</td><td>Principal componente</td><td>Varia conforme o perfil de crédito e a instituição</td></tr>
+<tr><td>Tarifa de abertura de crédito (TAC)</td><td>Aumento único no início</td><td>Pode ser cobrada na contratação ou diluída nas parcelas</td></tr>
+<tr><td>Seguro prestamista</td><td>Aumento mensal</td><td>Em muitos casos é opcional, mesmo que oferecido como obrigatório</td></tr>
+<tr><td>IOF</td><td>Aumento proporcional ao valor e prazo</td><td>Imposto federal que incide sobre toda operação de crédito</td></tr>
+<tr><td>Tarifa de cadastro</td><td>Aumento único</td><td>Cobrada na análise de crédito, varia conforme a instituição</td></tr>
+</tbody>
+</table>
 </section>
 <section><h2>Por que os bancos usam taxa de juros nos anúncios?</h2>
-<p>Porque a taxa de juros é sempre menor que o CET. Um anúncio com &quot;taxa a partir de 1,5% ao mês&quot; atrai mais clientes do que &quot;CET de 4,2% ao mês&quot;. É uma estratégia de marketing, não enganação — desde que o CET seja informado no contrato.</p>
-<p>Por lei, o banco é obrigado a informar o CET antes da contratação. Se o vendedor não falou no CET, pergunte. Se ele desconversar, desconfie.</p>
+<p>Porque a taxa de juros é um número menor que o CET. Um anúncio com &quot;taxa a partir de 1,5% ao mês&quot; atrai mais atenção do que &quot;CET de 4,2% ao mês&quot;. É uma estratégia de marketing — desde que o CET seja informado no contrato, a prática é regulamentada.</p>
+<p>Por lei, o banco é obrigado a informar o CET antes da contratação. Se o vendedor não mencionar o CET, pergunte. Se ele desconversar, desconfie.</p>
 </section>
 <section><h2>Como usar o CET a seu favor</h2>
 <ol>
-<li>Sempre peça o CET antes de contratar qualquer empréstimo</li>
-<li>Compare o CET de diferentes instituições, não a taxa de juros</li>
-<li>Desconfie de CET muito alto mesmo com taxa baixa (tem tarifa escondida)</li>
+<li>Solicite o CET antes de contratar qualquer empréstimo — por lei, o banco deve informar</li>
+<li>Compare o CET de diferentes instituições, não apenas a taxa de juros</li>
+<li>Desconfie de CET muito alto mesmo com taxa baixa (pode indicar tarifas escondidas)</li>
 <li>Use o CET para calcular o custo real no seu orçamento</li>
+<li>Leia o contrato para identificar quais tarifas estão elevando o CET</li>
 </ol>
 </section>
+<section><h2>Erros comuns ao interpretar o CET</h2>
+<ul>
+<li><strong>Achar que taxa de juros é o mesmo que CET:</strong> a taxa é apenas um dos componentes. O CET sempre será igual ou maior.</li>
+<li><strong>Ignorar o CET no consignado:</strong> mesmo com taxas baixas, tarifas e seguros podem elevar o custo total.</li>
+<li><strong>Comparar CET de modalidades diferentes:</strong> cada tipo de crédito tem estrutura de custos própria. Compare dentro da mesma categoria.</li>
+<li><strong>Não considerar o prazo:</strong> dois empréstimos com o mesmo CET podem ter custos totais diferentes se o prazo for diferente.</li>
+</ul>
+</section>
 <section><h2>Conclusão</h2>
-<p>O CET é o número mais importante na hora de contratar um empréstimo. Ignorar o CET pode custar caro. Sempre compare o CET entre as instituições, e não se deixe enganar por taxas de juros baixas que escondem tarifas altas.</p>
+<p>O CET é o indicador mais importante na hora de contratar um empréstimo. Ignorá-lo pode custar caro. Compare o CET entre as instituições e não se deixe enganar por taxas de juros baixas que escondem tarifas altas.</p>
+<p>Veja também o guia <a href="/blog/como-comparar-emprestimos-corretamente">como comparar empréstimos corretamente</a> e saiba <a href="/blog/como-calcular-custo-real-emprestimo">como calcular o custo real de um empréstimo</a>.</p>
 </section>`,
     faq: [
-      { question: 'Onde encontro o CET do empréstimo?', answer: 'O CET deve estar visível no contrato e na proposta do empréstimo. Por lei, o banco é obrigado a informar o CET antes da contratação.' },
-      { question: 'CET alto significa que o empréstimo é ruim?', answer: 'Nem sempre. O CET pode ser alto por causa de seguros que você considera importantes. O que importa é comparar o CET entre propostas semelhantes.' },
-      { question: 'O CET muda durante o contrato?', answer: 'Não, o CET é calculado no momento da contratação e é fixo para empréstimos de taxa fixa. Para empréstimos com taxa variável, o CET pode mudar.' },
-      { question: 'Posso negociar o CET com o banco?', answer: 'Sim, você pode pedir para reduzir ou remover tarifas e seguros que estão elevando o CET. Se o banco não aceitar, procure outra instituição.' },
-      { question: 'Qual a diferença entre CET mensal e CET anual?', answer: 'O CET mensal é o custo por mês. O CET anual é a projeção para 12 meses. O Banco Central exige que ambos sejam informados.' },
+      { question: 'Onde encontro o CET do empréstimo?', answer: 'O CET deve estar visível no contrato e na proposta de crédito. Por lei, o banco é obrigado a informar antes da contratação. Você pode solicitar ao gerente ou consultar o aplicativo da instituição.' },
+      { question: 'CET alto significa que o empréstimo é ruim?', answer: 'Nem sempre. Um CET mais alto pode refletir seguros ou serviços inclusos. O importante é comparar o CET entre propostas da mesma modalidade.' },
+      { question: 'O CET muda durante o contrato?', answer: 'Para empréstimos de taxa fixa, o CET é calculado na contratação e permanece o mesmo. Para contratos com taxa variável, o CET pode ser revisado, e o banco deve informar com antecedência.' },
+      { question: 'Posso negociar o CET com o banco?', answer: 'Sim, é possível pedir a redução ou remoção de tarifas e seguros que estejam elevando o CET. Se o banco não aceitar, vale a pena procurar outra instituição.' },
+      { question: 'Qual a diferença entre CET mensal e CET anual?', answer: 'O CET mensal é o custo médio por mês. O CET anual é a projeção acumulada para 12 meses. O Banco Central exige que ambos sejam informados na proposta.' },
+      { question: 'O CET serve para financiamento também?', answer: 'Sim, o CET é exigido em todas as operações de crédito, incluindo financiamento de veículos, imóveis e crédito consignado.' },
+      { question: 'Qual a diferença entre CET e taxa de juros na prática?', answer: 'A taxa de juros é o custo do dinheiro emprestado. O CET é esse custo mais todas as despesas adicionais. Por isso, ao comparar ofertas, o CET é o número que realmente importa.' },
     ],
   },
   // === EMPRÉSTIMOS — ARTIGO 3/5 ===
   {
     slug: 'emprestimo-consignado-vale-a-pena',
     title: 'Empréstimo consignado vale a pena?',
-    description: 'Análise completa do empréstimo consignado. Vantagens, desvantagens, taxas atuais e para quem ele realmente é indicado.',
+    description: 'Análise completa sobre o empréstimo consignado: como funciona, taxas atuais (2026), vantagens e desvantagens. Veja em quais situações pode ser vantajoso e quando é melhor evitar. Informações atualizadas com base nas regras vigentes. Consulte os canais oficiais para confirmar taxas e condições antes de contratar.',
     date: '2026-06-04',
+    lastModified: '2026-06-19',
     category: 'Empréstimos',
-    keywords: ['emprestimo consignado', 'consignado vale a pena', 'taxa consignado', 'emprestimo INSS', 'consignado servidor público'],
+    keywords: ['emprestimo consignado', 'consignado vale a pena', 'taxa consignado', 'emprestimo INSS', 'consignado servidor publico', 'consignado vs pessoal', 'cuidados emprestimo consignado'],
     relatedCalculators: [
       { name: 'Empréstimo', href: '/calculadoras/emprestimo' },
       { name: 'Comprometimento de Renda', href: '/calculadoras/comprometimento-renda' },
+      { name: 'Troca de Dívidas', href: '/calculadoras/troca-dividas' },
     ],
     content: `
 <section><h2>O que é o empréstimo consignado?</h2>
-<p>O empréstimo consignado é uma modalidade onde as parcelas são descontadas diretamente da folha de pagamento ou benefício. Como o risco para o banco é menor (o desconto é automático), as taxas de juros são as mais baixas do mercado.</p>
+<p>O empréstimo consignado é uma modalidade onde as parcelas são descontadas diretamente da folha de pagamento ou benefício. Como o risco para o banco é menor (o desconto é automático), as taxas de juros tendem a ser as mais baixas do mercado de crédito pessoal.</p>
 <p>Podem contratar: aposentados e pensionistas do INSS, servidores públicos, militares e trabalhadores CLT de empresas conveniadas.</p>
+</section>
+<section><h2>Resumo rápido: o que você precisa saber</h2>
+<ul>
+<li>O empréstimo consignado geralmente tem taxas mais baixas que outras modalidades, mas o valor varia conforme o vínculo (INSS, servidor público ou CLT)</li>
+<li>As parcelas são descontadas diretamente da folha de pagamento ou benefício, o que reduz o risco de inadimplência para o banco</li>
+<li>O comprometimento máximo da renda é de 35%, o que pode impactar significativamente o orçamento mensal</li>
+<li>Nem todo trabalhador tem acesso: é necessário vínculo com INSS, serviço público ou empresa conveniada</li>
+<li>Antes de contratar, compare taxas entre instituições, simule o valor total das parcelas e leia o contrato com atenção</li>
+<li>Consulte os canais oficiais (Caixa, INSS, Banco Central) para confirmar as taxas e regras vigentes</li>
+</ul>
 </section>
 <section><h2>Taxas de juros atuais (2026)</h2>
 <ul>
-<li><strong>Consignado INSS:</strong> aproximadamente 1,72% ao mês</li>
-<li><strong>Consignado servidor público:</strong> aproximadamente 1,5% ao mês</li>
-<li><strong>Consignado CLT:</strong> aproximadamente 2,5% ao mês</li>
+<li><strong>Consignado INSS:</strong> aproximadamente 1,72% ao mês*</li>
+<li><strong>Consignado servidor público:</strong> aproximadamente 1,5% ao mês*</li>
+<li><strong>Consignado CLT:</strong> aproximadamente 2,5% ao mês*</li>
 </ul>
-<p>Para comparação, um empréstimo pessoal comum tem taxas de 3% a 10% ao mês. A diferença é enorme.</p>
+<p>*As taxas são aproximadas e podem variar conforme o banco, o contrato e as regras definidas pelos órgãos competentes. Consulte o site do <a href="https://www.bcb.gov.br">Banco Central</a> ou da instituição financeira para confirmar os valores atualizados.</p>
+<p>Para comparação, um empréstimo pessoal comum costuma ter taxas entre 3% e 10% ao mês, o que representa uma diferença significativa entre as modalidades. Use a <a href="/calculadoras/emprestimo">calculadora de empréstimo</a> para simular diferentes cenários.</p>
+</section>
+<section><h2>Comparativo: consignado vs outras modalidades</h2>
+<table>
+<thead>
+<tr><th>Modalidade</th><th>Taxa mensal aproximada</th><th>Forma de pagamento</th><th>Prazo máximo</th><th>Exige consulta Serasa</th></tr>
+</thead>
+<tbody>
+<tr><td>Consignado INSS</td><td>1,72% a.m.*</td><td>Desconto em folha/benefício</td><td>Até 84 meses</td><td>Não</td></tr>
+<tr><td>Consignado servidor público</td><td>1,5% a.m.*</td><td>Desconto em folha</td><td>Até 96 meses</td><td>Não</td></tr>
+<tr><td>Consignado CLT</td><td>2,5% a.m.*</td><td>Desconto em folha</td><td>Até 60 meses</td><td>Não</td></tr>
+<tr><td>Empréstimo pessoal</td><td>3% a 10% a.m.</td><td>Boleto ou débito</td><td>Até 60 meses</td><td>Sim</td></tr>
+<tr><td>Cartão de crédito (rotativo)</td><td>14% a.m. ou mais</td><td>Fatura mensal</td><td>—</td><td>Não</td></tr>
+</tbody>
+</table>
+<p>*Taxas aproximadas com base nas regras vigentes em 2026. Os valores podem variar conforme a instituição financeira e as definições do governo. Confirme as taxas atualizadas no site do Banco Central ou da instituição escolhida.</p>
 </section>
 <section><h2>Vantagens do consignado</h2>
 <ul>
-<li><strong>Taxas mais baixas:</strong> as menores do mercado de crédito pessoal</li>
-<li><strong>Prazos longos:</strong> até 96 meses (8 anos) para servidores</li>
-<li><strong>Sem consulta ao Serasa:</strong> aprovação independente do score</li>
-<li><strong>Desconto automático:</strong> não tem risco de esquecer de pagar</li>
-<li><strong>Menos burocracia:</strong> aprovação mais rápida que empréstimo pessoal</li>
+<li><strong>Taxas mais baixas:</strong> costumam ser as menores do mercado de crédito pessoal</li>
+<li><strong>Prazos longos:</strong> podem chegar a 96 meses (8 anos) para servidores públicos</li>
+<li><strong>Sem consulta ao Serasa:</strong> a aprovação independe do score de crédito</li>
+<li><strong>Desconto automático:</strong> reduz o risco de esquecimento ou atraso no pagamento</li>
+<li><strong>Menos burocracia:</strong> a aprovação tende a ser mais rápida que o empréstimo pessoal</li>
 </ul>
 </section>
 <section><h2>Desvantagens do consignado</h2>
 <ul>
-<li><strong>Compromete a renda:</strong> até 35% do salário/benefício fica comprometido</li>
-<li><strong>Disponibilidade limitada:</strong> nem todo trabalhador tem acesso</li>
-<li><strong>Dificuldade de quitação antecipada:</strong> alguns bancos dificultam</li>
-<li><strong>Pode gerar superendividamento:</strong> como é fácil contratar, algumas pessoas contratam mais do que podem pagar</li>
-<li><strong>Portabilidade pode ser burocrática:</strong> transferir para outro banco exige processo</li>
+<li><strong>Compromete a renda:</strong> até 35% do salário ou benefício fica comprometido com parcelas</li>
+<li><strong>Disponibilidade limitada:</strong> nem todo trabalhador tem acesso à modalidade</li>
+<li><strong>Dificuldade de quitação antecipada:</strong> alguns bancos podem dificultar o processo, embora a portabilidade seja um direito</li>
+<li><strong>Pode gerar superendividamento:</strong> como a contratação é facilitada, algumas pessoas podem contratar mais do que conseguem pagar</li>
+<li><strong>Portabilidade pode ser burocrática:</strong> transferir o saldo devedor para outro banco exige documentação e prazo</li>
 </ul>
 </section>
 <section><h2>Exemplo prático</h2>
-<p>Maria, aposentada do INSS, precisa de R$ 8.000 para reformar a casa:</p>
+<p>Maria, aposentada do INSS, precisa de R$ 8.000 para reformar a casa. Veja a comparação entre consignado e pessoal:</p>
 <ul>
-<li><strong>Consignado INSS:</strong> taxa 1,72% a.m., 36 meses → parcela de R$ 305, total R$ 10.980</li>
-<li><strong>Pessoal banco:</strong> taxa 4% a.m., 36 meses → parcela de R$ 423, total R$ 15.228</li>
+<li><strong>Consignado INSS:</strong> taxa aproximada de 1,72% a.m., 36 meses → parcela de aproximadamente R$ 305, total aproximado de R$ 10.980</li>
+<li><strong>Pessoal banco:</strong> taxa aproximada de 4% a.m., 36 meses → parcela de aproximadamente R$ 423, total aproximado de R$ 15.228</li>
 </ul>
-<p>Diferença: Maria economiza R$ 4.248 contratando o consignado.</p>
+<p>Neste cenário, a economia com o consignado seria de aproximadamente R$ 4.248. Os valores são ilustrativos e podem variar conforme as taxas praticadas por cada instituição. Use a <a href="/calculadoras/emprestimo">calculadora de empréstimo</a> para simular seu próprio cenário. Veja também <a href="/blog/como-calcular-custo-real-emprestimo">como calcular o custo real de um empréstimo</a>.</p>
 </section>
-<section><h2>Quando o consignado NÃO vale a pena</h2>
+<section><h2>Quando o consignado pode não ser vantajoso</h2>
 <ul>
-<li>Para valores muito pequenos (R$ 500 a R$ 1.000), as tarifas podem pesar mais</li>
-<li>Se você pretende quitar o empréstimo rapidamente (empréstimo pessoal pode ser mais flexível)</li>
-<li>Se você já comprometeu os 35% da renda e precisa de mais crédito</li>
-<li>Para investir (pegar consignado para aplicar na bolsa é furada)</li>
+<li>Para valores muito pequenos (R$ 500 a R$ 1.000), as tarifas podem representar um custo proporcional maior</li>
+<li>Se você pretende quitar o empréstimo rapidamente, o empréstimo pessoal pode oferecer mais flexibilidade</li>
+<li>Se você já comprometeu os 35% da renda e precisa de mais crédito, é recomendável reavaliar o orçamento antes de contratar</li>
+<li>Para investir: pegar consignado para aplicar em renda variável não é recomendado, pois o investimento não tem retorno garantido e a dívida continua independentemente do resultado</li>
 </ul>
+<p>Veja também: <a href="/blog/quando-nao-vale-a-pena-fazer-emprestimo">outras situações em que o empréstimo pode não ser recomendado</a>.</p>
+</section>
+<section><h2>Erros comuns ao contratar consignado</h2>
+<table>
+<thead>
+<tr><th>Erro</th><th>Consequência</th><th>O que fazer</th></tr>
+</thead>
+<tbody>
+<tr><td>Contratar sem comparar taxas</td><td>Pode pagar mais caro por não buscar melhores condições</td><td>Pesquise em pelo menos 3 bancos antes de decidir</td></tr>
+<tr><td>Comprometer toda a margem consignável</td><td>Fica sem margem para emergências ou novo crédito</td><td>Mantenha uma reserva da margem para imprevistos</td></tr>
+<tr><td>Não ler o contrato com atenção</td><td>Pode assumir seguros ou tarifas não esperadas</td><td>Leia todas as cláusulas e tire dúvidas antes de assinar</td></tr>
+<tr><td>Pegar consignado para investir</td><td>O investimento pode não render o esperado, mas a dívida continua existindo</td><td>Evite usar crédito consignado para aplicar em renda variável</td></tr>
+<tr><td>Renovar o empréstimo sem necessidade</td><td>Aumenta o saldo devedor e o total de juros pagos ao longo do tempo</td><td>Só renove se houver redução significativa da taxa. Use a <a href="/calculadoras/troca-dividas">calculadora de troca de dívidas</a> para comparar</td></tr>
+</tbody>
+</table>
 </section>
 <section><h2>Conclusão</h2>
-<p>O empréstimo consignado vale muito a pena para quem tem acesso a ele. As taxas são as menores do mercado e o desconto automático elimina o risco de atraso. Mas cuidado: a facilidade de contratar não significa que você deve contratar sem planejamento. Use o consignado com responsabilidade.</p>
+<p>O empréstimo consignado pode ser vantajoso para quem tem acesso a ele, especialmente pelas taxas geralmente mais baixas em comparação com outras modalidades de crédito pessoal. O desconto automático em folha também ajuda a evitar atrasos no pagamento.</p>
+<p>No entanto, é importante lembrar que a facilidade de contratação não significa que o crédito deva ser usado sem planejamento. Antes de contratar, avalie sua real necessidade, compare condições entre diferentes instituições e considere o impacto das parcelas no orçamento mensal.</p>
+<p>Cada caso é único: o que funciona para uma pessoa pode não ser a melhor escolha para outra. Consulte os canais oficiais (INSS, Caixa, Banco Central) para confirmar taxas, regras e condições vigentes antes de tomar uma decisão.</p>
 </section>`,
     faq: [
-      { question: 'Aposentado do INSS pode pegar consignado?', answer: 'Sim. Aposentados e pensionistas do INSS podem contratar empréstimo consignado com desconto direto no benefício. O limite é de 35% do valor do benefício.' },
-      { question: 'Qual a taxa máxima do consignado INSS em 2026?', answer: 'O governo federal define o teto das taxas. Em 2026, o limite está em torno de 1,72% ao mês para o consignado INSS.' },
-      { question: 'Consignado para CLT funciona igual?', answer: 'Funciona, mas depende de convênio entre a empresa e o banco. Se sua empresa tem convênio, o desconto sai direto na folha de pagamento.' },
-      { question: 'Posso transferir meu consignado para outro banco?', answer: 'Sim, a portabilidade de crédito é um direito seu. Você pode transferir o saldo devedor para outro banco que ofereça taxas melhores.' },
-      { question: 'O que acontece se eu perder o emprego com consignado ativo?', answer: 'O banco tem mecanismos de proteção. Em caso de demissão, as parcelas deixam de ser descontadas e você pode negociar o pagamento diretamente com o banco.' },
+      { question: 'Aposentado do INSS pode pegar consignado?', answer: 'Sim. Aposentados e pensionistas do INSS podem contratar empréstimo consignado com desconto direto no benefício. O limite é de 35% do valor do benefício. Consulte o site do INSS ou da Caixa para confirmar as regras atualizadas.' },
+      { question: 'Qual a taxa máxima do consignado INSS em 2026?', answer: 'O governo federal define o teto das taxas. Em 2026, o limite está em torno de 1,72% ao mês para o consignado INSS, mas esse valor pode ser alterado. Consulte o site do Banco Central para confirmar a taxa vigente.' },
+      { question: 'Consignado para CLT funciona igual?', answer: 'Funciona de forma similar, mas depende de convênio entre a empresa e o banco. Se sua empresa tem convênio, o desconto é feito direto na folha de pagamento. Verifique com o departamento pessoal se sua empresa oferece essa modalidade.' },
+      { question: 'Posso transferir meu consignado para outro banco?', answer: 'Sim, a portabilidade de crédito é um direito seu. Você pode transferir o saldo devedor para outro banco que ofereça taxas melhores. O processo pode exigir documentação, mas é garantido por lei.' },
+      { question: 'O que acontece se eu perder o emprego com consignado ativo?', answer: 'Em caso de demissão, as parcelas deixam de ser descontadas em folha e você pode negociar o pagamento diretamente com o banco. As condições de renegociação dependem da política da instituição financeira.' },
+      { question: 'É verdade que o consignado não precisa de consulta ao Serasa?', answer: 'Sim, a aprovação do consignado independe do score de crédito porque o desconto é automático na folha de pagamento ou benefício. No entanto, isso não significa que a contratação deva ser feita sem planejamento — avalie sua capacidade de pagamento antes de contratar.' },
+      { question: 'Qual a diferença entre consignado e empréstimo pessoal?', answer: 'A principal diferença está na forma de pagamento: no consignado as parcelas são descontadas automaticamente da folha ou benefício, o que permite taxas geralmente menores. No empréstimo pessoal, o pagamento é por boleto ou débito e as taxas costumam ser mais altas. Cada modalidade tem vantagens que dependem do perfil do contratante.' },
     ],
   },
   // === EMPRÉSTIMOS — ARTIGO 4/5 ===
   {
     slug: 'como-calcular-custo-real-emprestimo',
     title: 'Como calcular o custo real de um empréstimo',
-    description: 'Aprenda a calcular o custo real de qualquer empréstimo antes de contratar. Incluindo juros, IOF, tarifas e seguros.',
+    description: 'Guia completo e educativo para entender e calcular o custo real de um empréstimo pessoal. Entenda como juros, IOF, tarifas, seguros e prazo impactam o valor total pago. As informações são baseadas em regras gerais do mercado brasileiro e podem variar. Consulte os canais oficiais para confirmar taxas e condições vigentes. Este site não substitui atendimento oficial de bancos ou órgãos reguladores.',
     date: '2026-06-04',
+    lastModified: '2026-06-19',
     category: 'Empréstimos',
-    keywords: ['calcular custo real empréstimo', 'custo efetivo empréstimo', 'quanto vou pagar empréstimo', 'calcular juros empréstimo', 'simular empréstimo'],
+    keywords: ['calcular custo real empréstimo', 'custo efetivo empréstimo', 'quanto vou pagar empréstimo', 'calcular juros empréstimo', 'simular empréstimo', 'CET empréstimo', 'custo total crédito', 'IOF empréstimo'],
     relatedCalculators: [
       { name: 'Empréstimo', href: '/calculadoras/emprestimo' },
+      { name: 'Troca de Dívidas', href: '/calculadoras/troca-dividas' },
       { name: 'Financiamento', href: '/calculadoras/financiamento' },
     ],
     content: `
 <section><h2>O custo real não é só a taxa de juros</h2>
-<p>Quando você contrata um empréstimo de R$ 10.000 com taxa de 3% ao mês, você não paga só R$ 300 de juros por mês. O custo real inclui IOF, tarifas, seguros e o efeito dos juros compostos.</p>
-<p>Vamos aprender a calcular o custo real passo a passo, para você nunca mais ser pego de surpresa.</p>
+<p>Ao contratar um empréstimo, muitos consumidores olham apenas para a taxa de juros mensal e o valor da parcela. No entanto, o custo real envolve outros componentes como IOF, tarifas administrativas, seguros e o efeito dos juros compostos ao longo do prazo.</p>
+<p>Este guia apresenta uma metodologia educativa para você entender todos os encargos envolvidos em uma operação de crédito. As taxas e alíquotas mencionadas têm caráter exemplificativo e podem variar conforme a regulamentação vigente. Consulte sempre os canais oficiais (Banco Central, Receita Federal) para confirmar os valores atuais.</p>
+<p>Para uma análise personalizada, utilize nossa <a href="/calculadoras/emprestimo">calculadora de empréstimo</a> ou conheça o conceito de <a href="/blog/o-que-e-cet-e-por-que-importa">CET (Custo Efetivo Total)</a>, que reúne todos os encargos em um único indicador.</p>
+</section>
+<section><h2>Resumo rápido: o que você precisa saber</h2>
+<ul>
+<li><strong>Custo real inclui mais que juros:</strong> Além da taxa de juros, o custo total considera IOF, tarifas, seguros e prazo da operação.</li>
+<li><strong>IOF é regulado pelo governo:</strong> As alíquotas do IOF sobre operações de crédito são definidas pela Receita Federal e podem ser alteradas. Verifique as taxas vigentes no site oficial.</li>
+<li><strong>CET é o principal indicador:</strong> O Custo Efetivo Total (CET) reúne todos os encargos em um percentual único. É o número mais confiável para comparar ofertas.</li>
+<li><strong>Prazo maior pode significar mais juros:</strong> Parcelas menores em prazos longos geralmente resultam em maior custo total devido ao acúmulo de juros compostos.</li>
+<li><strong>Simule antes de contratar:</strong> Use simuladores de crédito do Banco Central ou calculadoras confiáveis para estimar o custo total antes de tomar uma decisão.</li>
+<li><strong>Desconfie de taxas muito baixas:</strong> Ofertas com taxas muito abaixo da média do mercado podem esconder tarifas ou condições desfavoráveis.</li>
+</ul>
+</section>
+<section><h2>Tabela comparativa: componentes do custo de um empréstimo</h2>
+<p>A tabela a seguir apresenta os principais componentes que formam o custo real de um empréstimo pessoal. Os valores são ilustrativos e podem variar conforme a instituição financeira e a regulamentação vigente.</p>
+<table>
+<thead>
+<tr><th>Componente</th><th>Impacto no custo total</th><th>Exemplo (R$ 10.000 / 12 meses)</th></tr>
+</thead>
+<tbody>
+<tr><td>Taxa de juros (3% a.m.)</td><td>Principal componente; incide sobre o saldo devedor</td><td>Aproximadamente R$ 2.060 de juros totais</td></tr>
+<tr><td>IOF (alíquotas vigentes)</td><td>Incide sobre o valor total e por dia de prazo; pago à vista</td><td>Variável conforme regulamentação; consulte a Receita Federal</td></tr>
+<tr><td>Tarifa de cadastro</td><td>Cobrada uma única vez na contratação</td><td>Geralmente entre R$ 25 e R$ 100</td></tr>
+<tr><td>Seguro prestamista</td><td>Protege o saldo devedor; opcional mas comum</td><td>Em torno de R$ 20 a R$ 50 por mês</td></tr>
+<tr><td>Prazo total</td><td>Quanto maior o prazo, maior o custo total em juros</td><td>12 meses vs 24 meses: diferença significativa no total pago</td></tr>
+</tbody>
+</table>
 </section>
 <section><h2>Passo 1: Identifique todos os encargos</h2>
-<p>Antes de calcular, você precisa saber o valor de cada encargo:</p>
+<p>Antes de calcular, levante todos os encargos envolvidos na operação. As instituições financeiras são obrigadas por lei a fornecer uma planilha com todos os custos antes da contratação. Os principais itens a verificar são:</p>
 <ul>
-<li><strong>Valor do empréstimo:</strong> R$ 10.000</li>
-<li><strong>Taxa de juros:</strong> 3% ao mês</li>
-<li><strong>Prazo:</strong> 12 meses</li>
-<li><strong>IOF:</strong> 0,38% sobre o valor + 0,0082% ao dia</li>
-<li><strong>Tarifa de cadastro:</strong> R$ 50 (se houver)</li>
-<li><strong>Seguro prestamista:</strong> R$ 30/mês (se houver)</li>
+<li><strong>Valor do empréstimo:</strong> o montante solicitado</li>
+<li><strong>Taxa de juros:</strong> percentual mensal ou anual aplicado</li>
+<li><strong>Prazo:</strong> número de parcelas</li>
+<li><strong>IOF:</strong> alíquotas definidas pela Receita Federal, incidentes sobre o valor total e por dia de prazo</li>
+<li><strong>Tarifa de cadastro:</strong> custo administrativo, se houver</li>
+<li><strong>Seguro prestamista:</strong> seguro opcional que cobre o saldo devedor em caso de morte ou invalidez</li>
 </ul>
+<p>Para entender melhor como esses componentes se relacionam, veja também nosso artigo <a href="/blog/como-comparar-emprestimos-corretamente">sobre como comparar empréstimos corretamente</a>.</p>
 </section>
-<section><h2>Passo 2: Calcule o valor da parcela</h2>
-<p>Usando a fórmula da tabela Price (sistema francês de amortização), que é a mais comum no Brasil:</p>
-<p>P = VF × [i × (1 + i)^n] / [(1 + i)^n - 1]</p>
+<section><h2>Passo 2: Entenda o cálculo da parcela</h2>
+<p>A maioria dos bancos no Brasil utiliza o sistema francês de amortização (tabela Price) para calcular as parcelas. A fórmula considera o valor financiado, a taxa de juros e o número de parcelas:</p>
+<p><strong>P = VF × [i × (1 + i)^n] / [(1 + i)^n - 1]</strong></p>
 <p>Onde:</p>
 <ul>
-<li>P = valor da parcela</li>
-<li>VF = valor financiado (R$ 10.000)</li>
-<li>i = taxa de juros mensal (3% = 0,03)</li>
-<li>n = número de parcelas (12)</li>
+<li><strong>P</strong> = valor da parcela</li>
+<li><strong>VF</strong> = valor financiado</li>
+<li><strong>i</strong> = taxa de juros mensal (em decimal)</li>
+<li><strong>n</strong> = número de parcelas</li>
 </ul>
-<p>Com esses valores, a parcela fica em R$ 1.005, sem incluir IOF e tarifas.</p>
+<p>Em um exemplo com R$ 10.000, taxa de 3% ao mês e 12 parcelas, o valor da parcela seria de aproximadamente R$ 1.005, apenas com juros, sem considerar IOF e tarifas.</p>
 </section>
-<section><h2>Passo 3: Adicione IOF e tarifas</h2>
-<p>O IOF é calculado assim:</p>
+<section><h2>Passo 3: Adicione IOF e tarifas ao cálculo</h2>
+<p>O IOF (Imposto sobre Operações Financeiras) é um tributo federal incidente sobre operações de crédito. Suas alíquotas podem ser alteradas pelo governo, por isso é importante consultar a tabela vigente no site da Receita Federal antes de fazer qualquer cálculo.</p>
+<p>De forma geral, o IOF incide de duas formas:</p>
 <ul>
-<li>IOF fixo: 0,38% de R$ 10.000 = R$ 38</li>
-<li>IOF diário: 0,0082% × 365 dias × R$ 10.000 = aproximados R$ 299</li>
-<li>Total IOF: R$ 337 (pago à vista no momento da contratação)</li>
+<li>Alíquota fixa sobre o valor total do empréstimo</li>
+<li>Alíquota diária sobre o prazo da operação</li>
 </ul>
-<p>Com IOF, o valor líquido que você recebe é R$ 9.663 (R$ 10.000 - R$ 337).</p>
-<p>Se houver tarifa de cadastro de R$ 50, o valor líquido cai para R$ 9.613.</p>
+<p>O IOF é descontado à vista no momento da liberação do crédito, reduzindo o valor líquido que você recebe. Se houver tarifa de cadastro, ela também reduz o valor recebido.</p>
 </section>
-<section><h2>Passo 4: Calcule o custo total</h2>
+<section><h2>Passo 4: Calcule o custo total aproximado</h2>
+<p>Com todos os encargos identificados, some o total das parcelas e subtraia o valor líquido recebido (após descontos de IOF e tarifas). A diferença é o custo total da operação.</p>
 <ul>
-<li>12 parcelas de R$ 1.005 = R$ 12.060</li>
-<li>+ IOF (já incluso no valor financiado, mas reduz o valor recebido)</li>
-<li>+ tarifa de cadastro (reduz o valor recebido)</li>
+<li>Soma das parcelas ao longo do prazo</li>
+<li>Valor líquido recebido (valor solicitado menos IOF e tarifas pagos à vista)</li>
+<li>Custo total = total pago - valor líquido recebido</li>
 </ul>
-<p>Custo total aproximado: R$ 12.060 para receber R$ 9.613 → você paga R$ 2.447 de juros e encargos.</p>
-<p>Use nossa <a href="/calculadoras/emprestimo">calculadora de empréstimo</a> para fazer essa conta automaticamente.</p>
+<p>Utilize nossa <a href="/calculadoras/emprestimo">calculadora de empréstimo</a> para automatizar esse cálculo e simular diferentes cenários. Você também pode usar a <a href="/calculadoras/troca-dividas">calculadora de troca de dívidas</a> para avaliar se vale a pena substituir uma dívida por outra.</p>
+</section>
+<section><h2>Erros comuns ao calcular o custo de um empréstimo</h2>
+<table>
+<thead>
+<tr><th>Erro comum</th><th>Consequência</th><th>O que fazer</th></tr>
+</thead>
+<tbody>
+<tr><td>Olhar apenas a taxa de juros mensal</td><td>Ignora IOF, tarifas e seguros, gerando uma visão distorcida do custo real</td><td>Sempre peça e compare o CET (Custo Efetivo Total) da operação</td></tr>
+<tr><td>Não considerar o prazo total</td><td>Uma parcela baixa pode esconder um custo total muito alto em prazos longos</td><td>Calcule o valor total pago ao final do prazo, não apenas a parcela</td></tr>
+<tr><td>Subestimar o efeito dos juros compostos</td><td>Juros sobre juros aumentam significativamente a dívida ao longo do tempo</td><td>Use simuladores que mostrem a evolução do saldo devedor mês a mês</td></tr>
+<tr><td>Ignorar o IOF no orçamento</td><td>O IOF é pago à vista e reduz o valor disponível imediatamente</td><td>Inclua o IOF no planejamento financeiro antes de contratar</td></tr>
+<tr><td>Aceitar seguros sem avaliar necessidade</td><td>Aumenta o custo mensal sem benefício real para o perfil do contratante</td><td>Pergunte se o seguro é opcional e compare o CET com e sem ele</td></tr>
+</tbody>
+</table>
+<p>Para uma visão mais ampla sobre crédito, confira nossa análise sobre <a href="/blog/emprestimo-consignado-vale-a-pena">empréstimo consignado</a> e se essa modalidade pode ser adequada para o seu perfil.</p>
 </section>
 <section><h2>Ferramenta prática: simulador do Banco Central</h2>
-<p>O Banco Central oferece um simulador de crédito gratuito que calcula o custo real de qualquer empréstimo. Acesse www.bcb.gov.br e procure por &quot;Simulador de Crédito&quot;. Você coloca o valor, taxa e prazo, e ele mostra o CET.</p>
+<p>O Banco Central do Brasil disponibiliza um simulador de crédito gratuito em seu site oficial (www.bcb.gov.br). A ferramenta permite inserir valor, taxa e prazo para calcular o CET e comparar diferentes ofertas de forma padronizada. É uma referência útil antes de contratar qualquer operação de crédito.</p>
 </section>
 <section><h2>Conclusão</h2>
-<p>Calcular o custo real de um empréstimo não é complicado quando você sabe o que incluir. O valor da parcela é só o começo, não o fim da conta. Considere IOF, tarifas, seguros e o prazo total. E nunca contrate sem usar um simulador primeiro.</p>
+<p>Calcular o custo real de um empréstimo envolve mais do que verificar a taxa de juros. É necessário considerar IOF, tarifas, seguros e o prazo total da operação. O CET (Custo Efetivo Total) é o indicador mais completo para comparar ofertas entre instituições financeiras.</p>
+<p>Recomenda-se não contratar sem antes utilizar um simulador de crédito e comparar pelo menos três propostas de instituições diferentes. As taxas e regras podem mudar, portanto confirme as informações nos canais oficiais antes de tomar uma decisão.</p>
+<p>Lembre-se: este conteúdo tem caráter educativo e não substitui a consulta a fontes oficiais ou o atendimento prestado por bancos e órgãos reguladores. Para dúvidas específicas, procure o Banco Central, a Receita Federal ou o Procon da sua região.</p>
 </section>`,
     faq: [
-      { question: 'Quanto de IOF é cobrado em um empréstimo?', answer: 'O IOF é de 0,38% sobre o valor total + 0,0082% ao dia de prazo. Para um empréstimo de 12 meses, o IOF total gira em torno de 3,4% do valor.' },
-      { question: 'O IOF é cobrado à vista ou parcelado?', answer: 'O IOF é descontado à vista no momento da liberação do crédito. Você recebe o valor do empréstimo já com o IOF descontado.' },
-      { question: 'Vale a pena pagar o empréstimo antes do prazo?', answer: 'Sim, você tem direito ao desconto proporcional dos juros futuros. É chamado de quitação antecipada e é um direito seu por lei.' },
-      { question: 'O que é seguro prestamista?', answer: 'É um seguro que paga o saldo devedor em caso de morte ou invalidez do contratante. Não é obrigatório, mas muitos bancos incluem no CET.' },
-      { question: 'Como saber se o banco está cobrando juros abusivos?', answer: 'Compare a taxa com a média do mercado (divulgada pelo BCB). Se estiver muito acima, reclame no banco e, se necessário, no Banco Central.' },
+      { question: 'O que é o custo real de um empréstimo?', answer: 'O custo real de um empréstimo é o valor total que você efetivamente pagará, incluindo juros, IOF, tarifas administrativas, seguros e qualquer outro encargo. Ele é diferente da simples soma das parcelas porque considera todos os custos embutidos na operação. O CET (Custo Efetivo Total) é o indicador que reúne todos esses encargos em um único percentual.' },
+      { question: 'O IOF é sempre o mesmo para qualquer empréstimo?', answer: 'Não. As alíquotas do IOF sobre operações de crédito são definidas pela Receita Federal e podem ser alteradas por decreto do governo federal. Pessoas físicas e jurídicas podem ter alíquotas diferentes, e operações específicas (como crédito rural ou imobiliário) podem ter tratamentos tributários distintos. Consulte o site oficial da Receita Federal para verificar as alíquotas vigentes.' },
+      { question: 'O IOF é cobrado à vista ou parcelado?', answer: 'O IOF é descontado à vista no momento da liberação do crédito. Isso significa que você recebe o valor do empréstimo já com o IOF deduzido. Por exemplo, em um empréstimo de R$ 10.000, se o IOF total for de R$ 300, você receberá R$ 9.700, mas pagará juros sobre o valor total de R$ 10.000.' },
+      { question: 'Vale a pena pagar o empréstimo antes do prazo?', answer: 'Em muitos casos, sim. Por lei, você tem direito à quitação antecipada com redução proporcional dos juros futuros. Antes de decidir, verifique se não há multa por antecipação (em algumas modalidades pode haver) e compare o custo de oportunidade de usar esse dinheiro para outras finalidades.' },
+      { question: 'O que é seguro prestamista e ele é obrigatório?', answer: 'O seguro prestamista é um seguro que cobre o saldo devedor em caso de morte ou invalidez do contratante. Ele não é obrigatório por lei, mas algumas instituições podem condicionar a contratação à adesão ao seguro. Nesse caso, o valor deve estar incluído no CET informado. Compare propostas com e sem seguro para avaliar se faz sentido para o seu perfil.' },
+      { question: 'Como saber se a taxa de juros é adequada?', answer: 'Uma forma de referência é comparar a taxa oferecida com a média do mercado divulgada mensalmente pelo Banco Central. Se a taxa estiver significativamente acima da média, pode ser interessante buscar outras propostas. Lembre-se de que a taxa ideal depende do seu perfil de crédito, do relacionamento com o banco e das garantias oferecidas.' },
+      { question: 'Qual a diferença entre taxa de juros e CET?', answer: 'A taxa de juros é apenas um dos componentes do custo do empréstimo. O CET (Custo Efetivo Total) inclui a taxa de juros, mais IOF, tarifas, seguros e qualquer outro encargo obrigatório. Por isso, duas ofertas com a mesma taxa de juros podem ter CETs diferentes. O CET é o indicador mais completo para comparar propostas. Veja mais detalhes em nosso artigo sobre <a href="/blog/o-que-e-cet-e-por-que-importa">o que é CET e por que ele importa</a>.' },
     ],
   },
   // === EMPRÉSTIMOS — ARTIGO 5/5 ===
   {
     slug: 'quando-nao-vale-a-pena-fazer-emprestimo',
     title: 'Quando NÃO vale a pena fazer um empréstimo',
-    description: 'Saiba em quais situações o empréstimo é uma armadilha financeira. Evite erros comuns que custam caro no bolso.',
+    description: 'Veja em quais situações contratar um empréstimo pode não ser a melhor alternativa financeira. Conheça cenários que exigem cautela e saiba quando avaliar outras opções antes de assumir uma dívida.',
     date: '2026-06-04',
+    lastModified: '2026-06-19',
     category: 'Empréstimos',
-    keywords: ['quando não fazer empréstimo', 'empréstimo não compensa', 'evitar empréstimo', 'armadilha empréstimo', 'emprestimo perigoso'],
+    keywords: ['quando não fazer empréstimo', 'empréstimo não compensa', 'evitar empréstimo', 'alternativas ao empréstimo', 'comprometimento de renda', 'crédito consciente'],
     relatedCalculators: [
       { name: 'Empréstimo', href: '/calculadoras/emprestimo' },
       { name: 'Troca de Dívidas', href: '/calculadoras/troca-dividas' },
       { name: 'Economia Mensal', href: '/calculadoras/economia-mensal' },
+      { name: 'Orçamento Familiar', href: '/calculadoras/orcamento-familiar' },
+      { name: 'Comprometimento de Renda', href: '/calculadoras/comprometimento-renda' },
     ],
     content: `
-<section><h2>Empréstimo não é solução para tudo</h2>
-<p>No Brasil, o crédito é fácil de conseguir e difícil de pagar. Antes de contratar qualquer empréstimo, pare e pense: eu realmente preciso disso? Existe outra forma?</p>
-<p>Nem todas as situações justificam um empréstimo. Algumas são armadilhas que vão te custar caro. Vamos ver quando você deve fugir do crédito.</p>
+<section><h2>Empréstimo: quando pode não ser a melhor alternativa</h2>
+<p>No Brasil, o crédito é fácil de conseguir e difícil de pagar. Antes de contratar qualquer empréstimo, é importante avaliar se a despesa realmente justifica os juros que serão pagos. Pergunte-se: eu realmente preciso disso? Existe outra forma?</p>
+<p>Nem todas as situações justificam um empréstimo. Algumas merecem atenção redobrada. Veja a seguir cenários em que contratar crédito pode ser desfavorável.</p>
+</section>
+<section><h2>Resumo rápido</h2>
+<ul>
+<li>Antes de contratar um empréstimo, avalie se a despesa realmente justifica o custo dos juros ao longo do tempo</li>
+<li>Empréstimos para despesas do dia a dia ou lazer tendem a comprometer o orçamento sem trazer retorno financeiro</li>
+<li>A referência de 30% de comprometimento da renda é um parâmetro comum — acima disso, o risco de inadimplência tende a aumentar</li>
+<li>Investir com dinheiro emprestado envolve riscos elevados, pois os juros são garantidos e o retorno do investimento, não</li>
+<li>Comparar o CET (Custo Efetivo Total) entre diferentes instituições é essencial antes de qualquer contratação</li>
+<li>Em caso de dúvida, consulte os canais oficiais do Banco Central ou de seu banco antes de decidir</li>
+</ul>
+</section>
+<section><h2>Comparativo: quando o empréstimo pode ou não ser adequado</h2>
+<table>
+<thead>
+<tr><th>Situação</th><th>Pode ser adequado quando</th><th>Geralmente não é recomendado quando</th></tr>
+</thead>
+<tbody>
+<tr><td>Emergência de saúde</td><td>Não há reserva financeira e o tratamento é urgente</td><td>Há alternativas como atendimento público ou plano de saúde</td></tr>
+<tr><td>Troca de dívida cara por mais barata</td><td>O CET total diminui com a renegociação</td><td>A taxa é igual ou maior que a da dívida atual</td></tr>
+<tr><td>Compra de bem essencial</td><td>O bem é necessário e o custo total cabe no orçamento</td><td>É para consumo imediato sem planejamento</td></tr>
+<tr><td>Investimento em educação</td><td>O curso tende a aumentar a renda de forma comprovada</td><td>Não há plano realista de retorno financeiro</td></tr>
+<tr><td>Lazer, viagem ou festa</td><td>-</td><td>Geralmente é preferível juntar o valor antes</td></tr>
+<tr><td>Pagar contas básicas do mês</td><td>-</td><td>Pode indicar descontrole orçamentário que o crédito não resolve</td></tr>
+</tbody>
+</table>
 </section>
 <section><h2>1. Para pagar contas do dia a dia</h2>
-<p>Pegar empréstimo para pagar supermercado, luz, água ou aluguel é o primeiro sinal de que seu orçamento está comprometido. O empréstimo não resolve o problema, só empurra para frente com juros.</p>
-<p>Se isso está acontecendo, você precisa reduzir gastos ou aumentar a renda, não contratar mais dívidas.</p>
+<p>Pegar empréstimo para pagar supermercado, luz, água ou aluguel pode indicar que o orçamento está apertado. Nesses casos, o crédito tende a não resolver a causa do problema — ele pode postergar o desequilíbrio com a cobrança de juros.</p>
+<p>Geralmente, é mais indicado buscar formas de reduzir gastos ou aumentar a renda antes de contratar uma nova dívida. Veja dicas no artigo <a href='/blog/como-sair-das-dividas-guia-completo'>Como sair das dívidas: guia completo</a>.</p>
 </section>
 <section><h2>2. Para viajar ou fazer festa</h2>
-<p>Pegar empréstimo para viajar, fazer casamento ou festa de aniversário é financeiramente irresponsável. Esses eventos são importantes, mas não justificam pagar juros por meses ou anos depois.</p>
-<p>Regra de ouro: se não tem dinheiro à vista, não gaste. Junte primeiro, gaste depois.</p>
+<p>Pegar empréstimo para viajar, realizar um casamento ou uma festa de aniversário pode não ser a melhor escolha financeira. Esses eventos têm seu valor, mas pagar juros por meses após a realização pode comprometer o orçamento futuramente.</p>
+<p>Uma orientação comum é: se não há recursos à vista, talvez seja melhor planejar e juntar o dinheiro antes de gastar. Assim a experiência não vira uma preocupação financeira depois.</p>
 </section>
 <section><h2>3. Para investir (consignado na bolsa)</h2>
-<p>&quot;Vou pegar um empréstimo consignado a 2% ao mês e investir em ações que rendem 3% ao mês.&quot; Essa conta não fecha. Investimento não tem retorno garantido, e empréstimo tem juro garantido.</p>
-<p>Nunca invista dinheiro emprestado. Se o investimento der errado, você fica com a dívida.</p>
+<p>&quot;Vou pegar um empréstimo consignado a 2% ao mês e investir em ações que rendem 3% ao mês.&quot; Essa conta envolve riscos que nem sempre são considerados. Investimentos não têm retorno garantido, enquanto os juros do empréstimo são certos.</p>
+<p>Não é recomendado investir dinheiro emprestado. Se o investimento não sair como esperado, a dívida permanece. Antes de considerar essa estratégia, avalie o perfil de risco e consulte um profissional de finanças.</p>
 </section>
 <section><h2>4. Para pagar outro empréstimo (sem melhora de taxa)</h2>
-<p>Fazer um empréstimo novo para pagar um empréstimo velho, com taxas iguais ou piores, não resolve nada. Você só está rolando a dívida e pagando mais juros.</p>
-<p>Se for fazer isso, use nossa <a href="/calculadoras/troca-dividas">calculadora de troca de dívidas</a> para ver se realmente compensa.</p>
+<p>Fazer um empréstimo novo para pagar um empréstimo velho, com taxas iguais ou piores, tende a não resolver a situação. Nesse caso, a dívida é apenas postergada e o total pago em juros pode aumentar.</p>
+<p>Se for considerar essa alternativa, use nossa <a href='/calculadoras/troca-dividas'>calculadora de troca de dívidas</a> para verificar se as condições realmente melhoram. Compare também com outras opções no artigo <a href='/blog/como-comparar-emprestimos-corretamente'>Como comparar empréstimos corretamente</a>.</p>
 </section>
 <section><h2>5. Para comprar carro zero (se você já tem carro funcionando)</h2>
-<p>Trocar de carro todo ano financiando a diferença é um dos maiores destruidores de patrimônio. Um carro zero de R$ 80.000 financiado em 60 meses pode custar R$ 120.000 no final.</p>
-<p>Se seu carro atual funciona, mantenha ele por mais alguns anos.</p>
+<p>Trocar de carro todo ano financiando a diferença pode pesar no orçamento. Um carro zero de R$ 80.000 financiado em 60 meses pode custar R$ 120.000 no final, dependendo das taxas aplicadas.</p>
+<p>Se o carro atual atende às necessidades e está funcionando, talvez valha a pena mantê-lo por mais alguns anos. Use a <a href='/calculadoras/emprestimo'>calculadora de empréstimo</a> para simular o custo total antes de decidir.</p>
 </section>
 <section><h2>6. Quando a parcela compromete mais de 30% da renda</h2>
-<p>Especialistas recomendam que o total de dívidas não ultrapasse 30% da sua renda líquida. Se a parcela do novo empréstimo vai te levar além disso, é melhor esperar.</p>
-<p>Use nossa <a href="/calculadoras/comprometimento-renda">calculadora de comprometimento de renda</a> para verificar.</p>
+<p>Muitos especialistas mencionam o percentual de 30% da renda líquida como uma referência para o total de compromissos financeiros. Se a parcela do novo empréstimo vai ultrapassar esse patamar, é recomendável reavaliar antes de contratar.</p>
+<p>Use nossa <a href='/calculadoras/comprometimento-renda'>calculadora de comprometimento de renda</a> para verificar como o novo crédito impacta seu orçamento.</p>
 </section>
 <section><h2>7. Para &quot;aproveitar uma promoção&quot;</h2>
-<p>&quot;Está com desconto, mas só até amanhã! Vou fazer um empréstimo rápido para pagar.&quot; Promoções voltam. Juros pagos não voltam. Se você não tem o dinheiro, a promoção não é para você.</p>
+<p>&quot;Está com desconto, mas só até amanhã! Vou fazer um empréstimo rápido para pagar.&quot; Promoções podem retornar; juros pagos não voltam. Se não há o dinheiro disponível no momento, a oferta pode não ser tão vantajosa quanto parece.</p>
+<p>Antes de contratar um crédito por impulso, durma com a proposta e compare com outras alternativas. Entender o <a href='/blog/o-que-e-cet-e-por-que-importa'>CET e por que ele importa</a> ajuda a tomar decisões mais conscientes.</p>
+</section>
+<section><h2>Erros comuns ao contratar empréstimo</h2>
+<table>
+<thead>
+<tr><th>Erro comum</th><th>Por que pode ser problemático</th><th>O que considerar antes</th></tr>
+</thead>
+<tbody>
+<tr><td>Não comparar taxas entre instituições</td><td>Diferenças de CET podem representar grande custo extra ao longo do contrato</td><td>Simule em ao menos 3 bancos ou financeiras</td></tr>
+<tr><td>Escolher só pelo valor da parcela</td><td>Parcela baixa pode significar prazo longo e mais juros totais</td><td>Calcule o custo total (CET) da operação</td></tr>
+<tr><td>Não ler o contrato com atenção</td><td>Cláusulas de multa, seguro embutido e taxas podem passar despercebidas</td><td>Leia cada cláusula ou peça ajuda de alguém de confiança</td></tr>
+<tr><td>Comprometer mais de 30% da renda</td><td>A margem para imprevistos fica reduzida</td><td>Use a calculadora de orçamento familiar</td></tr>
+<tr><td>Contratar por impulso em &quot;promoção relâmpago&quot;</td><td>Decisões apressadas tendem a ser desfavoráveis financeiramente</td><td>Durma com a proposta e compare com outras ofertas</td></tr>
+</tbody>
+</table>
 </section>
 <section><h2>Alternativas ao empréstimo</h2>
 <ul>
 <li>Vender algo que você não usa</li>
-<li>Fazer renda extra (freela, hora extra, bico)</li>
-<li>Negociar desconto à vista</li>
-<li>Usar a reserva de emergência (se for emergência mesmo)</li>
-<li>Esperar e juntar dinheiro</li>
+<li>Buscar renda extra (freela, hora extra, bico)</li>
+<li>Negociar desconto à vista com o fornecedor</li>
+<li>Usar a reserva de emergência (se for emergência real)</li>
+<li>Esperar e juntar o dinheiro antes de comprar</li>
+<li>Simular o impacto no orçamento com a <a href='/calculadoras/orcamento-familiar'>calculadora de orçamento familiar</a></li>
 </ul>
 </section>
 <section><h2>Conclusão</h2>
-<p>Empréstimo não é vilão, mas também não é solução para tudo. Use crédito com responsabilidade: para emergências reais, para compras que se valorizam ou para situações onde o custo do empréstimo é menor que o prejuízo de não tê-lo. Fora isso, junte dinheiro primeiro.</p>
+<p>O empréstimo não é um problema por si só, mas também não deve ser tratado como solução para qualquer situação. O crédito pode ser útil em emergências reais, na troca de dívida cara por uma mais barata ou em situações em que o custo do empréstimo é menor que o prejuízo de não tê-lo.</p>
+<p>Fora desses cenários, é recomendável juntar dinheiro primeiro e avaliar alternativas. Cada caso é único, e as regras dos programas de crédito podem variar. Consulte os canais oficiais do banco ou do Banco Central para confirmar as condições antes de contratar. Veja também o artigo sobre <a href='/blog/emprestimo-consignado-vale-a-pena'>empréstimo consignado: vale a pena?</a> para comparar modalidades.</p>
 </section>`,
     faq: [
-      { question: 'Qual o único motivo que justifica um empréstimo?', answer: 'Emergências reais (saúde, reparos urgentes na casa) e situações onde o empréstimo gera retorno financeiro (reforma que valoriza o imóvel, curso que aumenta o salário).' },
-      { question: 'Empréstimo para quitar cartão compensa?', answer: 'Compensa se a taxa do empréstimo for significativamente menor que a do rotativo. Use a calculadora de troca de dívidas para comparar.' },
-      { question: 'Qual o percentual ideal de comprometimento da renda?', answer: 'O ideal é que o total de dívidas não ultrapasse 30% da renda líquida. Acima de 50% é considerado situação de risco.' },
-      { question: 'Empréstimo para abrir negócio vale a pena?', answer: 'Vale se você tem um plano de negócios realista e já pesquisou o mercado. Mas prefira começar pequeno com recursos próprios.' },
-      { question: 'Como dizer não para um empréstimo &quot;imperdível&quot;?', answer: 'Lembre-se: o banco não está te fazendo um favor. Ele está vendendo um produto. Se a oferta for realmente boa, ela vai estar disponível amanhã também. Durma com a proposta.' },
+      { question: 'Qual o único motivo que justifica um empréstimo?', answer: 'Emergências reais (saúde, reparos urgentes na casa) e situações onde o empréstimo gera retorno financeiro (reforma que valoriza o imóvel, curso que aumenta o salário) são exemplos comuns. Ainda assim, é importante avaliar o custo total antes de contratar.' },
+      { question: 'Empréstimo para quitar cartão compensa?', answer: 'Pode compensar se a taxa do empréstimo for significativamente menor que a do rotativo do cartão. Use a calculadora de troca de dívidas para comparar as condições antes de decidir.' },
+      { question: 'Qual o percentual ideal de comprometimento da renda?', answer: 'Muitos especialistas mencionam que o total de dívidas não ultrapasse 30% da renda líquida como referência. Acima de 50% é geralmente considerado uma situação de maior risco financeiro.' },
+      { question: 'Empréstimo para abrir negócio vale a pena?', answer: 'Pode valer se você tem um plano de negócios realista, pesquisa de mercado e projeção de fluxo de caixa. Mas muitos empreendedores preferem começar com recursos próprios para evitar pressão financeira inicial.' },
+      { question: 'Como saber se a oferta de empréstimo é boa?', answer: 'Compare o CET (Custo Efetivo Total) entre diferentes instituições. Consulte as taxas médias divulgadas pelo Banco Central para a modalidade desejada. Se a taxa ofertada estiver muito acima da média do mercado, pode ser um sinal de alerta.' },
+      { question: 'É seguro contratar empréstimo por canais digitais?', answer: 'Contratar pelos canais oficiais do banco (aplicativo ou site) é seguro desde que você verifique se está no ambiente correto. Desconfie de ofertas recebidas por WhatsApp, SMS ou ligações não solicitadas. Nunca compartilhe senhas, códigos de acesso ou dados bancários com terceiros.' },
+      { question: 'É possível renegociar um empréstimo já contratado?', answer: 'Sim, é possível renegociar as condições com a instituição financeira, especialmente se houver atraso nas parcelas. Antes de renegociar, compare o CET da nova proposta com a dívida atual e verifique se as condições realmente melhoram.' },
     ],
   },
 ];
