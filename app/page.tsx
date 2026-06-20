@@ -525,7 +525,7 @@ export default function HomePage() {
                 Ver calculadoras <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground">
+            <Button asChild size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90 shadow-lg focus-visible:ring-2 focus-visible:ring-white/70">
               <Link href="/blog">
                 Explorar guias <BookOpen className="ml-2 w-4 h-4" />
               </Link>

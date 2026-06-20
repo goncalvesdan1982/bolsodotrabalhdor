@@ -96,7 +96,6 @@ export function Footer() {
           <div className="space-y-4">
             <h3 className="font-semibold text-foreground text-sm">Institucional</h3>
             <ul className="space-y-2.5">
-              <li><Link href="/blog" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Blog</Link></li>
               <li><Link href="/sobre" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Sobre</Link></li>
               <li><Link href="/autor" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Autor</Link></li>
               <li><Link href="/politica-editorial" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Política Editorial</Link></li>
