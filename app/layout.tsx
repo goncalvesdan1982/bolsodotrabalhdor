@@ -52,8 +52,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: '/og-image.png',
-        width: 1200,
-        height: 630,
+        width: 1731,
+        height: 909,
         alt: SITE_NAME,
       },
     ],
@@ -107,7 +107,7 @@ export default function RootLayout({
                   'description': SITE_DESCRIPTION,
                   'logo': {
                     '@type': 'ImageObject',
-                    'url': `${SITE_URL}/og-image.png`
+                    'url': `${SITE_URL}/logo-bolso-do-trabalhador.png`
                   }
                 },
                 {

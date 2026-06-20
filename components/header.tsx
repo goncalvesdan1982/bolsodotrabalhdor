@@ -2,7 +2,8 @@
 
 import Link from 'next/link'
 import { useState } from 'react'
-import { Wallet, Menu, ChevronDown } from 'lucide-react'
+import Image from 'next/image'
+import { Menu, ChevronDown } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import {
   DropdownMenu,
@@ -35,12 +36,15 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-primary text-primary-foreground shadow-sm">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 font-bold text-xl">
-          <div className="flex items-center justify-center w-9 h-9 rounded-lg bg-secondary">
-            <Wallet className="w-5 h-5 text-secondary-foreground" />
-          </div>
-          <span className="hidden sm:inline">Bolso do Trabalhador</span>
-          <span className="sm:hidden">Bolso do Trab.</span>
+        <Link href="/" className="flex items-center gap-2 shrink-0">
+          <Image
+            src="/logo-bolso-do-trabalhador.png"
+            alt="Bolso do Trabalhador"
+            width={180}
+            height={45}
+            className="h-8 w-auto sm:h-9"
+            priority
+          />
         </Link>
 
         {/* Desktop Navigation */}
@@ -117,8 +121,13 @@ export function Header() {
           </SheetTrigger>
           <SheetContent side="right" className="w-80">
             <SheetTitle className="flex items-center gap-2 mb-6">
-              <Wallet className="w-5 h-5 text-primary" />
-              Menu
+              <Image
+                src="/logo-bolso-do-trabalhador.png"
+                alt="Bolso do Trabalhador"
+                width={140}
+                height={35}
+                className="h-7 w-auto"
+              />
             </SheetTitle>
             <nav className="flex flex-col gap-4">
               <div className="space-y-2">
