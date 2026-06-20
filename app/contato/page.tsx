@@ -35,15 +35,13 @@ export default function ContatoPage() {
               </CardDescription>
             </CardHeader>
             <CardContent className="text-center">
-  <div className="overflow-x-auto pb-2">
     <a 
       href={`mailto:${SITE_EMAIL}`} 
-      className="inline-flex items-center gap-2 text-primary hover:underline font-semibold whitespace-nowrap text-sm sm:text-base md:text-xl"
+      className="inline-flex items-center gap-2 text-primary hover:underline font-semibold break-all text-sm sm:text-base md:text-xl"
     >
       <Mail className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
       <span>{SITE_EMAIL}</span>
     </a>
-  </div>
   <p className="text-muted-foreground text-sm mt-4">
     Responderemos o mais breve possível.
   </p>

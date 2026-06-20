@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   keywords: ['score de crédito', 'aumentar score', 'score serasa', 'como aumentar score', 'pontuação crédito', 'cadastro positivo', 'score baixo'],
   openGraph: {
     title: 'Score de Crédito - Como Aumentar e Manter',
-    description: 'Entenda como funciona o score de crédito, aprenda estratégias para aumentar sua pontuação e conquistar melhores condições financeiras.',
+  description: 'Entenda o que influencia o score de crédito, como consultar sua pontuação, o papel do Cadastro Positivo e cuidados para melhorar seu histórico com segurança.',
     url: `${SITE_URL}/score`,
     siteName: 'Bolso do Trabalhador',
     locale: 'pt_BR',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Score de Crédito - Como Aumentar e Manter',
-    description: 'Entenda como funciona o score de crédito e aprenda estratégias para aumentar sua pontuação.',
+    description: 'Entenda o que influencia o score, como consultar sua pontuação e cuidados para melhorar seu histórico.',
     images: [`${SITE_URL}/og-image.png`],
   },
   alternates: { canonical: `${SITE_URL}/score` },

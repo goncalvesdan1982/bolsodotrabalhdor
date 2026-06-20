@@ -11,11 +11,11 @@ import type { Post } from '@/lib/posts'
 
 export const metadata: Metadata = {
   title: 'Dívidas - Como Sair das Dívidas e Limpar o Nome',
-  description: 'Guia completo para sair das dívidas, negociar credores, limpar o nome e recuperar o controle financeiro. Dicas práticas e calculadoras gratuitas.',
+  description: 'Guias para organizar dívidas, priorizar pagamentos, negociar com bancos e evitar que cartão, juros e parcelas comprometam ainda mais o orçamento.',
   keywords: ['sair das dívidas', 'negociar dívidas', 'limpar nome', 'como sair das dívidas', 'renegociar dívidas', 'dividas', 'nome negativado'],
   openGraph: {
     title: 'Dívidas - Como Sair das Dívidas e Limpar o Nome',
-    description: 'Guia completo para sair das dívidas, negociar credores, limpar o nome e recuperar o controle financeiro.',
+    description: 'Guias para organizar dívidas, priorizar pagamentos, negociar com bancos e evitar que cartão, juros e parcelas comprometam ainda mais o orçamento.',
     url: `${SITE_URL}/dividas`,
     siteName: 'Bolso do Trabalhador',
     locale: 'pt_BR',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Dívidas - Como Sair das Dívidas e Limpar o Nome',
-    description: 'Guia completo para sair das dívidas, negociar credores e recuperar o controle financeiro.',
+    description: 'Guias para organizar dívidas, priorizar pagamentos e negociar com bancos.',
     images: [`${SITE_URL}/og-image.png`],
   },
   alternates: { canonical: `${SITE_URL}/dividas` },

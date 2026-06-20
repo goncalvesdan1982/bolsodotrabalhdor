@@ -10,7 +10,7 @@ import { BlogFilters } from '@/components/blog-filters'
 export async function generateMetadata({
   searchParams,
 }: {
-  searchParams: Promise<{ page?: string; q?: string }>
+  searchParams: Promise<{ page?: string; q?: string; categoria?: string }>
 }): Promise<Metadata> {
   const params = await searchParams
   const currentPage = Math.max(1, parseInt(params.page || '1'))
@@ -49,10 +49,11 @@ export async function generateMetadata({
 export default async function BlogPage({
   searchParams,
 }: {
-  searchParams: Promise<{ page?: string; q?: string }>
+  searchParams: Promise<{ page?: string; q?: string; categoria?: string }>
 }) {
   const params = await searchParams
   const query = (params.q || '').trim().toLowerCase()
+  const categoria = (params.categoria || '').trim()
 
   const allPosts = getAllPosts()
   const categories = getAllCategories()
@@ -80,7 +81,7 @@ export default async function BlogPage({
         </p>
       </div>
 
-      <BlogFilters posts={postSummaries} categories={categories} initialQuery={query} />
+      <BlogFilters posts={postSummaries} categories={categories} initialQuery={query} initialCategory={categoria} />
 
       <div className="bg-gradient-to-br from-primary to-primary/95 rounded-2xl p-8 md:p-12 text-center text-primary-foreground shadow-xl border border-primary/80">
         <div className="flex justify-center mb-6">

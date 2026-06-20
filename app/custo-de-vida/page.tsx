@@ -11,11 +11,11 @@ import type { Post } from '@/lib/posts'
 
 export const metadata: Metadata = {
   title: 'Custo de Vida - Quanto Custa Morar no Brasil',
-  description: 'Descubra quanto custa morar sozinho, ter um carro, criar um filho e viver nas principais cidades brasileiras. Planejamento financeiro realista.',
+  description: 'Guias para planejar custo de vida, morar sozinho, estimar gastos mensais e avaliar se o orçamento comporta novas despesas.',
   keywords: ['custo de vida', 'morar sozinho', 'custo morar no brasil', 'quanto custa morar sozinho', 'aluguel', 'planejamento financeiro', 'custo de vida brasil'],
   openGraph: {
     title: 'Custo de Vida - Quanto Custa Morar no Brasil',
-    description: 'Descubra quanto custa morar sozinho, ter um carro, criar um filho e viver nas principais cidades brasileiras.',
+    description: 'Guias para planejar custo de vida, morar sozinho, estimar gastos mensais e avaliar se o orçamento comporta novas despesas.',
     url: `${SITE_URL}/custo-de-vida`,
     siteName: 'Bolso do Trabalhador',
     locale: 'pt_BR',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Custo de Vida - Quanto Custa Morar no Brasil',
-    description: 'Descubra quanto custa morar sozinho, ter um carro, criar um filho e viver nas principais cidades brasileiras.',
+    description: 'Guias para planejar custo de vida e estimar gastos mensais para morar sozinho.',
     images: [`${SITE_URL}/og-image.png`],
   },
   alternates: { canonical: `${SITE_URL}/custo-de-vida` },

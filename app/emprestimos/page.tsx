@@ -11,11 +11,11 @@ import type { Post } from '@/lib/posts'
 
 export const metadata: Metadata = {
   title: 'Empréstimos - Comparar e Escolher o Melhor',
-  description: 'Compare modalidades de empréstimo, calcule juros, entenda o CET e escolha a melhor opção para seu bolso. Calculadoras gratuitas.',
+  description: 'Aprenda a comparar empréstimos, entender CET, calcular custo real, avaliar consignado e reconhecer situações em que contratar crédito pode não fazer sentido.',
   keywords: ['empréstimo', 'emprestimo pessoal', 'emprestimo consignado', 'comparar emprestimo', 'taxas emprestimo', 'CET', 'financiamento'],
   openGraph: {
     title: 'Empréstimos - Comparar e Escolher o Melhor',
-    description: 'Compare modalidades de empréstimo, calcule juros, entenda o CET e escolha a melhor opção para seu bolso.',
+    description: 'Aprenda a comparar empréstimos, entender CET, calcular custo real, avaliar consignado e reconhecer situações em que contratar crédito pode não fazer sentido.',
     url: `${SITE_URL}/emprestimos`,
     siteName: 'Bolso do Trabalhador',
     locale: 'pt_BR',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Empréstimos - Comparar e Escolher o Melhor',
-    description: 'Compare modalidades de empréstimo, calcule juros, entenda o CET e escolha a melhor opção.',
+    description: 'Aprenda a comparar empréstimos, entender CET e calcular custo real antes de contratar.',
     images: [`${SITE_URL}/og-image.png`],
   },
   alternates: { canonical: `${SITE_URL}/emprestimos` },

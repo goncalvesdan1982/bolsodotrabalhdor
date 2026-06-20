@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   keywords: ['organização financeira', 'controlar gastos', 'orcamento pessoal', 'planejamento financeiro', 'reserva de emergência', 'economia mensal', 'metodo 50 30 20'],
   openGraph: {
     title: 'Organização Financeira - Controle Suas Contas',
-    description: 'Aprenda a organizar suas finanças com métodos práticos. Calculadora de orçamento familiar, reserva de emergência e economia mensal.',
+  description: 'Conteúdos e calculadoras para organizar renda, gastos, metas e orçamento mensal com métodos simples de planejamento financeiro.',
     url: `${SITE_URL}/organizacao-financeira`,
     siteName: 'Bolso do Trabalhador',
     locale: 'pt_BR',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Organização Financeira - Controle Suas Contas',
-    description: 'Aprenda a organizar suas finanças com métodos práticos e calculadoras gratuitas.',
+    description: 'Conteúdos e calculadoras para organizar renda, gastos e orçamento mensal.',
     images: [`${SITE_URL}/og-image.png`],
   },
   alternates: { canonical: `${SITE_URL}/organizacao-financeira` },

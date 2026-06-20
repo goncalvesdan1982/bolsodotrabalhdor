@@ -313,6 +313,6 @@ Abaixo, a confirmação de que todos os itens P0/P1 da auditoria geral de 19/06 
 | Problemas encontrados | 4 (0 P0, 0 P1, 1 P2, 3 P3) |
 | Problemas corrigidos nesta rodada | 0 (apenas auditoria) |
 | Problemas já corrigidos anteriormente | ~15 |
-| Build | ✅ A ser verificado |
-| Lint | ✅ A ser verificado |
+| Build | ✅ Aprovado — 33 páginas, sem erros |
+| Lint | ✅ Aprovado — sem erros |
 | Testes | ⚠️ Nenhum implementado (N/A) |

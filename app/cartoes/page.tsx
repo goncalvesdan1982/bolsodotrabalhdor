@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   keywords: ['cartão de crédito', 'cartão sem anuidade', 'cartão score baixo', 'aumentar limite', 'melhor cartão', 'cartão crédito', 'cartão negativado'],
   openGraph: {
     title: 'Cartões de Crédito - Guia Completo',
-    description: 'Tudo sobre cartões de crédito: melhores cartões sem anuidade, como aumentar limite, cartão para score baixo e dicas para usar com inteligência.',
+  description: 'Guias sobre cartões de crédito, limite, fatura, rotativo, score e uso consciente para comparar opções e evitar custos desnecessários.',
     url: `${SITE_URL}/cartoes`,
     siteName: 'Bolso do Trabalhador',
     locale: 'pt_BR',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Cartões de Crédito - Guia Completo',
-    description: 'Tudo sobre cartões de crédito: melhores cartões sem anuidade, como aumentar limite e dicas.',
+    description: 'Guias sobre cartões de crédito: limite, fatura, rotativo e uso consciente para comparar opções.',
     images: [`${SITE_URL}/og-image.png`],
   },
   alternates: { canonical: `${SITE_URL}/cartoes` },

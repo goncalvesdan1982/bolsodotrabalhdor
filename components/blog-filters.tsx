@@ -1,7 +1,8 @@
 'use client'
 
 import Link from 'next/link'
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useCallback } from 'react'
+import { useRouter, usePathname } from 'next/navigation'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { ChevronRight, ChevronLeft, BookOpen, Search, X, Calendar, ArrowRight } from 'lucide-react'
@@ -22,12 +23,23 @@ interface BlogFiltersProps {
   posts: PostSummary[]
   categories: { name: string; slug: string }[]
   initialQuery: string
+  initialCategory: string
 }
 
-export function BlogFilters({ posts, categories, initialQuery }: BlogFiltersProps) {
+export function BlogFilters({ posts, categories, initialQuery, initialCategory }: BlogFiltersProps) {
+  const router = useRouter()
+  const pathname = usePathname()
   const [searchQuery, setSearchQuery] = useState(initialQuery)
-  const [selectedCategory, setSelectedCategory] = useState('')
+  const [selectedCategory, setSelectedCategory] = useState(initialCategory)
   const [currentPage, setCurrentPage] = useState(1)
+
+  const syncUrl = useCallback((q: string, cat: string) => {
+    const params = new URLSearchParams()
+    if (q) params.set('q', q)
+    if (cat) params.set('categoria', cat)
+    const newUrl = params.toString() ? `${pathname}?${params.toString()}` : pathname
+    router.replace(newUrl, { scroll: false })
+  }, [router, pathname])
 
   const filteredPosts = useMemo(() => {
     let result = posts
@@ -53,18 +65,22 @@ export function BlogFilters({ posts, categories, initialQuery }: BlogFiltersProp
   const paginatedPosts = filteredPosts.slice((safePage - 1) * POSTS_PER_PAGE, safePage * POSTS_PER_PAGE)
 
   function handleCategoryClick(category: string) {
-    setSelectedCategory(category === selectedCategory ? '' : category)
+    const newCat = category === selectedCategory ? '' : category
+    setSelectedCategory(newCat)
     setCurrentPage(1)
+    syncUrl(searchQuery, newCat)
   }
 
   function handleSearchInput(value: string) {
     setSearchQuery(value)
     setCurrentPage(1)
+    syncUrl(value, selectedCategory)
   }
 
   function clearSearch() {
     setSearchQuery('')
     setCurrentPage(1)
+    syncUrl('', selectedCategory)
   }
 
   return (
@@ -175,7 +191,7 @@ export function BlogFilters({ posts, categories, initialQuery }: BlogFiltersProp
           <p className="text-muted-foreground mb-6">
             Nenhum artigo corresponde{searchQuery ? <> a &ldquo;{searchQuery}&rdquo;</> : ''}{selectedCategory ? <> na categoria {selectedCategory}</> : ''}. Tente outros termos.
           </p>
-          <Button variant="outline" onClick={() => { setSearchQuery(''); setSelectedCategory(''); setCurrentPage(1) }}>
+          <Button variant="outline" onClick={() => { setSearchQuery(''); setSelectedCategory(''); setCurrentPage(1); syncUrl('', '') }}>
             Limpar filtros
           </Button>
         </div>
