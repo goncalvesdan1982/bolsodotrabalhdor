@@ -6,7 +6,6 @@ import { Button } from '@/components/ui/button'
 import { ChevronRight, ChevronLeft, BookOpen, Calendar, ArrowRight } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
 import { Breadcrumbs } from '@/components/breadcrumbs'
-import { BlogCardCover } from '@/components/blog-card-cover'
 import { getCategoryConfig } from '@/lib/blog-categories'
 
 const POSTS_PER_PAGE = 12
@@ -120,13 +119,7 @@ export default async function CategoryPage({ params, searchParams }: CategoryPag
             key={post.slug}
             className="group flex flex-col h-full border border-border/60 hover:border-primary/40 hover:shadow-lg transition-all duration-200 overflow-hidden bg-card rounded-xl focus-within:ring-2 focus-within:ring-ring focus-within:ring-offset-2"
           >
-            <Link href={`/blog/${post.slug}`} tabIndex={-1} aria-hidden="true">
-              <BlogCardCover
-                slug={post.slug}
-                title={post.title}
-                category={post.category}
-              />
-            </Link>
+            <div className={`h-1 bg-gradient-to-r ${getCategoryConfig(post.category).gradient}`} />
             <div className="flex flex-col flex-1 p-5 gap-3">
               <div className="flex items-center justify-between gap-2">
                 <span className={`inline-block text-xs font-semibold px-2.5 py-0.5 rounded-full ${getCategoryConfig(post.category).color} ${getCategoryConfig(post.category).textColor}`}>

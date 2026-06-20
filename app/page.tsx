@@ -15,7 +15,7 @@ import { Badge } from '@/components/ui/badge'
 import { SITE_URL } from '@/lib/config'
 import { getAllPosts } from '@/lib/posts'
 import { FAQSection } from '@/components/faq-section'
-import { BlogCardCover } from '@/components/blog-card-cover'
+import { getCategoryConfig } from '@/lib/blog-categories'
 
 export const metadata: Metadata = {
   title: 'Bolso do Trabalhador - Finanças Simples para Quem Trabalha e Paga Boletos',
@@ -403,11 +403,7 @@ export default function HomePage() {
             {posts.map((post) => (
               <Link key={post.slug} href={`/blog/${post.slug}`} className="group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring rounded-xl">
                 <Card className="h-full overflow-hidden transition-all hover:shadow-lg hover:border-primary/30 group-hover:-translate-y-0.5 border-border/60 p-0">
-                  <BlogCardCover
-                    slug={post.slug}
-                    title={post.title}
-                    category={post.category}
-                  />
+                  <div className={`h-1 bg-gradient-to-r ${getCategoryConfig(post.category).gradient}`} />
                   <div className="p-5">
                     <div className="flex items-center gap-2 mb-2">
                       <span className={`inline-block text-xs font-semibold px-2.5 py-0.5 rounded-full ${categoryBadgeColors[post.category] || 'bg-gray-100 text-gray-700'}`}>
