@@ -47,9 +47,9 @@ export default function CartoesPage() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-          <Card className="border-blue-200 bg-blue-50/30">
+          <Card className="border-blue-200 bg-blue-50/30 group hover:shadow-md transition-all">
             <CardHeader>
-              <Percent className="w-8 h-8 text-blue-600 mb-2" />
+              <Percent className="w-8 h-8 text-blue-600 mb-2 group-hover:scale-110 transition-transform" />
               <CardTitle>Calculadora de Parcelas</CardTitle>
               <CardDescription>Veja o valor real das parcelas com juros e entenda quanto você pagará no final.</CardDescription>
             </CardHeader>
@@ -61,9 +61,9 @@ export default function CartoesPage() {
               </Button>
             </CardContent>
           </Card>
-          <Card className="border-blue-200 bg-blue-50/30">
+          <Card className="border-blue-200 bg-blue-50/30 group hover:shadow-md transition-all">
             <CardHeader>
-              <TrendingUp className="w-8 h-8 text-blue-600 mb-2" />
+              <TrendingUp className="w-8 h-8 text-blue-600 mb-2 group-hover:scale-110 transition-transform" />
               <CardTitle>Juros Compostos</CardTitle>
               <CardDescription>Entenda o efeito dos juros compostos no rotativo do cartão e veja como evitar dívidas.</CardDescription>
             </CardHeader>
@@ -75,9 +75,9 @@ export default function CartoesPage() {
               </Button>
             </CardContent>
           </Card>
-          <Card className="border-blue-200 bg-blue-50/30">
+          <Card className="border-blue-200 bg-blue-50/30 group hover:shadow-md transition-all">
             <CardHeader>
-              <Calculator className="w-8 h-8 text-blue-600 mb-2" />
+              <Calculator className="w-8 h-8 text-blue-600 mb-2 group-hover:scale-110 transition-transform" />
               <CardTitle>Comprometimento de Renda</CardTitle>
               <CardDescription>Descubra se o limite do seu cartão está compatível com sua renda mensal.</CardDescription>
             </CardHeader>
@@ -105,53 +105,53 @@ export default function CartoesPage() {
           </ol>
         </div>
 
-        <div className="mb-12 p-6 md:p-8 bg-primary rounded-2xl text-primary-foreground shadow-lg">
+        <div className="mb-12 p-6 md:p-8 bg-gradient-to-br from-indigo-700 to-indigo-600 rounded-2xl text-primary-foreground shadow-lg">
           <h2 className="text-2xl font-bold mb-4">Artigos sobre Cartões de Crédito</h2>
-          <p className="text-primary-foreground/80 mb-6">
+          <p className="text-white/80 mb-6">
             Leia nossos artigos para escolher o melhor cartão e usar o crédito com inteligência.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <Link
               href="/blog/melhores-cartoes-score-baixo"
-              className="flex items-center justify-between p-4 bg-white/10 hover:bg-white/20 rounded-lg border border-white/20 transition-all group"
+              className="flex items-center justify-between p-3.5 bg-white/10 hover:bg-white/20 rounded-xl border border-white/15 transition-all group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/50"
             >
-              <span className="font-medium">Melhores cartões de crédito para score baixo em 2026</span>
-              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform flex-shrink-0" />
+              <span className="font-medium text-sm">Melhores cartões para score baixo</span>
+              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform shrink-0" />
             </Link>
             <Link
               href="/blog/cartao-sem-anuidade-vale-a-pena"
-              className="flex items-center justify-between p-4 bg-white/10 hover:bg-white/20 rounded-lg border border-white/20 transition-all group"
+              className="flex items-center justify-between p-3.5 bg-white/10 hover:bg-white/20 rounded-xl border border-white/15 transition-all group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/50"
             >
-              <span className="font-medium">Cartão sem anuidade vale a pena?</span>
-              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform flex-shrink-0" />
+              <span className="font-medium text-sm">Cartão sem anuidade vale a pena?</span>
+              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform shrink-0" />
             </Link>
             <Link
               href="/blog/como-evitar-juros-rotativo"
-              className="flex items-center justify-between p-4 bg-white/10 hover:bg-white/20 rounded-lg border border-white/20 transition-all group"
+              className="flex items-center justify-between p-3.5 bg-white/10 hover:bg-white/20 rounded-xl border border-white/15 transition-all group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/50"
             >
-              <span className="font-medium">Como evitar os juros do rotativo do cartão</span>
-              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform flex-shrink-0" />
+              <span className="font-medium text-sm">Como evitar juros rotativo</span>
+              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform shrink-0" />
             </Link>
             <Link
               href="/blog/como-aumentar-limite-cartao-credito"
-              className="flex items-center justify-between p-4 bg-white/10 hover:bg-white/20 rounded-lg border border-white/20 transition-all group"
+              className="flex items-center justify-between p-3.5 bg-white/10 hover:bg-white/20 rounded-xl border border-white/15 transition-all group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/50"
             >
-              <span className="font-medium">Como aumentar o limite do cartão de crédito</span>
-              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform flex-shrink-0" />
+              <span className="font-medium text-sm">Como aumentar o limite do cartão</span>
+              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform shrink-0" />
             </Link>
             <Link
               href="/blog/fatura-parcelada-compensa"
-              className="flex items-center justify-between p-4 bg-white/10 hover:bg-white/20 rounded-lg border border-white/20 transition-all group"
+              className="flex items-center justify-between p-3.5 bg-white/10 hover:bg-white/20 rounded-xl border border-white/15 transition-all group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/50"
             >
-              <span className="font-medium">Fatura parcelada compensa?</span>
-              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform flex-shrink-0" />
+              <span className="font-medium text-sm">Fatura parcelada compensa?</span>
+              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform shrink-0" />
             </Link>
             <Link
               href="/blog/o-que-fazer-quando-limite-cartao-acaba"
-              className="flex items-center justify-between p-4 bg-white/10 hover:bg-white/20 rounded-lg border border-white/20 transition-all group"
+              className="flex items-center justify-between p-3.5 bg-white/10 hover:bg-white/20 rounded-xl border border-white/15 transition-all group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/50"
             >
-              <span className="font-medium">O que fazer quando o limite do cartão acaba</span>
-              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform flex-shrink-0" />
+              <span className="font-medium text-sm">O que fazer quando o limite acaba</span>
+              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform shrink-0" />
             </Link>
           </div>
         </div>

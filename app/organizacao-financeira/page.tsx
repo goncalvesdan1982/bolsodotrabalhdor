@@ -47,9 +47,9 @@ export default function OrganizacaoFinanceiraPage() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-          <Card className="border-teal-200 bg-teal-50/30">
+          <Card className="border-teal-200 bg-teal-50/30 group hover:shadow-md transition-all">
             <CardHeader>
-              <PieChart className="w-8 h-8 text-teal-600 mb-2" />
+              <PieChart className="w-8 h-8 text-teal-600 mb-2 group-hover:scale-110 transition-transform" />
               <CardTitle>Orçamento Familiar</CardTitle>
               <CardDescription>Organize suas receitas e despesas com o método 50-30-20 ou crie seu próprio plano.</CardDescription>
             </CardHeader>
@@ -61,9 +61,9 @@ export default function OrganizacaoFinanceiraPage() {
               </Button>
             </CardContent>
           </Card>
-          <Card className="border-teal-200 bg-teal-50/30">
+          <Card className="border-teal-200 bg-teal-50/30 group hover:shadow-md transition-all">
             <CardHeader>
-              <PiggyBank className="w-8 h-8 text-teal-600 mb-2" />
+              <PiggyBank className="w-8 h-8 text-teal-600 mb-2 group-hover:scale-110 transition-transform" />
               <CardTitle>Reserva de Emergência</CardTitle>
               <CardDescription>Calcule quanto você precisa poupar para construir uma reserva financeira segura.</CardDescription>
             </CardHeader>
@@ -75,9 +75,9 @@ export default function OrganizacaoFinanceiraPage() {
               </Button>
             </CardContent>
           </Card>
-          <Card className="border-teal-200 bg-teal-50/30">
+          <Card className="border-teal-200 bg-teal-50/30 group hover:shadow-md transition-all">
             <CardHeader>
-              <TrendingDown className="w-8 h-8 text-teal-600 mb-2" />
+              <TrendingDown className="w-8 h-8 text-teal-600 mb-2 group-hover:scale-110 transition-transform" />
               <CardTitle>Economia Mensal</CardTitle>
               <CardDescription>Descubra quanto você pode economizar por mês e em quanto tempo atinge suas metas.</CardDescription>
             </CardHeader>
@@ -91,18 +91,39 @@ export default function OrganizacaoFinanceiraPage() {
           </Card>
         </div>
 
-        <div className="mb-12 p-6 md:p-8 bg-primary rounded-2xl text-primary-foreground shadow-lg">
+        <div className="mb-8 p-6 md:p-8 bg-card border border-border rounded-2xl shadow-sm">
+          <h2 className="text-xl font-bold text-foreground mb-3">Por onde começar</h2>
+          <p className="text-muted-foreground mb-4">
+            Quer organizar suas finanças? Siga esta trilha de leitura:
+          </p>
+          <ol className="space-y-2 list-decimal list-inside text-sm text-muted-foreground">
+            <li><Link href="/blog/metodo-50-30-20-como-aplicar" className="text-secondary hover:underline font-medium">Método 50-30-20</Link> — aprenda a dividir sua renda de forma simples</li>
+            <li><Link href="/calculadoras/orcamento-familiar" className="text-secondary hover:underline font-medium">Calculadora de Orçamento Familiar</Link> — organize receitas e despesas</li>
+            <li><Link href="/calculadoras/reserva-emergencia" className="text-secondary hover:underline font-medium">Calculadora de Reserva de Emergência</Link> — descubra quanto guardar</li>
+            <li><Link href="/calculadoras/economia-mensal" className="text-secondary hover:underline font-medium">Calculadora de Economia Mensal</Link> — veja quanto economizar por mês</li>
+            <li><Link href="/calculadoras/meta-financeira" className="text-secondary hover:underline font-medium">Calculadora de Meta Financeira</Link> — planeje seus objetivos</li>
+          </ol>
+        </div>
+
+        <div className="mb-12 p-6 md:p-8 bg-gradient-to-br from-teal-700 to-teal-600 rounded-2xl text-primary-foreground shadow-lg">
           <h2 className="text-2xl font-bold mb-4">Artigos sobre Organização Financeira</h2>
-          <p className="text-primary-foreground/80 mb-6">
+          <p className="text-white/80 mb-6">
             Aprenda métodos práticos para organizar suas finanças e alcançar seus objetivos.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <Link
               href="/blog/metodo-50-30-20-como-aplicar"
-              className="flex items-center justify-between p-4 bg-white/10 hover:bg-white/20 rounded-lg border border-white/20 transition-all group"
+              className="flex items-center justify-between p-3.5 bg-white/10 hover:bg-white/20 rounded-xl border border-white/15 transition-all group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/50"
             >
-              <span className="font-medium">Método 50-30-20: como aplicar no Brasil</span>
-              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform flex-shrink-0" />
+              <span className="font-medium text-sm">Método 50-30-20: como aplicar no Brasil</span>
+              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform shrink-0" />
+            </Link>
+            <Link
+              href="/blog/como-sair-das-dividas-guia-completo"
+              className="flex items-center justify-between p-3.5 bg-white/10 hover:bg-white/20 rounded-xl border border-white/15 transition-all group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/50"
+            >
+              <span className="font-medium text-sm">Como sair das dívidas: guia completo</span>
+              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform shrink-0" />
             </Link>
           </div>
         </div>

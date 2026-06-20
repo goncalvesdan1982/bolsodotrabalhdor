@@ -15,6 +15,7 @@ import { Badge } from '@/components/ui/badge'
 import { SITE_URL } from '@/lib/config'
 import { getAllPosts } from '@/lib/posts'
 import { FAQSection } from '@/components/faq-section'
+import { BlogCardCover } from '@/components/blog-card-cover'
 
 export const metadata: Metadata = {
   title: 'Bolso do Trabalhador - Finanças Simples para Quem Trabalha e Paga Boletos',
@@ -229,7 +230,7 @@ export default function HomePage() {
                       <Link
                         key={item.href}
                         href={item.href}
-                        className="flex flex-col items-center gap-1.5 p-3 rounded-xl hover:bg-muted/60 transition-all hover:shadow-sm text-center group"
+                        className="flex flex-col items-center gap-1.5 p-3 rounded-xl hover:bg-muted/60 transition-all hover:shadow-sm text-center group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
                       >
                         <div className={`w-9 h-9 rounded-lg ${item.cor} flex items-center justify-center group-hover:scale-110 transition-transform`}>
                           <Icon className="w-4 h-4" />
@@ -276,8 +277,8 @@ export default function HomePage() {
             {quickStarts.map((item) => {
               const Icon = item.icon
               return (
-                <Link key={item.href} href={item.href} className="group">
-                  <Card className="h-full transition-all hover:shadow-lg hover:border-primary/30 group-hover:-translate-y-0.5">
+                <Link key={item.href} href={item.href} className="group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring rounded-xl">
+                  <Card className="h-full transition-all hover:shadow-lg hover:border-primary/30 group-hover:-translate-y-0.5 border-border/60">
                     <CardHeader className="pb-3">
                       <div className="flex items-center gap-3 mb-1">
                         <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
@@ -325,10 +326,10 @@ export default function HomePage() {
             {calculadoras.map((calc) => {
               const Icon = calc.icon
               return (
-                <Link key={calc.href} href={calc.href} className="group">
-                  <Card className="h-full transition-all hover:shadow-lg hover:border-primary/40 group-hover:-translate-y-0.5">
+                <Link key={calc.href} href={calc.href} className="group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring rounded-xl">
+                  <Card className="h-full transition-all hover:shadow-lg hover:border-primary/40 group-hover:-translate-y-0.5 border-border/60">
                     <CardHeader className="pb-3">
-                      <div className={`w-11 h-11 rounded-lg ${calc.cor} flex items-center justify-center mb-2`}>
+                      <div className={`w-11 h-11 rounded-lg ${calc.cor} flex items-center justify-center mb-2 group-hover:scale-110 transition-transform`}>
                         <Icon className="w-5 h-5" />
                       </div>
                       <CardTitle className="text-base group-hover:text-primary transition-colors">{calc.nome}</CardTitle>
@@ -360,10 +361,10 @@ export default function HomePage() {
             {categorias.map((cat) => {
               const Icon = cat.icon
               return (
-                <Link key={cat.href} href={cat.href} className="group">
-                  <Card className="h-full transition-all hover:shadow-lg hover:border-primary/30 group-hover:-translate-y-0.5">
+                <Link key={cat.href} href={cat.href} className="group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring rounded-xl">
+                  <Card className="h-full transition-all hover:shadow-lg hover:border-primary/30 group-hover:-translate-y-0.5 border-border/60">
                     <CardHeader className="pb-3">
-                      <div className={`w-11 h-11 rounded-lg ${cat.cor} flex items-center justify-center mb-2`}>
+                      <div className={`w-11 h-11 rounded-lg ${cat.cor} flex items-center justify-center mb-2 group-hover:scale-110 transition-transform`}>
                         <Icon className="w-5 h-5" />
                       </div>
                       <CardTitle className="text-base group-hover:text-primary transition-colors">{cat.nome}</CardTitle>
@@ -400,23 +401,26 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {posts.map((post) => (
-              <Link key={post.slug} href={`/blog/${post.slug}`} className="group">
-                <Card className="h-full transition-all hover:shadow-lg hover:border-primary/30 group-hover:-translate-y-0.5">
-                  <CardHeader className="pb-3">
+              <Link key={post.slug} href={`/blog/${post.slug}`} className="group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring rounded-xl">
+                <Card className="h-full overflow-hidden transition-all hover:shadow-lg hover:border-primary/30 group-hover:-translate-y-0.5 border-border/60 p-0">
+                  <BlogCardCover
+                    slug={post.slug}
+                    title={post.title}
+                    category={post.category}
+                  />
+                  <div className="p-5">
                     <div className="flex items-center gap-2 mb-2">
-                      <span className={`inline-block text-xs font-semibold px-2.5 py-1 rounded-full ${categoryBadgeColors[post.category] || 'bg-gray-100 text-gray-700'}`}>
+                      <span className={`inline-block text-xs font-semibold px-2.5 py-0.5 rounded-full ${categoryBadgeColors[post.category] || 'bg-gray-100 text-gray-700'}`}>
                         {post.category}
                       </span>
                     </div>
-                    <CardTitle className="text-base group-hover:text-primary transition-colors leading-snug">
+                    <h3 className="text-base font-bold text-foreground group-hover:text-primary transition-colors leading-snug mb-2">
                       {post.title}
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <CardDescription className="text-sm line-clamp-2">
+                    </h3>
+                    <p className="text-sm text-muted-foreground line-clamp-2 mb-3">
                       {post.description}
-                    </CardDescription>
-                    <div className="mt-3 flex items-center justify-between">
+                    </p>
+                    <div className="flex items-center justify-between">
                       <span className="text-xs text-muted-foreground flex items-center gap-1">
                         <Calendar className="w-3 h-3" />
                         {new Date(post.date).toLocaleDateString('pt-BR')}
@@ -425,7 +429,7 @@ export default function HomePage() {
                         Ler guia <ArrowRight className="w-3.5 h-3.5" />
                       </span>
                     </div>
-                  </CardContent>
+                  </div>
                 </Card>
               </Link>
             ))}

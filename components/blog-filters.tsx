@@ -4,7 +4,9 @@ import Link from 'next/link'
 import { useState, useMemo } from 'react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
-import { ChevronRight, ChevronLeft, BookOpen, Search, X } from 'lucide-react'
+import { ChevronRight, ChevronLeft, BookOpen, Search, X, Calendar, ArrowRight } from 'lucide-react'
+import { BlogCardCover } from '@/components/blog-card-cover'
+import { getCategoryConfig } from '@/lib/blog-categories'
 
 interface PostSummary {
   slug: string
@@ -129,22 +131,31 @@ export function BlogFilters({ posts, categories, initialQuery }: BlogFiltersProp
       {/* Articles Grid */}
       {paginatedPosts.length > 0 ? (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {paginatedPosts.map((post, index) => (
+          {paginatedPosts.map((post) => (
             <article
               key={post.slug}
-              className="group flex flex-col h-full border border-border/60 hover:border-primary hover:shadow-md transition-all duration-200 overflow-hidden bg-card rounded-xl"
+              className="group flex flex-col h-full border border-border/60 hover:border-primary/40 hover:shadow-lg transition-all duration-200 overflow-hidden bg-card rounded-xl focus-within:ring-2 focus-within:ring-ring focus-within:ring-offset-2"
             >
+              <Link href={`/blog/${post.slug}`} aria-label={post.title} className="focus:outline-none">
+                <BlogCardCover
+                  slug={post.slug}
+                  title={post.title}
+                  category={post.category}
+                  className="rounded-t-xl"
+                />
+              </Link>
               <div className="flex flex-col flex-1 p-5 gap-3">
                 <div className="flex items-center justify-between gap-2">
-                  <span className="text-xs font-semibold text-secondary uppercase tracking-wide">
+                  <span className={`inline-block text-xs font-semibold px-2.5 py-0.5 rounded-full ${getCategoryConfig(post.category).color} ${getCategoryConfig(post.category).textColor}`}>
                     {post.category}
                   </span>
-                  <time dateTime={post.date} className="text-xs text-muted-foreground whitespace-nowrap">
+                  <time dateTime={post.date} className="text-xs text-muted-foreground whitespace-nowrap flex items-center gap-1">
+                    <Calendar className="w-3 h-3" />
                     {new Date(post.date).toLocaleDateString('pt-BR')}
                   </time>
                 </div>
                 <h2 className="text-base font-bold text-foreground leading-snug group-hover:text-secondary transition-colors line-clamp-2">
-                  <Link href={`/blog/${post.slug}`}>
+                  <Link href={`/blog/${post.slug}`} className="focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring rounded">
                     {post.title}
                   </Link>
                 </h2>
@@ -155,13 +166,11 @@ export function BlogFilters({ posts, categories, initialQuery }: BlogFiltersProp
                 )}
                 <Link
                   href={`/blog/${post.slug}`}
-                  className="mt-auto text-sm font-semibold text-secondary hover:underline inline-flex items-center gap-1 pt-2"
+                  className="mt-auto text-sm font-semibold text-secondary hover:underline inline-flex items-center gap-1 pt-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring rounded"
                   aria-label={`Ler artigo: ${post.title}`}
                 >
                   Ler artigo
-                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-                    <path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
+                  <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>
             </article>

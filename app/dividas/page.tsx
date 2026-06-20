@@ -47,9 +47,9 @@ export default function DividasPage() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-          <Card className="border-red-200 bg-red-50/30">
+          <Card className="border-red-200 bg-red-50/30 group hover:shadow-md transition-all">
             <CardHeader>
-              <TrendingDown className="w-8 h-8 text-red-600 mb-2" />
+              <TrendingDown className="w-8 h-8 text-red-600 mb-2 group-hover:scale-110 transition-transform" />
               <CardTitle>Quitação de Dívidas</CardTitle>
               <CardDescription>Simule quanto tempo leva para quitar suas dívidas com diferentes estratégias de pagamento.</CardDescription>
             </CardHeader>
@@ -61,9 +61,9 @@ export default function DividasPage() {
               </Button>
             </CardContent>
           </Card>
-          <Card className="border-red-200 bg-red-50/30">
+          <Card className="border-red-200 bg-red-50/30 group hover:shadow-md transition-all">
             <CardHeader>
-              <Calculator className="w-8 h-8 text-red-600 mb-2" />
+              <Calculator className="w-8 h-8 text-red-600 mb-2 group-hover:scale-110 transition-transform" />
               <CardTitle>Comprometimento de Renda</CardTitle>
               <CardDescription>Descubra quanto da sua renda está comprometida com dívidas e se você precisa renegociar.</CardDescription>
             </CardHeader>
@@ -75,9 +75,9 @@ export default function DividasPage() {
               </Button>
             </CardContent>
           </Card>
-          <Card className="border-red-200 bg-red-50/30">
+          <Card className="border-red-200 bg-red-50/30 group hover:shadow-md transition-all">
             <CardHeader>
-              <FileText className="w-8 h-8 text-red-600 mb-2" />
+              <FileText className="w-8 h-8 text-red-600 mb-2 group-hover:scale-110 transition-transform" />
               <CardTitle>Troca de Dívidas</CardTitle>
               <CardDescription>Compare cenários e veja se vale a pena trocar uma dívida cara por outra com juros menores.</CardDescription>
             </CardHeader>
@@ -91,18 +91,67 @@ export default function DividasPage() {
           </Card>
         </div>
 
-        <div className="mb-12 p-6 md:p-8 bg-primary rounded-2xl text-primary-foreground shadow-lg">
+        <div className="mb-8 p-6 md:p-8 bg-card border border-border rounded-2xl shadow-sm">
+          <h2 className="text-xl font-bold text-foreground mb-3">Por onde começar</h2>
+          <p className="text-muted-foreground mb-4">
+            Se você está endividado, siga esta trilha de leitura para organizar suas finanças:
+          </p>
+          <ol className="space-y-2 list-decimal list-inside text-sm text-muted-foreground">
+            <li><Link href="/blog/como-sair-das-dividas-guia-completo" className="text-secondary hover:underline font-medium">Guia completo para sair das dívidas</Link> — o passo a passo essencial</li>
+            <li><Link href="/blog/como-montar-plano-sair-das-dividas" className="text-secondary hover:underline font-medium">Monte um plano para sair das dívidas</Link> — organize-se com metas claras</li>
+            <li><Link href="/blog/qual-divida-devo-pagar-primeiro" className="text-secondary hover:underline font-medium">Qual dívida pagar primeiro?</Link> — priorize da forma mais inteligente</li>
+            <li><Link href="/blog/como-negociar-dividas-diretamente-com-banco" className="text-secondary hover:underline font-medium">Negocie dívidas com o banco</Link> — estratégias para conseguir descontos</li>
+            <li><Link href="/blog/vale-a-pena-trocar-divida-cartao-por-emprestimo" className="text-secondary hover:underline font-medium">Trocar dívida do cartão por empréstimo?</Link> — saiba quando vale a pena</li>
+          </ol>
+        </div>
+
+        <div className="mb-12 p-6 md:p-8 bg-gradient-to-br from-red-700 to-red-600 rounded-2xl text-primary-foreground shadow-lg">
           <h2 className="text-2xl font-bold mb-4">Artigos sobre Dívidas</h2>
-          <p className="text-primary-foreground/80 mb-6">
+          <p className="text-white/80 mb-6">
             Aprofunde seu conhecimento com nossos artigos completos sobre como lidar com dívidas.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <Link
               href="/blog/como-sair-das-dividas-guia-completo"
-              className="flex items-center justify-between p-4 bg-white/10 hover:bg-white/20 rounded-lg border border-white/20 transition-all group"
+              className="flex items-center justify-between p-3.5 bg-white/10 hover:bg-white/20 rounded-xl border border-white/15 transition-all group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/50"
             >
-              <span className="font-medium">Como sair das dívidas: guia passo a passo completo</span>
-              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform flex-shrink-0" />
+              <span className="font-medium text-sm">Guia completo para sair das dívidas</span>
+              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform shrink-0" />
+            </Link>
+            <Link
+              href="/blog/como-montar-plano-sair-das-dividas"
+              className="flex items-center justify-between p-3.5 bg-white/10 hover:bg-white/20 rounded-xl border border-white/15 transition-all group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/50"
+            >
+              <span className="font-medium text-sm">Como montar um plano para sair das dívidas</span>
+              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform shrink-0" />
+            </Link>
+            <Link
+              href="/blog/qual-divida-devo-pagar-primeiro"
+              className="flex items-center justify-between p-3.5 bg-white/10 hover:bg-white/20 rounded-xl border border-white/15 transition-all group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/50"
+            >
+              <span className="font-medium text-sm">Qual dívida devo pagar primeiro?</span>
+              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform shrink-0" />
+            </Link>
+            <Link
+              href="/blog/como-negociar-dividas-diretamente-com-banco"
+              className="flex items-center justify-between p-3.5 bg-white/10 hover:bg-white/20 rounded-xl border border-white/15 transition-all group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/50"
+            >
+              <span className="font-medium text-sm">Como negociar dívidas com o banco</span>
+              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform shrink-0" />
+            </Link>
+            <Link
+              href="/blog/vale-a-pena-trocar-divida-cartao-por-emprestimo"
+              className="flex items-center justify-between p-3.5 bg-white/10 hover:bg-white/20 rounded-xl border border-white/15 transition-all group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/50"
+            >
+              <span className="font-medium text-sm">Trocar dívida do cartão por empréstimo?</span>
+              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform shrink-0" />
+            </Link>
+            <Link
+              href="/blog/o-que-acontece-se-parar-de-pagar-cartao"
+              className="flex items-center justify-between p-3.5 bg-white/10 hover:bg-white/20 rounded-xl border border-white/15 transition-all group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/50"
+            >
+              <span className="font-medium text-sm">O que acontece se parar de pagar o cartão?</span>
+              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform shrink-0" />
             </Link>
           </div>
         </div>

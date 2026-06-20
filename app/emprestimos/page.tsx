@@ -47,9 +47,9 @@ export default function EmprestimosPage() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-          <Card className="border-green-200 bg-green-50/30">
+          <Card className="border-green-200 bg-green-50/30 group hover:shadow-md transition-all">
             <CardHeader>
-              <Banknote className="w-8 h-8 text-green-600 mb-2" />
+              <Banknote className="w-8 h-8 text-green-600 mb-2 group-hover:scale-110 transition-transform" />
               <CardTitle>Simulação de Empréstimo</CardTitle>
               <CardDescription>Calcule parcelas, juros totais e CET para qualquer modalidade de empréstimo.</CardDescription>
             </CardHeader>
@@ -61,9 +61,9 @@ export default function EmprestimosPage() {
               </Button>
             </CardContent>
           </Card>
-          <Card className="border-green-200 bg-green-50/30">
+          <Card className="border-green-200 bg-green-50/30 group hover:shadow-md transition-all">
             <CardHeader>
-              <Building className="w-8 h-8 text-green-600 mb-2" />
+              <Building className="w-8 h-8 text-green-600 mb-2 group-hover:scale-110 transition-transform" />
               <CardTitle>Simulação de Financiamento</CardTitle>
               <CardDescription>Simule financiamentos imobiliários e de veículos com taxa de juros e prazo flexíveis.</CardDescription>
             </CardHeader>
@@ -75,9 +75,9 @@ export default function EmprestimosPage() {
               </Button>
             </CardContent>
           </Card>
-          <Card className="border-green-200 bg-green-50/30">
+          <Card className="border-green-200 bg-green-50/30 group hover:shadow-md transition-all">
             <CardHeader>
-              <Repeat className="w-8 h-8 text-green-600 mb-2" />
+              <Repeat className="w-8 h-8 text-green-600 mb-2 group-hover:scale-110 transition-transform" />
               <CardTitle>Troca de Dívidas</CardTitle>
               <CardDescription>Veja se vale a pena trocar um empréstimo caro por outro com juros mais baixos.</CardDescription>
             </CardHeader>
@@ -91,18 +91,67 @@ export default function EmprestimosPage() {
           </Card>
         </div>
 
-        <div className="mb-12 p-6 md:p-8 bg-primary rounded-2xl text-primary-foreground shadow-lg">
+        <div className="mb-8 p-6 md:p-8 bg-card border border-border rounded-2xl shadow-sm">
+          <h2 className="text-xl font-bold text-foreground mb-3">Por onde começar</h2>
+          <p className="text-muted-foreground mb-4">
+            Se você está considerando um empréstimo, siga esta trilha para tomar a melhor decisão:
+          </p>
+          <ol className="space-y-2 list-decimal list-inside text-sm text-muted-foreground">
+            <li><Link href="/blog/emprestimo-pessoal-ou-consignado" className="text-secondary hover:underline font-medium">Empréstimo pessoal ou consignado?</Link> — entenda as diferenças</li>
+            <li><Link href="/blog/como-comparar-emprestimos-corretamente" className="text-secondary hover:underline font-medium">Como comparar empréstimos</Link> — aprenda a analisar taxas e CET</li>
+            <li><Link href="/blog/o-que-e-cet-e-por-que-importa" className="text-secondary hover:underline font-medium">O que é CET e por que importa?</Link> — o indicador mais importante</li>
+            <li><Link href="/blog/como-calcular-custo-real-emprestimo" className="text-secondary hover:underline font-medium">Calcule o custo real do empréstimo</Link> — veja quanto você vai pagar de fato</li>
+            <li><Link href="/blog/quando-nao-vale-a-pena-fazer-emprestimo" className="text-secondary hover:underline font-medium">Quando NÃO fazer empréstimo</Link> — situações para evitar</li>
+          </ol>
+        </div>
+
+        <div className="mb-12 p-6 md:p-8 bg-gradient-to-br from-green-700 to-green-600 rounded-2xl text-primary-foreground shadow-lg">
           <h2 className="text-2xl font-bold mb-4">Artigos sobre Empréstimos</h2>
-          <p className="text-primary-foreground/80 mb-6">
+          <p className="text-white/80 mb-6">
             Aprenda a escolher a melhor modalidade de empréstimo para sua situação.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <Link
               href="/blog/emprestimo-pessoal-ou-consignado"
-              className="flex items-center justify-between p-4 bg-white/10 hover:bg-white/20 rounded-lg border border-white/20 transition-all group"
+              className="flex items-center justify-between p-3.5 bg-white/10 hover:bg-white/20 rounded-xl border border-white/15 transition-all group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/50"
             >
-              <span className="font-medium">Empréstimo pessoal ou consignado: qual escolher?</span>
-              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform flex-shrink-0" />
+              <span className="font-medium text-sm">Pessoal ou consignado: qual escolher?</span>
+              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform shrink-0" />
+            </Link>
+            <Link
+              href="/blog/como-comparar-emprestimos-corretamente"
+              className="flex items-center justify-between p-3.5 bg-white/10 hover:bg-white/20 rounded-xl border border-white/15 transition-all group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/50"
+            >
+              <span className="font-medium text-sm">Como comparar empréstimos corretamente</span>
+              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform shrink-0" />
+            </Link>
+            <Link
+              href="/blog/o-que-e-cet-e-por-que-importa"
+              className="flex items-center justify-between p-3.5 bg-white/10 hover:bg-white/20 rounded-xl border border-white/15 transition-all group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/50"
+            >
+              <span className="font-medium text-sm">O que é CET e por que ele importa?</span>
+              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform shrink-0" />
+            </Link>
+            <Link
+              href="/blog/como-calcular-custo-real-emprestimo"
+              className="flex items-center justify-between p-3.5 bg-white/10 hover:bg-white/20 rounded-xl border border-white/15 transition-all group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/50"
+            >
+              <span className="font-medium text-sm">Calcular o custo real de um empréstimo</span>
+              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform shrink-0" />
+            </Link>
+            <Link
+              href="/blog/emprestimo-consignado-vale-a-pena"
+              className="flex items-center justify-between p-3.5 bg-white/10 hover:bg-white/20 rounded-xl border border-white/15 transition-all group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/50"
+            >
+              <span className="font-medium text-sm">Empréstimo consignado vale a pena?</span>
+              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform shrink-0" />
+            </Link>
+            <Link
+              href="/blog/quando-nao-vale-a-pena-fazer-emprestimo"
+              className="flex items-center justify-between p-3.5 bg-white/10 hover:bg-white/20 rounded-xl border border-white/15 transition-all group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/50"
+            >
+              <span className="font-medium text-sm">Quando NÃO fazer um empréstimo</span>
+              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform shrink-0" />
             </Link>
           </div>
         </div>

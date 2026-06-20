@@ -47,9 +47,9 @@ export default function ScorePage() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-          <Card className="border-purple-200 bg-purple-50/30">
+          <Card className="border-purple-200 bg-purple-50/30 group hover:shadow-md transition-all">
             <CardHeader>
-              <Calculator className="w-8 h-8 text-purple-600 mb-2" />
+              <Calculator className="w-8 h-8 text-purple-600 mb-2 group-hover:scale-110 transition-transform" />
               <CardTitle>Comprometimento de Renda</CardTitle>
               <CardDescription>Descubra como seu nível de endividamento afeta seu score de crédito.</CardDescription>
             </CardHeader>
@@ -61,9 +61,9 @@ export default function ScorePage() {
               </Button>
             </CardContent>
           </Card>
-          <Card className="border-purple-200 bg-purple-50/30">
+          <Card className="border-purple-200 bg-purple-50/30 group hover:shadow-md transition-all">
             <CardHeader>
-              <ShieldCheck className="w-8 h-8 text-purple-600 mb-2" />
+              <ShieldCheck className="w-8 h-8 text-purple-600 mb-2 group-hover:scale-110 transition-transform" />
               <CardTitle>Capacidade de Endividamento</CardTitle>
               <CardDescription>Veja qual o limite ideal de crédito para seu perfil financeiro.</CardDescription>
             </CardHeader>
@@ -91,53 +91,53 @@ export default function ScorePage() {
           </ol>
         </div>
 
-        <div className="mb-12 p-6 md:p-8 bg-primary rounded-2xl text-primary-foreground shadow-lg">
+        <div className="mb-12 p-6 md:p-8 bg-gradient-to-br from-blue-700 to-blue-600 rounded-2xl text-primary-foreground shadow-lg">
           <h2 className="text-2xl font-bold mb-4">Artigos sobre Score</h2>
-          <p className="text-primary-foreground/80 mb-6">
+          <p className="text-white/80 mb-6">
             Leia nossos artigos para entender como o score funciona e como aumentar sua pontuação.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <Link
               href="/blog/como-aumentar-score-de-credito"
-              className="flex items-center justify-between p-4 bg-white/10 hover:bg-white/20 rounded-lg border border-white/20 transition-all group"
+              className="flex items-center justify-between p-3.5 bg-white/10 hover:bg-white/20 rounded-xl border border-white/15 transition-all group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/50"
             >
-              <span className="font-medium">Como aumentar o score de crédito rápido</span>
-              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform flex-shrink-0" />
+              <span className="font-medium text-sm">Como aumentar o score rápido</span>
+              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform shrink-0" />
             </Link>
             <Link
               href="/blog/o-que-realmente-influencia-score-credito"
-              className="flex items-center justify-between p-4 bg-white/10 hover:bg-white/20 rounded-lg border border-white/20 transition-all group"
+              className="flex items-center justify-between p-3.5 bg-white/10 hover:bg-white/20 rounded-xl border border-white/15 transition-all group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/50"
             >
-              <span className="font-medium">O que realmente influencia o score de crédito</span>
-              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform flex-shrink-0" />
+              <span className="font-medium text-sm">O que influencia o score</span>
+              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform shrink-0" />
             </Link>
             <Link
               href="/blog/como-consultar-score-gratuitamente"
-              className="flex items-center justify-between p-4 bg-white/10 hover:bg-white/20 rounded-lg border border-white/20 transition-all group"
+              className="flex items-center justify-between p-3.5 bg-white/10 hover:bg-white/20 rounded-xl border border-white/15 transition-all group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/50"
             >
-              <span className="font-medium">Como consultar o score gratuitamente</span>
-              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform flex-shrink-0" />
+              <span className="font-medium text-sm">Consultar score gratuitamente</span>
+              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform shrink-0" />
             </Link>
             <Link
               href="/blog/cadastro-positivo-vale-a-pena"
-              className="flex items-center justify-between p-4 bg-white/10 hover:bg-white/20 rounded-lg border border-white/20 transition-all group"
+              className="flex items-center justify-between p-3.5 bg-white/10 hover:bg-white/20 rounded-xl border border-white/15 transition-all group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/50"
             >
-              <span className="font-medium">Cadastro Positivo vale a pena?</span>
-              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform flex-shrink-0" />
+              <span className="font-medium text-sm">Cadastro Positivo vale a pena?</span>
+              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform shrink-0" />
             </Link>
             <Link
               href="/blog/quanto-tempo-leva-para-score-aumentar"
-              className="flex items-center justify-between p-4 bg-white/10 hover:bg-white/20 rounded-lg border border-white/20 transition-all group"
+              className="flex items-center justify-between p-3.5 bg-white/10 hover:bg-white/20 rounded-xl border border-white/15 transition-all group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/50"
             >
-              <span className="font-medium">Quanto tempo leva para o score aumentar</span>
-              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform flex-shrink-0" />
+              <span className="font-medium text-sm">Quanto tempo leva para o score aumentar</span>
+              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform shrink-0" />
             </Link>
             <Link
               href="/blog/score-400-aprova-cartao"
-              className="flex items-center justify-between p-4 bg-white/10 hover:bg-white/20 rounded-lg border border-white/20 transition-all group"
+              className="flex items-center justify-between p-3.5 bg-white/10 hover:bg-white/20 rounded-xl border border-white/15 transition-all group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/50"
             >
-              <span className="font-medium">Score 400 aprova cartão de crédito?</span>
-              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform flex-shrink-0" />
+              <span className="font-medium text-sm">Score 400 aprova cartão?</span>
+              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform shrink-0" />
             </Link>
           </div>
         </div>

@@ -82,7 +82,7 @@ export default async function BlogPage({
 
       <BlogFilters posts={postSummaries} categories={categories} initialQuery={query} />
 
-      <div className="bg-primary rounded-2xl p-8 md:p-12 text-center text-primary-foreground shadow-xl">
+      <div className="bg-gradient-to-br from-primary to-primary/95 rounded-2xl p-8 md:p-12 text-center text-primary-foreground shadow-xl border border-primary/80">
         <div className="flex justify-center mb-6">
           <div className="p-3 bg-secondary rounded-xl">
             <BookOpen className="w-8 h-8 text-secondary-foreground" />
@@ -93,7 +93,7 @@ export default async function BlogPage({
           Nossas calculadoras financeiras são gratuitas, precisas e ajudam você a planejar cada passo.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
-          <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-secondary-foreground" asChild>
+          <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-secondary-foreground shadow-lg" asChild>
             <Link href="/#calculadoras">
               Ver todas as calculadoras
             </Link>

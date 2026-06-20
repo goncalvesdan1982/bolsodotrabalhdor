@@ -47,9 +47,9 @@ export default function CustoDeVidaPage() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-          <Card className="border-amber-200 bg-amber-50/30">
+          <Card className="border-amber-200 bg-amber-50/30 group hover:shadow-md transition-all">
             <CardHeader>
-              <Home className="w-8 h-8 text-amber-600 mb-2" />
+              <Home className="w-8 h-8 text-amber-600 mb-2 group-hover:scale-110 transition-transform" />
               <CardTitle>Orçamento Familiar</CardTitle>
               <CardDescription>Simule todos os gastos mensais e veja se sua renda é suficiente para o custo de vida desejado.</CardDescription>
             </CardHeader>
@@ -61,9 +61,9 @@ export default function CustoDeVidaPage() {
               </Button>
             </CardContent>
           </Card>
-          <Card className="border-amber-200 bg-amber-50/30">
+          <Card className="border-amber-200 bg-amber-50/30 group hover:shadow-md transition-all">
             <CardHeader>
-              <PiggyBank className="w-8 h-8 text-amber-600 mb-2" />
+              <PiggyBank className="w-8 h-8 text-amber-600 mb-2 group-hover:scale-110 transition-transform" />
               <CardTitle>Reserva de Emergência</CardTitle>
               <CardDescription>Calcule quanto guardar para emergências com base no seu custo de vida mensal.</CardDescription>
             </CardHeader>
@@ -75,9 +75,9 @@ export default function CustoDeVidaPage() {
               </Button>
             </CardContent>
           </Card>
-          <Card className="border-amber-200 bg-amber-50/30">
+          <Card className="border-amber-200 bg-amber-50/30 group hover:shadow-md transition-all">
             <CardHeader>
-              <TrendingDown className="w-8 h-8 text-amber-600 mb-2" />
+              <TrendingDown className="w-8 h-8 text-amber-600 mb-2 group-hover:scale-110 transition-transform" />
               <CardTitle>Economia Mensal</CardTitle>
               <CardDescription>Descubra quanto você precisa economizar para atingir metas como comprar um imóvel ou carro.</CardDescription>
             </CardHeader>
@@ -91,18 +91,39 @@ export default function CustoDeVidaPage() {
           </Card>
         </div>
 
-        <div className="mb-12 p-6 md:p-8 bg-primary rounded-2xl text-primary-foreground shadow-lg">
+        <div className="mb-8 p-6 md:p-8 bg-card border border-border rounded-2xl shadow-sm">
+          <h2 className="text-xl font-bold text-foreground mb-3">Por onde começar</h2>
+          <p className="text-muted-foreground mb-4">
+            Quer entender seu custo de vida? Siga esta trilha de leitura e ferramentas:
+          </p>
+          <ol className="space-y-2 list-decimal list-inside text-sm text-muted-foreground">
+            <li><Link href="/blog/quanto-custa-morar-sozinho" className="text-secondary hover:underline font-medium">Quanto custa morar sozinho</Link> — guia completo de gastos</li>
+            <li><Link href="/calculadoras/orcamento-familiar" className="text-secondary hover:underline font-medium">Calculadora de Orçamento Familiar</Link> — simule seus gastos mensais</li>
+            <li><Link href="/calculadoras/reserva-emergencia" className="text-secondary hover:underline font-medium">Calculadora de Reserva de Emergência</Link> — baseada no seu custo de vida</li>
+            <li><Link href="/calculadoras/economia-mensal" className="text-secondary hover:underline font-medium">Calculadora de Economia Mensal</Link> — planeje suas metas</li>
+            <li><Link href="/calculadoras/meta-financeira" className="text-secondary hover:underline font-medium">Calculadora de Meta Financeira</Link> — simule objetivos de curto e longo prazo</li>
+          </ol>
+        </div>
+
+        <div className="mb-12 p-6 md:p-8 bg-gradient-to-br from-amber-700 to-amber-600 rounded-2xl text-primary-foreground shadow-lg">
           <h2 className="text-2xl font-bold mb-4">Artigos sobre Custo de Vida</h2>
-          <p className="text-primary-foreground/80 mb-6">
+          <p className="text-white/80 mb-6">
             Veja nossos artigos detalhados sobre custo de vida e planejamento financeiro.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <Link
               href="/blog/quanto-custa-morar-sozinho"
-              className="flex items-center justify-between p-4 bg-white/10 hover:bg-white/20 rounded-lg border border-white/20 transition-all group"
+              className="flex items-center justify-between p-3.5 bg-white/10 hover:bg-white/20 rounded-xl border border-white/15 transition-all group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/50"
             >
-              <span className="font-medium">Quanto custa morar sozinho no Brasil em 2026</span>
-              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform flex-shrink-0" />
+              <span className="font-medium text-sm">Quanto custa morar sozinho no Brasil</span>
+              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform shrink-0" />
+            </Link>
+            <Link
+              href="/blog/metodo-50-30-20-como-aplicar"
+              className="flex items-center justify-between p-3.5 bg-white/10 hover:bg-white/20 rounded-xl border border-white/15 transition-all group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/50"
+            >
+              <span className="font-medium text-sm">Método 50-30-20: organize seu orçamento</span>
+              <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform shrink-0" />
             </Link>
           </div>
         </div>

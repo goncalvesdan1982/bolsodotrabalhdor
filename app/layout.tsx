@@ -6,6 +6,7 @@ import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
 import { GoogleAnalytics } from '@/components/google-analytics'
 import CookieBanner from '@/components/cookie-banner'
+import { BackToTopButton } from '@/components/back-to-top-button'
 import { SITE_URL, SITE_NAME, SITE_DESCRIPTION } from '@/lib/config'
 import './globals.css'
 
@@ -149,6 +150,7 @@ export default function RootLayout({
         </main>
         <Footer />
         {process.env.NODE_ENV === 'production' && <Analytics />}
+        <BackToTopButton />
         <CookieBanner />
       </body>
     </html>

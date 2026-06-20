@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button'
 import { BlogAnalytics } from '@/components/blog-analytics'
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { getCategoryConfig } from '@/lib/blog-categories'
 import { Calendar, Clock, ChevronLeft, ArrowRight, Calculator, CheckCircle, ExternalLink, Info } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
 import { Breadcrumbs } from '@/components/breadcrumbs'
@@ -324,48 +325,48 @@ export default async function PostPage({ params }: PostPageProps) {
           </p>
         </div>
 
-        <div className="my-12 p-6 md:p-8 bg-primary rounded-2xl text-primary-foreground shadow-lg">
-          <div className="flex items-center gap-3 mb-4">
-            <Calculator className="w-6 h-6 text-secondary" />
-            <h3 className="text-xl font-bold">Simule agora gratuitamente</h3>
-          </div>
-          <p className="text-primary-foreground/80 mb-6">
+        <div className="my-12 p-6 md:p-8 bg-gradient-to-br from-primary to-primary/95 rounded-2xl text-primary-foreground shadow-xl border border-primary/80">
+          <Calculator className="w-8 h-8 text-secondary mb-3" />
+          <h3 className="text-xl font-bold mb-2">Simule agora gratuitamente</h3>
+          <p className="text-primary-foreground/80 mb-6 max-w-lg">
             Utilize nossas ferramentas gratuitas para simular cenários e tomar decisões financeiras mais conscientes.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {post.relatedCalculators.map((calc) => (
               <Link 
                 key={calc.href} 
                 href={calc.href}
-                className="flex items-center justify-between p-4 bg-white/10 hover:bg-white/20 rounded-lg border border-white/20 transition-all group"
+                className="flex items-center justify-between p-3.5 bg-white/10 hover:bg-white/20 rounded-xl border border-white/15 transition-all group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/60"
               >
-                <span className="font-medium">{calc.name}</span>
-                <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform" />
+                <span className="font-medium text-sm">{calc.name}</span>
+                <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform shrink-0" />
               </Link>
             ))}
           </div>
         </div>
 
         {relatedPosts.length > 0 && (
-          <div className="mt-16 pt-12 border-t">
+          <div className="mt-16 pt-12 border-t border-border/40">
             <h3 className="text-2xl font-bold text-primary mb-8">Veja também</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {relatedPosts.map((rPost) => (
-                <Card key={rPost.slug} className="hover:shadow-md transition-shadow border-border/60 flex flex-col h-full">
-                  <CardHeader className="p-5 flex-1">
-                    <div className="text-xs text-secondary font-semibold mb-2 uppercase tracking-wider">{rPost.category}</div>
-                    <CardTitle className="text-lg leading-snug">
-                      <Link href={`/blog/${rPost.slug}`} className="hover:text-secondary transition-colors">
+                <Link key={rPost.slug} href={`/blog/${rPost.slug}`} className="group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring rounded-xl">
+                  <Card className="h-full transition-all hover:shadow-md hover:border-primary/30 group-hover:-translate-y-0.5 border-border/60 flex flex-col">
+                    <CardHeader className="p-5 flex-1">
+                      <span className={`inline-block text-xs font-semibold px-2.5 py-0.5 rounded-full w-fit mb-2 ${getCategoryConfig(rPost.category).color} ${getCategoryConfig(rPost.category).textColor}`}>
+                        {rPost.category}
+                      </span>
+                      <CardTitle className="text-base leading-snug group-hover:text-secondary transition-colors">
                         {rPost.title}
-                      </Link>
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className="px-5 pb-5 pt-0">
-                    <Link href={`/blog/${rPost.slug}`} className="text-sm text-secondary font-medium flex items-center gap-1 group">
-                      Ler mais <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
-                    </Link>
-                  </CardContent>
-                </Card>
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent className="px-5 pb-5 pt-0">
+                      <span className="text-sm text-secondary font-medium flex items-center gap-1 group-hover:gap-2 transition-all">
+                        Ler mais <ArrowRight className="w-3.5 h-3.5" />
+                      </span>
+                    </CardContent>
+                  </Card>
+                </Link>
               ))}
             </div>
           </div>
