@@ -38,11 +38,11 @@ export function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 shrink-0">
           <Image
-                src="/logo-bolso-trabalhador.png"
+                src="/logo-novo-bolso-trabalhador.png"
             alt="Bolso do Trabalhador"
-            width={240}
-            height={60}
-            className="h-10 w-auto md:h-12"
+            width={220}
+            height={55}
+            className="h-10 w-auto md:h-11"
             priority
           />
         </Link>
@@ -122,11 +122,11 @@ export function Header() {
           <SheetContent side="right" className="w-80">
             <SheetTitle className="flex items-center gap-2 mb-6">
               <Image
-            src="/logo-bolso-trabalhador.png"
+            src="/logo-novo-bolso-trabalhador.png"
                 alt="Bolso do Trabalhador"
                 width={180}
                 height={45}
-                className="h-10 w-auto"
+                className="h-9 w-auto"
               />
             </SheetTitle>
             <nav className="flex flex-col gap-4">
