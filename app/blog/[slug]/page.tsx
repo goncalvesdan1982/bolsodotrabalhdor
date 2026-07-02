@@ -69,10 +69,23 @@ function estimateReadingTime(html: string): number {
 function enhanceArticleHtml(html: string): string {
   let enhanced = html
 
-  enhanced = enhanced.replace(/<table(?!\s*[^>]*class=['"]premium-table-wrapper)/g, '<div class="premium-table-wrapper"><table')
-  enhanced = enhanced.replace(/<\/table>(?!\s*<\/div>)/g, '</table></div>')
+  // Wrap tables in premium wrapper (avoid double-wrapping)
+  enhanced = enhanced.replace(/<table(?!\s*[^>]*class=['"]premium-table-wrapper)/gi, '<div class="premium-table-wrapper"><table')
+  enhanced = enhanced.replace(/<\/table>(?!\s*<\/div>)/gi, '</table></div>')
 
-  enhanced = enhanced.replace(/<li><input[^>]*type="checkbox"[^>]*disabled[^>]*>\s*([\s\S]*?)<\/li>/g, '<li class="premium-checklist-item"><span class="premium-checkbox" aria-hidden="true"></span><span>$1</span></li>')
+  // Convert checkbox list items to premium checklist
+  enhanced = enhanced.replace(/<li><input[^>]*type="checkbox"[^>]*disabled[^>]*>\s*([\s\S]*?)<\/li>/gi, '<li class="premium-checklist-item"><span class="premium-checkbox" aria-hidden="true"></span><span>$1</span></li>')
+
+  // Convert inline-style attention divs to premium callout
+  enhanced = enhanced.replace(/<div style="background:#fef2f2;border:1px solid #fecaca;border-radius:8px;padding:16px;margin:24px 0;">/gi, '<div class="callout callout-attention">')
+  enhanced = enhanced.replace(/<div style="background:#fef2f2;border:1px solid #fecaca;border-radius:8px;padding:16px;margin:24px 0">/gi, '<div class="callout callout-attention">')
+
+  // Convert inline style for blue info boxes
+  enhanced = enhanced.replace(/<div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:8px;padding:16px;margin:24px 0;">/gi, '<div class="callout callout-dica">')
+  enhanced = enhanced.replace(/<div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:8px;padding:16px;margin:24px 0">/gi, '<div class="callout callout-dica">')
+
+  // Add scope="col" to table headers if missing
+  enhanced = enhanced.replace(/<th(?![^>]*scope)/gi, '<th scope="col"')
 
   return enhanced
 }
