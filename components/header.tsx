@@ -40,9 +40,9 @@ export function Header() {
           <Image
                 src="/logo-novo-bolso-trabalhador.png"
             alt="Bolso do Trabalhador"
-            width={220}
-            height={55}
-            className="h-10 w-auto md:h-11"
+            width={260}
+            height={65}
+            className="h-10 w-auto md:h-14"
             priority
           />
         </Link>
@@ -124,9 +124,9 @@ export function Header() {
               <Image
             src="/logo-novo-bolso-trabalhador.png"
                 alt="Bolso do Trabalhador"
-                width={180}
-                height={45}
-                className="h-9 w-auto"
+                width={210}
+                height={52}
+                className="h-10 w-auto"
               />
             </SheetTitle>
             <nav className="flex flex-col gap-4">
