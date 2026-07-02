@@ -87,6 +87,12 @@ function enhanceArticleHtml(html: string): string {
   // Add scope="col" to table headers if missing
   enhanced = enhanced.replace(/<th(?![^>]*scope)/gi, '<th scope="col"')
 
+  // Wrap related links blocks (e.g., "Artigos relacionados:" or "veja também:" followed by <ul><li><a>)
+  enhanced = enhanced.replace(
+    /<p>(Artigos relacionados|Para continuar sua pesquisa, veja tamb[eé]m):?<\/p>\s*<ul>([\s\S]*?)<\/ul>/gi,
+    '<div class="related-links-premium"><p class="related-links-title">$1</p><ul>$2</ul></div>'
+  )
+
   return enhanced
 }
 
