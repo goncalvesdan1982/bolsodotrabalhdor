@@ -12,6 +12,20 @@ colors:
   accent: "#2d8a56"
   destructive: "#dc2626"
   ring: "#1a365d"
+  table-header-bg: "#f1f5f9"
+  table-header-text: "#1e293b"
+  table-header-border: "#cbd5e1"
+  table-body-text: "#334155"
+  table-stripe: "#f8fafc"
+  table-hover: "#eff6ff"
+  table-shadow: "rgba(0, 0, 0, 0.06)"
+  dark-table-header-bg: "#1e293b"
+  dark-table-header-text: "#e2e8f0"
+  dark-table-header-border: "#334155"
+  dark-table-body-text: "#94a3b8"
+  dark-table-stripe: "#0f172a"
+  dark-table-hover: "#1e293b"
+  dark-table-shadow: "rgba(0, 0, 0, 0.15)"
 typography:
   display:
     fontFamily: Inter, system-ui, sans-serif

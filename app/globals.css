@@ -378,11 +378,10 @@
 }
 
 .article-content blockquote {
-  border-left: 3px solid hsl(var(--secondary));
   padding: 0.75rem 1rem;
   margin: 1.5rem 0;
-  background: hsl(var(--muted) / 0.3);
-  border-radius: 0 0.5rem 0.5rem 0;
+  background: rgba(45, 138, 86, 0.06);
+  border-radius: 0.5rem;
   font-style: normal;
 }
 
@@ -393,7 +392,6 @@
   border-radius: 0.5rem;
   font-size: 0.9375rem;
   line-height: 1.6;
-  border-left: 3px solid;
 }
 
 .callout p {
@@ -406,13 +404,11 @@
 
 .callout-attention {
   background: hsl(0 86% 97%);
-  border-color: hsl(0 76% 50%);
   color: hsl(0 70% 25%);
 }
 
 .dark .callout-attention {
   background: hsl(0 30% 12%);
-  border-color: hsl(0 70% 40%);
   color: hsl(0 60% 80%);
 }
 
@@ -429,13 +425,11 @@
 
 .callout-dica {
   background: hsl(150 60% 97%);
-  border-color: hsl(150 70% 45%);
   color: hsl(150 70% 20%);
 }
 
 .dark .callout-dica {
   background: hsl(150 30% 10%);
-  border-color: hsl(150 60% 35%);
   color: hsl(150 50% 75%);
 }
 
@@ -452,13 +446,11 @@
 
 .callout-conclusao {
   background: hsl(210 80% 97%);
-  border-color: hsl(210 80% 50%);
   color: hsl(210 60% 25%);
 }
 
 .dark .callout-conclusao {
   background: hsl(210 30% 12%);
-  border-color: hsl(210 60% 45%);
   color: hsl(210 50% 80%);
 }
 
