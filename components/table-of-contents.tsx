@@ -9,9 +9,14 @@ interface TOCItem {
   level: number
 }
 
-export function TableOfContents() {
+interface TableOfContentsProps {
+  variant?: 'inline' | 'sidebar'
+}
+
+export function TableOfContents({ variant = 'inline' }: TableOfContentsProps) {
   const [headings, setHeadings] = useState<TOCItem[]>([])
   const [isOpen, setIsOpen] = useState(false)
+  const [activeId, setActiveId] = useState<string>('')
 
   useEffect(() => {
     const article = document.querySelector('article')
@@ -30,7 +35,51 @@ export function TableOfContents() {
     setHeadings(elements)
   }, [])
 
+  useEffect(() => {
+    if (variant !== 'sidebar') return
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            setActiveId(entry.target.id)
+          }
+        }
+      },
+      { rootMargin: '-80px 0px -80% 0px' }
+    )
+    for (const h of headings) {
+      const el = document.getElementById(h.id)
+      if (el) observer.observe(el)
+    }
+    return () => observer.disconnect()
+  }, [headings, variant])
+
   if (headings.length < 2) return null
+
+  if (variant === 'sidebar') {
+    return (
+      <nav>
+        <ul className="space-y-1">
+          {headings.map((heading) => (
+            <li key={heading.id}>
+              <a
+                href={`#${heading.id}`}
+                className={`block rounded px-3 py-1.5 text-xs leading-relaxed transition-colors hover:bg-secondary/10 ${
+                  activeId === heading.id
+                    ? 'bg-secondary/10 text-secondary font-medium'
+                    : heading.level === 3
+                      ? 'ml-4 text-muted-foreground/70'
+                      : 'text-foreground/80 font-medium'
+                }`}
+              >
+                {heading.text}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    )
+  }
 
   return (
     <section className="rounded-xl border border-border bg-card shadow-sm mb-8">
