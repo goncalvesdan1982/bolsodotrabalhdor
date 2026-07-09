@@ -14,10 +14,10 @@ export const CATEGORY_CONFIG: Record<string, {
   },
   'Cartões': {
     label: 'Cartões',
-    color: 'bg-indigo-700',
-    colorHex: '#4338ca',
+    color: 'bg-orange-700',
+    colorHex: '#c2410c',
     textColor: 'text-white',
-    gradient: 'from-indigo-800 to-indigo-600',
+    gradient: 'from-orange-800 to-orange-600',
   },
   'Empréstimos': {
     label: 'Empréstimos',
@@ -42,10 +42,10 @@ export const CATEGORY_CONFIG: Record<string, {
   },
   'Custo de Vida': {
     label: 'Custo de Vida',
-    color: 'bg-violet-700',
-    colorHex: '#6d28d9',
+    color: 'bg-cyan-700',
+    colorHex: '#0e7490',
     textColor: 'text-white',
-    gradient: 'from-violet-800 to-violet-600',
+    gradient: 'from-cyan-800 to-cyan-600',
   },
 }
 

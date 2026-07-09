@@ -268,7 +268,7 @@ export default async function PostPage({ params }: PostPageProps) {
             </div>
           </header>
 
-          <div className="mb-8 p-4 bg-muted/40 border-l-4 border-secondary rounded-r-lg text-sm text-muted-foreground leading-relaxed">
+          <div className="mb-8 p-4 bg-muted/40 border-l-2 border-secondary rounded-r-lg text-sm text-muted-foreground leading-relaxed">
             <p>{post.description}</p>
           </div>
 
@@ -310,7 +310,7 @@ export default async function PostPage({ params }: PostPageProps) {
           <FAQSection items={post.faq} pageUrl={`${SITE_URL}/blog/${post.slug}`} />
         )}
 
-        <div className="mb-12 p-6 bg-muted/30 border-l-4 border-secondary rounded-r-lg text-sm text-muted-foreground leading-relaxed">
+        <div className="mb-12 p-6 bg-muted/30 border-l-2 border-secondary rounded-r-lg text-sm text-muted-foreground leading-relaxed">
           <p className="font-semibold text-foreground mb-1">Sobre esta informação</p>
           <p>{sourceDescriptions[post.category] || defaultSourceDescription}</p>
           <div className="mt-4 pt-4 border-t border-border/40">

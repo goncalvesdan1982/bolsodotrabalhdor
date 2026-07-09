@@ -941,16 +941,6 @@ export const posts: Post[] = [
 <p>Ter score baixo ou nome negativado pode dificultar a aprovação de um cartão de crédito tradicional, mas não impede automaticamente. Algumas instituições utilizam critérios de análise que vão além da pontuação, como renda, relacionamento bancário e histórico recente de pagamentos.</p>
 <p>Este artigo apresenta os tipos de cartão que podem ser mais acessíveis, os riscos envolvidos e os cuidados essenciais antes de solicitar. As informações são educativas e não substituem a análise individual de cada instituição. A aprovação depende da política de crédito de cada banco ou emissor.</p>
 </section>
-<section><h2>Resumo rápido</h2>
-<ul>
-<li>Score baixo pode reduzir as chances, mas não é o único critério de aprovação.</li>
-<li>Cartões com limite garantido ou pré-pagos podem ser alternativas em alguns perfis.</li>
-<li>Cartões consignados têm regras próprias e exigem cuidado com o comprometimento da renda.</li>
-<li>Evite solicitar muitos cartões ao mesmo tempo — cada consulta ao <strong>CPF</strong> pode impactar o score.</li>
-<li>Compare anuidade, tarifas, juros e condições antes de contratar.</li>
-<li>Fique atento a ofertas com aprovação garantida ou cobrança de taxa antecipada.</li>
-</ul>
-</section>
 <section><h2>Score baixo impede ter cartão?</h2>
 <p>Não necessariamente. O score é um dos fatores considerados na análise de crédito, mas não é o único. As instituições financeiras também avaliam:</p>
 <ul>
@@ -1100,15 +1090,6 @@ export const posts: Post[] = [
 <section><h2>Empréstimo pessoal ou consignado: qual escolher?</h2>
 <p>Escolher entre um empréstimo pessoal e um consignado vai além de comparar taxas. Cada modalidade tem características, riscos e requisitos diferentes, e a opção mais adequada depende do perfil de renda, do vínculo empregatício, do valor necessário e do planejamento financeiro de cada pessoa.</p>
 <p>Este artigo apresenta as diferenças, os riscos e os critérios para ajudar na decisão. As informações são educativas e não substituem a análise do contrato com a instituição financeira. Consulte os <strong>canais oficiais</strong> do Banco Central ou da sua instituição para confirmar condições vigentes.</p>
-</section>
-<section><h2>Resumo rápido</h2>
-<ul>
-<li><strong>Empréstimo consignado:</strong> parcelas descontadas em folha ou benefício. Exige vínculo formal (CLT, serviço público, <strong>INSS</strong>). As taxas costumam ser mais baixas, mas compromete parte fixa da renda.</li>
-<li><strong>Empréstimo pessoal:</strong> pagamento por boleto, débito ou Pix. Disponível para qualquer pessoa com renda comprovada. As taxas podem ser mais altas, mas oferece mais flexibilidade.</li>
-<li><strong>Não existe opção universalmente melhor.</strong> A escolha depende do acesso, do <strong>CET</strong>, do prazo e do impacto no orçamento.</li>
-<li><strong>CET é o número mais importante na comparação.</strong> Inclui juros, tarifas, seguros e impostos.</li>
-<li><strong>Crédito deve ser contratado com planejamento.</strong> Evite comprometer despesas essenciais ou contratar por impulso.</li>
-</ul>
 </section>
 <section><h2>Diferença entre empréstimo pessoal e consignado</h2>
 <p>O <strong>empréstimo consignado</strong> tem as parcelas descontadas diretamente da folha de pagamento ou do benefício (<strong>INSS</strong>, por exemplo). Como o risco de inadimplência para a instituição é menor, as taxas de juros podem ser mais baixas. Está disponível para servidores públicos, aposentados e pensionistas do <strong>INSS</strong>, trabalhadores CLT de empresas conveniadas. A <strong>margem consignável</strong> é o limite da renda que pode ser comprometido com parcelas descontadas em folha ou benefício. Esse percentual depende do tipo de vínculo, da regra vigente e da modalidade contratada, por isso deve ser confirmado no <strong>INSS</strong>, no RH da empresa ou no canal oficial responsável.</p>
@@ -1855,16 +1836,6 @@ export const posts: Post[] = [
 <p>Se você tem mais de uma dívida, escolher qual pagar primeiro pode fazer diferença no bolso. Pagar a dívida errada primeiro pode significar mais juros acumulados e mais tempo até a regularização.</p>
 <p>Este artigo apresenta os principais métodos de priorização, como lidar com dívidas negativadas e uma estratégia combinada para diferentes perfis. Os exemplos são ilustrativos — os resultados reais dependem das taxas, prazos e condições de cada dívida.</p>
 </section>
-<section><h2>Resumo rápido</h2>
-<ul>
-<li>O método avalanche prioriza dívidas com juros mais altos — economiza mais no total.</li>
-<li>O método bola de neve prioriza dívidas menores — dá motivação mais rápida.</li>
-<li>Dívidas negativadas exigem negociação de desconto antes de definir a ordem.</li>
-<li>Combinar os dois métodos costuma ser a estratégia mais eficiente.</li>
-<li>Contas essenciais (aluguel, luz, água, alimentação) vêm antes de qualquer dívida.</li>
-<li>Use calculadoras de simulação para comparar cenários com seus próprios números.</li>
-</ul>
-</section>
 <section><h2>Comparação dos métodos de priorização</h2>
 <table>
 <thead>
@@ -2004,15 +1975,6 @@ export const posts: Post[] = [
 <li><strong>Priorize dívidas caras:</strong> se houver múltiplas dívidas, comece pela de cartão (juros mais altos). Veja <a href="/blog/qual-divida-devo-pagar-primeiro">qual dívida pagar primeiro</a></li>
 <li><strong>Use plataformas de negociação:</strong> Serasa Limpa Nome e Acordo OK podem oferecer descontos</li>
 <li><strong>Aguarde a baixa:</strong> após pagar, o banco tem até 5 dias úteis para retirar a negativação</li>
-</ol>
-</section>
-<section><h2>Erros comuns ao lidar com dívida de cartão</h2>
-<ol>
-<li><strong>Ignorar as cobranças:</strong> isso só aumenta os juros e piora a situação</li>
-<li><strong>Pagar apenas o mínimo por meses:</strong> o saldo devedor não diminui significativamente</li>
-<li><strong>Fazer novo cartão para pagar o antigo:</strong> gera mais dívida em vez de resolver</li>
-<li><strong>Contratar intermediários:</strong> você pode negociar diretamente com o banco sem custo adicional</li>
-<li><strong>Achar que a dívida desaparece após 5 anos:</strong> a dívida continua existindo e o nome fica negativado</li>
 </ol>
 </section>
 <section>
