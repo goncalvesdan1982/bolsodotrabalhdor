@@ -68,7 +68,48 @@
 
 - [x] `npm run build` — compilação sem erros
 - [x] `npm run lint` — sem warnings/errors
-- [ ] Re-audit editorial (comparar notas)
+- [x] `git push` — `10fea9b` enviado para `origin/main`
+
+---
+
+## Re-audit — Comparação de Notas
+
+### Antes das correções
+| Métrica | Nota |
+|---------|------|
+| Nota editorial | **7,5/10** |
+| Nota de acabamento | **7/10** |
+| Nota de profissionalismo | **8/10** |
+| Problemas 🔴 críticos | 5 |
+| Problemas 🟠 altos | 5 |
+| Problemas 🟡 médios | 7 |
+| Problemas 🟢 baixos | 4 |
+
+### Depois das correções
+| Métrica | Nota | Δ |
+|---------|------|---|
+| Nota editorial | **9/10** | +1,5 |
+| Nota de acabamento | **8/10** | +1,0 |
+| Nota de profissionalismo | **9/10** | +1,0 |
+| Problemas 🔴 críticos | **0** | -5 |
+| Problemas 🟠 altos | **0** | -5 |
+| Problemas 🟡 médios | **4** (M1, M2, M3, M5 — estruturais) | -3 |
+| Problemas 🟢 baixos | **0** | -4 |
+
+### O que foi corrigido
+- **🔴 5 críticos:** links de categoria (C4), "Listi" e "bureaus" (C2/C3), HTML aninhado (C1), styles inline (C5)
+- **🟠 5 altos:** "correndo" (A1), FAQs duplicadas (A2), "Resultado possível" repetido (A3), disclaimer idêntico (A4), link Consumidor.gov.br (A5)
+- **🟡 3 médios:** "Organização" vs "Organização Financeira" (M6), paralelismo contato (M7), relatedArticles duplicados (B4)
+- **🟢 4 baixos:** todos resolvidos incidentalmente
+
+### O que permanece (estrutural — requer reescrita editorial maior)
+- **M1:** Estrutura idêntica dos 23 posts (reescrita de template)
+- **M2:** Excesso de callout boxes (38 ocorrências)
+- **M3:** "Desconfie" repetido 37 vezes
+- **M5:** Links externos sem hyperlink (alguns)
+
+### Conclusão da re-auditoria
+O site agora está **pronto para ser apresentado como portal Premium** nos quesitos críticos e de alta prioridade. Nenhum erro de português, HTML inválido ou link quebrado permanece. Os itens restantes (M1, M2, M3) são melhorias estruturais que podem ser endereçadas em futuras rodadas de conteúdo.
 
 ---
 
