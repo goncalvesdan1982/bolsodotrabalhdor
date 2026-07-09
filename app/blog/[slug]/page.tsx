@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { Metadata } from 'next'
 import { SITE_URL } from '@/lib/config'
-import { getPostBySlug, getRelatedPosts } from '../../../lib/posts'
+import { getPostBySlug, getRelatedPosts, getAllPosts } from '../../../lib/posts'
 import DOMPurify from 'isomorphic-dompurify'
 import { Button } from '@/components/ui/button'
 import { BlogAnalytics } from '@/components/blog-analytics'
@@ -102,6 +102,10 @@ interface PostPageProps {
   params: Promise<{
     slug: string
   }>
+}
+
+export function generateStaticParams() {
+  return getAllPosts().map((post) => ({ slug: post.slug }))
 }
 
 export async function generateMetadata({ params }: PostPageProps): Promise<Metadata> {

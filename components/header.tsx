@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 import Image from 'next/image'
 import { Menu, ChevronDown } from 'lucide-react'
+import { ThemeToggle } from '@/components/theme-toggle'
 import { Button } from '@/components/ui/button'
 import {
   DropdownMenu,
@@ -109,6 +110,7 @@ export function Header() {
           >
             Blog
           </Link>
+          <ThemeToggle />
         </nav>
 
         {/* Mobile Navigation */}
@@ -158,6 +160,9 @@ export function Header() {
                 <Link href="/contato" className="block py-3 px-3 text-sm rounded-md hover:bg-muted transition-colors min-h-[44px] flex items-center" onClick={() => setIsOpen(false)}>Contato</Link>
                 <Link href="/politica-privacidade" className="block py-3 px-3 text-sm rounded-md hover:bg-muted transition-colors min-h-[44px] flex items-center" onClick={() => setIsOpen(false)}>Privacidade</Link>
                 <Link href="/termos-uso" className="block py-3 px-3 text-sm rounded-md hover:bg-muted transition-colors min-h-[44px] flex items-center" onClick={() => setIsOpen(false)}>Termos de Uso</Link>
+              </div>
+              <div className="border-t pt-4">
+                <ThemeToggle />
               </div>
             </nav>
           </SheetContent>
