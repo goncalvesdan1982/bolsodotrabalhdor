@@ -8,7 +8,7 @@ import { Button } from '@/components/ui/button'
 import { BlogAnalytics } from '@/components/blog-analytics'
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { getCategoryConfig } from '@/lib/blog-categories'
+import { getCategoryConfig, getCategorySlug } from '@/lib/blog-categories'
 import { Calendar, Clock, ChevronLeft, ArrowRight, Calculator, CheckCircle, ExternalLink, Info } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
 import { Breadcrumbs } from '@/components/breadcrumbs'
@@ -222,7 +222,7 @@ export default async function PostPage({ params }: PostPageProps) {
         <Breadcrumbs 
           items={[
             { label: 'Blog', href: '/blog' },
-            { label: post.category, href: `/blog/categoria/${post.category.toLowerCase().replace(/\s+/g, '-')}` },
+            { label: post.category, href: `/blog/categoria/${getCategorySlug(post.category)}` },
             { label: post.title }
           ]} 
         />
@@ -230,7 +230,7 @@ export default async function PostPage({ params }: PostPageProps) {
           <article>
           <header className="mb-6">
             <div className="flex flex-wrap items-center gap-x-4 gap-y-2 mb-4 text-sm text-muted-foreground">
-              <Link href={`/blog/categoria/${post.category.toLowerCase().replace(/\s+/g, '-')}`}>
+              <Link href={`/blog/categoria/${getCategorySlug(post.category)}`}>
                 <Badge variant="secondary" className="bg-secondary/10 text-secondary border-none hover:bg-secondary/20 cursor-pointer">
                   {post.category}
                 </Badge>

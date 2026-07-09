@@ -124,7 +124,7 @@ export const calculatorsConfig: Record<string, CalculatorConfig> = {
     relatedArticles: [
       { name: 'Como sair das dívidas: guia passo a passo', href: '/blog/como-sair-das-dividas-guia-completo' },
       { name: 'Reserva de emergência: quanto guardar?', href: '/organizacao-financeira' },
-      { name: 'Como controlar gastos do dia a dia', href: '/organizacao-financeira' },
+      { name: 'Método 50-30-20 para organizar o orçamento', href: '/blog/metodo-50-30-20-como-aplicar' },
     ],
   },
   'juros-simples': {
@@ -277,7 +277,7 @@ export const calculatorsConfig: Record<string, CalculatorConfig> = {
     ],
     relatedArticles: [
       { name: 'Reserva de emergência: quanto guardar?', href: '/organizacao-financeira' },
-      { name: 'Como controlar gastos do dia a dia', href: '/organizacao-financeira' },
+      { name: 'Como sair das dívidas com planejamento', href: '/blog/como-montar-plano-sair-das-dividas' },
       { name: 'Como sair das dívidas: guia passo a passo', href: '/blog/como-sair-das-dividas-guia-completo' },
     ],
   },
@@ -308,7 +308,7 @@ export const calculatorsConfig: Record<string, CalculatorConfig> = {
     ],
     relatedArticles: [
       { name: 'Como controlar gastos do dia a dia', href: '/organizacao-financeira' },
-      { name: 'Reserva de emergência: quanto guardar?', href: '/organizacao-financeira' },
+      { name: 'Guia completo para sair das dívidas', href: '/blog/como-sair-das-dividas-guia-completo' },
       { name: 'Quanto comprometer da renda', href: '/blog/metodo-50-30-20-como-aplicar' },
     ],
   },
@@ -403,7 +403,7 @@ export const calculatorsConfig: Record<string, CalculatorConfig> = {
     ],
     relatedArticles: [
       { name: 'Como controlar gastos do dia a dia', href: '/organizacao-financeira' },
-      { name: 'Reserva de emergência: quanto guardar?', href: '/organizacao-financeira' },
+      { name: 'Como montar um plano para sair das dívidas', href: '/blog/como-montar-plano-sair-das-dividas' },
       { name: 'Quanto comprometer da renda', href: '/blog/metodo-50-30-20-como-aplicar' },
     ],
   },
@@ -498,8 +498,8 @@ export const calculatorsConfig: Record<string, CalculatorConfig> = {
     ],
     relatedArticles: [
       { name: 'Reserva de emergência: quanto guardar?', href: '/organizacao-financeira' },
+      { name: 'Como definir metas financeiras alcançáveis', href: '/blog/metodo-50-30-20-como-aplicar' },
       { name: 'Como controlar gastos do dia a dia', href: '/organizacao-financeira' },
-      { name: 'Quanto comprometer da renda', href: '/blog/metodo-50-30-20-como-aplicar' },
     ],
   },
 }

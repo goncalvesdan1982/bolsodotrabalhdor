@@ -157,7 +157,7 @@ export const posts: Post[] = [
 <td>R$ 900</td>
 <td>-</td>
 <td>8%</td>
-<td>correndo</td>
+<td>em aberto</td>
 <td>Alta</td>
 </tr>
 </tbody>
@@ -286,7 +286,7 @@ export const posts: Post[] = [
 <li><strong>Compare antes de aceitar</strong> — veja se a parcela cabe no seu orçamento e se o <strong>CET</strong> é justo</li>
 <li><strong>Não aceite na primeira ligação</strong> — às vezes uma segunda proposta é melhor</li>
 <li><strong>Guarde todos os comprovantes</strong> — protocolo, contrato, comprovante de pagamento</li>
-<li><strong>Confirme os <strong>canais oficiais</strong></strong> — negocie apenas pelos canais do banco ou credora</li>
+<li><strong>Confirme os canais oficiais</strong> — negocie apenas pelos canais do banco ou credora</li>
 </ol>
 
 <p>Veja o artigo completo <a href="/blog/como-negociar-dividas-diretamente-com-banco">Como negociar dívidas diretamente com o banco</a> com dicas detalhadas para cada tipo de credor.</p>
@@ -494,7 +494,7 @@ export const posts: Post[] = [
 
 <ul>
 <li><strong>Pagar as contas em dia</strong> — o histórico de pagamentos é o fator mais importante</li>
-<li><strong>Manter o <strong>Cadastro Positivo</strong> ativo</strong> — ele permite que bons pagamentos sejam considerados no cálculo</li>
+<li><strong>Manter o Cadastro Positivo ativo</strong> — ele permite que bons pagamentos sejam considerados no cálculo</li>
 <li><strong>Usar crédito com responsabilidade</strong> — ter um cartão com pagamento em dia ajuda mais que não ter crédito nenhum</li>
 <li><strong>Não fazer múltiplas solicitações de crédito</strong> — cada consulta ao <strong>CPF</strong> pode reduzir o score temporariamente</li>
 </ul>
@@ -517,7 +517,7 @@ export const posts: Post[] = [
 <h3>Regras de segurança:</h3>
 
 <ul>
-<li><strong>Negocie apenas pelos <strong>canais oficiais</strong></strong> — aplicativo do banco, site oficial, SAC</li>
+<li><strong>Negocie apenas pelos canais oficiais</strong> — aplicativo do banco, site oficial, SAC</li>
 <li><strong>Desconfie de descontos absurdos</strong> — promessas de 90% de desconto sem comprovação são suspeitas</li>
 <li><strong>Não pague boleto gerado por terceiros</strong> — confira o beneficiário antes de pagar</li>
 <li><strong>Nunca informe sua senha bancária</strong> — nem para supostos funcionários do banco</li>
@@ -594,7 +594,7 @@ export const posts: Post[] = [
 <div class="callout callout-dica"><p><strong>Dica:</strong> Use esta lista para acompanhar seu progresso:</p></div>
 
 <ul>
-<li><input type="checkbox" disabled /> Listi todas as dívidas com valores, juros e credores</li>
+<li><input type="checkbox" disabled /> Listei todas as dívidas com valores, juros e credores</li>
 <li><input type="checkbox" disabled /> Sei quais dívidas têm mais juros e quais são urgentes</li>
 <li><input type="checkbox" disabled /> Organizei meu orçamento e sei quanto posso pagar por mês</li>
 <li><input type="checkbox" disabled /> Parei de fazer novas compras parceladas</li>
@@ -631,7 +631,7 @@ export const posts: Post[] = [
       { question: 'Como negociar dívida com banco?', answer: 'Ligue para o SAC ou acesse o aplicativo do banco. Peça o valor atualizado, pergunte por desconto à vista e solicite propostas parceladas. Compare o custo total antes de aceitar. Guarde todos os protocolos. Veja o guia completo: <a href="/blog/como-negociar-dividas-diretamente-com-banco">Como negociar dívidas diretamente com o banco</a>' },
       { question: 'Como saber se uma proposta de acordo é boa?', answer: 'Compare o CET da proposta com os juros atuais da dívida. Veja se o valor total a pagar é menor que continuar sem acordo. Confira se a parcela cabe no seu orçamento. Desconfie de propostas muito agressivas feitas por canais não oficiais.' },
       { question: 'O score sobe depois de pagar dívida?', answer: 'Pode subir, mas não imediatamente em todos os casos. O score considera histórico de pagamentos, não apenas o pagamento de uma dívida. Com o tempo e pagamentos consistentes, o score tende a melhorar. Veja <a href="/blog/quanto-tempo-leva-para-score-aumentar">Quanto tempo leva para o score aumentar?</a>' },
-      { question: 'Quanto tempo leva para limpar o nome?', answer: 'Após pagar ou negociar a dívida, o banco tem até 5 dias úteis para atualizar os bureaus de crédito (Serasa, Boa Vista, SPC). Mas o score pode levar meses para refletir a mudança, dependendo do seu histórico geral.' },
+      { question: 'Quanto tempo leva para limpar o nome?', answer: 'Após pagar ou negociar a dívida, o banco tem até 5 dias úteis para atualizar os birôs de crédito (Serasa, Boa Vista, SPC). Mas o score pode levar meses para refletir a mudança, dependendo do seu histórico geral.' },
       { question: 'Como evitar cair em golpe de renegociação?', answer: 'Negocie apenas por canais oficiais (SAC, aplicativo, site do banco). Não pague boletos gerados por terceiros. Não informe senhas. Desconfie de descontos milagrosos recebidos por WhatsApp ou SMS. Guarde sempre o protocolo de cada negociação.' },
       { question: 'Posso sair das dívidas ganhando pouco?', answer: 'Sim, mas o processo pode ser mais lento e exige mais disciplina. O segredo é adequar o plano à sua realidade: negocie parcelas que cabem no seu orçamento, corte gastos não essenciais e busque fontes extras de renda se possível. O mais importante é não fazer novas dívidas enquanto paga as antigas.' },
     ],
@@ -812,7 +812,7 @@ export const posts: Post[] = [
 <li><strong>Fazer vários pedidos de crédito ao mesmo tempo:</strong> cada consulta reduz o score e acumula impacto</li>
 <li><strong>Renegociar e atrasar de novo:</strong> piora ainda mais a situação, porque mostra reincidência</li>
 <li><strong>Usar cheque especial e rotativo do cartão:</strong> são os créditos mais caros e sinalizam descontrole financeiro</li>
-<li><strong>Emprestar <strong>CPF</strong> para terceiros:</strong> você assume o risco de atrasos que não controla</li>
+<li><strong>Emprestar CPF para terceiros:</strong> você assume o risco de atrasos que não controla</li>
 <li><strong>Cair em promessa de score rápido:</strong> não existe atalho. Toda promessa de aumento imediato mediante pagamento é golpe</li>
 <li><strong>Ignorar orçamento mensal:</strong> sem saber para onde vai o dinheiro, fica difícil manter consistência nos pagamentos</li>
 </ul>
@@ -830,7 +830,7 @@ export const posts: Post[] = [
 <li>Nos 3 meses seguintes, pagar todas as contas em dia</li>
 <li>Não solicitar nenhum crédito novo durante esse período</li>
 </ul>
-<p><strong>Resultado possível, mas não garantido:</strong> em um cenário favorável, a pontuação poderia melhorar gradualmente, podendo chegar à faixa de 400 a 500 em alguns meses, dependendo da atualização dos birôs e da consistência dos pagamentos.</p>
+<p><strong>Cenário estimado (sem garantia):</strong> com pagamentos em dia, o score poderia sair de uma faixa muito baixa para 400-500 pontos ao longo de alguns meses. A velocidade depende de cada birô e do seu histórico completo.</p>
 <h3>Exemplo 2: score 500, sem dívida, mas pede muito crédito</h3>
 <p><strong>Perfil:</strong> Maria tem score 500, não tem dívidas negativadas, mas já solicitou 4 cartões e 2 empréstimos nos últimos 3 meses. Foi negada em todos.</p>
 <p><strong>O que fazer:</strong></p>
@@ -840,7 +840,7 @@ export const posts: Post[] = [
 <li>Usar o cartão que já tem (se tiver) pagando integralmente todo mês</li>
 <li>Manter contas em dia para gerar histórico positivo</li>
 </ul>
-<p><strong>Resultado possível, mas não garantido:</strong> com a redução das consultas ao <strong>CPF</strong> e um histórico positivo de pagamentos, a pontuação poderia evoluir gradualmente, podendo chegar perto da faixa dos 600 pontos em médio prazo.</p>
+<p><strong>Projeção ilustrativa (não garantida):</strong> reduzindo consultas ao CPF e mantendo pagamentos em dia, o score poderia se aproximar dos 600 pontos ao longo de médio prazo — mas cada birô calcula de forma diferente, e fatores como endividamento atual também pesam.</p>
 <h3>Exemplo 3: score 680 querendo financiamento imobiliário</h3>
 <p><strong>Perfil:</strong> Carlos tem score 680, paga tudo em dia, mas quer financiar um imóvel e sabe que precisa de um perfil mais forte.</p>
 <p><strong>O que fazer:</strong></p>
@@ -852,7 +852,7 @@ export const posts: Post[] = [
 <li>Usar a <a href="/calculadoras/comprometimento-renda">calculadora de comprometimento de renda</a> para verificar se as parcelas são compatíveis</li>
 <li>Simular com a <a href="/calculadoras/emprestimo">calculadora de empréstimo</a> para comparar cenários</li>
 </ul>
-<p><strong>Resultado possível, mas não garantido:</strong> em um cenário favorável, a pontuação poderia se consolidar em uma faixa mais alta após meses de preparação, o que poderia contribuir para melhores condições de taxa e aprovação — mas cada banco avalia seus próprios critérios.</p>
+<p><strong>Possível evolução (sem promessa):</strong> após meses de planejamento, o score poderia se estabilizar em uma faixa mais elevada, o que tende a facilitar aprovações e melhorar taxas. Mas lembre-se: cada instituição financeira usa seus próprios critérios além do score.</p>
 </section>
 <section><h2>Quanto tempo leva para o score subir?</h2>
 <p>Não existe prazo garantido. O score reflete seu comportamento financeiro real, e cada pessoa parte de uma situação diferente. Mas é possível ter uma ideia com base no ponto de partida:</p>
@@ -887,7 +887,7 @@ export const posts: Post[] = [
 <section><h2><strong>Atenção</strong>: golpes do <strong>score de crédito</strong></h2>
 <div class="callout callout-attention">
 <p><strong>Atenção:</strong> Não caia em golpes prometendo aumentar seu score</p>
-<ul style="margin-bottom:0;">
+<ul>
 <li>Ninguém pode garantir aumento de score mediante pagamento. Nem Serasa, nem Boa Vista, nem nenhuma empresa ou consultor.</li>
 <li>Não informe senha, código SMS ou dados bancários a terceiros que prometem &quot;limpar seu <strong>CPF</strong>&quot;.</li>
 <li>Desconfie de mensagens no WhatsApp, ligações ou anúncios prometendo score alto em dias.</li>
@@ -1007,7 +1007,7 @@ export const posts: Post[] = [
 <li><strong>Avalie se o cartão atende seu objetivo real:</strong> parcelamento, compras online, emergências, acúmulo de pontos — cada cartão tem um foco diferente.</li>
 <li><strong>Evite muitos pedidos em sequência:</strong> cada solicitação gera uma consulta ao <strong>CPF</strong>, que pode impactar o score. Pesquise antes e escolha uma ou duas opções.</li>
 <li><strong>Leia o contrato:</strong> confira cláusulas sobre juros, multa, anuidade e possibilidade de aumento de limite.</li>
-<li><strong>Consulte <strong>canais oficiais</strong>:</strong> confirme se a instituição é autorizada pelo Banco Central e se há reclamações no Consumidor.<strong>gov.br</strong>.</li>
+<li><strong>Consulte canais oficiais:</strong> confirme se a instituição é autorizada pelo Banco Central e se há reclamações no <a href="https://consumidor.gov.br" target="_blank" rel="noopener noreferrer">Consumidor.gov.br</a>.</li>
 </ol>
 </section>
 <section><h2>Erros comuns ao buscar cartão com score baixo</h2>
@@ -1038,7 +1038,7 @@ export const posts: Post[] = [
 <li><strong>Pagar contas em dia:</strong> histórico de pagamentos é o fator mais relevante para a maioria dos birôs de crédito.</li>
 <li><strong>Reduzir dívidas em atraso:</strong> negociar dívidas negativadas pode remover restrições e melhorar a análise de crédito. Veja o guia <a href="/blog/como-sair-das-dividas-guia-completo">como sair das dívidas</a>.</li>
 <li><strong>Manter dados atualizados:</strong> endereço, telefone e e-mail corretos nos birôs e instituições financeiras evitam problemas de identificação.</li>
-<li><strong>Usar o <strong>Cadastro Positivo</strong> com cuidado:</strong> se ativo, permite que pagamentos em dia sejam registrados. Mas atrasos também ficam visíveis. Saiba mais em <a href="/blog/cadastro-positivo-vale-a-pena"><strong>Cadastro Positivo</strong> vale a pena?</a>.</li>
+<li><strong>Usar o Cadastro Positivo com cuidado:</strong> se ativo, permite que pagamentos em dia sejam registrados. Mas atrasos também ficam visíveis. Saiba mais em <a href="/blog/cadastro-positivo-vale-a-pena">Cadastro Positivo vale a pena?</a>.</li>
 <li><strong>Evitar excesso de consultas:</strong> cada pedido de crédito gera consulta ao <strong>CPF</strong>. Espaçar as solicitações pode evitar impacto negativo.</li>
 <li><strong>Manter relacionamento bancário organizado:</strong> ter uma conta ativa e usar produtos financeiros com responsabilidade gera histórico positivo.</li>
 <li><strong>Começar com limite baixo e usar com responsabilidade:</strong> pagar a fatura integral antes do vencimento é o hábito mais importante para construir crédito.</li>
@@ -1155,7 +1155,7 @@ export const posts: Post[] = [
 <section><h2>Erros comuns ao comparar empréstimos</h2>
 <ol>
 <li><strong>Olhar apenas o valor da parcela:</strong> uma parcela menor pode esconder um prazo maior e um custo total mais alto.</li>
-<li><strong>Ignorar o <strong>CET</strong>:</strong> comparar apenas a taxa de juros ignora tarifas, seguros e impostos que elevam o custo real.</li>
+<li><strong>Ignorar o CET:</strong> comparar apenas a taxa de juros ignora tarifas, seguros e impostos que elevam o custo real.</li>
 <li><strong>Não considerar o comprometimento da renda:</strong> uma parcela que parece caber hoje pode apertar o orçamento com despesas imprevistas.</li>
 <li><strong>Contratar sem ler o contrato:</strong> cláusulas sobre multa, juros de mora e quitação antecipada podem fazer diferença.</li>
 <li><strong>Achar que consignado é uma opção para todos:</strong> o consignado exige vínculo formal e margem disponível. Quem é autônomo ou MEI pode não ter acesso.</li>
@@ -1207,11 +1207,11 @@ export const posts: Post[] = [
 <section><h2>Como decidir na prática</h2>
 <p>Antes de contratar, siga este passo a passo:</p>
 <ol>
-<li><strong>Compare o <strong>CET</strong></strong> de pelo menos três instituições, tanto de empréstimo pessoal quanto consignado (quando houver acesso).</li>
+<li><strong>Compare o CET</strong> de pelo menos três instituições, tanto de empréstimo pessoal quanto consignado (quando houver acesso).</li>
 <li><strong>Compare o total a pagar</strong> em cada proposta (parcela multiplicada pelo número de parcelas).</li>
 <li><strong>Verifique se a parcela cabe no orçamento</strong> sem comprometer gastos essenciais. Use a <a href="/calculadoras/comprometimento-renda">calculadora de comprometimento de renda</a> como referência.</li>
 <li><strong>Simule cenários diferentes</strong> de prazo e valor antes de decidir.</li>
-<li><strong>Confira a <strong>margem consignável</strong></strong> no site do <strong>INSS</strong>, no aplicativo Meu <strong>INSS</strong> ou no RH da empresa, se tiver acesso ao consignado.</li>
+<li><strong>Confira a margem consignável</strong> no site do INSS, no aplicativo Meu INSS ou no RH da empresa, se tiver acesso ao consignado.</li>
 <li><strong>Avalie se a troca reduz o custo total:</strong> ao trocar uma dívida cara por outra, confira se o <strong>CET</strong> da nova proposta é realmente menor. A <a href="/calculadoras/troca-dividas">calculadora de troca de dívidas</a> pode ajudar nessa comparação.</li>
 <li><strong>Considere a quitação antecipada:</strong> alguns contratos permitem quitar antes com desconto nos juros. Pergunte antes de assinar.</li>
 <li><strong>Leia o contrato completo</strong> antes de assinar, especialmente as cláusulas sobre juros de mora, multa por atraso e possibilidade de renegociação.</li>
@@ -1249,7 +1249,7 @@ export const posts: Post[] = [
 <section><h2>O que é o método 50-30-20?</h2>
 <p>O método 50-30-20 é uma forma de organizar o orçamento pessoal dividindo a renda líquida em três grandes grupos. O método se tornou popular como uma referência simples de organização financeira para dividir a renda em grandes grupos de gasto.</p>
 <p>É importante reforçar que o método não é uma regra universal. Ele funciona como um ponto de partida — uma forma de enxergar o orçamento e identificar desequilíbrios. Cada pessoa tem uma realidade de renda, custo de vida, dívidas e objetivos, e os percentuais podem precisar de adaptação.</p>
-<p>Este artigo explica como o método funciona, mostra exemplos práticos e ajuda você a adaptá-lo à sua realidade. As informações têm caráter educativo e não substituem um planejamento financeiro individual.</p>
+<p>Este artigo explica o funcionamento do método com exemplos práticos para ajudar você a adaptá-lo à sua realidade. Lembre-se: este é um conteúdo educativo, não um plano financeiro personalizado. Cada orçamento tem suas particularidades.</p>
 </section>
 <section><h2>Resumo rápido</h2>
 <ul>
@@ -1371,7 +1371,7 @@ export const posts: Post[] = [
 <li><strong>Tentar seguir percentuais impossíveis para a realidade.</strong> Se 50% não cobre as necessidades, o percentual precisa ser ajustado, não ignorado.</li>
 <li><strong>Abandonar o método no primeiro mês.</strong> O primeiro mês raramente reflete a realidade. Acompanhe por mais tempo antes de desistir.</li>
 <li><strong>Não revisar gastos fixos regularmente.</strong> Planos de internet, seguros e assinaturas podem ter opções mais baratas.</li>
-<li><strong>Não separar <strong>reserva de emergência</strong>.</strong> Sem reserva, qualquer imprevisto pode gerar dívida e desorganizar o orçamento.</li>
+<li><strong>Não separar reserva de emergência.</strong> Sem reserva, qualquer imprevisto pode gerar dívida e desorganizar o orçamento.</li>
 <li><strong>Usar o cartão de crédito para fechar buracos do orçamento.</strong> Se as contas não fecham, o problema não se resolve com crédito — é preciso reajustar os gastos.</li>
 </ol>
 </section>
@@ -1636,7 +1636,7 @@ export const posts: Post[] = [
     content: `
 <section><h2>Trocar dívida do cartão por empréstimo: vale a pena?</h2>
 <p>A troca de dívida do cartão de crédito por um empréstimo pode fazer sentido em alguns cenários, mas não é uma solução universal. A decisão depende das taxas envolvidas, do prazo, do valor das parcelas e, principalmente, do comportamento financeiro de cada pessoa.</p>
-<p>Este artigo apresenta os critérios para avaliar a troca, os riscos envolvidos e um passo a passo para decidir com mais segurança. As informações têm caráter educativo — consulte os <strong>canais oficiais</strong> da sua instituição para confirmar taxas e condições vigentes.</p>
+<p>Este artigo apresenta critérios objetivos para avaliar a troca, riscos envolvidos e um passo a passo para decidir com mais segurança. As informações são educativas e não substituem a consulta aos canais oficiais da sua instituição para confirmar taxas e condições.</p>
 </section>
 <section><h2>Resumo rápido</h2>
 <ul>
@@ -1692,14 +1692,14 @@ export const posts: Post[] = [
 <ul>
 <li><strong>Parcelamento da fatura:</strong> tem juros menores que o rotativo, mas ainda altos. Veja <a href="/blog/fatura-parcelada-compensa">quando o parcelamento compensa</a>.</li>
 <li><strong>Renegociação direta com o banco:</strong> muitos bancos oferecem descontos para quitação à vista ou parcelamento com condições especiais.</li>
-<li><strong>Uso da <strong>reserva de emergência</strong>:</strong> se você tem reserva, usá-la para quitar a dívida pode ser melhor que contratar crédito.</li>
+<li><strong>Uso da reserva de emergência:</strong> se você tem reserva, usá-la para quitar a dívida pode ser melhor que contratar crédito.</li>
 <li><strong>Plano de quitação com orçamento:</strong> reorganizar os gastos pode liberar renda para pagar a dívida sem novo crédito. Veja o guia <a href="/blog/como-sair-das-dividas-guia-completo">como sair das dívidas</a>.</li>
 </ul>
 </section>
 <section><h2>Erros comuns ao trocar dívida</h2>
 <ol>
 <li><strong>Olhar apenas a parcela:</strong> uma parcela menor pode esconder prazo maior e custo total mais alto</li>
-<li><strong>Ignorar o <strong>CET</strong>:</strong> a taxa de juros isolada não mostra tarifas, seguros e impostos</li>
+<li><strong>Ignorar o CET:</strong> a taxa de juros isolada não mostra tarifas, seguros e impostos</li>
 <li><strong>Contratar sem ler o contrato:</strong> cláusulas de multa e quitação antecipada podem fazer diferença</li>
 <li><strong>Acreditar que todo empréstimo é melhor:</strong> dependendo do <strong>CET</strong>, o empréstimo pode ser tão caro quanto o cartão</li>
 <li><strong>Não considerar o impacto no orçamento:</strong> a parcela do empréstimo é um compromisso fixo por meses ou anos</li>
@@ -1806,7 +1806,7 @@ export const posts: Post[] = [
 <li><strong>Serasa Limpa Nome:</strong> reúne ofertas de descontos de várias empresas. Acesso gratuito.</li>
 <li><strong>Acordo OK:</strong> plataforma da Boa Vista para negociação de dívidas.</li>
 <li><strong>SPC Brasil:</strong> plataforma de negociação do SPC Brasil.</li>
-<li><strong>Consumidor.<strong>gov.br</strong>:</strong> canal oficial do governo para registrar reclamações.</li>
+<li><strong>Consumidor.gov.br:</strong> canal oficial do governo para registrar reclamações.</li>
 </ul>
 </section>
 
@@ -2072,7 +2072,7 @@ export const posts: Post[] = [
     content: `
 <section><h2>Por que você precisa de um plano</h2>
 <p>Sair das dívidas sem um plano é como tentar chegar a um destino sem mapa: você pode até chegar, mas o caminho será mais longo e custará mais caro. Um plano organiza as contas, define quanto pode ser pago por mês e mostra um horizonte possível.</p>
-<p>Este guia apresenta um passo a passo para montar seu plano. Os exemplos são ilustrativos — os valores reais dependem da sua renda, gastos e condições de cada dívida. As informações têm caráter educativo.</p>
+<p>Este guia apresenta um passo a passo para montar seu plano de saída das dívidas. Os exemplos são ilustrativos — os valores reais dependem da sua renda, gastos e condições de cada dívida. Use como referência inicial e adapte à sua realidade.</p>
 </section>
 <section><h2>Resumo rápido</h2>
 <ul>
@@ -2302,7 +2302,7 @@ export const posts: Post[] = [
 <li><strong>Consultar o próprio score várias vezes:</strong> consultas gratuitas que você faz nos birôs não afetam sua pontuação.</li>
 <li><strong>Pagar consultor ou empresa para aumentar score:</strong> é golpe. Nenhuma empresa pode alterar seu score mediante pagamento.</li>
 <li><strong>Comprar curso ou robô de score:</strong> não há atalho tecnológico. O score reflete seu comportamento financeiro real.</li>
-<li><strong>Excluir consultas do <strong>CPF</strong>:</strong> o histórico de consultas é um dado do cadastro. Tentar removê-las não altera o cálculo.</li>
+<li><strong>Excluir consultas do CPF:</strong> o histórico de consultas é um dado do cadastro. Tentar removê-las não altera o cálculo.</li>
 <li><strong>Mudar de banco toda hora:</strong> manter contas antigas ativas ajuda a construir histórico. Trocar de banco constantemente pode ter efeito neutro ou negativo.</li>
 </ul>
 </section>
@@ -2351,18 +2351,18 @@ export const posts: Post[] = [
 <p><strong>Situação:</strong> Mariana tem score 250, nome negativado por uma dívida de R$ 1.200 que ela pagou com desconto. Ela ativou o <strong>Cadastro Positivo</strong> no mesmo dia.</p>
 <p><strong>Mês 1:</strong> a credora retira a negativação em 3 dias úteis. O nome de Mariana sai do cadastro de negativados, mas o score ainda está baixo porque birôs consideram também o histórico recente.</p>
 <p><strong>Meses 2 a 4:</strong> Mariana paga todas as contas em dia. O <strong>Cadastro Positivo</strong> começa a registrar dados positivos. O score pode apresentar oscilações para cima.</p>
-<p><strong>Resultado possível, mas não garantido:</strong> em cenário favorável, a pontuação poderia sair de 250 para a faixa de 350-450 ao longo de 4 a 6 meses, dependendo da metodologia do birô e da consistência dos pagamentos.</p>
+<p><strong>Estimativa de evolução (sem garantia):</strong> em boas condições, um score de 250 poderia subir para a faixa de 350-450 em aproximadamente 4 a 6 meses. O resultado real depende do birô, do volume de dados positivos e da regularidade dos pagamentos.</p>
 
 <h3>Exemplo 2: score 480 sem dívida, mas com muitos pedidos de cartão</h3>
 <p><strong>Situação:</strong> Roberto tem score 480, não tem dívidas negativadas, mas nos últimos 3 meses pediu cartão em 5 instituições diferentes e foi negado em 3. Cada consulta ao <strong>CPF</strong> gerou pequeno impacto.</p>
 <p><strong>Mês 1:</strong> Roberto para de solicitar crédito. As consultas mais antigas começam a perder peso no cálculo.</p>
 <p><strong>Meses 2 a 4:</strong> Com <strong>Cadastro Positivo</strong> já ativo e pagamentos em dia, o score começa a se recuperar gradualmente.</p>
-<p><strong>Resultado possível, mas não garantido:</strong> com a redução das consultas ao <strong>CPF</strong> e um histórico positivo de pagamentos, a pontuação poderia evoluir gradualmente, podendo chegar perto dos 600 pontos em médio prazo, em cenário favorável.</p>
+<p><strong>Cenário possível (depende de cada caso):</strong> com menos consultas ao CPF e um histórico consistente de pagamentos, o score poderia se aproximar dos 600 pontos em alguns meses — mas a evolução pode ser mais lenta se houver outras pendências financeiras.</p>
 
 <h3>Exemplo 3: score 650 pagando tudo em dia, buscando financiamento</h3>
 <p><strong>Situação:</strong> Carla tem score 650, paga todas as contas em dia, usa o cartão com moderação, mas quer financiar um carro e ouviu que precisa de score acima de 700 para boas condições.</p>
 <p><strong>Ações:</strong> Carla mantém os bons hábitos, evita novas dívidas, continua com o <strong>Cadastro Positivo</strong> ativo e acompanha o score mensalmente.</p>
-<p><strong>Resultado possível, mas não garantido:</strong> em cenário favorável, a pontuação poderia se consolidar em uma faixa mais alta após meses de preparação, o que poderia contribuir para melhores condições de taxa e aprovação — mas cada banco avalia seus próprios critérios além do score.</p>
+<p><strong>Potencial esperado (sem promessa de resultado):</strong> após meses de bons hábitos financeiros, o score poderia se estabelecer em uma faixa mais alta, o que geralmente melhora as condições de crédito. Contudo, cada banco ou fintech avalia outros fatores além da pontuação.</p>
 </section>
 
 <section>
@@ -2373,7 +2373,7 @@ export const posts: Post[] = [
 <li><strong>Espere alguns meses de histórico positivo</strong> antes de solicitar novos produtos. Isso fortalece sua análise de crédito.</li>
 <li><strong>Simule antes de pedir:</strong> use a <a href="/calculadoras/emprestimo">calculadora de empréstimo</a> para comparar parcelas e <strong>CET</strong>.</li>
 <li><strong>Verifique seu comprometimento de renda:</strong> não comprometa mais de 30% da sua renda com dívidas. Use a <a href="/calculadoras/comprometimento-renda">calculadora de comprometimento de renda</a>.</li>
-<li><strong>Compare o <strong>CET</strong></strong> (Custo Efetivo Total) entre instituições. Taxas baixas podem esconder tarifas.</li>
+<li><strong>Compare o CET</strong> (Custo Efetivo Total) entre instituições. Taxas baixas podem esconder tarifas.</li>
 <li><strong>Evite crédito rotativo e cheque especial</strong> — são as modalidades mais caras do mercado.</li>
 </ul>
 </section>
@@ -2382,9 +2382,8 @@ export const posts: Post[] = [
 <h2>Box de alerta: cuidado com promessa de score rápido</h2>
 <div class="callout callout-attention">
 <p><strong>Cuidado:</strong> golpes de "score rápido"</p>
-<p style="font-weight:700;margin:0 0 8px 0;"><strong>Cuidado</strong>: golpes de &quot;score rápido&quot;</p>
-<p style="margin:0 0 8px 0;">Ninguém pode garantir aumento de score mediante pagamento. Empresas que prometem &quot;limpar seu nome em 24 horas&quot; ou &quot;aumentar seu score em 7 dias&quot; mediante pagamento de taxa estão mentindo.</p>
-<ul style="margin:0;padding-left:20px;">
+<p>Ninguém pode garantir aumento de score mediante pagamento. Empresas que prometem &quot;limpar seu nome em 24 horas&quot; ou &quot;aumentar seu score em 7 dias&quot; mediante pagamento de taxa estão mentindo.</p>
+<ul>
 <li>Não informe senha, código SMS ou dados bancários para terceiros</li>
 <li>Não pague taxa para &quot;subir score&quot; ou &quot;excluir consultas do <strong>CPF</strong>&quot;</li>
 <li>Desconfie de &quot;consultores de score&quot; que cobram adiantado</li>
@@ -2416,7 +2415,7 @@ export const posts: Post[] = [
       { question: 'Cadastro Positivo aumenta o score em quanto tempo?', answer: 'Após a consulta, manutenção ou reativação do Cadastro Positivo, os primeiros reflexos podem surgir em 30 a 90 dias, desde que existam pagamentos em dia sendo registrados. O impacto mais consistente costuma aparecer a partir de 6 meses de dados positivos.' },
       { question: 'Pagar contas em dia aumenta score?', answer: 'Sim, mas não instantaneamente. O sistema precisa de alguns meses de histórico para identificar um padrão de pontualidade. Com 3 a 6 meses de pagamentos em dia, os primeiros reflexos positivos começam a aparecer.' },
       { question: 'Consultar meu score todo dia prejudica?', answer: 'Não. Consultar seu próprio score gratuitamente nos canais oficiais (Serasa, Boa Vista, SPC Brasil) não afeta sua pontuação. Apenas consultas de instituições financeiras para análise de crédito podem impactar.' },
-      { question: 'CPF na nota ajuda o score subir?', answer: 'Não. Programas de nota fiscal são fiscais (devolução de imposto), não financeiros. Não influenciam o score de crédito em nenhum birô.' },
+      { question: 'CPF na nota ajuda o score subir?', answer: 'Não. O CPF na nota fiscal serve para devolução de impostos estaduais e municipais — não tem relação com os birôs de crédito. O score considera seu histórico de pagamentos, não sua participação em programas de nota fiscal.' },
       { question: 'Score 300 demora quanto para subir?', answer: 'Em cenário favorável, com negociação de dívidas, Cadastro Positivo ativo e pagamentos em dia, é possível ver os primeiros sinais de melhora em 3 a 6 meses. Para chegar a uma faixa mais confortável (acima de 500), pode levar de 12 a 18 meses. Não há prazo garantido.' },
       { question: 'Score 500 pode virar 700 em quanto tempo?', answer: 'Em cenário favorável, com histórico consistente de pagamentos em dia, Cadastro Positivo ativo e baixa utilização do crédito, pode levar de 12 a 24 meses. A evolução tende a ser mais lenta quanto mais alto o score.' },
       { question: 'Por que meu score não subiu depois de limpar o nome?', answer: 'Limpar o nome remove a negativação, mas o score também considera outros fatores: seu histórico de pagamentos, uso do cartão, consultas ao CPF e tempo de relacionamento. Se você limpou o nome mas ainda tem comportamento financeiro instável, o score pode demorar para refletir a mudança.' },
@@ -2513,7 +2512,7 @@ export const posts: Post[] = [
       { question: 'Pagar contas no débito automático ajuda?', answer: 'Indiretamente sim, porque reduz a chance de atrasos. Mas o débito automático em si não é um fator que os birôs analisam diretamente.' },
       { question: 'O score do Serasa e da Boa Vista são diferentes?', answer: 'Sim, cada empresa tem sua própria metodologia de cálculo. É normal que a pontuação varie entre os birôs.' },
       { question: 'Pix ajuda a aumentar o score?', answer: 'Não. Pix é um meio de pagamento instantâneo, não gera histórico de crédito nos birôs.' },
-      { question: 'CPF na nota aumenta o score?', answer: 'Não. Programas de nota fiscal são fiscais, não financeiros. Não influenciam o score de crédito.' },
+      { question: 'CPF na nota aumenta o score?', answer: 'Não. A nota fiscal é um documento fiscal, não financeiro. Inserir o CPF na nota pode gerar créditos de imposto, mas não altera seu histórico de pagamentos nem sua pontuação de crédito em nenhum birô.' },
     ],
   },
   // === SCORE — ARTIGO 3/5 ===
@@ -2657,7 +2656,7 @@ export const posts: Post[] = [
 </section>
 <section><h2>Como aumentar as chances de aprovação</h2>
 <ul>
-<li><strong>Ative o <strong>Cadastro Positivo</strong>:</strong> mesmo com score 400, ter o CP ativo pode mostrar pagamentos em dia e enriquecer a análise. Veja <a href="/blog/cadastro-positivo-vale-a-pena">se vale a pena ativar</a>.</li>
+<li><strong>Ative o Cadastro Positivo:</strong> mesmo com score 400, ter o CP ativo pode mostrar pagamentos em dia e enriquecer a análise. Veja <a href="/blog/cadastro-positivo-vale-a-pena">se vale a pena ativar</a>.</li>
 <li><strong>Declare renda real:</strong> inclua todas as fontes de renda, inclusive freelas e trabalhos eventuais, quando o cadastro permitir.</li>
 <li><strong>Mantenha dados atualizados:</strong> endereço, telefone e e-mail corretos no banco e nos birôs.</li>
 <li><strong>Comece com cartão de loja:</strong> costuma ser mais acessível e ajuda a construir histórico de pagamentos.</li>
@@ -2726,7 +2725,7 @@ export const posts: Post[] = [
     content: `
 <section><h2>Score grátis existe?</h2>
 <p>Sim, é possível consultar o <strong>score de crédito</strong> gratuitamente nos principais birôs do Brasil: Serasa, Boa Vista e SPC Brasil. Por lei, o consumidor tem direito a consultas gratuitas periódicas em cada um desses órgãos. Se alguém cobrar para mostrar seu score, desconfie — pode ser golpe.</p>
-<p>Este guia mostra o passo a passo para consultar seu score em cada serviço, além do sistema <strong>Registrato</strong> do Banco Central, que oferece relatórios financeiros completos. As informações têm caráter educativo — consulte os <strong>canais oficiais</strong> para confirmar procedimentos vigentes.</p>
+<p>Este guia detalha o passo a passo para consultar seu score gratuitamente em cada serviço, incluindo o sistema Registrato do Banco Central. As informações são educativas — os procedimentos podem mudar, por isso confirme nos canais oficiais de cada birô.</p>
 </section>
 <section><h2>Resumo rápido</h2>
 <ul>
@@ -2829,7 +2828,7 @@ export const posts: Post[] = [
 <section><h2>Introdução</h2>
 <p>O limite do cartão de crédito é um dos fatores que mais gera dúvidas entre os consumidores. Ter um limite maior pode facilitar compras planejadas e servir como margem em emergências, mas não é uma meta absoluta — nem sempre um limite alto é vantajoso para todos os perfis.</p>
 <p>Cada instituição financeira define o limite com base em critérios internos de análise de crédito. Não existe fórmula mágica, método infalível ou aumento garantido. O que existem são práticas que podem contribuir para uma análise positiva ao longo do tempo, dependendo do perfil do cliente e da política de cada banco ou fintech.</p>
-<p>Este artigo tem caráter educativo. As informações ajudam a entender como o limite funciona e quais fatores podem influenciar a decisão das instituições, mas não garantem aumento. Consulte os <strong>canais oficiais</strong> do seu banco ou fintech para informações específicas sobre seu contrato.</p>
+<p>Este conteúdo tem objetivo educativo: ajudar você a entender como o limite de crédito funciona e quais fatores influenciam a decisão das instituições. Nenhuma informação aqui garante aumento de limite. Para dados específicos do seu contrato, consulte os canais oficiais do seu banco ou fintech.</p>
 </section>
 <section><h2>Resumo rápido</h2>
 <ul>
@@ -3008,7 +3007,7 @@ export const posts: Post[] = [
 <section><h2>O que significa cartão sem anuidade?</h2>
 <p>Um cartão sem anuidade é aquele em que a instituição financeira não cobra taxa anual ou mensal pela manutenção do produto. Isso pode reduzir o custo fixo de quem usa o cartão com frequência, especialmente em comparação com cartões que cobram anuidade mensal ou anual.</p>
 <p>No entanto, "sem anuidade" não significa "sem custo". Outros encargos podem existir, como juros, tarifas específicas e despesas operacionais. Entender o que está incluído e o que não está é essencial antes de solicitar qualquer cartão.</p>
-<p>Este artigo tem caráter educativo e ajuda você a comparar opções com mais clareza. As informações não substituem a leitura do contrato nem a consulta aos <strong>canais oficiais</strong> da instituição escolhida.</p>
+<p>Este artigo foi feito para ajudar você a comparar opções de cartão com mais clareza. As informações são educativas e não substituem a leitura atenta do contrato nem a consulta aos canais oficiais da instituição escolhida.</p>
 </section>
 <section><h2>Resumo rápido</h2>
 <ul>
@@ -3098,7 +3097,7 @@ export const posts: Post[] = [
 <ul>
 <li><strong>Pode ajudar</strong> a separar gastos por categoria (um para contas fixas, outro para lazer), desde que haja controle.</li>
 <li><strong>Pode desorganizar</strong> o orçamento se o limite somado dos cartões incentivar gastos acima da renda.</li>
-<li><strong>Consultas ao <strong>CPF</strong></strong> para aprovação de novos cartões podem impactar temporariamente o score.</li>
+<li><strong>Consultas ao CPF</strong> para aprovação de novos cartões podem impactar temporariamente o score.</li>
 <li><strong>Manter poucos cartões</strong> costuma facilitar o acompanhamento e reduzir o risco de esquecer faturas.</li>
 </ul>
 <p>Avalie se você realmente precisa de outro cartão antes de solicitar. Se já tem um que atende suas necessidades, um segundo pode ser mais um gasto potencial do que uma vantagem.</p>
@@ -3241,7 +3240,7 @@ export const posts: Post[] = [
 <li><strong>Novas compras se misturam com a dívida antiga:</strong> se você continuar usando o cartão enquanto há saldo no rotativo, as compras novas entram junto com a dívida anterior, dificultando o controle</li>
 <li><strong>Perda de clareza do orçamento:</strong> a fatura deixa de refletir apenas o consumo do mês e passa a incluir encargos e saldos anteriores</li>
 <li><strong>Efeito bola de neve:</strong> se não houver pagamento suficiente para cobrir os juros, a dívida pode crescer mês a mês</li>
-<li><strong>Impacto no <strong>score de crédito</strong>:</strong> atrasos e inadimplência podem ser registrados nos bancos de dados de proteção ao crédito, dificultando o acesso a crédito no futuro</li>
+<li><strong>Impacto no score de crédito:</strong> atrasos e inadimplência podem ser registrados nos bancos de dados de proteção ao crédito, dificultando o acesso a crédito no futuro</li>
 </ul>
 <p>Identificar o problema cedo aumenta as chances de encontrar uma saída com menor custo.</p>
 </section>
@@ -3266,7 +3265,7 @@ export const posts: Post[] = [
 <li><strong>Simular quanto consegue pagar:</strong> defina um valor realista dentro do seu orçamento</li>
 <li><strong>Procurar o banco antes do vencimento:</strong> muitos bancos oferecem alternativas como parcelamento da fatura ou renegociação quando o cliente entra em contato antes do prazo</li>
 <li><strong>Comparar as alternativas:</strong> analise o custo total do parcelamento da fatura, da renegociação e de outras linhas de crédito disponíveis</li>
-<li><strong>Verificar o <strong>CET</strong> de cada opção:</strong> o Custo Efetivo Total inclui juros, tarifas e encargos, permitindo uma comparação mais justa</li>
+<li><strong>Verificar o CET de cada opção:</strong> o Custo Efetivo Total inclui juros, tarifas e encargos, permitindo uma comparação mais justa</li>
 <li><strong>Priorizar despesas essenciais:</strong> aluguel, alimentação e contas básicas vêm antes do parcelamento de dívidas não essenciais</li>
 </ol>
 <p>Agir antes do vencimento costuma oferecer mais opções do que esperar o atraso acontecer.</p>
@@ -3300,7 +3299,7 @@ export const posts: Post[] = [
 <li><strong>Levantar o valor total da dívida:</strong> inclua saldo devedor, juros, encargos e multas</li>
 <li><strong>Verificar as condições atuais:</strong> juros, prazo e <strong>CET</strong> aplicados</li>
 <li><strong>Calcular quanto cabe no orçamento:</strong> defina um valor de parcela que não comprometa as despesas essenciais</li>
-<li><strong>Procurar os <strong>canais oficiais</strong> do banco:</strong> app, site, central de atendimento ou agência</li>
+<li><strong>Procurar os canais oficiais do banco:</strong> app, site, central de atendimento ou agência</li>
 <li><strong>Comparar proposta à vista e parcelada:</strong> às vezes o desconto à vista é maior, mas a parcela pode não caber</li>
 <li><strong>Evitar parcela que não cabe no orçamento:</strong> parcelar em muitos meses pode tornar a dívida mais longa e aumentar o custo total</li>
 <li><strong>Guardar comprovantes:</strong> registre o acordo, o código de negociação e os recibos de pagamento</li>
@@ -3314,7 +3313,7 @@ export const posts: Post[] = [
 <li><strong>Aceitar a primeira proposta sem comparar:</strong> vale a pena verificar condições em mais de um canal ou instituição</li>
 <li><strong>Parcelar em prazo muito longo:</strong> parcelas mais baixas podem parecer atraentes, mas o custo total pode ser maior</li>
 <li><strong>Usar outro cartão para pagar contas básicas:</strong> transferir a dívida de lugar sem resolver a causa não elimina o problema</li>
-<li><strong>Pegar empréstimo sem comparar o <strong>CET</strong>:</strong> um empréstimo mal contratado pode ter custo tão alto quanto o rotativo</li>
+<li><strong>Pegar empréstimo sem comparar o CET:</strong> um empréstimo mal contratado pode ter custo tão alto quanto o rotativo</li>
 <li><strong>Ignorar mensagens e avisos do banco:</strong> a instituição pode oferecer condições especiais antes do vencimento</li>
 <li><strong>Cair em promessas de desconto ou liberação mediante taxa antecipada:</strong> golpistas se aproveitam de quem está com dívidas para pedir pagamento adiantado</li>
 </ul>
@@ -3322,7 +3321,7 @@ export const posts: Post[] = [
 <section><h2><strong>Cuidado</strong>s contra golpes</h2>
 <ul>
 <li><strong>Não pague taxa antecipada</strong> para renegociar dívida ou liberar crédito — em ofertas legítimas, custos e condições devem aparecer no contrato ou nos <strong>canais oficiais</strong>. Desconfie de cobranças antecipadas</li>
-<li><strong>Acesse apenas os <strong>canais oficiais</strong> do banco:</strong> app, site ou telefone registrado no Banco Central</li>
+<li><strong>Acesse apenas os canais oficiais do banco:</strong> app, site ou telefone registrado no Banco Central</li>
 <li><strong>Cuidado com links recebidos por WhatsApp, SMS ou e-mail:</strong> podem ser tentativas de phishing</li>
 <li><strong>Confirme o canal de atendimento</strong> no site oficial da instituição antes de fornecer qualquer dado</li>
 <li><strong>Nunca informe senhas, códigos de autenticação ou dados bancários</strong> por telefone ou mensagem não solicitada</li>
@@ -3451,7 +3450,7 @@ export const posts: Post[] = [
 <li><strong>Acompanhe os gastos em tempo real</strong> pelo aplicativo do banco</li>
 <li><strong>Defina um limite pessoal</strong> abaixo do limite do cartão (ex.: 70% como alerta)</li>
 <li><strong>Tenha um cartão reserva</strong> para emergências, mas use com controle</li>
-<li><strong>Monte uma <strong>reserva de emergência</strong></strong> em dinheiro para não depender do crédito</li>
+<li><strong>Monte uma reserva de emergência</strong> em dinheiro para não depender do crédito</li>
 <li><strong>Revise o orçamento mensal</strong> para identificar onde os gastos podem estar saindo do controle. Use a <a href="/calculadoras/orcamento-familiar">calculadora de orçamento familiar</a></li>
 <li><strong>Entenda o impacto no score:</strong> uso elevado do limite pode influenciar negativamente a pontuação. Veja <a href="/blog/o-que-realmente-influencia-score-credito">o que influencia o score</a></li>
 </ul>
@@ -3536,7 +3535,7 @@ export const posts: Post[] = [
 </section>
 <section><h2>Alternativas ao parcelamento</h2>
 <ol>
-<li><strong>Usar a <strong>reserva de emergência</strong>:</strong> se há dinheiro guardado, usar para pagar a fatura evita juros. Depois, reponha a reserva aos poucos.</li>
+<li><strong>Usar a reserva de emergência:</strong> se há dinheiro guardado, usar para pagar a fatura evita juros. Depois, reponha a reserva aos poucos.</li>
 <li><strong>Empréstimo consignado (se houver acesso):</strong> taxas costumam ser mais baixas que o parcelamento.</li>
 <li><strong>Empréstimo pessoal:</strong> compare o <strong>CET</strong> com o parcelamento antes de decidir.</li>
 <li><strong>Negociar diretamente com o banco:</strong> em alguns casos, o banco oferece condições especiais para renegociação.</li>
@@ -3556,7 +3555,7 @@ export const posts: Post[] = [
 <section><h2>Erros comuns ao parcelar a fatura</h2>
 <ol>
 <li><strong>Achar que parcelamento é sempre a melhor opção:</strong> o parcelamento é melhor que o rotativo, mas pode ser mais caro que outras alternativas.</li>
-<li><strong>Não comparar o <strong>CET</strong>:</strong> a taxa de juros isolada não mostra o custo total com tarifas e encargos.</li>
+<li><strong>Não comparar o CET:</strong> a taxa de juros isolada não mostra o custo total com tarifas e encargos.</li>
 <li><strong>Parcelar sem plano de pagamento:</strong> se a renda não for suficiente para as parcelas futuras, o problema pode se repetir.</li>
 <li><strong>Usar o cartão enquanto parcela a fatura:</strong> isso aumenta o endividamento em vez de resolvê-lo.</li>
 <li><strong>Ignorar o orçamento mensal:</strong> sem controle dos gastos, o parcelamento pode virar rotina.</li>
@@ -3609,7 +3608,7 @@ export const posts: Post[] = [
 </ul>
 </section>
 <section><h2>O que comparar em cada empréstimo</h2>
-<p><strong>1. <strong>CET</strong> (Custo Efetivo Total):</strong> este é o número mais importante. O <strong>CET</strong> inclui juros, taxas, seguros e todos os encargos. Um empréstimo com taxa de 3% ao mês pode ter <strong>CET</strong> de 5% se houver seguros embutidos. <a href="/blog/o-que-e-cet-e-por-que-importa">Entenda melhor o <strong>CET</strong></a>.</p>
+<p><strong>1. CET (Custo Efetivo Total):</strong> este é o número mais importante. O <strong>CET</strong> inclui juros, taxas, seguros e todos os encargos. Um empréstimo com taxa de 3% ao mês pode ter <strong>CET</strong> de 5% se houver seguros embutidos. <a href="/blog/o-que-e-cet-e-por-que-importa">Entenda melhor o CET</a>.</p>
 <p><strong>2. Taxa de juros mensal:</strong> a taxa pura do empréstimo. Importante, mas não é o único fator.</p>
 <p><strong>3. Prazo total:</strong> em quantos meses você vai pagar. Quanto maior o prazo, menor a parcela, mas maior o total de juros. <a href="/blog/como-calcular-custo-real-emprestimo">Veja como calcular o custo real</a>.</p>
 <p><strong>4. Valor total a pagar:</strong> parcela multiplicada pelo número de parcelas. É o valor que realmente sai do seu bolso.</p>
@@ -3632,7 +3631,7 @@ export const posts: Post[] = [
 </section>
 <section><h2>Erros comuns ao comparar empréstimos</h2>
 <ul>
-<li><strong>Ignorar o <strong>CET</strong>:</strong> focar apenas na taxa de juros pode esconder tarifas e seguros embutidos.</li>
+<li><strong>Ignorar o CET:</strong> focar apenas na taxa de juros pode esconder tarifas e seguros embutidos.</li>
 <li><strong>Não considerar o prazo:</strong> prazos muito longos aumentam o custo total, mesmo com parcelas baixas.</li>
 <li><strong>Comparar propostas em datas diferentes:</strong> as taxas mudam com frequência. Compare tudo no mesmo dia.</li>
 <li><strong>Esquecer o IOF:</strong> o imposto incide sobre o valor e o prazo, influenciando o custo final.</li>
@@ -3757,9 +3756,9 @@ export const posts: Post[] = [
 </section>
 <section><h2>Erros comuns ao interpretar o <strong>CET</strong></h2>
 <ul>
-<li><strong>Achar que taxa de juros é o mesmo que <strong>CET</strong>:</strong> a taxa é apenas um dos componentes. O <strong>CET</strong> sempre será igual ou maior.</li>
-<li><strong>Ignorar o <strong>CET</strong> no consignado:</strong> mesmo com taxas baixas, tarifas e seguros podem elevar o custo total.</li>
-<li><strong>Comparar <strong>CET</strong> de modalidades diferentes:</strong> cada tipo de crédito tem estrutura de custos própria. Compare dentro da mesma categoria.</li>
+<li><strong>Achar que taxa de juros é o mesmo que CET:</strong> a taxa é apenas um dos componentes. O <strong>CET</strong> sempre será igual ou maior.</li>
+<li><strong>Ignorar o CET no consignado:</strong> mesmo com taxas baixas, tarifas e seguros podem elevar o custo total.</li>
+<li><strong>Comparar CET de modalidades diferentes:</strong> cada tipo de crédito tem estrutura de custos própria. Compare dentro da mesma categoria.</li>
 <li><strong>Não considerar o prazo:</strong> dois empréstimos com o mesmo <strong>CET</strong> podem ter custos totais diferentes se o prazo for diferente.</li>
 </ul>
 </section>
@@ -3812,7 +3811,7 @@ export const posts: Post[] = [
 </section>
 <section><h2>Taxas de juros atuais (2026)</h2>
 <ul>
-<li><strong>Consignado <strong>INSS</strong>:</strong> aproximadamente 1,72% ao mês*</li>
+<li><strong>Consignado INSS:</strong> aproximadamente 1,72% ao mês*</li>
 <li><strong>Consignado servidor público:</strong> aproximadamente 1,5% ao mês*</li>
 <li><strong>Consignado CLT:</strong> aproximadamente 2,5% ao mês*</li>
 </ul>
@@ -3855,7 +3854,7 @@ export const posts: Post[] = [
 <section><h2>Exemplo prático</h2>
 <p>Maria, aposentada do <strong>INSS</strong>, precisa de R$ 8.000 para reformar a casa. Veja a comparação entre consignado e pessoal:</p>
 <ul>
-<li><strong>Consignado <strong>INSS</strong>:</strong> taxa aproximada de 1,72% a.m., 36 meses → parcela de aproximadamente R$ 305, total aproximado de R$ 10.980</li>
+<li><strong>Consignado INSS:</strong> taxa aproximada de 1,72% a.m., 36 meses → parcela de aproximadamente R$ 305, total aproximado de R$ 10.980</li>
 <li><strong>Pessoal banco:</strong> taxa aproximada de 4% a.m., 36 meses → parcela de aproximadamente R$ 423, total aproximado de R$ 15.228</li>
 </ul>
 <p>Neste cenário, a economia com o consignado seria de aproximadamente R$ 4.248. Os valores são ilustrativos e podem variar conforme as taxas praticadas por cada instituição. Use a <a href="/calculadoras/emprestimo">calculadora de empréstimo</a> para simular seu próprio cenário. Veja também <a href="/blog/como-calcular-custo-real-emprestimo">como calcular o custo real de um empréstimo</a>.</p>
@@ -4012,7 +4011,7 @@ export const posts: Post[] = [
 <h2>Conclusão</h2>
 <p>Calcular o custo real de um empréstimo envolve mais do que verificar a taxa de juros. É necessário considerar IOF, tarifas, seguros e o prazo total da operação. O <strong>CET</strong> (Custo Efetivo Total) é o indicador mais completo para comparar ofertas entre instituições financeiras.</p>
 <p>Recomenda-se não contratar sem antes utilizar um simulador de crédito e comparar pelo menos três propostas de instituições diferentes. As taxas e regras podem mudar, portanto confirme as informações nos <strong>canais oficiais</strong> antes de tomar uma decisão.</p>
-<p>Lembre-se: este conteúdo tem caráter educativo e não substitui a consulta a fontes oficiais ou o atendimento prestado por bancos e órgãos reguladores. Para dúvidas específicas, procure o Banco Central, a Receita Federal ou o Procon da sua região.</p>
+<p>Importante: este guia tem finalidade educativa. Ele não substitui a consulta a fontes oficiais nem o atendimento de bancos e órgãos reguladores. Para dúvidas específicas sobre seu caso, procure o Banco Central, a Receita Federal ou o Procon da sua região.</p>
 </div>
 </section>
 `,

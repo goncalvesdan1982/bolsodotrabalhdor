@@ -83,7 +83,7 @@ const painelItems = [
   { nome: 'Cartões', href: '/cartoes', icon: CreditCard, cor: 'bg-indigo-100 text-indigo-700' },
   { nome: 'Empréstimos', href: '/emprestimos', icon: DollarSign, cor: 'bg-amber-100 text-amber-700' },
   { nome: 'Score', href: '/score', icon: BarChart3, cor: 'bg-blue-100 text-blue-700' },
-  { nome: 'Organização', href: '/organizacao-financeira', icon: ScrollText, cor: 'bg-teal-100 text-teal-700' },
+  { nome: 'Organização Financeira', href: '/organizacao-financeira', icon: ScrollText, cor: 'bg-teal-100 text-teal-700' },
   { nome: 'Custo de Vida', href: '/custo-de-vida', icon: Wallet, cor: 'bg-violet-100 text-violet-700' },
   { nome: 'Blog', href: '/blog', icon: BookOpen, cor: 'bg-green-100 text-green-700' },
 ]

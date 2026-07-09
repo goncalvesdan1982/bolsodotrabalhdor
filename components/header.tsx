@@ -96,7 +96,7 @@ export function Header() {
             href="/organizacao-financeira" 
             className="text-sm font-medium hover:text-primary-foreground/80 transition-colors"
           >
-            Organização
+            Organização Financeira
           </Link>
           <Link 
             href="/custo-de-vida" 

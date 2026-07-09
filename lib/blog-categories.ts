@@ -49,6 +49,21 @@ export const CATEGORY_CONFIG: Record<string, {
   },
 }
 
+export function getCategorySlug(category: string): string {
+  const slugs: Record<string, string> = {
+    'Dívidas': 'dividas',
+    'Cartões': 'cartoes',
+    'Empréstimos': 'emprestimos',
+    'Score': 'score',
+    'Organização Financeira': 'organizacao-financeira',
+    'Custo de Vida': 'custo-de-vida',
+  }
+  return slugs[category] || category
+    .toLowerCase()
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+    .replace(/\s+/g, '-')
+}
+
 export function getCategoryConfig(category: string) {
   return CATEGORY_CONFIG[category] ?? {
     label: category,

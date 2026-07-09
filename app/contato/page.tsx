@@ -31,7 +31,7 @@ export default function ContatoPage() {
               </div>
               <CardTitle>Fale Conosco</CardTitle>
               <CardDescription>
-                Envie suas dúvidas, sugestões ou relatando erros diretamente para nosso e-mail.
+                Envie suas dúvidas, sugestões ou relatos de erros diretamente para nosso e-mail.
               </CardDescription>
             </CardHeader>
             <CardContent className="text-center">
