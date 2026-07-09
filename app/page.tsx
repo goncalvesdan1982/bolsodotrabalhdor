@@ -5,8 +5,7 @@ import {
   Landmark, Shield, PiggyBank, ArrowRight,
   CheckCircle2, BarChart3, ScrollText, Percent,
   AlertTriangle, DollarSign, Calendar, Info,
-  BookOpen, Search, HelpCircle, TrendingUp,
-  FileText, Scale, GraduationCap, Sparkles,
+  BookOpen, GraduationCap, Sparkles,
   Target, LayoutDashboard
 } from 'lucide-react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'

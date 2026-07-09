@@ -6,7 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { ExternalLink } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Autor | Bolso do Trabalhador',
+  title: 'Autor',
   description: 'Conheça Daniel Gonçalves, criador do Bolso do Trabalhador. Desenvolvedor web e entusiasta de educação financeira, focado em ferramentas práticas para trabalhadores brasileiros.',
   alternates: {
     canonical: `${SITE_URL}/autor`,
@@ -58,7 +58,8 @@ const personSchema = {
   url: `${SITE_URL}/autor`,
   description: 'Criador e editor do Bolso do Trabalhador, portal independente de educação financeira. Desenvolvedor web focado em ferramentas práticas e conteúdo educativo sobre finanças pessoais, crédito, dívidas, organização financeira e direitos do trabalhador.',
   sameAs: [
-    `${SITE_URL}/autor`,
+    'https://github.com/goncalvesdaniel',
+    'https://www.linkedin.com/in/daniel-goncalves-dev',
   ],
 }
 

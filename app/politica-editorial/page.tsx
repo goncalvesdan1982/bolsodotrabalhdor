@@ -4,7 +4,7 @@ import { Breadcrumbs } from '@/components/breadcrumbs'
 import { BookOpen, Search, RefreshCcw, AlertTriangle, Link as LinkIcon, FileText } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Política Editorial | Bolso do Trabalhador',
+  title: 'Política Editorial',
   description: 'Saiba como o conteúdo do Bolso do Trabalhador é pesquisado, revisado e atualizado. Transparência sobre fontes, processo editorial, correções e links afiliados.',
   alternates: {
     canonical: `${SITE_URL}/politica-editorial`,

@@ -3,7 +3,7 @@ import { AdPlaceholder } from '@/components/ad-placeholder'
 import { SITE_URL, SITE_EMAIL } from '@/lib/config'
 
 export const metadata: Metadata = {
-  title: 'Termos de Uso | Bolso do Trabalhador',
+  title: 'Termos de Uso',
   description: 'Termos de Uso do Bolso do Trabalhador. Conheça as regras e condições para utilização do nosso site.',
   alternates: {
     canonical: `${SITE_URL}/termos-uso`,

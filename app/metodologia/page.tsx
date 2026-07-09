@@ -4,8 +4,8 @@ import { Breadcrumbs } from '@/components/breadcrumbs'
 import { SITE_URL } from '@/lib/config'
 
 export const metadata: Metadata = {
-  title: 'Metodologia - Como Funcionam Nossas Calculadoras | Bolso do Trabalhador',
-  description: 'Saiba como cada cálculo financeiro é realizado em nossas calculadoras. Conheça a metodologia por trás das ferramentas de Quitação de Dívidas, Orçamento Familiar, Juros Compostos, Empréstimos e Financiamentos — com base em fontes oficiais como BCB e legislação brasileira.',
+  title: 'Metodologia - Como Funcionam Nossas Calculadoras',
+  description: 'Conheça a metodologia por trás das calculadoras financeiras do Bolso do Trabalhador. Transparência total nos cálculos de juros, financiamento, orçamento e planejamento financeiro.',
   alternates: {
     canonical: `${SITE_URL}/metodologia`,
   },

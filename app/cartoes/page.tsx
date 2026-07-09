@@ -8,6 +8,7 @@ import { Badge } from '@/components/ui/badge'
 import { ArrowRight, CreditCard, FileText, AlertTriangle, TrendingUp, Percent, Calculator } from 'lucide-react'
 import { getPostBySlug } from '@/lib/posts'
 import type { Post } from '@/lib/posts'
+import { FAQSection } from '@/components/faq-section'
 
 export const metadata: Metadata = {
   title: 'Cartões de Crédito - Guia Completo',
@@ -184,6 +185,15 @@ export default function CartoesPage() {
           </div>
         </section>
 
+        <FAQSection
+          items={[
+            { question: 'Como evitar os juros do rotativo?', answer: 'O rotativo do cartão tem juros altíssimos (acima de 300% ao ano). Para evitar, pague o valor total da fatura até o vencimento. Se não for possível, negocie o parcelamento da fatura diretamente com o banco.' },
+            { question: 'Qual a melhor forma de usar o cartão de crédito?', answer: 'Use o cartão como ferramenta de conveniência e organização, não como extensão da renda. Idealmente, pague a fatura integralmente todo mês e não comprometa mais de 30% do seu limite.' },
+            { question: 'Fatura parcelada compensa?', answer: 'Depende dos juros aplicados. Compare o CET do parcelamento com outras opções como empréstimo pessoal. Se os juros forem muito altos, pode ser melhor buscar alternativas.' },
+          ]}
+          pageUrl={`${SITE_URL}/cartoes`}
+        />
+        <p className="text-xs text-muted-foreground text-center mt-8">Última atualização: julho de 2026</p>
         <section className="rounded-3xl border bg-gradient-to-br from-primary to-primary/90 p-8 md:p-12 text-center text-primary-foreground shadow-lg">
           <Calculator className="w-10 h-10 mx-auto mb-4 text-secondary" />
           <h2 className="text-2xl font-bold mb-3">Simule antes de parcelar</h2>

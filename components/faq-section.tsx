@@ -1,6 +1,7 @@
 'use client'
 
 import { HelpCircle } from 'lucide-react'
+import DOMPurify from 'isomorphic-dompurify'
 import {
   Accordion,
   AccordionContent,
@@ -55,7 +56,7 @@ export function FAQSection({ items, pageUrl }: FAQSectionProps) {
               {item.question}
             </AccordionTrigger>
             <AccordionContent className="text-muted-foreground prose prose-sm max-w-none">
-              <div dangerouslySetInnerHTML={{ __html: item.answer }} />
+              <div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(item.answer) }} />
             </AccordionContent>
           </AccordionItem>
         ))}

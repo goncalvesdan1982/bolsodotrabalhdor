@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Calculator, Users, Target, Heart } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Sobre o Bolso do Trabalhador',
+  title: 'Sobre',
   description: 'Conheça o Bolso do Trabalhador — um portal de educação financeira criado por Daniel Gonçalves, focado na realidade de quem ganha entre R$ 3.500 e R$ 9.000 e quer organizar as contas, sair das dívidas e fazer escolhas mais inteligentes.',
   alternates: {
     canonical: `${SITE_URL}/sobre`,

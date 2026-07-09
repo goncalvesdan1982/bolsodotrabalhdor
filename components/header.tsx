@@ -114,7 +114,7 @@ export function Header() {
         {/* Mobile Navigation */}
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <SheetTrigger asChild className="md:hidden">
-            <Button variant="ghost" size="icon" className="text-primary-foreground hover:bg-primary-foreground/10">
+            <Button variant="ghost" size="icon" className="text-primary-foreground hover:bg-primary-foreground/10 min-h-[44px] min-w-[44px]">
               <Menu className="h-6 w-6" />
               <span className="sr-only">Abrir menu</span>
             </Button>
@@ -132,32 +132,32 @@ export function Header() {
             <nav className="flex flex-col gap-4">
               <div className="space-y-2">
                 <p className="text-sm font-semibold text-muted-foreground mb-2">Navegação</p>
-                <Link href="/" className="block py-2 px-3 text-sm rounded-md hover:bg-muted transition-colors" onClick={() => setIsOpen(false)}>Início</Link>
-                <Link href="/blog" className="block py-2 px-3 text-sm rounded-md hover:bg-muted transition-colors" onClick={() => setIsOpen(false)}>Blog</Link>
-                <Link href="/dividas" className="block py-2 px-3 text-sm rounded-md hover:bg-muted transition-colors" onClick={() => setIsOpen(false)}>Dívidas</Link>
-                <Link href="/cartoes" className="block py-2 px-3 text-sm rounded-md hover:bg-muted transition-colors" onClick={() => setIsOpen(false)}>Cartões</Link>
-                <Link href="/emprestimos" className="block py-2 px-3 text-sm rounded-md hover:bg-muted transition-colors" onClick={() => setIsOpen(false)}>Empréstimos</Link>
-                <Link href="/score" className="block py-2 px-3 text-sm rounded-md hover:bg-muted transition-colors" onClick={() => setIsOpen(false)}>Score</Link>
-                <Link href="/organizacao-financeira" className="block py-2 px-3 text-sm rounded-md hover:bg-muted transition-colors" onClick={() => setIsOpen(false)}>Organização Financeira</Link>
-                <Link href="/custo-de-vida" className="block py-2 px-3 text-sm rounded-md hover:bg-muted transition-colors" onClick={() => setIsOpen(false)}>Custo de Vida</Link>
+                <Link href="/" className="block py-3 px-3 text-sm rounded-md hover:bg-muted transition-colors min-h-[44px] flex items-center" onClick={() => setIsOpen(false)}>Início</Link>
+                <Link href="/blog" className="block py-3 px-3 text-sm rounded-md hover:bg-muted transition-colors min-h-[44px] flex items-center" onClick={() => setIsOpen(false)}>Blog</Link>
+                <Link href="/dividas" className="block py-3 px-3 text-sm rounded-md hover:bg-muted transition-colors min-h-[44px] flex items-center" onClick={() => setIsOpen(false)}>Dívidas</Link>
+                <Link href="/cartoes" className="block py-3 px-3 text-sm rounded-md hover:bg-muted transition-colors min-h-[44px] flex items-center" onClick={() => setIsOpen(false)}>Cartões</Link>
+                <Link href="/emprestimos" className="block py-3 px-3 text-sm rounded-md hover:bg-muted transition-colors min-h-[44px] flex items-center" onClick={() => setIsOpen(false)}>Empréstimos</Link>
+                <Link href="/score" className="block py-3 px-3 text-sm rounded-md hover:bg-muted transition-colors min-h-[44px] flex items-center" onClick={() => setIsOpen(false)}>Score</Link>
+                <Link href="/organizacao-financeira" className="block py-3 px-3 text-sm rounded-md hover:bg-muted transition-colors min-h-[44px] flex items-center" onClick={() => setIsOpen(false)}>Organização Financeira</Link>
+                <Link href="/custo-de-vida" className="block py-3 px-3 text-sm rounded-md hover:bg-muted transition-colors min-h-[44px] flex items-center" onClick={() => setIsOpen(false)}>Custo de Vida</Link>
               </div>
               <div className="border-t pt-4 space-y-2">
                 <p className="text-sm font-semibold text-muted-foreground mb-2">Calculadoras</p>
                 {calculadoras.map((calc) => (
-                  <Link key={calc.href} href={calc.href} className="block py-2 px-3 text-sm rounded-md hover:bg-muted transition-colors" onClick={() => setIsOpen(false)}>
+                  <Link key={calc.href} href={calc.href} className="block py-3 px-3 text-sm rounded-md hover:bg-muted transition-colors min-h-[44px] flex items-center" onClick={() => setIsOpen(false)}>
                     {calc.nome}
                   </Link>
                 ))}
               </div>
               <div className="border-t pt-4 space-y-2">
                 <p className="text-sm font-semibold text-muted-foreground mb-2">Institucional</p>
-                <Link href="/autor" className="block py-2 px-3 text-sm rounded-md hover:bg-muted transition-colors" onClick={() => setIsOpen(false)}>Autor</Link>
-                <Link href="/sobre" className="block py-2 px-3 text-sm rounded-md hover:bg-muted transition-colors" onClick={() => setIsOpen(false)}>Sobre</Link>
-                <Link href="/metodologia" className="block py-2 px-3 text-sm rounded-md hover:bg-muted transition-colors" onClick={() => setIsOpen(false)}>Metodologia</Link>
-                <Link href="/politica-editorial" className="block py-2 px-3 text-sm rounded-md hover:bg-muted transition-colors" onClick={() => setIsOpen(false)}>Política Editorial</Link>
-                <Link href="/contato" className="block py-2 px-3 text-sm rounded-md hover:bg-muted transition-colors" onClick={() => setIsOpen(false)}>Contato</Link>
-                <Link href="/politica-privacidade" className="block py-2 px-3 text-sm rounded-md hover:bg-muted transition-colors" onClick={() => setIsOpen(false)}>Privacidade</Link>
-                <Link href="/termos-uso" className="block py-2 px-3 text-sm rounded-md hover:bg-muted transition-colors" onClick={() => setIsOpen(false)}>Termos de Uso</Link>
+                <Link href="/autor" className="block py-3 px-3 text-sm rounded-md hover:bg-muted transition-colors min-h-[44px] flex items-center" onClick={() => setIsOpen(false)}>Autor</Link>
+                <Link href="/sobre" className="block py-3 px-3 text-sm rounded-md hover:bg-muted transition-colors min-h-[44px] flex items-center" onClick={() => setIsOpen(false)}>Sobre</Link>
+                <Link href="/metodologia" className="block py-3 px-3 text-sm rounded-md hover:bg-muted transition-colors min-h-[44px] flex items-center" onClick={() => setIsOpen(false)}>Metodologia</Link>
+                <Link href="/politica-editorial" className="block py-3 px-3 text-sm rounded-md hover:bg-muted transition-colors min-h-[44px] flex items-center" onClick={() => setIsOpen(false)}>Política Editorial</Link>
+                <Link href="/contato" className="block py-3 px-3 text-sm rounded-md hover:bg-muted transition-colors min-h-[44px] flex items-center" onClick={() => setIsOpen(false)}>Contato</Link>
+                <Link href="/politica-privacidade" className="block py-3 px-3 text-sm rounded-md hover:bg-muted transition-colors min-h-[44px] flex items-center" onClick={() => setIsOpen(false)}>Privacidade</Link>
+                <Link href="/termos-uso" className="block py-3 px-3 text-sm rounded-md hover:bg-muted transition-colors min-h-[44px] flex items-center" onClick={() => setIsOpen(false)}>Termos de Uso</Link>
               </div>
             </nav>
           </SheetContent>

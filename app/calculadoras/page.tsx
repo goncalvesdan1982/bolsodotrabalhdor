@@ -5,7 +5,7 @@ import { SITE_URL } from '@/lib/config'
 import { CalculatorCard } from '@/components/calculator-card'
 
 export const metadata: Metadata = {
-  title: 'Calculadoras Financeiras | Bolso do Trabalhador',
+  title: 'Calculadoras Financeiras',
   description: 'Ferramentas gratuitas para calcular juros, simular empréstimos, organizar o orçamento e planejar seu futuro financeiro.',
   keywords: ['calculadora financeira', 'calcular juros', 'simular empréstimo', 'calculadora online', 'ferramenta financeira'],
   alternates: { canonical: `${SITE_URL}/calculadoras` },

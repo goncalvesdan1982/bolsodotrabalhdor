@@ -1,11 +1,11 @@
 'use client'
 
 import { useEffect } from 'react'
-import { artigoVisualizado, scrollProfundidade } from '@/lib/analytics'
+import { event } from '@/lib/analytics'
 
 export function BlogAnalytics({ slug }: { slug: string }) {
   useEffect(() => {
-    artigoVisualizado(slug)
+    event('artigo_visualizado', { slug_artigo: slug, timestamp: Date.now() })
 
     let fired50 = false
     let fired90 = false
@@ -16,11 +16,11 @@ export function BlogAnalytics({ slug }: { slug: string }) {
 
       if (!fired50 && scrollPercent >= 50) {
         fired50 = true
-        scrollProfundidade(50)
+        event(`scroll_${50}`, { timestamp: Date.now() })
       }
       if (!fired90 && scrollPercent >= 90) {
         fired90 = true
-        scrollProfundidade(90)
+        event(`scroll_${90}`, { timestamp: Date.now() })
       }
     }
 

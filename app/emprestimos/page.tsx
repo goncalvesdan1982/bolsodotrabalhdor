@@ -8,6 +8,7 @@ import { Badge } from '@/components/ui/badge'
 import { ArrowRight, Banknote, AlertTriangle, Search, Calculator } from 'lucide-react'
 import { getPostBySlug } from '@/lib/posts'
 import type { Post } from '@/lib/posts'
+import { FAQSection } from '@/components/faq-section'
 
 export const metadata: Metadata = {
   title: 'Empréstimos - Comparar e Escolher o Melhor',
@@ -195,6 +196,15 @@ export default function EmprestimosPage() {
           </div>
         </section>
 
+        <FAQSection
+          items={[
+            { question: 'Qual a diferença entre taxa de juros e CET?', answer: 'A taxa de juros é apenas um dos componentes do custo. O CET (Custo Efetivo Total) inclui juros, tarifas, seguros e impostos. Sempre compare o CET entre diferentes propostas.' },
+            { question: 'Como conseguir a menor taxa de empréstimo?', answer: 'Mantenha um bom score de crédito, pesquise em múltiplos bancos e fintechs, negocie condições e considere usar bens como garantia (empréstimo consignado ou com garantia de imóvel/veículo).' },
+            { question: 'Empréstimo consignado é seguro?', answer: 'O consignado tem juros menores porque as parcelas são descontadas diretamente da folha de pagamento. É uma opção segura desde que o valor da parcela não comprometa excessivamente sua renda.' },
+          ]}
+          pageUrl={`${SITE_URL}/emprestimos`}
+        />
+        <p className="text-xs text-muted-foreground text-center mt-8">Última atualização: julho de 2026</p>
         <section className="rounded-3xl border bg-gradient-to-br from-primary to-primary/90 p-8 md:p-12 text-center text-primary-foreground shadow-lg">
           <Calculator className="w-10 h-10 mx-auto mb-4 text-secondary" />
           <h2 className="text-2xl font-bold mb-3">Simule seu empréstimo agora</h2>

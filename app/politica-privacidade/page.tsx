@@ -3,7 +3,7 @@ import { AdPlaceholder } from '@/components/ad-placeholder'
 import { SITE_URL, SITE_EMAIL } from '@/lib/config'
 
 export const metadata: Metadata = {
-  title: 'Política de Privacidade | Bolso do Trabalhador',
+  title: 'Política de Privacidade',
   description: 'Política de Privacidade do Bolso do Trabalhador. Saiba como tratamos seus dados e garantimos sua privacidade.',
   alternates: {
     canonical: `${SITE_URL}/politica-privacidade`,

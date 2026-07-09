@@ -13,6 +13,17 @@ export default function CookieBanner() {
     }
   }, []);
 
+  useEffect(() => {
+    function handleKeyDown(e: KeyboardEvent) {
+      if (e.key === 'Escape' && showBanner) {
+        localStorage.setItem("cookie-consent", "true");
+        setShowBanner(false);
+      }
+    }
+    document.addEventListener('keydown', handleKeyDown);
+    return () => document.removeEventListener('keydown', handleKeyDown);
+  }, [showBanner]);
+
   const acceptCookies = () => {
     localStorage.setItem("cookie-consent", "true");
     setShowBanner(false);
@@ -21,7 +32,12 @@ export default function CookieBanner() {
   if (!showBanner) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 bg-background border-t border-border shadow-lg p-4 md:p-5">
+    <div
+      role="dialog"
+      aria-modal="true"
+      aria-label="Aviso de cookies"
+      className="fixed bottom-0 left-0 right-0 z-50 bg-background border-t border-border shadow-lg p-4 md:p-5"
+    >
       <div className="container mx-auto max-w-6xl flex flex-col md:flex-row items-center justify-between gap-4">
         <p className="text-sm text-foreground text-center md:text-left">
           Utilizamos cookies para melhorar sua experiência, exibir anúncios personalizados e analisar nosso tráfego. 

@@ -8,6 +8,7 @@ import { Badge } from '@/components/ui/badge'
 import { ArrowRight, Home, PiggyBank, TrendingDown, Target, Calculator, HelpCircle } from 'lucide-react'
 import { getPostBySlug } from '@/lib/posts'
 import type { Post } from '@/lib/posts'
+import { FAQSection } from '@/components/faq-section'
 
 export const metadata: Metadata = {
   title: 'Custo de Vida - Quanto Custa Morar no Brasil',
@@ -191,6 +192,15 @@ export default function CustoDeVidaPage() {
           </div>
         </section>
 
+        <FAQSection
+          items={[
+            { question: 'O que é custo de vida?', answer: 'Custo de vida é o montante de gastos necessários para manter um determinado padrão de vida, incluindo moradia, alimentação, transporte, saúde, educação e lazer. Varia conforme a cidade e o perfil familiar.' },
+            { question: 'Como calcular meu custo de vida?', answer: 'Use uma planilha ou aplicativo para registrar todos os gastos fixos e variáveis por pelo menos três meses. Inclua despesas anuais rateadas. Nossa calculadora de orçamento familiar pode ajudar.' },
+            { question: 'Qual cidade brasileira tem o custo de vida mais alto?', answer: 'São Paulo e Rio de Janeiro estão entre as cidades com maior custo de vida no Brasil, especialmente em moradia e transporte. Capitais do Nordeste e Norte tendem a ter custo mais baixo em algumas categorias.' },
+          ]}
+          pageUrl={`${SITE_URL}/custo-de-vida`}
+        />
+        <p className="text-xs text-muted-foreground text-center mt-8">Última atualização: julho de 2026</p>
         <section className="rounded-3xl border bg-gradient-to-br from-primary to-primary/90 p-8 md:p-12 text-center text-primary-foreground shadow-lg">
           <Calculator className="w-10 h-10 mx-auto mb-4 text-secondary" />
           <h2 className="text-2xl font-bold mb-3">Planeje seu orçamento mensal</h2>

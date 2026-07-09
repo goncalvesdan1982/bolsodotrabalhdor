@@ -8,6 +8,7 @@ import { Badge } from '@/components/ui/badge'
 import { ArrowRight, PieChart, PiggyBank, TrendingDown, Target, Calculator, BarChart3 } from 'lucide-react'
 import { getPostBySlug } from '@/lib/posts'
 import type { Post } from '@/lib/posts'
+import { FAQSection } from '@/components/faq-section'
 
 export const metadata: Metadata = {
   title: 'Organização Financeira - Controle Suas Contas',
@@ -166,6 +167,15 @@ export default function OrganizacaoFinanceiraPage() {
           </div>
         </section>
 
+        <FAQSection
+          items={[
+            { question: 'Como começar a organizar as finanças?', answer: 'O primeiro passo é listar todas as receitas e despesas. Em seguida, categorize os gastos, identifique desperdícios e crie um orçamento realista. Use nossa calculadora de orçamento familiar para começar.' },
+            { question: 'Qual a regra 50-30-20?', answer: '50% da renda para despesas essenciais (moradia, alimentação, transporte), 30% para gastos pessoais (lazer, viagens) e 20% para poupança e investimentos. Ajuste os percentuais conforme sua realidade.' },
+            { question: 'Quanto devo guardar por mês?', answer: 'O ideal é poupar ao menos 10 a 20% da renda mensal. Se não for possível, comece com 5% e aumente gradualmente. O importante é criar o hábito de poupar regularmente.' },
+          ]}
+          pageUrl={`${SITE_URL}/organizacao-financeira`}
+        />
+        <p className="text-xs text-muted-foreground text-center mt-8">Última atualização: julho de 2026</p>
         <section className="rounded-3xl border bg-gradient-to-br from-primary to-primary/90 p-8 md:p-12 text-center text-primary-foreground shadow-lg">
           <Calculator className="w-10 h-10 mx-auto mb-4 text-secondary" />
           <h2 className="text-2xl font-bold mb-3">Organize suas finanças agora</h2>

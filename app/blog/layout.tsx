@@ -2,10 +2,10 @@ import type { Metadata } from 'next'
 import { SITE_URL } from '@/lib/config'
 
 export const metadata: Metadata = {
-  title: 'Blog | Bolso do Trabalhador',
+  title: 'Blog',
   description: 'Artigos sobre finanças pessoais, dívidas, cartões, score, empréstimos e organização financeira para trabalhadores brasileiros.',
   openGraph: {
-    title: 'Blog — Educação Financeira | Bolso do Trabalhador',
+    title: 'Blog — Educação Financeira',
     description: 'Artigos práticos sobre dívidas, cartões, score, empréstimos, custo de vida e organização financeira para o dia a dia do trabalhador brasileiro.',
     url: `${SITE_URL}/blog`,
     siteName: 'Bolso do Trabalhador',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Blog — Educação Financeira | Bolso do Trabalhador',
+    title: 'Blog — Educação Financeira',
     description: 'Artigos sobre dívidas, cartões, score, empréstimos e organização financeira.',
     images: [`${SITE_URL}/og-image.png`],
   },

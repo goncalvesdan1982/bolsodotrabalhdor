@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button'
 import { BookOpen } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
 import { BlogFilters } from '@/components/blog-filters'
+import { Breadcrumbs } from '@/components/breadcrumbs'
 
 export async function generateMetadata({
   searchParams,
@@ -16,21 +17,22 @@ export async function generateMetadata({
   const currentPage = Math.max(1, parseInt(params.page || '1'))
   const query = (params.q || '').trim().toLowerCase()
 
-  const title = currentPage > 1 && !query
-    ? `Blog - Página ${currentPage} | Bolso do Trabalhador`
-    : 'Blog - Educação Financeira Prática | Bolso do Trabalhador'
+  const pageTitle = currentPage > 1 && !query
+    ? `Blog - Página ${currentPage}`
+    : 'Blog - Educação Financeira Prática'
+  const ogTitle = `${pageTitle} | Bolso do Trabalhador`
 
   const canonical = currentPage > 1 && !query
     ? `${SITE_URL}/blog?page=${currentPage}`
     : `${SITE_URL}/blog`
 
   return {
-    title,
+    title: pageTitle,
     description: 'Artigos sobre finanças pessoais para trabalhadores brasileiros: dívidas, cartões de crédito, score, empréstimos, orçamento familiar e educação financeira.',
     alternates: { canonical },
     openGraph: {
-      title: query ? `Busca: ${query} | Bolso do Trabalhador` : currentPage > 1 ? `Blog - Página ${currentPage} | Bolso do Trabalhador` : 'Blog — Educação Financeira | Bolso do Trabalhador',
-      description: 'Artigos sobre finanças pessoais para trabalhadores brasileiros: dívidas, cartões de crédito, score, empréstimos e organização financeira.',
+      title: ogTitle,
+      description: 'Artigos sobre finanças pessoais para trabalhadores brasileiros: dívidas, cartões de crédito, score, empréstimos, orçamento familiar e educação financeira.',
       url: canonical,
       siteName: 'Bolso do Trabalhador',
       locale: 'pt_BR',
@@ -39,7 +41,7 @@ export async function generateMetadata({
     },
     twitter: {
       card: 'summary_large_image',
-      title: query ? `Busca: ${query} | Bolso do Trabalhador` : currentPage > 1 ? `Blog - Página ${currentPage} | Bolso do Trabalhador` : 'Blog — Educação Financeira | Bolso do Trabalhador',
+      title: ogTitle,
       description: 'Artigos sobre finanças pessoais para trabalhadores brasileiros.',
       images: [`${SITE_URL}/og-image.png`],
     },
@@ -69,6 +71,7 @@ export default async function BlogPage({
 
   return (
     <div className="container mx-auto px-4 py-12">
+      <Breadcrumbs items={[{ label: 'Blog' }]} />
       <div className="flex flex-col items-center text-center mb-12">
         <Badge variant="outline" className="mb-4 px-3 py-1 text-secondary border-secondary">
           Educacional

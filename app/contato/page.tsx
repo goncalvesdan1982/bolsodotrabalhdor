@@ -1,15 +1,15 @@
-'use client'
-
 import { Mail } from 'lucide-react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { AdPlaceholder } from '@/components/ad-placeholder'
 import { SITE_EMAIL } from '@/lib/config'
+import { Breadcrumbs } from '@/components/breadcrumbs'
 
 export default function ContatoPage() {
   return (
     <div className="min-h-screen py-12">
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto">
+          <Breadcrumbs items={[{ label: 'Contato' }]} />
           {/* Header */}
           <div className="text-center mb-12">
             <h1 className="text-4xl font-bold text-foreground mb-4">

@@ -3,6 +3,10 @@
 // Engine central de cálculos financeiros
 // ============================================================
 
+export function round2(n: number): number {
+  return Math.round(n * 100) / 100
+}
+
 export function formatarMoeda(valor: number): string {
   return valor.toLocaleString('pt-BR', {
     style: 'currency',
@@ -29,8 +33,8 @@ export function calcularJurosCompostos(
     montante = montante + juros + aporteMensal
     historico.push({
       mes: m,
-      valor: Math.round(montante * 100) / 100,
-      juros: Math.round(juros * 100) / 100,
+      valor: round2(montante),
+      juros: round2(juros),
     })
   }
 
@@ -38,9 +42,9 @@ export function calcularJurosCompostos(
   const totalJuros = montante - totalInvestido
 
   return {
-    montanteFinal: Math.round(montante * 100) / 100,
-    totalInvestido: Math.round(totalInvestido * 100) / 100,
-    totalJuros: Math.round(totalJuros * 100) / 100,
+    montanteFinal: round2(montante),
+    totalInvestido: round2(totalInvestido),
+    totalJuros: round2(totalJuros),
     historico,
   }
 }
@@ -56,8 +60,8 @@ export function calcularJurosSimples(
   const montante = valorInicial + juros
 
   return {
-    juros: Math.round(juros * 100) / 100,
-    montante: Math.round(montante * 100) / 100,
+    juros: round2(juros),
+    montante: round2(montante),
     taxaTotal: formatarPercentual(taxaDecimal * meses * 100),
   }
 }
@@ -82,17 +86,17 @@ export function calcularEmprestimo(
     saldo -= amortizacaoMes
     amortizacao.push({
       mes: m,
-      parcela: Math.round(parcela * 100) / 100,
-      juros: Math.round(jurosMes * 100) / 100,
-      amortizacao: Math.round(amortizacaoMes * 100) / 100,
-      saldo: Math.round(Math.max(saldo, 0) * 100) / 100,
+      parcela: round2(parcela),
+      juros: round2(jurosMes),
+      amortizacao: round2(amortizacaoMes),
+      saldo: round2(Math.max(saldo, 0)),
     })
   }
 
   return {
-    valorParcela: Math.round(parcela * 100) / 100,
-    totalPago: Math.round(totalPago * 100) / 100,
-    totalJuros: Math.round(totalJuros * 100) / 100,
+    valorParcela: round2(parcela),
+    totalPago: round2(totalPago),
+    totalJuros: round2(totalJuros),
     cet: formatarPercentual((totalJuros / valor) * 100),
     amortizacao,
   }
@@ -120,18 +124,18 @@ export function calcularFinanciamento(
     totalJuros += juros
     parcelas.push({
       mes: m,
-      parcela: Math.round(parcela * 100) / 100,
-      juros: Math.round(juros * 100) / 100,
-      amortizacao: Math.round(amortizacaoFixa * 100) / 100,
-      saldo: Math.round(Math.max(saldo, 0) * 100) / 100,
+      parcela: round2(parcela),
+      juros: round2(juros),
+      amortizacao: round2(amortizacaoFixa),
+      saldo: round2(Math.max(saldo, 0)),
     })
   }
 
   return {
-    primeiraParcela: Math.round(parcelas[0].parcela * 100) / 100,
-    ultimaParcela: Math.round(parcelas[parcelas.length - 1].parcela * 100) / 100,
-    totalPago: Math.round(totalPago * 100) / 100,
-    totalJuros: Math.round(totalJuros * 100) / 100,
+    primeiraParcela: round2(parcelas[0].parcela),
+    ultimaParcela: round2(parcelas[parcelas.length - 1].parcela),
+    totalPago: round2(totalPago),
+    totalJuros: round2(totalJuros),
     parcelas,
   }
 }
@@ -145,12 +149,12 @@ export function calcularParcelas(
   if (taxaMensal === 0) {
     const valorParcela = valorTotal / numeroParcelas
     return {
-      valorParcela: Math.round(valorParcela * 100) / 100,
+      valorParcela: round2(valorParcela),
       totalPago: valorTotal,
       totalJuros: 0,
       parcelas: Array.from({ length: numeroParcelas }, (_, i) => ({
         numero: i + 1,
-        valor: Math.round(valorParcela * 100) / 100,
+        valor: round2(valorParcela),
       })),
     }
   }
@@ -161,12 +165,12 @@ export function calcularParcelas(
   const totalJuros = totalPago - valorTotal
 
   return {
-    valorParcela: Math.round(parcela * 100) / 100,
-    totalPago: Math.round(totalPago * 100) / 100,
-    totalJuros: Math.round(totalJuros * 100) / 100,
+    valorParcela: round2(parcela),
+    totalPago: round2(totalPago),
+    totalJuros: round2(totalJuros),
     parcelas: Array.from({ length: numeroParcelas }, (_, i) => ({
       numero: i + 1,
-      valor: Math.round(parcela * 100) / 100,
+      valor: round2(parcela),
     })),
   }
 }
@@ -178,9 +182,9 @@ export function calcularReservaEmergencia(
 ) {
   const valorIdeal = gastosMensais * meses
   return {
-    valorIdeal: Math.round(valorIdeal * 100) / 100,
+    valorIdeal: round2(valorIdeal),
     mesesRecomendados: meses,
-    gastoMensal: Math.round(gastosMensais * 100) / 100,
+    gastoMensal: round2(gastosMensais),
   }
 }
 
@@ -199,16 +203,16 @@ export function calcularOrcamentoFamiliar(renda: number, gastos: {
 
   const categorias = Object.entries(gastos).map(([nome, valor]) => ({
     nome,
-    valor: Math.round(valor * 100) / 100,
-    percentual: renda > 0 ? Math.round((valor / renda) * 10000) / 100 : 0,
+    valor: round2(valor),
+    percentual: renda > 0 ? round2((valor / renda) * 100) : 0,
   }))
 
   return {
-    renda: Math.round(renda * 100) / 100,
-    totalGastos: Math.round(totalGastos * 100) / 100,
-    saldo: Math.round(saldo * 100) / 100,
+    renda: round2(renda),
+    totalGastos: round2(totalGastos),
+    saldo: round2(saldo),
     categorias,
-    percentualGastos: renda > 0 ? Math.round((totalGastos / renda) * 10000) / 100 : 0,
+    percentualGastos: renda > 0 ? round2((totalGastos / renda) * 100) : 0,
   }
 }
 
@@ -223,11 +227,11 @@ export function calcularCapacidadeEndividamento(
   const comprometimentoAtual = rendaMensal > 0 ? (dividasAtuais / rendaMensal) * 100 : 0
 
   return {
-    rendaMensal: Math.round(rendaMensal * 100) / 100,
-    gastosFixos: Math.round(gastosFixos * 100) / 100,
-    rendaDisponivel: Math.round(rendaDisponivel * 100) / 100,
-    limiteRecomendado: Math.round(limiteRecomendado * 100) / 100,
-    comprometimentoAtual: Math.round(comprometimentoAtual * 100) / 100,
+    rendaMensal: round2(rendaMensal),
+    gastosFixos: round2(gastosFixos),
+    rendaDisponivel: round2(rendaDisponivel),
+    limiteRecomendado: round2(limiteRecomendado),
+    comprometimentoAtual: round2(comprometimentoAtual),
     comprometimentoAtualLabel: comprometimentoAtual <= 30 ? 'Saudável' : comprometimentoAtual <= 50 ? 'Atenção' : 'Risco',
   }
 }
@@ -249,15 +253,15 @@ export function calcularComprometimentoRenda(
   else classificacao = 'risco'
 
   return {
-    rendaMensal: Math.round(rendaMensal * 100) / 100,
-    totalDividas: Math.round(totalDividas * 100) / 100,
-    percentual: Math.round(percentual * 100) / 100,
+    rendaMensal: round2(rendaMensal),
+    totalDividas: round2(totalDividas),
+    percentual: round2(percentual),
     classificacao,
     detalhes: {
-      financiamentos: Math.round(financiamentos * 100) / 100,
-      emprestimos: Math.round(emprestimos * 100) / 100,
-      cartaoCredito: Math.round(cartaoCredito * 100) / 100,
-      outrasParcelas: Math.round(outrasParcelas * 100) / 100,
+      financiamentos: round2(financiamentos),
+      emprestimos: round2(emprestimos),
+      cartaoCredito: round2(cartaoCredito),
+      outrasParcelas: round2(outrasParcelas),
     },
   }
 }
@@ -284,9 +288,9 @@ export function calcularQuitacaoDividas(
     totalJuros += jurosMes
     historico.push({
       mes: meses,
-      pagamento: Math.round(pagamento * 100) / 100,
-      juros: Math.round(jurosMes * 100) / 100,
-      saldo: Math.round(Math.max(saldo, 0) * 100) / 100,
+      pagamento: round2(pagamento),
+      juros: round2(jurosMes),
+      saldo: round2(Math.max(saldo, 0)),
     })
     if (saldo < 0.01) break
   }
@@ -297,9 +301,9 @@ export function calcularQuitacaoDividas(
 
   return {
     meses,
-    totalPago: Math.round(totalPago * 100) / 100,
-    totalJuros: Math.round(totalJuros * 100) / 100,
-    valorOriginal: Math.round(valorDivida * 100) / 100,
+    totalPago: round2(totalPago),
+    totalJuros: round2(totalJuros),
+    valorOriginal: round2(valorDivida),
     historico,
   }
 }
@@ -330,12 +334,12 @@ export function calcularTrocaDivida(
   const diferencaMensal = parcelaAtual - parcelaNova
 
   return {
-    parcelaAtual: Math.round(parcelaAtual * 100) / 100,
-    parcelaNova: Math.round(parcelaNova * 100) / 100,
-    totalAtual: Math.round(totalAtual * 100) / 100,
-    totalNovo: Math.round(totalNovo * 100) / 100,
-    economia: Math.round(economia * 100) / 100,
-    diferencaMensal: Math.round(diferencaMensal * 100) / 100,
+    parcelaAtual: round2(parcelaAtual),
+    parcelaNova: round2(parcelaNova),
+    totalAtual: round2(totalAtual),
+    totalNovo: round2(totalNovo),
+    economia: round2(economia),
+    diferencaMensal: round2(diferencaMensal),
     prazoAtual: prazoAtualRestante,
     prazoNovo,
   }
@@ -353,11 +357,11 @@ export function calcularEconomiaMensal(
     : 0
 
   return {
-    renda: Math.round(renda * 100) / 100,
-    gastos: Math.round(gastos * 100) / 100,
-    potencialEconomia: Math.round(potencial * 100) / 100,
+    renda: round2(renda),
+    gastos: round2(gastos),
+    potencialEconomia: round2(potencial),
     mesesParaObjetivo,
-    objetivoEconomia: Math.round(objetivoEconomia * 100) / 100,
+    objetivoEconomia: round2(objetivoEconomia),
   }
 }
 
@@ -372,7 +376,7 @@ export function calcularMetaFinanceira(
     const meses = Math.ceil(valorObjetivo / valorMensal)
     return {
       meses,
-      totalInvestido: Math.round(valorMensal * meses * 100) / 100,
+      totalInvestido: round2(valorMensal * meses),
       totalJuros: 0,
     }
   }
@@ -385,7 +389,7 @@ export function calcularMetaFinanceira(
   while (acumulado < valorObjetivo && mes < 1200) {
     mes++
     acumulado = (acumulado + valorMensal) * (1 + i)
-    historico.push({ mes, valor: Math.round(acumulado * 100) / 100 })
+    historico.push({ mes, valor: round2(acumulado) })
   }
 
   const totalInvestido = valorMensal * mes
@@ -393,9 +397,9 @@ export function calcularMetaFinanceira(
 
   return {
     meses: mes,
-    totalInvestido: Math.round(totalInvestido * 100) / 100,
-    totalJuros: Math.round(totalJuros * 100) / 100,
-    valorFinal: Math.round(acumulado * 100) / 100,
+    totalInvestido: round2(totalInvestido),
+    totalJuros: round2(totalJuros),
+    valorFinal: round2(acumulado),
     historico,
   }
 }

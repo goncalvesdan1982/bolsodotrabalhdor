@@ -19,7 +19,7 @@ export function TableOfContents() {
 
     const elements = Array.from(article.querySelectorAll('h2, h3'))
       .map((element) => {
-        const id = element.textContent?.toLowerCase().replace(/\s+/g, '-') || ''
+        const id = (element.textContent?.toLowerCase().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-') || '').replace(/^-+|-+$/g, '')
         element.id = id
         return {
           id,

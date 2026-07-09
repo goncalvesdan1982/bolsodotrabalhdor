@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation'
 import { Metadata } from 'next'
 import { SITE_URL } from '@/lib/config'
 import { getPostBySlug, getRelatedPosts } from '../../../lib/posts'
+import DOMPurify from 'isomorphic-dompurify'
 import { Button } from '@/components/ui/button'
 import { BlogAnalytics } from '@/components/blog-analytics'
 
@@ -67,7 +68,8 @@ function estimateReadingTime(html: string): number {
 }
 
 function enhanceArticleHtml(html: string): string {
-  let enhanced = html
+  let sanitized = DOMPurify.sanitize(html)
+  let enhanced = sanitized
 
   // Wrap tables in premium wrapper (avoid double-wrapping)
   enhanced = enhanced.replace(/<table(?!\s*[^>]*class=['"]premium-table-wrapper)/gi, '<div class="premium-table-wrapper"><table')
@@ -111,7 +113,7 @@ export async function generateMetadata({ params }: PostPageProps): Promise<Metad
   const ogImageUrl = `${SITE_URL}/og?title=${encodeURIComponent(post.title)}&category=${encodeURIComponent(post.category)}`
 
   return {
-    title: `${post.title} | Bolso do Trabalhador`,
+    title: post.title,
     description: post.description,
     keywords: post.keywords.join(', '),
     alternates: {
@@ -185,16 +187,6 @@ export default async function PostPage({ params }: PostPageProps) {
     }
   }
 
-  const breadcrumbSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    'itemListElement': [
-      { '@type': 'ListItem', 'position': 1, 'name': 'Blog', 'item': `${SITE_URL}/blog` },
-      { '@type': 'ListItem', 'position': 2, 'name': post.category, 'item': `${SITE_URL}/blog/categoria/${post.category.toLowerCase().replace(/\s+/g, '-')}` },
-      { '@type': 'ListItem', 'position': 3, 'name': post.title, 'item': `${SITE_URL}/blog/${post.slug}` },
-    ]
-  }
-
   const faqSchema = post.faq ? {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
@@ -214,10 +206,6 @@ export default async function PostPage({ params }: PostPageProps) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       {faqSchema && (
         <script
@@ -346,7 +334,7 @@ export default async function PostPage({ params }: PostPageProps) {
 
         <div className="my-12 p-6 md:p-8 bg-gradient-to-br from-primary to-primary/95 rounded-2xl text-primary-foreground shadow-xl border border-primary/80">
           <Calculator className="w-8 h-8 text-secondary mb-3" />
-          <h3 className="text-xl font-bold mb-2">Simule agora gratuitamente</h3>
+          <h2 className="text-xl font-bold mb-2">Simule agora gratuitamente</h2>
           <p className="text-primary-foreground/80 mb-6 max-w-lg">
             Utilize nossas ferramentas gratuitas para simular cenários e tomar decisões financeiras mais conscientes.
           </p>
@@ -366,7 +354,7 @@ export default async function PostPage({ params }: PostPageProps) {
 
         {relatedPosts.length > 0 && (
           <div className="mt-16 pt-12 border-t border-border/40">
-            <h3 className="text-2xl font-bold text-primary mb-8">Veja também</h3>
+            <h2 className="text-2xl font-bold text-primary mb-8">Veja também</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {relatedPosts.map((rPost) => (
                 <Link key={rPost.slug} href={`/blog/${rPost.slug}`} className="group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring rounded-xl">

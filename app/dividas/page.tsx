@@ -8,6 +8,7 @@ import { Badge } from '@/components/ui/badge'
 import { ArrowRight, AlertTriangle, ClipboardList, TrendingDown, CreditCard, Calculator } from 'lucide-react'
 import { getPostBySlug } from '@/lib/posts'
 import type { Post } from '@/lib/posts'
+import { FAQSection } from '@/components/faq-section'
 
 export const metadata: Metadata = {
   title: 'Dívidas - Como Sair das Dívidas e Limpar o Nome',
@@ -190,6 +191,14 @@ export default function DividasPage() {
           </div>
         </section>
 
+        <FAQSection
+          items={[
+            { question: 'Qual dívida devo pagar primeiro?', answer: 'Priorize dívidas com juros mais altos (rotativo do cartão, cheque especial) e contas essenciais (água, luz, aluguel). Dívidas com garantia (como financiamento imobiliário) podem ter prioridade menor.' },
+            { question: 'Vale a pena pegar empréstimo para quitar dívidas?', answer: 'Depende das taxas. Se o novo empréstimo tiver juros menores que a dívida atual, pode valer a pena. Simule antes com nossas calculadoras.' },
+            { question: 'Negociar dívida afeta o score?', answer: 'Negociar em si não afeta negativamente. O que impacta o score é o atraso no pagamento. Após negociar e pagar as parcelas em dia, seu score tende a se recuperar.' },
+          ]}
+          pageUrl={`${SITE_URL}/dividas`}
+        />
         <section className="rounded-3xl border bg-gradient-to-br from-primary to-primary/90 p-8 md:p-12 text-center text-primary-foreground shadow-lg">
           <Calculator className="w-10 h-10 mx-auto mb-4 text-secondary" />
           <h2 className="text-2xl font-bold mb-3">Calcule seu plano de saída das dívidas</h2>

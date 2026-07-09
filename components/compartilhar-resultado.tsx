@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { Share2 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
-import { resultadoCompartilhado } from '@/lib/analytics'
+import { event } from '@/lib/analytics'
 
 interface CompartilharResultadoProps {
   titulo: string
@@ -20,7 +20,7 @@ export function CompartilharResultado({ titulo, texto, url }: CompartilharResult
     if (typeof navigator.share === 'function') {
       try {
         await navigator.share({ title: titulo, text: texto, url: shareUrl })
-        resultadoCompartilhado()
+        event('resultado_compartilhado', { timestamp: Date.now() })
       } catch {
         // user cancelled
       }

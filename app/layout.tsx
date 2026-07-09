@@ -1,6 +1,6 @@
 import { Suspense } from 'react'
 import type { Metadata, Viewport } from 'next'
-import { Inter, Geist_Mono } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
@@ -15,10 +15,6 @@ const inter = Inter({
   variable: '--font-inter'
 })
 
-const geistMono = Geist_Mono({ 
-  subsets: ["latin"],
-  variable: '--font-geist-mono'
-})
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -52,8 +48,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: '/og-image.png',
-        width: 1731,
-        height: 909,
+        width: 1200,
+        height: 630,
         alt: SITE_NAME,
       },
     ],
@@ -90,7 +86,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="pt-BR" className={`${inter.variable} ${geistMono.variable} bg-background`}>
+    <html lang="pt-BR" className={`${inter.variable} bg-background`}>
       <head>
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1190641604220445" crossOrigin="anonymous"></script>
         <script
@@ -124,7 +120,7 @@ export default function RootLayout({
                     '@type': 'SearchAction',
                     'target': {
                       '@type': 'EntryPoint',
-                      'urlTemplate': `${SITE_URL}/blog?search={search_term_string}`
+                      'urlTemplate': `${SITE_URL}/blog?q={search_term_string}`
                     },
                     'query-input': 'required name=search_term_string'
                   }

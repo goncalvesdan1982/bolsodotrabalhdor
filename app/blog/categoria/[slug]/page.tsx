@@ -26,18 +26,19 @@ export async function generateMetadata({ params, searchParams }: CategoryPagePro
   if (!category) return { title: 'Categoria não encontrada' }
 
   const currentPage = Math.max(1, parseInt(page || '1'))
-  const title = currentPage > 1
-    ? `Artigos sobre ${category.label} - Página ${currentPage} | Bolso do Trabalhador`
-    : `Artigos sobre ${category.label} | Bolso do Trabalhador`
+  const pageTitle = currentPage > 1
+    ? `Artigos sobre ${category.label} - Página ${currentPage}`
+    : `Artigos sobre ${category.label}`
+  const ogTitle = `${pageTitle} | Bolso do Trabalhador`
 
   return {
-    title,
+    title: pageTitle,
     description: `Confira todos os nossos artigos e guias sobre ${category.label}. Educação financeira prática para o dia a dia do trabalhador brasileiro.`,
     alternates: {
       canonical: `${SITE_URL}/blog/categoria/${slug}${currentPage > 1 ? `?page=${currentPage}` : ''}`,
     },
     openGraph: {
-      title,
+      title: ogTitle,
       description: `Confira todos os nossos artigos e guias sobre ${category.label}. Educação financeira prática.`,
       url: `${SITE_URL}/blog/categoria/${slug}${currentPage > 1 ? `?page=${currentPage}` : ''}`,
       siteName: 'Bolso do Trabalhador',
@@ -52,7 +53,7 @@ export async function generateMetadata({ params, searchParams }: CategoryPagePro
     },
     twitter: {
       card: 'summary_large_image',
-      title,
+      title: ogTitle,
       description: `Confira todos os nossos artigos e guias sobre ${category.label}.`,
       images: [`${SITE_URL}/og-image.png`],
     },
