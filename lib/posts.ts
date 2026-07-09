@@ -610,7 +610,7 @@ export const posts: Post[] = [
 
 <section>
 <div class="callout callout-conclusao">
-<h2>Conclusão</h2>
+<h2>O caminho para sair das dívidas</h2>
 <p>Sair das dívidas não é um evento, é um processo. Não existe fórmula mágica, atalho ou solução milagrosa. O que existe é um caminho estruturado, com planejamento, negociação e disciplina.</p>
 
 <p>O primeiro passo é sempre o mesmo: organizar a situação real. Depois, priorizar, negociar com inteligência e evitar novas armadilhas. Cada pequena vitória ao longo do caminho conta — uma dívida quitada, uma negociação bem-feita, um mês sem usar o cartão.</p>
@@ -629,10 +629,10 @@ export const posts: Post[] = [
       { question: 'O que acontece se eu parar de pagar o cartão?', answer: 'Os juros continuam correndo, seu nome pode ser negativado após 90 dias, e a dívida pode ser cobrada judicialmente. Antes de parar de pagar, tente negociar com o banco. Leia <a href="/blog/o-que-acontece-se-parar-de-pagar-cartao">O que acontece se eu parar de pagar o cartão?</a>' },
       { question: 'Parcelar fatura compensa?', answer: 'Parcelar a fatura pode ser melhor que pagar o mínimo e entrar no rotativo, mas ainda assim os juros são altos. Antes de parcelar, compare o CET e veja se consegue negociar um desconto à vista. Veja <a href="/blog/fatura-parcelada-compensa">Fatura parcelada compensa?</a>' },
       { question: 'Como negociar dívida com banco?', answer: 'Ligue para o SAC ou acesse o aplicativo do banco. Peça o valor atualizado, pergunte por desconto à vista e solicite propostas parceladas. Compare o custo total antes de aceitar. Guarde todos os protocolos. Veja o guia completo: <a href="/blog/como-negociar-dividas-diretamente-com-banco">Como negociar dívidas diretamente com o banco</a>' },
-      { question: 'Como saber se uma proposta de acordo é boa?', answer: 'Compare o CET da proposta com os juros atuais da dívida. Veja se o valor total a pagar é menor que continuar sem acordo. Confira se a parcela cabe no seu orçamento. Desconfie de propostas muito agressivas feitas por canais não oficiais.' },
+      { question: 'Como saber se uma proposta de acordo é boa?', answer: 'Compare o CET da proposta com os juros atuais da dívida. Veja se o valor total a pagar é menor que continuar sem acordo. Confira se a parcela cabe no seu orçamento. Propuestas muito agressivas por canais não oficiais são suspeitas.' },
       { question: 'O score sobe depois de pagar dívida?', answer: 'Pode subir, mas não imediatamente em todos os casos. O score considera histórico de pagamentos, não apenas o pagamento de uma dívida. Com o tempo e pagamentos consistentes, o score tende a melhorar. Veja <a href="/blog/quanto-tempo-leva-para-score-aumentar">Quanto tempo leva para o score aumentar?</a>' },
       { question: 'Quanto tempo leva para limpar o nome?', answer: 'Após pagar ou negociar a dívida, o banco tem até 5 dias úteis para atualizar os birôs de crédito (Serasa, Boa Vista, SPC). Mas o score pode levar meses para refletir a mudança, dependendo do seu histórico geral.' },
-      { question: 'Como evitar cair em golpe de renegociação?', answer: 'Negocie apenas por canais oficiais (SAC, aplicativo, site do banco). Não pague boletos gerados por terceiros. Não informe senhas. Desconfie de descontos milagrosos recebidos por WhatsApp ou SMS. Guarde sempre o protocolo de cada negociação.' },
+      { question: 'Como evitar cair em golpe de renegociação?', answer: 'Negocie apenas por canais oficiais (SAC, aplicativo, site do banco). Não pague boletos gerados por terceiros. Não informe senhas. Descontos milagrosos recebidos por WhatsApp ou SMS são golpe. Guarde sempre o protocolo de cada negociação.' },
       { question: 'Posso sair das dívidas ganhando pouco?', answer: 'Sim, mas o processo pode ser mais lento e exige mais disciplina. O segredo é adequar o plano à sua realidade: negocie parcelas que cabem no seu orçamento, corte gastos não essenciais e busque fontes extras de renda se possível. O mais importante é não fazer novas dívidas enquanto paga as antigas.' },
     ],
   },
@@ -890,7 +890,7 @@ export const posts: Post[] = [
 <ul>
 <li>Ninguém pode garantir aumento de score mediante pagamento. Nem Serasa, nem Boa Vista, nem nenhuma empresa ou consultor.</li>
 <li>Não informe senha, código SMS ou dados bancários a terceiros que prometem &quot;limpar seu <strong>CPF</strong>&quot;.</li>
-<li>Desconfie de mensagens no WhatsApp, ligações ou anúncios prometendo score alto em dias.</li>
+<li>Cuidado com mensagens no WhatsApp, ligações ou anúncios prometendo score alto em dias.</li>
 <li>Consulte somente <strong>canais oficiais</strong>: sites e apps da Serasa, Boa Vista, SPC Brasil e Banco Central.</li>
 <li>Score melhora com comportamento financeiro, não com &quot;atalho&quot; ou pagamento de taxa.</li>
 <li>Se alguém pedir dinheiro para aumentar seu score, é golpe. Denuncie.</li>
@@ -899,7 +899,7 @@ export const posts: Post[] = [
 </section>
 <section>
 <div class="callout callout-conclusao">
-<h2>Conclusão</h2>
+<h2>O essencial sobre score de crédito</h2>
 <p>Aumentar o <strong>score de crédito</strong> é possível, mas não existe caminho curto. O que funciona de verdade é manter pagamentos em dia, usar o crédito com responsabilidade, ativar o <strong>Cadastro Positivo</strong> e ter paciência para construir um histórico sólido.</p>
 <p>Não caia em promessas de aumento rápido. Não pague por serviços que dizem &quot;limpar seu nome&quot; ou &quot;aumentar seu score&quot;. Não acredite que <strong>CPF</strong> na nota, Pix ou renda alta vão mudar sua pontuação. O score é sobre comportamento, não sobre atalhos.</p>
 <p>Comece hoje com o que está ao seu alcance: organize suas contas, negocie o que deve, evite novo endividamento e acompanhe sua evolução mês a mês.</p>
@@ -948,7 +948,7 @@ export const posts: Post[] = [
 <li>Cartões consignados têm regras próprias e exigem cuidado com o comprometimento da renda.</li>
 <li>Evite solicitar muitos cartões ao mesmo tempo — cada consulta ao <strong>CPF</strong> pode impactar o score.</li>
 <li>Compare anuidade, tarifas, juros e condições antes de contratar.</li>
-<li>Desconfie de ofertas com aprovação garantida ou cobrança de taxa antecipada.</li>
+<li>Fique atento a ofertas com aprovação garantida ou cobrança de taxa antecipada.</li>
 </ul>
 </section>
 <section><h2>Score baixo impede ter cartão?</h2>
@@ -1017,14 +1017,14 @@ export const posts: Post[] = [
 <li><strong>Confundir pré-pago com crédito:</strong> cartão pré-pago não funciona como crédito tradicional — não gera fatura, não permite parcelamento e geralmente não ajuda a construir histórico de crédito.</li>
 <li><strong>Contratar por promessa de limite alto:</strong> ofertas que prometem limite alto sem análise devem ser tratadas com desconfiança.</li>
 <li><strong>Ignorar os juros do rotativo:</strong> mesmo com limite baixo, o rotativo do cartão tem juros elevados. Atrasar uma fatura pode gerar uma dívida cara.</li>
-<li><strong>Pagar taxa para liberar cartão:</strong> em ofertas legítimas, custos, tarifas e encargos devem aparecer no contrato ou nas condições do produto. Desconfie de qualquer cobrança antecipada para liberar cartão.</li>
+<li><strong>Pagar taxa para liberar cartão:</strong> em ofertas legítimas, custos, tarifas e encargos devem aparecer no contrato ou nas condições do produto. Cuidado com cobranças antecipadas para liberar cartão.</li>
 <li><strong>Usar cartão para complementar renda todo mês:</strong> se o cartão é usado para cobrir gastos recorrentes sem planejamento, o endividamento pode aumentar em vez de diminuir.</li>
 </ol>
 </section>
 <section><h2><strong>Cuidado</strong>s contra golpes</h2>
 <div class="callout callout-attention"><p><strong>Atenção:</strong> Golpes financeiros são comuns. Ao buscar um cartão, alguns cuidados são essenciais:</p></div>
 <ul>
-<li><strong>Desconfie de aprovação garantida:</strong> ofertas que prometem aprovação sem análise, sem verificação mínima de renda ou sem apresentação clara das condições devem ser tratadas com desconfiança. Ofertas com aprovação garantida para negativados merecem atenção redobrada.</li>
+<li><strong>Suspeite de aprovação garantida:</strong> ofertas que prometem aprovação sem análise, sem verificação mínima de renda ou sem apresentação clara das condições merecem atenção redobrada. Ofertas com aprovação garantida para negativados são particularmente suspeitas.</li>
 <li><strong>Não pague taxa antecipada:</strong> cobrança para liberar cartão, analisar crédito ou enviar o plástico é sinal de golpe. Em ofertas legítimas, custos devem aparecer no contrato.</li>
 <li><strong>Não compartilhe senhas ou dados bancários:</strong> códigos de autenticação, senhas de acesso e dados de conta não devem ser fornecidos a terceiros.</li>
 <li><strong>Confirme se a instituição é autorizada:</strong> consulte a lista de instituições autorizadas no site do Banco Central antes de contratar qualquer produto.</li>
@@ -1052,12 +1052,12 @@ export const posts: Post[] = [
 <li><strong>Se há dívidas urgentes:</strong> priorize negociar dívidas com juros altos antes de contratar novos produtos. Use a <a href="/calculadoras/quitacao-dividas">calculadora de quitação de dívidas</a> como referência.</li>
 <li><strong>Se o cartão seria usado para cobrir despesas básicas recorrentes:</strong> isso pode indicar que o orçamento precisa de ajuste, não de crédito. A <a href="/calculadoras/orcamento-familiar">calculadora de orçamento familiar</a> pode ajudar a organizar os gastos.</li>
 <li><strong>Se você não sabe quanto pagará de juros:</strong> antes de contratar, entenda o <strong>CET</strong> e as condições do contrato.</li>
-<li><strong>Se a oferta exige taxa antecipada:</strong> é sinal de alerta. Em ofertas legítimas, custos, tarifas e encargos aparecem no contrato ou nas condições do produto. Desconfie de qualquer cobrança antecipada para liberar cartão.</li>
+<li><strong>Se a oferta exige taxa antecipada:</strong> é sinal de alerta. Em ofertas legítimas, custos, tarifas e encargos aparecem no contrato ou nas condições do produto. Cobrança antecipada para liberar cartão é bandeira vermelha.</li>
 </ul>
 </section>
 <section>
 <div class="callout callout-conclusao">
-<h2>Conclusão</h2>
+<h2>Escolhendo o melhor cartão</h2>
 <p>Não existe um cartão ideal para todos os perfis. A escolha depende do tipo de vínculo, da renda, do objetivo de uso e da política de cada instituição. Score baixo exige mais pesquisa, comparação e cautela, mas não significa que nenhuma opção está disponível.</p>
 <p>O melhor cartão é aquele que cabe no orçamento, não compromete despesas essenciais e não gera endividamento. Antes de solicitar, compare condições, leia o contrato e desconfie de ofertas que prometem aprovação sem análise.</p>
 <p>Para continuar sua pesquisa, veja também:</p>
@@ -1078,7 +1078,7 @@ export const posts: Post[] = [
       { question: 'Cartão pré-pago ajuda no score?', answer: 'Geralmente não. O cartão pré-pago não envolve análise de crédito, parcelamento ou fatura, por isso não costuma gerar dados para os birôs. Pode ser útil para controle de gastos, mas não substitui o crédito tradicional para quem precisa construir histórico.' },
       { question: 'Pedir muitos cartões pode atrapalhar?', answer: 'Sim, cada solicitação gera uma consulta ao CPF nos birôs de crédito. Muitas consultas em curto período podem reduzir temporariamente o score. O ideal é pesquisar antes e solicitar apenas uma ou duas opções com maior chance de aprovação.' },
       { question: 'Qual cuidado tomar com cartão consignado?', answer: 'O cartão consignado tem desconto automático no salário ou benefício. Antes de contratar, verifique o CET, as taxas de juros e se a parcela cabe no orçamento sem comprometer despesas essenciais. O comprometimento da renda pode ser duradouro.' },
-      { question: 'Como evitar golpes de cartão para negativado?', answer: 'Desconfie de ofertas com aprovação garantida, não pague taxa antecipada para liberar cartão, não compartilhe senhas ou dados bancários, confirme se a instituição é autorizada pelo Banco Central e acesse o site oficial diretamente, sem clicar em links recebidos por SMS ou WhatsApp.' },
+      { question: 'Como evitar golpes de cartão para negativado?', answer: 'Cuidado com ofertas com aprovação garantida, não pague taxa antecipada para liberar cartão, não compartilhe senhas ou dados bancários, confirme se a instituição é autorizada pelo Banco Central e acesse o site oficial diretamente, sem clicar em links recebidos por SMS ou WhatsApp.' },
       { question: 'O que fazer antes de pedir um novo cartão?', answer: 'Compare anuidade, tarifas e juros entre instituições, verifique se o cartão atende seu objetivo, confira se a parcela da fatura cabe no orçamento, leia o contrato e evite solicitar muitos cartões ao mesmo tempo. Use calculadoras como a de comprometimento de renda para simular o impacto.' },
     ],
   },
@@ -1178,7 +1178,7 @@ export const posts: Post[] = [
 <li><strong>CET mais baixo:</strong> por ter menor risco, o consignado geralmente apresenta <strong>CET</strong> menor que o pessoal. Para quem tem acesso, pode representar economia no custo total.</li>
 <li><strong>Renda estável e previsível:</strong> servidores públicos, aposentados e CLT de empresas consolidadas têm renda recorrente, o que reduz o risco de atraso nas parcelas.</li>
 <li><strong>Parcela cabe com folga no orçamento:</strong> mesmo com o desconto automático, a parcela não deve comprometer gastos essenciais como alimentação, moradia e saúde.</li>
-<li><strong>Contratação em canal confiável:</strong> o consignado deve ser contratado diretamente no banco ou instituição autorizada. Desconfie de intermediários que cobram para &quot;facilitar&quot; a liberação.</li>
+<li><strong>Contratação em canal confiável:</strong> o consignado deve ser contratado diretamente no banco ou instituição autorizada. Intermediários que cobram para &quot;facilitar&quot; a liberação são suspeitos.</li>
 <li><strong>Troca de dívida cara por mais barata:</strong> se a pessoa tem dívidas com juros altos (cartão de crédito, cheque especial), o consignado pode ajudar a reduzir o custo mensal — desde que a parcela caiba no orçamento.</li>
 </ul>
 </section>
@@ -1191,17 +1191,6 @@ export const posts: Post[] = [
 <li><strong>CET não está claro:</strong> se a instituição não informa o <strong>CET</strong> de forma transparente, isso pode ser um sinal de alerta.</li>
 <li><strong>Suspeita de golpe:</strong> ofertas com aprovação garantida, sem consulta a órgãos de proteção ao crédito ou com cobrança de taxa antecipada devem ser tratadas com muita desconfiança.</li>
 <li><strong>Trocar dívida sem renegociar as condições:</strong> substituir uma dívida por outra com <strong>CET</strong> igual ou maior não resolve o problema. Veja o artigo <a href="/blog/vale-a-pena-trocar-divida-cartao-por-emprestimo">vale a pena trocar dívida de cartão por empréstimo</a> para entender melhor.</li>
-</ul>
-</section>
-<section><h2><strong>Cuidado</strong>s contra golpes</h2>
-<div class="callout callout-attention"><p><strong>Atenção:</strong> Golpes financeiros são comuns. Alguns cuidados essenciais:</p></div>
-<ul>
-<li><strong>Evite pagar taxa antecipada</strong> para liberar empréstimo. Em ofertas legítimas, custos e encargos devem aparecer no contrato ou no <strong>CET</strong>. Desconfie de qualquer cobrança antecipada para liberar crédito.</li>
-<li><strong>Não compartilhe senhas, códigos de autenticação ou dados bancários</strong> com supostos consultores ou correspondentes.</li>
-<li><strong>Desconfie de aprovação garantida</strong> ou &quot;sem consulta ao SPC/Serasa&quot;. Desconfie de ofertas que prometem aprovação sem análise, sem verificação de renda ou sem apresentação clara do contrato.</li>
-<li><strong>Confira se a instituição é autorizada pelo Banco Central</strong> antes de contratar. O site do BCB mantém uma lista de instituições autorizadas.</li>
-<li><strong>Guarde todos os comprovantes:</strong> contrato, comprovantes de pagamento, extratos e comunicações com a instituição.</li>
-<li><strong>Desconfie de contatos não solicitados:</strong> ofertas por WhatsApp, SMS ou ligação devem ser verificadas antes de qualquer ação.</li>
 </ul>
 </section>
 <section><h2>Como decidir na prática</h2>
@@ -1413,7 +1402,7 @@ export const posts: Post[] = [
 </section>
 <section>
 <div class="callout callout-conclusao">
-<h2>Conclusão</h2>
+<h2>Adaptando o método à sua realidade</h2>
 <p>O método 50-30-20 é uma ferramenta simples que pode ajudar muitas pessoas a organizar o orçamento e ter mais clareza sobre as próprias finanças. Ele não precisa ser seguido de forma rígida — adaptar os percentuais à sua realidade é melhor do que abandonar o método porque ele não se encaixou de primeira.</p>
 <p>O mais importante é saber para onde o dinheiro está indo, identificar o que pode ser ajustado e criar uma rotina de acompanhamento. A educação financeira é um processo contínuo, e cada pequeno passo pode fazer diferença ao longo do tempo.</p>
 <p>Para continuar seu planejamento, veja também:</p>
@@ -1457,16 +1446,6 @@ export const posts: Post[] = [
 <section><h2>Quanto custa morar sozinho?</h2>
 <p>Não existe um valor único para morar sozinho. O custo depende da cidade, do bairro, do tipo de imóvel, do padrão de consumo e da estrutura que cada pessoa já tem ou precisa montar. O que funciona em um contexto pode ser muito diferente em outro.</p>
 <p>Este artigo apresenta as principais categorias de gasto, estimativas ilustrativas e um roteiro para quem está planejando sair da casa dos pais, dividir moradia ou assumir as próprias contas. As informações são educativas e não substituem uma simulação com dados reais da sua região. Consulte sites de aluguel, supermercados e prestadores locais para confirmar valores.</p>
-</section>
-<section><h2>Resumo rápido</h2>
-<ul>
-<li>Aluguel costuma ser o maior gasto mensal — e também o que mais varia por região.</li>
-<li>Além do aluguel, há condomínio, contas de consumo, alimentação, transporte, saúde e lazer.</li>
-<li>Antes de se mudar, é importante considerar os custos iniciais: caução, mudança, móveis, eletrodomésticos e utensílios.</li>
-<li>Ter uma reserva financeira antes da mudança reduz o risco de imprevistos.</li>
-<li>Dividir aluguel pode reduzir o custo mensal, mas exige organização e combinados claros.</li>
-<li>Simular o orçamento antes de alugar ajuda a evitar surpresas. Use as calculadoras do site como referência.</li>
-</ul>
 </section>
 <section><h2>Principais gastos de quem mora sozinho</h2>
 <p>Morar sozinho envolve mais despesas do que apenas o aluguel. Conhecer cada categoria ajuda a montar uma estimativa mais próxima da realidade.</p>
@@ -1594,7 +1573,7 @@ export const posts: Post[] = [
 </section>
 <section>
 <div class="callout callout-conclusao">
-<h2>Conclusão</h2>
+<h2>Planejamento antes da mudança</h2>
 <p>Morar sozinho pode ser um passo importante rumo à independência, mas o planejamento faz toda a diferença. O custo varia muito de cidade para cidade e de pessoa para pessoa, por isso não existe uma resposta única para "quanto custa morar sozinho".</p>
 <p>O caminho mais seguro é montar uma simulação realista com suas próprias despesas, guardar uma reserva antes da mudança e não decidir apenas pelo valor do aluguel. Use este artigo como referência educativa e confirme os valores com fontes locais antes de contratar.</p>
 <p>Para continuar seu planejamento, veja também:</p>
@@ -1707,7 +1686,7 @@ export const posts: Post[] = [
 </section>
 <section>
 <div class="callout callout-conclusao">
-<h2>Conclusão</h2>
+<h2>Antes de trocar a dívida</h2>
 <p>Trocar dívida do cartão por empréstimo pode ser uma estratégia útil em alguns casos, desde que o <strong>CET</strong> seja menor e a parcela caiba no orçamento. Mas não existe garantia de economia — cada situação precisa ser analisada individualmente. Antes de contratar, compare propostas, leia o contrato e avalie se o comportamento de consumo está sob controle. Veja também o artigo <a href="/blog/qual-divida-devo-pagar-primeiro">qual dívida pagar primeiro</a> para entender a melhor ordem de prioridades.</p>
 </div>
 </section>
@@ -1749,7 +1728,7 @@ export const posts: Post[] = [
 <li>Compare ofertas em plataformas como Serasa Limpa Nome e Acordo OK antes de fechar.</li>
 <li>Registre o protocolo, o nome do atendente e as condições acordadas em cada contato.</li>
 <li>Só efetue o pagamento após receber o contrato por escrito ou por e-mail.</li>
-<li>Desconfie de propostas recebidas por WhatsApp, SMS ou e-mail não solicitado.</li>
+<li>Cuidado com propostas recebidas por WhatsApp, SMS ou e-mail não solicitado.</li>
 </ul>
 </section>
 
@@ -1840,7 +1819,7 @@ export const posts: Post[] = [
 
 <section>
 <div class="callout callout-conclusao">
-<h2>Conclusão</h2>
+<h2>Preparando-se para negociar</h2>
 <p>Negociar dívida com banco é possível e pode trazer descontos significativos. O segredo é se preparar, ser honesto sobre sua capacidade de pagamento e não aceitar a primeira oferta sem comparar. O banco prefere receber menos do que não receber nada.</p>
 <p>Antes de negociar, organize seu orçamento com a <a href="/calculadoras/orcamento-familiar">calculadora de orçamento familiar</a>. Veja também o guia <a href="/blog/como-sair-das-dividas-guia-completo">Como sair das dívidas: guia completo</a> e o artigo sobre <a href="/blog/qual-divida-devo-pagar-primeiro">qual dívida pagar primeiro</a> para definir sua estratégia.</p>
 </div>
@@ -1941,7 +1920,7 @@ export const posts: Post[] = [
 </section>
 <section>
 <div class="callout callout-conclusao">
-<h2>Conclusão</h2>
+<h2>Definindo suas prioridades</h2>
 <p>A melhor dívida para pagar primeiro é a que tem o maior juro, mas isso não significa ignorar as demais. Negocie descontos, priorize o que aperta mais o orçamento e, acima de tudo, evite criar novas dívidas enquanto quita as antigas. O método ideal é aquele que você consegue manter com consistência ao longo do tempo. Veja também <a href="/blog/vale-a-pena-trocar-divida-cartao-por-emprestimo">se vale a pena trocar dívida por empréstimo</a> e entenda <a href="/blog/o-que-acontece-se-parar-de-pagar-cartao">o que acontece se parar de pagar o cartão</a>.</p>
 </div>
 </section>
@@ -2038,7 +2017,7 @@ export const posts: Post[] = [
 </section>
 <section>
 <div class="callout callout-conclusao">
-<h2>Conclusão</h2>
+<h2>E agora? Próximos passos</h2>
 <p>Parar de pagar o cartão tem consequências sérias, mas não é irreversível. Milhares de pessoas negociam dívidas de cartão todos os meses e conseguem regularizar a situação. Quanto antes você negociar, menos juros pagará e mais rápido recuperará o acesso ao crédito. O pior caminho é ignorar o problema. Veja também o guia completo <a href="/blog/como-sair-das-dividas-guia-completo">como sair das dívidas</a> e a calculadora de <a href="/calculadoras/quitacao-dividas">quitação de dívidas</a> para simular cenários.</p>
 </div>
 </section>
@@ -2150,7 +2129,7 @@ export const posts: Post[] = [
 </section>
 <section>
 <div class="callout callout-conclusao">
-<h2>Conclusão</h2>
+<h2>Seu plano em ação</h2>
 <p>Montar um plano para sair das dívidas exige honestidade sobre a situação financeira e disciplina para seguir o cronograma. Não existe solução rápida — cada passo dado no prazo certo aproxima do objetivo. Comece pelo diagnóstico e avance uma etapa de cada vez. Veja também o guia completo <a href="/blog/como-sair-das-dividas-guia-completo">como sair das dívidas</a> e entenda <a href="/blog/vale-a-pena-trocar-divida-cartao-por-emprestimo">se vale trocar dívida por empréstimo</a>.</p>
 </div>
 </section>
@@ -2378,20 +2357,7 @@ export const posts: Post[] = [
 </ul>
 </section>
 
-<section>
-<h2>Box de alerta: cuidado com promessa de score rápido</h2>
-<div class="callout callout-attention">
-<p><strong>Cuidado:</strong> golpes de "score rápido"</p>
-<p>Ninguém pode garantir aumento de score mediante pagamento. Empresas que prometem &quot;limpar seu nome em 24 horas&quot; ou &quot;aumentar seu score em 7 dias&quot; mediante pagamento de taxa estão mentindo.</p>
-<ul>
-<li>Não informe senha, código SMS ou dados bancários para terceiros</li>
-<li>Não pague taxa para &quot;subir score&quot; ou &quot;excluir consultas do <strong>CPF</strong>&quot;</li>
-<li>Desconfie de &quot;consultores de score&quot; que cobram adiantado</li>
-<li>Use apenas <strong>canais oficiais</strong>: Serasa, Boa Vista, SPC Brasil e <strong>Registrato</strong> (Banco Central)</li>
-<li>Score melhora com histórico financeiro real, não com atalho</li>
-</ul>
-</div>
-</section>
+<p><strong>Alerta:</strong> Ninguém pode garantir aumento de score mediante pagamento. Empresas que prometem &quot;limpar seu nome em 24 horas&quot; ou &quot;aumentar seu score em 7 dias&quot; cobrando taxa estão mentindo. Score melhora com histórico financeiro real, não com atalhos.</p>
 
 <section>
 <h2>Conclusão: consistência supera velocidade</h2>
@@ -2420,7 +2386,7 @@ export const posts: Post[] = [
       { question: 'Score 500 pode virar 700 em quanto tempo?', answer: 'Em cenário favorável, com histórico consistente de pagamentos em dia, Cadastro Positivo ativo e baixa utilização do crédito, pode levar de 12 a 24 meses. A evolução tende a ser mais lenta quanto mais alto o score.' },
       { question: 'Por que meu score não subiu depois de limpar o nome?', answer: 'Limpar o nome remove a negativação, mas o score também considera outros fatores: seu histórico de pagamentos, uso do cartão, consultas ao CPF e tempo de relacionamento. Se você limpou o nome mas ainda tem comportamento financeiro instável, o score pode demorar para refletir a mudança.' },
       { question: 'Meu score caiu depois de pagar dívida, é normal?', answer: 'Pode acontecer em alguns casos. Isso ocorre porque o score é recalculado com base em novas informações. Além disso, o pagamento de uma dívida pode gerar atualizações que revelam outros dados. A tendência é que o score se estabilize e melhore nos meses seguintes com bons hábitos.' },
-      { question: 'Posso pagar alguém para aumentar meu score?', answer: 'Não. É golpe. Nenhuma empresa ou pessoa pode alterar seu score mediante pagamento. O score reflete seu comportamento financeiro real e não pode ser comprado. Desconfie de qualquer serviço que cobre para "subir score" ou "excluir consultas do CPF".' },
+      { question: 'Posso pagar alguém para aumentar meu score?', answer: 'Não. É golpe. Nenhuma empresa ou pessoa pode alterar seu score mediante pagamento. O score reflete seu comportamento financeiro real e não pode ser comprado. Suspeite de qualquer serviço que cobre para "subir score" ou "excluir consultas do CPF".' },
       { question: 'Quanto tempo devo esperar para pedir cartão depois de limpar o nome?', answer: 'O ideal é esperar de 3 a 6 meses após limpar o nome, mantendo pagamentos em dia e construindo histórico positivo com o Cadastro Positivo. Isso aumenta suas chances de aprovação e evita o ciclo de endividamento.' },
     ],
   },
@@ -2500,7 +2466,7 @@ export const posts: Post[] = [
 </section>
 <section>
 <div class="callout callout-conclusao">
-<h2>Conclusão</h2>
+<h2>Evolução do score: o que esperar</h2>
 <p>O <strong>score de crédito</strong> reflete o comportamento financeiro com base nos dados disponíveis. Pagar contas em dia, manter o uso do cartão sob controle e ativar o <strong>Cadastro Positivo</strong> são ações que podem contribuir para uma pontuação mais favorável. Não existe fórmula mágica ou prazo garantido — a consistência ao longo do tempo é o que realmente faz diferença. Veja também <a href="/blog/como-aumentar-score-de-credito">como aumentar o <strong>score de crédito</strong></a> e <a href="/blog/quanto-tempo-leva-para-score-aumentar">quanto tempo leva para o score aumentar</a>.</p>
 </div>
 </section>
@@ -2586,7 +2552,7 @@ export const posts: Post[] = [
 </section>
 <section><h2><strong>Cuidado</strong>s ao ativar</h2>
 <ul>
-<li>Ative apenas pelos <strong>canais oficiais</strong> mencionados acima. Desconfie de sites que cobram para ativar o CP.</li>
+<li>Ative apenas pelos <strong>canais oficiais</strong> mencionados acima. Sites que cobram para ativar o CP são golpe.</li>
 <li>Acompanhe seu score depois da ativação para ver como seus pagamentos estão sendo registrados.</li>
 <li>Se você tem dívidas em atraso, considere negociá-las antes de ativar o CP. Veja o guia <a href="/blog/como-sair-das-dividas-guia-completo">como sair das dívidas</a> para orientação.</li>
 <li>Você pode solicitar a exclusão dos dados a qualquer momento, se desejar.</li>
@@ -2595,13 +2561,13 @@ export const posts: Post[] = [
 </section>
 <section>
 <div class="callout callout-conclusao">
-<h2>Conclusão</h2>
+<h2>Valeu a pena ativar?</h2>
 <p>O <strong>Cadastro Positivo</strong> vale a pena para quem paga contas em dia e quer que esse comportamento seja registrado. Ele não garante aumento de score, mas pode tornar a pontuação mais justa ao refletir tanto acertos quanto atrasos. Antes de ativar, avalie seu histórico de pagamentos e, se necessário, regularize pendências primeiro. Veja mais sobre score em <a href="/blog/como-aumentar-score-de-credito">como aumentar o <strong>score de crédito</strong></a> e <a href="/blog/o-que-realmente-influencia-score-credito">o que realmente influencia o score</a>.</p>
 </div>
 </section>
 `,
     faq: [
-      { question: 'Ativar o Cadastro Positivo é gratuito?', answer: 'Sim, a ativação e o acompanhamento são totalmente gratuitos. Desconfie de sites que cobram para ativar o Cadastro Positivo.' },
+      { question: 'Ativar o Cadastro Positivo é gratuito?', answer: 'Sim, a ativação e o acompanhamento são totalmente gratuitos. Sites que cobram para ativar o Cadastro Positivo são golpe.' },
       { question: 'Cadastro Positivo é obrigatório?', answer: 'Não, é opcional. Desde a atualização da lei, novos clientes de bancos podem ter adesão automática. Se você já era cliente antes, pode precisar ativar manualmente.' },
       { question: 'Posso desativar o Cadastro Positivo depois?', answer: 'Sim, você pode solicitar a exclusão dos seus dados a qualquer momento pelo site do Banco Central, da Serasa ou do SPC Brasil.' },
       { question: 'O Cadastro Positivo compartilha meus dados com outras empresas?', answer: 'Apenas com gestores autorizados (Serasa, Boa Vista, SPC Brasil, Quod) e somente para análise de crédito. A lei proíbe o uso para publicidade ou venda dos dados.' },
@@ -2693,7 +2659,7 @@ export const posts: Post[] = [
 </section>
 <section>
 <div class="callout callout-conclusao">
-<h2>Conclusão</h2>
+<h2>Começando com passos seguros</h2>
 <p>Score 400 não impede totalmente a obtenção de um cartão de crédito, mas as opções são mais limitadas. O caminho mais seguro é começar com um cartão mais acessível, usar com responsabilidade e construir um histórico positivo ao longo do tempo. Acompanhe a evolução do score e, quando o perfil estiver mais forte, as opções de crédito tendem a aumentar. Veja também <a href="/blog/melhores-cartoes-score-baixo">cartões para score baixo</a> e <a href="/blog/como-aumentar-score-de-credito">como aumentar o <strong>score de crédito</strong></a>.</p>
 </div>
 </section>
@@ -2792,7 +2758,7 @@ export const posts: Post[] = [
 </section>
 <section>
 <div class="callout callout-conclusao">
-<h2>Conclusão</h2>
+<h2>Acompanhamento regular</h2>
 <p>Consultar o score é gratuito e importante para acompanhar a saúde financeira. Crie o hábito de verificar sua pontuação mensalmente em pelo menos um dos birôs. Ative o <strong>Cadastro Positivo</strong> se paga contas em dia e acompanhe a evolução ao longo do tempo. Veja também <a href="/blog/como-aumentar-score-de-credito">como aumentar o <strong>score de crédito</strong></a> para orientações sobre melhoria da pontuação.</p>
 </div>
 </section>
@@ -2933,7 +2899,7 @@ export const posts: Post[] = [
 <section><h2><strong>Cuidado</strong>s contra golpes de aumento de limite</h2>
 <p>Golpes que prometem aumento de limite são comuns. Alguns cuidados ajudam a se proteger:</p>
 <ul>
-<li>Desconfie de promessas de "aumento garantido" ou "limite garantido".</li>
+<li>Cuidado com promessas de "aumento garantido" ou "limite garantido".</li>
 <li>Não pague taxa antecipada para liberar aumento de limite.</li>
 <li>Não informe senhas, códigos de autenticação, tokens ou dados bancários por WhatsApp, SMS, e-mail ou telefonema não solicitado.</li>
 <li>Acesse o aplicativo ou site oficial da instituição.</li>
@@ -2968,7 +2934,7 @@ export const posts: Post[] = [
 </section>
 <section>
 <div class="callout callout-conclusao">
-<h2>Conclusão</h2>
+<h2>Resumo para aumentar o limite</h2>
 <p>Aumentar o limite do cartão de crédito pode ser útil em algumas situações, mas não é uma necessidade para todos. Boas práticas como pagar faturas em dia, manter a renda atualizada e usar o cartão com controle podem contribuir para uma análise positiva, mas não garantem aumento.</p>
 <p>Cada instituição tem seus próprios critérios, e não existe método infalível. O mais importante é manter a saúde financeira em dia: evitar atrasos, controlar os gastos e usar o crédito de forma consciente.</p>
 <p>Use este artigo como referência educativa. Para informações específicas sobre seu cartão, consulte os <strong>canais oficiais</strong> da sua instituição.</p>
@@ -2983,7 +2949,7 @@ export const posts: Post[] = [
       { question: 'Atualizar renda no app ajuda?', answer: 'Sim, atualizar a renda no aplicativo ou site do banco pode ser considerado na análise. Se a renda aumentou, isso pode contribuir para uma nova avaliação. A informação precisa ser verdadeira e compatível com o perfil do cliente.' },
       { question: 'Pedir aumento muitas vezes atrapalha?', answer: 'Solicitar aumento muitas vezes em curto período pode não ajudar. Algumas instituições interpretam esse comportamento como necessidade financeira, o que pode ter efeito contrário. O recomendado é aguardar alguns meses entre as solicitações.' },
       { question: 'Limite maior pode prejudicar o orçamento?', answer: 'Pode, se não houver planejamento. Um limite maior aumenta o poder de compra, mas também o potencial de endividamento se os gastos não forem controlados. Antes de pedir aumento, avalie se o novo limite cabe no orçamento e se você tem controle dos gastos.' },
-      { question: 'Como evitar golpe de aumento de limite?', answer: 'Desconfie de promessas de aumento garantido ou limite garantido. Não pague taxa antecipada para liberar aumento. Não informe senhas, códigos ou dados bancários por WhatsApp, SMS ou e-mail. Faça qualquer solicitação apenas pelo aplicativo ou site oficial da instituição.' },
+      { question: 'Como evitar golpe de aumento de limite?', answer: 'Cuidado com promessas de aumento garantido ou limite garantido. Não pague taxa antecipada para liberar aumento. Não informe senhas, códigos ou dados bancários por WhatsApp, SMS ou e-mail. Faça qualquer solicitação apenas pelo aplicativo ou site oficial da instituição.' },
     ],
   },
   // === CARTÕES — ARTIGO 2/5 ===
@@ -3117,8 +3083,8 @@ export const posts: Post[] = [
 <section><h2><strong>Cuidado</strong>s contra golpes</h2>
 <p>Golpes envolvendo cartões de crédito são comuns. Alguns cuidados ajudam a se proteger:</p>
 <ul>
-<li>Desconfie de ofertas com "aprovação garantida" ou "limite alto garantido".</li>
-<li>Não pague taxa antecipada para liberar cartão — em ofertas legítimas, custos e tarifas devem aparecer no contrato ou nas condições do produto. Desconfie de cobranças antecipadas para liberar cartão.</li>
+<li>Cuidado com ofertas com "aprovação garantida" ou "limite alto garantido".</li>
+<li>Não pague taxa antecipada para liberar cartão — em ofertas legítimas, custos e tarifas devem aparecer no contrato ou nas condições do produto. Cobranças antecipadas para liberar cartão são suspeitas.</li>
 <li>Não envie senhas, códigos de acesso ou dados bancários por WhatsApp, SMS ou e-mail.</li>
 <li>Acesse o site ou aplicativo oficial da instituição, não links recebidos por terceiros.</li>
 <li>Confirme se a instituição é autorizada a funcionar pelo Banco Central.</li>
@@ -3154,7 +3120,7 @@ export const posts: Post[] = [
 </section>
 <section>
 <div class="callout callout-conclusao">
-<h2>Conclusão</h2>
+<h2>Sem anuidade, mas com atenção</h2>
 <p>Cartão sem anuidade pode ser uma boa opção para muitos perfis, especialmente para quem busca simplicidade e quer evitar um custo fixo. Mas "sem anuidade" não significa ausência total de custo — juros, tarifas e encargos podem existir.</p>
 <p>O maior risco ao usar qualquer cartão de crédito não está na anuidade, mas no uso do crédito em si. A fatura paga integralmente é o principal fator para evitar juros. Comparar contratos, tarifas e o próprio comportamento de consumo é mais relevante do que escolher o cartão apenas pela ausência de anuidade.</p>
 <p>Para continuar sua organização financeira, veja também:</p>
@@ -3176,7 +3142,7 @@ export const posts: Post[] = [
       { question: 'Vale a pena trocar um cartão com anuidade por um sem anuidade?', answer: 'Depende do perfil de uso. Se você não aproveita os benefícios do cartão com anuidade (programa de pontos, seguros, salas VIP), a troca pode reduzir custo. Se você usa esses benefícios com frequência, o cartão com anuidade pode compensar. Calcule o custo total de cada opção antes de decidir.' },
       { question: 'Cashback em cartão sem anuidade compensa?', answer: 'Cashback pode ser um benefício interessante, mas não deve ser o único motivo para escolher um cartão. O retorno em cashback costuma ser pequeno em relação ao gasto total e não compensa se a pessoa gastar mais por causa do benefício. Priorize pagar a fatura integral antes de pensar em cashback.' },
       { question: 'Posso ter mais de um cartão sem anuidade?', answer: 'Sim, é possível, mas avalie se realmente precisa. Ter vários cartões pode desorganizar o orçamento, gerar mais faturas para acompanhar e aumentar o risco de gastar além da renda. Manter um ou dois cartões costuma ser mais fácil de controlar.' },
-      { question: 'Como evitar golpes de cartão sem anuidade?', answer: 'Desconfie de ofertas com aprovação garantida ou limite alto garantido. Não pague taxa antecipada para liberar cartão. Acesse apenas os canais oficiais da instituição. Confirme se o banco ou fintech é autorizado pelo Banco Central. Leia o contrato antes de assinar.' },
+      { question: 'Como evitar golpes de cartão sem anuidade?', answer: 'Cuidado com ofertas com aprovação garantida ou limite alto garantido. Não pague taxa antecipada para liberar cartão. Acesse apenas os canais oficiais da instituição. Confirme se o banco ou fintech é autorizado pelo Banco Central. Leia o contrato antes de assinar.' },
     ],
   },
   // === CARTÕES — ARTIGO 3/5 ===
@@ -3320,12 +3286,12 @@ export const posts: Post[] = [
 </section>
 <section><h2><strong>Cuidado</strong>s contra golpes</h2>
 <ul>
-<li><strong>Não pague taxa antecipada</strong> para renegociar dívida ou liberar crédito — em ofertas legítimas, custos e condições devem aparecer no contrato ou nos <strong>canais oficiais</strong>. Desconfie de cobranças antecipadas</li>
+<li><strong>Não pague taxa antecipada</strong> para renegociar dívida ou liberar crédito — em ofertas legítimas, custos e condições devem aparecer no contrato ou nos <strong>canais oficiais</strong>. Cuidado com cobranças antecipadas</li>
 <li><strong>Acesse apenas os canais oficiais do banco:</strong> app, site ou telefone registrado no Banco Central</li>
 <li><strong>Cuidado com links recebidos por WhatsApp, SMS ou e-mail:</strong> podem ser tentativas de phishing</li>
 <li><strong>Confirme o canal de atendimento</strong> no site oficial da instituição antes de fornecer qualquer dado</li>
 <li><strong>Nunca informe senhas, códigos de autenticação ou dados bancários</strong> por telefone ou mensagem não solicitada</li>
-<li><strong>Desconfie de promessas como &quot;limpa nome garantido&quot; ou &quot;desconto garantido&quot;</strong> — ofertas reais de renegociação são formalizadas em contrato</li>
+<li><strong>Tenha cautela com promessas como &quot;limpa nome garantido&quot; ou &quot;desconto garantido&quot;</strong> — ofertas reais de renegociação são formalizadas em contrato</li>
 <li><strong>Guarde todos os comprovantes</strong> de negociação e pagamento</li>
 </ul>
 </section>
@@ -3355,7 +3321,7 @@ export const posts: Post[] = [
 </section>
 <section>
 <div class="callout callout-conclusao">
-<h2>Conclusão</h2>
+<h2>Evitando o rotativo</h2>
 <p>Evitar o rotativo do cartão de crédito exige planejamento e controle do orçamento. Pagar a fatura integralmente costuma ser o caminho mais seguro para evitar juros e encargos, quando isso é possível.</p>
 <p>Se a fatura não cabe no orçamento, agir cedo — antes do vencimento — costuma oferecer mais opções e custos potencialmente menores do que esperar o atraso.</p>
 <p>Comparar o custo total das alternativas disponíveis (parcelamento da fatura, renegociação, empréstimo com <strong>CET</strong> menor) ajuda a evitar trocar uma dívida cara por outra com condições similares ou piores.</p>
@@ -3457,7 +3423,7 @@ export const posts: Post[] = [
 </section>
 <section>
 <div class="callout callout-conclusao">
-<h2>Conclusão</h2>
+<h2>Lidando com o limite estourado</h2>
 <p>Estourar o limite do cartão não é o fim do mundo, mas é um sinal de que o orçamento precisa de atenção. Resolva o momento com uma das opções acima e, em seguida, reveja os hábitos financeiros para evitar que a situação se repita. O controle dos gastos e o planejamento são as ferramentas mais eficazes para não depender do crédito de emergência. Veja também <a href="/blog/como-aumentar-limite-cartao-credito">como aumentar o limite do cartão de crédito</a> e <a href="/blog/fatura-parcelada-compensa">quando a fatura parcelada compensa</a>.</p>
 </div>
 </section>
@@ -3491,16 +3457,6 @@ export const posts: Post[] = [
 <section><h2>O que é o parcelamento de fatura?</h2>
 <p>O parcelamento de fatura é uma modalidade em que o valor da fatura do cartão de crédito é dividido em parcelas fixas. Desde 2024, os bancos são obrigados a oferecer essa opção como alternativa ao crédito rotativo, o que dá ao consumidor mais uma escolha na hora de decidir como pagar.</p>
 <p>Quando você não consegue pagar a fatura integral, em vez de cair automaticamente no rotativo com juros elevados, pode optar pelo parcelamento, que costuma ter juros menores. Mas ainda é uma operação de crédito com custo, e o ideal é avaliar antes de contratar. As taxas variam conforme o banco e o perfil de cada cliente. Consulte os <strong>canais oficiais</strong> da sua instituição para confirmar as condições vigentes.</p>
-</section>
-<section><h2>Resumo rápido</h2>
-<ul>
-<li>O parcelamento da fatura é uma alternativa ao rotativo com juros geralmente menores.</li>
-<li>As taxas variam conforme o banco e o perfil — não há valor fixo.</li>
-<li>Comparar o <strong>CET</strong> com outras opções (empréstimo, renegociação) é essencial.</li>
-<li>Parcelar a fatura não prejudica o score se as parcelas forem pagas em dia.</li>
-<li>Se você precisa parcelar a fatura com frequência, pode ser sinal de desequilíbrio no orçamento.</li>
-<li>Considere alternativas como uso da reserva ou renegociação direta antes de parcelar.</li>
-</ul>
 </section>
 <section><h2>Comparação entre opções</h2>
 <p>A tabela abaixo é uma simulação didática com valores hipotéticos. As taxas reais dependem do banco, do perfil do cliente e da data da contratação.</p>
@@ -3563,7 +3519,7 @@ export const posts: Post[] = [
 </section>
 <section>
 <div class="callout callout-conclusao">
-<h2>Conclusão</h2>
+<h2>Parcelar ou não parcelar?</h2>
 <p>O parcelamento da fatura é uma opção melhor que o rotativo na maioria dos casos, mas ainda envolve juros que podem pesar no orçamento. Antes de parcelar, compare alternativas, veja o <strong>CET</strong> e avalie se a parcela cabe nas contas do mês. O ideal é sempre pagar a fatura integral, e o parcelamento deve ser usado com planejamento, não como rotina. Veja também <a href="/blog/como-evitar-juros-rotativo">como evitar os juros do rotativo</a> e <a href="/blog/vale-a-pena-trocar-divida-cartao-por-emprestimo">quando vale trocar dívida por empréstimo</a>.</p>
 </div>
 </section>
@@ -3597,16 +3553,6 @@ export const posts: Post[] = [
 <p>Esse é o erro mais comum e mais caro. A parcela menor pode significar um prazo muito maior e, no final, o custo total pode ser bem maior.</p>
 <p>Comparar empréstimos vai muito além do valor da parcela. Veja a seguir o que realmente importa.</p>
 </section>
-<section><h2>Resumo rápido</h2>
-<ul>
-<li>O <strong>CET</strong> é o indicador mais completo para comparar ofertas de crédito.</li>
-<li>Parcela baixa nem sempre significa economia — o prazo e o custo total precisam ser avaliados.</li>
-<li>Compare o valor total a pagar, não apenas o valor da prestação mensal.</li>
-<li>Consulte ao menos 3 instituições antes de tomar uma decisão.</li>
-<li>Desconfie de taxas muito abaixo da média do mercado.</li>
-<li>Use simuladores para comparar diferentes cenários lado a lado.</li>
-</ul>
-</section>
 <section><h2>O que comparar em cada empréstimo</h2>
 <p><strong>1. CET (Custo Efetivo Total):</strong> este é o número mais importante. O <strong>CET</strong> inclui juros, taxas, seguros e todos os encargos. Um empréstimo com taxa de 3% ao mês pode ter <strong>CET</strong> de 5% se houver seguros embutidos. <a href="/blog/o-que-e-cet-e-por-que-importa">Entenda melhor o CET</a>.</p>
 <p><strong>2. Taxa de juros mensal:</strong> a taxa pura do empréstimo. Importante, mas não é o único fator.</p>
@@ -3629,16 +3575,6 @@ export const posts: Post[] = [
 <p>Olhando apenas a parcela, o Banco B parece mais barato (R$ 359). No entanto, no total você pagaria R$ 8.616 — R$ 2.592 a mais que o Banco A.</p>
 <p>Neste exemplo, o Banco A apresentou o menor custo total (R$ 6.024), apesar de ter a maior parcela mensal.</p>
 </section>
-<section><h2>Erros comuns ao comparar empréstimos</h2>
-<ul>
-<li><strong>Ignorar o CET:</strong> focar apenas na taxa de juros pode esconder tarifas e seguros embutidos.</li>
-<li><strong>Não considerar o prazo:</strong> prazos muito longos aumentam o custo total, mesmo com parcelas baixas.</li>
-<li><strong>Comparar propostas em datas diferentes:</strong> as taxas mudam com frequência. Compare tudo no mesmo dia.</li>
-<li><strong>Esquecer o IOF:</strong> o imposto incide sobre o valor e o prazo, influenciando o custo final.</li>
-<li><strong>Não simular a quitação antecipada:</strong> alguns contratos têm regras que podem encarecer o pagamento adiantado.</li>
-<li><strong>Contratar sem ler o contrato:</strong> cláusulas de seguros, tarifas e renegociação podem passar despercebidas.</li>
-</ul>
-</section>
 <section><h2>Ferramentas para comparar</h2>
 <p>Use nossa <a href="/calculadoras/emprestimo">calculadora de empréstimo</a> para simular diferentes taxas e prazos. Você pode comparar cenários lado a lado.</p>
 <p>A <a href="/calculadoras/troca-dividas">calculadora de troca de dívidas</a> também pode ajudar se você está pensando em migrar uma dívida para outra linha de crédito.</p>
@@ -3651,7 +3587,7 @@ export const posts: Post[] = [
 </section>
 <section><h2><strong>Cuidado</strong>s ao comparar</h2>
 <ul>
-<li>Desconfie de taxas muito abaixo do mercado — podem ser iscas para contratação</li>
+<li>Cuidado com taxas muito abaixo do mercado — podem ser iscas para contratação</li>
 <li>Leia o contrato antes de assinar</li>
 <li>Verifique se há seguros ou tarifas embutidas na proposta</li>
 <li>Pergunte sobre a possibilidade de quitação antecipada com desconto</li>
@@ -3660,7 +3596,7 @@ export const posts: Post[] = [
 </section>
 <section>
 <div class="callout callout-conclusao">
-<h2>Conclusão</h2>
+<h2>Comparação que faz diferença</h2>
 <p>Comparar empréstimos corretamente pode fazer diferença no bolso. Avalie o <strong>CET</strong>, o prazo e o custo total antes de decidir, e evite contratar sem antes simular em pelo menos 3 instituições diferentes. As condições podem variar conforme o perfil de cada pessoa, por isso é importante avaliar com calma e confirmar as informações nos <strong>canais oficiais</strong>.</p>
 </div>
 </section>
@@ -3749,7 +3685,7 @@ export const posts: Post[] = [
 <ol>
 <li>Solicite o <strong>CET</strong> antes de contratar qualquer empréstimo — por lei, o banco deve informar</li>
 <li>Compare o <strong>CET</strong> de diferentes instituições, não apenas a taxa de juros</li>
-<li>Desconfie de <strong>CET</strong> muito alto mesmo com taxa baixa (pode indicar tarifas escondidas)</li>
+<li>Cuidado com <strong>CET</strong> muito alto mesmo com taxa baixa (pode indicar tarifas escondidas)</li>
 <li>Use o <strong>CET</strong> para calcular o custo real no seu orçamento</li>
 <li>Leia o contrato para identificar quais tarifas estão elevando o <strong>CET</strong></li>
 </ol>
@@ -3764,7 +3700,7 @@ export const posts: Post[] = [
 </section>
 <section>
 <div class="callout callout-conclusao">
-<h2>Conclusão</h2>
+<h2>O CET e você</h2>
 <p>O <strong>CET</strong> é o indicador mais importante na hora de contratar um empréstimo. Ignorá-lo pode custar caro. Compare o <strong>CET</strong> entre as instituições e não se deixe enganar por taxas de juros baixas que escondem tarifas altas.</p>
 <p>Veja também o guia <a href="/blog/como-comparar-emprestimos-corretamente">como comparar empréstimos corretamente</a> e saiba <a href="/blog/como-calcular-custo-real-emprestimo">como calcular o custo real de um empréstimo</a>.</p>
 </div>
@@ -3884,7 +3820,7 @@ export const posts: Post[] = [
 </section>
 <section>
 <div class="callout callout-conclusao">
-<h2>Conclusão</h2>
+<h2>Consignado: vale a pena?</h2>
 <p>O empréstimo consignado pode ser vantajoso para quem tem acesso a ele, especialmente pelas taxas geralmente mais baixas em comparação com outras modalidades de crédito pessoal. O desconto automático em folha também ajuda a evitar atrasos no pagamento.</p>
 <p>No entanto, é importante lembrar que a facilidade de contratação não significa que o crédito deva ser usado sem planejamento. Antes de contratar, avalie sua real necessidade, compare condições entre diferentes instituições e considere o impacto das parcelas no orçamento mensal.</p>
 <p>Cada caso é único: o que funciona para uma pessoa pode não ser a melhor escolha para outra. Consulte os <strong>canais oficiais</strong> (<strong>INSS</strong>, Caixa, Banco Central) para confirmar taxas, regras e condições vigentes antes de tomar uma decisão.</p>
@@ -3928,7 +3864,7 @@ export const posts: Post[] = [
 <li><strong>CET é o principal indicador:</strong> O Custo Efetivo Total (<strong>CET</strong>) reúne todos os encargos em um percentual único. É o número mais confiável para comparar ofertas.</li>
 <li><strong>Prazo maior pode significar mais juros:</strong> Parcelas menores em prazos longos geralmente resultam em maior custo total devido ao acúmulo de juros compostos.</li>
 <li><strong>Simule antes de contratar:</strong> Use simuladores de crédito do Banco Central ou calculadoras confiáveis para estimar o custo total antes de tomar uma decisão.</li>
-<li><strong>Desconfie de taxas muito baixas:</strong> Ofertas com taxas muito abaixo da média do mercado podem esconder tarifas ou condições desfavoráveis.</li>
+<li><strong>Cuidado com taxas muito baixas:</strong> Ofertas com taxas muito abaixo da média do mercado podem esconder tarifas ou condições desfavoráveis.</li>
 </ul>
 </section>
 <section><h2>Tabela comparativa: componentes do custo de um empréstimo</h2>
@@ -4008,7 +3944,7 @@ export const posts: Post[] = [
 </section>
 <section>
 <div class="callout callout-conclusao">
-<h2>Conclusão</h2>
+<h2>Calculando o custo real</h2>
 <p>Calcular o custo real de um empréstimo envolve mais do que verificar a taxa de juros. É necessário considerar IOF, tarifas, seguros e o prazo total da operação. O <strong>CET</strong> (Custo Efetivo Total) é o indicador mais completo para comparar ofertas entre instituições financeiras.</p>
 <p>Recomenda-se não contratar sem antes utilizar um simulador de crédito e comparar pelo menos três propostas de instituições diferentes. As taxas e regras podem mudar, portanto confirme as informações nos <strong>canais oficiais</strong> antes de tomar uma decisão.</p>
 <p>Importante: este guia tem finalidade educativa. Ele não substitui a consulta a fontes oficiais nem o atendimento de bancos e órgãos reguladores. Para dúvidas específicas sobre seu caso, procure o Banco Central, a Receita Federal ou o Procon da sua região.</p>
@@ -4125,7 +4061,7 @@ export const posts: Post[] = [
 </section>
 <section>
 <div class="callout callout-conclusao">
-<h2>Conclusão</h2>
+<h2>Antes de contratar</h2>
 <p>O empréstimo não é um problema por si só, mas também não deve ser tratado como solução para qualquer situação. O crédito pode ser útil em emergências reais, na troca de dívida cara por uma mais barata ou em situações em que o custo do empréstimo é menor que o prejuízo de não tê-lo.</p>
 <p>Fora desses cenários, é recomendável juntar dinheiro primeiro e avaliar alternativas. Cada caso é único, e as regras dos programas de crédito podem variar. Consulte os <strong>canais oficiais</strong> do banco ou do Banco Central para confirmar as condições antes de contratar. Veja também o artigo sobre <a href='/blog/emprestimo-consignado-vale-a-pena'>empréstimo consignado: vale a pena?</a> para comparar modalidades.</p>
 </div>
@@ -4137,7 +4073,7 @@ export const posts: Post[] = [
       { question: 'Qual o percentual ideal de comprometimento da renda?', answer: 'Uma referência comum é que o total de dívidas não ultrapasse 30% da renda líquida. Acima de 50% é geralmente considerado uma situação de maior risco financeiro.' },
       { question: 'Empréstimo para abrir negócio vale a pena?', answer: 'Pode valer se você tem um plano de negócios realista, pesquisa de mercado e projeção de fluxo de caixa. Mas muitos empreendedores preferem começar com recursos próprios para evitar pressão financeira inicial.' },
       { question: 'Como saber se a oferta de empréstimo é boa?', answer: 'Compare o CET (Custo Efetivo Total) entre diferentes instituições. Consulte as taxas médias divulgadas pelo Banco Central para a modalidade desejada. Se a taxa ofertada estiver muito acima da média do mercado, pode ser um sinal de alerta.' },
-      { question: 'É seguro contratar empréstimo por canais digitais?', answer: 'Contratar pelos canais oficiais do banco (aplicativo ou site) é seguro desde que você verifique se está no ambiente correto. Desconfie de ofertas recebidas por WhatsApp, SMS ou ligações não solicitadas. Nunca compartilhe senhas, códigos de acesso ou dados bancários com terceiros.' },
+      { question: 'É seguro contratar empréstimo por canais digitais?', answer: 'Contratar pelos canais oficiais do banco (aplicativo ou site) é seguro desde que você verifique se está no ambiente correto. Cuidado com ofertas recebidas por WhatsApp, SMS ou ligações não solicitadas. Nunca compartilhe senhas, códigos de acesso ou dados bancários com terceiros.' },
       { question: 'É possível renegociar um empréstimo já contratado?', answer: 'Sim, é possível renegociar as condições com a instituição financeira, especialmente se houver atraso nas parcelas. Antes de renegociar, compare o CET da nova proposta com a dívida atual e verifique se as condições realmente melhoram.' },
     ],
   },
