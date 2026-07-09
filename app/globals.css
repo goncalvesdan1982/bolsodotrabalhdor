@@ -217,8 +217,9 @@
 
 .article-content .premium-table-wrapper th,
 .article-content .premium-table-wrapper td {
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
   word-break: normal;
+  hyphens: auto;
 }
 
 .article-content .premium-table-wrapper tbody tr {
