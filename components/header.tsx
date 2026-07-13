@@ -39,7 +39,7 @@ export function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 shrink-0">
           <Image
-                src="/logo-novo-bolso-trabalhador.png"
+                src="/logo-novo-bolso-trabalhador.webp"
             alt="Bolso do Trabalhador"
             width={260}
             height={65}
@@ -124,7 +124,7 @@ export function Header() {
           <SheetContent side="right" className="w-80">
             <SheetTitle className="flex items-center gap-2 mb-6">
               <Image
-            src="/logo-novo-bolso-trabalhador.png"
+            src="/logo-novo-bolso-trabalhador.webp"
                 alt="Bolso do Trabalhador"
                 width={210}
                 height={52}

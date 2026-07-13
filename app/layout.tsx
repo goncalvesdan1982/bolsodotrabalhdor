@@ -104,7 +104,7 @@ export default function RootLayout({
                   'description': SITE_DESCRIPTION,
                   'logo': {
                     '@type': 'ImageObject',
-                    'url': `${SITE_URL}/logo-novo-bolso-trabalhador.png`
+                    'url': `${SITE_URL}/logo-novo-bolso-trabalhador.webp`
                   }
                 },
                 {
