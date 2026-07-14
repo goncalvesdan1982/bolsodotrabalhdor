@@ -104,7 +104,7 @@ export default function RootLayout({
                   'description': SITE_DESCRIPTION,
                   'logo': {
                     '@type': 'ImageObject',
-                    'url': `${SITE_URL}/novo-logo-bollso-removebg-preview.webp`
+                    'url': `${SITE_URL}/novo-logo-bolsa-removebg-preview.webp`
                   }
                 },
                 {
